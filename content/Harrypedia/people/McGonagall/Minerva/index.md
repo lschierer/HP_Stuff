@@ -8,12 +8,18 @@ author = "Luke Schierer"
 +++
 
 I really want to like Professor McGonagall, but so much that happens at
-[Hogwarts][] is troubling that I am conflicted about her. She is, in some ways,
-the quintessential Harry Potter Series [adult].  _The Board_[^190823-1] by
-[Clell65619][dmffan] shows a critical view of her that I am, despite myself,
-really drawn to.  This view is more or less seconded by _[When Is It a
-Contract][WIIAC]_ which focuses on the conflicts between her roles as Deputy and
-Head of House.[^210322-2]
+[Hogwarts][] is troubling that I am conflicted about her.  Some of this
+conflict comes because the books portray her so very positively.  [Harry][],
+forgiving as he is, and with the low standards he has for adult behaviour,
+himself views her very positively, and the books, we must remember, are largely
+from his view point.  As readers, we should strive to separate ourselves from
+the the author's (or character's - they might not be the same) biases.  
+
+McGonagall is, in some ways, the quintessential Harry Potter Series [adult].
+_The Board_[^190823-1] by [Clell65619][dmffan] shows a critical view of her
+that I am, despite myself, really drawn to.  This view is more or less seconded
+by _[When Is It a Contract][WIIAC]_ which focuses on the conflicts between her
+roles as Deputy and Head of House.[^210322-2]
 
 [adult]: <{{< relref "adults" >}}>
 
@@ -25,20 +31,20 @@ graduation.[^200720-7]  She informs [Umbridge] that she will have been at Hogwar
 "Thirty-nine years this December,"[^200720-8] sometime in the beginning of fifth
 year, or 1995. That puts her start date in 1956.  Despite this, we are told that
 she intervened when [Leta Lestrange][LL2] was bullied at age 13 in
-1910,[^211018-1] and when [Theseus][TS1] was a student.[^211018-2]  This would
+1910,[^211018-1] and when [Theseus][] was a student.[^211018-2]  This would
 require her to have either left [Hogwarts] for a time, or to have been a teacher
 for at least 85 years.[^211018-3]
 
-[LL2]: <{{< ref "Harrypedia/people/Lestrange/Leta" >}}>
+[LL2]: <{{< relref "../../Lestrange/Leta" >}}>
 
 [Umbridge]: <{{< relref "Delores_Jane" >}}>
 
-[TS1]: <{{< ref "Harrypedia/people/Scamander/Theseus" >}}>
+[Theseus]: <{{< ref "Harrypedia/people/Scamander/Theseus" >}}>
 
 
 The first problematic moment is easy to miss.  Per the timeline above, she was
 already teaching at [Hogwarts][] in 1981, and yet, on November 1st 1981, she is
-able to spend the day on Privet Drive apparently waiting for [Dumbledore][AD1]
+able to spend the day on Privet Drive apparently waiting for [Dumbledore][]
 to arrive any time all day, having heard from [Hagrid][] that he would at some
 point be there.[^220927-5]  As head of house, did she not have an obligation to
 be available to her students in this time of excitement?  As Deputy Head,
@@ -126,18 +132,23 @@ this, and should be able and willing to compensate for it.
 [Hagrid]: <{{< relref "Rubeus" >}}>
 
 The only possible saving explanations for the detention are either that
-McGonagall had no choice, that [Dumbledore][AD1] in fact set it up and she was
+McGonagall had no choice, that [Dumbledore][] in fact set it up and she was
 the messenger, or that she was in some way unaware of [Hagrid]'s plans.  If the
 former, I am disappointed that she continues to work for a man who would put
 students in his care in that situation.  If the latter, I'm disappointed that
-she is that naive. 
+she is that naive.  Either way, the punishment makes a mockery of the curfew
+they are being punished for breaking.  Perhaps one would try to say that they
+are being taught that it is dangerous to be out after hours, but all I suspect
+[Malfoy][Draco] learned was that the *Forest* was dangerous, not the *curfew
+violation*.  If that was the intent, it was entirely too subtle for eleven year
+olds.
 
 The next is less clear cut.  I have trouble believing that everyone wearing the
 "Support Cedric" badges was so sneaky that McGonagall never saw the "Potter
 Stinks" version of them.  The badges should have been confiscated, and it really
 would have only taken any responsible teacher (that is to day, not [Snape][])
 seeing the change once to know that they all did it and they all needed to go.
-Again, it is possible that [Dumbledore][AD1] tied her hands.  If so, it says
+Again, it is possible that [Dumbledore][] tied her hands.  If so, it says
 something less than positive about her that she allowed him to do so.
 
 I have mixed feelings about her initial treatment when she is notified that
@@ -171,13 +182,13 @@ the connections to have made their opinions known.
 
 [Fudge]: <{{< relref "Cornelius_Oswald" >}}>
 
-With this history of either following [Dumbledore][AD1]'s lead as blindly and
+With this history of either following [Dumbledore][]'s lead as blindly and
 mindlessly as a sheep, or of complicit negligence in the many situations
 [Harry][] found himself in, what kind of headmistress would McGonagall have
 made?  Where _[The Board][CTB2]_ assumes that she would not get the post,
 old-crow's version of _[Unintended Consequences][OCUC1]_ assumes she *does* get
 appointed, but cannot really handle the position.  It portrays her as someone
-totally devoted to enforcing [Dumbledore][AD1]'s vision for the school, even in
+totally devoted to enforcing [Dumbledore][]'s vision for the school, even in
 the face of a situation where it is clearly apparent that vision must change.
 In this portrayal, she is indecisive, unable to let go of the authority she has
 been given (because someone else would implement the changes she dislikes) but
@@ -192,21 +203,21 @@ character does.  That being said, I think old-crow is spot on in portraying her
 as someone who would resist change simply because it is change, and would resist
 incorporating non-magical classes no matter how needed or useful they might be. 
 
-[Snape]: <{{< ref "Harrypedia/people/Snape/Severus" >}}>
+[Snape]: <{{< relref "../../Snape/Severus" >}}>
 
-[James]: <{{< ref "Harrypedia/people/Potter/James" >}}>
+[James]: <{{< relref "../../Potter/James" >}}>
 
-[Neville]: <{{< ref "Harrypedia/people/Longbottom/Neville" >}}>
+[Neville]: <{{< relref "../../Longbottom/Neville" >}}>
 
-[Draco]: <{{< ref "Harrypedia/people/Malfoy/Draco_Lucius" >}}>
+[Draco]: <{{< relref "../../Malfoy/Draco_Lucius" >}}>
 
-[Harry]: <{{< ref "Harrypedia/people/Potter/Harry_James" >}}>
+[Harry]: <{{< relref "../../Potter/Harry_James" >}}>
 
-[Hermione]: <{{< ref "Harrypedia/people/Granger/Hermione_Jean" >}}>
+[Hermione]: <{{< relref "../../Granger/Hermione_Jean" >}}>
 
-[RBW1]: <{{< ref "Harrypedia/people/Weasley/Ronald_Bilius" >}}>
+[RBW1]: <{{< relref "../../Weasley/Ronald_Bilius" >}}>
 
-[AD1]: <{{< ref "Harrypedia/people/Dumbledore/Albus_Percival_Wulfric_Brian" >}}>
+[Dumbledore]: <{{< relref "../../Dumbledore/Albus_Percival_Wulfric_Brian" >}}>
 
 [Hogwarts]: <{{< relref "Hogwarts" >}}>
 
