@@ -187,9 +187,31 @@ there are reasonable, if unconfirmed, explanations available.  Harry's need for
 glasses is probably either an effect of from his scar, or an effect from living
 in the cupboard.  Since both are speculation, we do not know which.
 
+Lastly, there is a whole range of fan fiction authors who have this strange
+idea that Harry is not white.[^230309-1]  Which of his parents is non-Caucasian
+differs from work to work, but either way it is pure wish fulfilment.  I know
+the books are not nearly as specific as they could be, but despite Mrs.
+Rowling's comments on a black [Hermione][] when the abomination of a play came
+out,[^230309-2] the context clues for most characters *are* in fact present.
+We are told in book one that Harry "turns white"[^230309-3], not merely "turns
+pale" for example.  While one *could* argue that this is a mere figure of
+speech, it is one that is typically used of *Caucasian* people.  Most books I
+read make a point, when writing about characters of other races, that their
+skin *cannot* turn white, to help remind the reader that their mental image of
+this character needs to be accurate.  Again, as cited above, I know that Mrs.
+Rowling has rejected this *particular* example.  It is interesting however,
+that she didn't feel the need to mention "oh by the way, this character is xyz
+when they were casting the movies.  And it, as noted on [The Rowling
+Library][], her own artwork shows both characters as Caucasian in contrast to
+the noticeably non-Caucasian [Dean Thomas][Dean].[^230309-4]
+
 [growth]: <{{< relref "growth" >}}>
 
 [Hermione]: <{{< relref "Hermione_Jean" >}}>
+
+[Dean]: <{{< relref "Dean" >}}>
+
+[The Rowling Library]: <https://www.therowlinglibrary.com/>
 
 [Lily]: <{{< relref "Lily_J." >}}>
 
@@ -202,6 +224,18 @@ in the cupboard.  Since both are speculation, we do not know which.
 [George]: <{{< relref "George" >}}>
 
 [Riddle]: <{{< relref "Tom_Marvolo" >}}>
+
+[^230309-1]: This is truly fairly wide spread.  I am not going to attempt to list the works I have come across this idea in.
+
+[^230309-2]: Ms. Betsy Reed. "[JK Rowling tells of anger at attacks on casting of black Hermione][JKRBH]" [The Guardian](https://www.theguardian.com) 2016-06-05. 
+
+[^230309-3]: Mrs. J. K. Rowling. _[Harry Potter and the Philosopher's Stone][]_ Bloomsbury Pub Ltd (2004), page 53. 
+
+[^230309-4]: [The Rowling Library][]. "[Everything we know about Hermione’s skin colour](https://www.therowlinglibrary.com/2015/12/21/is-hermione-granger-white-or-black/)" 2015-12-21.
+
+[Harry Potter and the Philosopher's Stone]: <https://www.librarything.com/work/5403381>
+
+[JKRBH]: <https://www.theguardian.com/stage/2016/jun/05/harry-potter-jk--rowling-black-hermione>
 
 [^221024-4]: The research on this is somewhat mixed, and it would take more
   work than I have time for to weed out infantile starvation versus adolescent
