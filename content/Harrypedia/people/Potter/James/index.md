@@ -468,7 +468,7 @@ been guilty of poor targeting and have occasionally over-reacted, but he was
     Pottermore Limited. American Kindle Edition.
 
 [^20210128-3]: Mrs. J. K. Rowling.
-    _Harry Potter and the Prisoner of Azkaban_ p. 363, location 4403 of 5714.
+    _Harry Potter and the Prisoner of Azkaban_ p. 354.
     Pottermore Limited. American Kindle Edition.
 
 [^20210128-4]: Mrs. J. K. Rowling.
