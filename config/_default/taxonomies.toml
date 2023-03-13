@@ -1,0 +1,7 @@
+# config/_default/taxonomies.toml
+
+tag = "tags"
+category = "categories"
+family = "families"
+potion = "potions"
+spell = "spells"

@@ -1,20 +1,13 @@
+# -- Markup --
+# These settings are required for the theme to function.
+
 [goldmark]
-  [goldmark.extensions]
-    typographer = false
-    definitionList = true
-    footnote = true
-    table = true
-  [goldmark.renderer]
-    unsafe = true
+[goldmark.renderer]
+  unsafe = true
+
 [highlight]
-  codeFences = true
-  guessSyntax = false
-  lineNos = true
-  lineNumbersInTable = false
   noClasses = false
-  style = "monokai"
-  tabWidth = 2
+
 [tableOfContents]
-  endLevel = 4
-  ordered = true
   startLevel = 2
+  endLevel = 4
