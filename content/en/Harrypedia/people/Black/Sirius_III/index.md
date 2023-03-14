@@ -2,9 +2,8 @@
 type = "person"
 family = "Black"
 title = "Sirius III"
-id = "insert number from gramps without the @s"
-date = "2021-05-17T12:21:34-04:00"
-author = ""
+id = "I0007"
+author = "Luke Schierer"
 +++
 
 ## Facts
