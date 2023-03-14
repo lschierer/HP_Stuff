@@ -6,6 +6,7 @@
 {{ if hugo.IsProduction }}
   {{ $js = $js | fingerprint }}
 {{ end }}
+<!-- hugo ts import -->
 <script
   src="{{ $js.RelPermalink }}"
   {{ if hugo.IsProduction }}integrity="{{ $js.Data.Integrity }}"{{ end }}
