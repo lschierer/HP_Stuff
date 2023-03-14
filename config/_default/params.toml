@@ -16,7 +16,7 @@ enableCodeCopy = false
 
 [header]
   layout = "basic" # valid options: basic, hamburger, hybrid, custom
-  # logo = "img/logo.jpg"
+  logo = "LukeHPSite.svg"
   showTitle = true
 
 [footer]
@@ -43,8 +43,8 @@ enableCodeCopy = false
   showPagination = true
   invertPagination = false
   showReadingTime = false
-  showTableOfContents = false
-  showTaxonomies = false
+  showTableOfContents = true
+  showTaxonomies = true
   showWordCount = false
   showComments = false
   # sharingLinks = ["facebook", "twitter", "mastodon", "pinterest", "reddit", "linkedin", "email"]
@@ -52,8 +52,8 @@ enableCodeCopy = false
 [list]
   showBreadcrumbs = false
   showSummary = false
-  showTableOfContents = false
-  showTaxonomies = false
+  showTableOfContents = true
+  showTaxonomies = true
   groupByYear = true
   paginationWidth = 1
 

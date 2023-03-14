@@ -1,5 +1,5 @@
 # -- Main Menu --
-# The main menu is displayed in the header at the top of the page.
+# The top menu is displayed in the header at the top of the page.
 # Acceptable parameters are name, pageRef, page, url, title, weight.
 #
 # The simplest menu configuration is to provide:
@@ -11,23 +11,31 @@
 # ordered by weight from lowest to highest.
 
 [[main]]
+
+[[top]]
+  name = "Main Menu"
+
+[[top]]
   name = "HarryPedia"
   pageRef = "harrypedia"
   weight = 10
+  parent = "Main Menu"
 
-[[main]]
+[[top]]
   name = "Searches"
   pageRef = "searches"
   weight = 20
+  parent = "Main Menu"
 
-[[main]]
+[[top]]
   name = "Bookmarks"
   pageRef = "bookmarks"
   weight = 30
+  parent = "Main Menu"
 
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
-# the copyright notice. Configure as per the main menu above.
+# the copyright notice. Configure as per the top menu above.
 
 # [[footer]]
 #   name = "Tags"
