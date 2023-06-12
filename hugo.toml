@@ -6,13 +6,79 @@ owner = "Luke Schierer"
 enableRobotsTXT = true
 # this example loads the theme as hugo module
 # comment out line below, and uncomment the line after it if you prefer to load the theme normally
-theme = "congo"
+theme = "docsy"
 enableGitInfo = true
+
+# Language settings
+contentDir = "content"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+# Useful when translating.
+enableMissingTranslationPlaceholders = true
 
 [frontmatter]
   date = [":git", ":filename", "publishDate", "lastmod", "date" ]
 
 disablePathToLower = true
+
+refLinksErrorLevel = "WARNING"
+
+[security]
+  enableInlineShortcodes = false
+  [security.exec]
+    allow = ['^babel$', '^dart-sass-embedded$', '^go$', '^npx$', '^postcss$']
+    osEnv = ['(?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$']
+
+  [security.funcs]
+    getenv = ['^HUGO_']
+
+  [security.http]
+    methods = ['(?i)GET|POST']
+    urls = ['.*']
+
+[outputs]
+  home = ["HTML", "RSS"]
+
+# Comment out to enable taxonomies in Docsy
+# disableKinds = ["taxonomy", "taxonomyTerm"]
+
+# You can add your own taxonomies
+[taxonomies]
+tag = "tags"
+category = "categories"
+family = "families"
+potion = "potions"
+spell = "spells"
+
+[params.taxonomy]
+# set taxonomyCloud = [] to hide taxonomy clouds
+taxonomyCloud = ["tags", "categories", "families", "spells", "potions" ] 
+
+# If used, must have same lang as taxonomyCloud
+taxonomyCloudTitle = ["Tag Cloud", "Categories", "Families", "Spells", "Potions"] 
+
+# set taxonomyPageHeader = [] to hide taxonomies on the page headers
+taxonomyPageHeader = ["tags", "categories", "families", "spells", "potions"] 
+
+
+# Highlighting config
+pygmentsCodeFences = true
+pygmentsUseClasses = false
+# Use the new Chroma Go highlighter in Hugo.
+pygmentsUseClassic = false
+#pygmentsOptions = "linenos=table"
+# See https://help.farbox.com/pygments.html
+pygmentsStyle = "tango"
+
+# Configure how URLs look like per section.
+[permalinks]
+blog = "/:section/:year/:month/:day/:slug/"
+
+# Image processing configuration.
+[imaging]
+resampleFilter = "CatmullRom"
+quality = 75
+anchor = "smart"
 
 [services]
 [services.googleAnalytics]
