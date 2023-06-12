@@ -107,6 +107,13 @@ _[Defending Sirius Black](https://www.fanfiction.net/s/7911105/)_
         he is, whatever his motives, forcing the other adults to act
         responsibly, however unwillingly they do so.
 
+_[Downfall of Snape](https://www.fanfiction.net/s/13338897/1/Downfall-of-Snape)_
+:     * Author: cornholio4
+      * Published: 2019-07-16.
+      * Comments: This one-shot shows that things could have been quite
+        different if nearly any adult had been willing to take responsibility
+        for dealing with [Snape][]'s behavior towards students.
+
 [HpediaD1]: <{{< relref "../Harrypedia/people/Dumbledore/Albus_Percival_Wulfric_Brian" >}}>
 
 [^221214-2] [Wikipedia](https://wikipedia.org).  {{< wikipedia "Emancipation of minors" >}} Last edited 2022-10-12.
@@ -116,3 +123,5 @@ _[Defending Sirius Black](https://www.fanfiction.net/s/7911105/)_
 [Harry]: <{{< relref "Harry_James" >}}>
 
 [Vernon]: <{{< relref "Vernon" >}}>
+
+[Snape]: <{{< relref "../Harrypedia/People/Snape/Severus" >}}> 
