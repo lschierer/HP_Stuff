@@ -108,7 +108,7 @@ _[Downfall of Snape](https://www.fanfiction.net/s/13338897/1/Downfall-of-Snape)_
       * Published: 2019-07-16.
       * Comments: This one-shot shows that things could have been quite
         different if nearly any adult had been willing to take responsibility
-        for dealing with [Snape][]'s behavior towards students.
+        for dealing with [Snape][]'s behaviour towards students.
 
 _[Blindsided](https://www.fanfiction.net/s/13455367)_
 :     * Author: MBurris
@@ -124,6 +124,20 @@ _[Blindsided](https://www.fanfiction.net/s/13455367)_
         decisions, I *really* like some of the author's ideas on the culture,
         and the honest look at [Hermione][] is refreshing, especially for an
         author who features her so prominently. 
+
+_[I object!](https://www.fanfiction.net/s/13230876)_
+:    * Author: [PseudonymousEntity](https://www.fanfiction.net/u/5588410/PseudonymousEntity)
+     * Published: 2019-03-11
+     * Comments: [Legally Blonde](https://www.imdb.com/title/tt0250494/) might
+       have been made for a Harry Potter crossover.  A lawyer who cannot quite
+       fit in totally fits in with the way Mrs. Rowling depicts wizards as
+       being unable to quite grasp non-magical fashion.   The contrast between
+       [Elle Woods][] and [Umbridge][] is incredibly funny.  I have seen this
+       tried a few other times, but none do it quite so well.
+
+[Elle Woods]: <https://www.imdb.com/title/tt0250494/characters/nm0000702?ref_=tt_cl_c_1>
+
+[Umbrdige]: <{{< relref "../Harrypedia/people/Umbridge/Delores_Jane" >}}> 
 
 [HpediaD1]: <{{< ref "Harrypedia/people/Dumbledore/Albus_Percival_Wulfric_Brian" >}}>
 
