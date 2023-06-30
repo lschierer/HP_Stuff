@@ -135,6 +135,22 @@ _[I object!](https://www.fanfiction.net/s/13230876)_
        [Elle Woods][] and [Umbridge][] is incredibly funny.  I have seen this
        tried a few other times, but none do it quite so well.
 
+-[A Wizarding Reckoning](https://archiveofourown.org/works/38570640)_
+:    * Author: [Anafandom](https://archiveofourown.org/users/Anafandom/pseuds/Anafandom)
+     * Published: 2022-04-24. Updated: 2023-01-01.
+     * Comments: This is yet another collection of one-shots.  In fact, several
+       one-shots per chapter.  The first snippet in Chapter 1 is … unlikely.
+       [McGonagall][] will not be proactive that way.  The second is better.
+       The third is an awesome AU.  The one marked "5" in Chapter 2 shows what
+       it would take to redeem [Lupin][] as a character.  The one marked "6" is
+       what I would *like* to see in a Goblet of Fire fan fiction.  Too often
+       these involve bashing characters instead.  "7" in Chapter 3"
+       demonstrates exactly what is wrong with [Snape][]'s obsession with
+       [Lily][].  #s 8-10 are effectively a single work.  It shows a redeemed
+       [Sirius][].  #12 (Chapter 4) shows a redeemed [Sprout][].  #13 is
+       fatally flawed - though it shows why [Snape][] could not have delayed
+       his return, by showing what would have happened had he done so.
+
 [Elle Woods]: <https://www.imdb.com/title/tt0250494/characters/nm0000702?ref_=tt_cl_c_1>
 
 [Umbrdige]: <{{< relref "../Harrypedia/people/Umbridge/Delores_Jane" >}}> 
@@ -161,3 +177,8 @@ _[I object!](https://www.fanfiction.net/s/13230876)_
 
 [Dursleys]: <{{< relref "../Harrypedia/people/Dursley" >}}>
 
+[Lupin]: <{{< relref "../Harrypedia/people/Lupin/Remus_John" >}}>
+
+[Lily]: <{{< relref "../Harrypedia/people/Evans/Lily_J." >}}>
+
+[Sprout]: <{{< relref "../Harrypedia/people/Sprout/Pomona" >}}>
