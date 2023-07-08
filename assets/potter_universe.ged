@@ -2,10 +2,10 @@
 1 SOUR Gramps
 2 VERS 5.1.2
 2 NAME Gramps
-1 DATE 23 JAN 2023
-2 TIME 17:52:25
+1 DATE 9 MAR 2023
+2 TIME 19:01:07
 1 SUBM @SUBM@
-1 FILE /home/schierer/luke/src/HarryPotter/content/Harrypedia/potter_universe.ged
+1 FILE /home/schierer/luke/src/HarryPotter/assets/potter_universe.ged
 1 COPR Copyright (c) 2023 .
 1 GEDC
 2 VERS 5.5.1
@@ -1247,6 +1247,8 @@
 3 PAGE Location 1051
 2 SOUR @S0004@
 3 PAGE https://harrypotter.fandom.com/wiki/Luna_Lovegood
+2 SOUR @S0039@
+3 PAGE 96
 1 FAMC @F0019@
 2 PEDI birth
 1 FAMS @F0035@
@@ -1678,6 +1680,8 @@
 1 SEX M
 1 SOUR @S0000@
 2 PAGE 10
+1 SOUR @S0033@
+2 PAGE American Kindle Location 2584
 1 RESI
 2 ADDR
 3 CONT Kent
@@ -1687,8 +1691,8 @@
 2 SOUR @S0000@
 3 PAGE 10
 1 CHAN
-2 DATE 10 SEP 2021
-3 TIME 17:02:08
+2 DATE 9 MAR 2023
+3 TIME 23:33:01
 0 @I0100@ INDI
 1 NAME Arabella Doreen /Figg/
 2 TYPE married
@@ -1915,8 +1919,8 @@
 1 SOUR @S0033@
 2 PAGE Location 2596
 1 CHAN
-2 DATE 16 SEP 2022
-3 TIME 18:13:01
+2 DATE 9 MAR 2023
+3 TIME 23:37:43
 0 @I0115@ INDI
 1 NAME Luna /Lovegood/
 2 GIVN Luna
@@ -1940,6 +1944,8 @@
 3 PAGE Location 1051
 2 SOUR @S0004@
 3 PAGE https://harrypotter.fandom.com/wiki/Luna_Lovegood
+2 SOUR @S0039@
+3 PAGE 96
 1 FAMC @F0051@
 2 PEDI birth
 1 SOUR @S0033@
@@ -2505,6 +2511,7 @@
 3 TIME 23:48:17
 0 @I0159@ INDI
 1 NAME Dean /Thomas/
+2 TYPE Unknown
 2 GIVN Dean
 2 SURN Thomas
 1 SEX M
@@ -2518,8 +2525,8 @@
 1 SOUR @S0037@
 2 PAGE https://www.mugglenet.com/2016/03/the-revised-forty/
 1 CHAN
-2 DATE 18 OCT 2021
-3 TIME 16:08:08
+2 DATE 8 FEB 2023
+3 TIME 22:23:28
 0 @I0160@ INDI
 1 NAME Blaize /Zabini/
 2 GIVN Blaize
@@ -3296,9 +3303,11 @@
 1 FAMS @F0060@
 1 SOUR @S0004@
 2 PAGE https://harrypotter.fandom.com/wiki/Benjy_Fenwick
+1 SOUR @S0033@
+2 PAGE American Kindle Locations 2588-2589
 1 CHAN
-2 DATE 18 OCT 2021
-3 TIME 16:08:08
+2 DATE 9 MAR 2023
+3 TIME 23:35:43
 0 @I0212@ INDI
 1 NAME  /Scamander/
 2 SURN Scamander
@@ -4368,6 +4377,136 @@
 1 CHAN
 2 DATE 5 DEC 2022
 3 TIME 22:44:15
+0 @I0279@ INDI
+1 NAME Poppy /Pomfrey/
+2 TYPE married
+2 GIVN Poppy
+2 SURN Pomfrey
+2 NPFX Madam
+1 SEX F
+1 CHAN
+2 DATE 24 JAN 2023
+3 TIME 16:37:34
+0 @I0280@ INDI
+1 NAME Millicent /Bagnold/
+2 TYPE Unknown
+2 GIVN Millicent
+2 SURN Bagnold
+1 SEX F
+1 CHAN
+2 DATE 24 JAN 2023
+3 TIME 16:49:45
+0 @I0281@ INDI
+1 NAME Caradoc /Dearborn/
+2 GIVN Caradoc
+2 SURN Dearborn
+1 SEX M
+1 SOUR @S0033@
+2 PAGE American Kindle Location 2592
+1 CHAN
+2 DATE 9 MAR 2023
+3 TIME 23:30:47
+0 @I0282@ INDI
+1 NAME Marlene /MkKinnon/
+2 GIVN Marlene
+2 SURN MkKinnon
+1 SEX F
+1 SOUR @S0033@
+2 PAGE American Kindle Location 2584
+1 CHAN
+2 DATE 9 MAR 2023
+3 TIME 23:33:55
+0 @I0283@ INDI
+1 NAME Emmeline /Vance/
+2 TYPE Unknown
+2 GIVN Emmeline
+2 SURN Vance
+1 SEX F
+1 SOUR @S0033@
+2 PAGE American Kindle Locations 2588-2589
+1 CHAN
+2 DATE 9 MAR 2023
+3 TIME 23:35:03
+0 @I0284@ INDI
+1 NAME Elphias /Doge/
+2 GIVN Elphias
+2 SURN Doge
+1 SEX M
+1 SOUR @S0033@
+2 PAGE American Kindle Location 2593
+1 CHAN
+2 DATE 9 MAR 2023
+3 TIME 23:37:06
+0 @I0285@ INDI
+1 NAME Dorcas /Meadowes/
+2 TYPE Unknown
+2 GIVN Dorcas
+2 SURN Meadowes
+1 SEX F
+1 SOUR @S0033@
+2 PAGE American Kindle Location 2597
+1 CHAN
+2 DATE 9 MAR 2023
+3 TIME 23:39:01
+0 @I0286@ INDI
+1 NAME Cho /Chang/
+2 GIVN Cho
+2 SURN Chang
+1 SEX F
+1 SOUR @S0033@
+2 PAGE American Kindle Locations 2786-2787
+1 CHAN
+2 DATE 9 MAR 2023
+3 TIME 23:46:06
+0 @I0287@ INDI
+1 NAME Alicia /Spinnet/
+2 GIVN Alicia
+2 SURN Spinnet
+1 SEX F
+1 EVEN
+2 TYPE Hogwarts Sorting
+2 DATE 1 SEP 1989
+2 SOUR @S0039@
+3 PAGE p. 107
+1 SOUR @S0039@
+2 PAGE p. 107
+1 CHAN
+2 DATE 9 MAR 2023
+3 TIME 23:54:18
+0 @I0288@ INDI
+1 NAME Marcus /Flint/
+2 GIVN Marcus
+2 SURN Flint
+1 SEX M
+1 EVEN
+2 TYPE Hogwarts Sorting
+2 DATE 1 SEP 1988
+2 SOUR @S0039@
+3 PAGE 110
+1 SOUR @S0039@
+2 PAGE 110
+1 CHAN
+2 DATE 9 MAR 2023
+3 TIME 23:56:45
+0 @I0289@ INDI
+1 NAME Colin /Creevey/
+2 GIVN Colin
+2 SURN Creevey
+1 SEX M
+1 EVEN
+2 TYPE Hogwarts Sorting
+2 DATE 1 SEP 1992
+2 SOUR @S0039@
+3 PAGE Location 1051
+2 SOUR @S0004@
+3 PAGE https://harrypotter.fandom.com/wiki/Luna_Lovegood
+2 SOUR @S0039@
+3 PAGE 96
+1 SOUR @S0039@
+2 PAGE 96
+1 CHAN
+2 DATE 10 MAR 2023
+3 TIME 00:00:03
 0 @F0000@ FAM
 1 HUSB @I0001@
 1 WIFE @I0002@

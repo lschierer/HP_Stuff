@@ -229,7 +229,13 @@ he causes, and he does *intend* good.  I differ from her in that I do not think
 that his *intent* sufficient such that he *is* in fact good (or at least, not
 wholely so).  Dumbledore's unstated philosophy seems way too close to "the ends
 justify the means," and I am far from convinced that it differs in any
-important detail.
+important detail.  _[Keep Holding On][]_ summarized this well:
+
+>The man sitting across from him, looking old and weary, had been involved in so many battles, so many wars, and had seen an infinite amount of casualties. He had defeated Grindelwald and had led the fight against Voldemort during the First War, and was gearing up for a second one. And it was because of all of this, Sirius realized, it was because of all the bloodshed, carnage, and violence he'd witnessed, that he was now numb to it. He could deliver platitudes, speak words of supposed wisdom to those who were grieving, but could not truly feel the losses anymore. His thoughts were always about the bigger picture, about who could be sacrificed to achieve the goal of defeating Voldemort. At that instant Sirius knew Albus still had a heart, still had a conscience, but it had been ravaged and spoiled by all it had seen.[^230216-1]
+
+[Keep Holding On]: <https://www.fanfiction.net/s/13056322>
+
+[^230216-1]: ChoCedric. _[Keep Holding On][]_. Published: 2018-09-04. Updated: 2023-02-16. 
 
 The ends (the greater good) do not justify the means (cooperating with (in a
 moral sense) the abuse [Harry][HJP] suffers).  Similarly, Dumbledore is right,

@@ -7,6 +7,7 @@ date = "2022-07-19T10:09:34-04:00"
 author = "Luke Schierer"
 +++
 
+## Relating to other people's analysis
 
 [An old post][The_Half_Blood_Prince] reminds me that it has been so long since
 I first read the Harry Potter books that I cannot really trust my memories of my
@@ -16,10 +17,10 @@ characters.  I think that is why when I first started reading fan fiction I was
 so strongly drawn to the cannon [Harry][]/[Ginny][] pairing.  Of the female
 characters in the books, few get consistently positive portrayals, and of
 those, only [Harry][] only *really* relates to Hermione, [Ginny][], and
-[Luna][LL1].  [Ginny][] and [Luna][LL1] are long enough topics to deserve their
+[Luna][].  [Ginny][] and [Luna][] are long enough topics to deserve their
 own pages.  
 
-[LL1]: <{{< ref "Harrypedia/people/Lovegood/Luna" >}}>
+[Luna]: <{{< relref "../../Lovegood/Luna" >}}>
 
 [The_Half_Blood_Prince]: <https://www.schierer.org/~luke/log/fiction/Harry_Potter/The_Half_Blood_Prince/>
 
@@ -31,18 +32,19 @@ finally codify.
 
 Then, when I started writing these [Notes][], I find that someone has come
 before me and done a sufficient job ranting about the way Mrs. Rowling failed
-to call Hermione to account[^20200706-3] that I would struggle to do better. If
+to call Hermione to account[^200706-3] that I would struggle to do better. If
 that is not enough, in some ways, [this][TSWoHA] fake interview for a position
-in the Department of Mysteries does even better.[^20210324-2]
+in the Department of Mysteries does even better.[^210324-2]
 
 [Notes]: <{{< relref "Harrypedia" >}}>
 
 Based on an interview she quotes, Ms. Onim asserts that Hermione is essentially
-a very flat character with the emotional maturity of a very young (she says four
-years old) girl.[^20200706-4] I am not sure I would go quite that far; I think
-that Hermione does grow some over the course of the series.  
+a very flat character with the emotional maturity of a very young (she gives
+her credit for fourteen in one place, before pointing out a temper tantrum more
+appropriate for a four year old) girl.[^200706-4] I am not sure I would go
+quite that far; I think that Hermione does grow some over the course of the series.  
 
-### Hermione and Harry
+## Hermione and Harry
 
 I do think that Mrs. Rowling became, to an extent, a victim of her own success
 with the latter half of the series, from approximately Goblet of Fire on.  And
@@ -61,7 +63,7 @@ disagree?
   from [Black][], but it was safe.  Hermione here acts from the best of
   motives, she wants to keep her friend safe.  I have no problems with *why*
   she acted, but *how*.  Was it necessary to go behind [Harry][]'s back the way
-  she did?  He makes one essentially yelled out assertion that the broom could
+  she did?  She makes one essentially yelled out assertion that the broom could
   have come from him, and when [Harry][] does not immediately agree, she goes
   and reports to [Professor McGonagall][].  I can see that most teens would be
   uncomfortable calling in authority this way, and thus that very few if any
@@ -75,16 +77,16 @@ disagree?
   to recognise that [Harry][] disagrees, and is not wrong to do so.  
 * They disagreed over the rescue in 5th year.  Hermione was right, but she
   handled it badly.  Here I am mostly inclined to give Hermione a total pass,
-  she was 16 and in over her head dealing with an adult situation. 
+  she was 16 and in over her head dealing with an adult situation.
 * They disagreed over [Malfoy][] as a death eater.  [Harry][] was right.  I
-* have read at least one fan fiction where Hermione eventually admits that she
-  was, in sixth year, scared.[^20210818-1]  It is also possible that she is
+  have read at least one fan fiction where Hermione eventually admits that she
+  was, in sixth year, scared.[^210818-1]  It is also possible that she is
   reacting to the way that [Ron][] and [Harry][] blamed [Malfoy][] second year,
-  when he was, that time, innocent.[^20210818-2]  Either way, it is clear that
+  when he was, that time, innocent.[^210818-2]  Either way, it is clear that
   she is not *really* considering anything [Harry][] says about [Malfoy][] over
   the course of this year.
   Neither does anyone else.  In retrospect we know that this is because of
-  [Dumbledore][]'s overconfidence.[^20210818-3]  Either she is in denial
+  [Dumbledore][]'s overconfidence.[^210818-3]  Either she is in denial
   (understandable, but unacceptable from someone lauded as being strong), or
   she was massively, stupidly, overly confident in authority to the point of
   abdicating responsibly for her own life and safety.  If the former, she is a
@@ -93,11 +95,13 @@ disagree?
 * They disagreed over going to Godric's Hollow.  Again a draw - it was a trap,
   but there was a horcrux there that could have been destroyed if they had
   planned better. 
-* They disagreed over a Horcrux in Hogwarts.  [Harry][] was right.  
+* They disagreed over a Horcrux in Hogwarts.  [Harry][] was right.  If Hermione
+  had her way, the war would *never* have ended.  It is worth pointing out here
+  that, per [Harry][]'s vision of [Dumbledore][] at King's Cross, his plan in
+  having her accompany [Harry][] was for her to *slow him down*.[^230208-1]
 * They disagreed over the Hollows.  We are unsure over the importance of being
   Master of Death, so we cannot be sure how to call this one.
-* They disagree over House Elves.  As the article says, we lack the information
-  to call this one.
+* They disagree over House Elves.  We lack the information to call this one.
 * They disagree over the potions book.  Despite the use of Sectumsempra, I think
   [Harry][] was right on this one.   Certainly Hermione's *reasoning* was wrong even
   if her conclusion was partially correct.
@@ -108,25 +112,31 @@ disagree?
 
 [Malfoy]: <{{< relref "../../Malfoy/Draco_Lucius" >}}>
 
+[^230208-1]: Mrs. J. K. Rowling. _[Harry Potter and the Deathly Hallows][]_ Pottermore Publishing. American Kindle Edition. Page 245.
+
+[Harry Potter and the Deathly Hallows]: <https://www.librarything.com/work/3577382>
+
 In other words, if [Harry][] had been allowed to stand up to Hermione, he could
 have been allowed to show case his own reasoning skills and to have taken charge
 more.  He would then have been more of the leader, more of [Riddle][]'s equal.
 
-### Crookshanks 
+## Crookshanks 
 
 But that's almost an aside.  The real thing that upsets me is the stuff that is
-covered in that essay, plus the fact that if you pay attention in _Prisoner of
-Azkaban_, Hermione is in fact incredibly insensitive.  I am not faulting her
+covered in that essay, plus the fact that if you pay attention in _[Prisoner of
+Azkaban][]_, Hermione is in fact incredibly insensitive.  I am not faulting her
 for buying Crookshanks.  She is not obligated to avoid owning a cat just because
-[Ron][] owns a rat.  Hedwig should have been just as prone to attacking Scabbers as
-Crookshanks, the reality of the pets chosen for Hogwarts is that some of them
-are predators of others of them. Owls eat small cats if they can, cats eat small
-owls if they can.  Both will kill toads if they are given a chance.  Rats aren't
-even on the approved list, probably precisely because the two most common pets
-will so commonly hunt them. 
+[Ron][] owns a rat.  Hedwig should have been just as prone to attacking
+Scabbers as Crookshanks, the reality of the pets chosen for Hogwarts is that
+some of them are predators of others of them. Owls eat small cats if they can,
+cats eat small owls if they can.  Both will kill toads if they are given a
+chance.  Rats aren't even on the approved list, probably precisely because the
+two most common pets will so commonly hunt them. 
+
+[Prisoner of Azkaban]: <https://www.librarything.com/work/2742161/book/225886376>
 
 The problem is not her choice of pet, the problem is her attitude.  Hermione is
-headless and uncaring.  Sure it is natural that Crookshanks would hunt Scabbers.
+heedless and uncaring.  Sure it is natural that Crookshanks would hunt Scabbers.
 *So why would Hermione carry him into the boy's dorm with her?* We never hear of
 any other cats wandering around the common room, any of which would be equally
 likely to attack Scabbers.  Presumably these other cats are kept contained in
@@ -135,7 +145,7 @@ Hermione never held responsible for Crookshank's habit of wandering around
 campus? Sure Mrs. Noris does, but are there really only two cats in Hogwarts
 when it is one of the three approved pets? I think it far more likely that all
 the other cats are *kept contained.*  Strange cats would fight if they were not
-kept relatively segregated. Alternately, perhaps magical cat pets are normally
+kept relatively segregated.  Alternately, perhaps magical cat pets are normally
 abnormally well behaved.  If that is the case, Crookshanks is *quite* the
 exception, and Hermione should have been called to *do something* about it, or
 send him home.  Worse, while she does burst into tears now and then, she never
@@ -143,7 +153,7 @@ does express sorrow for the pain her cat has caused [Ron][].  If my cat ate my
 best friend's pet, I might not blame the cat, but I would apologise for
 allowing it to happen. 
 
-### Veela (and Fleur in particular)
+## Veela (and Fleur in particular)
 
 It really comes down to the same thing when you look at Hermione's reaction to
 [Fleur Delacour][].  The girls at Hogwarts universally hate [Fleur][] because
@@ -176,11 +186,11 @@ then read the description from the false Moody's lesson.  They are not
 precisely the same, but the similarities are very very real.  [Harry][]
 describes both as a pleasant feeling that makes it hard to think, hard to
 consider disagreeing, makes him *want* to go long.  It would not surprise me if
-Veela were considered "dark" creatures,[^20200707-1] and there would be good
+Veela were considered "dark" creatures,[^200707-1] and there would be good
 reason for it.  [Fleur][] is not evil, she dislikes the effect she has on the
 males around her, and a "dark" creature would either not care or would active
 revel in her power over the helpless males.  You could, however, understand a
-government who either did not make that fine distinction, or who judged the
+government that either did not make this fine distinction, or who judged the
 entire race of Veela based on the action of a subset who *did* abuse the ability. 
 
 Hermione might not have liked that [Ron][] did react, but she would have known
@@ -189,10 +199,40 @@ dark creature and have given [Ron][] a pass, or she would recognise that
 [Fleur][] dislikes the effect, and champion her as a misunderstood and
 oppressed magical species just as she does the house elves.  If the later, she
 would have given [Fleur][] a pass.  Blaming both for the effect is basically
-displaying the worst of shallow female  jealousy.  It is the kind of behaviour
+displaying the worst of shallow female jealousy.  It is the kind of behaviour
 that she would normally ascribe to Pansy.
 
-### Hermione's Parents
+## Advice to [Ginny][]
+
+Hermione *is* a very shallow female in many ways though, something we see when
+we look at the the advice she gives to [Ginny][] for dealing with a
+debilitating crush.  The boy you like is not paying attention to you?  Date
+some other guys.  The cynical part of me hears this as "Make him jealous" which
+happens to work in this case, [Harry][] *does* get jealous of [Dean][], but is
+not a smart strategy.[^230208-2] 
+
+[^230208-2]: Ms. Davia Sills. "[Inducing Jealousy to Get Your Mate's Attention][]"
+    _[Psycology Today][]_ 2011-11-30.  This is essentially written at a
+    lay-person, but it has the citations to back it up.  From my perspective a
+    more serious flaw is the secular approach, but for this purpose that might
+    actually be better?
+
+[Inducing Jealousy to Get Your Mate's Attention]: <https://www.psychologytoday.com/us/blog/loves-evolver/201111/inducing-jealousy-get-your-mates-attention>
+
+[Psycology Today]: <https://www.psychologytoday.com/>
+
+[Dean]: <{{< relref "Dean" >}}>
+
+The jealousy angle aside though, having [Ginny][] using dating to build
+confidence was both high risk and unfair to the guys [Ginny][] dated.  High
+risk in that the breakups and rejection that [Ginny][] might have faced *in*
+those relationships might have destroyed the confidence that Hermione was
+hoping to build up.  Unfair in that [Ginny][] was entering relationships
+*intending* them to be temporary, *intending* to breakup with the guys
+eventually when [Harry][] someday noticed her.   This might be perfectly good
+from pop culture's standpoint, but it is *horrible* morality. 
+
+## Hermione's Parents
 
 Hermione's relationship with her own parents is one of the more curious things
 in the series.  She seems to spend less and less time with her parents, and by
@@ -260,7 +300,7 @@ myself in Australia having had no say in going, I would be massively upset.
 The person who caused this would have to admit to having *been wrong to do so* to
 repair that relationship.  If they do not, how can I trust them?  
 
-### Conclusion
+## Conclusion
 
 Overall it is really easy to fall into a Hermione bashing trap.  I do not want
 to do that.  I think Hermione is an eminently redeemable character.  She means
@@ -300,40 +340,41 @@ year, though it is anyone's guess which specific event would be one too many.
 
 [TSWoHA]: https://www.fanfiction.net/s/5858832
 
-[^20210818-3]: Mrs. J. K. Rowling.
+[^210818-3]: Mrs. J. K. Rowling.
     _[Harry Potter and the Half-Blood Prince](https://www.goodreads.com/book/show/1.Harry_Potter_and_the_Half_Blood_Prince)_
     Pottermore Publishing. American Kindle Edition.  I do not have a specific
-    page, but I doubt [[Dumbledore|adults/Dumbledore]] expected Malfoy to
+    page, but I doubt [Dumbledore][] expected Malfoy to
     successfully bring Death Eaters into Hogwarts. 
 
-[^20210818-2]: Mrs. J. K. Rowling.
+[^210818-2]: Mrs. J. K. Rowling.
     _[Harry Potter and the Chamber of Secrets](https://www.goodreads.com/book/show/15881.Harry_Potter_and_the_Chamber_of_Secrets)_ 
     Pottermore Limited. American Kindle Edition.  page citation needed. 
 
-[^20210818-1]: Stories include:
+[^210818-1]: Stories include:
     * kb0. _[Harry Potter: Air Elemental](https://www.fanfiction.net/s/11995519)_
 	  Pubished: 2016-06-12. Updated: 2016-10-29.
 
-[^20200707-1]: Yanna N. 
+[^200707-1]: Yanna N. 
     "[Veelas – What Exactly Are The Slavic Seductresses From Harry Potter?](https://www.slavorum.org/veelas-what-exactly-are-the-slavic-seductresses-from-harry-potter/)" 
     [The Official Slavorum](https://www.slavorum.org/) Last Viewed 2020-07-07. 
-    [Wikipedia](https://en.wikipedia.org/) "[Samodiva (folklore)](https://en.wikipedia.org/wiki/Samodiva_(folklore\))" Last Viewed 2020-07-07. 
+    [Wikipedia](https://en.wikipedia.org/) "[Samodiva \(folklore\)][Samodiva]"
+    Last Viewed 2020-07-07. 
 
-[^20210324-2]: HarnGin.
+[Samodiva]: <https://en.wikipedia.org/wiki/Samodiva_(folklore)>
+
+[^210324-2]: HarnGin.
     _[HJG: The Smartest Witch of Her Age?](https://www.fanfiction.net/s/5858832)_
     Published: 2010-03-31. Last Viewed: 2021-03-24.
 
-[^20200706-4]: Ms. Vivian Onim. "[Why is Hermione never portrayed as wrong in
+[^200706-4]: Ms. Vivian Onim. "[Why is Hermione never portrayed as wrong in
     the Harry Potter books? Practically everything she does is praised, and her
     flaws seem to lessen with each book until she’s basically perfect by the end,
     why is this?](https://www.quora.com/Why-is-Hermione-never-portrayed-as-wrong-in-the-Harry-Potter-books-Practically-everything-she-does-is-praised-and-her-flaws-seem-to-lessen-with-each-book-until-she-s-basically-perfect-by-the-end-why-is-this)"
     [Quora](https://www.quora.com/) 2018-08-08.  Last Viewed 2020-07-06. 
 
-[^20200706-3]: Ms. Vivian Onim. "[Why is Hermione never portrayed as wrong in
+[^200706-3]: Ms. Vivian Onim. "[Why is Hermione never portrayed as wrong in
     the Harry Potter books? Practically everything she does is praised, and her
     flaws seem to lessen with each book until she’s basically perfect by the end,
     why is this?](https://www.quora.com/Why-is-Hermione-never-portrayed-as-wrong-in-the-Harry-Potter-books-Practically-everything-she-does-is-praised-and-her-flaws-seem-to-lessen-with-each-book-until-she-s-basically-perfect-by-the-end-why-is-this)"
     [Quora](https://www.quora.com/) 2018-08-08.  Last Viewed 2020-07-06. 
 
-[[!tag "HP Notes"]]
-[[!meta title="Hermione Jane Granger"]]
