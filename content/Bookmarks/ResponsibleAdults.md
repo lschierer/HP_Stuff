@@ -51,9 +51,9 @@ _[The Paths Diverge](https://www.fanfiction.net/s/7247199)_
 _[Petrification Proliferation](https://www.fanfiction.net/s/11265467)_
 :   * Author: White Squirrel
     * Published: 2015-05-22. Updated: 2016-05-29.
-    * Comments: In this story a [basilisk]({{< ref "Harrypedia/animals/basilisk" >}}) 
-      is treated as a weapon of mass destruction.  There are mandatory
-      procedures in place that are actually followed.  
+    * Comments: In this story a [basilisk][] is treated as a weapon of mass
+      destruction.  There are mandatory procedures in place that are actually
+      followed.  
 
 _[The Boy Who Never Knew](https://www.fanfiction.net/s/6681967)_
 :   * Author: dunuelos
@@ -104,6 +104,13 @@ _[Defending Sirius Black](https://www.fanfiction.net/s/7911105/)_
         he is, whatever his motives, forcing the other adults to act
         responsibly, however unwillingly they do so.
 
+_[Downfall of Snape](https://www.fanfiction.net/s/13338897/1/Downfall-of-Snape)_
+:     * Author: cornholio4
+      * Published: 2019-07-16.
+      * Comments: This one-shot shows that things could have been quite
+        different if nearly any adult had been willing to take responsibility
+        for dealing with [Snape][]'s behaviour towards students.
+
 _[Blindsided](https://www.fanfiction.net/s/13455367)_
 :     * Author: MBurris
       * Published: 2019-12-18. Updated: 2021-04-21.
@@ -119,9 +126,37 @@ _[Blindsided](https://www.fanfiction.net/s/13455367)_
         and the honest look at [Hermione][] is refreshing, especially for an
         author who features her so prominently. 
 
-[HpediaD1]: <{{< ref "Harrypedia/people/Dumbledore/Albus_Percival_Wulfric_Brian" >}}>
+_[I object!](https://www.fanfiction.net/s/13230876)_
+:    * Author: [PseudonymousEntity](https://www.fanfiction.net/u/5588410/PseudonymousEntity)
+     * Published: 2019-03-11
+     * Comments: [Legally Blonde](https://www.imdb.com/title/tt0250494/) might
+       have been made for a Harry Potter crossover.  A lawyer who cannot quite
+       fit in totally fits in with the way Mrs. Rowling depicts wizards as
+       being unable to quite grasp non-magical fashion.   The contrast between
+       [Elle Woods][] and [Umbridge][] is incredibly funny.  I have seen this
+       tried a few other times, but none do it quite so well.
 
-[^221214-2] [Wikipedia](https://wikipedia.org).  {{< wikipedia "Emancipation of minors" >}} Last edited 2022-10-12.
+_[A Wizarding Reckoning](https://archiveofourown.org/works/38570640)_
+:    * Author: [Anafandom](https://archiveofourown.org/users/Anafandom/pseuds/Anafandom)
+     * Published: 2022-04-24. Updated: 2023-01-01.
+     * Comments: This is yet another collection of one-shots.  In fact, several
+       one-shots per chapter.  The first snippet in Chapter 1 is … unlikely.
+       [McGonagall][] will not be proactive that way.  The second is better.
+       The third is an awesome AU.  The one marked "5" in Chapter 2 shows what
+       it would take to redeem [Lupin][] as a character.  The one marked "6" is
+       what I would *like* to see in a Goblet of Fire fan fiction.  Too often
+       these involve bashing characters instead.  "7" in Chapter 3"
+       demonstrates exactly what is wrong with [Snape][]'s obsession with
+       [Lily][].  #s 8-10 are effectively a single work.  It shows a redeemed
+       [Sirius][].  #12 (Chapter 4) shows a redeemed [Sprout][].  #13 is
+       fatally flawed - though it shows why [Snape][] could not have delayed
+       his return, by showing what would have happened had he done so.
+
+[Elle Woods]: <https://www.imdb.com/title/tt0250494/characters/nm0000702?ref_=tt_cl_c_1>
+
+[Umbrdige]: <{{< relref "../Harrypedia/people/Umbridge/Delores_Jane" >}}> 
+
+[^221214-2]: [Wikipedia](https://wikipedia.org).  {{< wikipedia "Emancipation of minors" >}} Last edited 2022-10-12.
 
 [Hermione]: <{{< relref "Hermione_Jean" >}}>
 
@@ -138,4 +173,14 @@ _[Blindsided](https://www.fanfiction.net/s/13455367)_
 [McGonagall]: <{{< relref "Minerva" >}}>
 
 [Dursleys]: <{{< relref "../Harrypedia/people/Dursley" >}}>
+
+[HpediaD1]: <{{< ref "Harrypedia/people/Dumbledore/Albus_Percival_Wulfric_Brian" >}}>
+
+[basilisk]: <{{< relref "../Harrypedia/animals/basilisk" >}}>
+
+[Lupin]: <{{< relref "../Harrypedia/people/Lupin/Remus_John" >}}>
+
+[Lily]: <{{< relref "../Harrypedia/people/Evans/Lily_J." >}}>
+
+[Sprout]: <{{< relref "../Harrypedia/people/Sprout/Pomona" >}}>
 

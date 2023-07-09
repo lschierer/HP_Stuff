@@ -33,6 +33,11 @@ does he need glasses?
 
 ---
 
+> “Your father, on the other hand, favored a mahogany wand.  Eleven inches. Pliable. A little more power and excellent for transfiguration. Well, I say your father favored it it’s really the wand that chooses the wizard, of course.”[^230628-1]
+
+
+---
+
 > “Who wants to be in Slytherin? I think I’d leave, wouldn’t you?” James asked
 > the boy lounging on the seats opposite him, and with a jolt, Harry realized
 > that it was Sirius. Sirius did not smile.
@@ -402,6 +407,12 @@ been guilty of poor targeting and have occasionally over-reacted, but he was
 
 [^20210128-26]: Wizarding World characters, names and related indicia are ™ and © of Warner Bros. Entertainment Inc. All rights reserved. 
     Archived version of [Pottermore](https://www.pottermore.com), article on [James Potter](https://web.archive.org/web/20190108143612/https://www.pottermore.com/explore-the-story/james-potter), archived 2019-01-08. Last Viewed 2021-01-28.
+
+[^230628-1]: Mrs. J. K. Rowling. 
+    _[Harry Potter and the Sorcerer's Stone][]
+    p. 82. Pottermore Limited. American Kindle Edition. 
+
+[Harry Potter and the Sorcerer's Stone]: <https://www.librarything.com/work/5403381/book/225886281>
 
 [^20210920-1]: Mrs. J. K. Rowling.
     _[Harry Potter and the Deathly Hallows](https://www.goodreads.com/book/show/136251.Harry_Potter_and_the_Deathly_Hallows)_

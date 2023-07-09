@@ -36,6 +36,23 @@ _[I'm Where][GAFRIW1]_
       needs to win, but England is gone.  He goes back and time, quite insane.
       The Sorting Hat reluctantly allows him to change future history. 
 
+_[The 169-verse](https://archiveofourown.org/series/2882454)_
+:   * Author: [Soupy_George](https://archiveofourown.org/users/Soupy_George/pseuds/Soupy_George)
+    * Published: 2014-01-07. Updated: 2022-04-18.
+    * Comments:  For any given filter, no matter how reasonable, there is an
+      exception.  I am not usually a fan of pairing Hermione with random
+      adults.  However, a time traveller who remains in her adult body
+      interacting with other adult characters lacks much of the creepy factor
+      that makes that so objectionable.  This work features the many-worlds
+      theory of time travel.  I admit I prefer the approach where you actually
+      change the past and thus, if you can return, the present you return to.
+      That being said, there is much that is well done in this story.  Of
+      particular note, it is said at multiple points that [Riddle][] probably
+      intended to create his final [horcrux][] with [Harry][]'s death.  What
+      artefact did he intend to use?
+
+[horcrux]: <{{< relref "Horcruxes" >}}>
+
 [HH1]: https://bobmin.fanficauthors.net/Healing_Harry
 
 [GAFRIW1]: https://www.fanfiction.net/s/6126906
@@ -50,3 +67,4 @@ _[I'm Where][GAFRIW1]_
 
 [Harry]: <{{< relref "Harry_James" >}}>
 
+[Riddle]: <{{< relref "Tom_Marvolo" >}}>
