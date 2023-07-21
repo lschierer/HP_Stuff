@@ -39,7 +39,7 @@ This begs the question "What do you mean by expected?"  Obviously there is no
 standards body anywhere in the world that is grading students using these
 categories.  The nephil in this world have not accepted that they are descended
 from angels, and thus do not think of their abilities in terms of the angelic
-choirs.  What I mean is that someone who does not meet the stated goal is being
+choirs.  What I mean is that, given adequate but not necessarily superlative instruction, someone who does not meet the stated goal is being
 lazy, suppressing their abilities, or both.  They are neglecting their own
 strengths.  
 
@@ -83,7 +83,7 @@ From the Thrones
     inheritance from them is, again like that from the Seraphim, much more
     active.  The nephil has the ability to bind the will of other nephilim, and
     to defend against being so bound.  For the purposes of this story, and
-    *unlike cannon Harry Potter*, this ability has marginal *at best* affect on
+    *unlike cannon Harry Potter*, this ability has marginal *at best* effect on
     full humans. Things like the imperious curse or the confundus charm fit in
     here.  Thus fan fiction concepts like magical contracts are actually
     possible.[^221119-1]

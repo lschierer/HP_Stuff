@@ -17,6 +17,8 @@ These are contracts in the sense that at least one party agrees to do or be
 something to, for, or with the other party, possibly, but not necessarily, in
 exchange for something. 
 
+## Who can enter 
+
 Contracts can be agreed to by proxy.  Your proxy must be related to you 
 * with an imbalanced power relationship
   * a parent can agree for a child
@@ -47,9 +49,33 @@ Contracts can be agreed to by proxy.  Your proxy must be related to you
 Contracts can be implicitly agreed to.  Harry, but walking to the front of the
 hall, joining the other champions in the side room, and staying for the
 directions to the first tasks, implicitly accepted that he was in fact a
-TriWizard contestant.   This may or may not matter (see above about delegated
-parental authority) in the canon books, but I am going to assume it does matter
-magically in the general case.  
+TriWizard contestant.   This may or may not matter for that particular case 
+(see above about delegated parental authority) in the canon books, but I am 
+going to assume it does matter magically in the general case.  
+
+## Restrictions
+
+Contracts need not be written on special paper, but they must be formal
+agreements in some way.  There are many ways to formalise an agreement.  Common
+ones include, but are not limited to:
+* full legal signature on a paper (or parchment) contract
+* formal statement of agreement "I, <name>, agree to xyz"
+* repeated statements of agreement using significant numbers in short durations.
+  * uses of three and seven
+* acting as if bound to the contract (ie common law marriage) for either
+  magically significant durations or contractually significant events/actions
+  that are distinctly related to contract and clearly not part of your
+  non-contract/pre-contract normal life
+  * marriages are consummated
+  * the TriWizard champions processed out of the room
+  * engagement rings
+  * being sorted by the Sorting Hat
+
+Contracts do *something*.  Person A agrees to do something or be something 
+for Person B.  The contract may or may not be one sided.  The contract may or 
+may not have penalties.
+
+## Effects 
 
 Contracts cannot force you to do something the way the [Imperius][] curse does.
 Rather, it forces behaviour through the existence of penalties.  You can break
@@ -88,6 +114,10 @@ marriage, but would provide a strong incentive to do so.  A stronger contract
 might make you physically ill or even die if you failed to go through with the
 marriage.
 
+## Implications
+
+### Marriage 
+
 The Church has had to figure out how to deal with nephil caught in such
 contracts.  What do you do when you validly marry someone in the Church, then
 your non-Catholic parent contracts you to someone else with a death clause?
@@ -97,7 +127,7 @@ that your free will is compromised.  What about lesser penalties?  How much of
 a penalty can a nephil be expected to endure before we consider his/her free
 will compromised?  What if the contract pre-existed the valid marriage, is that
 grounds for an annulment?  Would that be true only if one or both parties knew
-of the contract?   What if the married nephil, through careless words or
+of the contract?  What if the married nephil, through careless words or
 actions, enters him/herself into a marriage contract, or worse, more than one?  
 
 Does it matter if it is not a matter of lack of care, but rather a matter of
@@ -115,20 +145,53 @@ your health and psyche for life.   You would be far more careful about agreeing
 to something half heard while you focus on the book you are reading, or signing
 something unread.
 
-Contracts need not be written on special paper, but they must be formal
-agreements in some way.  There are many ways to formalise an agreement.  Common
-ones include, but are not limited to:
-* full legal signature on a paper (or parchment) contract
-* formal statement of agreement "I, <name>, agree to xyz"
-* repeated statements of agreement using significant numbers in short durations.
-  * uses of three and seven
-* acting as if bound to the contract (ie common law marriage) for either magically significant durations or contractually significant events/actions that are distinctly related to contract and clearly not part of your non-contract/pre-contract normal life
-  * marriages are consummated
-  * the TriWizard champions processed out of the room
-  * engagement rings
-  * being sorted by the Sorting Hat
+### Debt
 
-Contracts do *something*.  Person A agrees to do something or be something for Person B.  The contract may or may not be one sided.  The contract may or may not have penalties.  
+This is the other very interesting situation that leads to all sorts of wierd societal
+issues.  Alice accepts, in some formal way, that she owes Bob.  This can be thought of 
+in one of two ways, either of which *can* lead to a magical contract.  Alice has 
+agreed *to be* in a state of debt until x occurs or alternately, Alice has agreed
+to pay Bob back.  The first is a contract to be something, the second a contract to
+do something.  If the debt *can be paid*, well and good.  Alice pays her debt, and
+is free of the contract.  
+
+However, what if the debt cannot be paid?  If Alice owes her life, or the life of her
+child (in extreme but still realistic cases)?  Or in less extreme cases, what if she
+simply owes more money than she can earn while keeping herself alive?  
+
+Because these are unstated contracts, if they form at all, they form *because of* 
+expectations that the nephil themselves have formed over the centuries.  Some of these
+date back to times and places like the Roman Empire where debt slavery was a common legal
+practice.  While the laws of the societies that the nephil live in have changed, the 
+nephil have come to expect that magic can and does create these contracts for these 
+situations.  The terms of these contracts then are set unconsciously by the principles, 
+in accord with these norms passed down as part of the body of folk lore, legend, history, and myth that
+they are raised with.
+
+This kind of contract thus operates somewhat differently from other formal contracts
+that a nephil might carelessly or unwittingly enter into.  Someone like Hermione, raised
+with no thought of slavery, would be incapable of unconsciously binding herself into
+slavery by accepting a debt.  Someone like Draco, whose family lore is filled with 
+stories of using debts in precisely this manner, is actually himself at greater risk 
+of being so bound.  A family like the Weasleys would fall somewhere in the middle.
+
+Lastly, children, because they are more absolute in their thinking, more accepting of 
+the idea that anything is possible, are more easily bound this way than adults.  Thus 
+nephil societies almost universally have a tendency to isolate their children from all 
+but the most trusted of friends and relations.  A nephil child aware of his/her 
+heritage will frequently grow up knowing only his/her own extended family and one or 
+two other families until it is time to enter an apprenticeship, join a magical 
+secondary school (such as Hogwarts), or (if home schooled) join the workforce as an 
+adult.
+
+Note this does not always lead to slavery.  It can also lead to what some call 
+Spontaneous Magical Marriage, a form of marriage contract in which both parties may or 
+may not have any power imbalance at all, but which old nephil families have learned, 
+generally the hard way, usually caries particularly harsh penalties.  For my purposes 
+it is because of such a SMM event that the Black family allowed the marriage of Pollux 
+Black to Irma Crabbe at 13 years old.[^230711-1]  These two families with their history
+of dark dealings neither one wanted to risk the penalties that the children may have
+made themselves liable to. 
 
 [ac]: <{{< relref "Appendix_C" >}}>
 
@@ -145,3 +208,7 @@ Contracts do *something*.  Person A agrees to do something or be something for P
       Published: 2015-03-16.
 
 [^230103-3]: I do not recall which TriWizard Fan Fiction I read this in. 
+
+[^230711-1]: See the [Black Family Tree]
+
+[Black Family Tree]: <https://www.hp-lexicon.org/source/other-canon/bft/>
