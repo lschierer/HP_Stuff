@@ -1,0 +1,36 @@
+{
+    "spells": [
+        {
+            "Accio": {
+                "description": "Can be blocked by anti-theft charms. Causes objects to fly through the air to the caster. The description is inconsistent, it describes cattle being summoned, but then says that most living creatures cannot be summoned.",
+                "categorization": "charm"
+            }
+        },
+        {
+            "Aguamenti": {
+                "description": "Conjures clean drinkable water from the end of the wand.2 Appears to be a violation of Gramp's Law?",
+                "categorization": "unknown"
+            }
+        },
+        {
+            "Alohomora": {
+                "history": "Introduced in the early 1600s from Africa by Eldon Elsrickle.",
+                "description": "unlock locks",
+                "categorization": "charm"
+            }
+        },
+        {
+            "Anti-Alohomora": {
+                "history": "Developed by Blagdon Blay.",
+                "description": "prevent Alohomora from working.",
+                "categorization": "charm"
+            }
+        },
+        {
+            "Aparecium": {
+                "description": "Shows ink and messages hidden by magical means, overcoming most basic concealment charms.",
+                "categorization": "charm"
+            }
+        }
+    ]
+}
