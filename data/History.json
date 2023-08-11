@@ -1,0 +1,24 @@
+{
+	{ 
+		"date": "0410-01-01",
+		"events": [
+			{
+				"description": 	"Romans pulled out of Britain around 410[^20200623-1].  While Hadrian's wall   isn't technically the furthest north they ever went, it seems to be the furthest consistently controlled, and probably represents the northern bounds of Christianity. Note, that bit about Christianity is pure speculation on my part.",
+				"source": "[^20200623-1]"
+			},
+			{
+				"description": "Interestingly, the oldest known 'split-nib metal dip pen' dates from around then.",
+				"source": "[^20200816-1]"
+			}
+		]
+	},
+	{
+		"date": "0500-01-01",
+		"events": [
+			{
+				"description": "While the historical reality of King Arthur is uncertain, he would necessarily exist in this timeline.  To the extent that King Arthur and Merlin are historical, they are somewhere in the 500s.[^20200713-3]  Merlin could not have been sorted into Slytherin, despite the Pottermore claims.",
+				"source": "[^20200713-3], [^20210111-1]"
+			}
+		]
+	}
+}
