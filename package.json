@@ -1,0 +1,31 @@
+{
+  "name": "hp-stuff",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/lit": "^2.1.1",
+    "@astrojs/starlight": "^0.7.1",
+    "@nanostores/lit": "^0.1.5",
+    "@nanostores/query": "^0.2.4",
+    "@webcomponents/template-shadowroot": "^0.2.1",
+    "astro": "2.10.5",
+    "boolbase": "^1.0.0",
+    "gedcom-ts": "^1.1.1",
+    "genealogit": "^1.2.3",
+    "lit": "^2.8.0",
+    "nanostores": "^0.9.3",
+    "read-gedcom": "^0.3.2",
+    "sharp": "^0.32.4"
+  },
+  "devDependencies": {
+    "@types/boolbase": "^1.0.1",
+    "is-stream": "^3.0.0"
+  }
+}
