@@ -1,0 +1,22 @@
+.children | 
+map(
+	select(
+		.type == "INDI" and
+		.data.xref_id == "@I0007@"
+	)
+)|
+.[]
+
+#				.type == "NAME" and
+#				(
+#					.children[] |
+#					select(
+#						.type == "GIVN" and
+#						.value == "Sirius"
+#					)
+#				)
+#			)
+#		)
+#	)
+#) |
+#.[]
