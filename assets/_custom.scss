@@ -1,0 +1,48 @@
+[x-cloak] { display: none !important; }
+
+.book-brand {
+	margin-top: 0;
+	margin-bottom: $padding-16;
+
+	p {
+		font-size: $font-size-12;
+	}
+
+	img {
+		font-size: $font-size-24;
+		width: 100%;
+	}
+}
+
+.book-menu {
+	flex: 0 0 $menu-width;
+	font-size: $font-size-14;
+
+	.book-menu-content {
+		width: $menu-width;
+		padding: $padding-16;
+		background: #B2BABB;
+
+		@include fixed;
+	}
+
+	a,
+	label {
+		color: inherit;
+		cursor: pointer;
+		word-wrap: break-word;
+	}
+
+	a.active {
+		color: var(--color-link);
+	}
+
+	input.toggle:checked + label + ul {
+		display: block;
+	}
+
+	input.toggle + label::after {
+		content: "▸";
+	}
+}
+
