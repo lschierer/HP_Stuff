@@ -25,7 +25,3 @@ There will thus be three main sections to this site.
 [HPL]: https://www.hp-lexicon.org/
 [HPW]: https://harrypotter.fandom.com/wiki/Main_Page
 [HPL2]: https://www.hp-lexicon.org/
-
-## Next steps
-
-<top-cardgrid ></top-cardgrid>

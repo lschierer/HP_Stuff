@@ -1,0 +1,23 @@
+@import "@spectrum-css/tokens/dist/index.css";
+@import "@spectrum-css/page/dist/index.css";
+@import "@spectrum-css/typography/dist/index.css";
+@import "@spectrum-css/splitview/dist/index.css";
+@import "@spectrum-css/sidenav/dist/index.css";
+
+body {
+  margin: 0px;
+}
+
+main {
+  margin: 2rem;
+}
+
+.imgCompare {
+  display: flex;
+  flex-direction: row;
+
+  & img {
+    width: 40%;
+    height: 100%;
+  }
+}

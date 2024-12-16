@@ -4,15 +4,17 @@ import {
   LitElement,
   css,
   type TemplateResult,
-  nothing,
   type PropertyValues,
 } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-const DEBUG = 1;
+const DEBUG = false;
 
-import { type CardDetails as CardDetail } from "../lib/CardDetails.ts";
+import { type CardDetails as CardDetail } from "../lib/CardDetails";
 export type CardDetails = CardDetail;
+
+//@ts-expect-error unused import
+import { HorizontalCard } from "./horizontal-card";
 
 @customElement("card-grid")
 export class CardGrid extends LitElement {
@@ -28,9 +30,9 @@ export class CardGrid extends LitElement {
     }
   `;
 
-  static styles = [CardGrid.localStyles];
+  static override styles = [CardGrid.localStyles];
 
-  protected willUpdate(_changedProperties: PropertyValues): void {
+  protected override willUpdate(_changedProperties: PropertyValues): void {
     super.willUpdate(_changedProperties);
     if (
       _changedProperties.has("gridCards") ||
@@ -48,7 +50,7 @@ export class CardGrid extends LitElement {
     }
   }
 
-  protected render() {
+  protected override render() {
     if (DEBUG) {
       console.log(`CardGrid render start`);
     }
@@ -61,8 +63,8 @@ export class CardGrid extends LitElement {
             iconName="${section.name}"
             iconHeight="1.2rem"
             iconWidth="1.2rem"
-            description="${section.description ?? nothing}"
-            targetLocation=${section.target ?? nothing}
+            description="${section.description ?? ""}"
+            targetLocation=${section.target ?? ""}
           ></horizontal-card>
         `);
       });

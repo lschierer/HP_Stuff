@@ -4,6 +4,8 @@ import { customElement, property, state } from "lit/decorators.js";
 
 const DEBUG = false;
 
+import "iconify-icon";
+
 //@ts-expect-error
 import SpectrumCard from "@spectrum-css/card" with { type: "css" };
 
@@ -130,7 +132,7 @@ class HorizontalCard extends LitElement {
     }
   }
 
-  static styles = [
+  static override styles = [
     SpectrumCard,
     css`
       :host {
@@ -139,14 +141,14 @@ class HorizontalCard extends LitElement {
       .spectrum-Card-description {
         width: 20rem;
         height: fit-content;
-        text-wrap: balance;
+        white-space: normal balance;
         overflow-wrap: normal;
         white-space: normal;
       }
     `,
   ];
 
-  protected render() {
+  protected override render() {
     let iconHTML = html``;
     if (this.iconName.length > 0) {
       iconHTML = html`
