@@ -1,1 +1,1 @@
-import "iconify-icon/dist/iconify-icon.min.js";
+import "iconify-icon";
