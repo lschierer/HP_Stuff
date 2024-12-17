@@ -10,6 +10,7 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/mdx": "^4.0.2",
     "@astrojs/starlight": "^0.30.2",
     "@astrojs/ts-plugin": "^1.10.4",
     "@lit-labs/ssr-client": "^1.1.7",
@@ -26,10 +27,18 @@
     "astro": "^5.0.2",
     "components": "link:@astrojs/starlight/components",
     "iconify-icon": "^2.2.0",
+    "luxon": "^3.5.0",
+    "rehype-stringify": "^10.0.1",
+    "remark-gfm": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.1",
     "sharp": "^0.32.5",
+    "unified": "^11.0.5",
+    "yaml": "^2.6.1",
     "zod": "^3.24.1"
   },
   "devDependencies": {
+    "@types/luxon": "^3.4.2",
     "ts-lit-plugin": "^2.0.2"
   }
 }
