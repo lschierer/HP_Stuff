@@ -1,0 +1,15 @@
+{
+  "events": [
+    {
+      "type": "magical",
+      "blurb": "Arthur Weasley starts at Hogwarts",
+      "description": "[Arthur Weasley] starts Hogwarts.  A man named Ogg is game keepr.\nWe do not know if 'Ogg' is a first or last name.\n\n[Arthur Weasley]: <../people/weasley/arthur/>\n",
+      "source": "Mrs. J. K. Rowling. \n_[Harry Potter and the Goblet of Fire]_\nPottermore Limited. American Kindle Edition.\nApprox Kindle Location 9223 of 11332.\n\n[Harry Potter and the Goblet of Fire]: https://www.librarything.com/work/113\n"
+    },
+    {
+      "type": "magical",
+      "blurb": "Regulus Black born",
+      "source": "Mrs. J. K. Rowling.\n\"[The Noble and Most Ancient House of Black]\"\nOriginally Published: 2006-02-21. Last Viewed: 2023-12-04.\n\n[The Noble and Most Ancient House of Black]: https://www.rowlingindex.org/work/blacktree/\n"
+    }
+  ]
+}

@@ -5,7 +5,8 @@ import { docsLoader } from "@astrojs/starlight/loaders";
 
 import { Database } from "@lib/GrampsZodTypes";
 
-import { history, event } from "@schemas/index";
+import { history } from "@schemas/index";
+import { glob } from "astro/loaders";
 
 const HeroSchema = (ctx: SchemaContext) => docsSchema()(ctx).shape.hero;
 
@@ -18,5 +19,12 @@ export const collections = {
   docs: defineCollection({
     loader: docsLoader(),
     schema: extendedDocs,
+  }),
+  history: defineCollection({
+    loader: glob({
+      pattern: "**/*.json",
+      base: "./src/content/history",
+    }),
+    schema: history,
   }),
 };

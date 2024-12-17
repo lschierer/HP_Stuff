@@ -1,0 +1,16 @@
+{
+  "events": [
+    {
+      "type": "magical",
+      "date": 1752,
+      "blurb": "Goblin rebellion",
+      "source": "Mrs. J. K. Rowling.\n\"[Ministers of Magic](https://www.rowlingindex.org/work/msmpm/)\"\n_[The J.K. Rowling Index](https://www.rowlingindex.org/)_\nOriginally Published: 2014-10-31. Last Visited: 2023-12-05.\n"
+    },
+    {
+      "type": "mundane",
+      "date": "1752-06",
+      "blurb": "Benjamin Franklin proves the elecrical nature of lightening",
+      "source": "[Wikipedia](https://en.wikipedia.org/)\n\"[Kite experiment](https://en.wikipedia.org/wiki/Kite_experiment)\"\nLast Edited: 2021-07-14. Last Viewed: 2021-08-23.\n"
+    }
+  ]
+}

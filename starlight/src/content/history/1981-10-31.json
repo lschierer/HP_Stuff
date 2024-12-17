@@ -1,0 +1,21 @@
+{
+  "events": [
+    {
+      "type": "magical",
+      "blurb": "Sirius intended to check on Pettigrew",
+      "description": "The source text contradicts the mundane calendar and notes this is a  Wednesday.\n",
+      "source": "Mrs. J. K. Rowling. _Harry Potter and the Prisoner of Azkaban_\nChapter 10.\n"
+    },
+    {
+      "type": "magical",
+      "blurb": "Riddle attacks the Potters",
+      "source": "Mrs. J. K. Rowling. _[Harry Potter and the Philosopher's Stone]_\nChapter 1, various pages. Text copyright © 1998\n\n[Harry Potter and the Philosopher's Stone]: https://www.librarything.com/work/5403381\n"
+    },
+    {
+      "type": "magical",
+      "blurb": "Hagrid arrives before Sirius",
+      "description": "[Hagrid] is already holding [Harry] when [Sirius] arrives.  It is because [Sirius] cannot\nget [Hagrid] to give [Harry] up that [Sirius] decides to go after [Pettigrew].\n\n[Hagrid]: <../people/hagrid/rubeus/>\n\n[Sirius]: <../people/black/sirius_iii/>\n\n[Harry]: <../people/potter/harry_james/>\n\n[Pettigrew]: <../people/pettigrew/peter/>\n",
+      "source": "Mrs. J. K. Rowling. _Harry Potter and the Prisoner of Azkaban_\nChapter 10.\n"
+    }
+  ]
+}
