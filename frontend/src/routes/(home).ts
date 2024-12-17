@@ -12,7 +12,16 @@ interface Context {
 }
 export default defineRoute({
   document: (context: Context) =>
-    document({ ...context, title: String(indexDoc.meta.frontmatter.title) }),
+    document({
+      ...context,
+      title:
+        indexDoc.meta.frontmatter != undefined &&
+        indexDoc.meta.frontmatter != null &&
+        indexDoc.meta.frontmatter.title != undefined &&
+        indexDoc.meta.frontmatter.title != null
+          ? String(indexDoc.meta.frontmatter.title)
+          : "",
+    }),
 
   template: () => html`
     <main>

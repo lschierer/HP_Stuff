@@ -1,8 +1,8 @@
 import { defineRoute } from "@gracile/gracile/route";
 
-import { html } from "@gracile/gracile/server-html";
-
 import { document } from "../../layouts/base";
+
+import template from "../../layouts/two-column-page";
 
 import { Harrypedia } from "../../content/content";
 
@@ -23,8 +23,5 @@ export default defineRoute({
     })),
   document: (context) =>
     document({ ...context, title: String(context.props.title) }),
-  template: (context) => html`
-    <pre>${context.props.page}</pre>
-    <div class="content">${context.props.content}</div>
-  `,
+  template: (context) => template(context.props.content),
 });

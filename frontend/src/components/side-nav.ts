@@ -1,19 +1,18 @@
-import { type Page, sortPages } from "../lib/greenwoodPages.ts";
+import { TopLevelSections } from "../lib/topLevelSections";
 
-import {
-  getContentByRoute,
-  //@ts-expect-error
-} from "@greenwood/cli/src/data/client.js";
-
-import { TopLevelSections } from "../lib/topLevelSections.ts";
-//@ts-expect-error
-import SpectrumSideNav from "@spectrum-css/sidenav" with { type: "css" };
 import "@spectrum-web-components/theme/src/themes-core-tokens.js";
 import "@spectrum-web-components/sidenav/sp-sidenav.js";
 import "@spectrum-web-components/sidenav/sp-sidenav-heading.js";
 import "@spectrum-web-components/sidenav/sp-sidenav-item.js";
 
-const DEBUG = false;
+import type { MarkdownModule } from "@gracile/markdown/module";
+
+const DEBUG = true;
+
+interface Page {
+  route: string;
+  contents: MarkdownModule;
+}
 
 interface PageAndChildren {
   p: Page;
@@ -24,18 +23,121 @@ export default class SideNav extends HTMLElement {
   private route: string = "";
   private topSection: TopLevelSections | undefined = undefined;
 
+  private sortPages(a: Page, b: Page) {
+    if (a == undefined || a == null) {
+      if (b == undefined || b == null) {
+        return 0;
+      } else {
+        return 1;
+      }
+    } else if (b == undefined || b == null) {
+      return -1;
+    }
+    if (
+      a.contents.meta.frontmatter != undefined &&
+      Object.keys(a.contents.meta.frontmatter).includes("order")
+    ) {
+      if (
+        b.contents.meta.frontmatter != undefined &&
+        Object.keys(b.contents.meta.frontmatter).includes("order")
+      ) {
+        return String(a.contents.meta.frontmatter["order"]).localeCompare(
+          String(b.contents.meta.frontmatter["order"]),
+        );
+      } else {
+        return -1;
+      }
+    } else if (
+      b.contents.meta.frontmatter != undefined &&
+      Object.keys(b.contents.meta.frontmatter).includes("order")
+    ) {
+      return 1;
+    } else {
+      if (a.contents.meta.title.length > 0) {
+        if (b.contents.meta.title.length > 0) {
+          return a.contents.meta.title.localeCompare(b.contents.meta.title);
+        } else {
+          return a.contents.meta.title.localeCompare(b.contents.meta.slug);
+        }
+      } else if (b.contents.meta.title.length > 0) {
+        return a.contents.meta.slug.localeCompare(b.contents.meta.title);
+      } else {
+        return a.contents.meta.slug.localeCompare(b.contents.meta.slug);
+      }
+    }
+  }
+  private async getContentByRoute(route: string) {
+    const top = route.split("/")[1];
+    if (DEBUG) {
+      console.log(`getContentByRoute for route ${route} picked top ${top}`);
+    }
+    const content = await import("../content/content");
+    if (top !== undefined && Object.keys(content).includes(top)) {
+      const records = content[top as keyof typeof content];
+      const pages = new Array<Page>();
+      const keys = Object.keys(records);
+      const values = Object.values(records);
+      if (Array.isArray(keys) && keys.length > 0) {
+        for (let i = 0; i < keys.length; i++) {
+          let k = keys[i];
+          if (k !== undefined) {
+            const stack = k.split("/");
+            stack.shift();
+            stack.shift();
+            stack.shift();
+            if (!stack[stack.length - 1]?.localeCompare("index.md")) {
+              if (DEBUG) {
+                console.log(
+                  `last entry in stack is ${stack[stack.length - 1]}`,
+                );
+              }
+              stack.pop();
+            } else {
+              const last = stack[stack.length - 1];
+              if (last !== undefined) {
+                stack[stack.length - 1] = last.substring(0, last.length - 3);
+              }
+            }
+            k = stack !== undefined ? stack.join("/") : `/${top}/`;
+            k = `/${k}/`;
+            if (DEBUG) {
+              console.log(`pushing page with key ${k}`);
+            }
+            pages.push({
+              route: k,
+              contents: values[i],
+            });
+          }
+        }
+      }
+      return pages;
+    } else {
+      console.error(`route ${route} is not a key of content import`);
+      return new Array<Page>();
+    }
+  }
   private async findPageAndChildren(route: string): Promise<PageAndChildren> {
     if (DEBUG) {
       console.log(`findPageAndChildren for ${route}`);
     }
-    const rs = await getContentByRoute(route);
-    const p = rs.find((p: Page) => {
-      return !p.route.toString().localeCompare(route);
-    });
-    const c = rs.filter((p: Page) => {
-      return p.route.toString().localeCompare(route);
-    });
-    return { p, c };
+    const rs = await this.getContentByRoute(route);
+    if (rs.length == 0) {
+      throw Error(`page not found for route ${route}`);
+    } else {
+      const p = rs.find((p: Page) => {
+        return !p.route.toString().localeCompare(route);
+      });
+      if (p !== undefined) {
+        const c = rs.filter((p: Page) => {
+          return p.route.toString().localeCompare(route);
+        });
+        return { p, c };
+      } else {
+        throw Error(
+          `page not found for route ${route} even though other pages exist`,
+        );
+      }
+    }
   }
 
   private buildTreeForRoute(thisPage: Page, otherPages?: Page[]): string {
@@ -52,7 +154,7 @@ export default class SideNav extends HTMLElement {
       }
       directory = true;
       tlsPages
-        .sort((a, b) => sortPages(a, b))
+        .sort((a, b) => this.sortPages(a, b))
         .map((p) => {
           if (!p.route.toString().localeCompare(thisPage.route.toString())) {
             if (DEBUG) {
@@ -119,7 +221,7 @@ export default class SideNav extends HTMLElement {
         <sp-sidenav-item
           value="${thisPage.route}"
           href="${thisPage.route}"
-          label="${decodeURIComponent(thisPage.title ? thisPage.title.toString() : thisPage.label.toString().replaceAll("_", " "))}"
+          label="${decodeURIComponent(thisPage.contents.meta.title ? thisPage.contents.meta.title : thisPage.contents.meta.slug.toString().replaceAll("_", " ").replace("/src/contents/Harrypedia/", ""))}"
           ${expanded}
           ${selected}
         >
@@ -158,7 +260,7 @@ export default class SideNav extends HTMLElement {
             const s = r.split("/").length;
             return s > 0 && s < 5;
           })
-          .sort((a, b) => sortPages(a, b))
+          .sort((a, b) => this.sortPages(a, b))
           .map(async (child) => {
             if (DEBUG) {
               console.log(`tree for ${child.route}`);
@@ -184,6 +286,9 @@ export default class SideNav extends HTMLElement {
     const _changedProperties = this.getAttributeNames();
     if (_changedProperties.includes("route")) {
       this.route = this.getAttribute("route") ?? "";
+      if (DEBUG) {
+        console.log(`connectedCallback set this.route to ${this.route}`);
+      }
     }
     TopLevelSections.options.map((section) => {
       const r = `/${section.replace(" ", "")}/`;
