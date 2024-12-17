@@ -1,16 +1,22 @@
 export const prerender = false;
-import { LitElement, type PropertyValues, css, html, nothing } from "lit";
+import {
+  LitElement,
+  type PropertyValues,
+  unsafeCSS,
+  css,
+  html,
+  nothing,
+} from "lit";
 import { customElement, property, state } from "lit/decorators.js";
 
 const DEBUG = false;
 
 import "iconify-icon";
 
-//@ts-expect-error
-import SpectrumCard from "@spectrum-css/card" with { type: "css" };
+import SpectrumCard from "@spectrum-css/card/dist/index.css?inline";
 
 @customElement("horizontal-card")
-class HorizontalCard extends LitElement {
+export class HorizontalCard extends LitElement {
   @property({ type: String })
   public cardTitle: string = "";
 
@@ -133,7 +139,7 @@ class HorizontalCard extends LitElement {
   }
 
   static override styles = [
-    SpectrumCard,
+    unsafeCSS(SpectrumCard),
     css`
       :host {
         /*background-color: var(--spectrum-green-500); */

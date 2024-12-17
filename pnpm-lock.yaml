@@ -14,6 +14,91 @@ importers:
       '@gracile/markdown':
         specifier: ^0.2.0
         version: 0.2.0(lit@3.2.1)(vite@5.4.11(@types/node@22.10.2)(less@4.2.1)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0))
+      '@gracile/markdown-preset-marked':
+        specifier: ^0.0.12
+        version: 0.0.12(lit@3.2.1)(vite@5.4.11(@types/node@22.10.2)(less@4.2.1)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0))
+      dotenv:
+        specifier: ^16.4.7
+        version: 16.4.7
+      jsonschema:
+        specifier: ^1.4.1
+        version: 1.4.1
+      ms:
+        specifier: ^2.1.3
+        version: 2.1.3
+      nanodelay:
+        specifier: ^2.0.2
+        version: 2.0.2
+      node-gzip:
+        specifier: ^1.1.2
+        version: 1.1.2
+      read-gedcom:
+        specifier: ^0.3.2
+        version: 0.3.2
+    devDependencies:
+      '@tsconfig/node22':
+        specifier: ^22.0.0
+        version: 22.0.0
+      broken-link-checker:
+        specifier: ^0.7.8
+        version: 0.7.8
+      just-install:
+        specifier: ^2.0.2
+        version: 2.0.2
+      prettier:
+        specifier: ^3.4.2
+        version: 3.4.2
+      rehype-raw:
+        specifier: ^7.0.0
+        version: 7.0.0
+      rehype-stringify:
+        specifier: ^10.0.1
+        version: 10.0.1
+      remark:
+        specifier: ^15.0.1
+        version: 15.0.1
+      remark-frontmatter:
+        specifier: ^5.0.0
+        version: 5.0.0
+      remark-frontmatter-yaml:
+        specifier: ^1.3.0
+        version: 1.3.0
+      remark-gfm:
+        specifier: ^4.0.0
+        version: 4.0.0
+      remark-parse:
+        specifier: ^11.0.0
+        version: 11.0.0
+      remark-rehype:
+        specifier: ^11.1.1
+        version: 11.1.1
+      remark-stringify:
+        specifier: ^11.0.0
+        version: 11.0.0
+      tsx:
+        specifier: ^4.19.2
+        version: 4.19.2
+      typescript:
+        specifier: ^5.7.2
+        version: 5.7.2
+      unified:
+        specifier: ^11.0.5
+        version: 11.0.5
+      vfile-matter:
+        specifier: ^5.0.0
+        version: 5.0.0
+
+  frontend:
+    dependencies:
+      '@gracile/gracile':
+        specifier: ^0.7.1
+        version: 0.7.1(@lit-labs/ssr-client@1.1.7)(@types/node@22.10.2)(less@4.2.1)(lit@3.2.1)(picomatch@4.0.2)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0)(vite@5.4.11(@types/node@22.10.2)(less@4.2.1)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0))
+      '@gracile/markdown':
+        specifier: ^0.2.0
+        version: 0.2.0(lit@3.2.1)(vite@5.4.11(@types/node@22.10.2)(less@4.2.1)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0))
+      '@gracile/markdown-preset-marked':
+        specifier: ^0.0.12
+        version: 0.0.12(lit@3.2.1)(vite@5.4.11(@types/node@22.10.2)(less@4.2.1)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0))
       '@gracile/metadata':
         specifier: ^0.1.0
         version: 0.1.0(vite@5.4.11(@types/node@22.10.2)(less@4.2.1)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0))
@@ -147,12 +232,6 @@ importers:
       autoprefixer:
         specifier: ^10.4.20
         version: 10.4.20(postcss@8.4.49)
-      broken-link-checker:
-        specifier: ^0.7.8
-        version: 0.7.8
-      just-install:
-        specifier: ^2.0.2
-        version: 2.0.2
       markdown-toc:
         specifier: ^1.2.0
         version: 1.2.0
@@ -201,6 +280,9 @@ importers:
       remark-frontmatter:
         specifier: ^5.0.0
         version: 5.0.0
+      remark-frontmatter-yaml:
+        specifier: ^1.3.0
+        version: 1.3.0
       remark-gfm:
         specifier: ^4.0.0
         version: 4.0.0
@@ -225,6 +307,9 @@ importers:
       unified:
         specifier: ^11.0.5
         version: 11.0.5
+      vfile-matter:
+        specifier: ^5.0.0
+        version: 5.0.0
 
   infrastructure:
     dependencies:
@@ -698,6 +783,12 @@ packages:
   '@gracile/internal-utils@0.4.0':
     resolution: {integrity: sha512-P8Be9qPOWVtV8vMXpiwV2CZNpBlwaPiKLam6mNhpkdL1gwUOQl/qPFRAPmYHORNGgkSuzwjmbNNEb5IJlE1M5A==}
     peerDependencies:
+      vite: ^5.3.5
+
+  '@gracile/markdown-preset-marked@0.0.12':
+    resolution: {integrity: sha512-AkYLHlmOKFgRJvk5+VZQ3Wska4Nxvcv7nb5tIDqDkOZcbF8Rt+T9lxWyfThCeZUG70G5kjey2a/9afO8WYKu0A==}
+    peerDependencies:
+      lit: ^3.1.3
       vite: ^5.3.5
 
   '@gracile/markdown@0.2.0':
@@ -2437,6 +2528,9 @@ packages:
   getpass@0.1.7:
     resolution: {integrity: sha512-0fzj9JxOLfJ+XGLhR8ze3unN0KZCgZwiSSDz168VERjK8Wl8kVSdcu2kspd4s4wtAa1y/qrVRiAA0WclVsu0ng==}
 
+  github-slugger@2.0.0:
+    resolution: {integrity: sha512-IaOQ9puYtjrkq7Y0Ygl9KDZnrf/aiUJYUpVf89y8kyaxbRG7Y1SrX/jaumrv81vc61+kiMempujsM3Yw7w5qcw==}
+
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
     engines: {node: '>= 6'}
@@ -2912,6 +3006,16 @@ packages:
   markdown-toc@1.2.0:
     resolution: {integrity: sha512-eOsq7EGd3asV0oBfmyqngeEIhrbkc7XVP63OwcJBIhH2EpG2PzFcbZdhy1jutXSlRBBVMNXHvMtSr5LAxSUvUg==}
     engines: {node: '>=0.10.0'}
+    hasBin: true
+
+  marked-gfm-heading-id@4.1.1:
+    resolution: {integrity: sha512-EeQZieAQmsI6c2tWLx0ETd0VjPwLV8qi+HT0dIsfVMERm0rCIuXfRvZXJbo1SgUi++lmuR1LVY+QzgNiLNvVpw==}
+    peerDependencies:
+      marked: '>=13 <16'
+
+  marked@14.0.0:
+    resolution: {integrity: sha512-uIj4+faQ+MgHgwUW1l2PsPglZLOLOT1uErt06dAPtx2kjteLAkbsd/0FiYg/MGS+i7ZKLb7w2WClxHkzOOuryQ==}
+    engines: {node: '>= 18'}
     hasBin: true
 
   math-intrinsics@1.0.0:
@@ -3623,6 +3727,9 @@ packages:
   rehype-stringify@10.0.1:
     resolution: {integrity: sha512-k9ecfXHmIPuFVI61B9DeLPN0qFHfawM6RsuX48hoqlaKSF61RskNjSm1lI8PhBEM0MRdLxVVm4WmTqJQccH9mA==}
 
+  remark-frontmatter-yaml@1.3.0:
+    resolution: {integrity: sha512-/33EY5qiUICPo0DUGF+2Rwdx0i9B9MNPcNN+AZxIohJxI+4f+BhpOsZ0Om93o48OzYHAy+C4EwKvptQmGgMkeA==}
+
   remark-frontmatter@5.0.0:
     resolution: {integrity: sha512-XTFYvNASMe5iPN0719nPrdItC9aU0ssC4v14mH1BCi1u0n1gAocqcujWUrByftZTbLhRtiKRyjYTSIOcr69UVQ==}
 
@@ -4035,12 +4142,18 @@ packages:
     engines: {node: '>=14.17'}
     hasBin: true
 
+  ultramatter@0.0.4:
+    resolution: {integrity: sha512-1f/hO3mR+/Hgue4eInOF/Qm/wzDqwhYha4DxM0hre9YIUyso3fE2XtrAU6B4njLqTC8CM49EZaYgsVSa+dXHGw==}
+
   undici-types@6.20.0:
     resolution: {integrity: sha512-Ny6QZ2Nju20vw1SRHe3d9jVu6gJ+4e3+MMpqu7pqE5HT6WsTSlce++GQmK5UXS8mzV8DSYHrQH+Xrf2jVcuKNg==}
 
   unicorn-magic@0.1.0:
     resolution: {integrity: sha512-lRfVq8fE8gz6QMBuDM6a+LO3IAzTi05H6gCVaUpir2E1Rwpo4ZUog45KpNXKC/Mn3Yb9UDuHumeFTo9iV/D9FQ==}
     engines: {node: '>=18'}
+
+  unified@11.0.4:
+    resolution: {integrity: sha512-apMPnyLjAX+ty4OrNap7yumyVAMlKx5IWU2wlzzUdYJO9A8f1p9m/gywF/GM2ZDFcjQPrx59Mc90KwmxsoklxQ==}
 
   unified@11.0.5:
     resolution: {integrity: sha512-xKvGhPWw3k84Qjh8bI3ZeJjqnyadK+GEFtazSfZv/rKeTkTjOJho6mFqh2SM96iIcZokxiOpg78GazTSg8+KHA==}
@@ -4120,6 +4233,9 @@ packages:
     resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
     hasBin: true
 
+  valibot@0.30.0:
+    resolution: {integrity: sha512-5POBdbSkM+3nvJ6ZlyQHsggisfRtyT4tVTo1EIIShs6qCdXJnyWU5TJ68vr8iTg5zpOLjXLRiBqNx+9zwZz/rA==}
+
   validate-npm-package-license@3.0.4:
     resolution: {integrity: sha512-DpKm2Ui/xN7/HQKCtpZxoRWBhZ9Z0kqtygG8XCgNQ8ZlDnxuQmWhj566j8fN4Cu3/JmbhsDo7fcAJq4s9h27Ew==}
 
@@ -4133,6 +4249,9 @@ packages:
 
   vfile-location@5.0.3:
     resolution: {integrity: sha512-5yXvWDEgqeiYiBe1lbxYF7UMAIm/IcopxMHrMQDq3nvKcjPKIhZklUKL+AE7J7uApI4kwe2snsK+eI6UTj9EHg==}
+
+  vfile-matter@5.0.0:
+    resolution: {integrity: sha512-jhPSqlj8hTSkTXOqyxbUeZAFFVq/iwu/jukcApEqc/7DOidaAth6rDc0Zgg0vWpzUnWkwFP7aK28l6nBmxMqdQ==}
 
   vfile-message@4.0.2:
     resolution: {integrity: sha512-jRDZ1IMLttGj41KcZvlrYAaI3CfqpLpfpf+Mfig13viT6NKvRzWZ+lXz0Y5D60w6uJIBAOGq9mSHf0gktF0duw==}
@@ -4249,6 +4368,11 @@ packages:
 
   yallist@4.0.0:
     resolution: {integrity: sha512-3wdGidZyq5PB084XLES5TpOSRA3wjXAlIWMhum2kRcv/41Sn2emQ0dycQW4uZXLejwKvg6EsvbdlVL+FYEct7A==}
+
+  yaml@2.4.1:
+    resolution: {integrity: sha512-pIXzoImaqmfOrL7teGUBt/T7ZDnyeGBWyXQBvOVhLkWLN37GXv8NMLK406UY6dS51JfcQHsmcW5cJ441bHg6Lg==}
+    engines: {node: '>= 14'}
+    hasBin: true
 
   yaml@2.6.1:
     resolution: {integrity: sha512-7r0XPzioN/Q9kXBro/XPnA6kznR73DHq+GXh5ON7ZozRO6aMjbmiBuKste2wslTFkC5d1dw0GooOCepZXJ2SAg==}
@@ -4894,6 +5018,16 @@ snapshots:
 
   '@gracile/internal-utils@0.4.0(vite@5.4.11(@types/node@22.10.2)(less@4.2.1)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0))':
     dependencies:
+      vite: 5.4.11(@types/node@22.10.2)(less@4.2.1)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0)
+
+  '@gracile/markdown-preset-marked@0.0.12(lit@3.2.1)(vite@5.4.11(@types/node@22.10.2)(less@4.2.1)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0))':
+    dependencies:
+      '@gracile/markdown': 0.2.0(lit@3.2.1)(vite@5.4.11(@types/node@22.10.2)(less@4.2.1)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0))
+      github-slugger: 2.0.0
+      lit: 3.2.1
+      marked: 14.0.0
+      marked-gfm-heading-id: 4.1.1(marked@14.0.0)
+      ultramatter: 0.0.4
       vite: 5.4.11(@types/node@22.10.2)(less@4.2.1)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0)
 
   '@gracile/markdown@0.2.0(lit@3.2.1)(vite@5.4.11(@types/node@22.10.2)(less@4.2.1)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0))':
@@ -6935,6 +7069,8 @@ snapshots:
     dependencies:
       assert-plus: 1.0.0
 
+  github-slugger@2.0.0: {}
+
   glob-parent@5.1.2:
     dependencies:
       is-glob: 4.0.3
@@ -7481,6 +7617,13 @@ snapshots:
       remarkable: 1.7.4
       repeat-string: 1.6.1
       strip-color: 0.1.0
+
+  marked-gfm-heading-id@4.1.1(marked@14.0.0):
+    dependencies:
+      github-slugger: 2.0.0
+      marked: 14.0.0
+
+  marked@14.0.0: {}
 
   math-intrinsics@1.0.0: {}
 
@@ -8372,6 +8515,13 @@ snapshots:
       hast-util-to-html: 9.0.4
       unified: 11.0.5
 
+  remark-frontmatter-yaml@1.3.0:
+    dependencies:
+      unified: 11.0.4
+      unist-util-visit: 5.0.0
+      valibot: 0.30.0
+      yaml: 2.4.1
+
   remark-frontmatter@5.0.0:
     dependencies:
       '@types/mdast': 4.0.4
@@ -8861,9 +9011,21 @@ snapshots:
 
   typescript@5.7.2: {}
 
+  ultramatter@0.0.4: {}
+
   undici-types@6.20.0: {}
 
   unicorn-magic@0.1.0: {}
+
+  unified@11.0.4:
+    dependencies:
+      '@types/unist': 3.0.3
+      bail: 2.0.2
+      devlop: 1.1.0
+      extend: 3.0.2
+      is-plain-obj: 4.1.0
+      trough: 2.2.0
+      vfile: 6.0.3
 
   unified@11.0.5:
     dependencies:
@@ -8950,6 +9112,8 @@ snapshots:
 
   uuid@9.0.1: {}
 
+  valibot@0.30.0: {}
+
   validate-npm-package-license@3.0.4:
     dependencies:
       spdx-correct: 3.2.0
@@ -8967,6 +9131,11 @@ snapshots:
     dependencies:
       '@types/unist': 3.0.3
       vfile: 6.0.3
+
+  vfile-matter@5.0.0:
+    dependencies:
+      vfile: 6.0.3
+      yaml: 2.6.1
 
   vfile-message@4.0.2:
     dependencies:
@@ -9066,6 +9235,8 @@ snapshots:
   yallist@2.1.2: {}
 
   yallist@4.0.0: {}
+
+  yaml@2.4.1: {}
 
   yaml@2.6.1: {}
 

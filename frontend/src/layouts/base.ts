@@ -3,11 +3,12 @@ import { createMetadata } from "@gracile/metadata";
 
 import { SITE_TITLE } from "../lib/globals";
 
-export const document = (props: {
+export type documentProps = {
   url: URL;
   title?: string | null;
   description?: string | null;
-}) => html`
+};
+export const document = (props: documentProps) => html`
   <!doctype html>
   <html lang="en" dir="ltr" class="spectrum spectrum--medium spectrum--light">
     <head>
@@ -36,6 +37,7 @@ export const document = (props: {
         scale="medium"
         style="background-color: var(--spectrum-gray-100)"
       >
+        <top-nav></top-nav>
         <route-template-outlet></route-template-outlet>
       </sp-theme>
     </body>

@@ -2,6 +2,7 @@ import { gracile } from "@gracile/gracile/plugin";
 import { defineConfig } from "vite";
 import { viteMarkdownPlugin } from "@gracile/markdown/vite";
 import { MarkdownRenderer } from "@gracile/markdown-preset-marked";
+import { viteSvgPlugin } from "@gracile/svg/vite";
 
 const cachedOldVersions = ["/old/**/*.ts", "/old/**/*.js", "old/**/*.cjs"];
 
@@ -23,6 +24,7 @@ export default defineConfig({
   },
   plugins: [
     viteMarkdownPlugin({ MarkdownRenderer }),
+    viteSvgPlugin(),
     gracile({
       routes: {
         exclude: [...cachedOldVersions],

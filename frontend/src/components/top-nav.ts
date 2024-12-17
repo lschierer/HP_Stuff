@@ -2,9 +2,11 @@ export const prerender = false;
 import { html, css, LitElement } from "lit";
 import { customElement, property } from "lit/decorators.js";
 
-import { TopLevelSections } from "../lib/topLevelSections.ts";
+import { TopLevelSections } from "../lib/topLevelSections";
 
 const DEBUG = 0;
+
+import logo from "../assets/LukeHPSite.svg";
 
 @customElement("top-nav")
 export default class TopNav extends LitElement {
@@ -23,7 +25,7 @@ export default class TopNav extends LitElement {
       min-height: 30px;
       padding: 10px;
       font-size: 1.2rem;
-      width: 100;
+      width: 100%;
     }
 
     .head-wrap {
@@ -37,10 +39,10 @@ export default class TopNav extends LitElement {
       padding: 10px;
     }
 
-    .brand img {
+    .brand svg {
       float: left;
       height: 3rem;
-      width: 100;
+      width: 100%;
     }
 
     .header .social {
@@ -51,8 +53,7 @@ export default class TopNav extends LitElement {
 
     .nav {
       margin-left: 5rem;
-      width: 100;
-      height: 100;
+      height: 100%;
       flex-grow: 4;
       display: flex;
       justify-items: stretch;
@@ -61,18 +62,18 @@ export default class TopNav extends LitElement {
     }
 
     .nav-item {
-      height: 100;
+      height: 100%;
       flex-grow: 1;
       flex-shrink: 1;
     }
   `;
 
-  static styles =
+  static override styles =
     super.styles !== undefined && Array.isArray(super.styles)
       ? [...super.styles, TopNav.localStyle]
       : [TopNav.localStyle];
 
-  protected render() {
+  protected override render() {
     if (DEBUG) {
       console.log(`TopNav render start`);
     }
@@ -82,9 +83,7 @@ export default class TopNav extends LitElement {
       <header class="header">
         <div class="head-wrap">
           <div class="brand">
-            <a href="/" alt="Home">
-              <img src="/assets/LukeHPSite.svg" alt="Luke's HP Site" />
-            </a>
+            <a href="/" alt="Home"> ${logo} </a>
           </div>
           <div class="nav">
             ${sections.map((section: TopLevelSections) => {

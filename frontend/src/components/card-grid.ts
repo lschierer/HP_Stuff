@@ -1,4 +1,3 @@
-export const prerender = false;
 import {
   html,
   LitElement,
@@ -18,7 +17,7 @@ import { HorizontalCard } from "./horizontal-card";
 
 @customElement("card-grid")
 export class CardGrid extends LitElement {
-  @property({ reflect: true })
+  @property({ reflect: true, type: Array })
   public gridCards: CardDetails[] | string = new Array<CardDetails>();
 
   static localStyles = css`
