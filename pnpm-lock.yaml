@@ -410,12 +410,64 @@ importers:
       '@astrojs/starlight':
         specifier: ^0.30.2
         version: 0.30.2(astro@5.0.9(@types/node@22.10.2)(jiti@2.4.1)(less@4.2.1)(rollup@4.28.1)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0)(tsx@4.19.2)(typescript@5.7.2)(yaml@2.6.1))
+      '@astrojs/ts-plugin':
+        specifier: ^1.10.4
+        version: 1.10.4
+      '@lit-labs/ssr-client':
+        specifier: ^1.1.7
+        version: 1.1.7
+      '@spectrum-css/alertbanner':
+        specifier: ^2.3.0
+        version: 2.3.0(@spectrum-css/button@13.5.0(@spectrum-css/icon@7.2.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/closebutton@5.3.0(@spectrum-css/icon@7.2.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/divider@3.2.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/icon@7.2.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0)
+      '@spectrum-css/button':
+        specifier: ^13.5.0
+        version: 13.5.0(@spectrum-css/icon@7.2.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0)
+      '@spectrum-css/card':
+        specifier: ^9.3.0
+        version: 9.3.0(@spectrum-css/icon@7.2.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0)(@spectrum-css/typography@6.2.0(@spectrum-css/tokens@14.6.0))
+      '@spectrum-css/divider':
+        specifier: ^3.2.0
+        version: 3.2.0(@spectrum-css/tokens@14.6.0)
+      '@spectrum-css/page':
+        specifier: ^8.2.0
+        version: 8.2.0(@spectrum-css/tokens@14.6.0)
+      '@spectrum-css/sidenav':
+        specifier: ^5.2.0
+        version: 5.2.0(@spectrum-css/icon@7.2.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0)
+      '@spectrum-css/splitview':
+        specifier: ^5.3.0
+        version: 5.3.0(@spectrum-css/tokens@14.6.0)
+      '@spectrum-css/tokens':
+        specifier: ^14.6.0
+        version: 14.6.0
+      '@spectrum-css/typography':
+        specifier: ^6.2.0
+        version: 6.2.0(@spectrum-css/tokens@14.6.0)
+      '@spectrum-web-components/theme':
+        specifier: ^1.0.3
+        version: 1.0.3
       astro:
         specifier: ^5.0.2
         version: 5.0.9(@types/node@22.10.2)(jiti@2.4.1)(less@4.2.1)(rollup@4.28.1)(sass@1.83.0)(stylus@0.62.0)(terser@5.37.0)(tsx@4.19.2)(typescript@5.7.2)(yaml@2.6.1)
+      components:
+        specifier: link:@astrojs/starlight/components
+        version: link:@astrojs/starlight/components
+      icon:
+        specifier: link:@astrojs/starlight/icon
+        version: link:@astrojs/starlight/icon
+      iconify-icon:
+        specifier: ^2.2.0
+        version: 2.2.0
       sharp:
         specifier: ^0.32.5
         version: 0.32.6
+      zod:
+        specifier: ^3.24.1
+        version: 3.24.1
+    devDependencies:
+      ts-lit-plugin:
+        specifier: ^2.0.2
+        version: 2.0.2
 
 packages:
 
@@ -452,6 +504,12 @@ packages:
   '@astrojs/telemetry@3.2.0':
     resolution: {integrity: sha512-wxhSKRfKugLwLlr4OFfcqovk+LIFtKwLyGPqMsv+9/ibqqnW3Gv7tBhtKEb0gAyUAC4G9BTVQeQahqnQAhd6IQ==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=22.0.0}
+
+  '@astrojs/ts-plugin@1.10.4':
+    resolution: {integrity: sha512-rapryQINgv5VLZF884R/wmgX3mM9eH1PC/I3kkPV9rP6lEWrRN1YClF3bGcDHFrf8EtTLc0Wqxne1Uetpevozg==}
+
+  '@astrojs/yaml2ts@0.2.2':
+    resolution: {integrity: sha512-GOfvSr5Nqy2z5XiwqTouBBpy5FyI6DEe+/g/Mk5am9SjILN1S5fOEvYK0GuWHg98yS/dobP4m8qyqw/URW35fQ==}
 
   '@aws-crypto/sha256-browser@5.2.0':
     resolution: {integrity: sha512-AXfN/lGotSQwu6HNcEsIASo7kWXZ5HYWvfOmSNKDsEqC4OashTp8alTmaz+F7TC2L083SFv5RdB+qU3Vs1kZqw==}
@@ -2631,6 +2689,15 @@ packages:
 
   '@ungap/structured-clone@1.2.1':
     resolution: {integrity: sha512-fEzPV3hSkSMltkw152tJKNARhOupqbH96MZWyRjNaYZOMIzbrTeQDG+MTc6Mr2pgzFQzFxAfmhGDNP5QK++2ZA==}
+
+  '@volar/language-core@2.4.11':
+    resolution: {integrity: sha512-lN2C1+ByfW9/JRPpqScuZt/4OrUUse57GLI6TbLgTIqBVemdl1wNcZ1qYGEo2+Gw8coYLgCy7SuKqn6IrQcQgg==}
+
+  '@volar/source-map@2.4.11':
+    resolution: {integrity: sha512-ZQpmafIGvaZMn/8iuvCFGrW3smeqkq/IIh9F1SdSx9aUl0J4Iurzd6/FhmjNO5g2ejF3rT45dKskgXWiofqlZQ==}
+
+  '@volar/typescript@2.4.11':
+    resolution: {integrity: sha512-2DT+Tdh88Spp5PyPbqhyoYavYCPDsqbHLFwcUI9K1NlY1YgUJvujGdrqUp0zWxnW7KWNTr3xSpMuv2WnaTKDAw==}
 
   '@vscode/web-custom-data@0.4.13':
     resolution: {integrity: sha512-2ZUIRfhofZ/npLlf872EBnPmn27Kt4M2UssmQIfnJvgGgMYZJ5fvtHEDnttBBf2hnVtBgNCqZMVHJA+wsFVqTA==}
@@ -5829,6 +5896,9 @@ packages:
   parse5@7.2.1:
     resolution: {integrity: sha512-BuBYQYlv1ckiPdQi/ohiivi9Sagc9JG+Ozs0r7b/0iK3sKmrb0b9FdWdBbOdx6hBCM/F9Ir82ofnBhtZOjCRPQ==}
 
+  path-browserify@1.0.1:
+    resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
+
   path-exists@4.0.0:
     resolution: {integrity: sha512-ak9Qy5Q7jYb2Wwcey5Fpvg2KoAc/ZIhLSLOSBmRmygPsGwkVVt0fZa0qrtMz+m6tJTAHfZQ8FnmB4MG4LWy7/w==}
     engines: {node: '>=8'}
@@ -7311,6 +7381,9 @@ packages:
   vscode-uri@2.1.2:
     resolution: {integrity: sha512-8TEXQxlldWAuIODdukIb+TR5s+9Ds40eSJrw+1iDDA9IFORPjMELarNQE3myz5XIkWWpdprmJjm1/SxMlWOC8A==}
 
+  vscode-uri@3.0.8:
+    resolution: {integrity: sha512-AyFQ0EVmsOZOlAnxoFOGOq1SQDWAB7C6aqMGS23svWAllfOaxbuFvcT8D1i8z3Gyn8fraVeZNNmN6e9bxxXkKw==}
+
   walk-up-path@3.0.1:
     resolution: {integrity: sha512-9YlCL/ynK3CTlrSRrDxZvUauLzAswPCrsaCgilqFevUYpeEW0/3ScEjaa3kbW/T0ghhkEr7mv+fpjqn1Y1YuTA==}
 
@@ -7602,6 +7675,20 @@ snapshots:
       which-pm-runs: 1.1.0
     transitivePeerDependencies:
       - supports-color
+
+  '@astrojs/ts-plugin@1.10.4':
+    dependencies:
+      '@astrojs/compiler': 2.10.3
+      '@astrojs/yaml2ts': 0.2.2
+      '@jridgewell/sourcemap-codec': 1.5.0
+      '@volar/language-core': 2.4.11
+      '@volar/typescript': 2.4.11
+      semver: 7.6.3
+      vscode-languageserver-textdocument: 1.0.12
+
+  '@astrojs/yaml2ts@0.2.2':
+    dependencies:
+      yaml: 2.6.1
 
   '@aws-crypto/sha256-browser@5.2.0':
     dependencies:
@@ -10362,6 +10449,18 @@ snapshots:
       eslint-visitor-keys: 3.4.3
 
   '@ungap/structured-clone@1.2.1': {}
+
+  '@volar/language-core@2.4.11':
+    dependencies:
+      '@volar/source-map': 2.4.11
+
+  '@volar/source-map@2.4.11': {}
+
+  '@volar/typescript@2.4.11':
+    dependencies:
+      '@volar/language-core': 2.4.11
+      path-browserify: 1.0.1
+      vscode-uri: 3.0.8
 
   '@vscode/web-custom-data@0.4.13': {}
 
@@ -14340,6 +14439,8 @@ snapshots:
     dependencies:
       entities: 4.5.0
 
+  path-browserify@1.0.1: {}
+
   path-exists@4.0.0: {}
 
   path-exists@5.0.0: {}
@@ -16029,6 +16130,8 @@ snapshots:
   vscode-nls@4.1.2: {}
 
   vscode-uri@2.1.2: {}
+
+  vscode-uri@3.0.8: {}
 
   walk-up-path@3.0.1: {}
 
