@@ -2,6 +2,8 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
+import { TopLevelSections } from "./src/lib/topLevelSections";
+
 // https://astro.build/config
 export default defineConfig({
   site: "https://hp-fan.schierer.org",
@@ -28,19 +30,16 @@ export default defineConfig({
         ThemeProvider: "./src/components/ThemeProvider.astro",
         PageFrame: "./src/components/PageFrame.astro",
       },
-      sidebar: [
-        {
-          label: "Guides",
-          items: [
-            // Each item here is one entry in the navigation menu.
-            { label: "Example Guide", slug: "guides/example" },
-          ],
-        },
-        {
-          label: "Reference",
-          autogenerate: { directory: "reference" },
-        },
-      ],
+      sidebar: TopLevelSections.options.map((section) => {
+        return {
+          label: section.replaceAll("_", " "),
+          autogenerate: {
+            directory: section.replaceAll(" ", ""),
+            collapsed: true,
+          },
+          collapsed: true,
+        };
+      }),
     }),
   ],
 });
