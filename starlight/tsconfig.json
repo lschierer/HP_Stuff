@@ -5,6 +5,8 @@
   "exclude": ["dist"],
   "compilerOptions": {
     "verbatimModuleSyntax": true,
+    "strictNullChecks": true,
+    "allowJs": true,
     "baseUrl": ".",
     "paths": {
       "@components/*": ["src/components/*"],
