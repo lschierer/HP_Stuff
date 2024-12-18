@@ -9,9 +9,8 @@ import { DateTime } from "luxon";
 
 import { Event, Events, DisplayableEvent } from "../lib/TimelineTypes";
 
-const DEBUG = false;
-const DEBUG1 = false;
-const DEBUG2 = false;
+const DEBUG = true;
+const DEBUG2 = true;
 
 const parseEvent = (
   event: Event,
@@ -90,7 +89,7 @@ const parseEvent = (
     console.log(
       `invalid date '${eventDate.toString()} ' for event ${JSON.stringify(event)}`,
     );
-    return;
+    return undefined;
   }
   const ne: DisplayableEvent = {
     date: eventDate.toJSDate(),
@@ -100,25 +99,35 @@ const parseEvent = (
     source: source,
   };
   return ne;
-};
+}
 
 import { getCollection } from "astro:content";
 
 const matches = await getCollection('history');
 const events = new Array<DisplayableEvent>();
 
+if(DEBUG) {
+  console.log(`History.astro got ${matches.length} matches from history collection`)
+}
 if(Array.isArray(matches) && matches.length > 0) {
-  matches.sort().map((match) => {
+  matches.sort((a,b) => {
+    return a.id.toLowerCase().localeCompare(b.id.toLowerCase());
+  }).map((match) => {
     if(Array.isArray(match.data.events)) {
       match.data.events.map((event) => {
-        const de:DisplayableEvent = {
-          date: event.date ? event.date :
+        const de:DisplayableEvent | undefined = parseEvent(event, match.id);
+        if(de != undefined) {
+          events.push(de)
         }
       })
+    } else {
+      const de: DisplayableEvent | undefined = parseEvent(match.data.events, match.id)
     }
   })
 }
-
+if(DEBUG) {
+  console.log(`History.astro after parsing matches, events has ${events.length} events`)
+}
 
 
 
@@ -144,26 +153,24 @@ import:
  */
  import "iconify-icon";
  import "@spectrum-css/alertbanner/dist/index.css"
+
+ import VTimleine from "./v-timeline.astro"
 ---
 
 {events.length > 0 && <div>
-  <script
-    type="module"
-    src="../components/v-timeline.ts"
-
-  ></script>
   <div class="banner spectrum-AlertBanner is-open spectrum-AlertBanner--info">
     <div class=" spectrum-AlertBanner-body ">
     <iconify-icon icon="octicon:info-16" ></iconify-icon>
       <div class=" spectrum-AlertBanner-content ">
         <p class=" spectrum-AlertBanner-text ">
           Note that the tool creating this timeline fills in unknown fields in dates.
+          Unknown month of year is assumed (by the tool) to be January. Unknown day of month is assumed to be the first.
         </p>
       </div>
 
     </div>
   </div>
 
-  <vertical-timeline events="${encodeURIComponent(JSON.stringify(_events))}"></vertical-timeline>
+  <VTimleine events={encodeURIComponent(JSON.stringify(events))} ></VTimleine>
 </div>
 }

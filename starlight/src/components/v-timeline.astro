@@ -1,3 +1,14 @@
+---
+const DEBUG = true;
+const { events } = Astro.props
+if(DEBUG) {
+  console.log(`v-timeline events is ${events}`)
+}
+import "../styles/Timeline.css"
+---
+<vertical-timeline events={events}></vertical-timeline>
+
+<script>
 import { DateTime } from "luxon";
 import { Event, DisplayableEvent } from "../lib/TimelineTypes.ts";
 
@@ -97,7 +108,7 @@ export default class VerticalTimeline extends HTMLElement {
         })
         .join(" ");
       this.innerHTML = `
-        <link rel="stylesheet" href="../styles/Timeline.css" />
+
         <section class="timeline">
           <ul class="timeline spectrum-Typography">
             ${template}
@@ -136,3 +147,4 @@ export default class VerticalTimeline extends HTMLElement {
   }
 }
 customElements.define("vertical-timeline", VerticalTimeline);
+</script>

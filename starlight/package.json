@@ -39,6 +39,7 @@
   },
   "devDependencies": {
     "@types/luxon": "^3.4.2",
+    "@types/node": "^22.10.2",
     "ts-lit-plugin": "^2.0.2"
   }
 }
