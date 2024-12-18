@@ -1,6 +1,8 @@
 # build output
 dist/
 src/content/history
+src/content/gedcom
+
 # generated types
 .astro/
 

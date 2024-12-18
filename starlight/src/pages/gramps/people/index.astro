@@ -1,0 +1,26 @@
+---
+
+import { type CollectionEntry, getCollection } from "astro:content";
+
+const grampsEntries: CollectionEntry<'people'>[]  = await getCollection('people');
+
+---
+
+{(grampsEntries && grampsEntries.length > 0) ? (
+  <ol>
+    {grampsEntries.map((e)=> (
+      <li>
+        <dl>
+          <dt>{e.id}</dt>
+          <dd>{JSON.stringify(e.data.primary_name)}</dd>
+          {(e.data.alternate_names.length > 0 ) && e.data.alternate_names.map((an) => (
+            <dd>{JSON.stringify(an)}</dd>
+          ))}
+        </dl>
+      </li>
+    ))}
+  </ol>
+  ) : (
+  <span>no gramps entries found</span>
+  )
+}

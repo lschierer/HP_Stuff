@@ -1,0 +1,42 @@
+---
+import { GedcomPerson } from '@schemas/gedcom';
+import { getEntry, type CollectionEntry } from "astro:content";
+import "../../styles/Gramps.css";
+import 'iconify-icon'
+
+interface Props {
+    personId: string;
+}
+
+const DEBUG = true;
+
+const { personId } = Astro.props;
+
+if (DEBUG) {
+  console.log(`Individual.astro personId is ${personId}`)
+}
+
+let person: GedcomPerson.GedcomElement;
+if(personId) {
+  const personEntry = await getEntry('people', personId);
+
+  if(personEntry != undefined) {
+    person = personEntry.data;
+  }
+}
+
+---
+
+{(person != undefined) ? (
+  <div class="CardBody" tabindex="0" role="figure">
+    <div class="flex-auto ">
+      <div class="grid grid-cols-12 grid-rows-2 bg-gray-100">
+        <div class="col-span-11 col-end-12 row-span-1 ">
+
+        </div>
+      </div>
+    </div>
+  </div>
+) : (
+  <span>"No person with id {personId} found"</span>
+)}
