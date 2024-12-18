@@ -4,7 +4,7 @@ family: "Weasley"
 title: Ginevra Molly
 grampsID: I0070
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

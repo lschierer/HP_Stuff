@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 family: "Snape"
-layout: person
+pageType: person
 title: Severus
 grampsID: I0077
 author: Luke Schierer

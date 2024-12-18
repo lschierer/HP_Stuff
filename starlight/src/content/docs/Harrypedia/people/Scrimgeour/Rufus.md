@@ -3,7 +3,7 @@ collection: Harrypedia
 title: Rufus
 grampsID: I0199
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

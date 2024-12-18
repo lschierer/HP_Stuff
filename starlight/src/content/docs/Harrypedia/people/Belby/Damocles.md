@@ -3,7 +3,7 @@ collection: Harrypedia
 title: Damocles
 grampsID: I0204
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

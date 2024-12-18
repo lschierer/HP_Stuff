@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Riddle
-layout: family
+pageType: family
 title: Riddle
 author: Luke Schierer
 tags: ["family"]

@@ -4,7 +4,7 @@ family: "Black"
 title: Dorea
 grampsID: I0028
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

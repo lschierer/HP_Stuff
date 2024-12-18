@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Bones
-layout: family
+pageType: family
 title: Bones
 author: Luke Schierer
 tags: ["family"]

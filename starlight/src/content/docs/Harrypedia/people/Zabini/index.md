@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 title: Zabini
-layout: family
+pageType: family
 families: Zabini
 author: Luke Schierer
 tags: ["family"]

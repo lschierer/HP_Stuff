@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: MacDougal
-layout: family
+pageType: family
 title: MacDougal
 author: Luke Schierer
 tags: ["family"]

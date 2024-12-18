@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Crouch
-layout: family
+pageType: family
 title: Crouch
 tags: ["family"]
 sidebar:

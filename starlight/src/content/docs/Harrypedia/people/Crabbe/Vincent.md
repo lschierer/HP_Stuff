@@ -4,7 +4,7 @@ family: "Crabbe"
 title: Vincent
 grampsID: I0106
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

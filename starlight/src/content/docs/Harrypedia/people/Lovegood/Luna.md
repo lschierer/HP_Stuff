@@ -4,7 +4,7 @@ family: "Lovegood"
 title: Luna
 grampsID: I0115
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

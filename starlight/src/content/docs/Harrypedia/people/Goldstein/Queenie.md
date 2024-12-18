@@ -4,7 +4,7 @@ family: "Goldstein"
 title: Queenie Goldstein
 grampsID: I0294
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

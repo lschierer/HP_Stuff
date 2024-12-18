@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Fudge
-layout: family
+pageType: family
 title: Fudge
 author: Luke Schierer
 tags: ["family"]

@@ -4,7 +4,7 @@ family: "Granger"
 title: Hermione Jean
 grampsID: I0063
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

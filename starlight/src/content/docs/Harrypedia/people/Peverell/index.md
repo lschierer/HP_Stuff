@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 title: Peverell
-layout: family
+pageType: family
 author: Luke Schierer
 tags: ["family"]
 sidebar:

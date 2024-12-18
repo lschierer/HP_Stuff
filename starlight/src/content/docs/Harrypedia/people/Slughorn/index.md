@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Slughorn
-layout: family
+pageType: family
 title: Slughorn
 author:
 tags: ["family"]

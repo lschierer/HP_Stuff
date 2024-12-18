@@ -4,7 +4,7 @@ family: "Goyle"
 title: Gregory
 grampsID: I0107
 author:
-layout: person
+pageType: person
 ---
 
 ### Analysis

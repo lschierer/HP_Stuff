@@ -4,7 +4,7 @@ family: "Dursley"
 title: Vernon
 grampsID: I0096
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 - Married [Petunia Evans][PD]

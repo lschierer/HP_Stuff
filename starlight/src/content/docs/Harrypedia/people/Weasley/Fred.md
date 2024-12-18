@@ -4,7 +4,7 @@ family: "Weasley"
 title: Fred
 grampsID: I0071
 author:
-layout: person
+pageType: person
 ---
 
 ### Analysis

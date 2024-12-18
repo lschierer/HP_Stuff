@@ -4,7 +4,7 @@ family: "Prewett"
 title: Molly
 grampsID: I0062
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

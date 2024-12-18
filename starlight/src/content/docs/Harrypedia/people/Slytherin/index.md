@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Slytherin
-layout: family
+pageType: family
 title: Slytherin
 author:
 tags: ["family"]

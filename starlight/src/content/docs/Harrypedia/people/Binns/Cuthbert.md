@@ -3,7 +3,7 @@ collection: Harrypedia
 title: Professor Cuthbert Binns
 author: Luke Schierer
 grampsID: I0301
-layout: person
+pageType: person
 ---
 
 ### topics mentioned in class

@@ -4,7 +4,7 @@ family: "Weasley"
 title: Percy Ignatius
 grampsID: I0074
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

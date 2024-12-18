@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Belby
-layout: family
+pageType: family
 title: Belby
 author: Luke Schierer
 tags: ["family"]

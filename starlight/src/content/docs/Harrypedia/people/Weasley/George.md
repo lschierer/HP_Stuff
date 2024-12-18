@@ -4,7 +4,7 @@ family: "Weasley"
 title: George
 grampsID: I0072
 author:
-layout: person
+pageType: person
 ---
 
 ### Analysis

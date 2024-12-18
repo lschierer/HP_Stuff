@@ -4,7 +4,7 @@ family: "Malfoy"
 title: Lucius Abraxas
 grampsID: I0038
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

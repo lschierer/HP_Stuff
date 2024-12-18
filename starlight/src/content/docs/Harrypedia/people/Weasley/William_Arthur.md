@@ -4,7 +4,7 @@ family: "Weasley"
 title: William Arthur
 grampsID: I0073
 author:
-layout: person
+pageType: person
 ---
 
 ### Analysis

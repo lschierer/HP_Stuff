@@ -4,7 +4,7 @@ family: "Black"
 title: Phineus Nigellus
 grampsID: I0016
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

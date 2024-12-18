@@ -4,7 +4,7 @@ family: "Weasley"
 title: Septimus
 grampsID: I0053
 author:
-layout: person
+pageType: person
 ---
 
 ### Analysis

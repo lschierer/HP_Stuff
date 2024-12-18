@@ -4,7 +4,7 @@ family: "Longbottom"
 title: Frank
 grampsID: I0066
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

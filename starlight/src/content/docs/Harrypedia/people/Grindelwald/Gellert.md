@@ -4,7 +4,7 @@ family: "Grindelwald"
 title: Gellert
 grampsID: I0260
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

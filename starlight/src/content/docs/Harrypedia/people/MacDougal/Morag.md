@@ -4,7 +4,7 @@ family: "MacDougal"
 title: Morag
 grampsID: I0173
 author:
-layout: person
+pageType: person
 ---
 
 ### Analysis

@@ -4,7 +4,7 @@ family: "Longbottom"
 title: Harfang
 grampsID: I0050
 author:
-layout: person
+pageType: person
 ---
 
 ### Analysis

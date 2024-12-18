@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Skeeter
-layout: family
+pageType: family
 title: Skeeter
 author:
 tags: ["family"]

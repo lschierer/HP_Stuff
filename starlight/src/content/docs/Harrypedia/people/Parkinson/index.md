@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 title: Parkinson
-layout: family
+pageType: family
 author: Luke Schierer
 sidebar:
   order: 1

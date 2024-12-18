@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: Cresswell
 title: Dirk
-layout: person
+pageType: person
 ---
 
 ### Analysis

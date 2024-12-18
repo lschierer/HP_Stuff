@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Granger
-layout: family
+pageType: family
 title: Granger
 author: Luke Schierer
 tags: ["family"]

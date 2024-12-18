@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Hagrid
-layout: family
+pageType: family
 title: Hagrid
 author:
 tags: ["family"]

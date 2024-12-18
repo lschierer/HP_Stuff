@@ -4,7 +4,7 @@ family: "Weasley"
 title: Charlie
 grampsID: I0095
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

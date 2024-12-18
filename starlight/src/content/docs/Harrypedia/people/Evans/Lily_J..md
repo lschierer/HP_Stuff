@@ -4,7 +4,7 @@ family: Evans
 title: Lily J.
 grampsID: I0002
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

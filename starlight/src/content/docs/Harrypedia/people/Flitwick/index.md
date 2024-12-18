@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Flitwick
-layout: family
+pageType: family
 title: Flitwick
 author: Luke Schierer
 tags: ["family"]

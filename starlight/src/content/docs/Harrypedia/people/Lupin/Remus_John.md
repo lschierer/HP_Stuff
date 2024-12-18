@@ -4,7 +4,7 @@ family: "Lupin"
 title: Remus John
 grampsID: I0060
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 - Lupin considers it so highly probable that his child will be a werewolf that

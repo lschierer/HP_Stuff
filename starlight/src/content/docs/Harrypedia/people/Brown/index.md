@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Brown
-layout: family
+pageType: family
 title: Brown
 author: Luke Schierer
 tags: ["family"]

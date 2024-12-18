@@ -4,7 +4,7 @@ family: "Slughorn"
 title: Horace Eugene Flaccus
 grampsID: I0246
 author:
-layout: person
+pageType: person
 ---
 
 ### Analysis

@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Monkstanley
-layout: family
+pageType: family
 title: Monkstanley
 author:
 tags: ["family"]

@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Lestrange
-layout: family
+pageType: family
 title: Lestrange
 author:
 tags: ["family"]

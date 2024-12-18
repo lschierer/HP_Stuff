@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Trelawney
-layout: family
+pageType: family
 title: Trelawney
 author:
 tags: ["family"]

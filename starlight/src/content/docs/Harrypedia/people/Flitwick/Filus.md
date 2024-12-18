@@ -4,7 +4,7 @@ family: "Flitwick"
 title: Filus
 grampsID: I0293
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

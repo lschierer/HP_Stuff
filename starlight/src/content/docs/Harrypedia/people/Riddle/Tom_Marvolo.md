@@ -4,7 +4,7 @@ family: "Riddle"
 title: Tom Marvolo
 grampsID: I0247
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 - Born to Merope Gaunt.[^20210827-1]

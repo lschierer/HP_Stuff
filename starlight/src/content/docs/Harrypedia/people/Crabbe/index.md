@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Crabbe
-layout: family
+pageType: family
 title: Crabbe
 author: Luke Schierer
 tags: ["family"]

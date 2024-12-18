@@ -4,7 +4,7 @@ family: "Potter"
 title: Henry
 grampsID: I0083
 author:
-layout: person
+pageType: person
 ---
 
 ### Analysis

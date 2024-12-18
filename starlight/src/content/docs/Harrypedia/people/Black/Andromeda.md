@@ -4,7 +4,7 @@ family: "Black"
 title: Andromeda
 grampsID: I0035
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

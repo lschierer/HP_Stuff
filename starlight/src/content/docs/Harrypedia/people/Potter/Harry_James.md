@@ -4,7 +4,7 @@ families: Potter
 title: Harry James
 grampsID: I0000
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

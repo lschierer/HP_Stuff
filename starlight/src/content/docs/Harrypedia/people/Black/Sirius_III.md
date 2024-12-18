@@ -4,7 +4,7 @@ family: "Black"
 title: Sirius III
 grampsID: I0007
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 - Sirius did not, as he is often accused, give Harry to [Hagrid][]; he (Sirius)

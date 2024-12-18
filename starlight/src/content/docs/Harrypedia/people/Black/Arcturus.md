@@ -4,7 +4,7 @@ family: "Black"
 title: Arcturus
 grampsID: I0151
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Hooch
-layout: family
+pageType: family
 title: Hooch
 author: Luke Schierer
 tags: ["family"]

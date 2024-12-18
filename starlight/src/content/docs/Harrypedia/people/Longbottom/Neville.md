@@ -4,7 +4,7 @@ family: "Longbottom"
 title: Neville
 grampsID: I0068
 author:
-layout: person
+pageType: person
 ---
 
 ### Analysis

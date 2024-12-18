@@ -4,7 +4,7 @@ family: "Fudge"
 title: Cornelius Oswald
 grampsID: I0198
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 - Fudge was Junior Minister in the Department of Magical Catastrophes in November of 1981.[^220906-1]

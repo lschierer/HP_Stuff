@@ -4,7 +4,7 @@ family: "Jones"
 title: Gwenog
 grampsID: I0266
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

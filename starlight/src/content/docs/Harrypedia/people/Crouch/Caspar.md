@@ -3,7 +3,7 @@ collection: Harrypedia
 family: "Crouch"
 title: Caspar
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

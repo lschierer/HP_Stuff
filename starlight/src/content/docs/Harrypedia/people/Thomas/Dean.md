@@ -3,7 +3,7 @@ collection: Harrypedia
 family: "Thomas"
 title: Dean
 grampsID: I0159
-layout: person
+pageType: person
 ---
 
 ### Analysis

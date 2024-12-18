@@ -4,7 +4,7 @@ family: "Shacklebolt"
 title: Kingsley
 grampsID: I0278
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

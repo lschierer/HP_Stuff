@@ -3,7 +3,7 @@ collection: Harrypedia
 family: "Elsrickle"
 title: Eldon
 grampsID: I0254
-layout: person
+pageType: person
 ---
 
 ### Analysis

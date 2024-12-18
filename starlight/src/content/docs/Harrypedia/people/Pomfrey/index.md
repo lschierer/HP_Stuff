@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Pomfrey
-layout: family
+pageType: family
 title: Pomfrey
 tags: ["family"]
 sidebar:

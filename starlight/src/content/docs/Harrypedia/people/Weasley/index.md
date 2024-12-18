@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Weasley
-layout: family
+pageType: family
 title: Weasley
 author: Luke Schierer
 tags: ["family"]

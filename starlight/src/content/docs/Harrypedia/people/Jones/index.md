@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Jones
-layout: family
+pageType: family
 title: Jones
 author: Luke Schierer
 tags: ["family"]

@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Lupin
-layout: family
+pageType: family
 title: Lupin
 author:
 tags: ["family"]

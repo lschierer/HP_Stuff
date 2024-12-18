@@ -4,7 +4,7 @@ family: "Hooch"
 title: Rolanda
 grampsID: I0197
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 - She states she learned to fly on a Silver Arrow.[^221108-1] This places her after 1901, and _most likely_ before 1926.[^221108-2]

@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Nuttley
-layout: family
+pageType: family
 title: Nuttley
 author:
 tags: ["family"]

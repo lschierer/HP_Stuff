@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Leach
-layout: family
+pageType: family
 title: Leach
 author: Luke Schierer
 tags: ["family"]

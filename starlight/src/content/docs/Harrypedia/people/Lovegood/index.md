@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Lovegood
-layout: family
+pageType: family
 title: Lovegood
 author:
 tags: ["family"]

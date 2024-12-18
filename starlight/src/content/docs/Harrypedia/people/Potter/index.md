@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 title: Potter
-layout: family
+pageType: family
 tags: ["family"]
 author: Luke Schierer
 sidebar:

@@ -4,7 +4,7 @@ family: "Scamander"
 title: Theseus
 grampsID: I0213
 author:
-layout: person
+pageType: person
 ---
 
 ### Analysis

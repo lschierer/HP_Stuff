@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Elsrickle
-layout: family
+pageType: family
 title: Elsrickle
 author: Luke Schierer
 tags: ["family"]

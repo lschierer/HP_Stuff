@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Goldstein
-layout: family
+pageType: family
 title: Goldstein
 author: Luke Schierer
 tags: ["family"]

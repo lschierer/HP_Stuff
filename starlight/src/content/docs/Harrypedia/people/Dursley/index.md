@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Dursley
-layout: family
+pageType: family
 title: Dursley
 author: Luke Schierer
 tags: ["family"]

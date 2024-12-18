@@ -4,7 +4,7 @@ family: "Weasley"
 title: Ronald Bilius
 grampsID: I0064
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Howell
-layout: family
+pageType: family
 title: Howell
 author: Luke Schierer
 tags: ["family"]

@@ -5,6 +5,6 @@ author: Luke Schierer
 grampsID: I0276
 ---
 
-layout: person
+pageType: person
 
 ### Analysis

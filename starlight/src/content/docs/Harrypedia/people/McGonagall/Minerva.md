@@ -4,7 +4,7 @@ family: "McGonagall"
 title: Minerva
 grampsID: I0065
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 Despite being nearly universally portrayed as a pure-blood in fan fiction, she is in fact a half-blood who grew up in the mundane world. She should be familiar with early 19th century fashion, customs and technology.

@@ -4,7 +4,7 @@ family: "Dumbledore"
 title: Ariana
 grampsID: I0263
 author:
-layout: person
+pageType: person
 ---
 
 ### Analysis

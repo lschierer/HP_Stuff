@@ -2,7 +2,7 @@
 collection: Harrypedia
 title: Dumbledore and Tom Riddle
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Riddle's School Years

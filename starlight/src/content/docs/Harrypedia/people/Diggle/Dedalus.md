@@ -4,7 +4,7 @@ family: "Diggle"
 title: Dedalus
 grampsID: I0099
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

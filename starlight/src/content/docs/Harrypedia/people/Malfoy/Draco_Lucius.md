@@ -3,7 +3,7 @@ collection: Harrypedia
 title: Draco Lucius
 grampsID: I0039
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

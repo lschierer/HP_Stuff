@@ -4,7 +4,7 @@ family: "Black"
 title: Narcissa
 grampsID: I0036
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

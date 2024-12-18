@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Evans
-layout: family
+pageType: family
 title: Evans
 author: Luke Schierer
 tags: ["family"]

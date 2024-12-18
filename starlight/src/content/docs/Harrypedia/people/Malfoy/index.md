@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Malfoy
-layout: family
+pageType: family
 title: Malfoy
 author: Luke Schierer
 tags: ["family"]

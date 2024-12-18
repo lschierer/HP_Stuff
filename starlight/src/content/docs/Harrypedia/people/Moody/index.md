@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 title: Moody
-layout: family
+pageType: family
 author: Luke Schierer
 tags: ["family"]
 sidebar:

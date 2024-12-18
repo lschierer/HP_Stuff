@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Bagnold
-layout: family
+pageType: family
 title: Bagnold
 author: Luke Schierer
 tags: ["family"]

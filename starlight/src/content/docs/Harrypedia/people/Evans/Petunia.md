@@ -4,7 +4,7 @@ family: "Evans"
 title: Petunia
 grampsID: I0097
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

@@ -2,7 +2,7 @@
 collection: Harrypedia
 title: Doubting Harry's Character
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 > The office dissolved but re-formed instantly. Snape was pacing up and down in

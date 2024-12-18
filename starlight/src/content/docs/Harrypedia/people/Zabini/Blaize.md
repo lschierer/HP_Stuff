@@ -2,7 +2,7 @@
 collection: Harrypedia
 title: Blaize
 grampsID: I0160
-layout: person
+pageType: person
 ---
 
 ### Analysis

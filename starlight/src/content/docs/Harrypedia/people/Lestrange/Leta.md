@@ -4,7 +4,7 @@ family: "Lestrange"
 title: Leta
 grampsID: I0229
 author:
-layout: person
+pageType: person
 ---
 
 ### Analysis

@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Greengrass
-layout: family
+pageType: family
 title: Greengrass
 author: Luke Schierer
 tags: ["family"]

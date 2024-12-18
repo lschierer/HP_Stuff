@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Prince
-layout: family
+pageType: family
 title: Prince
 author:
 tags: ["family"]

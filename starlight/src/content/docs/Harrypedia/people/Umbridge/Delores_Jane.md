@@ -4,7 +4,7 @@ family: Umbridge
 title: Delores Jane
 grampsID: I0112
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

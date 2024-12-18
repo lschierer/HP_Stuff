@@ -4,7 +4,7 @@ title: James
 grampsID: I0001
 author: Luke Schierer
 
-layout: person
+pageType: person
 ---
 
 ## Analysis

@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Shacklebolt
-layout: family
+pageType: family
 title: Shacklebolt
 author: Luke Schierer
 tags: ["family"]

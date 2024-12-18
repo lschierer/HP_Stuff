@@ -3,7 +3,7 @@ collection: Harrypedia
 title: Hannah
 grampsID: I0108
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Pettigrew
-layout: family
+pageType: family
 title: Pettigrew
 author:
 tags: ["family"]

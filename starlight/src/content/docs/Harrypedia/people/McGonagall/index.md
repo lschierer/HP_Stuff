@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 title: McGonagall
-layout: family
+pageType: family
 author:
 sidebar:
   order: 1

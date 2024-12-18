@@ -3,7 +3,7 @@ collection: Harrypedia
 title: Merope
 author: Luke Schierer
 grampsID: I0304
-layout: person
+pageType: person
 ---
 
 ## Analysis

@@ -4,7 +4,7 @@ family: "Greengrass"
 title: Astoria
 grampsID: I0180
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

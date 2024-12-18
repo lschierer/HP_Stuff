@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Thomas
-layout: family
+pageType: family
 title: Thomas
 tags: ["family"]
 sidebar:

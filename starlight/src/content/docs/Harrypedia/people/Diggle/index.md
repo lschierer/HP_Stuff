@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Diggle
-layout: family
+pageType: family
 title: Diggle
 author: Luke Schierer
 tags: ["family"]

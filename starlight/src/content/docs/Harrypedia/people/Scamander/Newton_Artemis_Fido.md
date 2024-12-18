@@ -3,7 +3,7 @@ collection: Harrypedia
 title: Newton Artemis Fido
 author: Luke Schierer
 grampsID: I0214
-layout: person
+pageType: person
 ---
 
 Normally goes by "Newt".

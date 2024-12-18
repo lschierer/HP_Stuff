@@ -4,7 +4,7 @@ family: "Sprout"
 title: Pomona
 grampsID: I0264
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

@@ -4,7 +4,7 @@ family: "Bones"
 title: "Amelia Susan"
 grampsID: I0111
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Physical Appearance

@@ -4,7 +4,7 @@ family: "Prince"
 title: Eileen
 grampsID: I0250
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Lockhart
-layout: family
+pageType: family
 title: Lockhart
 author:
 tags: ["family"]

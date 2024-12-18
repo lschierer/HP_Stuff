@@ -4,7 +4,7 @@ family: "Greengrass"
 title: Daphne
 grampsID: I0179
 author: Luke Schierer
-layout: person
+pageType: person
 ---
 
 ### Analysis

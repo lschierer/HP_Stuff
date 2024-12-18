@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 families: Goyle
-layout: family
+pageType: family
 title: Goyle
 author:
 tags: ["family"]
