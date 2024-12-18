@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Evans"
+families: Evans
 layout: family
 title: Evans
 author: Luke Schierer

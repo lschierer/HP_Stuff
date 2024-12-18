@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Slughorn"
+families: Slughorn
 layout: family
 title: Slughorn
 author:

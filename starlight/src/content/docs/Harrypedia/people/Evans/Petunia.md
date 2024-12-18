@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Evans"
 title: Petunia
-hero: I0097
+grampsID: I0097
 author: Luke Schierer
 layout: person
 ---

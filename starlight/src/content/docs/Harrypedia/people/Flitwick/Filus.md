@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Flitwick"
 title: Filus
-hero: I0293
+grampsID: I0293
 author: Luke Schierer
 layout: person
 ---

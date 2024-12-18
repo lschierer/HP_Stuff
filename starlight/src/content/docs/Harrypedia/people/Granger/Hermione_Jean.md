@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Granger"
 title: Hermione Jean
-hero: I0063
+grampsID: I0063
 author: Luke Schierer
 layout: person
 ---

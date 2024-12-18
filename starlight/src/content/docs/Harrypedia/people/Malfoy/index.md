@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Malfoy"
+families: Malfoy
 layout: family
 title: Malfoy
 author: Luke Schierer

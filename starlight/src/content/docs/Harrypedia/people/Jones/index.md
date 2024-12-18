@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Jones"
+families: Jones
 layout: family
 title: Jones
 author: Luke Schierer

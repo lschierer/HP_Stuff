@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Prewett"
+families: Prewett
 layout: family
 title: Prewett
 author: Luke Schierer

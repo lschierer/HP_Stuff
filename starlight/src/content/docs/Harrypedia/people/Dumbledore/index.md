@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Dumbledore"
+families: Dumbledore
 layout: family
 title: Dumbledore
 author: Luke Schierer

@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Nuttley"
+families: Nuttley
 layout: family
 title: Nuttley
 author:

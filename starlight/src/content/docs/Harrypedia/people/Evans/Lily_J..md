@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: Evans
 title: Lily J.
-hero: I0002
+grampsID: I0002
 author: Luke Schierer
 layout: person
 ---

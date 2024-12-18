@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Lestrange"
+families: Lestrange
 layout: family
 title: Lestrange
 author:

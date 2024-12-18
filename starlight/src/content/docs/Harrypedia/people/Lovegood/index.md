@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Lovegood"
+families: Lovegood
 layout: family
 title: Lovegood
 author:

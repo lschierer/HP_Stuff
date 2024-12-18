@@ -3,7 +3,7 @@ collection: Harrypedia
 family: "Snape"
 layout: person
 title: Severus
-hero: I0077
+grampsID: I0077
 author: Luke Schierer
 ---
 

@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Lockhart"
+families: Lockhart
 layout: family
 title: Lockhart
 author:

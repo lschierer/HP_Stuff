@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Hooch"
+families: Hooch
 layout: family
 title: Hooch
 author: Luke Schierer

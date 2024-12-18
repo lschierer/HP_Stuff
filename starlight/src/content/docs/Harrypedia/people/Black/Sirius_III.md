@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Black"
 title: Sirius III
-hero: I0007
+grampsID: I0007
 author: Luke Schierer
 layout: person
 ---

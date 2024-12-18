@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Diggle"
 title: Dedalus
-hero: I0099
+grampsID: I0099
 author: Luke Schierer
 layout: person
 ---

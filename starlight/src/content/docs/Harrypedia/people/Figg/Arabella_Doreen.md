@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 title: Arabella Figg
-hero: I0100
+grampsID: I0100
 layout: person
 ---
 

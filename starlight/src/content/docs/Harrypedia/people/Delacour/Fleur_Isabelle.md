@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Delacour"
 title: Fleur Isabelle
-hero: I0080
+grampsID: I0080
 author:
 layout: person
 ---

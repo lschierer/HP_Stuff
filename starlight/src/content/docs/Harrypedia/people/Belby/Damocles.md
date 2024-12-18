@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 title: Damocles
-hero: I0204
+grampsID: I0204
 author: Luke Schierer
 layout: person
 ---

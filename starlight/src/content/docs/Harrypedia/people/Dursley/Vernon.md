@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Dursley"
 title: Vernon
-hero: I0096
+grampsID: I0096
 author: Luke Schierer
 layout: person
 ---

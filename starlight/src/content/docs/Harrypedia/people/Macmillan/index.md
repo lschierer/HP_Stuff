@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Macillan"
+families: Macillan
 layout: family
 title: Macmillan
 author: Luke Schierer

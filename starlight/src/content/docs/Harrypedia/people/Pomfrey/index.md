@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Pomfrey"
+families: Pomfrey
 layout: family
 title: Pomfrey
 tags: ["family"]

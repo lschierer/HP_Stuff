@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 title: Cedrella
-hero: I0049
+grampsID: I0049
 layout: person
 ---
 

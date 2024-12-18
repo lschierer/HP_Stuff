@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 layout: family
-families: "Black"
+families: Black
 title: Black
 author: Luke Schierer
 tags: "family"

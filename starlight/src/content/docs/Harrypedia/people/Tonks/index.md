@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Tonks"
+families: Tonks
 layout: family
 title: Tonks
 author:

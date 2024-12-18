@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Bones"
+families: Bones
 layout: family
 title: Bones
 author: Luke Schierer

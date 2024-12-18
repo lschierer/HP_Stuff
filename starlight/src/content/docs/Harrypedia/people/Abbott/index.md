@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 layout: family
-families: "Abbott"
+families: Abbott
 title: Abbott
 author: Luke Schierer
 tags: ["family"]

@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Jones"
 title: Gwenog
-hero: I0266
+grampsID: I0266
 author: Luke Schierer
 layout: person
 ---

@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Pettigrew"
+families: Pettigrew
 layout: family
 title: Pettigrew
 author:

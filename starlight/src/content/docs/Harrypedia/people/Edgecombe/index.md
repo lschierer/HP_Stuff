@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Edgecombe"
+families: Edgecombe
 layout: family
 title: Edgecombe
 author: Luke Schierer

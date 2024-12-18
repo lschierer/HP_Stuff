@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Skeeter"
+families: Skeeter
 layout: family
 title: Skeeter
 author:

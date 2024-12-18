@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Umbridge"
+families: Umbridge
 layout: family
 title: Umbridge
 author: Luke Schierer

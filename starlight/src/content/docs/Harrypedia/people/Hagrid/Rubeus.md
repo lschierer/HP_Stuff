@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Hagrid"
 title: Rubeus
-hero: I0079
+grampsID: I0079
 author: Luke Schierer
 layout: person
 ---

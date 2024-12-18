@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "MacDougal"
+families: MacDougal
 layout: family
 title: MacDougal
 author: Luke Schierer

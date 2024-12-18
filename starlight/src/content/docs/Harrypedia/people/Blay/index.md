@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Blay"
+families: Blay
 layout: family
 title: Blay
 author: Luke Schierer

@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Elsrickle"
+families: Elsrickle
 layout: family
 title: Elsrickle
 author: Luke Schierer

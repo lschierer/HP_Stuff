@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Crabbe"
 title: Vincent
-hero: I0106
+grampsID: I0106
 author: Luke Schierer
 layout: person
 ---

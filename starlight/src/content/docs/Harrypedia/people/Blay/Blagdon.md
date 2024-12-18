@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Blay"
 title: Blagdon
-hero: I0257
+grampsID: I0257
 layout: person
 ---
 

@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Riddle"
 title: Tom Marvolo
-hero: I0247
+grampsID: I0247
 author: Luke Schierer
 layout: person
 ---

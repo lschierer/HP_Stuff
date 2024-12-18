@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Longbottom"
+families: Longbottom
 layout: family
 title: Longbottom
 author: Luke Schierer

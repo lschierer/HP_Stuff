@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Weasley"
 title: Septimus
-hero: I0053
+grampsID: I0053
 author:
 layout: person
 ---

@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "McLaggen"
+families: McLaggen
 layout: family
 title: McLaggen
 author: Luke Schierer

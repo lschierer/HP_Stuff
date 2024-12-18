@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Potter"
 title: Henry
-hero: I0083
+grampsID: I0083
 author:
 layout: person
 ---

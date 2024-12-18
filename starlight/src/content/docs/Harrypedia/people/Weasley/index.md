@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Weasley"
+families: Weasley
 layout: family
 title: Weasley
 author: Luke Schierer

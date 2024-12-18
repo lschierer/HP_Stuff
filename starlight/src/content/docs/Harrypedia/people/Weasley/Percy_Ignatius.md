@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Weasley"
 title: Percy Ignatius
-hero: I0074
+grampsID: I0074
 author: Luke Schierer
 layout: person
 ---

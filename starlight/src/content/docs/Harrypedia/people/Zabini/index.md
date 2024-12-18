@@ -2,7 +2,7 @@
 collection: Harrypedia
 title: Zabini
 layout: family
-families: "Zabini"
+families: Zabini
 author: Luke Schierer
 tags: ["family"]
 

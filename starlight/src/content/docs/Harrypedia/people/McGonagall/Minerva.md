@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "McGonagall"
 title: Minerva
-hero: I0065
+grampsID: I0065
 author: Luke Schierer
 layout: person
 ---

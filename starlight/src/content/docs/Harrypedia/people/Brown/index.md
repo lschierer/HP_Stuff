@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Brown"
+families: Brown
 layout: family
 title: Brown
 author: Luke Schierer

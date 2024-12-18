@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Granger"
+families: Granger
 layout: family
 title: Granger
 author: Luke Schierer

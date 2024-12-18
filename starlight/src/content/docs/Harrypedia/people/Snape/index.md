@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Snape"
+families: Snape
 layout: family
 title: Snape
 author: Luke Schierer

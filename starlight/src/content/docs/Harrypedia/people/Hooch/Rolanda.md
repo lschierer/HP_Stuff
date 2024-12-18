@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Hooch"
 title: Rolanda
-hero: I0197
+grampsID: I0197
 author: Luke Schierer
 layout: person
 ---

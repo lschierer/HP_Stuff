@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Goldstein"
+families: Goldstein
 layout: family
 title: Goldstein
 author: Luke Schierer

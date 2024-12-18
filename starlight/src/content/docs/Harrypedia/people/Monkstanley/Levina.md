@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Monkstanley"
 title: Levina
-hero: I0290
+grampsID: I0290
 author: Luke Schierer
 layout: person
 ---

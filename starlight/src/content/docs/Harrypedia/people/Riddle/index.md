@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Riddle"
+families: Riddle
 layout: family
 title: Riddle
 author: Luke Schierer

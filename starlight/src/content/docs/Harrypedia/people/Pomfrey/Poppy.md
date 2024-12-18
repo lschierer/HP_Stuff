@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Pomfrey"
 title: Poppy
-hero: I0279
+grampsID: I0279
 layout: person
 ---
 

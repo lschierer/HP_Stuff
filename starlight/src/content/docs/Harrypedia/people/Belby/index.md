@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Belby"
+families: Belby
 layout: family
 title: Belby
 author: Luke Schierer

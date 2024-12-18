@@ -1,8 +1,8 @@
 ---
 collection: Harrypedia
-families: "Potter"
+families: Potter
 title: Harry James
-hero: I0000
+grampsID: I0000
 author: Luke Schierer
 layout: person
 ---

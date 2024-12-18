@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Greengrass"
+families: Greengrass
 layout: family
 title: Greengrass
 author: Luke Schierer

@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Weasley"
 title: George
-hero: I0072
+grampsID: I0072
 author:
 layout: person
 ---

@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Prince"
+families: Prince
 layout: family
 title: Prince
 author:

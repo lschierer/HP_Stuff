@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Scrimgeour"
+families: Scrimgeour
 layout: family
 title: Scrimgeour
 author: Luke Schierer

@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Hagrid"
+families: Hagrid
 layout: family
 title: Hagrid
 author:

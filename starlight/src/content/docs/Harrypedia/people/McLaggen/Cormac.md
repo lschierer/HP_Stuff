@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
 title: Cormac McLaggen
-hero: I0296
+grampsID: I0296
 layout: person
 ---

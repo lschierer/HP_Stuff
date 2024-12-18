@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 title: Blaize
-hero: I0160
+grampsID: I0160
 layout: person
 ---
 

@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Sprout"
+families: Sprout
 layout: family
 title: Sprout
 author:

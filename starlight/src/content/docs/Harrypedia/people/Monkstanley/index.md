@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Monkstanley"
+families: Monkstanley
 layout: family
 title: Monkstanley
 author:

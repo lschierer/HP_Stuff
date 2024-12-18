@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Black"
 title: Callidora
-hero: I0047
+grampsID: I0047
 author: Luke Schierer
 layout: person
 ---

@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Thomas"
+families: Thomas
 layout: family
 title: Thomas
 tags: ["family"]

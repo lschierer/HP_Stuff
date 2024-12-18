@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Lupin"
+families: Lupin
 layout: family
 title: Lupin
 author:

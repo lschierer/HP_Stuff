@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Grindelwald"
+families: Grindelwald
 layout: family
 title: Grindelwald
 author:

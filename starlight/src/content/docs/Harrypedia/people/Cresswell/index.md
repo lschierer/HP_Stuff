@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Cresswell"
+families: Cresswell
 layout: family
 title: Cresswell
 author: Luke Schierer

@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 title: Hannah
-hero: I0108
+grampsID: I0108
 author: Luke Schierer
 layout: person
 ---

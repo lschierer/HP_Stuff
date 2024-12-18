@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Weasley"
 title: Ginevra Molly
-hero: I0070
+grampsID: I0070
 author: Luke Schierer
 layout: person
 ---

@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Lupin"
 title: Remus John
-hero: I0060
+grampsID: I0060
 author: Luke Schierer
 layout: person
 ---

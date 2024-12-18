@@ -2,7 +2,7 @@
 collection: Harrypedia
 family: "Tonks"
 title: Nymphadora
-hero: I0076
+grampsID: I0076
 layout: person
 ---
 

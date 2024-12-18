@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Leach"
+families: Leach
 layout: family
 title: Leach
 author: Luke Schierer

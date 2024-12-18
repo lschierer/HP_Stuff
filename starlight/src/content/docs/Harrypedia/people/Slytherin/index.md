@@ -1,6 +1,6 @@
 ---
 collection: Harrypedia
-families: "Slytherin"
+families: Slytherin
 layout: family
 title: Slytherin
 author:
