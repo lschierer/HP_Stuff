@@ -3,12 +3,12 @@
 @import "@spectrum-css/page/dist/index.css";
 
 /* Dark mode colors. */
-:root[data-theme="dark"],
-[data-theme="dark"] ::backdrop {
+:root,
+::backdrop {
   /* in dark mode, the colors do *not* appear to be backwards the way they do for light mode*/
-  --sl-color-accent-high: var(--spectrum-cyan-400);
+  --sl-color-accent-high: var(--spectrum-cyan-1000);
   --sl-color-accent: var(--spectrum-cyan-500);
-  --sl-color-accent-low: var(--spectrum-cyan-1000);
+  --sl-color-accent-low: var(--spectrum-cyan-400);
   --sl-color-bg: var(--spectrum-background-base-color);
 
   --sl-color-white: var(--spectrum-gray-900);
@@ -26,7 +26,7 @@
 [data-theme="light"] ::backdrop {
   --sl-color-accent-high: var(--spectrum-cyan-1000);
   --sl-color-accent: var(--spectrum-cyan-700);
-  --sl-color-accent-low: var(--spectrum-cyan-400);
+  --sl-color-accent-low: var(--spectrum-cyan-200);
   --sl-color-bg: var(--spectrum-background-base-color);
 
   /* I do not understand why starlight color defintions are backwards, black is white and white is black */
@@ -43,8 +43,9 @@
 
 header.header {
   background-color: var(--sl-color-accent-high);
+  --spectrum-accent-content-color-default: var(--sl-color-accent-low);
 }
 
 .sidebar-pane {
-  scrollbar-color: var(--sl-color-accent) var(--sl-color-bg);
+  scrollbar-color: var(--sl-color-accent-low) var(--sl-color-bg);
 }

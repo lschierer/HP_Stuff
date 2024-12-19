@@ -23,6 +23,7 @@ export default defineConfig({
       customCss: [
         "@spectrum-css/tokens/dist/index.css",
         "@spectrum-css/typography/dist/index.css",
+        "@spectrum-css/link/dist/index.css",
         "@spectrum-css/page/dist/index.css",
         "./src/styles/global.css",
       ],
