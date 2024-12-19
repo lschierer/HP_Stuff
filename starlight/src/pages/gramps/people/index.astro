@@ -15,6 +15,7 @@ const grampsEntries: CollectionEntry<'people'>[]  = await getCollection('people'
           <dd>{JSON.stringify(e.data.primary_name)}</dd>
           {(e.data.alternate_names.length > 0 ) && e.data.alternate_names.map((an) => (
             <dd>{JSON.stringify(an)}</dd>
+            <dd>Gender: {e.data.gender}</dd>
           ))}
         </dl>
       </li>

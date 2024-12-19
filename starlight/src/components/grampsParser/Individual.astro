@@ -1,12 +1,15 @@
 ---
-import { GedcomPerson } from '@schemas/gedcom';
-import { getEntry, type CollectionEntry } from "astro:content";
-import "../../styles/Gramps.css";
-import 'iconify-icon'
-
 interface Props {
     personId: string;
 }
+
+import { GedcomPerson } from '@schemas/gedcom';
+import { getEntry, type CollectionEntry } from "astro:content";
+
+import "@styles/Gramps.css";
+
+import IndividualName from './IndividualName.astro';
+
 
 const DEBUG = true;
 
@@ -16,7 +19,7 @@ if (DEBUG) {
   console.log(`Individual.astro personId is ${personId}`)
 }
 
-let person: GedcomPerson.GedcomElement;
+let person: GedcomPerson.GedcomElement | undefined = undefined;
 if(personId) {
   const personEntry = await getEntry('people', personId);
 
@@ -32,7 +35,7 @@ if(personId) {
     <div class="flex-auto ">
       <div class="grid grid-cols-12 grid-rows-2 bg-gray-100">
         <div class="col-span-11 col-end-12 row-span-1 ">
-
+          <IndividualName personId={personId} ></IndividualName>
         </div>
       </div>
     </div>
