@@ -10,6 +10,5 @@ export default {
     "postcss-extend": {},
     "postcss-nesting": {},
     autoprefixer: {},
-    cssnano: {},
   },
 };
