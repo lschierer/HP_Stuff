@@ -440,6 +440,9 @@ importers:
       '@spectrum-css/divider':
         specifier: ^3.2.0
         version: 3.2.0(@spectrum-css/tokens@14.6.0)
+      '@spectrum-css/link':
+        specifier: ^5.2.0
+        version: 5.2.0(@spectrum-css/tokens@14.6.0)
       '@spectrum-css/page':
         specifier: ^8.2.0
         version: 8.2.0(@spectrum-css/tokens@14.6.0)
@@ -2495,6 +2498,11 @@ packages:
 
   '@spectrum-css/icon@7.2.0':
     resolution: {integrity: sha512-P3mnpMxqNZ+YJGhjAHKrcUpKp9wLa2RnuZVYtUsh8bweb4MlYm/4/a2VzeQunrgziU17YNG5KrXyRHpWHv1U9w==}
+    peerDependencies:
+      '@spectrum-css/tokens': '>=14'
+
+  '@spectrum-css/link@5.2.0':
+    resolution: {integrity: sha512-v2jo3rejLOlQvIQrXFG/otmF3rLQlbbXPsB3zx62u8JXZa83MExRToEFZJ62BtO/h62cAW6EJ5zK4sN63YO47g==}
     peerDependencies:
       '@spectrum-css/tokens': '>=14'
 
@@ -10869,6 +10877,10 @@ snapshots:
       '@spectrum-css/tokens': 14.6.0
 
   '@spectrum-css/icon@7.2.0(@spectrum-css/tokens@14.6.0)':
+    dependencies:
+      '@spectrum-css/tokens': 14.6.0
+
+  '@spectrum-css/link@5.2.0(@spectrum-css/tokens@14.6.0)':
     dependencies:
       '@spectrum-css/tokens': 14.6.0
 

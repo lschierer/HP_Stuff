@@ -12,11 +12,26 @@ const grampsEntries: CollectionEntry<'people'>[]  = await getCollection('people'
       <li>
         <dl>
           <dt>{e.id}</dt>
-          <dd>{JSON.stringify(e.data.primary_name)}</dd>
+          <dd>{e.data.primary_name && (
+            <span>{e.data.primary_name.first_name ? e.data.primary_name.first_name : "Unknown First Name"} </span>
+            <span>{e.data.primary_name.nick ? ` aka ${e.data.primary_name.nick} ` : " "}</span>
+            <span>{e.data.primary_name.surname_list && Array.isArray(e.data.primary_name.surname_list) && e.data.primary_name.surname_list.map((sn) => {
+              return sn.surname
+            })}</span>
+            <span>{e.data.primary_name.suffix ? e.data.primary_name.suffix : ""} </span>
+          )}</dd>
           {(e.data.alternate_names.length > 0 ) && e.data.alternate_names.map((an) => (
-            <dd>{JSON.stringify(an)}</dd>
-            <dd>Gender: {e.data.gender}</dd>
+            <dd>
+              <span>{an.first_name ? an.first_name : "Unknown First Name"} </span>
+              <span>{an.nick ? ` aka ${an.nick} ` : " "}</span>
+              <span>{an.surname_list && Array.isArray(an.surname_list) && an.surname_list.map((sn) => {
+                return sn.surname
+              })}</span>
+              <span>{an.suffix ? an.suffix : ""}</span>
+            </dd>
           ))}
+          <dd>Gender: {e.data.gender}</dd>
+
         </dl>
       </li>
     ))}

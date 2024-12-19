@@ -37,6 +37,29 @@ if(personId) {
         <div class="col-span-11 col-end-12 row-span-1 ">
           <IndividualName personId={personId} ></IndividualName>
         </div>
+        <div class="col-span-1 row-span-1">
+          <!-- I believe I intended this space for icons showing Hogwarts House affiliation, blood status, and similiar. -->
+          <!-- leaving the div because I do not want to re-figure the flex placement -->
+        </div>
+        <div class="col-span-1 row-span-1">
+          {personId}
+        </div>
+      </div>
+      <div
+        class="flex-auto basis-0 flex-col gap-0 rounded border-2 "
+      >
+        <div class="General flex-auto flex-col ">
+          <ul class="my-0">
+            <li>
+              Birth:
+            </li>
+            <li>
+              Death:
+            </li>
+          </ul>
+        </div>
+        <div class="Parents flex-auto flex-col my-0 gap-0">
+        </div>
       </div>
     </div>
   </div>

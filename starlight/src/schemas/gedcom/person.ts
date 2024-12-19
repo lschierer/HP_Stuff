@@ -124,7 +124,7 @@ export const PersonRefList = z.object({
 });
 export type PersonRefList = z.infer<typeof PersonRefList>;
 
-export const SurnameList = z.object({
+export const Surname = z.object({
   _class: SurnameListClass,
   surname: z.string(),
   prefix: z.string(),
@@ -132,12 +132,12 @@ export const SurnameList = z.object({
   origintype: Type,
   connector: z.string(),
 });
-export type SurnameList = z.infer<typeof SurnameList>;
+export type Surname = z.infer<typeof Surname>;
 
 export const Name = z.object({
   _class: PrimaryNameClass,
   private: z.boolean(),
-  surname_list: z.array(SurnameList),
+  surname_list: z.array(Surname),
   citation_list: z.array(z.string()),
   note_list: z.array(z.any()),
   date: z.null(),
