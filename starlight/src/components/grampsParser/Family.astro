@@ -1,5 +1,6 @@
 ---
 interface Props {
+  familyHandle: string;
   tree?: boolean;
   fatherHandle?: string;
   motherHandle?: string;
@@ -19,13 +20,21 @@ const DEBUG = true;
 const DEBUG1 = false;
 const DEBUG2 = false;
 
-const {tree = false, fatherHandle, motherHandle, childrenHandles } = Astro.props;
+const {
+  familyHandle,
+  tree = false,
+  fatherHandle = "",
+  motherHandle = "",
+  childrenHandles = new Array<string>()
+} = Astro.props;
+
+
 
 let displayAsParent = false;
 if(DEBUG) {
   console.log(`props are ${JSON.stringify(Astro.props)}`)
 }
-if((fatherHandle != undefined || motherHandle != undefined) && childrenHandles == undefined ) {
+if((fatherHandle.length > 0 || motherHandle.length > 0) && childrenHandles.length == 0 ) {
   displayAsParent = true;
   if (DEBUG) {
     console.log(`displaying as parent`)
@@ -49,7 +58,16 @@ let mDeathIndex = -1;
 const siblings = new Array<GedcomPerson.GedcomElement>();
 
 const entries = await getCollection('families', ({data}) => {
-  if(fatherHandle != undefined) {
+  if(DEBUG1) {
+    console.log(`testing ${data.id}`)
+  }
+  if(data.handle.localeCompare(familyHandle)) {
+    if(DEBUG1) {
+      console.log(`handle mismatch, do not bother.`)
+    }
+    return false;
+  }
+  if(fatherHandle.length > 0) {
     if(data.father_handle == undefined) {
       if(DEBUG1) {
         console.log(`father mismatch: data.father_handle undefined`)
@@ -66,7 +84,7 @@ const entries = await getCollection('families', ({data}) => {
       }
     }
   }
-  if(motherHandle != undefined) {
+  if(motherHandle.length > 0) {
     if(data.mother_handle == undefined) {
       if(DEBUG1) {
         console.log(`mother mismatch: data.mother_handle undefined`)
@@ -115,6 +133,9 @@ const entries = await getCollection('families', ({data}) => {
     if(DEBUG2) {
       console.log(`no children to match against`)
     }
+  }
+  if(DEBUG1) {
+    console.log(`returning true for ${data.id}`)
   }
   return true;
 })
@@ -252,7 +273,7 @@ if(DEBUG) {
     <span>display tree</span>
   ) : (
   <div class="Parents flex-auto flex-col my-0 gap-0">
-    <h4 class="my-0">Parents</h4>
+    <h4 class="my-0">Parents (or Custiodial Guardians)</h4>
     <ul class="bio not-content">
       <li class="my-0">Father:{(father != undefined) ?
         <span>
@@ -291,7 +312,7 @@ if(DEBUG) {
     </ul>
   </div>
   <div class="Sibilings flex-auto flex-col">
-    <h4 class="my-0">{(displayAsParent == false) ? 'Siblings (and Half-Siblings)' : 'Children' }</h4>
+    <h4 class="my-0">{(displayAsParent == false) ? 'Siblings (Half-Siblings, and Foster Siblings)' : 'Children' }</h4>
     <ul class="bio">
       {(siblings.length > 0) ? siblings.map((sibling) => (
         <li>

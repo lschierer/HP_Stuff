@@ -71,17 +71,43 @@ if(personId) {
             </li>
           </ul>
         </div>
-        <Family childrenHandles={[person.handle]}></Family>
         <div class="Unions flex-auto flex-col gap-0">
           <h4 class="my-0">Unions & children</h4>
+          {(person.family_list.length > 1) ? (
           <ul class="bio">
-          {(person.gender == male.JSONconstant) ? (
-            <li><Family fatherHandle={person.handle}></Family></li>
-          ): (
-            <li><Family motherHandle={person.handle}></Family></li>
-          )}
+            {person.family_list.map((family) => {
+              return (person.gender == male.JSONconstant) ? (
+                <li>
+                  <Family familyHandle={family} fatherHandle={person.handle}></Family>
+                </li>
+              ) : (
+                <li>
+                  <Family familyHandle={family} motherHandle={person.handle}></Family>
+                </li>
+              );
+            })}
           </ul>
+          ) : (
+          <Family familyHandle={person.family_list[0]} fatherHandle={person.handle}></Family>
+          ) }
+
         </div>
+        <h3 class="my-0">Family Information</h3>
+        {(person.parent_family_list.length > 1) ? (
+
+        <ul class="bio not-content">
+         {person.parent_family_list.map((family) => (
+         <li>
+          <Family familyHandle={family} childrenHandles={[person.handle]}></Family>
+         </li>
+         ))}
+        </ul>
+        )
+        : (
+        <Family familyHandle={person.parent_family_list[0]} childrenHandles={[person.handle]}></Family>
+        )}
+
+
       </div>
     </div>
   </div>
