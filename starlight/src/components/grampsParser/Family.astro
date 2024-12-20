@@ -256,7 +256,7 @@ if(DEBUG) {
     <ul class="bio not-content">
       <li class="my-0">Father:{(father != undefined) ?
         <span>
-          <IndividualName personId={fID}></IndividualName> (
+          <IndividualName inline={true} personId={fID}></IndividualName> (
           {(feventRefs.length > 0 && feventRefs[fBirthIndex].ref.length > 0) ? (
           <Event handle={feventRefs[fBirthIndex].ref}></Event>
           ) :
@@ -273,7 +273,7 @@ if(DEBUG) {
       </li>
       <li>Mother:{(mother != undefined) ?
         <span>
-          <IndividualName personId={mID}></IndividualName> (
+          <IndividualName inline={true} personId={mID}></IndividualName> (
           {(meventRefs.length > 0 && meventRefs[mBirthIndex].ref.length > 0) ? (
           <Event handle={meventRefs[mBirthIndex].ref}></Event>
           ) :
@@ -295,7 +295,7 @@ if(DEBUG) {
     <ul class="bio">
       {(siblings.length > 0) ? siblings.map((sibling) => (
         <li>
-          <IndividualName personId={sibling.id}></IndividualName> (
+          <IndividualName inline={true} personId={sibling.id}></IndividualName> (
           {(sibling.birth_ref_index >= 0) ? (
           <Event handle={sibling.event_ref_list[sibling.birth_ref_index].ref}></Event>
           ) : "Unknown Birthday"}

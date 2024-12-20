@@ -45,14 +45,14 @@ if(personId) {
   <div class="CardBody" tabindex="0" role="figure">
     <div class="flex-auto ">
       <div class="grid grid-cols-12 grid-rows-2 bg-gray-100">
-        <div class="my-0 col-span-11 col-end-12 row-span-1 ">
-          <IndividualName personId={personId} ></IndividualName>
+        <div class="bio CardBody IndividualName">
+          <IndividualName inline={false} personId={personId} ></IndividualName>
         </div>
         <div class="col-span-1 row-span-1">
           <!-- I believe I intended this space for icons showing Hogwarts House affiliation, blood status, and similiar. -->
           <!-- leaving the div because I do not want to re-figure the flex placement -->
         </div>
-        <div class="my-0 col-span-1 row-span-1">
+        <div class="bio CardBody personId">
           {personId}
         </div>
       </div>

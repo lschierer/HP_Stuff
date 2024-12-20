@@ -11,9 +11,18 @@ const {icon, inline, width, height, iconclasses } = Astro.props;
 
 
 ---
-<astro-icon icon={icon} inline={inline} width={width} height={height} iconclasses={iconclasses}></astro-icon>
+<astro-icon
+  icon={icon}
+  iconclasses={iconclasses}
+  inline={inline}
+  width={width}
+  height={height}
+></astro-icon>
+
 <script>
   import "iconify-icon"
+  const DEBUG = true;
+
   export default class AstroIcon extends HTMLElement {
     private icon: string = "";
     private inline: boolean = true;
@@ -38,6 +47,8 @@ const {icon, inline, width, height, iconclasses } = Astro.props;
         } else {
           this.inline = false;
         }
+      } else {
+        this.inline = false;
       }
 
       if(attributes.includes('width')) {
@@ -56,16 +67,48 @@ const {icon, inline, width, height, iconclasses } = Astro.props;
 
       }
       console.log(`iconclasses are "${this.iconclasses}"`)
-      this.innerHTML=`
-        <iconify-icon
-          icon="${this.icon}"
-          ${this.inline ? "inline" : "" }
-          ${(this.width.length > 0) ? `width="${this.width}"` : ""}
-          ${(this.height.length > 0) ? `height="${this.height}"` : ""}
-          ${(this.iconclasses.length > 0) ?
-          `class="icon ${this.iconclasses}"` : `class="icon"` }
-        ></iconify-icon>
-      `;
+      if(this.inline) {
+        if(DEBUG) {
+          console.log(`icon inline is true`)
+        }
+        this.innerHTML=`
+          <iconify-icon
+            icon="${this.icon}"
+            inline
+            ${(this.width.length > 0) ?
+              `width="${this.width}"` :
+              ""
+            }
+            ${(this.height.length > 0) ?
+              `height="${this.height}"` :
+              ''
+            }
+            ${(this.iconclasses.length > 0) ?
+              `class="icon ${this.iconclasses}"` :
+              `class="icon"`
+            }
+          ></iconify-icon>
+        `;
+      } else {
+        if(DEBUG) {
+          console.log(`icon inline is false`)
+        }
+        this.innerHTML=`
+          <iconify-icon
+            icon="${this.icon}"
+            ${(this.width.length > 0) ? `width="${this.width}"` : ""}
+            ${(this.height.length > 0) ?
+              `height="${this.height}"` :
+              'height="75%"'
+            }
+            ${(this.iconclasses.length > 0) ?
+              `class="icon ${this.iconclasses}"` :
+              `class="icon"`
+            }
+          ></iconify-icon>
+        `;
+      }
+
     }
   }
   customElements.define("astro-icon", AstroIcon);

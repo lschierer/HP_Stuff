@@ -2,6 +2,7 @@
 interface Props {
     personId: string;
     link?: boolean;
+    inline?: boolean;
 }
 
 import { GedcomPerson } from '@schemas/gedcom';
@@ -16,11 +17,12 @@ import { male, female } from '@lib/GedcomConstants';
 
 const DEBUG = true;
 
-const { personId, link = false } = Astro.props;
+const { personId, link = false, inline = false } = Astro.props;
 
 if (DEBUG) {
-  console.log(`Individual.astro personId is ${personId}`)
-  console.log(`Individual.astro link is ${link}`)
+  console.log(`IndividualName.astro personId is ${personId}`)
+  console.log(`IndividualName.astro link is ${link}`)
+  console.log(`IndividualName.astro inline is ${inline}`)
 }
 
 const buildLinkTarget = (individual: GedcomPerson.GedcomElement): string => {
@@ -45,7 +47,7 @@ const buildLinkTarget = (individual: GedcomPerson.GedcomElement): string => {
         if(!found && individual.primary_name.surname_list.length > 0) {
           const sn = individual.primary_name.surname_list[0].surname;
           const tsn = encodeURIComponent(sn);
-          targetLocation = `${targetLocation}/tsn/`
+          targetLocation = `${targetLocation}/${tsn}/`
           if(DEBUG) {
             console.log(`found lastname ${sn} for ${personId}, targetLocation now ${targetLocation}`)
           }
@@ -130,18 +132,25 @@ const iconclasses = (person != undefined) ?
       "icon1" : "icon2";
 
 const linkTarget = (person != undefined) ? buildLinkTarget(person) : "";
-const nameFragmet = link ? `<a href="${linkTarget}">${name}</a>` : name ;
+const nameFragmet = link ?
+  `<a href="${linkTarget}">${name}</a>` :
+  `<span class="bio">${name}</span>`;
 ---
 
+{(person != undefined ) ? (inline) ? (
+  <AstroIcon
+      icon={iconName}
+      iconclasses={iconclasses}
+      inline={true}
+  ></AstroIcon>
+) : (
+  <AstroIcon
+      icon={iconName}
+      iconclasses={iconclasses}
+  ></AstroIcon>
+) : ""}
 {(person != undefined ) ? (
-
-  <span>
-    <AstroIcon
-        icon={iconName}
-        iconclasses={iconclasses}
-        inline={true}
-    ></AstroIcon><Fragment set:html={nameFragmet} />
-  </span>
+    <Fragment set:html={nameFragmet} />
 ) : (
   ""
 )}
