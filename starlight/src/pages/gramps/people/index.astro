@@ -30,8 +30,9 @@ const grampsEntries: CollectionEntry<'people'>[]  = await getCollection('people'
               <span>{an.suffix ? an.suffix : ""}</span>
             </dd>
           ))}
+          <dd>Handle: {e.data.handle} </dd>
           <dd>Gender: {e.data.gender}</dd>
-
+          <dd>{JSON.stringify(e.data)}</dd>
         </dl>
       </li>
     ))}

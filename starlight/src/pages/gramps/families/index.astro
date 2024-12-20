@@ -1,0 +1,39 @@
+---
+
+import { type CollectionEntry, getCollection } from "astro:content";
+
+const grampsEntries: CollectionEntry<'families'>[]  = await getCollection('families');
+
+---
+
+{(grampsEntries && grampsEntries.length > 0) ? (
+  <ol>
+    {grampsEntries.map((e)=> (
+      <li>
+        <dl>
+          <dt>{e.id}</dt>
+          <dd>{e.data.handle}</dd>
+          <dd>Type: {e.data.type.string ? e.data.type.string : "Unknown"}</dd>
+          <dd>
+            Father: {e.data.father_handle ? e.data.father_handle : "Unknwon"}
+          </dd>
+          <dd>
+            Mother: {e.data.mother_handle ? e.data.mother_handle : "Unknwon"}
+          </dd>
+          <dd>
+            Children: <ul>
+              {e.data.child_ref_list ? e.data.child_ref_list.map((child) => (
+                <li>{child.ref}</li>
+              )) : "No Children"}
+              </ul>
+          </dd>
+
+          <dd><!--{JSON.stringify(e.data)}--></dd>
+        </dl>
+      </li>
+    ))}
+  </ol>
+  ) : (
+  <span>no gramps entries found</span>
+  )
+}

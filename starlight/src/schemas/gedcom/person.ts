@@ -65,8 +65,8 @@ export type Title = z.infer<typeof Title>;
 export const GedcomClass = z.enum(["Person"]);
 export type GedcomClass = z.infer<typeof GedcomClass>;
 
-export const EventRefListClass = z.enum(["EventRef"]);
-export type EventRefListClass = z.infer<typeof EventRefListClass>;
+export const EventRefClass = z.enum(["EventRef"]);
+export type EventRefClass = z.infer<typeof EventRefClass>;
 
 export const TagList = z.enum([
   "ed5f283475c2bd8d650cc02c9c8",
@@ -104,15 +104,15 @@ export const Type = z.object({
 });
 export type Type = z.infer<typeof Type>;
 
-export const EventRefList = z.object({
-  _class: EventRefListClass,
+export const EventRef = z.object({
+  _class: EventRefClass,
   private: z.boolean(),
   note_list: z.array(z.any()),
   attribute_list: z.array(z.any()),
   ref: z.string(),
   role: Type,
 });
-export type EventRefList = z.infer<typeof EventRefList>;
+export type EventRef = z.infer<typeof EventRef>;
 
 export const PersonRefList = z.object({
   _class: z.string(),
@@ -169,7 +169,7 @@ export const GedcomElement = z.object({
   urls: z.array(z.any()),
   lds_ord_list: z.array(z.any()),
   primary_name: Name,
-  event_ref_list: z.array(EventRefList),
+  event_ref_list: z.array(EventRef),
   family_list: z.array(z.string()),
   parent_family_list: z.array(z.string()),
   alternate_names: z.array(Name),
