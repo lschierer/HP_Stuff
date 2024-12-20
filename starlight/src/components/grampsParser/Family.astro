@@ -141,11 +141,17 @@ if(!Array.isArray(entries) || entries.length == 0 ) {
       }
     }
     if(data.mother_handle != undefined) {
+      if(DEBUG) {
+        console.log(`mother is defined`)
+      }
       const mHandle = data.mother_handle;
       const mes = await getCollection('people', ({data}) => {
         return !data.handle.localeCompare(mHandle);
       });
       if(Array.isArray(mes) && mes.length > 0) {
+        if(DEBUG) {
+          console.log(`found ${mes.length} potential mothers`)
+        }
         if(mes.length > 1) {
           console.error(`found too many mothers: ${mes.length}`)
           throw new Error(`found too many mothers: ${mes.length}`)
@@ -153,10 +159,13 @@ if(!Array.isArray(entries) || entries.length == 0 ) {
           mother = mes[0].data;
           mID = mother.id;
           if(mother.event_ref_list.length > 0) {
-            feventRefs.push(...mother.event_ref_list);
+            meventRefs.push(...mother.event_ref_list);
           }
           mBirthIndex = mother.birth_ref_index;
           mDeathIndex = mother.death_ref_index;
+          if(DEBUG) {
+            console.log(`mID is ${mID}`)
+          }
         }
       }
     }
@@ -165,12 +174,14 @@ if(!Array.isArray(entries) || entries.length == 0 ) {
 }
 if(DEBUG) {
   console.log(`fID is ${fID} at end`)
-}
-
-if(feventRefs.length > 0) {
-  if(DEBUG) {
+  if(feventRefs.length > 0) {
     console.log(`father's birth ref is ${feventRefs[fBirthIndex].ref}`)
     console.log(`father's death ref is ${feventRefs[fDeathIndex].ref}`)
+  }
+  console.log(`mID is ${mID} at end`)
+  if(meventRefs.length > 0) {
+    console.log(`mother's birth ref is ${meventRefs[mBirthIndex].ref}`)
+    console.log(`mother's death ref is ${meventRefs[mDeathIndex].ref}`)
   }
 }
 
@@ -187,9 +198,12 @@ if(feventRefs.length > 0) {
           <IndividualName personId={fID}></IndividualName> (
           {(feventRefs.length > 0 && feventRefs[fBirthIndex].ref.length > 0) ? (
           <Event handle={feventRefs[fBirthIndex].ref}></Event>
-          ): "Unknown Birthday"} - {(feventRefs.length > 0 && feventRefs[fDeathIndex].ref.length > 0) ? (
+          ) :
+          "Unknown Birthday" } -
+          {(feventRefs.length > 0 && feventRefs[fDeathIndex].ref.length > 0) ? (
           <Event handle={feventRefs[fDeathIndex].ref}></Event>
-          ): "the Present?"} )
+          ) :
+          "the Present?"} )
         </span>
         :
         <span> Unknown</span>
@@ -201,9 +215,12 @@ if(feventRefs.length > 0) {
           <IndividualName personId={mID}></IndividualName> (
           {(meventRefs.length > 0 && meventRefs[mBirthIndex].ref.length > 0) ? (
           <Event handle={meventRefs[mBirthIndex].ref}></Event>
-          ): "Unknown Birthday"} - {(meventRefs.length > 0 && meventRefs[mDeathIndex].ref.length > 0) ? (
+          ) :
+          "Unknown Birthday"} -
+          {(meventRefs.length > 0 && meventRefs[mDeathIndex].ref.length > 0) ? (
           <Event handle={meventRefs[mDeathIndex].ref}></Event>
-          ): "the Present?"} )
+          ) :
+          "the Present?"} )
         </span>
         :
         <span> Unknown</span>
