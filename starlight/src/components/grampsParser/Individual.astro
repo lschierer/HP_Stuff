@@ -9,7 +9,7 @@ import { getEntry, type CollectionEntry } from "astro:content";
 import "@styles/Gramps.css";
 
 import IndividualName from './IndividualName.astro';
-
+import Family from './Family.astro';
 
 const DEBUG = true;
 
@@ -59,6 +59,7 @@ if(personId) {
           </ul>
         </div>
         <div class="Parents flex-auto flex-col my-0 gap-0">
+          <Family childrenHandles={[person.handle]}></Family>
         </div>
       </div>
     </div>

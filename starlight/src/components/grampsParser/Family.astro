@@ -1,0 +1,218 @@
+---
+interface Props {
+  tree?: boolean;
+  fatherHandle?: string;
+  motherHandle?: string;
+  childrenHandles?: string[];
+}
+
+import { GedcomPerson, GedcomFamily } from '@schemas/gedcom';
+import { getCollection, type CollectionEntry } from "astro:content";
+
+import "@styles/Gramps.css";
+import { ChildRef } from '@schemas/gedcom/family';
+
+import IndividualName from './IndividualName.astro';
+import Event from './event.astro';
+
+const DEBUG = true;
+const DEBUG1 = false;
+const DEBUG2 = false;
+
+const {tree = false, fatherHandle, motherHandle, childrenHandles } = Astro.props;
+let father: GedcomPerson.GedcomElement | undefined = undefined;
+let mother: GedcomPerson.GedcomElement | undefined = undefined;
+let fID: string = "";
+let mID: string = "";
+const feventRefs: GedcomPerson.EventRef[] = new Array<GedcomPerson.EventRef>();
+const meventRefs: GedcomPerson.EventRef[] = new Array<GedcomPerson.EventRef>();
+let fBirthIndex = -1;
+let fDeathIndex = -1;
+let mBirthIndex = -1;
+let mDeathIndex = -1;
+
+const entries = await getCollection('families', ({data}) => {
+  if(fatherHandle != undefined) {
+    if(data.father_handle == undefined) {
+      if(DEBUG1) {
+        console.log(`father mismatch: data.father_handle undefined`)
+      }
+      return false;
+    } else if (fatherHandle.localeCompare(data.father_handle)){
+      if(DEBUG1) {
+        console.log(`father mismatch: ${data.father_handle} != ${fatherHandle}`)
+      }
+      return false;
+    } else {
+      if(DEBUG1) {
+        console.log(`father match: ${data.father_handle} == ${fatherHandle}`)
+      }
+    }
+  }
+  if(motherHandle != undefined) {
+    if(data.mother_handle == undefined) {
+      if(DEBUG1) {
+        console.log(`mother mismatch: data.mother_handle undefined`)
+      }
+      return false;
+    } else if (motherHandle.localeCompare(data.mother_handle)){
+      if(DEBUG1) {
+        console.log(`mother mismatch: ${data.mother_handle} != ${motherHandle}`)
+      }
+      return false;
+    } else {
+      if(DEBUG1) {
+        console.log(`mother match: ${data.mother_handle} == ${motherHandle}`)
+      }
+    }
+  }
+  if(childrenHandles != undefined && Array.isArray(childrenHandles) && childrenHandles.length > 0) {
+    if(data.child_ref_list != undefined && Array.isArray(data.child_ref_list) && data.child_ref_list.length > 0) {
+
+      const entryChildren: string[] = new Array<string>();
+      data.child_ref_list.map((childref) => {
+        const cr = childref.ref;
+        entryChildren.push(cr);
+      });
+      const cm = !childrenHandles.map((ch) => {
+        if(!entryChildren.includes(ch)) {
+          if(DEBUG2) {
+            console.log(`${ch} is not in ${JSON.stringify(entryChildren.join(' '))}`)
+          }
+          return false;
+        }
+        return true;
+      }).includes(false)
+      if(cm == true && DEBUG1) {
+        console.log(`children match: ${cm}: ${JSON.stringify(childrenHandles.join(' '))}; ${entryChildren.join(' ')}`)
+      }
+      return cm;
+    } else {
+      if(DEBUG2) {
+        console.log(`looking for a family with ${childrenHandles.length} children, this entry has no children`)
+      }
+      return false;
+    }
+    return data.type.string ? !data.type.string.localeCompare(GedcomFamily.StringEnum.Values.Birth) : false;
+  } else {
+    if(DEBUG2) {
+      console.log(`no children to match against`)
+    }
+  }
+  return true;
+})
+
+if(!Array.isArray(entries) || entries.length == 0 ) {
+  console.error(`no family found with props ${JSON.stringify(Astro.props)}`)
+} else {
+  if(DEBUG) {
+    console.log(`searching for parents for in Family.astro`)
+  }
+
+  await Promise.all(entries.map(async (entry) => {
+    const data = entry.data;
+    if(data.father_handle != undefined) {
+      if(DEBUG) {
+        console.log(`father is defined`)
+      }
+      const fHandle = data.father_handle;
+      const fes = await getCollection('people', ({data}) => {
+        return !data.handle.localeCompare(fHandle);
+      });
+      if(Array.isArray(fes) && fes.length > 0) {
+        if(DEBUG) {
+          console.log(`found ${fes.length} potential fathers`)
+        }
+        if(fes.length > 1) {
+          console.error(`found too many fathers: ${fes.length}`)
+          throw new Error(`found too many fathers: ${fes.length}`)
+        } else {
+          father = fes[0].data;
+          fID = father.id;
+          if(father.event_ref_list.length > 0) {
+            feventRefs.push(...father.event_ref_list);
+          }
+          fBirthIndex = father.birth_ref_index;
+          fDeathIndex = father.death_ref_index;
+          if(DEBUG) {
+            console.log(`fID is ${fID}`)
+          }
+        }
+      }
+    }
+    if(data.mother_handle != undefined) {
+      const mHandle = data.mother_handle;
+      const mes = await getCollection('people', ({data}) => {
+        return !data.handle.localeCompare(mHandle);
+      });
+      if(Array.isArray(mes) && mes.length > 0) {
+        if(mes.length > 1) {
+          console.error(`found too many mothers: ${mes.length}`)
+          throw new Error(`found too many mothers: ${mes.length}`)
+        } else {
+          mother = mes[0].data;
+          mID = mother.id;
+          if(mother.event_ref_list.length > 0) {
+            feventRefs.push(...mother.event_ref_list);
+          }
+          mBirthIndex = mother.birth_ref_index;
+          mDeathIndex = mother.death_ref_index;
+        }
+      }
+    }
+
+  }))
+}
+if(DEBUG) {
+  console.log(`fID is ${fID} at end`)
+}
+
+if(feventRefs.length > 0) {
+  if(DEBUG) {
+    console.log(`father's birth ref is ${feventRefs[fBirthIndex].ref}`)
+    console.log(`father's death ref is ${feventRefs[fDeathIndex].ref}`)
+  }
+}
+
+---
+{(Array.isArray(entries) && entries.length > 0) ?
+  (tree == true) ? (
+    <span>display tree</span>
+  ) : (
+  <div class="parents">
+    <h4 class="my-0">Parents</h4>
+    <ul class="my-0">
+      <li>Father:{(father != undefined) ?
+        <span>
+          <IndividualName personId={fID}></IndividualName> (
+          {(feventRefs.length > 0 && feventRefs[fBirthIndex].ref.length > 0) ? (
+          <Event handle={feventRefs[fBirthIndex].ref}></Event>
+          ): "Unknown Birthday"} - {(feventRefs.length > 0 && feventRefs[fDeathIndex].ref.length > 0) ? (
+          <Event handle={feventRefs[fDeathIndex].ref}></Event>
+          ): "the Present?"} )
+        </span>
+        :
+        <span> Unknown</span>
+
+      }
+      </li>
+      <li>Mother:{(mother != undefined) ?
+        <span>
+          <IndividualName personId={mID}></IndividualName> (
+          {(meventRefs.length > 0 && meventRefs[mBirthIndex].ref.length > 0) ? (
+          <Event handle={meventRefs[mBirthIndex].ref}></Event>
+          ): "Unknown Birthday"} - {(meventRefs.length > 0 && meventRefs[mDeathIndex].ref.length > 0) ? (
+          <Event handle={meventRefs[mDeathIndex].ref}></Event>
+          ): "the Present?"} )
+        </span>
+        :
+        <span> Unknown</span>
+
+      }
+      </li>
+    </ul>
+  </div>
+  ) : (
+    <span>family not found</span>
+  )
+}
