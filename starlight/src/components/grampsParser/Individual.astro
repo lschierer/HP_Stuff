@@ -4,6 +4,7 @@ interface Props {
 }
 
 import { GedcomPerson } from '@schemas/gedcom';
+import { male, female } from '@lib/GedcomConstants';
 import { getEntry, type CollectionEntry } from "astro:content";
 
 import "../../styles/Gramps.css";
@@ -71,7 +72,16 @@ if(personId) {
           </ul>
         </div>
         <Family childrenHandles={[person.handle]}></Family>
-
+        <div class="Unions flex-auto flex-col gap-0">
+          <h4 class="my-0">Unions & children</h4>
+          <ul class="bio">
+          {(person.gender == male.JSONconstant) ? (
+            <li><Family fatherHandle={person.handle}></Family></li>
+          ): (
+            <li><Family motherHandle={person.handle}></Family></li>
+          )}
+          </ul>
+        </div>
       </div>
     </div>
   </div>

@@ -20,6 +20,21 @@ const DEBUG1 = false;
 const DEBUG2 = false;
 
 const {tree = false, fatherHandle, motherHandle, childrenHandles } = Astro.props;
+
+let displayAsParent = false;
+if(DEBUG) {
+  console.log(`props are ${JSON.stringify(Astro.props)}`)
+}
+if((fatherHandle != undefined || motherHandle != undefined) && childrenHandles == undefined ) {
+  displayAsParent = true;
+  if (DEBUG) {
+    console.log(`displaying as parent`)
+  }
+} else {
+  if (DEBUG) {
+    console.log(`displaying as child`)
+  }
+}
 let father: GedcomPerson.GedcomElement | undefined = undefined;
 let mother: GedcomPerson.GedcomElement | undefined = undefined;
 let fID: string = "";
@@ -175,7 +190,10 @@ if(!Array.isArray(entries) || entries.length == 0 ) {
     if(data.child_ref_list.length > 0) {
       const childrefs = new Array<string>();
       data.child_ref_list.map((cref) => {
-        if(Array.isArray(childrenHandles) && !childrenHandles?.includes(cref.ref)) {
+        if(Array.isArray(childrenHandles) && (
+          !childrenHandles?.includes(cref.ref)) ||
+          displayAsParent
+        ) {
           childrefs.push(cref.ref)
         }
       });
@@ -187,6 +205,10 @@ if(!Array.isArray(entries) || entries.length == 0 ) {
           siblings.push(ce.data);
         }
       })
+    } else {
+      if (DEBUG && displayAsParent) {
+        console.log(`no children present`)
+      }
     }
 
   }))
@@ -194,13 +216,13 @@ if(!Array.isArray(entries) || entries.length == 0 ) {
 if(DEBUG) {
   console.log(`fID is ${fID} at end`)
   if(feventRefs.length > 0) {
-    console.log(`father's birth ref is ${feventRefs[fBirthIndex].ref}`)
-    console.log(`father's death ref is ${feventRefs[fDeathIndex].ref}`)
+    console.log(`father's birth ref is ${(fBirthIndex >= 0) ? feventRefs[fBirthIndex].ref : fBirthIndex }`)
+    console.log(`father's death ref is ${(fDeathIndex >= 0) ? feventRefs[fDeathIndex].ref : fDeathIndex} `)
   }
   console.log(`mID is ${mID} at end`)
   if(meventRefs.length > 0) {
-    console.log(`mother's birth ref is ${meventRefs[mBirthIndex].ref}`)
-    console.log(`mother's death ref is ${meventRefs[mDeathIndex].ref}`)
+    console.log(`mother's birth ref is ${(mBirthIndex >=0 && mBirthIndex < meventRefs.length) ? meventRefs[mBirthIndex].ref : mBirthIndex}`);
+    console.log(`mother's death ref is ${(mDeathIndex >=0 && mDeathIndex < meventRefs.length) ? meventRefs[mDeathIndex].ref : mDeathIndex}`);
   }
 }
 
@@ -220,6 +242,9 @@ siblings.sort((a,b) => {
   }
 });
 
+if(DEBUG) {
+  console.log(`displayAsParent is ${displayAsParent} at end`)
+}
 ---
 
 {(Array.isArray(entries) && entries.length > 0) ?
@@ -236,7 +261,7 @@ siblings.sort((a,b) => {
           <Event handle={feventRefs[fBirthIndex].ref}></Event>
           ) :
           "Unknown Birthday" } -
-          {(feventRefs.length > 0 && feventRefs[fDeathIndex].ref.length > 0) ? (
+          {(feventRefs.length > 0 && fDeathIndex >=0 && feventRefs[fDeathIndex].ref.length > 0) ? (
           <Event handle={feventRefs[fDeathIndex].ref}></Event>
           ) :
           "the Present?"} )
@@ -253,7 +278,7 @@ siblings.sort((a,b) => {
           <Event handle={meventRefs[mBirthIndex].ref}></Event>
           ) :
           "Unknown Birthday"} -
-          {(meventRefs.length > 0 && meventRefs[mDeathIndex].ref.length > 0) ? (
+          {(meventRefs.length > 0 && mDeathIndex >= 0 && meventRefs[mDeathIndex].ref.length > 0) ? (
           <Event handle={meventRefs[mDeathIndex].ref}></Event>
           ) :
           "the Present?"} )
@@ -266,7 +291,7 @@ siblings.sort((a,b) => {
     </ul>
   </div>
   <div class="Sibilings flex-auto flex-col">
-    <h4 class="my-0">Siblings (and Half-Siblings)</h4>
+    <h4 class="my-0">{(displayAsParent == false) ? 'Siblings (and Half-Siblings)' : 'Children' }</h4>
     <ul class="bio">
       {(siblings.length > 0) ? siblings.map((sibling) => (
         <li>
