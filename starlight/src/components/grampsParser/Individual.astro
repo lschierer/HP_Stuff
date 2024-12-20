@@ -10,6 +10,7 @@ import "@styles/Gramps.css";
 
 import IndividualName from './IndividualName.astro';
 import Family from './Family.astro';
+import Event from './event.astro';
 
 const DEBUG = true;
 
@@ -20,11 +21,20 @@ if (DEBUG) {
 }
 
 let person: GedcomPerson.GedcomElement | undefined = undefined;
+const eventsRefs: GedcomPerson.EventRef[] = new Array<GedcomPerson.EventRef>();
+let BirthIndex = -1;
+let DeathIndex = -1;
+
 if(personId) {
   const personEntry = await getEntry('people', personId);
 
   if(personEntry != undefined) {
     person = personEntry.data;
+    if(person.event_ref_list.length > 0) {
+      eventsRefs.push(...person.event_ref_list);
+      BirthIndex = person.birth_ref_index;
+      DeathIndex = person.death_ref_index;
+    }
   }
 }
 
@@ -51,10 +61,12 @@ if(personId) {
         <div class="General flex-auto flex-col ">
           <ul class="my-0">
             <li>
-              Birth:
+              Birth: {(BirthIndex >= 0) ?
+              (<Event handle={eventsRefs[BirthIndex].ref}></Event>) : "Unknown"}
             </li>
             <li>
-              Death:
+              Death: {(DeathIndex >= 0) ?
+              (<Event handle={eventsRefs[DeathIndex].ref}></Event>) : "Unknown"}
             </li>
           </ul>
         </div>
