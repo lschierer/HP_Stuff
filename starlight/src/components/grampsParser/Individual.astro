@@ -6,7 +6,7 @@ interface Props {
 import { GedcomPerson } from '@schemas/gedcom';
 import { getEntry, type CollectionEntry } from "astro:content";
 
-import "@styles/Gramps.css";
+import "../../styles/Gramps.css";
 
 import IndividualName from './IndividualName.astro';
 import Family from './Family.astro';
@@ -44,14 +44,14 @@ if(personId) {
   <div class="CardBody" tabindex="0" role="figure">
     <div class="flex-auto ">
       <div class="grid grid-cols-12 grid-rows-2 bg-gray-100">
-        <div class="col-span-11 col-end-12 row-span-1 ">
+        <div class="my-0 col-span-11 col-end-12 row-span-1 ">
           <IndividualName personId={personId} ></IndividualName>
         </div>
         <div class="col-span-1 row-span-1">
           <!-- I believe I intended this space for icons showing Hogwarts House affiliation, blood status, and similiar. -->
           <!-- leaving the div because I do not want to re-figure the flex placement -->
         </div>
-        <div class="col-span-1 row-span-1">
+        <div class="my-0 col-span-1 row-span-1">
           {personId}
         </div>
       </div>
@@ -59,7 +59,7 @@ if(personId) {
         class="flex-auto basis-0 flex-col gap-0 rounded border-2 "
       >
         <div class="General flex-auto flex-col ">
-          <ul class="my-0">
+          <ul class="bio my-0">
             <li>
               Birth: {(BirthIndex >= 0) ?
               (<Event handle={eventsRefs[BirthIndex].ref}></Event>) : "Unknown"}

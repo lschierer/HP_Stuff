@@ -228,8 +228,8 @@ siblings.sort((a,b) => {
   ) : (
   <div class="Parents flex-auto flex-col my-0 gap-0">
     <h4 class="my-0">Parents</h4>
-    <ul class="my-0">
-      <li>Father:{(father != undefined) ?
+    <ul class="bio not-content">
+      <li class="my-0">Father:{(father != undefined) ?
         <span>
           <IndividualName personId={fID}></IndividualName> (
           {(feventRefs.length > 0 && feventRefs[fBirthIndex].ref.length > 0) ? (
@@ -267,7 +267,7 @@ siblings.sort((a,b) => {
   </div>
   <div class="Sibilings flex-auto flex-col">
     <h4 class="my-0">Siblings (and Half-Siblings)</h4>
-    <ul>
+    <ul class="bio">
       {(siblings.length > 0) ? siblings.map((sibling) => (
         <li>
           <IndividualName personId={sibling.id}></IndividualName> (
