@@ -1,0 +1,132 @@
+---
+interface Props {
+  iconName: string;
+  title: string;
+  linkTarget?: string;
+  description?: string;
+}
+import {
+  type HTMLTag,
+  type Polymorphic,
+  type HTMLAttributes,
+} from "astro/types";
+
+type aProps = HTMLAttributes<"a">;
+
+type polyProps<Tag extends HTMLTag> = Polymorphic<{ as: Tag }>;
+
+const { iconName = "", title, linkTarget = "", description = "" } = Astro.props;
+
+import "iconify-icon";
+import "@spectrum-css/card/dist/index.css";
+import "@spectrum-css/icon/dist/index.css";
+---
+
+<horizontal-card2
+  link-target={linkTarget}
+  icon-name={iconName}
+  card-title={title}
+  card-description={description}
+>
+</horizontal-card2>
+
+<script>
+  import "iconify-icon";
+
+  const DEBUG = true;
+
+  // Define the behaviour for our new type of HTML element.
+  class HorizontalCard2 extends HTMLElement {
+    private linkTarget = "";
+    private iconName = "";
+    private cardTitle = "";
+    private description = "";
+
+    constructor() {
+      super();
+    }
+
+    attributeChangedCallback(name: string, oldValue: string, newValue: string) {
+      if (!name.localeCompare("link-target")) {
+        if (DEBUG) {
+          console.log(`link-target now ${newValue}`);
+        }
+        this.linkTarget = newValue;
+      }
+      if (!name.localeCompare("icon-name")) {
+        if (DEBUG) {
+          console.log(`iconName now ${newValue}`);
+        }
+        this.iconName = newValue;
+      }
+      if (!name.localeCompare("card-title")) {
+        this.cardTitle = newValue;
+      }
+    }
+
+    protected manualAttributeSetter = () => {
+      const attributes = this.getAttributeNames();
+      attributes.forEach((name) => {
+        const newValue = this.getAttribute(name);
+        this.attributeChangedCallback(name, "", newValue ?? "");
+      });
+    };
+
+    connectedCallback() {
+      let count = 0;
+      if (DEBUG) {
+        console.log(`HorizontalCard2 connectedCallback`);
+      }
+      this.manualAttributeSetter();
+
+      let template = ``;
+
+      if (this.iconName.length > 0) {
+        template = `<iconify-icon
+            icon=${this.iconName}
+            class="not-content spectrum-Icon spectrum-Icon--sizeXXL "
+            role="img"
+            width="100%"
+            ></iconify-icon>`;
+      }
+
+      template = `
+
+        <div
+          class="not-content spectrum-Card spectrum-Card--horizontal"
+          tabindex="0"
+          role="figure"
+        >
+          <div class="not-content spectrum-Card-preview">
+            ${template}
+          </div>
+          <div class="not-content spectrum-Card-body">
+            <div class="not-content spectrum-Card-header">
+              <div
+                class="not-content spectrum-Card-title spectrum-Heading spectrum-Heading--sizeXS"
+              >
+                ${this.cardTitle}
+              </div>
+            </div>
+            <div class="not-content spectrum-Card-content">
+              <div class="not-content spectrum-Card-description ">
+                <span class="not-content spectrum-Card-description "
+                  >${this.description}</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+      if (this.linkTarget.length > 0) {
+        template = `<a href=${this.linkTarget}>${template}</a>`;
+      }
+
+      this.innerHTML = template;
+    }
+  }
+
+  // Tell the browser to use our AstroHeart class for <astro-heart> elements.
+  customElements.define("horizontal-card2", HorizontalCard2);
+</script>

@@ -21,6 +21,7 @@
     "@spectrum-css/button": "^13.5.0",
     "@spectrum-css/card": "^9.3.0",
     "@spectrum-css/divider": "^3.2.0",
+    "@spectrum-css/icon": "^7.2.0",
     "@spectrum-css/link": "^5.2.0",
     "@spectrum-css/page": "^8.2.0",
     "@spectrum-css/sidenav": "^5.2.0",

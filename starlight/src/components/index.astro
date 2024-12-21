@@ -1,0 +1,50 @@
+---
+import { type CardDetails } from "@lib/CardDetails";
+
+import { getCollection } from "astro:content";
+const DEBUG = false;
+
+const bookmarks = await getCollection("docs", (entry) => {
+  if (DEBUG) {
+    console.log(`entry id is ${entry.id}`);
+  }
+  return (
+    entry.id.toLowerCase().startsWith("bookmarks") && entry.id.includes("/")
+  );
+});
+
+const bookmarkCardDetails = new Array<CardDetails>();
+
+bookmarks.map((bm) => {
+  const turl = `/${bm.id}/`;
+  bookmarkCardDetails.push({
+    title: bm.data.title,
+    name: "dashicons:text-page",
+    target: turl,
+  });
+  if (DEBUG) {
+    console.log(
+      `target for id ${bm.id} is ${bookmarkCardDetails[bookmarkCardDetails.length - 1].target}`
+    );
+  }
+});
+
+import "iconify-icon";
+import { CardGrid } from "@astrojs/starlight/components";
+import HorizontalCard from "./HorizontalCard.astro";
+---
+
+<CardGrid stagger>
+  {
+    bookmarkCardDetails.map((bcd) => (
+      <span>
+        <HorizontalCard
+          iconName={bcd.name}
+          title={bcd.title}
+          linkTarget={bcd.target}
+          description={bcd.description}
+        />
+      </span>
+    ))
+  }
+</CardGrid>

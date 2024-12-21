@@ -419,6 +419,9 @@ importers:
       '@spectrum-css/divider':
         specifier: ^3.2.0
         version: 3.2.0(@spectrum-css/tokens@14.6.0)
+      '@spectrum-css/icon':
+        specifier: ^7.2.0
+        version: 7.2.0(@spectrum-css/tokens@14.6.0)
       '@spectrum-css/link':
         specifier: ^5.2.0
         version: 5.2.0(@spectrum-css/tokens@14.6.0)
