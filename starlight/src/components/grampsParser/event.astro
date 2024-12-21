@@ -7,7 +7,7 @@ interface Props {
 import { getCollection, type CollectionEntry } from "astro:content";
 import { GedcomEvent } from "@schemas/gedcom";
 
-const DEBUG = true;
+const DEBUG = false;
 
 const { handle, type = undefined } = Astro.props;
 let event :GedcomEvent.GedcomElement | undefined = undefined;
@@ -108,7 +108,7 @@ if(event != undefined) {
 
   import { DateTime, Interval } from "luxon";
 
-  const DEBUG = true;
+  const DEBUG = false;
   if(DEBUG) {
     console.log(`event.astro script running`)
   }

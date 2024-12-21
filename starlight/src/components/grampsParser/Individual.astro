@@ -12,8 +12,9 @@ import "../../styles/Gramps.css";
 import IndividualName from './IndividualName.astro';
 import Family from './Family.astro';
 import Event from './event.astro';
+import AncestorsTreeChart from './AncestorsTreeChart/AncestorsTreeChart.astro';
 
-const DEBUG = true;
+const DEBUG = false;
 
 const { personId } = Astro.props;
 
@@ -110,6 +111,10 @@ if(personId) {
 
       </div>
     </div>
+
+  </div>
+  <div class="TimelineCard rounded border-2">
+    <AncestorsTreeChart isRoot={true} grampsId={person.id}></AncestorsTreeChart>
   </div>
 ) : (
   <span>"No person with id {personId} found"</span>

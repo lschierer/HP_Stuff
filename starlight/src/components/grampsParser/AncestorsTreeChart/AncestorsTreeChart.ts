@@ -1,5 +1,5 @@
 export const prerender = false;
-import { LitElement, html, nothing } from "lit";
+import { LitElement, html, nothing, unsafeCSS } from "lit";
 import type { TemplateResult } from "lit";
 import { property, state } from "lit/decorators.js";
 import { consume } from "@lit/context";
@@ -104,7 +104,7 @@ export class AncestorsTreeChart extends LitElement {
     return null;
   }
 
-  static styles = [AncestorsTreeChartCSS];
+  static styles = [unsafeCSS(AncestorsTreeChartCSS)];
 
   public render() {
     if (DEBUG) {

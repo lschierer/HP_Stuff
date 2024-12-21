@@ -3,7 +3,7 @@ import { createContext } from "@lit/context";
 
 import * as GrampsZod from "../../lib/GrampsZodTypes.ts";
 
-export const DEBUG = true;
+export const DEBUG = false;
 
 export class GrampsState {
   public primaryId: string | null = null;

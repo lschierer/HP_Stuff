@@ -1,7 +1,6 @@
 ---
 interface Props {
   familyHandle: string;
-  tree?: boolean;
   fatherHandle?: string;
   motherHandle?: string;
   childrenHandles?: string[];
@@ -14,15 +13,15 @@ import "@styles/Gramps.css";
 import { ChildRef } from '@schemas/gedcom/family';
 
 import IndividualName from './IndividualName.astro';
+import TreeNode from './AncestorsTreeChart/TreeNode.astro';
 import Event from './event.astro';
 
-const DEBUG = true;
+const DEBUG = false;
 const DEBUG1 = false;
 const DEBUG2 = false;
 
 const {
   familyHandle,
-  tree = false,
   fatherHandle = "",
   motherHandle = "",
   childrenHandles = new Array<string>()
@@ -269,10 +268,8 @@ if(DEBUG) {
 ---
 
 {(Array.isArray(entries) && entries.length > 0) ?
-  (tree == true) ? (
-    <span>display tree</span>
-  ) : (
-  <div class="Parents flex-auto flex-col my-0 gap-0">
+  (
+<div class="Parents flex-auto flex-col my-0 gap-0">
     <h4 class="my-0">Parents (or Custiodial Guardians)</h4>
     <ul class="bio not-content">
       <li class="my-0">Father:{(father != undefined) ?

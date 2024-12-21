@@ -21,7 +21,7 @@ import { SimpleIndividual } from "./simpleIndividual.ts";
 import { GrampsIndividual } from "./individual.ts";
 import { nothing } from "lit";
 
-const DEBUG = true;
+const DEBUG = false;
 
 export class GrampsFamily extends LitElement {
   @provide({ context: grampsContext })

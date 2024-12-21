@@ -1,5 +1,5 @@
 ---
-const DEBUG = true;
+const DEBUG = false;
 const { events } = Astro.props
 if(DEBUG) {
   console.log(`v-timeline events is ${events}`)
@@ -12,7 +12,7 @@ import "../styles/Timeline.css"
 import { DateTime } from "luxon";
 import { Event, DisplayableEvent } from "../lib/TimelineTypes.ts";
 
-const DEBUG = true;
+const DEBUG = false;
 
 export default class VerticalTimeline extends HTMLElement {
   public events: string = "";

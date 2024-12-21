@@ -15,7 +15,7 @@ import AstroIcon from '@components/Icon.astro';
 
 import { male, female } from '@lib/GedcomConstants';
 
-const DEBUG = true;
+const DEBUG = false;
 
 const { personId, link = false, inline = false } = Astro.props;
 
@@ -26,7 +26,7 @@ if (DEBUG) {
 }
 
 const buildLinkTarget = (individual: GedcomPerson.GedcomElement): string => {
-  let targetLocation = '/Harrypedia/people/';
+  let targetLocation = '/harrypedia/people/';
 
   if(individual.primary_name != undefined) {
     if(individual.primary_name.surname_list != undefined) {
@@ -36,8 +36,8 @@ const buildLinkTarget = (individual: GedcomPerson.GedcomElement): string => {
           if(sn.primary) {
             if(!sn.origintype.string.localeCompare(GedcomPerson.StringEnum.Values.Taken)) {
               found = true;
-              const tsn = encodeURIComponent(sn.surname);
-              targetLocation = `${targetLocation}/tsn/`
+              const tsn = encodeURIComponent(sn.surname.toLowerCase());
+              targetLocation = `${targetLocation}/${tsn}/`
               if(DEBUG) {
                 console.log(`found lastname ${sn.surname} for ${personId}, targetLocation now ${targetLocation}`)
               }
@@ -46,13 +46,18 @@ const buildLinkTarget = (individual: GedcomPerson.GedcomElement): string => {
         });
         if(!found && individual.primary_name.surname_list.length > 0) {
           const sn = individual.primary_name.surname_list[0].surname;
-          const tsn = encodeURIComponent(sn);
-          targetLocation = `${targetLocation}/${tsn}/`
+          const tsn = encodeURIComponent(sn.toLowerCase());
+          targetLocation = `${targetLocation}${tsn}/`
           if(DEBUG) {
             console.log(`found lastname ${sn} for ${personId}, targetLocation now ${targetLocation}`)
           }
         }
       }
+    }
+
+    if(individual.primary_name.first_name != undefined && individual.primary_name.first_name.length > 0) {
+      const fn = encodeURIComponent(individual.primary_name.first_name.toLowerCase());
+      targetLocation = `${targetLocation}${fn}/`
     }
   }
   return targetLocation;
@@ -134,23 +139,26 @@ const iconclasses = (person != undefined) ?
 const linkTarget = (person != undefined) ? buildLinkTarget(person) : "";
 const nameFragmet = link ?
   `<a href="${linkTarget}">${name}</a>` :
+  inline ?
+  name :
   `<span class="bio">${name}</span>`;
 ---
 
 {(person != undefined ) ? (inline) ? (
-  <AstroIcon
+  <span>
+    <AstroIcon
       icon={iconName}
       iconclasses={iconclasses}
       inline={true}
-  ></AstroIcon>
+    ></AstroIcon>
+    <Fragment set:html={nameFragmet} />
+  </span>
 ) : (
-  <AstroIcon
+  <>
+    <AstroIcon
       icon={iconName}
       iconclasses={iconclasses}
-  ></AstroIcon>
-) : ""}
-{(person != undefined ) ? (
+    ></AstroIcon>
     <Fragment set:html={nameFragmet} />
-) : (
-  ""
-)}
+  </>
+) : ""}

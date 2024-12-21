@@ -1,8 +1,11 @@
 import { z } from "astro:schema";
 
+export const genders = z.union([z.literal("Male"), z.literal("Female")]);
+export type genders = z.infer<typeof genders>;
+
 const genderConstant = z.object({
   JSONconstant: z.union([z.literal(0), z.literal(1)]),
-  textName: z.union([z.literal("Male"), z.literal("Female")]),
+  textName: genders,
   iconName: z.union([z.literal("ion:male"), z.literal("ion:female")]),
   iconColor: z.union([z.literal("color-male"), z.literal("color-female")]),
 });

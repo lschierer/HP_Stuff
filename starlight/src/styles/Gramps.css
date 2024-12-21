@@ -136,6 +136,15 @@ ul.bio {
   padding-left: 2rem;
 }
 
+.TimelineCard {
+  width: 100%;
+  border-top-width: 0px;
+  border-style: solid;
+  border-color: var(--spectrum-blue-100);
+  border-radius: 4px;
+  z-index: 1;
+}
+
 ul.timeline {
   list-style-type: none;
   position: relative;
