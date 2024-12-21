@@ -104,7 +104,7 @@ export class GrampsEvent extends LitElement {
         if (filterResult && filterResult.length > 0) {
           if (DEBUG)
             console.log(
-              `willUpdate; filter returned ${filterResult.length} people`,
+              `willUpdate; filter returned ${filterResult.length} people`
             );
           const first: grampsZod.Person | undefined = filterResult.shift();
           if (first !== undefined) {
@@ -115,7 +115,7 @@ export class GrampsEvent extends LitElement {
             if (this.showBirth) {
               if (DEBUG)
                 console.log(
-                  `willUpdate; looking for a birth record for ${this.grampsId}`,
+                  `willUpdate; looking for a birth record for ${this.grampsId}`
                 );
               if (this._i1) {
                 const e = this.findBirthByPerson(this._i1);
@@ -146,7 +146,7 @@ export class GrampsEvent extends LitElement {
         if (this.showMarriage) {
           if (DEBUG)
             console.log(
-              `render; looking for marriage event of ${this.familyId}`,
+              `render; looking for marriage event of ${this.familyId}`
             );
           const family = db.families.family
             .filter((f) => {
@@ -210,7 +210,7 @@ export class GrampsEvent extends LitElement {
   }
 
   public findEventsByPerson(
-    individual: grampsZod.Person,
+    individual: grampsZod.Person
   ): grampsZod.Event[] | null {
     if (DEBUG) console.log(`findEventsByPerson; start`);
     const refs:

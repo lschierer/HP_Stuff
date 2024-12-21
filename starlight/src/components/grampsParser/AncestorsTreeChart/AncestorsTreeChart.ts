@@ -43,7 +43,7 @@ export class AncestorsTreeChart extends LitElement {
   private renderTreeLi(
     individual: GrampsZod.Person | undefined,
     maxDepth: number,
-    isRoot: boolean = false,
+    isRoot: boolean = false
   ): TemplateResult<1> | null {
     if (individual && this.state && this.state.zodData) {
       const db = this.state.zodData;

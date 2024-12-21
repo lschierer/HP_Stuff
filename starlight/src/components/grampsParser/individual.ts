@@ -51,7 +51,7 @@ export class GrampsIndividual extends LitElement {
         const entry = getEntry("history", this.state.primaryId);
         const personUrl = new URL(
           "/assets/gramps/".concat(this.personId).concat(".json"),
-          import.meta.url,
+          import.meta.url
         );
         const status = await this.state.fetchData(personUrl);
         if (status && this.state.zodData !== null) {
@@ -119,7 +119,7 @@ export class GrampsIndividual extends LitElement {
               if (father) {
                 if (DEBUG)
                   console.log(
-                    `renderParents; found father with id ${father.id}`,
+                    `renderParents; found father with id ${father.id}`
                   );
                 f = html`<simple-individual
                   grampsId=${father.id}
@@ -157,7 +157,7 @@ export class GrampsIndividual extends LitElement {
             } else {
               if (DEBUG)
                 console.log(
-                  `renderParents; family detected but no parent found at all`,
+                  `renderParents; family detected but no parent found at all`
                 );
             }
           }
@@ -177,7 +177,7 @@ export class GrampsIndividual extends LitElement {
         if (db) {
           if (DEBUG)
             console.log(
-              `renderSiblings; indivudal ${this.individual.id} and controller set`,
+              `renderSiblings; indivudal ${this.individual.id} and controller set`
             );
           const families: GrampsZod.Family[] | null = this.getFamilyAsChild();
           if (families !== null && families.length > 0) {
@@ -196,13 +196,13 @@ export class GrampsIndividual extends LitElement {
                 ) {
                   if (DEBUG)
                     console.log(
-                      `renderSiblings; ${allChildren.length} to look through`,
+                      `renderSiblings; ${allChildren.length} to look through`
                     );
                   allChildren.map((cr) => {
                     if (cr !== undefined) {
                       if (DEBUG)
                         console.log(
-                          `renderSiblings; child with handle ${cr} is real`,
+                          `renderSiblings; child with handle ${cr} is real`
                         );
                       const child: GrampsZod.Person | undefined =
                         db.people.person
@@ -210,7 +210,7 @@ export class GrampsIndividual extends LitElement {
                             if (p && p.handle) {
                               if (DEBUG)
                                 console.log(
-                                  `renderSiblings; comparing against ${p.handle}`,
+                                  `renderSiblings; comparing against ${p.handle}`
                                 );
                               return !p.handle.localeCompare(cr, undefined, {
                                 sensitivity: "base",
@@ -227,7 +227,7 @@ export class GrampsIndividual extends LitElement {
                       ) {
                         if (DEBUG)
                           console.log(
-                            `renderSiblings; templating child ${child.id}`,
+                            `renderSiblings; templating child ${child.id}`
                           );
                         c_template = html`${c_template}
                           <li>
@@ -420,7 +420,7 @@ export class GrampsIndividual extends LitElement {
           if (this.individual !== null && this.individual !== undefined) {
             if (DEBUG)
               console.log(
-                `getFamilyAsChild; with an individual ${this.individual.id}`,
+                `getFamilyAsChild; with an individual ${this.individual.id}`
               );
             let result = Array<GrampsZod.Family>();
             let familyRefs: (GrampsZod.Sourceref | null)[] | null =
@@ -436,7 +436,7 @@ export class GrampsIndividual extends LitElement {
               });
               if (DEBUG)
                 console.log(
-                  `getFamilyAsChild; I have ${familyLinks.length} links`,
+                  `getFamilyAsChild; I have ${familyLinks.length} links`
                 );
               result = db.families.family.filter((f) => {
                 const handle = f.handle;
@@ -456,7 +456,7 @@ export class GrampsIndividual extends LitElement {
             if (result.length > 0) {
               if (DEBUG)
                 console.log(
-                  `getFamilyAsChild; returning ${result.length} families`,
+                  `getFamilyAsChild; returning ${result.length} families`
                 );
               return result;
             }
@@ -614,12 +614,12 @@ export class GrampsIndividual extends LitElement {
                     >
                       <div class="General flex-auto flex-col ">
                         ${when(this.individual, () =>
-                          this.renderGeneral(this.individual!),
+                          this.renderGeneral(this.individual!)
                         )}
                       </div>
                       <div class="Parents flex-auto flex-col my-0 gap-0">
                         ${when(this.individual, () =>
-                          this.renderParents(this.individual!),
+                          this.renderParents(this.individual!)
                         )}
                       </div>
                       <div class="Unions flex-auto flex-col gap-0">

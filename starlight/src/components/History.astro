@@ -1,5 +1,4 @@
 ---
-
 import rehypeStringify from "rehype-stringify";
 import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
@@ -14,7 +13,7 @@ const DEBUG2 = true;
 
 const parseEvent = (
   event: Event,
-  fileName: string,
+  fileName: string
 ): DisplayableEvent | undefined => {
   let description: string | undefined = undefined;
   if (event.description !== null && event.description !== undefined) {
@@ -87,7 +86,7 @@ const parseEvent = (
     }
   } else {
     console.log(
-      `invalid date '${eventDate.toString()} ' for event ${JSON.stringify(event)}`,
+      `invalid date '${eventDate.toString()} ' for event ${JSON.stringify(event)}`
     );
     return undefined;
   }
@@ -99,38 +98,44 @@ const parseEvent = (
     source: source,
   };
   return ne;
-}
+};
 
 import { getCollection } from "astro:content";
 
-const matches = await getCollection('history');
+const matches = await getCollection("history");
 const events = new Array<DisplayableEvent>();
 
-if(DEBUG) {
-  console.log(`History.astro got ${matches.length} matches from history collection`)
+if (DEBUG) {
+  console.log(
+    `History.astro got ${matches.length} matches from history collection`
+  );
 }
-if(Array.isArray(matches) && matches.length > 0) {
-  matches.sort((a,b) => {
-    return a.id.toLowerCase().localeCompare(b.id.toLowerCase());
-  }).map((match) => {
-    if(Array.isArray(match.data.events)) {
-      match.data.events.map((event) => {
-        const de:DisplayableEvent | undefined = parseEvent(event, match.id);
-        if(de != undefined) {
-          events.push(de)
-        }
-      })
-    } else {
-      const de: DisplayableEvent | undefined = parseEvent(match.data.events, match.id)
-    }
-  })
+if (Array.isArray(matches) && matches.length > 0) {
+  matches
+    .sort((a, b) => {
+      return a.id.toLowerCase().localeCompare(b.id.toLowerCase());
+    })
+    .map((match) => {
+      if (Array.isArray(match.data.events)) {
+        match.data.events.map((event) => {
+          const de: DisplayableEvent | undefined = parseEvent(event, match.id);
+          if (de != undefined) {
+            events.push(de);
+          }
+        });
+      } else {
+        const de: DisplayableEvent | undefined = parseEvent(
+          match.data.events,
+          match.id
+        );
+      }
+    });
 }
-if(DEBUG) {
-  console.log(`History.astro after parsing matches, events has ${events.length} events`)
+if (DEBUG) {
+  console.log(
+    `History.astro after parsing matches, events has ${events.length} events`
+  );
 }
-
-
-
 
 /*
 ---
@@ -151,26 +156,29 @@ import:
 
 <vertical-timeline datacollection="history" ></vertical-timeline>
  */
- import "iconify-icon";
- import "@spectrum-css/alertbanner/dist/index.css"
+import "iconify-icon";
+import "@spectrum-css/alertbanner/dist/index.css";
 
- import VTimleine from "./v-timeline.astro"
+import VTimleine from "./v-timeline.astro";
 ---
 
-{events.length > 0 && <div>
-  <div class="banner spectrum-AlertBanner is-open spectrum-AlertBanner--info">
-    <div class=" spectrum-AlertBanner-body ">
-    <iconify-icon icon="octicon:info-16" ></iconify-icon>
-      <div class=" spectrum-AlertBanner-content ">
-        <p class=" spectrum-AlertBanner-text ">
-          Note that the tool creating this timeline fills in unknown fields in dates.
-          Unknown month of year is assumed (by the tool) to be January. Unknown day of month is assumed to be the first.
-        </p>
+{
+  events.length > 0 && (
+    <div>
+      <div class="banner spectrum-AlertBanner is-open spectrum-AlertBanner--info">
+        <div class=" spectrum-AlertBanner-body ">
+          <iconify-icon icon="octicon:info-16" />
+          <div class=" spectrum-AlertBanner-content ">
+            <p class=" spectrum-AlertBanner-text ">
+              Note that the tool creating this timeline fills in unknown fields
+              in dates. Unknown month of year is assumed (by the tool) to be
+              January. Unknown day of month is assumed to be the first.
+            </p>
+          </div>
+        </div>
       </div>
 
+      <VTimleine events={encodeURIComponent(JSON.stringify(events))} />
     </div>
-  </div>
-
-  <VTimleine events={encodeURIComponent(JSON.stringify(events))} ></VTimleine>
-</div>
+  )
 }

@@ -163,7 +163,7 @@ export class IndividualName extends LitElement {
       } else {
         if (DEBUG)
           console.log(
-            `displayName; I have an m in my else from the second attempt`,
+            `displayName; I have an m in my else from the second attempt`
           );
         const n = m.shift();
         if (n) {

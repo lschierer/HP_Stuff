@@ -70,14 +70,14 @@ export class GrampsFamily extends LitElement {
       if (this.stateProvider) {
         if (DEBUG) {
           console.log(
-            `GrampsFamily connectedCallback both this.url and this.state initialized, fetching data.`,
+            `GrampsFamily connectedCallback both this.url and this.state initialized, fetching data.`
           );
         }
         this.stateProvider.fetchData(this.url);
       } else {
         if (DEBUG) {
           console.log(
-            `GrampsFamily connectedCallback state not initialized, delaying data fetch`,
+            `GrampsFamily connectedCallback state not initialized, delaying data fetch`
           );
         }
       }
@@ -186,7 +186,7 @@ export class GrampsFamily extends LitElement {
           }); //only people with the right last name
           if (DEBUG)
             console.log(
-              `getPersonsChildren; stage1 ${stage1 ? stage1.length : 0} people`,
+              `getPersonsChildren; stage1 ${stage1 ? stage1.length : 0} people`
             );
           const stage2 = stage1.filter((p) => {
             if (p && p.childof) {
@@ -198,7 +198,7 @@ export class GrampsFamily extends LitElement {
           }); //only people who are children of *someone*
           if (DEBUG)
             console.log(
-              `getPersonsChildren; stage2 ${stage2 ? stage2.length : 0} people`,
+              `getPersonsChildren; stage2 ${stage2 ? stage2.length : 0} people`
             );
           const stage3 = stage2.filter((p) => {
             if (p && p.childof) {
@@ -219,12 +219,12 @@ export class GrampsFamily extends LitElement {
           });
           if (DEBUG)
             console.log(
-              `getPersonsChildren; stage3 ${stage3 ? stage3.length : 0} people`,
+              `getPersonsChildren; stage3 ${stage3 ? stage3.length : 0} people`
             );
           if (stage3 && stage3.length > 0) {
             if (DEBUG)
               console.log(
-                `getPersonsChildren; returning ${stage3.length} people`,
+                `getPersonsChildren; returning ${stage3.length} people`
               );
             return stage3;
           }
@@ -341,7 +341,7 @@ export class GrampsFamily extends LitElement {
     this._renderedPersons = new Array<string>();
     if (DEBUG) {
       console.log(
-        `GrampsFamily render start with ${this._persons?.length} person in family`,
+        `GrampsFamily render start with ${this._persons?.length} person in family`
       );
     }
     if (this._persons && this._persons.length >= 1) {

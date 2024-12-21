@@ -360,7 +360,7 @@ function invalidValue(typ: any, val: any, key: any, parent: any = ""): never {
   const parentText = parent ? ` on ${parent}` : "";
   const keyText = key ? ` for key "${key}"` : "";
   throw Error(
-    `Invalid value${keyText}${parentText}. Expected ${prettyTyp} but got ${JSON.stringify(val)}`,
+    `Invalid value${keyText}${parentText}. Expected ${prettyTyp} but got ${JSON.stringify(val)}`
   );
 }
 
@@ -405,7 +405,7 @@ function transform(
   typ: any,
   getProps: any,
   key: any = "",
-  parent: any = "",
+  parent: any = ""
 ): any {
   function transformPrimitive(typ: string, val: any): any {
     if (typeof typ === typeof val) return val;
@@ -432,7 +432,7 @@ function transform(
       }),
       val,
       key,
-      parent,
+      parent
     );
   }
 
@@ -456,7 +456,7 @@ function transform(
   function transformObject(
     props: { [k: string]: any },
     additional: any,
-    val: any,
+    val: any
   ): any {
     if (val === null || typeof val !== "object" || Array.isArray(val)) {
       return invalidValue(l(ref || "object"), val, key, parent);
@@ -542,14 +542,14 @@ const typeMap: any = {
       { json: "?xml", js: "?xml", typ: r("XML") },
       { json: "database", js: "database", typ: r("Database") },
     ],
-    false,
+    false
   ),
   XML: o(
     [
       { json: "version", js: "version", typ: 0 },
       { json: "encoding", js: "encoding", typ: "" },
     ],
-    false,
+    false
   ),
   Database: o(
     [
@@ -565,11 +565,11 @@ const typeMap: any = {
       { json: "notes", js: "notes", typ: r("Notes") },
       { json: "xmlns", js: "xmlns", typ: "" },
     ],
-    false,
+    false
   ),
   Citations: o(
     [{ json: "citation", js: "citation", typ: a(r("Citation")) }],
-    false,
+    false
   ),
   Citation: o(
     [
@@ -586,7 +586,7 @@ const typeMap: any = {
       },
       { json: "noteref", js: "noteref", typ: u(undefined, r("Noteref")) },
     ],
-    false,
+    false
   ),
   CitationDateval: o([{ json: "val", js: "val", typ: u(Date, 0) }], false),
   Noteref: o([{ json: "hlink", js: "hlink", typ: "" }], false),
@@ -620,7 +620,7 @@ const typeMap: any = {
       { json: "tagref", js: "tagref", typ: u(undefined, r("Noteref")) },
       { json: "datestr", js: "datestr", typ: u(undefined, r("Datestr")) },
     ],
-    false,
+    false
   ),
   Attribute: o(
     [
@@ -628,7 +628,7 @@ const typeMap: any = {
       { json: "type", js: "type", typ: "" },
       { json: "value", js: "value", typ: 0 },
     ],
-    false,
+    false
   ),
   DaterangeClass: o(
     [
@@ -636,7 +636,7 @@ const typeMap: any = {
       { json: "stop", js: "stop", typ: u(Date, 0) },
       { json: "quality", js: "quality", typ: u(undefined, r("Quality")) },
     ],
-    false,
+    false
   ),
   Datestr: o([{ json: "val", js: "val", typ: "" }], false),
   EventDateval: o(
@@ -645,7 +645,7 @@ const typeMap: any = {
       { json: "type", js: "type", typ: u(undefined, r("DatevalType")) },
       { json: "quality", js: "quality", typ: u(undefined, r("Quality")) },
     ],
-    false,
+    false
   ),
   Families: o([{ json: "family", js: "family", typ: a(r("Family")) }], false),
   Family: o(
@@ -674,7 +674,7 @@ const typeMap: any = {
       { json: "noteref", js: "noteref", typ: u(undefined, r("Noteref")) },
       { json: "tagref", js: "tagref", typ: u(undefined, r("Noteref")) },
     ],
-    false,
+    false
   ),
   ChildrefElement: o(
     [
@@ -687,7 +687,7 @@ const typeMap: any = {
       { json: "mrel", js: "mrel", typ: u(undefined, "") },
       { json: "frel", js: "frel", typ: u(undefined, "") },
     ],
-    false,
+    false
   ),
   PurpleChildref: o(
     [
@@ -699,14 +699,14 @@ const typeMap: any = {
       },
       { json: "noteref", js: "noteref", typ: u(undefined, r("Noteref")) },
     ],
-    false,
+    false
   ),
   EventrefElement: o(
     [
       { json: "hlink", js: "hlink", typ: "" },
       { json: "role", js: "role", typ: r("Role") },
     ],
-    false,
+    false
   ),
   Rel: o([{ json: "type", js: "type", typ: r("RelType") }], false),
   Header: o(
@@ -714,21 +714,21 @@ const typeMap: any = {
       { json: "created", js: "created", typ: r("Created") },
       { json: "researcher", js: "researcher", typ: r("Researcher") },
     ],
-    false,
+    false
   ),
   Created: o(
     [
       { json: "date", js: "date", typ: Date },
       { json: "version", js: "version", typ: "" },
     ],
-    false,
+    false
   ),
   Researcher: o(
     [
       { json: "resname", js: "resname", typ: "" },
       { json: "resemail", js: "resemail", typ: "" },
     ],
-    false,
+    false
   ),
   Notes: o([{ json: "note", js: "note", typ: a(r("Note")) }], false),
   Note: o(
@@ -739,7 +739,7 @@ const typeMap: any = {
       { json: "id", js: "id", typ: "" },
       { json: "type", js: "type", typ: "" },
     ],
-    false,
+    false
   ),
   People: o([{ json: "person", js: "person", typ: a(r("Person")) }], false),
   Person: o(
@@ -782,7 +782,7 @@ const typeMap: any = {
       { json: "personref", js: "personref", typ: u(undefined, r("Personref")) },
       { json: "address", js: "address", typ: u(undefined, r("Address")) },
     ],
-    false,
+    false
   ),
   Address: o(
     [
@@ -790,7 +790,7 @@ const typeMap: any = {
       { json: "country", js: "country", typ: "" },
       { json: "citationref", js: "citationref", typ: r("Noteref") },
     ],
-    false,
+    false
   ),
   NameElement: o(
     [
@@ -808,25 +808,25 @@ const typeMap: any = {
       { json: "nick", js: "nick", typ: u(undefined, "") },
       { json: "title", js: "title", typ: u(undefined, "") },
     ],
-    false,
+    false
   ),
   SurnameClass: o(
     [
       { json: "#text", js: "#text", typ: "" },
       { json: "derivation", js: "derivation", typ: r("Derivation") },
     ],
-    false,
+    false
   ),
   Personref: o(
     [
       { json: "hlink", js: "hlink", typ: "" },
       { json: "rel", js: "rel", typ: "" },
     ],
-    false,
+    false
   ),
   Places: o(
     [{ json: "placeobj", js: "placeobj", typ: a(r("Placeobj")) }],
-    false,
+    false
   ),
   Placeobj: o(
     [
@@ -843,19 +843,19 @@ const typeMap: any = {
         typ: u(undefined, r("Noteref")),
       },
     ],
-    false,
+    false
   ),
   Coord: o(
     [
       { json: "long", js: "long", typ: u(3.14, "") },
       { json: "lat", js: "lat", typ: u(3.14, "") },
     ],
-    false,
+    false
   ),
   Pname: o([{ json: "value", js: "value", typ: "" }], false),
   Repositories: o(
     [{ json: "repository", js: "repository", typ: a(r("Repository")) }],
-    false,
+    false
   ),
   Repository: o(
     [
@@ -866,7 +866,7 @@ const typeMap: any = {
       { json: "id", js: "id", typ: "" },
       { json: "url", js: "url", typ: u(undefined, r("URL")) },
     ],
-    false,
+    false
   ),
   URL: o(
     [
@@ -874,7 +874,7 @@ const typeMap: any = {
       { json: "type", js: "type", typ: r("URLType") },
       { json: "description", js: "description", typ: u(undefined, "") },
     ],
-    false,
+    false
   ),
   Sources: o([{ json: "source", js: "source", typ: a(r("Source")) }], false),
   Source: o(
@@ -892,14 +892,14 @@ const typeMap: any = {
       },
       { json: "noteref", js: "noteref", typ: u(undefined, r("Noteref")) },
     ],
-    false,
+    false
   ),
   ReporefElement: o(
     [
       { json: "hlink", js: "hlink", typ: "" },
       { json: "medium", js: "medium", typ: r("Medium") },
     ],
-    false,
+    false
   ),
   Tags: o([{ json: "tag", js: "tag", typ: a(r("Tag")) }], false),
   Tag: o(
@@ -910,7 +910,7 @@ const typeMap: any = {
       { json: "color", js: "color", typ: "" },
       { json: "priority", js: "priority", typ: 0 },
     ],
-    false,
+    false
   ),
   Quality: ["calculated", "estimated"],
   DatevalType: ["about", "before"],

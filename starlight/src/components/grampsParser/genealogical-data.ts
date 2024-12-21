@@ -46,7 +46,7 @@ export class GenealogicalData extends LitElement {
       if (gramps) {
         if (DEBUG)
           console.log(
-            `grampsParser/index render; confirmed I have parsed data`,
+            `grampsParser/index render; confirmed I have parsed data`
           );
         t = html`${t}Gramps Data exported ${gramps.header.created.date}<br />`;
         const psize = gramps.people.person.length;

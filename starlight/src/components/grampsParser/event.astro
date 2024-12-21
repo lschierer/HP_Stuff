@@ -10,43 +10,45 @@ import { GedcomEvent } from "@schemas/gedcom";
 const DEBUG = false;
 
 const { handle, type = undefined } = Astro.props;
-let event :GedcomEvent.GedcomElement | undefined = undefined;
+let event: GedcomEvent.GedcomElement | undefined = undefined;
 let date: string = "";
 let fromdate: string = "";
 let todate: string = "";
 let isinterval: boolean = false;
 
-const entries = await getCollection('events', ({data}) => {
+const entries = await getCollection("events", ({ data }) => {
   return !data.handle.localeCompare(handle);
 });
 
-if(entries.length > 1 && type != undefined) {
+if (entries.length > 1 && type != undefined) {
   entries.map((entry) => {
     const data = entry.data;
-    if(data.attribute_list != undefined) {
+    if (data.attribute_list != undefined) {
       data.attribute_list.map((attribute) => {
-        if(attribute.type != undefined) {
-          if(!attribute.type.string.localeCompare(type)) {
+        if (attribute.type != undefined) {
+          if (!attribute.type.string.localeCompare(type)) {
             event = data;
           }
         }
-      })
+      });
     }
-  })
+  });
 } else {
   event = entries[0].data;
 }
 
-if(event != undefined) {
-  if(event.date != null) {
-    if(event.date.dateval.length >= 3 ) {
-      if(event.date.dateval.length <= 4) {
-        if(DEBUG) {
-          console.log(`event.date.dateval.length is ${event.date.dateval.length} indicating a date not an interval`);
+if (event != undefined) {
+  if (event.date != null) {
+    if (event.date.dateval.length >= 3) {
+      if (event.date.dateval.length <= 4) {
+        if (DEBUG) {
+          console.log(
+            `event.date.dateval.length is ${event.date.dateval.length} indicating a date not an interval`
+          );
         }
-        if(event.date.dateval[2] != 0 ) {
-          if(event.date.dateval[1] != 0) {
-            if(event.date.dateval[0] != 0) {
+        if (event.date.dateval[2] != 0) {
+          if (event.date.dateval[1] != 0) {
+            if (event.date.dateval[0] != 0) {
               fromdate = `${event.date.dateval[2]}-${event.date.dateval[1]}-${event.date.dateval[0]}`;
             } else {
               fromdate = `${event.date.dateval[2]}-${event.date.dateval[1]}`;
@@ -56,12 +58,14 @@ if(event != undefined) {
           }
         }
       } else {
-        if(DEBUG) {
-          console.log(`event.date.dateval.length is ${event.date.dateval.length} indicating an interval`);
+        if (DEBUG) {
+          console.log(
+            `event.date.dateval.length is ${event.date.dateval.length} indicating an interval`
+          );
         }
-        if(event.date.dateval[2] != 0 ) {
-          if(event.date.dateval[1] != 0) {
-            if(event.date.dateval[0] != 0) {
+        if (event.date.dateval[2] != 0) {
+          if (event.date.dateval[1] != 0) {
+            if (event.date.dateval[0] != 0) {
               fromdate = `${event.date.dateval[2]}-${event.date.dateval[1]}-${event.date.dateval[0]}`;
             } else {
               fromdate = `${event.date.dateval[2]}-${event.date.dateval[1]}`;
@@ -70,9 +74,9 @@ if(event != undefined) {
             fromdate = `${event.date.dateval[2]}`;
           }
         }
-        if(event.date.dateval[6] != 0 ) {
-          if(event.date.dateval[5] != 0) {
-            if(event.date.dateval[4] != 0) {
+        if (event.date.dateval[6] != 0) {
+          if (event.date.dateval[5] != 0) {
+            if (event.date.dateval[4] != 0) {
               todate = `${event.date.dateval[6]}-${event.date.dateval[5]}-${event.date.dateval[4]}`;
             } else {
               todate = `${event.date.dateval[6]}-${event.date.dateval[5]}`;
@@ -83,9 +87,9 @@ if(event != undefined) {
         }
         isinterval = true;
       }
-    } else if(event.date.text.length > 0) {
-      const regex = /\d{4}-\d{2}-\d{2}/
-      if(regex.test(event.date.text)) {
+    } else if (event.date.text.length > 0) {
+      const regex = /\d{4}-\d{2}-\d{2}/;
+      if (regex.test(event.date.text)) {
         date = event.date.text;
       }
     }
@@ -93,35 +97,38 @@ if(event != undefined) {
 }
 ---
 
-{(isinterval && (event != undefined)) && (
-  <gramps-event isinterval={true} fromdate={fromdate} todate={todate}></gramps-event>
-)}
-{(!isinterval && (event != undefined) && (date.length > 0)) && (
-  <gramps-event datestring={date}></gramps-event>
-)}
-{(!isinterval && (event != undefined) && (date.length == 0)) && (
-<span>{event.date?.text}</span>
-)}
+{
+  isinterval && event != undefined && (
+    <gramps-event isinterval={true} fromdate={fromdate} todate={todate} />
+  )
+}
+{
+  !isinterval && event != undefined && date.length > 0 && (
+    <gramps-event datestring={date} />
+  )
+}
+{
+  !isinterval && event != undefined && date.length == 0 && (
+    <span>{event.date?.text}</span>
+  )
+}
 
 <script>
-
-
   import { DateTime, Interval } from "luxon";
 
   const DEBUG = false;
-  if(DEBUG) {
-    console.log(`event.astro script running`)
+  if (DEBUG) {
+    console.log(`event.astro script running`);
   }
 
   class GrampsEvent extends HTMLElement {
-
     public datestring: string = "";
     public fromdate: string = "";
     public todate: string = "";
     public isinterval: boolean = false;
     private displayable: boolean = false;
     private _date: DateTime = DateTime.now();
-    private _interval: Interval | undefined  = undefined;
+    private _interval: Interval | undefined = undefined;
 
     protected willUpdate(): void {
       const attributes = this.getAttributeNames();
@@ -130,14 +137,16 @@ if(event != undefined) {
         attributes.includes("todate") &&
         attributes.includes("isinterval")
       ) {
-        this.isinterval = attributes.includes('isinterval');
-        this.fromdate = this.getAttribute('fromdate') ?? "";
-        this.todate = this.getAttribute('todate') ?? "";
+        this.isinterval = attributes.includes("isinterval");
+        this.fromdate = this.getAttribute("fromdate") ?? "";
+        this.todate = this.getAttribute("todate") ?? "";
         if (
           !this.isinterval &&
           (this.fromdate.length > 0 || this.todate.length > 0)
         ) {
-          console.error(`isInterval must be true if fromdate or todate are used`);
+          console.error(
+            `isInterval must be true if fromdate or todate are used`
+          );
           this.displayable = false;
         } else if (this.isinterval && this.fromdate.length == 0) {
           console.error(`fromdate must be set when isinterval is true.`);
@@ -146,27 +155,30 @@ if(event != undefined) {
           console.error(`todate must be set when isinterval is true.`);
           this.displayable = false;
         } else {
-          if(DEBUG) {
+          if (DEBUG) {
             console.log(
-              `isinterval: ${this.isinterval} fromdate: ${this.fromdate} todate: ${this.todate} datestring: ${this.datestring}`,
+              `isinterval: ${this.isinterval} fromdate: ${this.fromdate} todate: ${this.todate} datestring: ${this.datestring}`
             );
           }
           this._interval = Interval.fromDateTimes(
             DateTime.fromISO(this.fromdate),
-            DateTime.fromISO(this.todate),
+            DateTime.fromISO(this.todate)
           );
-          if(this._interval != undefined && this._interval.isValid) {
+          if (this._interval != undefined && this._interval.isValid) {
             this.displayable = true;
           }
         }
-      } else if(!attributes.includes('isinterval') && attributes.includes('datestring')) {
-        this.datestring = this.getAttribute('datestring') ?? "";
-        if(this.datestring.length > 0) {
+      } else if (
+        !attributes.includes("isinterval") &&
+        attributes.includes("datestring")
+      ) {
+        this.datestring = this.getAttribute("datestring") ?? "";
+        if (this.datestring.length > 0) {
           this._date = DateTime.fromISO(this.datestring);
-          if(this._date.isValid) {
+          if (this._date.isValid) {
             this.displayable = true;
           } else {
-            console.error(`invalid date ${this.datestring}`)
+            console.error(`invalid date ${this.datestring}`);
           }
         }
       } else {
@@ -177,9 +189,8 @@ if(event != undefined) {
 
     connectedCallback() {
       this.willUpdate();
-      console.log(`displayable is ${this.displayable}`)
-      if(DEBUG) {
-
+      console.log(`displayable is ${this.displayable}`);
+      if (DEBUG) {
       }
       if (this.displayable) {
         if (this.isinterval && this._interval != undefined) {
@@ -191,9 +202,6 @@ if(event != undefined) {
         this.innerHTML = "";
       }
     }
-
-
   }
   customElements.define("gramps-event", GrampsEvent);
-
 </script>

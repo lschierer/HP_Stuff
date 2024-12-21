@@ -81,7 +81,7 @@ export class SimpleIndividual extends LitElement {
         if (filterResult && filterResult.length > 0) {
           if (DEBUG)
             console.log(
-              `render; filter returned ${filterResult.length} people`,
+              `render; filter returned ${filterResult.length} people`
             );
           const first: Person | undefined = filterResult.shift();
           if (first !== undefined) {
