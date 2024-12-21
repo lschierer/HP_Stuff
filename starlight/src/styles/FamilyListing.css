@@ -1,0 +1,15 @@
+.familylisting:where(ol, ul) {
+  margin-inline-start: 0;
+  padding-inline-start: 1em;
+}
+
+.familylisting li {
+  display: block;
+  list-style: none;
+  margin-left: 2px;
+  padding-left: 0em;
+  border-left: solid 0.1em var(--sl-color-accent);
+}
+.familylisting astro-icon {
+  padding-left: 1.5px;
+}

@@ -4,7 +4,7 @@ import { type ComponentProps } from "astro/types";
 import Default from "@astrojs/starlight/components/PageTitle.astro";
 
 import GrampsIndividual from "./grampsParser/Individual.astro";
-import { GrampsFamily } from "./grampsParser/family";
+import GrampsFamily from "./grampsParser/FamilyListing.astro";
 
 type GrampsIndividualProps = ComponentProps<typeof GrampsIndividual>;
 
@@ -49,11 +49,16 @@ if (collection != undefined) {
     <div>
       {displayGrampsPersonBio && (
         <>
-          <h3 id="facts">Biographical Information</h3>
+          <h3 id="geneological">Biographical Information</h3>
           <GrampsIndividual {...personBioProps} />
         </>
       )}
-      {displayGrampsFamilyTree && <span>families: {families}</span>}
+      {displayGrampsFamilyTree && families && (
+        <>
+          <h3 id="listing">Known Members:</h3>
+          <GrampsFamily familyName={families} />
+        </>
+      )}
     </div>
   )
 }
