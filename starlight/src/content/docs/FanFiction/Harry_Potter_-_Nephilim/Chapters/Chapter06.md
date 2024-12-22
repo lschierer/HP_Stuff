@@ -1,5 +1,5 @@
 ---
-title: Chapter 06
+title: Chapter 6
 author: Luke Schierer
 collection: Nephilim
 ---
@@ -58,6 +58,6 @@ become just another building.
 
 [^220818-1]: I intentionally changing things here. See [FSSP][] for details.
 
-[FSSP]: ../../Appendices/FSSP/
+[FSSP]: ../../appendices/fssp/
 
 [^220818-2]: Who is a real person, but much younger than in this story.

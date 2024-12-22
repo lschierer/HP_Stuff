@@ -1,5 +1,5 @@
 ---
-title: Chapter 07
+title: Chapter 7
 author: Luke Schierer
 collection: Nephilim
 ---

@@ -1,5 +1,5 @@
 ---
-title: Chapter 08
+title: Chapter 8
 author: Luke Schierer
 collection: Nephilim
 ---

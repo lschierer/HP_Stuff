@@ -141,7 +141,7 @@ to question whether nor not being a nephil is inherently an impediment to a
 sacramental marriage. Most theologians (in this story) believe this to be the
 case, but (again in this story) the Church has not ruled infallibly on the matter.
 
-[magical contracts]: ../appendices/magical-contracts/
+[magical contracts]: ../magical-contracts/
 
 ### Holy Orders
 

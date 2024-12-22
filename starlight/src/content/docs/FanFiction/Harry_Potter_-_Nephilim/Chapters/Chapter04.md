@@ -1,5 +1,5 @@
 ---
-title: Chapter 04
+title: Chapter 4
 author: Luke Schierer
 collection: Nephilim
 ---

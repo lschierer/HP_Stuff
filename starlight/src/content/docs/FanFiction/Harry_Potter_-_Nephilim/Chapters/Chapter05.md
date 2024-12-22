@@ -1,5 +1,5 @@
 ---
-title: Chapter 05
+title: Chapter 5
 author: Luke Schierer
 collection: Nephilim
 ---
@@ -128,9 +128,9 @@ there rarely used corners or benches out of sight of the doors and windows, but
 in close proximity to them, where a mostly invisible boy would not get bumped
 into by someone who did not notice him?
 
-[^211219-3]: See [Appendix D].
+[^211219-3]: See [Relative Power Levels].
 
-[Appendix D]: <../../Appendices/Relative Power Levels/>
+[Relative Power Levels]: <../../appendices/relative-power-levels/>
 
 [^210528-1]:
     being an American, I do not actually know much about British

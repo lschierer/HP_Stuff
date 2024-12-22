@@ -98,7 +98,7 @@ Partial veela tend to take proportionately longer, averaging the normal rate of 
 The veela's _mental_ maturation is not accelerated during this time of accelerated physical growth, putting a mentally young girl in an adult's
 body for a period of years (with all the extra self control issues adding adult hormone levels to that lack of mental maturity would imply). This is why [Fleur]'s classmates dislike her so much - people tend to expect someone who appears older to behave older. They remember the brat.
 
-[Nephilim Inheritance]: ../Inheritance/
+[Nephilim Inheritance]: ../inheritance/
 
 ### Magical Abilities
 
@@ -134,20 +134,20 @@ combine with her inheritance from the Dominions. No full veela is
 capable of permanent transmutation, and a "half-veela" is capable of it
 only to the extent her male parent was.
 
-[Appendix A]: /fanfiction/harry_potter_-_nephilim/appendices/points-of-divergence/
+[Appendix A]: ../points-of-divergence/
 
-[Rules of Magic]: /fanfiction/harry_potter_-_nephilim/appendices/rules-of-magic/
+[Rules of Magic]: ../rules-of-magic/
 
-[Magical Beings]: /fanfiction/harry_potter_-_nephilim/appendices/magical-beings/
+[Magical Beings]: ../magical-beings/
 
-[Relative Power Levels]: /fanfiction/harry_potter_-_nephilim/appendices/relative-power-levels/
+[Relative Power Levels]: ../relative-power-levels/
 
-[Life Expectancy]: /fanfiction/harry_potter_-_nephilim/appendices/life-expectancy/
+[Life Expectancy]: ../life-expectancy/
 
-[Appendix G]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_g/
-[Appendix H]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_h/
-[Appendix I]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_i/
-[the backstory]: /fanfiction/harry_potter_-_nephilim/backstory/the_veela/
+[Appendix G]: ../appendix_g/
+[Appendix H]: ../appendix_h/
+[Appendix I]: ../appendix_i/
+[the backstory]: ../../backstory/the_veela/
 
 [^210916-1]: Like in _[Maskirovat][knffnm]_.
 

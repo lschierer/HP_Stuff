@@ -12,6 +12,7 @@ export default defineConfig({
     "/harrypedia/people/peverell/ignatius/":
       "/harrypedia/people/peverell/ignotus/",
   },
+  trailingSlash: "always",
   integrations: [
     starlight({
       title: "Luke's HP Site",

@@ -1,5 +1,5 @@
 ---
-title: Chapter 09
+title: Chapter 9
 author: Luke Schierer
 collection: Nephilim
 ---
@@ -13,4 +13,4 @@ invisible to adults? Has this gradually changed due to continued
 [Legilimency][AC]? I think this last, they cannot
 see him. Decide on uniforms, this has a _lot_ of implications.
 
-[AC]: <../../Appendices/Magical Beings/>
+[AC]: <../../appendices/magical-beings/>

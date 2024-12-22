@@ -1,5 +1,5 @@
 ---
-title: Chapter 01
+title: Chapter 1
 author: Luke Schierer
 collection: Nephilim
 ---
@@ -216,5 +216,5 @@ one) had made it clear, without words, that he would find it someday.
     are sometimes remarkably persistent, so Dudley is, just barely, a nephil.
     See my notes on [relative power levels][rpl].
 
-[rpl]: <../../Appendices/Relative Power Levels/>
-[Notes]: ../../Appendices/Points%20of%20Divergence/
+[rpl]: <../../appendices/relative-power-levels/>
+[Notes]: ../../appendices/points-of-divergence/

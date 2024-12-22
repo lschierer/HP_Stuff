@@ -1,5 +1,5 @@
 ---
-title: Chapter 02
+title: Chapter 2
 author: Luke Schierer
 collection: Nephilim
 ---
