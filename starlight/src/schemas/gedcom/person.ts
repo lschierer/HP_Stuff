@@ -14,6 +14,7 @@ export const Nick = z.enum([
   "Ginny",
   "Harry",
   "Loony",
+  "Moony",
   "Newt",
   "Padfoot",
   "Ron",

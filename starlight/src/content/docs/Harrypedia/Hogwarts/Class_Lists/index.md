@@ -52,7 +52,7 @@ century, if not more, behind.
 <ClassListTable year="1991"></ClassListTable>
 
 There is some ambiguity about Hannah's blood status. See my notes on the
-[Abbott family](../../people/abbott).
+[Abbott family/harrypedia/people/abbott).
 
 Terry Boot appears to have attended his seventh year at [Hogwarts][] despite the
 laws against first generation students doing so.[^20210602-1] This means either
@@ -70,7 +70,7 @@ same logic, Rivers is almost certainly a pure-blood, but might be a halfbood.
 [Class_and_Blood]: ../../culture/class_and_blood
 
 The [same argument][Class_and_Blood] suggests the ambiguity of the
-[Weasley](../../people/weasley) social class.
+[Weasley/harrypedia/people/weasley) social class.
 
 Lots of fanfiction uses an extra female character named Fay Dunbar as one of the
 girls in [Harry's][Harry] year. This apparently comes from the _Harry Potter
@@ -79,7 +79,7 @@ wiki article that Mrs. Rowling had influence in naming the extra characters in
 the game versions. Unless I see otherwise, I'm going to assume that Fay and
 Sophie are the same person, and will probably go with Sophie as the name.
 
-[Harry]: ../../people/Potter/Harry_James/
+[Harry]: /harrypedia/people/potter/harry_james//
 
 [^20210602-1]:
     Mrs. J. K. Rowling.

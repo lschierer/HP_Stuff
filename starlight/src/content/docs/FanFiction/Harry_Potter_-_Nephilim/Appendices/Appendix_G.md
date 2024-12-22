@@ -3,7 +3,6 @@ title: |
   Soteriology, Missiology and Ecclesiology
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 sidebar:
   order: 100
 ---
@@ -82,7 +81,7 @@ This dovetails nicely with an element that I wanted to use from _[The Screwtape 
 1.  Consistent with my philosophy that good ought to be greater than evil,
     because God is God, the fallen angels are less successful in general, enough of the time that we can form generalized rules _expecting_ a less successful result from their action.
 
-[Veela]: ../Appendix_I/
+[Veela]: ../appendix_i/
 [The Screwtape Letters]: https://archive.org/details/in.ernet.dli.2015.86985
 
 ## Sacraments
@@ -125,8 +124,8 @@ or her to avoid sin far more powerfully in part _because_ the reduced
 freedom will make the remaining choices more black and white to this enhanced
 perception.
 
-[giants]: ../../backstory/giants
-[goblins]: ../../backstory/the_dwarfs
+[giants]: ../../backstory/giants/
+[goblins]: ../../backstory/the_dwarfs/
 
 [^230714-2]: Based on Fr. John Hardon's Modern Catholic Dictionary, © Eternal Life. "[Gift of Understanding]" _[Catholic Dictionary]_
 
@@ -142,7 +141,7 @@ to question whether nor not being a nephil is inherently an impediment to a
 sacramental marriage. Most theologians (in this story) believe this to be the
 case, but (again in this story) the Church has not ruled infallibly on the matter.
 
-[magical contracts]: <../Magical Contracts/>
+[magical contracts]: ../appendices/magical-contracts/
 
 ### Holy Orders
 

@@ -23,12 +23,12 @@ In addition to the legitimate unanswered difficult questions that an author atte
   - A third version presents [Ginny] as hopelessly dominated by her family. This never rings very true.
   - The inverse is equally wierd. [Ginny] _is_ fiercely independent, but equally fiercely loves her family.
 
-[horcrux]: /Harrypedia/magic/dark/horcruxes/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus_Percival_Wulfric_Brian/
-[Harry]: /Harrypedia/people/Potter/Harry_James/
-[Ginny]: /Harrypedia/people/Weasley/Ginevra_Molly/
-[Hogwarts]: /Harrypedia/Hogwarts/
-[Neville]: /Harrypedia/people/Longbottom/Neville/
+[horcrux]: /harrypedia/magic/dark/horcruxes//
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian//
+[Harry]: /harrypedia/people/potter/harry_james//
+[Ginny]: /harrypedia/people/weasley/ginevra_molly//
+[Hogwarts]: /harrypedia/hogwarts//
+[Neville]: /harrypedia/people/longbottom/neville//
 
 [^240424-4]:
     Mrs. J. K. Rowling.

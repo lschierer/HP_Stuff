@@ -2,7 +2,6 @@
 title: Chapter 01
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 ---
 
 Vernon Dursley was a huge walrus of a man, with a large moustache and hardly

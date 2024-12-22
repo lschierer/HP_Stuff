@@ -2,7 +2,6 @@
 title: Chapter 11
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 ---
 
 Cannon Chapter Eight introduces the teachers, and the robbery. Cannon Chapter

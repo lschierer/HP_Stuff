@@ -2,7 +2,6 @@
 title: Chapter 10
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 ---
 
 Cannon Chapter Seven, and parts of Cannon Chapter Eight, since Harry will not

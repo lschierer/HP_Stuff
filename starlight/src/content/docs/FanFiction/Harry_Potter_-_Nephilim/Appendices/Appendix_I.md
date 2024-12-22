@@ -5,7 +5,6 @@ author: Luke Schierer
 sidebar:
   order: 100
 collection: Nephilim
-layout: fanfiction
 ---
 
 > **Note**
@@ -135,25 +134,25 @@ combine with her inheritance from the Dominions. No full veela is
 capable of permanent transmutation, and a "half-veela" is capable of it
 only to the extent her male parent was.
 
-[Appendix A]: ../Points%20of%20Divergence/
+[Appendix A]: /fanfiction/harry_potter_-_nephilim/appendices/points-of-divergence/
 
-[Rules of Magic]: ../Rules of Magic/
+[Rules of Magic]: /fanfiction/harry_potter_-_nephilim/appendices/rules-of-magic/
 
-[Magical Beings]: ../Magical Beings/
+[Magical Beings]: /fanfiction/harry_potter_-_nephilim/appendices/magical-beings/
 
-[Relative Power Levels]: ../Relative Power Levels/
+[Relative Power Levels]: /fanfiction/harry_potter_-_nephilim/appendices/relative-power-levels/
 
-[Life Expectancy]: ../Life Expectancy/
+[Life Expectancy]: /fanfiction/harry_potter_-_nephilim/appendices/life-expectancy/
 
-[Appendix G]: ../Appendix_G/
-[Appendix H]: ../Appendix_H/
-[Appendix I]: ../Appendix_I/
-[the backstory]: ../../backstory/The_Veela/
+[Appendix G]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_g/
+[Appendix H]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_h/
+[Appendix I]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_i/
+[the backstory]: /fanfiction/harry_potter_-_nephilim/backstory/the_veela/
 
 [^210916-1]: Like in _[Maskirovat][knffnm]_.
 
-[Fleur]: /Harrypedia/people/Delacour/Fleur_Isabelle/
-[Molly]: /Harrypedia/people/Prewett/Molly/
-[Hermione]: /Harrypedia/people/Granger/Hermione_Jean/
-[Ginny]: /Harrypedia/people/Weasley/Ginevra_Molly/
+[Fleur]: /harrypedia/people/delacour/fleur_isabelle/
+[Molly]: /harrypedia/people/prewett/molly/
+[Hermione]: /harrypedia/people/granger/hermione_jean/
+[Ginny]: /harrypedia/people/weasley/ginevra_molly/
 [knffnm]: http://kokopelli.nsns.fanficauthors.net/Maskirovat/Maskirovat/

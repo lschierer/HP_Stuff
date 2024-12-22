@@ -2,7 +2,6 @@
 collection: Harrypedia
 title: Doubting Harry's Character
 author: Luke Schierer
-pageType: person
 ---
 
 > The office dissolved but re-formed instantly. Snape was pacing up and down in
@@ -116,20 +115,21 @@ such as [McGonagall][] and [Sprout][] might well pick up on that distrust.
 
 [B12HPL1]: https://www.fanfiction.net/s/5366780
 [B12HPL2]: https://www.fanfiction.net/s/5366780
-[Bill]: ../../../Weasley/William_Arthur/
-[Dumbledore]: ../
-[Harry]: ../../../Potter/Harry_James/
-[Hermione]: ../../../Granger/Hermione_Jean/
-[Hogwarts]: ../../../../Hogwarts/
-[Kingsley]: ../../../shacklebolt/kingsley/
-[Lupin]: ../../../Lupin/Remus_John/
-[Malfoy]: ../../../Malfoy/Draco_Lucius/
-[McGonagall]: ../../../McGonagall/Minerva/
-[Moody]: ../../../people/moody/
-[Neville]: ../../../Longbottom/Neville/
-[Professor Sprout]: ../../../Sprout/Pomona/
-[Riddle]: ../../../Riddle/Tom_Marvolo/
-[Ron]: ../../../Weasley/Ronald_Bilius/
-[Snape]: ../../../Snape/Severus/
-[Sprout]: ../../../Sprout/Pomona/
-[Tom Riddle]: ../../../Riddle/Tom_Marvolo/
+
+[Bill]: /harrypedia/people/weasley/william_arthur/
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Harry]: /harrypedia/people/potter/harry_james/
+[Hermione]: /harrypedia/people/granger/hermione_jean/
+[Hogwarts]: /harrypedia/hogwarts/
+[Kingsley]: /harrypedia/people/shacklebolt/kingsley/
+[Lupin]: /harrypedia/people/lupin/remus_john/
+[Malfoy]: /harrypedia/people/malfoy/draco_lucius/
+[McGonagall]: /harrypedia/people/mcgonagall/minerva/
+[Moody]: ./harrypedia/people/moody/
+[Neville]: /harrypedia/people/longbottom/neville/
+[Professor Sprout]: /harrypedia/people/sprout/pomona/
+[Riddle]: /harrypedia/people/riddle/tom_marvolo/
+[Ron]: /harrypedia/people/weasley/ronald_bilius/
+[Snape]: /harrypedia/people/snape/severus/
+[Sprout]: /harrypedia/people/sprout/pomona/
+[Tom Riddle]: /harrypedia/people/riddle/tom_marvolo/

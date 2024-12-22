@@ -58,7 +58,7 @@ government, then given how closely we ally with Great Britain, why has the US
 government not helped alleviate the ignorance the UK government has concerning
 the magical world?[^211210-1]
 
-[MM1]: ../people/McGonagall/Minerva/
+[MM1]: /harrypedia/people/mcgonagall/minerva//
 [Star Wars]: https://www.starwars.com/
 [ww]: https://www.wizardingworld.com/
 

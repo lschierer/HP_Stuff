@@ -41,7 +41,7 @@ I think my biggest objections to Molly are as follows:
 - I dislike the fact that other than some presents in book six, we do not see
   any sort of birthday acknowledgement for the [Weasley] children, but do see
   her celebrating [Harry]'s in several books.[^240401-5]
-- I dislike the fact that she ignores [Ginny] and the twins whencommenting on  
+- I dislike the fact that she ignores [Ginny] and the twins whencommenting on
   Ron becoming a prefect.
 - I dislike the way she belittles the twin's dream of a joke shop. I have
   experienced myself the hurt that comes when a parent dismisses your career as
@@ -87,13 +87,13 @@ On the other hand, it is easy to be over sensitive.
   of the truth of gender and gender roles. See my own objection about her
   reliance on public perception, this really fits in with that.
 
-[Ron]: ../../Weasley/Ronald_Bilius/
-[Lovegoods]: ../../lovegood
-[Weasleys]: ../../weasley
-[Ginny]: ../../Weasley/Ginevra_Molly/
-[Luna]: ../../Lovegood/Luna/
-[Harry]: ../../Potter/Harry_James/
-[Xeno]: ../../lovegood/xenophilius
+[Ron]: /harrypedia/people/weasley/ronald_bilius/
+[Lovegoods]: /harrypedia/people/lovegood/
+[Weasleys]: /harrypedia/people/weasley/
+[Ginny]: /harrypedia/people/weasley/ginevra_molly/
+[Luna]: /harrypedia/people/lovegood/luna/
+[Harry]: /harrypedia/people/potter/harry_james/
+[Xeno]: /harrypedia/people/lovegood/xenophilius/
 [Red Hen Publications]: https://www.redhen-publications.com/
 [RHPMolly]: https://www.redhen-publications.com/molly.html
 
@@ -138,7 +138,7 @@ drawing attention from bystanders.
 In other words, this scene is precisely as innocent as it appears to most eleven
 year old readers encountering it for the first time. That being said, I have encountered one reasonably amusing alternative explanation. [RoseLilian], writes in one of her works that the [Ministry] arranges for a family to arrive towards the end of the boarding period, and to be purposefully noisy while actually being under charms to avoid attracting muggle attention. A magical child afraid or unsure of how to deal with the barrier will thus have a clear, friendly family to approach for help, being unaffected by spells that only target those without magic.[^240202-1] That we do not see such charms being cast is not really an objection, because, as previously noted, the book is from [Harry]'s point of view, and _he_ did not notice. It is also believable that as [Harry] starts to be in more danger, the [Ministry] would assign the task to someone else.
 
-[Ministry]: ../../../culture/government/
+[Ministry]: /harrypedia/culture/government/
 
 [^240202-1]:
     [RoseLilian].
@@ -206,22 +206,22 @@ influenced by the various depictions I have read.
   school. I doubt Molly approved. I strongly suspect that she considers girls
   playing [Quidditch] to be unlady-like.
 
-[Arthur]: ../../Weasley/arthur/
-[Bill]: ../../Weasley/William_Arthur/
-[Hermione]: ../../Granger/Hermione_Jean/
-[Dumbledore]: ../../Dumbledore/Albus_Percival_Wulfric_Brian/
-[Sirius]: ../../Black/Sirius_iii/
-[Weasley]: ../../weasley/
-[Weasleys]: ../../weasley/
-[Fleur]: ../../Delacour/Fleur_Isabelle/
-[Snape]: ../../Snape/Severus/
-[Quidditch]: ../../../quidditch
-[Gringotts]: ../../../gringotts
-[Riddle]: ../../Riddle/Tom_Marvolo/
+[Arthur]: /harrypedia/people/weasley/arthur/
+[Bill]: /harrypedia/people/weasley/william_arthur/
+[Hermione]: /harrypedia/people/granger/hermione_jean/
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Sirius]: /harrypedia/people/black/sirius_iii/
+[Weasley]: /harrypedia/people/weasley/
+[Weasleys]: /harrypedia/people/weasley/
+[Fleur]: /harrypedia/people/delacour/fleur_isabelle/
+[Snape]: /harrypedia/people/snape/severus/
+[Quidditch]: /harrypedia/quidditch/
+[Gringotts]: /harrypedia/gringotts/
+[Riddle]: /harrypedia/people/riddle/tom_marvolo/
 
 [^210818-4]: See my [History] notes.
 
-[History]: ../../../history/
+[History]: /harrypedia/history/
 
 [^211104-1]:
     Mrs. J. K. Rowling.
@@ -270,7 +270,7 @@ school list out and then leaves a bag of his gold on his bed for him.
 
 [^221213-6]:
     Mrs. J. K. Rowling.
-    \_[Harry Potter and the Prisoner of Azkaban](https://www.librarything.com/work/2742161/book/225886376)
+    _[Harry Potter and the Prisoner of Azkaban](https://www.librarything.com/work/2742161/book/225886376)_
     Bloomsbury UK (2004). page 50.
 
 [^240401-5]:

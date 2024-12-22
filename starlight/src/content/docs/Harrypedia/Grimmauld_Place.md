@@ -30,12 +30,12 @@ absence of an immediate family of his own, providing a legacy for his ward and
 god-child is expected and natural.
 
 [wEE1]: http://en.wikipedia.org/wiki/Fee_tail
-[Black]: ../people/Black/
-[Sirius]: ../people/Black/Sirius_iii/
-[James]: ../people/Potter/James/
-[Walburga]: ../people/Black/walburga
-[Harry]: ../people/Potter/Harry_James/
-[Dorea]: ../people/Black/dorea
+[Black]: /harrypedia/people/black//
+[Sirius]: /harrypedia/people/black/sirius_iii//
+[James]: /harrypedia/people/potter/james//
+[Walburga]: /harrypedia/people/black/walburga/
+[Harry]: /harrypedia/people/potter/harry_james//
+[Dorea]: /harrypedia/people/black/dorea/
 [Harry Potter Wiki]: https://harrypotter.fandom.com/wiki
 
 [^211020-4]:
@@ -77,7 +77,7 @@ Portrait in some way, given it cannot be moved?
     "[Chapter 28: Year 2 - Chapter 10](https://archiveofourown.org/works/28507302/chapters/78741424)"
     Published: 2021-01-02. Updated: 2021-10-18. Last Viewed: 2021-10-20.
 
-[horcrux]: ../magic/dark/horcruxes
+[horcrux]: /harrypedia/magic/dark/horcruxes/
 
 [^211020-6]:
     others came up with this idea first. Document them if I re-find

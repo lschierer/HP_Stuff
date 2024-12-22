@@ -34,7 +34,7 @@ interact?
 
 We seem to have:
 
-- [Magical Animals](../animals)
+- [Magical Animals](/harrypedia/animals)
 - [Spells](spells) - curses, hexes, jinks, charms, transfiguration
   - [wands][]
     > The wand is a European invention, and while African witches and wizards
@@ -99,11 +99,11 @@ We seem to have:
 [BoST]: https://magicscrapbook.tumblr.com/post/162085200042/book-of-spells-transcript
 [hpl1]: https://www.hp-lexicon.org/thing/gamps-law-of-elemental-transfiguration/
 [AO1]: https://web.archive.org/
-[Hermione]: ../people/Granger/Hermione_Jean/
-[Harry]: ../people/Potter/Harry_James/
-[Dumbledore]: ../people/Dumbledore/Albus_Percival_Wulfric_Brian/
-[Potions]: potions
-[Transfiguration]: transfiguration
+[Hermione]: /harrypedia/people/granger/hermione_jean/
+[Harry]: /harrypedia/people/potter/harry_james/
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Potions]: /harrypedia/magic/potions/
+[Transfiguration]: /harrypedia/magic/transfiguration/
 
 [^210902-3]:
     Mrs. J. K. Rowling.
@@ -309,13 +309,13 @@ Some magic is classified as being "dark." How this relates to the Christian
 concept of "evil" is unclear, and is further discussed [on it's own
 page][dark].
 
-[dark]: dark
+[dark]: /harrypedia/magic/dark/
 
 #### Horcrux
 
 These are a huge topic, and need their own [page][Horcruxes] as well.
 
-[Horcruxes]: dark/horcruxes
+[Horcruxes]: /harrypedia/magic/dark/horcruxes/
 
 #### Unforgivables
 
@@ -401,7 +401,7 @@ to judge the cost.
 While these are a staple of the universe, and have a [page][wands] dedicated to
 them, we have no mention of staves.
 
-[wands]: wands
+[wands]: /harrypedia/magic/wands/
 
 ### The Wards around Privet Drive and The Trace
 
@@ -461,7 +461,7 @@ operate? As I said, I think it has to be a detection ward of some sort. I
 have read ia number of different ideas about it. See the full article on the
 [Trace].
 
-[Trace]: time/the_trace
+[Trace]: /harrypedia/magic/time/the_trace/
 
 [^210810-4]:
     Mrs. J. K. Rowling.
@@ -514,7 +514,7 @@ have read ia number of different ideas about it. See the full article on the
 [^200731-5]: Mrs. J. K. Rowling. _Harry Potter and the Order of the Phoenix_
 
 [^200731-6]:
-    Radaslab.  
+    Radaslab.
     _[Not Normal](https://www.fanfiction.net/s/7144149)_
     [Fanfiction.net](https://www.fanfiction.net/)
     [Chapter 59](https://www.fanfiction.net/s/7144149/59/Not-Normal) Published 2011-07-04,

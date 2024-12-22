@@ -23,7 +23,7 @@ and not beings at all and 2) intruders into a wizard's home, and thus the contra
 form of self defense.[^240219-3]
 
 A second is that the elves get _something_ from the magic that enslaves them.[^240220-1]
-Perhaps it is nurishment, perhaps it is lifespan, perhaps it is a source of power.  
+Perhaps it is nurishment, perhaps it is lifespan, perhaps it is a source of power.
 This does not justify slavery. The relationship need not be one of master slave just
 because it _is_ one of master servant. One can recognize that the elf's payment is
 non-monetary but that the elf is still a _person._
@@ -65,12 +65,12 @@ harder because the _curse_ in question is lost and unrecorded by history.[^24021
 
 [Moe64]: https://archiveofourown.org/users/Moe64/pseuds/Moe64
 [What We Do Today]: https://archiveofourown.org/works/42289347
-[Malfoy]: ../../../people/malfoy/
-[Crouch]: ../../../people/crouch/
-[Harry]: ../../../people/Potter/Harry_James/
-[Kreacher]: ../../../people/Black/kreacher/
-[Hermione]: ../../../people/Granger/Hermione_Jean/
-[Regulas]: ../../../people/Black/regulas_arcturus/
+[Malfoy]: /harrypedia/people/malfoy/
+[Crouch]: /harrypedia/people/crouch/
+[Harry]: /harrypedia/people/potter/harry_james/
+[Kreacher]: /harrypedia/people/black/kreacher/
+[Hermione]: /harrypedia/people/granger/hermione_jean/
+[Regulas]: /harrypedia/people/black/regulas_arcturus/
 [Brownies]: https://en.wikipedia.org/wiki/Brownie_(folklore)
-[Imperius]: ../../magic/spells/imperio/
-[Hogwarts]: ../../../Hogwarts/
+[Imperius]: /harrypedia/magic/spells/imperio/
+[Hogwarts]: /harrypedia/hogwarts/

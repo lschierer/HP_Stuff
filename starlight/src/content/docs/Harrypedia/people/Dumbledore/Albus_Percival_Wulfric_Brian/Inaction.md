@@ -2,7 +2,6 @@
 collection: Harrypedia
 title: Does Dumbledore Ever Accomplish Anything?
 author: Luke Schierer
-pageType: person
 ---
 
 A recurring theme in fanfiction is Dumbledore's inaction. Not only is this a
@@ -56,14 +55,14 @@ Some fanfiction works that have built on this team:
 > teachers also neglected to think of how these events might have scarred
 > us.[^211102-1]
 
-[Dealing_with_Riddle]: ../dealing_with_riddle/
-[Grindelwald]: ../../../grindelwald/gellert/
-[TMR1]: ../../../../Riddle/Tom_Marvolo/
-[HJP1]: ../../../Potter/Harry_James/
-[DF1]: ../../../Dursley/
-[AD1]: ../../../Dumbledore/Albus_Percival_Wulfric_Brian/
-[Bill Weasley]: ../../../Weasley/William_Arthur/
-[Hogwarts]: ../../../../Hogwarts/
+[Dealing_with_Riddle]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/dealing_with_riddle/
+[Grindelwald]: /harrypedia/people/grindelwald/gellert/
+[TMR1]: /harrypedia/people/riddle/tom_marvolo/
+[HJP1]: /harrypedia/people/potter/harry_james/
+[DF1]: /harrypedia/people/dursley/
+[AD1]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Bill Weasley]: /harrypedia/people/weasley/william_arthur/
+[Hogwarts]: /harrypedia/hogwarts/
 
 [^211102-1]:
     Venquine1990.

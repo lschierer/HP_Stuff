@@ -21,9 +21,9 @@ pulled from school because her mother is killed in an attack by either
 [Riddle] or his Death Eaters.[^211004-14] Lastly, we know she fought in the last battle.[^211004-15]
 
 [Hannah]: ./hannah/
-[Riddle]: ../Riddle/Tom_Marvolo/
+[Riddle]: ../riddle/tom_marvolo/
 [Class_and_Blood]: ../../culture/class_and_blood/
-[Harry]: ../Potter/Harry_James/
+[Harry]: /harrypedia/people/potter/harry_james/
 [Slytherin]: ../slytherin/salazar/
 
 [^211004-15]:

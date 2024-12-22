@@ -11,6 +11,6 @@ pageType: person
 
 - Married [Vernon Dursley][VD].
 
-[VD]: ../../Dursley/Vernon/
+[VD]: /harrypedia/people/dursley/vernon/
 
 ### Speculation

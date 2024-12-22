@@ -94,28 +94,28 @@ depiction _certainly_ destroys anyone attempting to use _[Cursed Child]_
 to create one big happy Weasley-Potter-Malfoy family.
 
 [Shipping]: ../shipping/
-[Astoria]: ../people/Greengrass/Astoria/
-[Draco]: ../people/Malfoy/Draco_Lucius/
-[Scorpius]: ../people/malfoy/scorpius/
-[Greengrass]: ../people/greengrass/
-[dark arts]: ../magic/dark/
-[Rita]: ../people/skeeter/rita/
-[Rita Skeeter]: ../people/skeeter/rita/
-[Hogwarts]: ../Hogwarts/
-[Ron]: ../people/Weasley/Ronald_Bilius/
-[Hermione]: ../people/Granger/Hermione_Jean/
-[Harry]: ../people/Potter/Harry_James/
-[Ginny]: ../people/Weasley/Ginevra_Molly/
-[George]: ../people/Weasley/George/
-[Neville]: ../people/Longbottom/Neville/
-[Percy]: ../people/Weasley/percy_ignatius/
-[Audrey]: ../people/
-[Luna]: ../people/Lovegood/Luna/
-[Hannah Abbott]: ../people/abbott/hannah/
-[Rolf Scamander]: ../people/scamander/rolf/
+[Astoria]: /harrypedia/people/greengrass/astoria//
+[Draco]: /harrypedia/people/malfoy/draco_lucius//
+[Scorpius]: /harrypedia/people/malfoy/scorpius//
+[Greengrass]: /harrypedia/people/greengrass//
+[dark arts]: /harrypedia/magic/dark//
+[Rita]: /harrypedia/people/skeeter/rita//
+[Rita Skeeter]: /harrypedia/people/skeeter/rita//
+[Hogwarts]: /harrypedia/hogwarts/
+[Ron]: /harrypedia/people/weasley/ronald_bilius//
+[Hermione]: /harrypedia/people/granger/hermione_jean//
+[Harry]: /harrypedia/people/potter/harry_james//
+[Ginny]: /harrypedia/people/weasley/ginevra_molly//
+[George]: /harrypedia/people/weasley/george//
+[Neville]: /harrypedia/people/longbottom/neville//
+[Percy]: /harrypedia/people/weasley/percy_ignatius//
+[Audrey]: /harrypedia/people//
+[Luna]: /harrypedia/people/lovegood/luna//
+[Hannah Abbott]: /harrypedia/people/abbott/hannah//
+[Rolf Scamander]: /harrypedia/people/scamander/rolf//
 [Quidditch]: ../quidditch/
-[Malfoy]: ../people/malfoy/
-[Hannah]: ../people/abbott/hannah/
+[Malfoy]: /harrypedia/people/malfoy//
+[Hannah]: /harrypedia/people/abbott/hannah//
 [Holyhead Harpies]: ../quidditch/
 
 [^AG]: Mrs. J. K. Rowling. "[Draco Malfoy]" 2014-12-22.

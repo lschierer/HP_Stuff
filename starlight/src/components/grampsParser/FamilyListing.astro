@@ -136,6 +136,7 @@ families.forEach((value, key, map) => {
       <li>
         <IndividualName inline link={true} personId={person.id} /> (
         {person.event_ref_list.length > 0 &&
+        person.birth_ref_index >= 0 &&
         person.birth_ref_index < person.event_ref_list.length ? (
           <Event handle={person.event_ref_list[person.birth_ref_index].ref} />
         ) : (

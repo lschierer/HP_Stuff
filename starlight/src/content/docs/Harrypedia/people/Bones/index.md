@@ -19,11 +19,11 @@ despite coming from a family with enough influence that her Aunt is head of the
 Is [Amelia][] a traditionalist even if she also believes in justice?[^210701-2]
 Or is [Amelia][] fairly broad minded?[^210701-3]
 
-[Susan]: susan
-[Riddle]: ../Riddle/Tom_Marvolo/
-[Amelia]: amelia_susan
-[ClassLists]: ../../Hogwarts/class_lists/
-[Culture]: ../../culture
+[Susan]: susan/
+[Riddle]: ../riddle/tom_marvolo/
+[Amelia]: amelia_susan/
+[ClassLists]: /harrypedia/hogwarts/class_lists/
+[Culture]: ../../culture/
 
 [^210701-3]:
     This view of [Amelia] is shown in Fibinaci's _[Padfoot, Docteur

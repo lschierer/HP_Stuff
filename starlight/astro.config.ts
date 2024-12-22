@@ -8,6 +8,10 @@ import mdx from "@astrojs/mdx";
 // https://astro.build/config
 export default defineConfig({
   site: "https://hp-fan.schierer.org",
+  redirects: {
+    "/harrypedia/people/peverell/ignatius/":
+      "/harrypedia/people/peverell/ignotus/",
+  },
   integrations: [
     starlight({
       title: "Luke's HP Site",

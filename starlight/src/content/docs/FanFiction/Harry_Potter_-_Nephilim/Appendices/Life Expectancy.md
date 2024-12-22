@@ -3,7 +3,6 @@ title: |
   Life Expectancy
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 sidebar:
   order: 100
 ---
@@ -93,5 +92,5 @@ This gives our central characters life expectancies as follows:
 
 \* Fleur is quarter-veela, see [The Veela Curse].
 
-[The Veela Curse]: ../Appendix_I/
+[The Veela Curse]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_i/
 [Life Tables for the United States Social Security Area 1900-2100]: https://www.ssa.gov/oact/NOTES/pdf_studies/study120.pdf

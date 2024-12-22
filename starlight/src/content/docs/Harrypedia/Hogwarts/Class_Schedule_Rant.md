@@ -116,9 +116,9 @@ increase the mystery 2) it lets [Hermione] be super intelligent without
 informing [Harry] of anything 3) it provides reasons for her and [Ron]
 to fight.
 
-[Harry]: ../../people/Potter/Harry_James/
-[Hermione]: ../../people/Granger/Hermione_Jean/
-[Ron]: ../../people/Weasley/Ronald_Bilius/
+[Harry]: /harrypedia/people/potter/harry_james//
+[Hermione]: /harrypedia/people/granger/hermione_jean//
+[Ron]: /harrypedia/people/weasley/ronald_bilius//
 [Hogwarts]: ../
 [Notes]: ../../
 

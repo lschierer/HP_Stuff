@@ -19,10 +19,10 @@ author: Luke Schierer
 
 [chapter two]: ../chapter-02/
 [first chapter]: ../chapter-01/
-[Dursley]: /Harrypedia/people/Dursley/Vernon/
-[Dudley]: /Harrypedia/people/Dursley/Dudley/
-[Dursleys]: /Harrypedia/people/Dursley/
-[Harry]: /Harrypedia/people/Potter/Harry_James/
-[obscurials]: /Harrypedia/beings/obscurus/
+[Dursley]: /harrypedia/people/dursley/vernon//
+[Dudley]: /harrypedia/people/dursley/dudley//
+[Dursleys]: /harrypedia/people/dursley//
+[Harry]: /harrypedia/people/potter/harry_james//
+[obscurials]: /harrypedia/beings/obscurus//
 
 [^240424-3]: This will be confirmed in book seven when we seen an excerpt of a letter describing that birthday.

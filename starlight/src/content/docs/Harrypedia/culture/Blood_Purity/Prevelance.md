@@ -22,9 +22,9 @@ On the plus side, Mrs. Rowling lists a single first generation Minister of Magic
 My guess is not none (the essential premise for a work like _[Exiles]_), but also not all or nearly all (the essential premise for much of Mrs. Rowling's extra cannon writing about the post war universe).
 
 [Exiles]: https://www.fanfiction.net/s/14002719
-[Riddle]: ../../../people/Riddle/Tom_Marvolo/
-[Arthur Weasley]: ../../../people/Weasley/arthur/
-[Weasley]: ../../../people/weasley/
+[Riddle]: /harrypedia/people/riddle/tom_marvolo/
+[Arthur Weasley]: /harrypedia/people/weasley/arthur/
+[Weasley]: /harrypedia/people/weasley/
 
 [^240318-1]: I am having trouble documenting where this line of reasoning, known now as the "Nuremberg Defence", was actually condemned.
 

@@ -3,7 +3,6 @@ title: |
   What are the Nephilim
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 sidebar:
   order: 100
 ---
@@ -69,7 +68,7 @@ in fact the intended mockery, the first generation ones were and are a means to 
 
 [Nephilim]: https://www.britannica.com/topic/Nephilim
 [Britannica]: https://www.britannica.com
-[MW]: https://en.wikipedia.org/wiki/Many_Waters
+[MW]: https://wikipedia.org/wiki/Many_Waters
 
 ## Characteristics of the Nephilim
 
@@ -183,18 +182,28 @@ To play with Mark Twain's words, to the extent that there is any moral to this,
 it is to show what could happen if a whole series of really bad choices were
 made. When the only choices the characters see are between bad and worse.
 
-[ligers]: https://en.wikipedia.org/wiki/ligers
-[MW]: https://en.wikipedia.org/wiki/Many_Waters
+[AA]: /fanfiction/harry_potter_-_nephilim/appendices/points-of-divergence/
+[AB]: /fanfiction/harry_potter_-_nephilim/appendices/rules-of-magic/
+[AC]: /fanfiction/harry_potter_-_nephilim/appendices/magical-beings/
+[AD]: /fanfiction/harry_potter_-_nephilim/appendices/relative-power-levels/
+[AE]: /fanfiction/harry_potter_-_nephilim/appendices/life-expectancy/
+[AF]: /fanfiction/harry_potter_-_nephilim/appendices/magical-contracts/
+[AG]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_g/
+[AH]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_h/
+[Appendix I]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_i/
+[Encyclopedic Reference]: /harrypedia/
+[FSSP]: /fanfiction/harry_potter_-_nephilim/appendices/fssp/
+[FWoaO1]: https://archiveofourown.org/works/28507302
+[Inheritance]: /fanfiction/harry_potter_-_nephilim/appendices/inheritance/
+[Introduction]: /fanfiction/harry_potter_-_nephilim/introduction/
+[MW]: https://wikipedia.org/wiki/Many_Waters
+[TSL2]: https://archive.org/details/in.ernet.dli.2015.86985
+[TSL3]: https://archive.org/details/in.ernet.dli.2015.86985
 [TSL]: https://archive.org/details/in.ernet.dli.2015.86985
-[WP1]: https://en.wikipedia.org/wiki/Soteriology
-[WP2]: https://en.wikipedia.org/wiki/Missiology
-[WP3]: https://en.wikipedia.org/wiki/Ecclesiology
-[AA]: ../Points%20of%20Divergence/
-[AB]: <../Rules of Magic/>
-[AC]: <../Magical Beings/>
-[AD]: <../Relative Power Levels/>
-[AE]: <../Life Expectancy/>
-[AF]: <../Magical Contracts/>
-[AG]: ../Appendix_G/
-[AH]: ../Appendix_H/
-[Appendix I]: ../Appendix_I/
+[WP1]: https://wikipedia.org/wiki/Soteriology
+[WP2]: https://wikipedia.org/wiki/Missiology
+[WP3]: https://wikipedia.org/wiki/Ecclesiology
+[ab]: /fanfiction/harry_potter_-_nephilim/appendices/rules-of-magic/
+[af]: /fanfiction/harry_potter_-_nephilim/appendices/magical-contracts/
+[ah]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_h
+[ligers]: https://wikipedia.org/wiki/ligers

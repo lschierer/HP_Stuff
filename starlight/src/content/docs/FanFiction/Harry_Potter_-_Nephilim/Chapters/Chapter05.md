@@ -2,7 +2,6 @@
 title: Chapter 05
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 ---
 
 At first the changes were subtle, and because Harry and Dudley were in
@@ -142,4 +141,4 @@ into by someone who did not notice him?
 
 [^210902-9]: See the [History] page, The Children Act of 1989 was not in effect yet. Again, please forgive my butchering of actual British law.
 
-[History]: /Harrypedia/history
+[History]: /harrypedia/history/

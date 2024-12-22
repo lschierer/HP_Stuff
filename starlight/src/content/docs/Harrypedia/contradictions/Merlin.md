@@ -11,8 +11,8 @@ There are, naturally, problems with this. Most people attempting to reliably pla
 
 Rowling is clearly building off the legend version, placed in the 11th or 12th century, and thus within two or three centuries of when [Hogwarts] was founded. For a work of fiction to work off of the fictional version of the king with his fictional adviser (Merlin) is probably reasonable. The problem is that I have grown up with enough stories, for example Mr. Stephen Lawhead's version,[^240327-3] where Arthur _does_ live further back in time, closer to the (probable) historical king. The resulting dissonance leaves me dissatisfied.
 
-[Hogwarts]: ../Hogwarts/
-[Slytherin]: ../Hogwarts/Slytherin/
+[Hogwarts]: /harrypedia/hogwarts/
+[Slytherin]: /harrypedia/hogwarts/slytherin/
 
 [^230327-1]:
     [Britannica], The Editors of Encyclopaedia.

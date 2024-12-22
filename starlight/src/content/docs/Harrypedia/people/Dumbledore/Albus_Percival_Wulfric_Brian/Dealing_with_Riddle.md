@@ -2,7 +2,6 @@
 collection: Harrypedia
 title: Dumbledore and Tom Riddle
 author: Luke Schierer
-pageType: person
 ---
 
 ### Riddle's School Years
@@ -176,18 +175,18 @@ hunt them down. Why, knowing that he will die, he entrusts the knowledge to
 
 [^20210927-6]: See my [History] notes.
 
-[Culture]: ../../../../culture
-[ICW]: ../../../../culture
-[History]: ../../../../history
-[horcruxes]: ../../../../magic/dark/horcruxes/
-[Horcruxes]: ../../../../magic/dark/horcruxes/
-[Lupin]: ../../../Lupin/Remus_John/
-[Kingsley]: ../../../shacklebolt/kingsley/
-[Moody]: ../../../people/moody/
-[TMR1]: ../../../Riddle/Tom_Marvolo/
-[Harry]: ../../../Potter/Harry_James/
-[Hermione]: ../../../Granger/Hermione_Jean/
-[Ron]: ../../../Weasley/Ronald_Bilius/
-[Bill]: ../../../Weasley/William_Arthur/
-[Draco]: ../../../Malfoy/Draco_Lucius/
-[Snape]: ../../../Snape/Severus//
+[Culture]: /harrypedia/culture/
+[ICW]: /harrypedia/culture/
+[History]: /harrypedia/history/
+[horcruxes]: /harrypedia/magic/dark/horcruxes/
+[Horcruxes]: /harrypedia/magic/dark/horcruxes/
+[Lupin]: /harrypedia/people/lupin/remus_john/
+[Kingsley]: /harrypedia/people/shacklebolt/kingsley/
+[Moody]: /harrypedia/people/moody/
+[TMR1]: /harrypedia/people/riddle/tom_marvolo/
+[Harry]: /harrypedia/people/potter/harry_james/
+[Hermione]: /harrypedia/people/granger/hermione_jean/
+[Ron]: /harrypedia/people/weasley/ronald_bilius/
+[Bill]: /harrypedia/people/weasley/william_arthur/
+[Draco]: /harrypedia/people/malfoy/draco_lucius/
+[Snape]: /harrypedia/people/snape/severus/

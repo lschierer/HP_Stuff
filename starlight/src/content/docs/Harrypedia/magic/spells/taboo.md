@@ -26,10 +26,10 @@ that this is possible, and not "why do you not know this" to it.
 If is well known but restricted in some way, what does the restricting?
 _Why_ (for example) must one control the Ministry to set a Taboo?
 
-[Riddle]: ../../../people/Riddle/Tom_Marvolo/
-[Harry]: ../../../people/Potter/Harry_James/
-[Hermione]: ../../../people/Granger/Hermione_Jean/
-[Ron]: ../../../people/Weasley/Ronald_Bilius/
+[Riddle]: /harrypedia/people/riddle/tom_marvolo/
+[Harry]: /harrypedia/people/potter/harry_james/
+[Hermione]: /harrypedia/people/granger/hermione_jean/
+[Ron]: /harrypedia/people/weasley/ronald_bilius/
 
 [^240212-1]:
     Mrs. J. K. Rowling.

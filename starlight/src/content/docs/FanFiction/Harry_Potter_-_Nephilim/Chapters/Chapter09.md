@@ -2,7 +2,6 @@
 title: Chapter 09
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 ---
 
 In the cannon world, Chapter Six (the train) is 25 pages and Chapter Seven (the

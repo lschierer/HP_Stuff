@@ -2,7 +2,6 @@
 title: Chapter 3
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 ---
 
 The summer after Year 1 of Primary School, when Harry turned 6, was particularly

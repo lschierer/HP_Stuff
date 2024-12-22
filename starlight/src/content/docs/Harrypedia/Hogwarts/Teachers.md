@@ -11,11 +11,11 @@ title: Teachers
 - [Minerva McGonagall][McGonagall]
 - [Severus Snape][Snape]
 
-[Dumbledore]: ../../people/Dumbledore/Albus_Percival_Wulfric_Brian/
-[Binns]: ../../people/binns/cuthbert
-[Flitwick]: ../../people/flitwick/filus
-[McGonagall]: ../../people/McGonagall/Minerva/
-[snape]: ../../people/Snape/Severus/
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian//
+[Binns]: /harrypedia/people/binns/cuthbert/
+[Flitwick]: /harrypedia/people/flitwick/filus/
+[McGonagall]: /harrypedia/people/mcgonagall/minerva//
+[snape]: /harrypedia/people/snape/severus//
 
 In more general terms, what is the role of the head of each house?
 [McGonagall] shows up to intervene in Gryffindor's internal discipline only
@@ -53,8 +53,8 @@ who is involved. Never mind [McGonagall] is Deputy Head, and therefore
 more logically the advisor at that point, we need a more Charles Dickens
 feel about it. Which is probably precisely the point.
 
-[Harry]: ../../people/Potter/Harry_James/
-[Luna]: ../../people/Lovegood/Luna/
+[Harry]: /harrypedia/people/potter/harry_james//
+[Luna]: /harrypedia/people/lovegood/luna//
 [Stalky & Co.]: https://www.gutenberg.org/ebooks/3006
 
 [^20210521-6]: Mr. Rudyard Kipling. _Stalky & Co._ better citation needed.

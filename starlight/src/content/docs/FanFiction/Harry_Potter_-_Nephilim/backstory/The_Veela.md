@@ -3,7 +3,6 @@ title: "Backstory: Veela"
 tableOfContents: false
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 sidebar:
   order: 210
 ---
@@ -47,5 +46,5 @@ The good angels, seeing this backlash, ceased to meddle (with a few relatively m
 
 [241120-9]: this is normal for nephil, see [Appendix H]
 
-[Appendix H]: ../../Appendices/Appendix_H/
-[Appendix I]: ../../Appendices/Appendix_I/
+[Appendix H]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_h/
+[Appendix I]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_i/

@@ -57,9 +57,9 @@ secrecy would mean that even well-meaning people like the [Weasleys]
 would have an unconscious taboo surrounding actually teaching
 those outside the family anything not taught at school.
 
-[Weasleys]: ../../people/weasley
-[Harry]: ../../people/Potter/Harry_James/
-[Hermione]: ../../people/Granger/Hermione_Jean/
+[Weasleys]: /harrypedia/people/weasley/
+[Harry]: /harrypedia/people/potter/harry_james//
+[Hermione]: /harrypedia/people/granger/hermione_jean//
 [tdgsm-1]: https://www.fanfiction.net/s/13049901
 
 [^210420-3]:

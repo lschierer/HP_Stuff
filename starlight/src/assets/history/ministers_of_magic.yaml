@@ -212,9 +212,9 @@ events:
     date: 1925
     description: |
       Voted out of office because he failed to take [Gellert Grindelwald]
-      seriously. 
+      seriously.
 
-      [Gellert Grindelwald]: <../people/grindelwald/gellert/>
+      [Gellert Grindelwald]: </harrypedia/people/grindelwald/gellert/>
     source: |
       * Mrs. J. K. Rowling.
         "[Ministers of Magic](https://www.rowlingindex.org/work/msmpm/)"
@@ -251,7 +251,7 @@ events:
       states that many pure-bloods resigned in protest over his appointment,
       and that he left office after contracting a "mysterious illness" about which there are a number of conspiracy theories.
 
-      [Leach]: <../people/leach/nobby/>
+      [Leach]: </harrypedia/people/leach/nobby/>
     date: 1962
     source: |
       * Mrs. J. K. Rowling.
@@ -263,9 +263,9 @@ events:
     date: 1968
     description: |
       Despite dealing competently with the pure-blood riots in the late 60s, the public perception was that he was unequal to the task of dealing with
-      [Riddle].  This ultimately cost him his position. 
+      [Riddle].  This ultimately cost him his position.
 
-      [Riddle]: <../people/riddle/tom_marvolo/>
+      [Riddle]: </harrypedia/people/riddle/tom_marvolo/>
     source: |
       * Mrs. J. K. Rowling.
         "[Ministers of Magic](https://www.rowlingindex.org/work/msmpm/)"
@@ -275,13 +275,13 @@ events:
     blurb: Harold Minchum elected Minister of Magic
     date: 1975
     description: |
-      Elected to deal with the [Riddle] problem, he responded by placing more [Dementors] around [Azkaban].  This proved ineffective. 
+      Elected to deal with the [Riddle] problem, he responded by placing more [Dementors] around [Azkaban].  This proved ineffective.
 
-      [Riddle]: <../people/riddle/tom_marvolo/>
+      [Riddle]: </harrypedia/people/riddle/tom_marvolo/>
 
-      [Dementors]: <../non-beings/dementor/>
+      [Dementors]: </harrypedia/non-beings/dementor/>
 
-      [Azkaban]: <../azkaban/>
+      [Azkaban]: </harrypedia/azkaban/>
     source: |
       * Mrs. J. K. Rowling.
         "[Ministers of Magic](https://www.rowlingindex.org/work/msmpm/)"
@@ -291,9 +291,9 @@ events:
     blurb: Millicent Bagnold elected Minister of Magic
     date: 1980
     description: |
-      The third Minister to face the [Riddle] war, she also had to answer to the [International Confederation of Wizards] over breaches to the [International Statute of Secrecy] as the Wizarding world celebrated [Riddle]'s disappearance. 
+      The third Minister to face the [Riddle] war, she also had to answer to the [International Confederation of Wizards] over breaches to the [International Statute of Secrecy] as the Wizarding world celebrated [Riddle]'s disappearance.
 
-      [Riddle]: <../people/riddle/tom_marvolo/>
+      [Riddle]: </harrypedia/people/riddle/tom_marvolo/>
 
       [International Confederation of Wizards]: <../culture/government/>
 

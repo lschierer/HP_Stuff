@@ -8,7 +8,6 @@ tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 4
 collection: Nephilim
-layout: fanfiction
 ---
 
 > **Note**
@@ -111,20 +110,20 @@ There are in fact, though no-inworld scholar knows this, precise percentage base
     Mrs. J. K. Rowling & Sony Computer Entertainment Europe.
     _[Miranda Goshawk's Book of Spells](https://archive.org/details/0_20211019/)_ 2013. Page 66.
 
-[Raczidian]: /Harrypedia/people/Raczidian/
-[source works]: /FanFiction/Harry_Potter_-_Nephilim/Introduction/
+[Raczidian]: /harrypedia/people/raczidian/
+[source works]: /fanfiction/harry_potter_-_nephilim/introduction/
 [Many Waters]: https://wikipedia.org/wiki/Many_Waters
-[AA]: ../Points%20of%20Divergence/
-[AB]: <../Rules of Magic/>
-[AC]: <../Magical Beings/>
-[AD]: <../Relative Power Levels/>
-[AE]: <../Life Expectancy/>
-[Magical Contracts]: <../Magical Contracts/>
-[Soteriology, Missiology and Ecclesiology]: ../Appendix_G/
-[AH]: ../Appendix_H/
-[Appendix I]: ../Appendix_I/
+[AA]: /fanfiction/harry_potter_-_nephilim/appendices/points-of-divergence/
+[AB]: /fanfiction/harry_potter_-_nephilim/appendices/rules-of-magic/
+[AC]: /fanfiction/harry_potter_-_nephilim/appendices/magical-beings/
+[AD]: /fanfiction/harry_potter_-_nephilim/appendices/relative-power-levels/
+[AE]: /fanfiction/harry_potter_-_nephilim/appendices/life-expectancy/
+[Magical Contracts]: /fanfiction/harry_potter_-_nephilim/appendices/magical-contracts/
+[Soteriology, Missiology and Ecclesiology]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_g/
+[AH]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_h/
+[Appendix I]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_i/
 
 [^241123-1]: See [Soteriology, Missiology and Ecclesiology] and [Points of Divergence]
 
-[Points of Divergence]: ../Points%20of%20Divergence/
-[hippogriff]: /Harrypedia/animals/hippogriff/
+[Points of Divergence]: /fanfiction/harry_potter_-_nephilim/appendices/points-of-divergence/
+[hippogriff]: /harrypedia/animals/hippogriff/

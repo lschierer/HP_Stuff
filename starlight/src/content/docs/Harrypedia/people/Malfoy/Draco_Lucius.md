@@ -53,14 +53,14 @@ disfavour. In the second scene, Draco has a clear shot at _personally_ winning
 that same favour. The path to victory seems clear, and his self confidence is
 back.
 
-[Ginny]: ../../Weasley/Ginevra_Molly/
-[Riddle]: ../../Riddle/Tom_Marvolo/
-[Slytherin]: ../../../Hogwarts/Slytherin/
-[Harry]: ../../Potter/Harry_James/
-[Ron]: ../../Weasley/Ronald_Bilius/
-[Hermione]: ../../Granger/Hermione_Jean/
-[Goyle]: ../../goyle/gregory
-[Crabbe]: ../../crabbe/vincent
+[Ginny]: /harrypedia/people/weasley/ginevra_molly/
+[Riddle]: /harrypedia/people/riddle/tom_marvolo/
+[Slytherin]: /harrypedia/hogwarts/slytherin/
+[Harry]: /harrypedia/people/potter/harry_james/
+[Ron]: /harrypedia/people/weasley/ronald_bilius/
+[Hermione]: /harrypedia/people/granger/hermione_jean/
+[Goyle]: /harrypedia/people/goyle/gregory/
+[Crabbe]: /harrypedia/people/crabbe/vincent/
 
 [^230210-4]: Mrs. J. K. Rowling. Quoted at "[SORTING HAT SONGS][]" on [MuggleNet][]. Last Viewed: 2023-02-10.
 

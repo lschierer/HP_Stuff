@@ -19,8 +19,6 @@ pageType: person
 
 [^210517-2]: See my notes on the [History][] page.
 
-[Hagrid]: ../../Hagrid/Rubeus/
-
 ### Analysis
 
 ## Speculation
@@ -72,9 +70,6 @@ would _resent_ being blamed, when he, rightly, would question who in their
 right mind, having made comments similar to those [Snape][] had been making,
 would have ever gone down the tunnel!
 
-[Lily]: ../../Evans/Lily_J./
-[SWM]: ../../Snape/Severus//swm/
-
 [^230206-1]: For one example, see Kindle Location 7647, Mrs. J. K. Rowling. _[Harry Potter and the Order of the Phoenix][]_ Bloomsbury UK (2003)
 
 [Harry Potter and the Order of the Phoenix]: https://www.librarything.com/work/115/book/225886709
@@ -88,8 +83,6 @@ because the thought of his own innocence was not a happy thought, and keeping
 that thought kept him sane,[^210630-2] and that later, hearing about [Peter][]
 created an obsession within him, one that cleared his mind and gave him
 strength.[^210630-3]
-
-[Peter]: ../../pettigrew/peter
 
 A fogged mind and reduced magic for twelve years sounds like, whatever [Harry][]
 thinks in at various times in the book, he was in fact affected by the
@@ -150,10 +143,10 @@ trial? It is reasonable to accept that [Lupin][] both believed him guilty and
 would have been unable to demand a trial. Why, however, did none of
 [Dumbledore][], [Andromeda][] Black, or his own blood family demand a trial?
 
-[Harry]: ../../Potter/Harry_James/
-[Lupin]: ../../Lupin/Remus_John/
-[Dumbledore]: ../../Dumbledore/Albus_Percival_Wulfric_Brian/
-[Andromeda]: ../andromeda
+[Harry]: /harrypedia/people/potter/harry_james/
+[Lupin]: /harrypedia/people/lupin/remus_john/
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Andromeda]: /harrypedia/people/black/andromeda/
 
 Lets start with the easy ones: [Arcturus][], [Pollux][], and [Walburga][]
 Black. We know that [Walburga][] hated her son, enough to want him disowned.
@@ -165,14 +158,6 @@ _also_ did not disown [Bellatrix][] and [Regulus][] Black:
 - they at very least were not opposed to [Riddle][]'s pure-blood terrorism
 - they probably (given what we know of Walburga at least) supported [Riddle][]
 - they cared more about the survival of the name Black than Sirius' beliefs
-
-[Arcturus]: ../arcturus_II
-[Pollux]: ../pollux
-[Walburga]: ../walburga
-[Orion]: ../orion
-[Bellatrix]: ../bellatrix
-[Regulus]: ../regulus_arcturus
-[Riddle]: ../../Riddle/Tom_Marvolo/
 
 My guess is that they held themselves apart from actually joining the Death
 Eaters, and thus did not _know_ that Sirius had not joined. They saw his
@@ -214,8 +199,6 @@ well have tricked not only the Ministry, but Sirius as well.[^221202-4] Sirius
 says that [Peter][] cut off the finger and blew up the street,[^221202-5] but
 that could mean before his curse _landed_ rather than before it was _cast_.
 
-[Peter Pettigrew]: ../../pettigrew/peter
-
 [^210517-3]: See my notes on the [History][] page.
 
 [^221202-5]:
@@ -229,7 +212,7 @@ that could mean before his curse _landed_ rather than before it was _cast_.
     does have a certain persuasiveness.
 
 [Abandoning Ship]: https://www.redhen-publications.com/abandoningShip.html
-[History]: ../../../history
+[History]: /harrypedia/history/
 
 [^210517-4]:
     Some writers have speculated that long term exposure to dementors
@@ -252,14 +235,33 @@ and [Hermione][] at times level upon him? Much of this hinges on the [effects
 of Azkaban][].
 
 [effects of Azkaban]: #effects-of-azkaban
-[Pettigrew]: ../../pettigrew/peter
-[Snape]: ../../Snape/Severus/
-[James]: ../../Potter/James/
-[Molly]: ../../Prewett/Molly/
-[Hermione]: ../../Granger/Hermione_Jean/
-[Malfoy]: ../../malfoy
 
 [^210519-11]:
     Mrs. J. K. Rowling.
     _Harry Potter and the Order of the Phoenix_ Kindle Locations 9822-9830 of 13038.
     Pottermore Limited © 2005. American Kindle Edition.
+
+
+[Andromeda]: /harrypedia/people/black/andromeda/
+[Arcturus]: /harrypedia/people/black/arcturus_ii/
+[Bellatrix]: /harrypedia/people/black/bellatrix/
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Hagrid]: /harrypedia/people/hagrid/rubeus/
+[Harry]: /harrypedia/people/potter/harry_james/
+[Hermione]: /harrypedia/people/granger/hermione_jean/
+[History]: /harrypedia/history/
+[James]: /harrypedia/people/potter/james/
+[Lily]: /harrypedia/people/evans/lily_j/
+[Lupin]: /harrypedia/people/lupin/remus_john/
+[Malfoy]: /harrypedia/people/malfoy/
+[Molly]: /harrypedia/people/prewett/molly/
+[Orion]: /harrypedia/people/black/orion/
+[Peter Pettigrew]: /harrypedia/people/pettigrew/peter/
+[Peter]: /harrypedia/people/pettigrew/peter/
+[Pettigrew]: /harrypedia/people/pettigrew/peter/
+[Pollux]: /harrypedia/people/black/pollux/
+[Regulus]: /harrypedia/people/black/regulus_arcturus/
+[Riddle]: /harrypedia/people/riddle/tom_marvolo/
+[SWM]: /harrypedia/people/snape/severus/swm/
+[Snape]: /harrypedia/people/snape/severus/
+[Walburga]: /harrypedia/people/black/walburga/

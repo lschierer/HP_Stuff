@@ -2,7 +2,6 @@
 title: Chapter 06
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 ---
 
 Like many towns in England, the historical churches in town had long ago been

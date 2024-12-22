@@ -2,7 +2,6 @@
 title: Introduction
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 sidebar:
   order: -1
 ---
@@ -53,7 +52,7 @@ understand the story, but are hopefully not truly necessary. Most (everything in
     Author's Notice. [Project Gutenberg] text #76.
 
 [Project Gutenberg]: https://www.gutenberg.org/
-[Harrypedia]: /Harrypedia/
+[Harrypedia]: /harrypedia//
 [FWoaO1]: https://archiveofourown.org/works/28507302
 [MW]: https://wikipedia.org/wiki/Many_Waters
 [MW2]: https://wikipedia.org/wiki/Many_Waters

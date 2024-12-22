@@ -1,7 +1,7 @@
 ---
 collection: Harrypedia
 family: Umbridge
-title: Delores Jane
+title: Dolores Jane
 grampsID: I0112
 author: Luke Schierer
 pageType: person
@@ -11,4 +11,4 @@ pageType: person
 
 See [Umbridge's Quill] for a discussion of the quill she creates and uses in book five.
 
-[Umbridge's Quill]: </Harrypedia/reactions/fanfiction/Umbridge's Quill/>
+[Umbridge's Quill]:/harrypedia/reactions/fanfiction/umbridge's quill/>

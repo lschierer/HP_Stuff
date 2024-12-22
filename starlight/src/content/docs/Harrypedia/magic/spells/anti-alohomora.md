@@ -8,7 +8,7 @@ author: Luke Schierer
 
 Developed by [Blagdon Blay][].
 
-[Blagdon Blay]: ../../../people/blay/blagdon
+[Blagdon Blay]: /harrypedia/people/blay/blagdon/
 
 ## Found in
 

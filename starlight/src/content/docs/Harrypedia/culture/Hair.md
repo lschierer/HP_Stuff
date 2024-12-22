@@ -12,9 +12,9 @@ hair length and societal status in Europe.[^220719-3] Thus if true, this
 would be something unique to the magical world, and more over, a uniqueness
 not substantiated by the cannonical works.
 
-[Lucius Malfoy]: ../../people/Malfoy/Lucius_Abraxas/
-[Draco Malfoy]: ../../people/Malfoy/Draco_Lucius/
-[DLM1]: ../../people/Malfoy/Draco_Lucius/
+[Lucius Malfoy]: /harrypedia/people/malfoy/lucius_abraxas//
+[Draco Malfoy]: /harrypedia/people/malfoy/draco_lucius//
+[DLM1]: /harrypedia/people/malfoy/draco_lucius//
 
 [^220719-1]: This may be a movie thing, and may not be supported by the written works.
 

@@ -2,7 +2,6 @@
 title: Chapter 02
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 ---
 
 Harry's prioritisation of the spiritual over the physical exposed him to his

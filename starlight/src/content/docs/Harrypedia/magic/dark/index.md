@@ -19,7 +19,7 @@ block. I need citations for this.
 Also note that there seems to be more "dark" magic than "light" magic, see my
 mini-rant on the [balance of power][].
 
-[balance of power]: ../../balance
+[balance of power]: /harrypedia/balance/
 
 ### Analysis
 
@@ -63,14 +63,14 @@ merely light is legal and dark is illegal, but there is no true distinction.
 Some of this is narration bias, [Percy][], the main character, does not clearly
 understand the difference.
 
-[Percy]: ../../people/Weasley/percy_ignatius/
+[Percy]: /harrypedia/people/weasley/percy_ignatius/
 [A Study of Resonance]: https://archiveofourown.org/works/38041177
 
 [^221122-6]:
     mymovingfingerwrites. _[A Study of Resonance][]_
     Published: 2022-03-29. Updated: 20222-11-17.
 
-[Amelia]: ../../people/bones/amelia_susan
+[Amelia]: /harrypedia/people/bones/amelia_susan/
 
 [^221122-3]: including but not limited to
 
@@ -94,7 +94,7 @@ evil, and my overall thoughts on the matter will stand essentially uncontested.
 [^230124-1]: AliceMoonflowyr. _[The Black Wind][]_ Published 2022-01-10. Updated: 2022-09-21.
 
 [The Black Wind]: https://archiveofourown.org/works/36341272
-[cruciatus]: ../spells/cruciatus
+[cruciatus]: /harrypedia/magic/spells/cruciatus/
 
 Another line of speculation is the effects of this "dark" magic, not just on
 the victim, but on the person who casts it. In _[How?][]_, it is speculated

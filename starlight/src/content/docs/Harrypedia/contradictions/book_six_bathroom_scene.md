@@ -36,11 +36,11 @@ effective, and thus [Harry][] was less than fully disabled by it.
 However, as things stand, we have a time paradox. [Harry][] casts his curse
 while [Malfoy][] is frozen in time.
 
-[sectumsempra]: ../../magic/spells/sectumsempra
-[crucio]: ../../magic/spells/cruciatus
-[Harry]: ../../people/Potter/Harry_James/
-[Malfoy]: ../../people/Malfoy/Draco_Lucius/
-[Snape]: ../../people/Snape/Severus/
+[sectumsempra]: /harrypedia/magic/spells/sectumsempra/
+[crucio]: /harrypedia/magic/spells/cruciatus/
+[Harry]: /harrypedia/people/potter/harry_james//
+[Malfoy]: /harrypedia/people/malfoy/draco_lucius//
+[Snape]: /harrypedia/people/snape/severus//
 
 [^230125-1]: Others include, but are not limited to:
 

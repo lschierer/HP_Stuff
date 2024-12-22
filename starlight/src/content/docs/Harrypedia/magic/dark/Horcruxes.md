@@ -56,7 +56,7 @@ about and properly investigate what an intact horcrux is doing in the
 Imperial Museum is a testimony to his overall dependence on the prophecy,
 and failure to act.
 
-[Bill]: ../../../people/Weasley/William_Arthur/
+[Bill]: /harrypedia/people/weasley/william_arthur/
 
 [^210324-1]:
     Adapted from Itsme66.
@@ -280,11 +280,11 @@ Mrs. Rowling accepts a fallacy here: that sometimes an evil can be so great, so 
 [^240506-3]: a volcano is used in some fan fictions picking upon the [Lord of the Rings] analogy.
 
 [Lord of the Rings]: https://wikipedia.org/wiki/The_Lord_of_the_Rings
-[balance]: /Harrypedia/balance/
-[basilisk]: /Harrypedia/animals/basilisk/
-[fiendfire]: /Harrypedia/magic/spells/fiendfire/
+[balance]: /harrypedia/balance/
+[basilisk]: /harrypedia/animals/basilisk/
+[fiendfire]: /harrypedia/magic/spells/fiend-fire/
 
-[the killing curse]: /Harrypedia/magic/spells/avada kedavra/
+[the killing curse]: /harrypedia/magic/spells/avada kedavra//
 
 [^240506-1]: Citation needed.
 
@@ -415,11 +415,11 @@ this theory to work, [Riddle][] ought to have been at [eleven][], or
 
 [eleven]: https://www.biblestudy.org/bibleref/meaning-of-numbers-in-bible/11.html
 [thirteen]: https://www.biblestudy.org/bibleref/meaning-of-numbers-in-bible/13.html
-[Riddle]: ../../../people/Riddle/Tom_Marvolo/
-[stable number]: ../../arithmancy/realworld
-[Harry]: ../../../people/Potter/Harry_James/
-[Ginny]: ../../../people/Weasley/Ginevra_Molly/
-[Dumbledore]: ../../../people/Dumbledore/Albus_Percival_Wulfric_Brian/
+[Riddle]: /harrypedia/people/riddle/tom_marvolo/
+[stable number]: /harrypedia/magic/arithmancy/realworld/
+[Harry]: /harrypedia/people/potter/harry_james/
+[Ginny]: /harrypedia/people/weasley/ginevra_molly/
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 
 [^220728-5]:
     [Bible Study](https://www.biblestudy.org/). "[Meaning of

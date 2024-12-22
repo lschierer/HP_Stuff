@@ -316,6 +316,9 @@ if (DEBUG) {
               <span>
                 <IndividualName inline={true} personId={fID} /> (
                 {feventRefs.length > 0 &&
+                fBirthIndex >= 0 &&
+                fBirthIndex < feventRefs.length &&
+                feventRefs[fBirthIndex].ref &&
                 feventRefs[fBirthIndex].ref.length > 0 ? (
                   <Event handle={feventRefs[fBirthIndex].ref} />
                 ) : (
@@ -341,6 +344,9 @@ if (DEBUG) {
               <span>
                 <IndividualName inline={true} personId={mID} /> (
                 {meventRefs.length > 0 &&
+                mBirthIndex >= 0 &&
+                mBirthIndex < meventRefs.length &&
+                meventRefs[mBirthIndex].ref &&
                 meventRefs[mBirthIndex].ref.length > 0 ? (
                   <Event handle={meventRefs[mBirthIndex].ref} />
                 ) : (

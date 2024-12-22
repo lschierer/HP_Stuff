@@ -7,8 +7,8 @@ author: Luke Schierer
 Centaurs refused to be classified as [beings], insisting on being considered
 [animals].[^231003-1] I believe this is foolish of them, making it easier for the bigots in the wizarding population to _treat_ them as animals.
 
-[beings]: ../../beings
-[animals]: ../
+[beings]: /harrypedia/beings/
+[animals]: /harrypedia/animals/
 
 [^231003-1]:
     Mrs. J. K. Rowling.

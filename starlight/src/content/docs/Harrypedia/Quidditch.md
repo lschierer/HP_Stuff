@@ -22,7 +22,7 @@ mascots caused in the 2014 World Cup.[^220628-9] Even at the school level,
 Quidditch has caused injury - Oliver Wood references "a couple of broken
 jaws".[^220628-10]
 
-[Ginny]: ../people/Weasley/Ginevra_Molly/
+[Ginny]: /harrypedia/people/weasley/ginevra_molly//
 [Quidditch Through the Ages]: https://www.goodreads.com/book/show/111450.Quidditch_Through_the_Ages
 [The J.K. Rowling Index]: https://www.rowlingindex.org/
 
@@ -77,8 +77,8 @@ seeker, and Harpies captain [Gwenog Jones] as beater. Are there advantages or
 disadvantages to the captain being one or more of these? Does the answer
 depend in any way on the team's playing style?
 
-[Gwenog Jones]: ../people/jones/gwenog
-[Harry]: ../people/Potter/Harry_James/
+[Gwenog Jones]: /harrypedia/people/jones/gwenog/
+[Harry]: /harrypedia/people/potter/harry_james//
 
 Many authors have attempted to do something with this, sometimes by radically
 changing the game.[^220705-3] Few have come up with compelling explanations

@@ -2,7 +2,6 @@
 collection: Harrypedia
 title: Albus as the Great Manipulator
 author: Luke Schierer
-pageType: person
 ---
 
 It is quite easy to portray [Dumbledore][AD1] as a master
@@ -55,10 +54,10 @@ Allowing himself to appear more fallible, more the victim, would endear him to
 make the next removal harder (thus I think he _was_ in fact able to resist
 [Fudge] and [Umbridge] in Book 5 for most of the year).
 
-[Fudge]: ../../../fudge/cornelius_oswald/
-[Umbridge]: ../../../Umbridge/Delores_Jane/
-[Harry]: ../../../Potter/Harry_James/
-[AD1]: ../
+[Fudge]: /harrypedia/people/fudge/cornelius_oswald/
+[Umbridge]: /harrypedia/people/umbridge/dolores_jane/
+[Harry]: /harrypedia/people/potter/harry_james/
+[AD1]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 
 [^211203-1]:
     Many works do this, but it can all be summarised with this one:

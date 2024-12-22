@@ -20,7 +20,7 @@ the power of the guardian, but rather brightness. The description claims that
 someone sufficiently impure casting this spell will cause maggots to gush from
 the casting wand which will consume the castor.
 
-[Dementor]: ../../../non-beings/dementor
+[Dementor]: /harrypedia/non-beings/dementor/
 
 ## Found in
 

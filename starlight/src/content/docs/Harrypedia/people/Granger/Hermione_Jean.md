@@ -15,7 +15,7 @@ first impressions. Whatever I may once have thought, as I have come to think
 more deeply about the series, Hermione is no longer one of my favourite characters. I think that is why when I first started reading fan fiction I was
 so strongly drawn to the cannon [Harry]/[Ginny] pairing. Of the female characters in the books, few get consistently positive portrayals, and of those, only [Harry] only _really_ relates to Hermione, [Ginny], and [Luna]. [Ginny] and [Luna] are long enough topics to deserve their own pages.
 
-[Luna]: ../../Lovegood/Luna/
+[Luna]: /harrypedia/people/lovegood/luna/
 [The_Half_Blood_Prince]: https://www.schierer.org/~luke/log/fiction/Harry_Potter/The_Half_Blood_Prince/
 
 #### Relating to other people's analysis
@@ -32,7 +32,7 @@ to call Hermione to account[^200706-3] that I would struggle to do better. If
 that is not enough, in some ways, [this][TSWoHA] fake interview for a position
 in the Department of Mysteries does even better.[^210324-2]
 
-[Notes]: /Harrypedia
+[Notes]: /harrypedia/
 
 Based on an interview she quotes, Ms. Onim asserts that Hermione is essentially
 a very flat character with the emotional maturity of a very young (she gives
@@ -68,7 +68,7 @@ situations that [Harry] could better have handled. It is odd that the
 prophesy speaks of one who would be [Riddle]'s equal, but that [Harry] is,
 in many ways, carried along right up to the last scene in the Great Hall.
 
-[Riddle]: ../../Riddle/Tom_Marvolo/
+[Riddle]: /harrypedia/people/riddle/tom_marvolo/
 
 On the other hand, he need not have been. Where did [Harry] and Hermione
 disagree?
@@ -112,9 +112,9 @@ disagree?
 - They disagree over the potions book. Despite the use of Sectumsempra, I think
   [Harry] was right on this one. Certainly Hermione's _reasoning_ was wrong even if her conclusion was partially correct.
 
-[Professor McGonagall]: ../../McGonagall/Minerva/
-[Dumbledore]: ../../Dumbledore/Albus_Percival_Wulfric_Brian/
-[Malfoy]: ../../Malfoy/Draco_Lucius/
+[Professor McGonagall]: /harrypedia/people/mcgonagall/minerva/
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Malfoy]: /harrypedia/people/malfoy/draco_lucius/
 
 [^230208-1]: Mrs. J. K. Rowling. _[Harry Potter and the Deathly Hallows]_ Pottermore Publishing. American Kindle Edition. Page 245.
 
@@ -168,9 +168,9 @@ what Mrs. Rowling writes - [Fleur] is attracted to [Bill] *because* he is
 that rare male who does not react. This has been so rare in her life as to
 stand out.
 
-[Fleur Delacour]: ../../Delacour/Fleur_Isabelle/
-[Fleur]: ../../Delacour/Fleur_Isabelle/
-[Bill]: ../../Weasley/William_Arthur/
+[Fleur Delacour]: /harrypedia/people/delacour/fleur_isabelle/
+[Fleur]: /harrypedia/people/delacour/fleur_isabelle/
+[Bill]: /harrypedia/people/weasley/william_arthur/
 
 Hermione researches *everything* impulsively. She might not have known much
 about Veela at the world cup, but after seeing the guys react to them there,
@@ -219,7 +219,7 @@ we look at the the advice she gives to [Ginny] for dealing with a debilitating c
 
 [Inducing Jealousy to Get Your Mate's Attention]: https://www.psychologytoday.com/us/blog/loves-evolver/201111/inducing-jealousy-get-your-mates-attention
 [Psycology Today]: https://www.psychologytoday.com/
-[Dean]: ../../thomas/dean
+[Dean]: /harrypedia/people/thomas/dean/
 
 The jealousy angle aside though, having [Ginny] using dating to build
 confidence was both high risk and unfair to the guys [Ginny] dated. High
@@ -343,15 +343,15 @@ happened in third year. If it did not happen then, I do not think they would
 have time (in the books we see) for them to recover from the events of sixth
 year, though it is anyone's guess which specific event would be one too many.
 
-[Harry]: ../../Potter/Harry_James/
-[Ron]: ../../Weasley/Ronald_Bilius/
-[Ginny]: ../../Weasley/Ginevra_Molly/
-[Black]: ../../Black/Sirius_iii/
-[Lavender]: ../../Brown/Lavender/
-[McLaggen]: ../../mclaggen/cormac/
+[Harry]: /harrypedia/people/potter/harry_james/
+[Ron]: /harrypedia/people/weasley/ronald_bilius/
+[Ginny]: /harrypedia/people/weasley/ginevra_molly/
+[Black]: /harrypedia/people/black/sirius_iii/
+[Lavender]: /harrypedia/people/brown/lavender/
+[McLaggen]: /harrypedia/people/mclaggen/cormac/
 [TSWoHA]: https://www.fanfiction.net/s/5858832
-[Hogwarts]: ../../../Hogwarts/
-[Confundus]: /Harrypedia/magic/spells/confundus/
+[Hogwarts]: /harrypedia/hogwarts/
+[Confundus]: /harrypedia/magic/spells/confundus/
 
 [^210818-3]:
     Mrs. J. K. Rowling.
@@ -402,7 +402,7 @@ year, though it is anyone's guess which specific event would be one too many.
     I actually do not think she _was_ right, why could her parents not
     have been protected the way the [Dursleys] were?
 
-[Dursleys]: ../../Dursley/
+[Dursleys]: /harrypedia/people/dursley/
 
 [^240101-2]:
     Mrs. J. K. Rowling.

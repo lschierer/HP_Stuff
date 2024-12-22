@@ -14,7 +14,7 @@ pageType: person
   legal implications, as seen [here][ukglc].
 
 [ukglc]: https://www.gov.uk/running-a-limited-company
-[PD]: ../../evans/petunia
+[PD]: /harrypedia/people/evans/petunia/
 
 [^220927-1]:
     Mrs. J. K. Rowling.

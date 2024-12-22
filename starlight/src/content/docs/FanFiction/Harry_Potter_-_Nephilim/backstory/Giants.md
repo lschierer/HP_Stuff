@@ -3,7 +3,6 @@ title: "Backstory: Giants"
 tableOfContents: false
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 sidebar:
   order: 210
 ---
@@ -45,5 +44,5 @@ cannot be undone.
 
 [^230717-4]: See the notes on [Original Sin].
 
-[Original Sin]: ../../Appendices/appendix_g
-[House Elves]: <../../Appendices/Magical Beings/>
+[Original Sin]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_g/
+[House Elves]: /fanfiction/harry_potter_-_nephilim/appendices/magical-beings/

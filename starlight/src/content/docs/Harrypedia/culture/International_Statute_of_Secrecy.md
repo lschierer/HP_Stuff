@@ -9,8 +9,8 @@ _[The Accidental Animagus]_ fan fiction author White Squirrel speculates that no
 This idea is supported by lesser canonical sources. In England, the [Potters] argue for the Statute to protect the Muggles,[^20200810-3] the [Malfoys] argue against it (to continue exploiting the wealthy among whom [Malfoys] often marry).[^20200810-4] Once it passes, the [Malfoys] pretend to have been in favour all along.[^20200810-5]
 
 [The Accidental Animagus]: https://www.fanfiction.net/s/9863146/89/The-Accidental-Animagus
-[Potters]: ../../people/Potter/
-[Malfoys]: ../../people/malfoy/
+[Potters]: /harrypedia/people/potter//
+[Malfoys]: /harrypedia/people/malfoy//
 [The Potter Family]: https://www.rowlingindex.org/work/pmpfam/
 [The Malfoy family]: https://www.rowlingindex.org/work/pmmf/
 [The J.K. Rowling Index]: https://www.rowlingindex.org/

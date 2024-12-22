@@ -193,17 +193,17 @@ with the thought of [Ravenclaw].[^221213-1]. Other than that, Ron's comments
 seem to largely stem from a fairly black and white view of the world and
 [Malfoy]'s over the top behaviour.
 
-[Slytherin]: ../../../Hogwarts/Slytherin/
-[Ravenclaw]: ../../../Hogwarts/Ravenclaw/
-[Malfoy]: ../../Malfoy/Draco_Lucius/
-[MM1]: ../../McGonagall/Minerva/
-[FF1]: ../../flitwick/filus
-[Harry]: ../../Potter/Harry_James/
-[Ginny]: ../ginevra_molly
-[Hermione]: ../../Granger/Hermione_Jean/
+[Slytherin]: /harrypedia/hogwarts/slytherin/
+[Ravenclaw]: /harrypedia/hogwarts/ravenclaw/
+[Malfoy]: /harrypedia/people/malfoy/draco_lucius/
+[MM1]: /harrypedia/people/mcgonagall/minerva/
+[FF1]: /harrypedia/people/flitwick/filus/
+[Harry]: /harrypedia/people/potter/harry_james/
+[Ginny]: /harrypedia/people/weasley/ginevra_molly/
+[Hermione]: /harrypedia/people/granger/hermione_jean/
 [Harry Potter and the Goblet of Fire]: https://www.librarything.com/work/113
-[Ginny's]: ../ginevra_molly
-[Lavender]: ../../Brown/Lavender/
+[Ginny's]: /harrypedia/people/weasley/ginevra_molly/
+[Lavender]: /harrypedia/people/brown/lavender/
 
 [^240313-1]:
     Mrs. J. K. Rowling.

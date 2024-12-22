@@ -4,7 +4,6 @@ sidebar:
   order: 200
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 ---
 
 As God created the world[^241120-1], He gave it into the care of the angels to (paraphrasing a well known prayer) guard, guide, rule, and ultimately bring light to. The work of dealing with the physical laws of the universe was (primarily) given into the care of the middle orders, while the governance of the life within the world was delegated down to the lesser orders. This was not because the work of ruling and guiding those living on the Earth was less important, but because these lesser orders were less likely to overwhelm the free will of the humans for whom the world had been created.
@@ -25,7 +24,7 @@ And yet, the Creator in His wisdom would not allow them to create a life that wa
 
 [^241120-1]: As per the [Introduction], the theology here is a fictional mix of nonsense largely based on [Many Waters].
 
-[Introduction]: ../../Introduction/
+[Introduction]: /fanfiction/harry_potter_-_nephilim/introduction/
 [Many Waters]: https://wikipedia.org/wiki/Many_Waters
 [proximate causes]: https://wikipedia.org/wiki/Proximate_cause
 

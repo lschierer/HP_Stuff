@@ -12,9 +12,9 @@ the mind, whereas "mental arts" could be almost anything _using_ your mind. I
 am trying to distinguish, however imperfectly, the mind as an object versus the
 mind as a means.
 
-[Occlumency]: ./occlumency
-[Legilimens]: ../spells/legilimens
-[Legilimency]: ./legilimency
+[Occlumency]: ./occlumency/
+[Legilimens]: /harrypedia/magic/spells/legilimens/
+[Legilimency]: ./legilimency/
 
 I dislike [Occlumency]. I am resigned to accepting a definition of it that I
 am fairly confident is intended to be canonical to this universe; the problem
@@ -99,11 +99,11 @@ long term use.
 - [Mind Palace](mind_palace)
 - [Obfuscomency]
 
-[Imperius Curse]: ../spells/imperio/
-[Imperius]: ../spells/imperio/
-[Confundus]: ../spells/confundus
-[Confundus Charm]: ../spells/confundus
-[Obfuscomency]: ./obfuscomency
+[Imperius Curse]: /harrypedia/magic/spells/imperio/
+[Imperius]: /harrypedia/magic/spells/imperio/
+[Confundus]: /harrypedia/magic/spells/confundus/
+[Confundus Charm]: /harrypedia/magic/spells/confundus/
+[Obfuscomency]: ./obfuscomency/
 
 [^20200716-1]:
     Mrs. J. K. Rowling. _Harry Potter and the Prisoner of Azkaban_

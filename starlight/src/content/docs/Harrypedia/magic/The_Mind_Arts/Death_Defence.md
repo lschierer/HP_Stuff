@@ -11,7 +11,7 @@ sorts within the mind that a [legilimens][Legilimency] will trigger. Once
 triggered, the magical defence causes the brain death of the attacker, usually,
 but not always, followed immediately by actual death.
 
-[Legilimency]: ../../spells/legilimens
+[Legilimency]: /harrypedia/magic/spells/legilimens/
 
 [^211026-1]:
     Bobmin356.

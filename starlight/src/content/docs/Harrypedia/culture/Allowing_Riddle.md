@@ -61,14 +61,15 @@ dehumanising them the way we see with Jews in Germany. Excluding them from any
 real political power quite possibly, but within the context of some existing
 [class structure].
 
-[Riddle]: ../../people/Riddle/Tom_Marvolo/
-[Ministry of Magic]: ../../culture/government
-[Harry]: ../../people/Potter/Harry_James/
-[notes]: /Harrypedia
-[Potter Family notes]: ../../people/Potter/
-[Salazar]: ../../people/slytherin/salazar
-[class structure]: ../class_and_blood
-[blood status]: ../class_and_blood
+[Riddle]: /harrypedia/people/riddle/tom_marvolo/
+[Magic]: /harrypedia/magic/
+[Ministry of Magic]: /harrypedia/culture/government
+[Harry]: /harrypedia/people/potter/harry_james/
+[notes]: /harrypedia/
+[Potter Family notes]: /harrypedia/people/potter/
+[Salazar]: /harrypedia/people/slytherin/salazar/
+[class structure]: ../class_and_blood/
+[blood status]: ../class_and_blood/
 
 [^211004-9]:
     Mrs. J. K. Rowling.
@@ -76,7 +77,7 @@ real political power quite possibly, but within the context of some existing
     [The J.K. Rowling Index](https://www.rowlingindex.org/)
     2012-10-18. Last Viewed: 2021-10-04.
 
-[^211004-8]: See the Lifespan section of my notes on [Magic](../../magic).
+[^211004-8]: See the Lifespan section of my notes on [Magic].
 
 [^211004-1]:
     - Mrs. J. K. Rowling.

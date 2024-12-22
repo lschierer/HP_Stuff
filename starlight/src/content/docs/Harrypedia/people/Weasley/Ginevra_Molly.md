@@ -30,7 +30,7 @@ immediately strikes up a friendly conversation with the outcast girl. This is
 not in character for someone who uses derogatory names. The contradiction in
 Ginny's behaviour is unexplained, to my knowledge, by cannon sources.
 
-[Luna]: ../../Lovegood/Luna/
+[Luna]: ../../lovegood/luna/
 
 > “Oh, for heaven’s sake, Harry, you can do better than her, ” said Hermione.
 > “Ginny’s told me all about her, apparently she’ll only believe in things as
@@ -42,7 +42,7 @@ While it looks fairly harsh, PercabethHinny noted in _Discovering the Truth_
 that [Hermione][] _might_ be misrepresenting Ginny's actual words (emphasis
 mine).[^20210513-2]
 
-[Hermione]: ../../Granger/Hermione_Jean/
+[Hermione]: ../../granger/hermione_jean/
 
 [^20210513-3]:
     Mrs. J. K. Rowling.
@@ -74,7 +74,7 @@ nails it - she _does_ know him, and so she _does_ accept _**and**_ _understand_
 his thought process and thus decision. She is no more happy about it than he
 is, but they two of them are in sync with each other at this moment in time.
 
-[Harry]: ../../Potter/Harry_James/
+[Harry]: /harrypedia/people/potter/harry_james/
 
 [^211101-3]:
     Mrs. J. K. Rowling.

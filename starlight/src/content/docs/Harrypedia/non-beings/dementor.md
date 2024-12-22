@@ -11,8 +11,8 @@ uses them as a bodyguard.[^211021-1] Similarly, despite [Dumbledore][]'s
 warning that they will not differentiate between bystanders and targets, they
 _do_ seem capable of following orders to some degree.[^211021-2]
 
-[Fudge]: ../../people/fudge/cornelius_oswald
-[Dumbledore]: ../../people/Dumbledore/Albus_Percival_Wulfric_Brian/
+[Fudge]: /harrypedia/people/fudge/cornelius_oswald/
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian//
 
 ### Inconsistencies
 
@@ -43,7 +43,7 @@ It is said that they feed on positive emotions. Why is it that the
 explanation that it is because the [Patronus][] cannot feel despair fails to
 satisfactorily explain.
 
-[Patronus]: ../../magic/spells/patronus
+[Patronus]: /harrypedia/magic/spells/patronus/
 
 [^211021-9]:
     [Harry Potter Wiki](https://harrypotter.fandom.com/wiki)

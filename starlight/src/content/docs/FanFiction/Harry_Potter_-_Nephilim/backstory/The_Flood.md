@@ -2,7 +2,6 @@
 title: "Backstory: The Flood"
 author: Luke Schierer
 collection: nephilim
-layout: fanfiction
 sidebar:
   order: 200
 ---

@@ -8,7 +8,6 @@ tableOfContents:
   maxHeadingLevel: 5
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 ---
 
 The following represent estimates by researchers of the power levels of key figures in this historical chronicle.[^241125-10]
@@ -79,9 +78,9 @@ towards offence and defense, as befitting someone who comes from a family that [
 felt the need to attack personally. However, with an average of 6.77, she does not have
 the history-making scores that characters like [Dumbledore] or [Harry] do.
 
-[Riddle]: /Harrypedia/people/Riddle/Tom_Marvolo/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus_Percival_Wulfric_Brian/
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Riddle]: /harrypedia/people/riddle/tom_marvolo/
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Harry]: /harrypedia/people/potter/harry_james/
 
 ### Delacour
 
@@ -361,5 +360,5 @@ them:
    Dumbledore, and Snape at a level where they need not fear Riddle overwhelming
    them in the mind arts.
 
-[horcruxes]: /Harrypedia/magic/dark/horcruxes/
-[horcrux]: /Harrypedia/magic/dark/horcruxes/
+[horcruxes]: /harrypedia/magic/dark/horcruxes/
+[horcrux]: /harrypedia/magic/dark/horcruxes/

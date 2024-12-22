@@ -15,9 +15,9 @@ There are a couple of realistic possibilities for [Hogwarts].
 
 It is *most likely* that there are, in fact, one pair of prefects per house and per year both.  The extra prefects are both incredibly absent in doing anything noticeable, represent an easily filled glaring hole in the student body.
 
-[Harry]: </Harrypedia/people/Potter/Harry_James/>
-[Hogwarts]: </Harrypedia/Hogwarts/>
-[Percy]: </Harrypedia/people/Weasley/Percy_Ignatius/>
-[Gryffindor]: </Harrypedia/Hogwarts/Gryffindor/>
-[Ron]: </Harrypedia/people/Weasley/Ronald_Bilius/>
-[Hermione]: </Harrypedia/people/Granger/Hermione_Jean/>
+[Harry]: /harrypedia/people/potter/harry_james/
+[Hogwarts]: /harrypedia/hogwarts/
+[Percy]: /harrypedia/people/weasley/percy_ignatius/
+[Gryffindor]: /harrypedia/hogwarts/gryffindor/
+[Ron]: /harrypedia/people/weasley/ronald_bilius/
+[Hermione]: /harrypedia/people/granger/hermione_jean/

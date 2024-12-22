@@ -13,5 +13,5 @@ Kreacher is a [Black] family [House Elf], he died at age 666, sometime after the
     "[JK Rowling reveals the fate of Kreacher the house elf – but is this Harry Potter canon?](https://www.radiotimes.com/movies/jk-rowling-reveals-the-fate-of-kreacher-the-house-elf-but-is-this-harry-potter-canon/)"
     _[RadioTimes.com]_ Published 2017-02-03.
 
-[Black]: ../../Black/
-[House Elf]: ../../../beings/elves/house_elf/
+[Black]: /harrypedia/people/black/
+[House Elf]: /harrypedia/beings/elves/house_elf/

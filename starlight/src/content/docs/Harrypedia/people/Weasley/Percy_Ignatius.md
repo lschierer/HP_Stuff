@@ -21,7 +21,7 @@ they use their authority correctly for the common good, they are justified in
 their actions. He has, after all, been raised in the shadow of [Dumbledore][]'s
 utilitarianism, and so this is no surprise.
 
-[Dumbledore]: ../../Dumbledore/Albus_Percival_Wulfric_Brian/
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 
 This Percy honestly believes that those new to the magical world have done
 something morally reprehensible because he has been told that they have done so
@@ -31,7 +31,7 @@ this, he continues to work for the Ministry throughout the period of
 [Riddle][]'s control over it, apparently in a position in a position of trust
 (we do not hear of his demotion).
 
-[Riddle]: ../../Riddle/Tom_Marvolo/
+[Riddle]: /harrypedia/people/riddle/tom_marvolo/
 
 This Percy is well represented in works such as, but not limited to, sbmcneil's _[Remember][]_.
 

@@ -39,24 +39,24 @@ be unable to inherit as he is in line via his mother, who would be
 disqualified by gender. The dates for this line of speculation are in
 the [History][] timeline.
 
-[History]: ../../history
-[Draco]: ../Malfoy/Draco_Lucius/
-[Phineus Nigellus]: phineus_nigellus
-[Cygnus I]: ../Black/cygnus
-[Malfoy]: ../malfoy
-[Weasleys]: ../weasley
-[Weasley]: ../weasley
-[Harfang]: ../longbottom/harfang
-[Arthur]: ../Weasley/arthur/
-[Cedrella]: cedrella
-[Septimus]: ../Weasley/septimus/
-[Sirius III]: sirius_iii
-[Sirius II]: sirius_ii
-[Longbottom]: ../longbottom
-[Longbottoms]: ../longbottom
-[Grimmauld Place]: ../../grimmauld_place
-[Neville]: ../Longbottom/Neville/
-[Harry]: ../Potter/Harry_James/
+[History]: /harrypedia/history/
+[Draco]: /harrypedia/people/malfoy/draco_lucius/
+[Phineus Nigellus]: /harrypedia/people/black/phineus_nigellus/
+[Cygnus I]: /harrypedia/people/black/cygnus/
+[Malfoy]: /harrypedia/people/malfoy/
+[Weasleys]: /harrypedia/people/weasley/
+[Weasley]: /harrypedia/people/weasley/
+[Harfang]: /harrypedia/people/longbottom/harfang/
+[Arthur]: /harrypedia/people/weasley/arthur/
+[Cedrella]: /harrypedia/people/black/cedrella/
+[Septimus]: /harrypedia/people/weasley/septimus/
+[Sirius III]: /harrypedia/people/black/sirius_iii/
+[Sirius II]: /harrypedia/people/black/sirius_ii/
+[Longbottom]: /harrypedia/people/longbottom/
+[Longbottoms]: /harrypedia/people/longbottom/
+[Grimmauld Place]: /harrypedia/grimmauld_place/
+[Neville]: /harrypedia/people/longbottom/neville/
+[Harry]: /harrypedia/people/potter/harry_james/
 
 On a side note, while it flies in the face of some of what I've written above,
 Tigerman has an interesting theory in his work [RuneMaster][RMff1]. He suggests

@@ -217,6 +217,6 @@ is a ring of truth to it:
     _Harry Potter and the Half-Blood Prince_ (p. 46, Loc 743 of 8473).
     Pottermore Publishing. American Kindle Edition.
 
-[Harry]: ../Potter/Harry_James/
-[Dumbledore]: ../Dumbledore/Albus_Percival_Wulfric_Brian/
-[Sirius]: ../Black/Sirius_iii/
+[Harry]: /harrypedia/people/potter/harry_james/
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Sirius]: /harrypedia/people/black/sirius_iii/

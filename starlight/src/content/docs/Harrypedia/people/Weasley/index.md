@@ -70,19 +70,19 @@ of the 1994-1995 school year, placing [Bill]'s last year in 1989, which
 _does_ match the chart above (school year 1988-1989). If [Bill]'s
 birthday is correct, that does not give much space for [Charlie]'s to move.
 
-[Hogwarts]: ../../Hogwarts/
-[Quidditch]: ../../quidditch/
-[Gryffindor]: ../../Hogwarts/Gryffindor/
-[Harry]: ../people/Potter/Harry_James/
-[Ginny]: ./ginevra_molly/
-[Ron]: ./ronald_bilius
-[George]: ./george/
-[Fred]: ./fred/
-[Percy]: ./percy_ignatius/
-[Charlie]: ./charlie/
-[Bill]: ./William_Arthur/
-[Arthur]: ./arthur/
-[Molly]: ../Prewett/Molly/
+[Hogwarts]: /harrypedia/hogwarts/
+[Quidditch]: /harrypedia/quidditch/
+[Gryffindor]: /harrypedia/hogwarts/gryffindor/
+[Harry]: /harrypedia/people/potter/harry_james//
+[Ginny]: /harrypedia/people/weasley/ginevra_molly/
+[Ron]: /harrypedia/people/weasley/ronald_bilius
+[George]: /harrypedia/people/weasley/george/
+[Fred]: /harrypedia/people/weasley/fred/
+[Percy]: /harrypedia/people/weasley/percy_ignatius/
+[Charlie]: /harrypedia/people/weasley/charlie/
+[Bill]: /harrypedia/people/weasley/william_arthur/
+[Arthur]: /harrypedia/people/weasley/arthur/
+[Molly]: /harrypedia/people/prewett/molly/
 [lexicon]: https://www.hp-lexicon.org
 
 [^20210601-3]:

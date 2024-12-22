@@ -5,7 +5,6 @@ author: Luke Schierer
 sidebar:
   order: 100
 collection: Nephilim
-layout: fanfiction
 ---
 
 ### Overview
@@ -47,17 +46,17 @@ course, no one lost the magic the witch gained from her unholy union, but
 most magic users do not believe in angels, much less fallen angels, and
 have a strong distrust for the Church.
 
-[Lily Evans]: /Harrypedia/people/Evans/Lily_J./
-[Hermione]: /Harrypedia/people/Granger/Hermione_Jean/
+[Lily Evans]: /harrypedia/people/evans/lily_j//
+[Hermione]: /harrypedia/people/granger/hermione_jean//
 
 [^241123-2]: Or at least the in-world version of it, see [Rules of Magic].
 
-[Rules of Magic]: <../Rules of Magic/>
+[Rules of Magic]: /fanfiction/harry_potter_-_nephilim/appendices/rules-of-magic/
 [Quill of Acceptance and Book of Admittance]: https://www.rowlingindex.org/work/qaba/
-[magical rules of inheritance]: ../Inheritance/
-[its own rules]: ../Inheritance/
-[Imperius]: /Harrypedia/magic/spells/imperio
-[Confundus]: /Harrypedia/magic/spells/Confundus
+[magical rules of inheritance]: /fanfiction/harry_potter_-_nephilim/appendices/inheritance/
+[its own rules]: /fanfiction/harry_potter_-_nephilim/appendices/inheritance/
+[Imperius]: /harrypedia/magic/spells/imperio/
+[Confundus]: /harrypedia/magic/spells/confundus/
 
 ### Specifically human/nephil
 
@@ -129,7 +128,7 @@ have a strong distrust for the Church.
     Author's note:
     The scholars here do not have the knowledge to be more precise, if you refer to the author's section of [Inheritance], you can see the effects of abusing magic on concupiscence. Over the centuries, this effect has been gradually reduced by goblins who have successfully lived virtuous lives against probability.
 
-[Inheritance]: ../Inheritance/
+[Inheritance]: /fanfiction/harry_potter_-_nephilim/appendices/inheritance/
 
 [^241125-8]:
     Author's note:
@@ -245,22 +244,22 @@ can never be fully freed.
   _capability._ Believed to be created by the ancestors of the goblins.
 
 [Many Waters]: https://wikipedia.org/wiki/Many_Waters
-[AA]: ../Points%20of%20Divergence/
-[AB]: <../Rules of Magic/>
-[AC]: <../Magical Beings/>
-[AD]: <../Relative Power Levels/>
-[AE]: <../Life Expectancy/>
-[AF]: <../Magical Contracts/>
-[AG]: ../Appendix_G/
-[AH]: ../Appendix_H/
-[AI]: ../Appendix_I/
-[Appendix I]: ../Appendix_I/
-[Flood]: ../../backstory/the_flood
-[goblin wars]: ../../backstory/the_dwarfs
-[Giants]: ../../backstory/giants
-[Molly]: /Harrypedia/people/Prewett/Molly/
-[Hermione]: /Harrypedia/people/Granger/Hermione_Jean/
-[Fleur]: /Harrypedia/people/Delacour/Fleur_Isabelle/
+[AA]: /fanfiction/harry_potter_-_nephilim/appendices/points-of-divergence/
+[AB]: /fanfiction/harry_potter_-_nephilim/appendices/rules-of-magic/
+[AC]: /fanfiction/harry_potter_-_nephilim/appendices/magical-beings/
+[AD]: /fanfiction/harry_potter_-_nephilim/appendices/relative-power-levels/
+[AE]: /fanfiction/harry_potter_-_nephilim/appendices/life-expectancy/
+[AF]: /fanfiction/harry_potter_-_nephilim/appendices/magical-contracts/
+[AG]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_g/
+[AH]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_h/
+[AI]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_i/
+[Appendix I]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_i/
+[Flood]: /fanfiction/harry_potter_-_nephilim/backstory/the_flood
+[goblin wars]: /fanfiction/harry_potter_-_nephilim/backstory/the_dwarfs
+[Giants]: /fanfiction/harry_potter_-_nephilim/backstory/giants
+[Molly]: /harrypedia/people/prewett/molly/
+[Hermione]: /harrypedia/people/granger/hermione_jean/
+[Fleur]: /harrypedia/people/delacour/fleur_isabelle/
 [knffnm]: http://kokopelli.nsns.fanficauthors.net/Maskirovat/Maskirovat/
 
 [^210518-1]:

@@ -41,8 +41,7 @@ compare against. Even then, it might not be important, except that we find
 out, also in the seventh book, that 1) the house in Godric's Hollow is still
 mostly standing (part of one side is missing the roof, but that's about it) and 2) it has become a monument of sorts.
 
-[Harry]: ../harry_james/
-[Bellatrix]: ../../Black/bellatrix
+
 
 Now we know that [Harry][]'s parents had taken the family in hiding, and I
 believe we read somewhere that they had not just defied [Riddle][] the
@@ -61,10 +60,7 @@ of their personal property? Why is it that per the "extra" non-book content we
 have that it seems that [Harry][] inherited [Grimmauld Place] from [Sirius][],
 but nothing but gold from his parents?
 
-[Grimmauld Place]: ../../../grimmauld_place/
-[Riddle]: ../../Riddle/Tom_Marvolo/
-[Petunia]: ../../evans/petunia
-[Sirius]: ../../Black/Sirius_iii/
+
 
 [James][] came from an old family. A family like the Potters should have had
 land, even if the house on it was destroyed. Fleeing and hiding from
@@ -77,9 +73,6 @@ them as well off,[^221129-1] old, and influential. There should have been
 heirlooms, and I doubt they were all kept in the house - particularly if the
 family was being hunted.
 
-[James]: ..//james/
-[Blacks]: ../../Black/
-[Lestranges]: ../../lestrange/
 
 Fan fiction authors seem to largely agree with me.[^211117-1] Some solve this
 by giving [Harry][] such a vault that he gets access to when he is either
@@ -91,6 +84,19 @@ than he seems to have. One interesting twist is that the second vault may
 require something (a ring or a key) to unlock that was itself locked in the
 vault in question, because _everything_ the Potters owned was placed in the
 vault without forethought.[^210322-1]
+
+[Bellatrix]: /harrypedia/people/black/bellatrix/
+[Blacks]: /harrypedia/people/black/
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Fleamont]: /harrypedia/people/potter/fleamont/
+[Grimmauld Place]: /harrypedia/grimmauld_place/
+[Gringotts]: /harrypedia/gringotts/
+[Harry]: /harrypedia/people/potter/harry_james/
+[James]: /harrypedia/people/potter/james/
+[Lestranges]: /harrypedia/people/lestrange/
+[Linfred]: /harrypedia/people/linfred/
+[Riddle]: /harrypedia/people/riddle/tom_marvolo/
+[Sirius]: /harrypedia/people/black/sirius_iii/
 
 [Harry Potter and the Deathly Hallows]: https://www.goodreads.com/book/show/136251.Harry_Potter_and_the_Deathly_Hallows
 
@@ -110,10 +116,6 @@ vault without forethought.[^210322-1]
     something truly original. Speculations on how [Gringotts][] works is
     really outside the scope of a page on the Potters.
 
-[Linfred]: ../linfred/
-[Fleamont]: ../fleamont/
-[Dumbledore]: ../../Dumbledore/Albus_Percival_Wulfric_Brian/
-[Gringotts]: ../../../gringotts/
 [Harry Potter and the Sorcerer's Stone]: https://www.goodreads.com/book/show/3.Harry_Potter_and_the_Sorcerer_s_Stone
 
 [^210618-7]:

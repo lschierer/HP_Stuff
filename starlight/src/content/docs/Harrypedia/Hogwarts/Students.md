@@ -27,7 +27,7 @@ but if so I have not found it. Thus, I have started [this list][ClassLists],
 some of these people are also in the [Gramps][] data I have
 [extracted][people].
 
-[people]: ../../people
+[people]: /harrypedia/people/
 [Gramps]: https://gramps-project.org/
 [Harry's Yearmates]: https://mugglenet.com/2016/03/the-revised-forty/
 
@@ -86,10 +86,10 @@ artificially deflate the number of first generation wizards not just in
 does seem believable of [Umbridge] and those like her who set up the laws under
 Pius Thicknesse's puppet government.
 
-[Harry]: ../../people/Potter/Harry_James/
-[Arthur]: ../../people/Weasley/arthur/
-[Umbridge]: ../../people/Umbridge/Delores_Jane/
-[Dean]: ../../people/thomas/dean
+[Harry]: /harrypedia/people/potter/harry_james//
+[Arthur]: /harrypedia/people/weasley/arthur//
+[Umbridge]: /harrypedia/people/umbridge/dolores_jane//
+[Dean]: /harrypedia/people/thomas/dean/
 [comparitive_class_ages]: ../comparitive_class_ages
 
 [^211001-1]:

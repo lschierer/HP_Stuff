@@ -2,7 +2,6 @@
 title: Chapter 04
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 ---
 
 It was not until part way through Year 4, when Harry was eight, that an idea

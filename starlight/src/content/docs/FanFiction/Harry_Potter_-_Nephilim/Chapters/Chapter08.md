@@ -2,7 +2,6 @@
 title: Chapter 08
 author: Luke Schierer
 collection: Nephilim
-layout: fanfiction
 ---
 
 The summer after Year 6 needs to bring some reconciliation with the cannon

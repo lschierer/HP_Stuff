@@ -113,8 +113,8 @@ but will not be taught, laws that they must follow, and _no way out_. Note that 
 
 then I cannot be held culpable for failure to obey Parliament. The fault must belong to the person(s) who created that situation (by placing me there without my knowledge, or otherwise causing me to believe I lived somewhere else).
 
-[Hermione]: ../../people/Granger/Hermione_Jean/
-[Hogwarts]: ../../Hogwarts/
+[Hermione]: /harrypedia/people/granger/hermione_jean//
+[Hogwarts]: /harrypedia/hogwarts/
 
 The students might not have been kidnapped, in that they can go home for a few
 weeks at Christmas, and two months or so each summer, but they will
@@ -162,7 +162,7 @@ Instead I suspect that some percentage of the magical culture actively _desires_
 
 [Ministry]: ../government/
 [MACUSA]: ../../macusa
-[Harry]: ../../people/Potter/Harry_James/
+[Harry]: /harrypedia/people/potter/harry_james//
 
 [^210323-5]:
     Mrs. J. K. Rowling. _Harry Potter and the Half-Blood Prince_

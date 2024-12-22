@@ -68,7 +68,7 @@ const buildLinkTarget = (individual: GedcomPerson.GedcomElement): string => {
       individual.primary_name.first_name.length > 0
     ) {
       const fn = encodeURIComponent(
-        individual.primary_name.first_name.toLowerCase()
+        individual.primary_name.first_name.toLowerCase().replaceAll(" ", "_")
       );
       targetLocation = `${targetLocation}${fn}/`;
     }

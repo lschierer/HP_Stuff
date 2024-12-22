@@ -6,7 +6,6 @@ tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 5
 collection: Nephilim
-layout: fanfiction
 sidebar:
   order: 100
 ---
@@ -46,7 +45,7 @@ to make sense.
   essential component of the magic. Thus beyond the magic learned at Hogwarts,
   there _are_ others, including rituals.
 
-  [AF]: <../Magical Contracts/>
+  [AF]: /fanfiction/harry_potter_-_nephilim/appendices/magical-contracts/
 
 [Goblet of Fire]: https://www.goodreads.com/book/show/6.Harry_Potter_and_the_Goblet_of_Fire
 [Deathly Hallows]: https://www.goodreads.com/book/show/136251.Harry_Potter_and_the_Deathly_Hallows
@@ -154,20 +153,21 @@ to make sense.
   positing that fallen angels continued to seduce women during the Old Testament
   times.
 
-[ab]: <../../Appendices/Rules of Magic/>
-[af]: <../../Appendices/Magical Contracts/>
-[ah]: ../../Appendices/appendix_h
-[Inheritance]: ../Inheritance/
+[ab]: /fanfiction/harry_potter_-_nephilim/appendices/rules-of-magic/
+[af]: /fanfiction/harry_potter_-_nephilim/appendices/magical-contracts/
+[ah]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_h
+[Inheritance]: /fanfiction/harry_potter_-_nephilim/appendices/inheritance/
 [FWoaO1]: https://archiveofourown.org/works/28507302
 [MW]: https://wikipedia.org/wiki/Many_Waters
-[MW2]: https://wikipedia.org/wiki/Many_Waters
-[MW3]: https://wikipedia.org/wiki/Many_Waters
 [TSL]: https://archive.org/details/in.ernet.dli.2015.86985
 [TSL2]: https://archive.org/details/in.ernet.dli.2015.86985
 [TSL3]: https://archive.org/details/in.ernet.dli.2015.86985
-[Introduction]: ../../Introduction
-[Encyclopedic Reference]: /Harrypedia/
-[FSSP]: ../FSSP/
+[Introduction]: /fanfiction/harry_potter_-_nephilim/introduction/
+[Encyclopedic Reference]: /harrypedia/
+[FSSP]: /fanfiction/harry_potter_-_nephilim/appendices/fssp/
+
+[MW2]: https://wikipedia.org/wiki/Many_Waters
+[MW3]: https://wikipedia.org/wiki/Many_Waters
 
 [^211201-1]: There is nothing truly unique in Fan Fiction.
 

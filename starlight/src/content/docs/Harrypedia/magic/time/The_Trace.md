@@ -30,7 +30,7 @@ Things we know:
     _[Harry Potter and the Deathly Hallows](https://www.librarything.com/work/3577382/book/225886820)_
     Bloomsbury Publishing Plc (2011). page 56.
 
-[ward]: ../../../magic
+[ward]: /harrypedia/magic/
 
 Things we speculate:
 
@@ -69,8 +69,8 @@ probably the latter. The whole "do not use magic outside of school" thing is
 more for muggle born witches and wizards rather than any real restriction. See
 [Culture][] for more on this.
 
-[Hermione]: ../../../people/Granger/Hermione_Jean/
-[Culture]: ../../../Culture
+[Hermione]: /harrypedia/people/granger/hermione_jean/
+[Culture]: /harrypedia/culture/
 
 [^210810-4]:
     Mrs. J. K. Rowling.
