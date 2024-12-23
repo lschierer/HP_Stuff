@@ -1,3 +1,0 @@
-[submodule "deps/gracile"]
-	path = deps/gracile
-	url = git@github.com:lschierer/gracile.git
