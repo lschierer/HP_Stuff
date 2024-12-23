@@ -3,26 +3,7 @@ import * as z from "zod";
 export const PrimaryNameClass = z.enum(["Name"]);
 export type PrimaryNameClass = z.infer<typeof PrimaryNameClass>;
 
-export const Nick = z.enum([
-  "Algie",
-  "Axebanger",
-  "Bill",
-  "Bob",
-  "Dora",
-  "",
-  "Fred",
-  "Ginny",
-  "Harry",
-  "Loony",
-  "Moony",
-  "Newt",
-  "Padfoot",
-  "Ron",
-  "Ted",
-  "the Potterer",
-  "Tom",
-  "Xeno",
-]);
+export const Nick = z.string();
 export type Nick = z.infer<typeof Nick>;
 
 export const Suffix = z.enum(["", "II", "III", "IV", "Junior", "V"]);
@@ -160,7 +141,7 @@ export const GedcomElement = z.object({
   handle: z.string(),
   change: z.number(),
   private: z.boolean(),
-  tag_list: z.array(TagList),
+  tag_list: z.array(z.string().min(20).max(30)),
   id: z.string(),
   citation_list: z.array(z.string()),
   note_list: z.array(z.string()),

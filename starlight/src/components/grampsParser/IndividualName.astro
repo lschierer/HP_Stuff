@@ -71,6 +71,22 @@ const buildLinkTarget = (individual: GedcomPerson.GedcomElement): string => {
         individual.primary_name.first_name.toLowerCase().replaceAll(" ", "_")
       );
       targetLocation = `${targetLocation}${fn}/`;
+    } else if (
+      individual.primary_name.nick &&
+      individual.primary_name.nick.length > 0
+    ) {
+      const fn = encodeURIComponent(
+        individual.primary_name.nick.toLowerCase().replaceAll(" ", "_")
+      );
+      targetLocation = `${targetLocation}${fn}/`;
+    }
+    if (
+      individual.primary_name.suffix &&
+      individual.primary_name.suffix.length > 0
+    ) {
+      targetLocation = encodeURIComponent(
+        individual.primary_name.suffix.toLowerCase().replaceAll(" ", "_")
+      );
     }
   }
   return targetLocation;

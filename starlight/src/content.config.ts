@@ -6,7 +6,12 @@ import { docsLoader } from "@astrojs/starlight/loaders";
 
 import { Database } from "@lib/GrampsZodTypes";
 
-import { GedcomPerson, GedcomEvent, GedcomFamily } from "@schemas/gedcom";
+import {
+  GedcomPerson,
+  GedcomEvent,
+  GedcomFamily,
+  GedcomTag,
+} from "@schemas/gedcom";
 
 import { history } from "@schemas/index";
 import { glob } from "astro/loaders";
@@ -35,6 +40,10 @@ export const collections = {
   families: defineCollection({
     loader: file("src/content/gedcom/families.json"),
     schema: GedcomFamily.GedcomElement,
+  }),
+  tags: defineCollection({
+    loader: file("src/content/gedcom/tags.json"),
+    schema: GedcomTag.GedcomElement,
   }),
   history: defineCollection({
     loader: glob({

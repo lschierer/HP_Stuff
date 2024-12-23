@@ -26,3 +26,5 @@ export field=`echo $line | tr -d '[:blank:]'`
 cat $full | $JQ -n "[inputs | select(.\"_class\" == \"$field\") | with_entries(if .key == \"gramps_id\" then .key = \"id\" else . end) ]" > $targetfile
 
 done
+
+gsed -i -E '/handle/{p;s/handle/id/;}' "$CWD/src/content/gedcom/tags.json"

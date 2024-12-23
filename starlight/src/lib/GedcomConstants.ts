@@ -24,3 +24,38 @@ export const female: genderConstant = {
   iconName: "ion:female",
   iconColor: "color-female",
 };
+
+export const HogwartsHouses = z.enum([
+  "Gryffindor",
+  "Hufflepuff",
+  "Ravenclaw",
+  "Slytherin",
+  "Unknown",
+]);
+export type HogwartsHouses = z.infer<typeof HogwartsHouses>;
+
+export const BloodStatus = z.enum([
+  "pure-blood",
+  "half-blood",
+  "1st gen magical",
+  "Unknown",
+]);
+export type BloodStatus = z.infer<typeof BloodStatus>;
+
+export const SocialClass = z.enum([
+  "Lower Class",
+  "Middle Class",
+  "Upper Class",
+  "Unknown",
+]);
+export type SocialClass = z.infer<typeof SocialClass>;
+
+export const BloodWarPosition = z.enum([
+  "Dumbledore's Army",
+  "Order of the Phoenix",
+  "Death Eater",
+  "Junior Death Eater",
+  "Victim",
+  "Unknown",
+]);
+export type BloodWarPosition = z.infer<typeof BloodWarPosition>;
