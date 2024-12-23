@@ -3,9 +3,10 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
+    "gencollections": "./bin/grampsJson2CollectionJson.sh && ./bin/historyCollection.sh",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "pnpm gencollections && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
