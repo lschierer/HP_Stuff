@@ -14,7 +14,7 @@ import { GedcomFamily, GedcomPerson } from "@schemas/gedcom";
 
 import { Debug } from "astro:components";
 
-const DEBUG = true;
+const DEBUG = false;
 
 const { grampsId, isRoot, maxDepth = -1 } = Astro.props;
 const generations = maxDepth != -1 ? maxDepth : 2;
@@ -42,7 +42,9 @@ const findParent = (person: GedcomPerson.GedcomElement, handle: string) => {
 };
 
 if (!family) {
-  console.log(`cound not find family for ${grampsId}`);
+  if (DEBUG) {
+    console.log(`could not find family for ${grampsId}`);
+  }
 } else {
   if (family.data.father_handle) {
     const handle = family.data.father_handle;

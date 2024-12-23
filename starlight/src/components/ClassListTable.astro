@@ -15,7 +15,7 @@ interface Props {
 }
 
 const { year } = Astro.props;
-const DEBUG = true;
+const DEBUG = false;
 
 const people = (
   await getCollection("people", ({ data }) => {

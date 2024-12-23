@@ -67,27 +67,29 @@ const buildLinkTarget = (individual: GedcomPerson.GedcomElement): string => {
       individual.primary_name.first_name != undefined &&
       individual.primary_name.first_name.length > 0
     ) {
-      const fn = encodeURIComponent(
-        individual.primary_name.first_name.toLowerCase().replaceAll(" ", "_")
-      );
-      targetLocation = `${targetLocation}${fn}/`;
+      const fn = individual.primary_name.first_name
+        .toLowerCase()
+        .replaceAll(" ", "_");
+      targetLocation = `${targetLocation}${fn}`;
     } else if (
       individual.primary_name.nick &&
       individual.primary_name.nick.length > 0
     ) {
-      const fn = encodeURIComponent(
-        individual.primary_name.nick.toLowerCase().replaceAll(" ", "_")
-      );
-      targetLocation = `${targetLocation}${fn}/`;
+      const fn = individual.primary_name.nick
+        .toLowerCase()
+        .replaceAll(" ", "_");
+      targetLocation = `${targetLocation}${fn}`;
     }
     if (
       individual.primary_name.suffix &&
       individual.primary_name.suffix.length > 0
     ) {
-      targetLocation = encodeURIComponent(
-        individual.primary_name.suffix.toLowerCase().replaceAll(" ", "_")
-      );
+      const suffix = individual.primary_name.suffix
+        .toLowerCase()
+        .replaceAll(" ", "_");
+      targetLocation = `${targetLocation}_${suffix}`;
     }
+    targetLocation = `${targetLocation}/`;
   }
   return targetLocation;
 };
