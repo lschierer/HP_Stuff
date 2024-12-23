@@ -2,7 +2,7 @@ config:
   aws:region: us-east-2
   aws:profile: home
   targetDomain: hp-fan.schierer.org
-  pathToWebsiteContents: ../dist
+  pathToWebsiteContents: ../starlight/dist
   certificateArn: true
   includeWWW: true
   hostedZoneId: ZOB4NXMJR2BZF
