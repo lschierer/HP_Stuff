@@ -3,16 +3,8 @@ collection: Harrypedia
 title: People in Harry Potter
 sidebar:
   order: 1
-imports:
-  - /components/section-card.ts
-  - /components/grampsParser/genealogical-data.ts type="module"
+
 ---
-
-<section-card title="Statistics from Gramps" iconname="wpf:statistics" >
-    <genealogical-data ></genealogical-data>
-</section-card>
-
-## People in Harry Potter
 
 I initially started keeping my notes on people and relationships in Harry
 Potter in [Gramps][] however, this required a jumping through a lot of hoops to
@@ -27,8 +19,14 @@ personalities, motivations, backstories, abilities, and so on. This was
 unacceptable. This site attempts to combine that information into a single
 more accessible and more unified experience. We will see how well I succeed.
 
-<Header />
+----
+<br/>
+
+<GeneologicalStats/>
 
 [ikiwiki]: http://ikiwiki.info/
 [RUT]: https://www.schierer.org/~luke/log
 [Gramps]: https://gramps-project.org/
+
+import HorizontalCard from "/src/components/HorizontalCard.astro";
+import GeneologicalStats from "/src/components/grampsParser/GeneologicalStats.astro";

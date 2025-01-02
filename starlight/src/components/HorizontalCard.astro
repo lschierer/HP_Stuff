@@ -1,22 +1,22 @@
 ---
 interface Props {
   iconName: string;
-  title: string;
+  cardTitle: string;
   linkTarget?: string;
   description?: string;
 }
-import {
-  type HTMLTag,
-  type Polymorphic,
-  type HTMLAttributes,
-} from "astro/types";
+const DEBUG = false;
 
-type aProps = HTMLAttributes<"a">;
+const {
+  iconName = "",
+  cardTitle,
+  linkTarget = "",
+  description = "",
+} = Astro.props;
 
-type polyProps<Tag extends HTMLTag> = Polymorphic<{ as: Tag }>;
-
-const { iconName = "", title, linkTarget = "", description = "" } = Astro.props;
-
+if (DEBUG) {
+  console.log(`cardTitle is ${cardTitle}`);
+}
 import "iconify-icon";
 import "@spectrum-css/tokens/dist/index.css";
 import "@spectrum-css/icon/dist/index.css";
@@ -25,110 +25,13 @@ import "@styles/HorizontalCard.css";
 ---
 
 <horizontal-card
-  link-target={linkTarget}
-  icon-name={iconName}
-  card-title={title}
-  card-description={description}
+  linkTarget={linkTarget}
+  iconName={iconName}
+  cardTitle={cardTitle}
+  cardDescription={description}
 >
 </horizontal-card>
 
 <script>
-  import "iconify-icon";
-
-  const DEBUG = false;
-
-  // Define the behaviour for our new type of HTML element.
-  class Horizontalcard extends HTMLElement {
-    private linkTarget = "";
-    private iconName = "";
-    private cardTitle = "";
-    private description = "";
-
-    constructor() {
-      super();
-    }
-
-    attributeChangedCallback(name: string, oldValue: string, newValue: string) {
-      if (!name.localeCompare("link-target")) {
-        if (DEBUG) {
-          console.log(`link-target now ${newValue}`);
-        }
-        this.linkTarget = newValue;
-      }
-      if (!name.localeCompare("icon-name")) {
-        if (DEBUG) {
-          console.log(`iconName now ${newValue}`);
-        }
-        this.iconName = newValue;
-      }
-      if (!name.localeCompare("card-title")) {
-        this.cardTitle = newValue;
-      }
-    }
-
-    protected manualAttributeSetter = () => {
-      const attributes = this.getAttributeNames();
-      attributes.forEach((name) => {
-        const newValue = this.getAttribute(name);
-        this.attributeChangedCallback(name, "", newValue ?? "");
-      });
-    };
-
-    connectedCallback() {
-      let count = 0;
-      if (DEBUG) {
-        console.log(`Horizontalcard connectedCallback`);
-      }
-      this.manualAttributeSetter();
-
-      let template = ``;
-
-      if (this.iconName.length > 0) {
-        template = `<iconify-icon
-            icon=${this.iconName}
-            class="not-content spectrum-Icon spectrum-Icon--sizeXXL "
-            role="img"
-            height="2vh"
-            ></iconify-icon>`;
-      }
-
-      template = `
-
-        <div
-          class="not-content spectrum-Card spectrum-Card--horizontal"
-          tabindex="0"
-          role="figure"
-        >
-          <div class="not-content spectrum-Card-preview">
-            ${template}
-          </div>
-          <div class="not-content spectrum-Card-body">
-            <div class="not-content spectrum-Card-header">
-              <div
-                class="not-content spectrum-Card-title spectrum-Heading spectrum-Heading--sizeXS"
-              >
-                ${this.cardTitle}
-              </div>
-            </div>
-            <div class="not-content spectrum-Card-content">
-              <div class="not-content spectrum-Card-description ">
-                <span class="not-content spectrum-Card-description "
-                  >${this.description}</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      `;
-
-      if (this.linkTarget.length > 0) {
-        template = `<a href=${this.linkTarget} class="spectrum-Card">${template}</a>`;
-      }
-
-      this.innerHTML = template;
-    }
-  }
-
-  // Tell the browser to use our AstroHeart class for <astro-heart> elements.
-  customElements.define("horizontal-card", Horizontalcard);
+  import HorizontalCard from "./HorizontalCard.ts";
 </script>

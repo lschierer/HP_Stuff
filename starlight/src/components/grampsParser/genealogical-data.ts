@@ -1,19 +1,26 @@
 export const prerender = false;
-import { LitElement, html } from "lit";
+import { LitElement, html, unsafeCSS, type PropertyValues } from "lit";
 import { state, property } from "lit/decorators.js";
 
-import GrampsCSS from "../../styles/Gramps.css" with { type: "css" };
+import { GedcomPerson, GedcomFamily, GedcomEvent } from "@schemas/gedcom";
+import { z } from "zod";
 
-import { GrampsState } from "./state.ts";
+import GrampsCSS from "../../styles/Gramps.css?inline";
 
-//@ts-expect-error
-import * as GrampsZod from "../../lib/GrampsZodTypes.ts";
+const DEBUG = true;
 
-const DEBUG = false;
+export default class GenealogicalData extends LitElement {
+  @property({ type: Array })
+  public people: GedcomPerson.GedcomElement[] =
+    new Array<GedcomPerson.GedcomElement>();
 
-export class GenealogicalData extends LitElement {
-  @property({ attribute: false })
-  private state: GrampsState = new GrampsState();
+  @property({ type: Array })
+  public families: GedcomFamily.GedcomElement[] =
+    new Array<GedcomFamily.GedcomElement>();
+
+  @property({ type: Array })
+  public events: GedcomEvent.GedcomElement[] =
+    new Array<GedcomEvent.GedcomElement>();
 
   @state()
   private url: URL | string | null;
@@ -28,34 +35,59 @@ export class GenealogicalData extends LitElement {
     super.connectedCallback();
     if (DEBUG) console.log(`initial url is ${this.url}`);
     if (this.url instanceof URL) {
-      const status = await this.state.fetchData(this.url);
-      if (status) {
-        this.requestUpdate("state");
-      }
     }
   }
 
-  static styles = [GrampsCSS];
+  static styles = [unsafeCSS(GrampsCSS)];
 
-  render() {
-    const gramps = this.state.zodData;
-    if (gramps !== null && gramps !== undefined) {
-      if (DEBUG) console.log(`grampsParser/index render; `);
+  protected willUpdate(_changedProperties: PropertyValues): void {
+    super.willUpdate(_changedProperties);
 
-      let t = html``;
-      if (gramps) {
-        if (DEBUG)
-          console.log(
-            `grampsParser/index render; confirmed I have parsed data`
-          );
-        t = html`${t}Gramps Data exported ${gramps.header.created.date}<br />`;
-        const psize = gramps.people.person.length;
-        t = html`${t}There are ${psize} people<br />`;
-        const fsize = gramps.families.family.length;
-        t = html`${t}There are ${fsize} families<br />`;
-        const esize = gramps.events.event.length;
-        t = html`${t}There are ${esize} events<br />`;
+    if (_changedProperties.has("people")) {
+      if (this.people && !Array.isArray(this.people)) {
+        const valid = z
+          .array(GedcomPerson.GedcomElement)
+          .safeParse(JSON.parse(this.people));
+        if (valid.success) {
+          this.people = valid.data;
+        } else {
+          if (DEBUG) {
+            console.error(`invalid people content in willupdate`);
+            console.error(valid.error.message);
+          }
+        }
+      } else if (!this.people) {
+        if (DEBUG) {
+          console.warn(`null this.people`);
+        }
       }
+    }
+  }
+  render() {
+    if (DEBUG) {
+      console.log(`grampsParser/index render; `);
+    }
+
+    let t = html``;
+    if (
+      (Array.isArray(this.people) && this.people.length > 0) ||
+      (Array.isArray(this.families) && this.families.length > 0) ||
+      (Array.isArray(this.events) && this.events.length > 0)
+    ) {
+      if (DEBUG) {
+        console.log(`grampsParser/index render; confirmed I have parsed data`);
+      }
+
+      t = html`${t}Gramps Data exported <br />`;
+      const psize = this.people.length;
+      t = html`${t}There are ${psize} people<br />`;
+      /*
+
+      const fsize = gramps.families.family.length;
+      t = html`${t}There are ${fsize} families<br />`;
+      const esize = gramps.events.event.length;
+      t = html`${t}There are ${esize} events<br />`;
+      */
       return html`${t}`;
     }
     return html`No Header Info Available`;

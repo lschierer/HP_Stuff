@@ -1,0 +1,46 @@
+---
+import { getCollection } from "astro:content";
+import type { ComponentProps } from "astro/types";
+
+const people = (await getCollection("people")).map((entry) => entry.data);
+
+const families = (await getCollection("families")).map((entry) => entry.data);
+
+const events = (await getCollection("events")).map((entry) => entry.data);
+
+const DEBUG = true;
+
+if (DEBUG) {
+  console.log(`people has ${people.length} entries`);
+}
+
+let stats = "";
+if (people && people.length > 0) {
+  stats = `
+    There are ${people.length} people.<br/>
+`;
+}
+
+if (families && families.length > 0) {
+  stats = ` ${stats}
+    There are ${families.length} families.<br/>
+  `;
+}
+
+if (events && events.length > 0) {
+  stats = `${stats}
+    There are ${events.length} events.
+  `;
+}
+---
+
+<horizontal-card
+  iconName="wpf:statistics"
+  cardTitle="Statistics from Gramps"
+  cardDescription={stats}
+>
+</horizontal-card>
+
+<script>
+  import HorizontalCard from "../HorizontalCard.ts";
+</script>
