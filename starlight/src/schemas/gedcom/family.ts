@@ -1,4 +1,4 @@
-import { z } from "astro:content";
+import { z } from "zod";
 
 export const ChildRefClass = z.enum(["ChildRef"]);
 export type ChildRefClass = z.infer<typeof ChildRefClass>;

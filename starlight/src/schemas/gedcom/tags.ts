@@ -1,4 +1,4 @@
-import { z } from "astro:schema";
+import { z } from "zod";
 
 export const GedcomElement = z.object({
   _class: z.string(),
