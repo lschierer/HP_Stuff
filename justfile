@@ -10,21 +10,18 @@ install:
   ${PNPM} install
 
 dev: install
-  ${PNPM} run dev
+  cd starlight && ${PNPM} run dev
 
 check: install
-  ${NPX} tsc --noEmit -p .;
+  cd starlight && ${NPX} tsc --noEmit -p .;
 
 build: install parse
-  ${PNPM} run build
+  cd starlight && ${PNPM} run build
 
-parse: install pre-build
-  ./bin/grampsParser.sh
+parse: install
+  cd starlight && ./bin/grampsJson2CollectionJson.sh
+  cd starlight && ./bin/historyCollection.sh
 
-pre-build: install
-  ${NPX} tsc -p tsconfig.bin.json
 
-deploy:
-  cd infrastructure
-  pulumi up
-  cd ..
+deploy: build
+  cd infrastructure && pulumi up
