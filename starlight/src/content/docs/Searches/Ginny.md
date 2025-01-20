@@ -2,6 +2,8 @@
 title: "Harry paired with Ginny"
 collection: Searches
 author: "Luke Schierer"
+sidebar:
+  order: 3
 ---
 
 [AO3
