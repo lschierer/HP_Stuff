@@ -18,9 +18,10 @@ check: install
 build: install parse
   cd starlight && ${PNPM} run build
 
+[working-directory: 'assets']
 parse: install
-  cd starlight && ./bin/grampsJson2CollectionJson.sh
-  cd starlight && ./bin/historyCollection.sh
+  ./bin/grampsJson2CollectionJson.sh
+  ./bin/historyCollection.sh
 
 
 deploy: build

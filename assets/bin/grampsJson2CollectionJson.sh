@@ -1,11 +1,42 @@
-#!/usr/bin/env bash -x
+#!/bin/bash -x
+
+while getopts ":o:" opt; do
+  case "$opt" in
+    o)
+      OUTPUTDIR="$OPTARG"
+      shift 2
+      continue
+      ;;
+    \?)
+      echo "Unrecognized option '$1'"
+      exit 2
+      ;;
+    :)
+      echo "Option -$OPTARG requires an argument." >&2
+      exit 1
+      ;;
+  esac
+done
+
+shift $((OPTIND - 1))
+
+if [ -z OUTPUTDIR ]; then
+  echo '-o is required' >&2
+  exit 3
+elif [ ! -d "$OUTPUTDIR" ]; then
+  echo "OUTPUTDIR '$OUTPUTDIR' must exist"
+  echo $(pwd)
+  exit 4
+else
+  echo "OUTPUTDIR is '$OUTPUTDIR'"
+fi
 
 export JQ=`which jq`;
 
 export CWD=`pwd`;
-export full="$CWD/src/assets/potter_universe.json"
+export full="$CWD/potter_universe.json"
 
-export target="$CWD/src/content/gedcom/";
+export target="$OUTPUTDIR/gedcom/";
 
 if [ -d $target ]; then
   rm -rf $target
@@ -27,4 +58,4 @@ cat $full | $JQ -n "[inputs | select(.\"_class\" == \"$field\") | with_entries(i
 
 done
 
-gsed -i -E '/handle/{p;s/handle/id/;}' "$CWD/src/content/gedcom/tags.json"
+gsed -i -E '/handle/{p;s/handle/id/;}' "$OUTPUTDIR/gedcom/tags.json"

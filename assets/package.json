@@ -1,0 +1,12 @@
+{
+  "name": "@hp-stuff/assets",
+  "version": "0.1.0",
+  "description": "assets common to all versions of the site",
+  "type": "module",
+  "scripts": {
+    "gencollections": "./bin/grampsJson2CollectionJson.sh && ./bin/historyCollection.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

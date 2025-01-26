@@ -1,5 +1,7 @@
 packages:
-  - gracile 
+  - gracile
+  - assets
   - starlight
+  - greenwood
   - infrastructure
   - deps/*
