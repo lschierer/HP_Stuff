@@ -36,30 +36,35 @@ export default class HorizontalCard extends LitElement {
       ></iconify-icon>`;
     }
     return html`
-      <div
-        class="not-content spectrum-Card spectrum-Card--horizontal"
-        tabindex="0"
-        role="figure"
+      <a
+        href="${this.linkTarget ?? ""}"
+        class="spectrum-Link spectrum-Link--quiet spectrum-Link--secondary"
       >
-        <div class="not-content spectrum-Card-preview">${template}</div>
-        <div class="not-content spectrum-Card-body">
-          <div class="not-content spectrum-Card-header">
-            <div
-              class="not-content spectrum-Card-title spectrum-Heading spectrum-Heading--sizeXS"
-            >
-              ${this.cardTitle}
-            </div>
-          </div>
-          <div class="not-content spectrum-Card-content">
-            <div class="not-content spectrum-Card-description ">
-              <span class="not-content spectrum-Card-description "
-                >${unsafeHTML(this.cardDescription)}</span
+        <div
+          class="not-content spectrum-Card spectrum-Card--horizontal"
+          tabindex="0"
+          role="figure"
+        >
+          <div class="not-content spectrum-Card-preview">${template}</div>
+          <div class="not-content spectrum-Card-body">
+            <div class="not-content spectrum-Card-header">
+              <div
+                class="not-content spectrum-Card-title spectrum-Heading spectrum-Heading--sizeXS"
               >
-              <slot><span> </span></slot>
+                ${this.cardTitle}
+              </div>
+            </div>
+            <div class="not-content spectrum-Card-content">
+              <div class="not-content spectrum-Card-description ">
+                <span class="not-content spectrum-Card-description "
+                  >${unsafeHTML(this.cardDescription)}</span
+                >
+                <slot><span> </span></slot>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </a>
     `;
   }
 }
