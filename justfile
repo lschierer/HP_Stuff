@@ -20,8 +20,10 @@ build: install parse
 
 [working-directory: 'assets']
 parse: install
-  ./bin/grampsJson2CollectionJson.sh
-  ./bin/historyCollection.sh
+  ./bin/grampsJson2CollectionJson.sh -o ../starlight/src/content/
+  ./bin/grampsJson2CollectionJson.sh -o ../greenwood/src/assets/
+  ./bin/historyCollection.sh -o ../starlight/src/content/
+  ./bin/historyCollection.sh -o ../greenwood/src/assets/
 
 
 deploy: build
