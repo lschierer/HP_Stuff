@@ -28,6 +28,6 @@ parse: install
   ./bin/historyCollection.sh -o ../packages/starlight/src/content/
   ./bin/historyCollection.sh -o ../packages/greenwood/src/assets/
 
-
+[working-directory: 'infrastructure']
 deploy: build
-  cd infrastructure && pulumi up
+  pulumi up
