@@ -6,7 +6,7 @@
     "gencollections": "./bin/grampsJson2CollectionJson.sh && ./bin/historyCollection.sh",
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "pnpm gencollections && astro build",
+    "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
