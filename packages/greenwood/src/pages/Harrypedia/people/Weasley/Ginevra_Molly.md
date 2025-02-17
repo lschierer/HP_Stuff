@@ -1,0 +1,120 @@
+---
+collection: Harrypedia
+family: "Weasley"
+title: Ginevra Molly
+grampsID: I0070
+author: Luke Schierer
+pageType: person
+---
+
+### Analysis
+
+#### Snippet analysis
+
+> “There’s room in this one, there’s only Loony Lovegood in here — ”
+>
+> Neville mumbled something about not wanting to disturb anyone.
+>
+> “Don’t be silly,” said Ginny, laughing, “she’s all right.”
+>
+> She slid the door open and pulled her trunk inside it. Harry and Neville
+> followed.
+>
+> “Hi, Luna,” said Ginny. “Is it okay if we take these seats?”[^20210513-3]
+
+This is probably the most troublesome thing that Ginny says in the entire
+series. It is also the biggest counter example to trying to deal with the next
+quote. The only interesting thing is that while Ginny uses the name "Loony"
+outside the compartment, she switches to "[Luna][]" as soon as they go in, and
+immediately strikes up a friendly conversation with the outcast girl. This is
+not in character for someone who uses derogatory names. The contradiction in
+Ginny's behaviour is unexplained, to my knowledge, by cannon sources.
+
+[Luna]: ../../lovegood/luna/
+
+> “Oh, for heaven’s sake, Harry, you can do better than her, ” said Hermione.
+> “Ginny’s told me all about her, apparently she’ll only believe in things as
+> long as there’s no proof at all. Well, I wouldn’t expect anything else from
+> someone whose father runs The Quibbler.”[^20210513-1]
+
+When reading this keep in mind that this is filtered through [Hermione][].
+While it looks fairly harsh, PercabethHinny noted in _Discovering the Truth_
+that [Hermione][] _might_ be misrepresenting Ginny's actual words (emphasis
+mine).[^20210513-2]
+
+[Hermione]: ../../granger/hermione_jean/
+
+[^20210513-3]:
+    Mrs. J. K. Rowling.
+    _[Harry Potter and the Order of the Phoenix](https://www.librarything.com/work/115/book/225886709)_
+    Kindle Locations 2746-2749. Pottermore Limited. American Kindle Edition.
+
+[^20210513-2]:
+    PercabethHinny.
+    _[Discovering the Truth](https://www.wattpad.com/story/51615824-discovering-the-truth-harry-potter)_
+    Last Updated: 2019-05-22. Last Viewed: 2021-05-13.
+
+[^20210513-1]:
+    Mrs. J. K. Rowling.
+    _[Harry Potter and the Order of the Phoenix](https://www.librarything.com/work/115/book/225886709)_
+    Kindle Locations 3858-3860. Pottermore Limited. American Kindle Edition.
+
+---
+
+> Hermione’s face was glazed with tears, but Ginny was no longer crying. She met
+> Harry’s gaze with the same hard, blazing look that he had seen when she had
+> hugged him after winning the Quidditch Cup in his absence, and he knew that at
+> that moment they understood each other perfectly, and that when he told her
+> what he was going to do now, she would not say, “Be careful,” or “Don’t do
+> it,” but accept his decision, because she would not have expected anything
+> less of him.[^211101-3]
+
+Sure Ginny offers a slight argument just below this, but [Harry][] pretty much
+nails it - she _does_ know him, and so she _does_ accept _**and**_ _understand_
+his thought process and thus decision. She is no more happy about it than he
+is, but they two of them are in sync with each other at this moment in time.
+
+[Harry]: /harrypedia/people/potter/harry_james/
+
+[^211101-3]:
+    Mrs. J. K. Rowling.
+    Harry Potter and the Half-Blood Prince
+    p. 537. Pottermore Publishing. American Kindle Edition.
+
+### Speculation
+
+The interaction across book five is such that I do not think that Ginny and
+[Luna][] had a strong friendship going into the book, but we do not have enough
+data to tell if her familiarity with [Luna][] is solely from (at that point)
+three years of being in class with her, or if it pre-dates that.
+
+The books do not say, but I think it had to have been Ginny that invited
+[Luna][] to the meeting about organising the defence study group in _the Order
+of the Phoenix_. [Hermione][] certainly would not have done so, she has been
+behaving very in a very hostile manner to [Luna][].
+
+### Wishful Thinking
+
+I would have liked to have seen reports of Ginny more like what we see in
+bobmin's _[Healing Harry][]_ or _[Mutant Storm][]_. In either of these works
+we have a strong character who supports [Harry][] and, for lack of a better
+word, repays his sacrifices by being there for him the way he has been there
+not only for her, but for the entire world. Not that [Harry][] has _earned_ a
+wife, which is why I hesitate to use the word "repay", but because it is heart
+warming to see someone recognise his self sacrifice as worthy of love.
+
+Ginny's career in Quidditch would have taken tremendous dedication and time
+away from her family and relationship with [Harry][]. I somewhat think that
+Mrs. Rowling, a single mother and politically active in the politics of
+gender,[^221205-4] may not have been able to envision a young woman like Ginny
+choosing the stay at home path the way her mother did. She may also have
+wanted to show Ginny pursuing her dreams _and_ her marriage as a purposeful
+example to her young readers, even if this did not quite make it into the
+actual books.
+
+[Healing Harry]: https://web.archive.org/web/20210921210241/https://bobmin.fanficauthors.net/Healing_Harry/Healing_Harry/
+[Mutant Storm]: https://www.fanfiction.net/s/7404056
+
+[^221205-4]: See "[J.K. Rowling Writes about Her Reasons for Speaking out on Sex and Gender Issues][JKRSG]" [JKRowling.com](https://www.jkrowling.com/) 2016.
+
+[JKRSG]: https://www.jkrowling.com/opinions/j-k-rowling-writes-about-her-reasons-for-speaking-out-on-sex-and-gender-issues/
