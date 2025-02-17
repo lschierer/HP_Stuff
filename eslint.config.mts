@@ -47,7 +47,7 @@ export default tseslint.config(
     },
   },
   {
-    files: ["**/*/*.js"],
+    files: ["**/*/*.js", "**/*/*.mjs"],
     ignores: ["packages/greenwood/public/**"],
     extends: [eslint.configs.recommended, tseslint.configs.disableTypeChecked],
   },

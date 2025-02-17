@@ -2,6 +2,8 @@ import { greenwoodPluginTypeScript } from "@greenwood/plugin-typescript";
 import { greenwoodPluginPostCss } from "@greenwood/plugin-postcss";
 import { greenwoodPluginGoogleAnalytics } from "@greenwood/plugin-google-analytics";
 
+import process from "node:process";
+
 //begin work around for https://github.com/TanStack/table/pull/5373
 import { ResourceInterface } from "@greenwood/cli/src/lib/resource-interface.js";
 
@@ -56,7 +58,7 @@ export default {
       extendConfig: true,
     }),
     greenwoodPluginPostCss({
-      extendConfig: false,
+      extendConfig: true,
     }),
     greenwoodPluginGoogleAnalytics({
       analyticsId: "G-9KF1R3YFTZ",

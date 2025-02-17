@@ -4,15 +4,16 @@
   "description": "Greenwood version of my site",
   "type": "module",
   "scripts": {
-    "dev": "tsx --import @greenwood/cli/register ./node_modules/@greenwood/cli/src/index.js develop",
-    "start": "tsx --import @greenwood/cli/register ./node_modules/@greenwood/cli/src/index.js develop",
-    "build": "tsx --import @greenwood/cli/register ./node_modules/@greenwood/cli/src/index.js build",
-    "serve": "tsx --import @greenwood/cli/register ./node_modules/@greenwood/cli/src/index.js serve"
+    "dev": "NODE_OPTIONS='--import @greenwood/cli/register' greenwood develop",
+    "start": "NODE_OPTIONS='--import @greenwood/cli/register' greenwood develop",
+    "build": "NODE_OPTIONS='--import @greenwood/cli/register' greenwood build",
+    "serve": "NODE_OPTIONS='--import @greenwood/cli/register' greenwood serve"
   },
   "dependencies": {
     "@iconify-json/ion": "^1.2.2",
     "@iconify/json": "^2.2.307",
     "@lit/context": "^1.1.4",
+    "@spectrum-css/actionbutton": "^7.1.1",
     "@spectrum-css/alertbanner": "^3.1.0",
     "@spectrum-css/button": "^14.1.1",
     "@spectrum-css/card": "^11.1.0",

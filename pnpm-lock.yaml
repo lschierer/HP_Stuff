@@ -173,7 +173,7 @@ importers:
         version: 13.6.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0)
       '@spectrum-css/card':
         specifier: ^9.3.0
-        version: 9.3.0(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/vars@9.0.8))(@spectrum-css/tokens@14.6.0)(@spectrum-css/typography@6.2.0(@spectrum-css/tokens@14.6.0))
+        version: 9.3.0(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/vars@9.0.8))(@spectrum-css/tokens@14.6.0)(@spectrum-css/typography@6.2.0(@spectrum-css/tokens@14.6.0))
       '@spectrum-css/divider':
         specifier: ^3.2.0
         version: 3.2.0(@spectrum-css/tokens@14.6.0)
@@ -373,6 +373,9 @@ importers:
       '@lit/context':
         specifier: ^1.1.4
         version: 1.1.4
+      '@spectrum-css/actionbutton':
+        specifier: ^7.1.1
+        version: 7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/alertbanner':
         specifier: ^3.1.0
         version: 3.1.0(@spectrum-css/button@14.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/divider@5.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
@@ -381,7 +384,7 @@ importers:
         version: 14.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/card':
         specifier: ^11.1.0
-        version: 11.1.0(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/vars@9.0.8))(@spectrum-css/tokens@16.0.1)(@spectrum-css/typography@8.1.0(@spectrum-css/tokens@16.0.1))
+        version: 11.1.0(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/vars@9.0.8))(@spectrum-css/tokens@16.0.1)(@spectrum-css/typography@8.1.0(@spectrum-css/tokens@16.0.1))
       '@spectrum-css/divider':
         specifier: ^5.1.0
         version: 5.1.0(@spectrum-css/tokens@16.0.1)
@@ -565,7 +568,7 @@ importers:
         version: 13.6.0(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0)
       '@spectrum-css/card':
         specifier: ^10.0.0
-        version: 10.0.0(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/vars@9.0.8))(@spectrum-css/tokens@15.1.0)(@spectrum-css/typography@7.0.0(@spectrum-css/tokens@15.1.0))
+        version: 10.0.0(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/vars@9.0.8))(@spectrum-css/tokens@15.1.0)(@spectrum-css/typography@7.0.0(@spectrum-css/tokens@15.1.0))
       '@spectrum-css/divider':
         specifier: ^4.0.0
         version: 4.0.0(@spectrum-css/tokens@15.1.0)
@@ -3117,13 +3120,15 @@ packages:
     resolution: {integrity: sha512-C8dSfGmZH0ecrmnJOw4aDXJ47krihnUtee8eDZ2fA+28wTjD4TVM3L/bBQYnBBlDVWcYzldLV7loPRsPc1kERg==}
     engines: {node: '>=18.0.0'}
 
-  '@spectrum-css/actionbutton@7.0.1':
-    resolution: {integrity: sha512-uXn5CS4dIGgrIe+UJbk5qZRCfS+aAVL5YIlmGmJz7j2JQ6JTswR4rEfWHxBrOb/AD6eDXxVTEgdew5Bz50HkqA==}
+  '@spectrum-css/actionbutton@7.1.1':
+    resolution: {integrity: sha512-L+fQL5/JD/sTUdrlb8cXp4ZJUO4aaSmXdqLXZF3BkViBmHW2sqNyaneD1lsFh9nd3eTcWzy32MiYDXPaFMpsuA==}
     peerDependencies:
-      '@spectrum-css/icon': '>=7'
-      '@spectrum-css/tokens': '>=14 || >=15'
+      '@spectrum-css/icon': '>=9.0.0 <10.0.0'
+      '@spectrum-css/tokens': '>=16.0.0 <17.0.0'
     peerDependenciesMeta:
       '@spectrum-css/icon':
+        optional: true
+      '@spectrum-css/tokens':
         optional: true
 
   '@spectrum-css/alertbanner@2.4.0':
@@ -12748,26 +12753,22 @@ snapshots:
       '@smithy/types': 4.0.0
       tslib: 2.8.1
 
-  '@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0)':
-    dependencies:
-      '@spectrum-css/tokens': 15.1.0
+  '@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0)':
     optionalDependencies:
       '@spectrum-css/icon': 8.0.0(@spectrum-css/tokens@15.1.0)
+      '@spectrum-css/tokens': 15.1.0
     optional: true
 
-  '@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0)':
-    dependencies:
-      '@spectrum-css/tokens': 14.6.0
+  '@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0)':
     optionalDependencies:
       '@spectrum-css/icon': 9.1.0(@spectrum-css/tokens@14.6.0)
+      '@spectrum-css/tokens': 14.6.0
     optional: true
 
-  '@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)':
-    dependencies:
-      '@spectrum-css/tokens': 16.0.1
+  '@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)':
     optionalDependencies:
       '@spectrum-css/icon': 9.1.0(@spectrum-css/tokens@16.0.1)
-    optional: true
+      '@spectrum-css/tokens': 16.0.1
 
   '@spectrum-css/alertbanner@2.4.0(@spectrum-css/button@13.6.0(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/closebutton@5.3.0(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/divider@4.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0)':
     dependencies:
@@ -12811,33 +12812,33 @@ snapshots:
       '@spectrum-css/icon': 9.1.0(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/tokens': 16.0.1
 
-  '@spectrum-css/card@10.0.0(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/vars@9.0.8))(@spectrum-css/tokens@15.1.0)(@spectrum-css/typography@7.0.0(@spectrum-css/tokens@15.1.0))':
+  '@spectrum-css/card@10.0.0(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/vars@9.0.8))(@spectrum-css/tokens@15.1.0)(@spectrum-css/typography@7.0.0(@spectrum-css/tokens@15.1.0))':
     dependencies:
       '@spectrum-css/tokens': 15.1.0
     optionalDependencies:
-      '@spectrum-css/actionbutton': 7.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0)
+      '@spectrum-css/actionbutton': 7.1.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0)
       '@spectrum-css/checkbox': 10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0)
       '@spectrum-css/icon': 8.0.0(@spectrum-css/tokens@15.1.0)
-      '@spectrum-css/quickaction': 3.1.1(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/vars@9.0.8)
+      '@spectrum-css/quickaction': 3.1.1(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/vars@9.0.8)
       '@spectrum-css/typography': 7.0.0(@spectrum-css/tokens@15.1.0)
 
-  '@spectrum-css/card@11.1.0(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/vars@9.0.8))(@spectrum-css/tokens@16.0.1)(@spectrum-css/typography@8.1.0(@spectrum-css/tokens@16.0.1))':
+  '@spectrum-css/card@11.1.0(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/vars@9.0.8))(@spectrum-css/tokens@16.0.1)(@spectrum-css/typography@8.1.0(@spectrum-css/tokens@16.0.1))':
     optionalDependencies:
-      '@spectrum-css/actionbutton': 7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/actionbutton': 7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/checkbox': 10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/icon': 9.1.0(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/quickaction': 3.1.1(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/vars@9.0.8)
+      '@spectrum-css/quickaction': 3.1.1(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/vars@9.0.8)
       '@spectrum-css/tokens': 16.0.1
       '@spectrum-css/typography': 8.1.0(@spectrum-css/tokens@16.0.1)
 
-  '@spectrum-css/card@9.3.0(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/vars@9.0.8))(@spectrum-css/tokens@14.6.0)(@spectrum-css/typography@6.2.0(@spectrum-css/tokens@14.6.0))':
+  '@spectrum-css/card@9.3.0(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/vars@9.0.8))(@spectrum-css/tokens@14.6.0)(@spectrum-css/typography@6.2.0(@spectrum-css/tokens@14.6.0))':
     dependencies:
       '@spectrum-css/tokens': 14.6.0
     optionalDependencies:
-      '@spectrum-css/actionbutton': 7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0)
+      '@spectrum-css/actionbutton': 7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0)
       '@spectrum-css/checkbox': 10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0)
       '@spectrum-css/icon': 9.1.0(@spectrum-css/tokens@14.6.0)
-      '@spectrum-css/quickaction': 3.1.1(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/vars@9.0.8)
+      '@spectrum-css/quickaction': 3.1.1(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/vars@9.0.8)
       '@spectrum-css/typography': 6.2.0(@spectrum-css/tokens@14.6.0)
 
   '@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0)':
@@ -12912,23 +12913,23 @@ snapshots:
     optionalDependencies:
       '@spectrum-css/tokens': 16.0.1
 
-  '@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/vars@9.0.8)':
+  '@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0))(@spectrum-css/vars@9.0.8)':
     dependencies:
-      '@spectrum-css/actionbutton': 7.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0)
+      '@spectrum-css/actionbutton': 7.1.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0)
       '@spectrum-css/checkbox': 10.0.1(@spectrum-css/icon@8.0.0(@spectrum-css/tokens@15.1.0))(@spectrum-css/tokens@15.1.0)
       '@spectrum-css/vars': 9.0.8
     optional: true
 
-  '@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/vars@9.0.8)':
+  '@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0))(@spectrum-css/vars@9.0.8)':
     dependencies:
-      '@spectrum-css/actionbutton': 7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0)
+      '@spectrum-css/actionbutton': 7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0)
       '@spectrum-css/checkbox': 10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@14.6.0))(@spectrum-css/tokens@14.6.0)
       '@spectrum-css/vars': 9.0.8
     optional: true
 
-  '@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/vars@9.0.8)':
+  '@spectrum-css/quickaction@3.1.1(@spectrum-css/actionbutton@7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/checkbox@10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/vars@9.0.8)':
     dependencies:
-      '@spectrum-css/actionbutton': 7.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/actionbutton': 7.1.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/checkbox': 10.0.1(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/vars': 9.0.8
     optional: true
