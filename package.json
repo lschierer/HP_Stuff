@@ -3,15 +3,41 @@
   "version": "0.3.0",
   "license": "ISC",
   "type": "module",
+  "scripts": {
+    "lint": "eslint ",
+    "prepare": "husky"
+  },
   "devDependencies": {
+    "@commitlint/cli": "^19.7.1",
+    "@commitlint/config-conventional": "^19.7.1",
+    "@commitlint/types": "^19.5.0",
+    "@eslint/js": "^9.20.0",
+    "@release-it/conventional-changelog": "^10.0.0",
     "@tsconfig/node22": "^22.0.0",
+    "@types/eslint__js": "^8.42.3",
+    "@typescript-eslint/parser": "^8.24.1",
     "broken-link-checker": "^0.7.8",
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.3",
+    "globals": "^15.15.0",
+    "husky": "^9.1.7",
+    "jiti": "^2.4.2",
     "just-install": "^2.0.2",
-    "prettier": "^3.4.2",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.1",
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-sh": "^0.14.0",
+    "release-it": "^18.1.2",
+    "release-it-pnpm": "^4.6.4",
+    "stylelint-config-standard": "^37.0.0",
     "tsx": "^4.19.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.1"
   },
   "dependencies": {
     "dotenv": "^16.4.7"
-  }
+  },
+  "packageManager": "pnpm@9.15.4+sha512.b2dc20e2fc72b3e18848459b37359a32064663e5627a51e4c74b2c29dd8e8e0491483c3abb40789cfd578bf362fb6ba8261b05f0387d76792ed6e23ea3b1b6a0"
 }
