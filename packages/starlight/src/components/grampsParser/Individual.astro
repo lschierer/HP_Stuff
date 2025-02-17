@@ -1,0 +1,137 @@
+---
+interface Props {
+  personId: string;
+}
+
+import { GedcomPerson } from "@schemas/gedcom";
+import { male, female } from "@lib/GedcomConstants";
+import { getEntry, type CollectionEntry } from "astro:content";
+
+import "../../styles/Gramps.css";
+
+import IndividualName from "./IndividualName.astro";
+import Family from "./Family.astro";
+import Event from "./event.astro";
+import AncestorsTreeChart from "./AncestorsTreeChart/AncestorsTreeChart.astro";
+
+const DEBUG = false;
+
+const { personId } = Astro.props;
+
+if (DEBUG) {
+  console.log(`Individual.astro personId is ${personId}`);
+}
+
+let person: GedcomPerson.GedcomElement | undefined = undefined;
+const eventsRefs: GedcomPerson.EventRef[] = new Array<GedcomPerson.EventRef>();
+let BirthIndex = -1;
+let DeathIndex = -1;
+
+if (personId) {
+  const personEntry = await getEntry("people", personId);
+
+  if (personEntry != undefined) {
+    person = personEntry.data;
+    if (person.event_ref_list.length > 0) {
+      eventsRefs.push(...person.event_ref_list);
+      BirthIndex = person.birth_ref_index;
+      DeathIndex = person.death_ref_index;
+    }
+  }
+}
+---
+
+{
+  person != undefined ? (
+    <>
+      <div class="CardBody" tabindex="0" role="figure">
+        <div class="flex-auto ">
+          <div class="grid grid-cols-12 grid-rows-2 bg-gray-100">
+            <div class="bio CardBody IndividualName">
+              <IndividualName inline={false} personId={personId} />
+            </div>
+            <div class="col-span-1 row-span-1">
+              {/*  I believe I intended this space for icons showing Hogwarts House affiliation, blood status, and similiar. */}
+              {/* leaving the div because I do not want to re-figure the flex placement */}
+            </div>
+            <div class="bio CardBody personId">{personId}</div>
+          </div>
+          <div class="flex-auto basis-0 flex-col gap-0 rounded border-2 ">
+            <div class="General flex-auto flex-col ">
+              <ul class="bio my-0">
+                <li>
+                  Birth:{" "}
+                  {BirthIndex >= 0 ? (
+                    <Event handle={eventsRefs[BirthIndex].ref} />
+                  ) : (
+                    "Unknown"
+                  )}
+                </li>
+                <li>
+                  Death:{" "}
+                  {DeathIndex >= 0 ? (
+                    <Event handle={eventsRefs[DeathIndex].ref} />
+                  ) : (
+                    "Unknown"
+                  )}
+                </li>
+              </ul>
+            </div>
+            <div class="Unions flex-auto flex-col gap-0">
+              <h4 class="my-0">Unions & children</h4>
+              {person.family_list.length > 1 ? (
+                <ul class="bio">
+                  {person.family_list.map((family) => {
+                    return person.gender == male.JSONconstant ? (
+                      <li>
+                        <Family
+                          familyHandle={family}
+                          fatherHandle={person.handle}
+                        />
+                      </li>
+                    ) : (
+                      <li>
+                        <Family
+                          familyHandle={family}
+                          motherHandle={person.handle}
+                        />
+                      </li>
+                    );
+                  })}
+                </ul>
+              ) : (
+                <Family
+                  familyHandle={person.family_list[0]}
+                  fatherHandle={person.handle}
+                />
+              )}
+            </div>
+            <h3 class="my-0">Family Information</h3>
+            {person.parent_family_list.length > 1 ? (
+              <ul class="bio not-content">
+                {person.parent_family_list.map((family) => (
+                  <li>
+                    <Family
+                      familyHandle={family}
+                      childrenHandles={[person.handle]}
+                    />
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <Family
+                familyHandle={person.parent_family_list[0]}
+                childrenHandles={[person.handle]}
+              />
+            )}
+          </div>
+        </div>
+      </div>
+      <div class="TimelineCard rounded border-2">
+        <AncestorsTreeChart isRoot={true} grampsId={person.id} />
+      </div>
+    </>
+  ) : (
+    <span>"No person with id {personId} found"</span>
+  )
+}

@@ -1,2 +1,4 @@
 [tools]
-node = "22.12"
+pnpm = "10.4"
+just = "latest"
+node = "22.14"

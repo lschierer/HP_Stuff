@@ -1,0 +1,162 @@
+---
+interface Props {
+  familyName: string;
+  handle?: string;
+}
+
+import { getCollection } from "astro:content";
+import IndividualName from "./IndividualName.astro";
+import { GedcomPerson, GedcomEvent } from "@schemas/gedcom";
+
+import "@styles/Gramps.css";
+import "@styles/FamilyListing.css";
+
+import { Debug } from "astro:components";
+import Event from "./event.astro";
+
+const DEBUG = false;
+
+const { familyName, handle = "" } = Astro.props;
+
+if (DEBUG) {
+  console.log(`looking for ${familyName} and handle "${handle}"`);
+}
+const displaylist = new Array<GedcomPerson.GedcomElement>();
+const families = new Map<string, string[]>();
+
+const events = (await getCollection("events")).map((event) => event.data);
+
+const people = (
+  await getCollection("people", ({ data }) => {
+    return data.primary_name.surname_list
+      .map((sn) => {
+        return !sn.surname.localeCompare(familyName);
+      })
+      .includes(true);
+  })
+).map((entry) => entry.data);
+
+if (DEBUG) {
+  console.log(`starting with ${people.length} people`);
+}
+
+const p1 = people
+  .filter((p1) => {
+    if (handle.length > 0) {
+      return p1.parent_family_list.includes(handle);
+    } else {
+      return p1.parent_family_list.length == 0;
+    }
+  })
+  .sort((a, b) => {
+    return a.id.localeCompare(b.id);
+  })
+  .sort((a, b) => {
+    return a.parent_family_list.length < b.parent_family_list.length
+      ? -1
+      : a.parent_family_list.length > b.parent_family_list.length
+        ? 1
+        : 0;
+  });
+
+if (DEBUG) {
+  console.log(`working with ${p1.length} people`);
+}
+
+const findChildren = (handle: string) => {
+  return people.filter((person) => {
+    return person.parent_family_list.includes(handle);
+  });
+};
+
+p1.map((person) => {
+  if (DEBUG) {
+    console.log(
+      `evaluating "${person.primary_name.first_name}" with id ${person.id}`
+    );
+  }
+  const fc = new Array<string>();
+  const fk = person.id;
+  if (person.family_list.length > 0) {
+    fc.push(...person.family_list);
+  } else {
+    if (DEBUG) {
+      console.log(
+        `${person.primary_name.first_name}" with id ${person.id} has no family`
+      );
+    }
+  }
+
+  if (handle.length == 0 && person.parent_family_list.length == 0) {
+    displaylist.push(person);
+    families.set(fk, fc);
+    if (DEBUG) {
+      console.log(
+        `set key "${fk}" should match "${person.id}" for ${fc.length} children`
+      );
+      console.log(
+        `pushing ${person.primary_name.first_name}" with id ${person.id}`
+      );
+      console.log(`${families.has(fk)} from test of has for ${fk}`);
+    }
+  } else if (person.parent_family_list.includes(handle)) {
+    displaylist.push(person);
+    families.set(fk, fc);
+    if (DEBUG) {
+      console.log(
+        `set key ${fk} should match ${person.id} for ${fc.length} children`
+      );
+      console.log(
+        `pushing ${person.primary_name.first_name}" with id ${person.id}`
+      );
+      console.log(`${families.has(fk)} from test of has for ${fk}`);
+    }
+  }
+}, "");
+if (DEBUG) {
+  console.log(`families has ${families.size} families`);
+  families.forEach((value, key, map) => {
+    console.log(`m[${key}] = ${value}`);
+  });
+}
+const fa = new Array<string[]>();
+const fk = new Array<string>();
+families.forEach((value, key, map) => {
+  if (DEBUG) {
+    console.log(`m[${key}] = ${value}`);
+  }
+  fa.push(value);
+  fk.push(key);
+});
+---
+
+<ul class="familylisting">
+  {
+    displaylist.map((person, index) => (
+      <li>
+        <IndividualName inline link={true} personId={person.id} /> (
+        {person.event_ref_list.length > 0 &&
+        person.birth_ref_index >= 0 &&
+        person.birth_ref_index < person.event_ref_list.length ? (
+          <Event handle={person.event_ref_list[person.birth_ref_index].ref} />
+        ) : (
+          "Unknown"
+        )}
+        -
+        {person.event_ref_list.length > 0 &&
+        person.death_ref_index < person.event_ref_list.length &&
+        person.death_ref_index >= 0 ? (
+          <Event handle={person.event_ref_list[person.death_ref_index].ref} />
+        ) : (
+          "Unknown"
+        )}
+        )
+        {fa[index].length > 0
+          ? fa[index].map((p2) => (
+              <Astro.self handle={p2} familyName={familyName} />
+            ))
+          : ""}
+      </li>
+    ))
+  }
+</ul>

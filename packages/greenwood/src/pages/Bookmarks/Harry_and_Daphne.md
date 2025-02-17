@@ -1,0 +1,54 @@
+---
+title: Harry and Daphne
+collection: Bookmarks
+description: HP stories with Harry and Daphne paired
+author: "Luke Schierer"
+---
+
+[Daphne][] is one of those blank slate characters that authors can do anything
+with. Sure enough, they certainly have, though there do tend to be patterns.
+Most of them are not worth reading, but enough are that this becomes a category
+to watch.
+
+<dl>
+    <dt>_[Daphne Greengrass and the Importance of Intent](https://archiveofourown.org/works/23986264)_</dt>
+    <dd>Author: PetrificusSomewhatus</dd>
+    <dd>Published: 2018-11-29. Updated: 2020-05-03</dd>
+    <dd>Comments: This story and its sequel are enough to make you interested in
+        this pairing no matter what else you might otherwise think.  [Daphne] is
+        believable, [Ginny] is reasonably well done, the only real change is that
+        [Harry] has caught on to the fact that [Dumbledore] is not to be trusted early
+        on in sixth year.  Everything flows from that.</dd>
+
+    <dt>_[The Grass Is Always Greener](https://www.fanfiction.net/s/4334542/)_</dt>
+    <dd>Author: kb0</dd>
+    <dd>Published: 2008-06-19. Updated: 2009-01-3.</dd>
+    <dd>
+        Comments: Featuring a slightly super-powered [Harry], this one also features a believable [Daphne], and in some ways a better [Ginny] than _the Importance of Intent_.  The super power deviation is presented in a way that makes it a logical branch point from the original books, and does not badly detract, but overall the [Harry] in this one is somewhat less believable.
+    </dd>
+
+    <dt>_[Daphne Greengrass and the Preemptive Adulterer][]_</dt>
+    <dd>Author: ScribblingSteve</dd>
+    <dd>Published: 2022-01-22 Updated: 2022-04-01</dd>
+    <dd>Comments: This story feels more or less like satire, or what many in the
+        fan fiction community call "crack."  Either way, it was very enjoyable
+        despite a couple of minor plot holes and homonym problems.  The premise
+        is a binding marriage contract that [Daphne][] wants to get out of, and
+        [Harry][] cannot resist being the hero.</dd>
+
+    <dt>_[A Different Type of Bond]_</dt>
+    <dd>Author: [WolfgangNH]</dd>
+    <dd>Published: 2022-04-09. Completed: 2022-04-09</dd>
+    <dd>
+        Comments: I have mixed feelings on this story, and am including it on my policy of including any story I have to spend time finding at least twice.  This story includes one suicide attempt and one (separate) suicide contemplation.  On the positive side, the story treats suicide as the horrific thing it is.  On the bad side, in includes the idea that if you save a life, you are responsible for it.  I think the author attempted to portray just how badly this could have gone.  I do not think [WolfgangNH] really succeeded at that though, which is a problem.  Several aspects of this story fit in very well as illustrations of the problems with the way Mrs. Rowling has structured the world.
+    </dd>
+
+</dl>
+
+[WolfgangNH]: https://archiveofourown.org/users/WolfgangNH/
+[A Different Type of Bond]: https://archiveofourown.org/works/38269633
+[Daphne Greengrass and the Preemptive Adulterer]: https://archiveofourown.org/works/36587794
+[Harry]: /harrypedia/people/potter/harry_james//
+[Daphne]: /harrypedia/people/greengrass/daphne//
+[Ginny]: /harrypedia/people/weasley/ginevra_molly//
+[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian//

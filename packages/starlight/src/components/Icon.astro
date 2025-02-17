@@ -1,0 +1,107 @@
+---
+interface Props {
+  icon: string;
+  iconclasses: string;
+  inline?: boolean;
+  width?: string;
+  height?: string;
+}
+
+const { icon, inline, width, height, iconclasses } = Astro.props;
+---
+
+<astro-icon
+  icon={icon}
+  iconclasses={iconclasses}
+  inline={inline}
+  width={width}
+  height={height}></astro-icon>
+
+<script>
+  import "iconify-icon";
+  const DEBUG = false;
+
+  export default class AstroIcon extends HTMLElement {
+    private icon: string = "";
+    private inline: boolean = true;
+    private width: string = "";
+    private height: string = "";
+    private iconclasses: string = "";
+
+    connectedCallback() {
+      const attributes = this.getAttributeNames();
+      if (attributes.includes("icon")) {
+        this.icon = this.getAttribute("icon") ?? "";
+      }
+
+      if (attributes.includes("inline")) {
+        const inline = this.getAttribute("inline");
+        if (inline != undefined && inline != null && inline.length > 0) {
+          if (!inline.toLowerCase().localeCompare("true")) {
+            this.inline = true;
+          } else {
+            this.inline = false;
+          }
+        } else {
+          this.inline = false;
+        }
+      } else {
+        this.inline = false;
+      }
+
+      if (attributes.includes("width")) {
+        const width = this.getAttribute("width");
+        this.width = width != null ? width : "";
+      }
+
+      if (attributes.includes("height")) {
+        const height = this.getAttribute("height");
+        this.height = height != null ? height : "";
+      }
+
+      if (attributes.includes("iconclasses")) {
+        const iconclasses = this.getAttribute("iconclasses");
+        this.iconclasses = iconclasses != null ? iconclasses : "";
+      }
+      if (this.inline) {
+        if (DEBUG) {
+          console.log(`icon inline is true`);
+        }
+        this.innerHTML = `
+          <iconify-icon
+            icon="${this.icon}"
+            inline
+            ${this.width.length > 0 ? `width="${this.width}"` : ""}
+            ${this.height.length > 0 ? `height="${this.height}"` : ""}
+            ${
+              this.iconclasses.length > 0
+                ? `class="icon ${this.iconclasses}"`
+                : `class="icon"`
+            }
+          ></iconify-icon>
+        `;
+      } else {
+        if (DEBUG) {
+          console.log(`icon inline is false`);
+        }
+        this.innerHTML = `
+          <iconify-icon
+            icon="${this.icon}"
+            ${this.width.length > 0 ? `width="${this.width}"` : ""}
+            ${
+              this.height.length > 0
+                ? `height="${this.height}"`
+                : 'height="75%"'
+            }
+            ${
+              this.iconclasses.length > 0
+                ? `class="icon ${this.iconclasses}"`
+                : `class="icon"`
+            }
+          ></iconify-icon>
+        `;
+      }
+    }
+  }
+  customElements.define("astro-icon", AstroIcon);
+</script>

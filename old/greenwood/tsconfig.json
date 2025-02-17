@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": "@tsconfig/node22/tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "baseUrl": "./",
+    "allowImportingTsExtensions": true,
+    "emitDeclarationOnly": true,
+    "allowSyntheticDefaultImports": true,
+
+    "strict": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+
+    "experimentalDecorators": true,
+    "useDefineForClassFields": false,
+    "verbatimModuleSyntax": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+
+    "plugins": [
+      {
+        "name": "ts-lit-plugin",
+        "strict": true
+      },
+      { "name": "typescript-plugin-css-modules" }
+    ],
+
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@layouts/*": ["src/layouts/*"],
+      "@lib/*": ["src/lib/*"],
+      "@styles/*": ["src/styles/*"]
+    }
+  },
+  "include": [
+    "./declaration.d.ts",
+    "./bin/*.ts",
+    "./src/**/*.ts",
+    "./src/styles/*.css"
+  ],
+  "exclude": ["old/**", "./src/**/*.js", "node_modules"]
+}

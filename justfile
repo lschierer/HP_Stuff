@@ -7,24 +7,27 @@ export NPM := `which npm`
 export NPX := `which npx`
 
 install:
-  ${PNPM} install
+  ${PNPM} install -r
 
+[working-directory: 'packages/starlight']
 dev: install
   ${PNPM} run dev
 
+[working-directory: 'packages/starlight']
 check: install
   ${NPX} tsc --noEmit -p .;
 
+[working-directory: 'packages/starlight']
 build: install parse
   ${PNPM} run build
 
-parse: install pre-build
-  ./bin/grampsParser.sh
+[working-directory: 'assets']
+parse: install
+  ./bin/grampsJson2CollectionJson.sh -o ../packages/starlight/src/content/
+  ./bin/grampsJson2CollectionJson.sh -o ../packages/greenwood/src/assets/
+  ./bin/historyCollection.sh -o ../packages/starlight/src/content/
+  ./bin/historyCollection.sh -o ../packages/greenwood/src/assets/
 
-pre-build: install
-  ${NPX} tsc -p tsconfig.bin.json
-
-deploy:
-  cd infrastructure
+[working-directory: 'infrastructure']
+deploy: build
   pulumi up
-  cd ..

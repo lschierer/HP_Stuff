@@ -7,33 +7,17 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "forceConsistentCasingInFileNames": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "jsx": "preserve",
-    "noEmit": true,
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "baseUrl": "./",
+
+    "strict": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
 
     "verbatimModuleSyntax": true,
-    "strictNullChecks": true,
-    "allowJs": true,
-    "experimentalDecorators": true,
-    "useDefineForClassFields": false,
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
-    "baseUrl": ".",
-
-    "plugins": [
-
-      {
-        "name": "ts-lit-plugin",
-        "strict": true,
-        "rules": {
-          "no-unknown-tag-name": "off",
-          "no-unknown-attribute": "off",
-          "no-missing-import": "off"
-        }
-      }
-    ]
-  }
+    "esModuleInterop": true,
+    "resolveJsonModule": true
+  },
+  "include": ["./bin/**/*.ts", "./lib/**/*.ts"],
+  "exclude": ["./old/**/*.ts", "./old/**/*.js", "./old/**/*.cjs"]
 }

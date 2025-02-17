@@ -1,0 +1,202 @@
+---
+import { GedcomPerson } from "@schemas/gedcom";
+import { GedcomEvent } from "@schemas/gedcom";
+import { getCollection } from "astro:content";
+
+import {
+  HogwartsHouses,
+  BloodStatus,
+  BloodWarPosition,
+  SocialClass,
+} from "@lib/GedcomConstants";
+
+interface Props {
+  year: number | string;
+}
+
+const { year } = Astro.props;
+const DEBUG = false;
+
+const people = (
+  await getCollection("people", ({ data }) => {
+    if (data.event_ref_list.length > 0 && data.tag_list.length > 0) {
+      return true;
+    }
+    return false;
+  })
+).map((entry) => entry.data);
+const events = (
+  await getCollection("events", ({ data }) => {
+    if (
+      !data.type.string.localeCompare(
+        GedcomEvent.StringEnum.Values["Hogwarts Sorting"]
+      )
+    ) {
+      return true;
+    }
+    return false;
+  })
+).map((entry) => entry.data);
+const tags = (await getCollection("tags")).map((entry) => entry.data);
+
+const students = new Map<string, GedcomPerson.GedcomElement>();
+people.map((person) => {
+  person.event_ref_list.map((eventref) => {
+    const event = events.find((e) => {
+      return !e.handle.localeCompare(eventref.ref);
+    });
+    if (!event) {
+      /*if (DEBUG) {
+        console.log(`no event found for event ref ${eventref.ref}`);
+      }*/
+    } else {
+      if (
+        event &&
+        !event.type.string.localeCompare(
+          GedcomEvent.StringEnum.Values["Hogwarts Sorting"]
+        )
+      ) {
+        const date = event.date;
+        let datematch: boolean = false;
+        if (date) {
+          if (date.dateval) {
+            let y = 0;
+            if (typeof year === "number") {
+              y = year;
+            } else {
+              y = +year;
+            }
+            if (date.dateval[2] == y) {
+              datematch = true;
+            }
+          }
+        }
+        if (!students.has(person.id) && datematch) {
+          students.set(person.id, person);
+        } else {
+          if (DEBUG) {
+            if (!datematch) {
+              /*console.log(
+                `event date ${date?.dateval[2]} does not match ${year}`
+                );*/
+            } else {
+              let keystring = Array.from(students.keys()).join(" ");
+
+              console.log(`students has keys: ${keystring}`);
+            }
+          }
+        }
+      } else {
+        if (DEBUG) {
+          console.log(`event was of type ${event.type.string}`);
+        }
+      }
+    }
+  });
+});
+if (DEBUG) {
+  console.log(`found ${students.size} students in Hogwarts`);
+}
+interface ClassList {
+  LastName: string;
+  FirstName: string;
+  Sex: "male" | "female";
+  BloodStatus: string;
+  SocialClass: string;
+  HogwartsHouse: string;
+  BloodWarPosition: string;
+}
+const DataColumns = new Array<ClassList>();
+for (const studentMapPair of students) {
+  const student = studentMapPair[1];
+  const bloodStatus =
+    tags.find((tag) => {
+      if (student.tag_list.includes(tag.handle)) {
+        const valid = BloodStatus.safeParse(tag.name);
+        if (valid.success) {
+          return true;
+        }
+      }
+      return false;
+    })?.name ?? BloodStatus.Values.Unknown;
+  const hogwartsHouse =
+    tags.find((tag) => {
+      if (student.tag_list.includes(tag.handle)) {
+        const valid = HogwartsHouses.safeParse(tag.name);
+        if (valid.success) {
+          return true;
+        }
+      }
+      return false;
+    })?.name ?? HogwartsHouses.Values.Unknown;
+  const bloodWarPosition =
+    tags.find((tag) => {
+      if (student.tag_list.includes(tag.handle)) {
+        const valid = BloodWarPosition.safeParse(tag.name);
+        if (valid.success) {
+          return true;
+        }
+      }
+      return false;
+    })?.name ?? BloodWarPosition.Values.Unknown;
+
+  const socialClass =
+    tags.find((tag) => {
+      if (student.tag_list.includes(tag.handle)) {
+        const valid = SocialClass.safeParse(tag.name);
+        if (valid.success) {
+          return true;
+        }
+      }
+      return false;
+    })?.name ?? SocialClass.Values.Unknown;
+
+  DataColumns.push({
+    LastName: student.primary_name.surname_list[0].surname ?? "",
+    FirstName:
+      student.primary_name.first_name.length > 0
+        ? student.primary_name.first_name
+        : student.primary_name.nick.length > 0
+          ? student.primary_name.nick
+          : "",
+    Sex: student.gender == 1 ? "male" : "female",
+    BloodStatus: bloodStatus,
+    SocialClass: socialClass,
+    HogwartsHouse: hogwartsHouse,
+    BloodWarPosition: bloodWarPosition,
+  });
+}
+---
+
+{
+  DataColumns && (
+    <table>
+      <thead>
+        <th>Last Name</th>
+        <th>First Name</th>
+        <th>Sex</th>
+        <th>Blood Status</th>
+        <th>Social Class</th>
+        <th>Hogwarts House</th>
+        <th>Blood War Position</th>
+      </thead>
+      <tbody>
+        {DataColumns.sort((a: ClassList, b: ClassList) => {
+          return a.LastName.localeCompare(b.LastName)
+            ? a.LastName.localeCompare(b.LastName)
+            : a.FirstName.localeCompare(b.FirstName);
+        }).map((row: ClassList) => (
+          <tr>
+            <td>{row.LastName}</td>
+            <td>{row.FirstName}</td>
+            <td>{row.Sex}</td>
+            <td>{row.BloodStatus}</td>
+            <td>{row.SocialClass}</td>
+            <td>{row.HogwartsHouse}</td>
+            <td>{row.BloodWarPosition}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )
+}

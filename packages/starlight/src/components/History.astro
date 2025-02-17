@@ -1,0 +1,184 @@
+---
+import rehypeStringify from "rehype-stringify";
+import remarkGfm from "remark-gfm";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import { unified } from "unified";
+import { DateTime } from "luxon";
+
+import { Event, Events, DisplayableEvent } from "../lib/TimelineTypes";
+
+const DEBUG = false;
+const DEBUG2 = false;
+
+const parseEvent = (
+  event: Event,
+  fileName: string
+): DisplayableEvent | undefined => {
+  let description: string | undefined = undefined;
+  if (event.description !== null && event.description !== undefined) {
+    description = unified()
+      .use(remarkParse)
+      .use(remarkGfm)
+      .use(remarkRehype)
+      .use(rehypeStringify)
+      .processSync(event.description)
+      .toString();
+  }
+  let source: string | undefined = undefined;
+  if (event.source !== null && event.source !== undefined) {
+    source = unified()
+      .use(remarkParse)
+      .use(remarkGfm)
+      .use(remarkRehype)
+      .use(rehypeStringify)
+      .processSync(event.source)
+      .toString();
+  }
+  let eventDate: DateTime | undefined = undefined;
+  if (event.date == null || event.date == undefined) {
+    if (DEBUG2) {
+      console.log(`no date in event, filename is '${fileName}'`);
+    }
+    while (fileName.includes("/")) {
+      if (fileName.indexOf("/") == fileName.length - 1) {
+        fileName = fileName.slice(0, -1);
+        continue;
+      }
+      if (fileName.indexOf("/") == 0) {
+        fileName = fileName.slice(1);
+        continue;
+      }
+      fileName = fileName.split("/").pop() ?? "";
+      if (fileName.endsWith(".yaml")) {
+        fileName = fileName.slice(0, -5).padStart(4, "0");
+      }
+    }
+
+    if (DEBUG2) {
+      console.log(`finalized filename is '${fileName}'`);
+    }
+    if (fileName.endsWith("s")) {
+      fileName = fileName.slice(0, -1).padStart(4, "0");
+      eventDate = DateTime.fromISO(fileName);
+    } else {
+      eventDate = DateTime.fromISO(fileName);
+    }
+  } else if (typeof event.date === "string") {
+    if (DEBUG2) {
+      console.log(`detected date '${event.date} as string`);
+    }
+    eventDate = DateTime.fromISO(event.date.padStart(4, "0"));
+  } else if (typeof event.date === "number") {
+    if (DEBUG2) {
+      console.log(`detected date '${event.date} as number`);
+    }
+    eventDate = DateTime.fromISO(event.date.toString().padStart(4, "0"));
+  } else {
+    if (DEBUG2) {
+      console.log(`detected date '${event.date.toString()} as JSDate`);
+    }
+    eventDate = DateTime.fromJSDate(event.date);
+  }
+  if (eventDate !== undefined && eventDate.isValid) {
+    if (DEBUG2) {
+      console.log(`finalized date is ${eventDate.toString()}`);
+    }
+  } else {
+    console.log(
+      `invalid date '${eventDate.toString()} ' for event ${JSON.stringify(event)}`
+    );
+    return undefined;
+  }
+  const ne: DisplayableEvent = {
+    date: eventDate.toJSDate(),
+    type: event.type,
+    blurb: event.blurb,
+    description: description,
+    source: source,
+  };
+  return ne;
+};
+
+import { getCollection } from "astro:content";
+
+const matches = await getCollection("history");
+const events = new Array<DisplayableEvent>();
+
+if (DEBUG) {
+  console.log(
+    `History.astro got ${matches.length} matches from history collection`
+  );
+}
+if (Array.isArray(matches) && matches.length > 0) {
+  matches
+    .sort((a, b) => {
+      return a.id.toLowerCase().localeCompare(b.id.toLowerCase());
+    })
+    .map((match) => {
+      if (Array.isArray(match.data.events)) {
+        match.data.events.map((event) => {
+          const de: DisplayableEvent | undefined = parseEvent(event, match.id);
+          if (de != undefined) {
+            events.push(de);
+          }
+        });
+      } else {
+        const de: DisplayableEvent | undefined = parseEvent(
+          match.data.events,
+          match.id
+        );
+      }
+    });
+}
+if (DEBUG) {
+  console.log(
+    `History.astro after parsing matches, events has ${events.length} events`
+  );
+}
+
+/*
+---
+collection: Harrypedia
+layout: timeline
+title: History
+author: Luke Schierer
+tableOfContents: false
+banner:
+  content: |
+    Note that the tool creating this timeline fills in
+    unknown fields in dates.
+import:
+- /components/vertical-timeline.ts type="module"
+- /components/vertical-element.ts type="module"
+---
+
+
+<vertical-timeline datacollection="history" ></vertical-timeline>
+ */
+import "iconify-icon";
+import "@spectrum-css/alertbanner/dist/index.css";
+
+import VTimleine from "./v-timeline.astro";
+---
+
+{
+  events.length > 0 && (
+    <div>
+      <div class="banner spectrum-AlertBanner is-open spectrum-AlertBanner--info">
+        <div class=" spectrum-AlertBanner-body ">
+          <iconify-icon icon="octicon:info-16" />
+          <div class=" spectrum-AlertBanner-content ">
+            <p class=" spectrum-AlertBanner-text ">
+              Note that the tool creating this timeline fills in unknown fields
+              in dates. Unknown month of year is assumed (by the tool) to be
+              January. Unknown day of month is assumed to be the first.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <VTimleine events={encodeURIComponent(JSON.stringify(events))} />
+    </div>
+  )
+}

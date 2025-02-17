@@ -10,18 +10,18 @@
   "devDependencies": {
     "@tsconfig/node22": "^22.0.0",
     "@types/aws-cloudfront-function": "^1.0.4",
-    "@types/aws-lambda": "^8.10.146",
-    "@types/node": "^22.10.1",
+    "@types/aws-lambda": "^8.10.147",
+    "@types/node": "^22.10.5",
     "@types/uuid": "^10.0.0",
-    "mime": "^4.0.4",
+    "mime": "^4.0.6",
     "tsx": "^4.19.2",
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@pulumi/aws": "^6.64.0",
+    "@pulumi/aws": "^6.66.2",
     "@pulumi/awsx": "^2.19.0",
-    "@pulumi/pulumi": "^3.142.0",
-    "@pulumi/random": "^4.16.7",
-    "uuid": "^11.0.3"
+    "@pulumi/pulumi": "^3.144.1",
+    "@pulumi/random": "^4.16.8",
+    "uuid": "^11.0.4"
   }
 }

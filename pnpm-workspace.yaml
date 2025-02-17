@@ -1,2 +1,8 @@
 packages:
-  - infrastructure
+  - "packages/*"
+  - "gracile/"
+  - "assets"
+  - "starlight"
+  - "greenwood"
+  - "infrastructure"
+  - "deps/*"

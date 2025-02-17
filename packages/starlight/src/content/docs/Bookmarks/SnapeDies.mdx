@@ -1,0 +1,39 @@
+---
+title: Justice for Snape
+collection: Bookmarks
+description: HP stories focusing on Snape's death, judgement, or afterlife
+author: "Luke Schierer"
+---
+
+Fanfictions talking about after Snape Dies
+
+<dl>
+    <dt>_[The consequences of your decisions](https://www.fanfiction.net/s/9998652)_</dt>
+    <dd>Author: [Beau2809](https://www.fanfiction.net/u/4649342/Beau2809).</dd>
+    <dd>Updated: Jan 16, 2014 - Published: Jan 6, 2014</dd>
+
+    <dt>_[James Potter and Snape Fistfight in Heaven](https://www.fanfiction.net/s/10172016)_</dt>
+    <dd>Author: [Fatcat91](https://www.fanfiction.net/u/2083920/Fatcat91).</dd>
+    <dd>Published: Mar 8, 2014</dd>
+
+    <dt>_[The Next Great Adventure - Snape](https://www.fanfiction.net/s/10980367)_</dt>
+    <dd>Author: [CrazyPedantic](https://www.fanfiction.net/u/6031171/CrazyPedantic).</dd>
+    <dd>Published: Jan 18, 2015</dd>
+
+    <dt>_[Snape Meets Lily In The Afterlife](https://www.fanfiction.net/s/4186043)_</dt>
+    <dd>Author: [NANLIT](https://www.fanfiction.net/u/1470373/NANLIT).</dd>
+    <dd>Published: Apr 9, 2008</dd>
+
+    <dt>_[What Happened After](https://www.fanfiction.net/s/12361318)_</dt>
+    <dd>Author: [Musical cake](https://www.fanfiction.net/u/4101413/Musical-cake).</dd>
+    <dd>Published: Feb 11, 2017</dd>
+
+    <dt>_[Snape Hits The Afterworld!](https://www.fanfiction.net/s/3710406)_</dt>
+    <dd>Author: [Renwald The Beast](https://www.fanfiction.net/u/1297212/Renwald-The-Beast).</dd>
+    <dd>Updated: Oct 28, 2008 - Published: Aug 8, 2007</dd>
+
+    <dt>_[Disillusionment](https://archiveofourown.org/works/14498490)_</dt>
+    <dd>Author: [melian225](https://archiveofourown.org/users/melian225/pseuds/melian225).</dd>
+    <dd>Published: 2018-05-01.</dd>
+
+</dl>

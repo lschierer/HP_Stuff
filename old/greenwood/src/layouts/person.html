@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <script type="module" src="../components/side-nav.ts"></script>
+    <script type="module" src="../lib/Spectrum/SplitView.ts"></script>
+    <script
+      type="module"
+      src="../components/grampsParser/individual.ts"
+    ></script>
+  </head>
+
+  <body>
+    <span>Person Layout</span>
+    <sp-split-view resizable primary-size="20%">
+      <div class="nav">
+        <side-nav route="${globalThis.page.route}"></side-nav>
+      </div>
+      <div>
+        <main slot="right">
+          <gramps-individual
+            personid="${globalThis.page.data.hero}"
+          ></gramps-individual>
+          <content-outlet></content-outlet>
+        </main>
+      </div>
+    </sp-split-view>
+  </body>
+</html>

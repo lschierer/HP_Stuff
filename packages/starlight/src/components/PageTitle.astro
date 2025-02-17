@@ -1,0 +1,64 @@
+---
+import type { Props } from "@astrojs/starlight/props";
+import { type ComponentProps } from "astro/types";
+import Default from "@astrojs/starlight/components/PageTitle.astro";
+
+import GrampsIndividual from "./grampsParser/Individual.astro";
+import GrampsFamily from "./grampsParser/FamilyListing.astro";
+
+type GrampsIndividualProps = ComponentProps<typeof GrampsIndividual>;
+
+const DEBUG = false;
+
+const { grampsID, families, pageType, collection } = Astro.props.entry.data;
+
+const personBioProps = {
+  personId: grampsID ? grampsID : "",
+};
+
+let displayGrampsPersonBio = false;
+let displayGrampsFamilyTree = false;
+if (collection != undefined) {
+  if (!collection.toLowerCase().localeCompare("harrypedia")) {
+    if (pageType != undefined) {
+      if (!pageType.toLowerCase().localeCompare("person")) {
+        displayGrampsPersonBio = true;
+
+        if (DEBUG) {
+          console.log(
+            `detected that ${Astro.props.entry.slug} is a person page`
+          );
+        }
+      }
+      if (!pageType.toLowerCase().localeCompare("family")) {
+        displayGrampsFamilyTree = true;
+        console.log(`detected that ${Astro.props.entry.slug} is a family page`);
+      }
+    }
+  }
+}
+---
+
+<Default {...Astro.props}>
+  <slot />
+</Default>
+{
+  !(displayGrampsPersonBio || displayGrampsFamilyTree) ? (
+    ""
+  ) : (
+    <div>
+      {displayGrampsPersonBio && (
+        <>
+          <h3 id="geneological">Biographical Information</h3>
+          <GrampsIndividual {...personBioProps} />
+        </>
+      )}
+      {displayGrampsFamilyTree && families && (
+        <>
+          <h3 id="listing">Known Members:</h3>
+          <GrampsFamily familyName={families} />
+        </>
+      )}
+    </div>
+  )
+}
