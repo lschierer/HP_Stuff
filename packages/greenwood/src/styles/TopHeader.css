@@ -10,6 +10,7 @@
 site-title {
   grid-column: 1/3;
   grid-row: 1/2;
+  margin: 0 1rem;
 }
 
 .header div.nav {
@@ -28,6 +29,8 @@ site-title {
 .right-group {
   grid-column: 6/8;
   grid-row: 1/2;
+  justify-content: right;
+  margin: 0 1rem;
 }
 
 .right-group,
@@ -42,4 +45,9 @@ site-title {
   content: "";
   height: 2rem;
   border-inline-end: 1px solid var(--sl-color-gray-5);
+}
+
+theme-select select#ThemeSelector {
+  width: 15rem;
+  max-width: fit-content;
 }
