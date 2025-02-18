@@ -23,13 +23,16 @@
     <script type="module" src="/components/GlobalFooter.ts"></script>
   </head>
   <body>
-    <top-header class="topHeader" route="${globalThis.page.route}"></top-header>
-    <theme-component></theme-component>
-    <main>
-      <sp-theme>
+    <sp-theme class="spectrum-Typography">
+      <top-header
+        class="topHeader"
+        route="${globalThis.page.route}"
+      ></top-header>
+      <theme-component></theme-component>
+      <main>
         <page-outlet></page-outlet>
-      </sp-theme>
-    </main>
+      </main>
+    </sp-theme>
     <footer>
       <global-footer></global-footer>
     </footer>

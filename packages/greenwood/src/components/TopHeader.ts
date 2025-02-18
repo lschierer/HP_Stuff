@@ -3,6 +3,7 @@ const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
+import "./ThemeSelector.ts";
 
 import { TopLevelSections } from "../lib/topLevelSections.ts";
 import "./SiteTitle.ts";
@@ -29,11 +30,11 @@ export default class TopHeader extends HTMLElement {
             })
             .join(" ")}
         </div>
-        <div class="sl-hidden md:sl-flex right-group">
-          <div class="sl-flex social-icons">
+        <div class=" right-group">
+          <div class=" social-icons">
             <SocialIcons {...Astro.props} ></SocialIcons>
           </div>
-          <ThemeSelect {...Astro.props} ></ThemeSelect>
+          <theme-select></theme-select>
         </div>
       </div>
     `;

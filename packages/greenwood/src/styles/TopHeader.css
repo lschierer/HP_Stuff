@@ -20,18 +20,24 @@ site-title {
   justify-content: space-evenly;
   gap: 1rem;
 }
+
 .navItem a {
   color: var(--sl-color-accent-low);
 }
+
 .right-group {
   grid-column: 6/8;
   grid-row: 1/2;
 }
+
 .right-group,
 .social-icons {
+  display: flex;
+  flex-direction: row;
   gap: 1rem;
   align-items: center;
 }
+
 .social-icons::after {
   content: "";
   height: 2rem;

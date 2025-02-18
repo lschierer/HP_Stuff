@@ -5,6 +5,8 @@
 @import "@spectrum-css/link";
 @import "@spectrum-css/actionbutton";
 @import "@spectrum-css/button";
+@import "@spectrum-css/picker";
+@import "@spectrum-css/menu";
 
 /*  Default Colors */
 :root,
