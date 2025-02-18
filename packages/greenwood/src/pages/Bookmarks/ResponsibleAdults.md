@@ -200,7 +200,7 @@ because they showcase some aspect of adults being … adults.
     <dd>Author: [Ravengrad](https://www.fanfiction.net/u/4096861/Ravengrad)</dd>
     <dd>Published: 2020-03-16</dd>
     <dd>Comments: I dislike the way the choice of title and some of the handling of
-        the first scenes legitimizes [Harry]'s choice in this, but it is for the
+        the first scenes legitimises [Harry]'s choice in this, but it is for the
         time after he leaves non-magical care that I am noting this story.  The
         idea that a few adults merely needed a slight push to rock them off of
         dead centre is an interesting one.  I think the author did reasonably but
@@ -228,7 +228,7 @@ because they showcase some aspect of adults being … adults.
         * In this story, soul magic is inherently dangerous, society knows
           this, but did not know [Riddle] was using such magic until too late.
         * It is strongly implied that the Death Eaters made magically binding
-          oaths to [Riddle] that oblige their obediance.  Many of their children
+          oaths to [Riddle] that oblige their obedience.  Many of their children
           are aware their family members regret these oaths.
         * Society has responded by adding a class on Magical Theory to
           [Hogwarts].  This puts a very different slant on the [Slytherin] students, which the author has used to different degrees in different particular students.
@@ -245,6 +245,13 @@ because they showcase some aspect of adults being … adults.
         validates my view by showing what could have been if she had acted
         the incredible mother Mrs. Rowling would have her be.
     </dd>
+    <dt>_[The Aftermath of the Boggart Lesson](https://archiveofourown.org/works/24123196)_</dt>
+    <dd>Author: [DemonBanisher](https://archiveofourown.org/users/DemonBanisher/pseuds/DemonBanisher)</dd>
+    <dd> Published: 2020-05-11 </dd>
+    <dd>
+      Comments: Just as I am critical of [Molly], I am highly critical of [Lupin].  This one-shot is one
+      of several places he might have deviated from his passivity and blind obedience and redeemed himself.
+    </dd>
     <dt>_[Harry Potter gets smart and takes control - The Goblet]_</dt>
     <dd>
         Author: [YoullNeverCatchMeAliveSaidHe]
@@ -253,7 +260,7 @@ because they showcase some aspect of adults being … adults.
         Published: 2019-06-10. Updated: 2021-12-20. **Not Complete**
     </dd>
     <dd>
-        Comments: I dislike dealing with imcomplete works, authors too frequently abandon and/or remove them.  I am doing so because this one, as I re-read it, is so incredibly typical of a pattern that irks me, so much so that I am unsure why I subscribed to the story.  I see much promise in it, but the flaws are quite disasterous.  I ended up writing quite the rant about it [here/harrypedia/reactions/fanfiction/the_egoist_society/).
+        Comments: I dislike dealing with incomplete works, authors too frequently abandon and/or remove them.  I am doing so because this one, as I re-read it, is so incredibly typical of a pattern that irks me, so much so that I am unsure why I subscribed to the story.  I see much promise in it, but the flaws are quite disastrous.  I ended up writing quite the rant about it [here][egoist].
         Beyond those, like many books that want a redeemed [Snape], it ends up bashing [James]. All and all, I am persisting in the re-read trying to find out why I have not unsubscribed in the past. While it is great to see [Bill] step up, and there are indications a few other characters will as well, the flaws are getting really hard to swallow.
     </dd>
     <dt>_[How?](https://archiveofourown.org/works/44041816/)_</dt>
@@ -264,7 +271,7 @@ because they showcase some aspect of adults being … adults.
       Published: 2023-01-03. Completed: 2023-02-09
     </dd>
     <dd>
-      Comments: This is another that assumes that [Amelia] is a competent adult.  I admit its a tempting departure point since [Riddle] *does* in fact kill her off fairly early after his return.  This work features a redeamable [Snape], which isn't my favourite.  There is a semi-reasonable attempt to make it plausible.  It is ... semi-reasonable. It features fairly reasonable [Ron] bashing, and almost but not quite over the top [Molly] and [Dumbledore] bashing.  Of particular note is that the premise for [Dumbledore]'s actions is more thought out than most bashing works.
+      Comments: This is another that assumes that [Amelia] is a competent adult.  I admit its a tempting departure point since [Riddle] *does* in fact kill her off fairly early after his return.  This work features a redeemable [Snape], which isn't my favourite.  There is a semi-reasonable attempt to make it plausible.  It is ... semi-reasonable. It features fairly reasonable [Ron] bashing, and almost but not quite over the top [Molly] and [Dumbledore] bashing.  Of particular note is that the premise for [Dumbledore]'s actions is more thought out than most bashing works.
     </dd>
     <dt>
       _[Taking a Stand](https://archiveofourown.org/works/30926150)_
@@ -317,6 +324,7 @@ because they showcase some aspect of adults being … adults.
 [Vernon]: /harrypedia/people/dursley/vernon/
 [basilisk]: /harrypedia/animals/basilisk/
 [typical adult]: /harrypedia/people/adults/
+[egoist]: /harrypedia/reactions/fanfiction/the_egoist_society/
 
 [^lbcx]: including but not limited to
     - _[Who Let Her In Here?](https://archiveofourown.org/works/19495357)_
