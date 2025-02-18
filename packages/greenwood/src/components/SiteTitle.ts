@@ -16,11 +16,9 @@ export default class SiteTitle extends HTMLElement {
 
     const template = document.createElement("template");
     template.innerHTML = `
-      <div class="spectrum-Typography">
         <span class="spectrum-Heading spectrum-Heading--sizeXXXL">
           <a href='/' class="site-title ">
             <img
-              class="spectrum-Heading spectrum-Heading--sizeXXXL"
               alt=${this.altText}
               src=${this.logo}
               />
@@ -30,13 +28,12 @@ export default class SiteTitle extends HTMLElement {
             </span>
           </a>
         </span>
-      </div>
     `;
     this.shadowRoot?.appendChild(template.content.cloneNode(true));
     this.shadowRoot?.adoptedStyleSheets.push(GlobalCSS);
     if (DEBUG) {
       console.log(
-        `styles currently ${(GlobalCSS as CSSStyleSheet).rules.length}`
+        `styles currently ${(GlobalCSS as CSSStyleSheet).cssRules.length}`
       );
     }
     this.shadowRoot?.adoptedStyleSheets.push(SiteTitleCSS);
