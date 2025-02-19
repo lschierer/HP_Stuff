@@ -1,8 +1,9 @@
 ---
 title: Harry Potter - Nephilim | Index of Backstories
 author: Luke Schierer
+imports:
+  - /components/DirectoryIndex.ts type="module"
 ---
 
-import Index from "@components/index.astro";
 
-<Index folderFilter="FanFiction/Harry_Potter_-_Nephilim/backstory"/>
+<directory-index directory="/FanFiction/Harry_Potter_-_Nephilim/backstory/"></directory-index>

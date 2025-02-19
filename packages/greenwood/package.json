@@ -27,6 +27,8 @@
     "@spectrum-css/splitview": "^7.1.0",
     "@spectrum-css/tokens": "^16.0.1",
     "@spectrum-css/typography": "^8.1.0",
+    "@spectrum-web-components/card": "^1.1.2",
+    "@spectrum-web-components/popover": "^1.1.2",
     "@spectrum-web-components/theme": "^1.1.2",
     "iconify-icon": "^2.3.0",
     "lit": "^3.2.1",

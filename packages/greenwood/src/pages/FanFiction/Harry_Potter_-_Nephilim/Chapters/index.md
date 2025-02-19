@@ -3,8 +3,9 @@ title: Harry Potter - Nephilim | Chapter Index
 author: Luke Schierer
 sidebar:
   order: 1
+imports:
+  - /components/DirectoryIndex.ts type="module"
 ---
 
-import Index from "@components/index.astro";
 
-<Index folderFilter="FanFiction/Harry_Potter_-_Nephilim/Chapters"/>
+<directory-index directory="/FanFiction/Harry_Potter_-_Nephilim/Chapters/"></directory-index>

@@ -1,6 +1,8 @@
 ---
 title: Bookmarks
 author: Luke Schierer
+imports:
+  - /components/DirectoryIndex.ts type="module"
 ---
 
 <p>
@@ -9,6 +11,4 @@ author: Luke Schierer
 </p>
 <hr />
 
-import Index from "../../../components/index.astro";
-
-<Index />
+<directory-index directory="/Bookmarks/" recurse></directory-index>

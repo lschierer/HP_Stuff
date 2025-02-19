@@ -1,6 +1,8 @@
 ---
 title: "Fan Fiction"
 author: Luke Schierer
+imports:
+  - /components/DirectoryIndex.ts type="module"
 ---
 
 # My Harry Potter Fan Fiction
@@ -12,6 +14,4 @@ more I realize that I lack the attention span and persistence to follow through
 on these to completion, but it occassionally amuses me to work on one or more
 of them.
 
-import Index from "@components/index.astro";
-
-<Index folderFilter="FanFiction" />
+<directory-index directory="/FanFiction/"></directory-index>
