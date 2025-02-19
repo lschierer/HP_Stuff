@@ -1,7 +1,8 @@
 const fileDebug: Record<string, boolean> = {
-  "/lib/debug.ts": true,
-  "/components/theme.ts": true,
-  "/components/SiteTitle.ts": true,
+  "/lib/debug.ts": false,
+  "/components/theme.ts": false,
+  "/components/SiteTitle.ts": false,
+  "/components/ThemeSelector.ts": false,
 };
 
 const debugFunction = (myName: string): boolean => {
