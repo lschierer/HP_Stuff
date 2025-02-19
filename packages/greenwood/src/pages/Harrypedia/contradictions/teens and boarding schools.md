@@ -40,7 +40,7 @@ They do make for interesting speculation though.
 [Cho]: /Harrypedia/people/chang/cho/
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly/
 [Gryffindor]: /Harrypedia/hogwarts/gryffindor/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
 [Hogwarts]: /Harrypedia/hogwarts/
 [Lockhart]: /Harrypedia/people/lockhart/gilderoy/

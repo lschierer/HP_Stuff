@@ -22,7 +22,7 @@ author: Luke Schierer
 [Dursley]: /Harrypedia/people/dursley/vernon//
 [Dudley]: /Harrypedia/people/dursley/dudley//
 [Dursleys]: /Harrypedia/people/dursley//
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [obscurials]: /Harrypedia/beings/obscurus//
 
 [^240424-3]: This will be confirmed in book seven when we seen an excerpt of a letter describing that birthday.

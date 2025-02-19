@@ -86,7 +86,7 @@ author: Luke Schierer
 [Unspeakables]: /Harrypedia/unspeakables//
 [Ron]: /Harrypedia/people/weasley/ronald_bilius//
 [Hermione]: /Harrypedia/people/granger/hermione_jean//
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [canon]: /Harrypedia//
 [canonical]: /Harrypedia//
 [Sirius]: /Harrypedia/people/black/sirius_iii//

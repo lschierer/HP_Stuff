@@ -197,7 +197,7 @@ in the cupboard. Since both are speculation, we do not know which.
 [growth]: /Harrypedia/misc/growth/
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
 [Lily]: /Harrypedia/people/evans/lily_j/
-[James]: /Harrypedia/people/potter/james/
+[James]: /Harrypedia/people/Potter/James/
 [Ron]: /Harrypedia/people/weasley/ronald_bilius/
 [Fred]: /Harrypedia/people/weasley/fred/
 [George]: /Harrypedia/people/weasley/george/

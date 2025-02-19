@@ -198,7 +198,7 @@ seem to largely stem from a fairly black and white view of the world and
 [Malfoy]: /Harrypedia/people/malfoy/draco_lucius/
 [MM1]: /Harrypedia/people/mcgonagall/minerva/
 [FF1]: /Harrypedia/people/flitwick/filus/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly/
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
 [Harry Potter and the Goblet of Fire]: https://www.librarything.com/work/113

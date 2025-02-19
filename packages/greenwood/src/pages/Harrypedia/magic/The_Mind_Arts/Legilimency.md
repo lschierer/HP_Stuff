@@ -71,7 +71,7 @@ are not made more aware of it.[^221216-1]
 [pensieve]: /Harrypedia/magic/time/pensieve/
 [dark arts]: /Harrypedia/magic/dark/
 [Snape]: /Harrypedia/people/snape/severus/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Queenie Goldstein]: /Harrypedia/people/goldstein/queenie/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 

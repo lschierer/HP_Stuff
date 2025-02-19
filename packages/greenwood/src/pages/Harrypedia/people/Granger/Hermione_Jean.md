@@ -343,7 +343,7 @@ happened in third year. If it did not happen then, I do not think they would
 have time (in the books we see) for them to recover from the events of sixth
 year, though it is anyone's guess which specific event would be one too many.
 
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Ron]: /Harrypedia/people/weasley/ronald_bilius/
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly/
 [Black]: /Harrypedia/people/black/sirius_iii/

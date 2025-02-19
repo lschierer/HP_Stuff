@@ -97,7 +97,7 @@ magical world, or both.
 [Draco]: /Harrypedia/people/malfoy/draco_lucius//
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly//
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Professor Sprout]: /Harrypedia/people/sprout/pomona//
 [Baron Samedi]: https://en.wikipedia.org/wiki/Baron_Samedi
 [Horcruxes]: /Harrypedia/magic/dark/horcruxes/

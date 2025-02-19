@@ -212,7 +212,7 @@ For each choir we list both the description of that choir and the traits we obse
     © 1999-2021 by Knights of Columbus Supreme Council. Pages 15-16.
 
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 
 ## Mapping to how the Nephilim themselves understand Magic
 

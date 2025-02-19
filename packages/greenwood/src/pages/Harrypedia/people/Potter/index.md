@@ -25,7 +25,7 @@ sidebar:
   * She has referenced Potters not mentioned in it as part of other articles. I believe she was attempting to represent only direct ancestors of [Harry] and his family.  Aunts and uncles may have existed at any level of the tree, but are not shown.
   * She uses two different colored lines, and we know that [Iolanthe] was the *granddauter* of [Ignotus], not his daugter as a litteral reading of the graphic would indicate.  Thus I believe that the places that we see the lighter coloured line, as we do between the two of them, indicates that more than one generation is passing between the names shown.
 
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Ignotus]: /Harrypedia/people/peverell/ignotus/
 [Iolanthe]: /Harrypedia/people/peverell/iolanthe/
 

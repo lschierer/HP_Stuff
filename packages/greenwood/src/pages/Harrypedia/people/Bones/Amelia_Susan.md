@@ -32,7 +32,7 @@ respect with which she might be held.
 
 [Fudge]: /Harrypedia/people/fudge/cornelius_oswald/
 [Tonks]: /Harrypedia/people/tonks/nymphadora/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Hagrid]: /Harrypedia/people/hagrid/rubeus/
 [Sirius]: /Harrypedia/people/black/sirius_iii/
 

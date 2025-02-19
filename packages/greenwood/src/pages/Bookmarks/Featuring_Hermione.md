@@ -56,7 +56,7 @@ incredibly well done. Almost even more rare is a story in which she is the centr
 
 [Fred]: /Harrypedia/people/weasley/fred/
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [McGonagall]: /Harrypedia/people/mcgonagall/minerva/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 [Molly]: /Harrypedia/people/prewett/molly/

@@ -39,7 +39,7 @@ leap to paint him as the Dark Lord of the prophecy, who has marked [Harry],
 not physically, but metaphorically, as the one who could be his equal.[^210521-8]
 
 [Molly]: ../prewett/molly/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Dumbledore]: ../dumbledore/albus_percival_wulfric_brian/
 [Riddle]: ../riddle/tom_marvolo/
 [Notes]: /Harrypedia//

@@ -162,7 +162,7 @@ Instead I suspect that some percentage of the magical culture actively _desires_
 
 [Ministry]: ../government/
 [MACUSA]: ../../macusa
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 
 [^210323-5]:
     Mrs. J. K. Rowling. _Harry Potter and the Half-Blood Prince_

@@ -40,7 +40,7 @@ the six years that [Harry] attends class.
 
 [Hagrid]: /Harrypedia/people/hagrid/rubeus//
 [Hogwarts]: /Harrypedia/hogwarts/
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Molly]: /Harrypedia/people/prewett/molly//
 [Neville]: /Harrypedia/people/longbottom/neville//
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly//

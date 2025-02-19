@@ -100,7 +100,7 @@ We seem to have:
 [hpl1]: https://www.hp-lexicon.org/thing/gamps-law-of-elemental-transfiguration/
 [AO1]: https://web.archive.org/
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 [Potions]: /Harrypedia/magic/potions/
 [Transfiguration]: /Harrypedia/magic/transfiguration/

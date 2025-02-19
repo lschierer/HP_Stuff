@@ -239,7 +239,7 @@ fiction rarely does it justice.
     </dd>
 
     <dt>_[Switching Places](https://www.fanfiction.net/s/13142772)_</dt>
-    <dd>Author: [james Thomas](https://www.fanfiction.net/u/3617679/james-Thomas)</dd>
+    <dd>Author: [james Thomas](https://www.fanfiction.net/u/3617679/James/-Thomas)</dd>
     <dd>Published: 2018-12-09</dd>
     <dd>
         Comments: As I mentioned on the page of stories [featuring Hermione],
@@ -316,10 +316,10 @@ fiction rarely does it justice.
 [X-Men]: https://en.wikipedia.com/wiki/X-Men
 [Mutant Storm]: https://www.fanfiction.net/s/7404056
 [Backward With Purpose Part I: Always and Always]: https://www.fanfiction.net/s/4101650
-[James]: /Harrypedia/people/potter/james//
+[James]: /Harrypedia/people/Potter/James//
 [Lily]: /Harrypedia/people/evans/lily_j//
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo//
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Percy]: /Harrypedia/people/weasley/percy_ignatius//
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly//
 [Molly]: /Harrypedia/people/prewett/molly//

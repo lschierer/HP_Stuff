@@ -23,7 +23,7 @@ This corresponds to the way the Parselmouths in question would have formed their
 While I recognise this is a massive amount of speculation, it fits the facts, and preserves the line between [sentience and sapience].
 
 [basilisk]: /Harrypedia/animals/basilisk/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
 [sentience and sapience]: /Harrypedia/animals/
 [Nagini]: /Harrypedia/people/nagini/

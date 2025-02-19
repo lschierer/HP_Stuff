@@ -53,7 +53,7 @@ who is involved. Never mind [McGonagall] is Deputy Head, and therefore
 more logically the advisor at that point, we need a more Charles Dickens
 feel about it. Which is probably precisely the point.
 
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Luna]: /Harrypedia/people/lovegood/luna//
 [Stalky & Co.]: https://www.gutenberg.org/ebooks/3006
 

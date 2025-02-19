@@ -44,7 +44,7 @@ actually do her job as a law enforcement official, and thus belong in the
 
 [RaspberryDreams1]: https://archiveofourown.org/users/RaspberryDreams1
 [Magical Blocks and Bonds]: https://archiveofourown.org/works/52672777/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Susan]: /Harrypedia/people/bones/susan/
 [Ron]: /Harrypedia/people/weasley/ronald_bilius/
 [Responsible Adult]: /Bookmarks/responsibleadults/

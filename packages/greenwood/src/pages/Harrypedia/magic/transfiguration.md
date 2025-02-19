@@ -45,7 +45,7 @@ deprivation entirely uncanonical, despite its logical soundness?
 [Egyptians]: /Harrypedia/egypt/
 [Bill]: /Harrypedia/people/weasley/william_arthur/
 [magic]: /Harrypedia/magic/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Flitwick]: /Harrypedia/people/flitwick/filus/
 [Snape]: /Harrypedia/people/snape/severus/
 [Slughorn]: /Harrypedia/people/slughorn/horace_eugene_flaccus/

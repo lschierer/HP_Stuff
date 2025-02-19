@@ -32,9 +32,9 @@ god-child is expected and natural.
 [wEE1]: http://en.wikipedia.org/wiki/Fee_tail
 [Black]: /Harrypedia/people/black//
 [Sirius]: /Harrypedia/people/black/sirius_iii//
-[James]: /Harrypedia/people/potter/james//
+[James]: /Harrypedia/people/Potter/James//
 [Walburga]: /Harrypedia/people/black/walburga/
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Dorea]: /Harrypedia/people/black/dorea/
 [Harry Potter Wiki]: https://harrypotter.fandom.com/wiki
 

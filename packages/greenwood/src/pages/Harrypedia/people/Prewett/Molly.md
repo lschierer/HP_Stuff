@@ -92,7 +92,7 @@ On the other hand, it is easy to be over sensitive.
 [Weasleys]: /Harrypedia/people/weasley/
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly/
 [Luna]: /Harrypedia/people/lovegood/luna/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Xeno]: /Harrypedia/people/lovegood/xenophilius/
 [Red Hen Publications]: https://www.redhen-publications.com/
 [RHPMolly]: https://www.redhen-publications.com/molly.html

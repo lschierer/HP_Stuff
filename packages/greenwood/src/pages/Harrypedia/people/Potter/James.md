@@ -188,7 +188,7 @@ in a worse light, portray [Snape] as a more innocent victim, but leave the
 core events sufficiently in place so that when [Harry] describes what he
 sees, it rings true to those who witnessed it. The fact that the [pensieve] clearly shows the tampering in [Slughorn]'s memory does not mean it is a foolproof means of doing so.[^240422-1]
 
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Slughorn]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
 [pensieve]: /Harrypedia/magic/time/pensieve/
 
@@ -332,7 +332,7 @@ supposedly irresponsible boy kept the Cloak out of larcenous[^210318-7] enemy
 hands, despite the fact that he supposedly has no cunning or intelligence.
 
 [dark magic]: /Harrypedia/magic/dark/
-[Fleamont]: /Harrypedia/people/potter/fleamont/
+[Fleamont]: /Harrypedia/people/Potter/fleamont/
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
 
 ## Pure Speculation

@@ -76,7 +76,7 @@ purposefully going overboard to head off that type of behaviour. Better that
 [Harry] suffer rejection by his peers than mirror his father's early years in
 school.
 
-[James]: /Harrypedia/people/potter/james/
+[James]: /Harrypedia/people/Potter/James/
 
 The exact situation in Worldmaker's _[Furious Angels][WMFA1]_ is different, but
 the description of McGonagall is spot on:
@@ -176,10 +176,10 @@ as someone who would resist change simply because it is change, and would resist
 incorporating non-magical classes no matter how needed or useful they might be.
 
 [Snape]: /Harrypedia/people/snape/severus/
-[James]: /Harrypedia/people/potter/james/
+[James]: /Harrypedia/people/Potter/James/
 [Neville]: /Harrypedia/people/longbottom/neville/
 [Draco]: /Harrypedia/people/malfoy/draco_lucius/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
 [RBW1]: /Harrypedia/people/weasley/ronald_bilius//
 [AD1]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/

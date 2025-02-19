@@ -17,9 +17,9 @@ That being said, I will admit that the books *are* more than a bit absurd themse
 
 [Lily]: /Harrypedia/people/evans/lily_j/
 [Snape]: /Harrypedia/people/snape/severus/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Snape's Worst Memory]: /Harrypedia/people/snape/severus/swm/
-[James]: /Harrypedia/people/potter/james/
+[James]: /Harrypedia/people/Potter/James/
 [Sirius]: /Harrypedia/people/black/sirius_iii/
 
 [^250204-1]: Works including, but not limited to,

@@ -20,7 +20,7 @@ and champion it. This gives us the epilogue, with a child of [Harry][]'s named
 Albus Severus, the two characters that Mrs. Rowling most wants the reader to
 forgive.
 
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 
 The books are, however, not _really_ children's books at all. I disagree with
 classifying the latter books as such, and am restricting my own children's
@@ -77,7 +77,7 @@ founded, and believed that she would find membership in the Death Eaters
 _impressive_.[^221206-1]
 
 [swm]: /Harrypedia/people/snape/severus/swm/
-[James]: /Harrypedia/people/potter/james/
+[James]: /Harrypedia/people/Potter/James/
 
 [^221206-1]:
     Ms. Melissa Anelli and Mrs. J. K. Rowling.

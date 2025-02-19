@@ -118,7 +118,7 @@ such as [McGonagall][] and [Sprout][] might well pick up on that distrust.
 
 [Bill]: /Harrypedia/people/weasley/william_arthur/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
 [Hogwarts]: /Harrypedia/hogwarts/
 [Kingsley]: /Harrypedia/people/shacklebolt/kingsley/

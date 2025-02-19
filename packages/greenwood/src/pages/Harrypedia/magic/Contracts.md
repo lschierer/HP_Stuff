@@ -44,7 +44,7 @@ In a world where magical contracts can in fact be binding, I can see how laws _m
 
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly//
 [Hermione]: /Harrypedia/people/granger/hermione_jean//
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Umbridge]: /Harrypedia/people/umbridge/dolores_jane//
 [Malfoy]: /Harrypedia/people/malfoy//
 [Molly]: /Harrypedia/people/prewett/molly//

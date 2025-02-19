@@ -37,7 +37,7 @@ The obvious exception to this is [Walburga], who from all accounts had no proble
 [MACUSA]: /Harrypedia/macusa/
 [Ministry of Magic]: /Harrypedia/culture/government/
 [Dursley]: /Harrypedia/people/dursley/
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Vernon]: /Harrypedia/people/dursley/vernon//
 [Petunia]: /Harrypedia/people/evans/petunia//
 [unreliable narrator]: https://wikipedia.org/wiki/Unreliable_narrator

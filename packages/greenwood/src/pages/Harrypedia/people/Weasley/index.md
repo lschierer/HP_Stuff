@@ -73,7 +73,7 @@ birthday is correct, that does not give much space for [Charlie]'s to move.
 [Hogwarts]: /Harrypedia/hogwarts/
 [Quidditch]: /Harrypedia/quidditch/
 [Gryffindor]: /Harrypedia/hogwarts/gryffindor/
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly/
 [Ron]: /Harrypedia/people/weasley/ronald_bilius
 [George]: /Harrypedia/people/weasley/george/

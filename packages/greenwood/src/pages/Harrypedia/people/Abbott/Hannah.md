@@ -27,7 +27,7 @@ she values loyalty to her own house (we have no proof she knows about, uses,
 or approves of the badges' second message) against her.
 
 [blood status]: ../../../culture/class_and_blood
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Salazar]: ../../slytherin/salazar
 [Ernie]: ../../macmillan
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo//

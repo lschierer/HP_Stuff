@@ -12,7 +12,7 @@ the end of the 1975-1976 school year when [Lily], [James] and their friends
 exact chronology, what follows is my best reconstruction.
 
 [Sirius]: /Harrypedia/people/black/sirius_iii/
-[James]: /Harrypedia/people/potter/james/
+[James]: /Harrypedia/people/Potter/James/
 [Lily]: /Harrypedia/people/evans/lily_j/
 [Snape]: /Harrypedia/people/snape/severus/
 [Severus]: /Harrypedia/people/snape/severus/
@@ -419,5 +419,5 @@ own_, **before she begins their relationship**. Only then does she allow herself
 to act on that attraction by agreeing to go out with him.
 
 [Occlumens]: /Harrypedia/magic/the_mind_arts/occlumency/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Hogwarts]: /Harrypedia/hogwarts/

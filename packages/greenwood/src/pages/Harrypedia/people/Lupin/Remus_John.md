@@ -58,7 +58,7 @@ whereas [James] and [Sirius] (**_not_** Lupin or [Lily]) are the ones that
 exceptionally bright.[^211108-7] I do not doubt the man did well in school, but
 he worked for it, whereas his more intelligent friends found the material easy.
 
-[James]: /Harrypedia/people/potter/james/
+[James]: /Harrypedia/people/Potter/James/
 [Lily]: /Harrypedia/people/evans/lily_j/
 [Sirius]: /Harrypedia/people/black/sirius_iii/
 

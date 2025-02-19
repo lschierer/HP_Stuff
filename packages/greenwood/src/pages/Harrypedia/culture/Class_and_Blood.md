@@ -56,7 +56,7 @@ the [Potters] are mostly pure-bloods. The same is probably true of the
 [Weasleys], [Longbottoms], [Abbotts], and any others who made up the
 minority who protested their inclusion on the Sacred Twenty-Eight list.
 
-[Potters]: /Harrypedia/people/potter//
+[Potters]: /Harrypedia/people/Potter//
 [Weasleys]: /Harrypedia/people/weasley/
 [Weasley]: /Harrypedia/people/weasley/
 [Longbottoms]: /Harrypedia/people/longbottom/
@@ -162,7 +162,7 @@ Slytherin would easily make use of. He or she would not be to "uppity" as long
 as you funded their research after all, and could be easily cheated out of any
 profitable patent-able discoveries…
 
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
 [wwwbrpb]: https://www.wizardingworld.com/writing-by-jk-rowling/pure-blood
 

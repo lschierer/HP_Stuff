@@ -52,7 +52,7 @@ sidebar:
     _after_ [Remus][RL1] is bitten.
 
 [RL1]: /Harrypedia/people/lupin/remus_john/
-[James]: /Harrypedia/people/potter/james/
+[James]: /Harrypedia/people/Potter/James/
 [Lily]: /Harrypedia/people/evans/lily_j/
 [TMR1]: /Harrypedia/people/riddle/tom_marvolo/
 [H1]: /Harrypedia/history
@@ -165,7 +165,7 @@ Dumbledore are. In no particular order:
 - The above and [much more][ADtoh] concerning [Harry].
 - And even more about [how he dealt with Riddle][ADdwr].
 
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [DMH1]: /Harrypedia/magic/dark/horcruxes/
 
 [^220916-1]:

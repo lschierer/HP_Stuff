@@ -417,7 +417,7 @@ this theory to work, [Riddle][] ought to have been at [eleven][], or
 [thirteen]: https://www.biblestudy.org/bibleref/meaning-of-numbers-in-bible/13.html
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
 [stable number]: /Harrypedia/magic/arithmancy/realworld/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 

@@ -74,7 +74,7 @@ nails it - she _does_ know him, and so she _does_ accept _**and**_ _understand_
 his thought process and thus decision. She is no more happy about it than he
 is, but they two of them are in sync with each other at this moment in time.
 
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 
 [^211101-3]:
     Mrs. J. K. Rowling.

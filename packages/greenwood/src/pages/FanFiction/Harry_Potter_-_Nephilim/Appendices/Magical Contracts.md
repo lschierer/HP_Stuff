@@ -158,8 +158,8 @@ not to know that something.[^241126-2]
     property historically associated with the [Potter family].
 
 [Lily]: /Harrypedia/people/evans/lily_j/
-[James]: /Harrypedia/people/potter/james/
-[Potter family]: /Harrypedia/people/potter/
+[James]: /Harrypedia/people/Potter/James/
+[Potter family]: /Harrypedia/people/Potter/
 
 Contracts _can_ force you _feel_ things. Your emotions are just chemical
 effects, a contract can make you unnaturally happy or sad, incite or

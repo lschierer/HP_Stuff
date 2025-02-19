@@ -67,7 +67,7 @@ harder because the _curse_ in question is lost and unrecorded by history.[^24021
 [What We Do Today]: https://archiveofourown.org/works/42289347
 [Malfoy]: /Harrypedia/people/malfoy/
 [Crouch]: /Harrypedia/people/crouch/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Kreacher]: /Harrypedia/people/black/kreacher/
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
 [Regulas]: /Harrypedia/people/black/regulas_arcturus/

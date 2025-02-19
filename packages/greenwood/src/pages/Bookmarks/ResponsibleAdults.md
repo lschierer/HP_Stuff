@@ -302,11 +302,11 @@ because they showcase some aspect of adults being … adults.
 [Dark Magic]: /Harrypedia/magic/dark/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 [Dursleys]: /Harrypedia/people/dursley/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
 [Hogwarts]: /Harrypedia/hogwarts/
 [Hufflepuff]: /Harrypedia/hogwarts/hufflepuff/
-[James]: /Harrypedia/people/potter/james/
+[James]: /Harrypedia/people/Potter/James/
 [Lily]: /Harrypedia/people/evans/lily_j/
 [Lupin]: /Harrypedia/people/lupin/remus_john/
 [Malfoy]: /Harrypedia/people/malfoy/draco_lucius/

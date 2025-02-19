@@ -88,11 +88,11 @@ vault without forethought.[^210322-1]
 [Bellatrix]: /Harrypedia/people/black/bellatrix/
 [Blacks]: /Harrypedia/people/black/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Fleamont]: /Harrypedia/people/potter/fleamont/
+[Fleamont]: /Harrypedia/people/Potter/fleamont/
 [Grimmauld Place]: /Harrypedia/grimmauld_place/
 [Gringotts]: /Harrypedia/gringotts/
-[Harry]: /Harrypedia/people/potter/harry_james/
-[James]: /Harrypedia/people/potter/james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
+[James]: /Harrypedia/people/Potter/James/
 [Lestranges]: /Harrypedia/people/lestrange/
 [Linfred]: /Harrypedia/people/linfred/
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/

@@ -64,7 +64,7 @@ students (the [Black] family tree has intermarriages with the [Potter],
 influence would then extend _far further_ than just that quarter. [Riddle]
 would have no need of a revolution.
 
-[Potter]: /Harrypedia/people/potter/
+[Potter]: /Harrypedia/people/Potter/
 [Longbottom]: /Harrypedia/people/longbottom/
 [Crouch]: /Harrypedia/people/crouch/
 [Black]: /Harrypedia/people/black/
@@ -83,7 +83,7 @@ would have no need of a revolution.
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly/
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
 [Slytherin]: /Harrypedia/hogwarts/slytherin/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Ron]: /Harrypedia/people/weasley/ronald_bilius/
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
 [Goyle]: /Harrypedia/people/goyle/gregory/

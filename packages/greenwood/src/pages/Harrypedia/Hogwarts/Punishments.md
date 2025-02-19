@@ -22,7 +22,7 @@ result when I try to look up corporal punishment in British schools tells me
 that [Harry][] probably never experienced any, but quite possibly heard about
 it.[^20200720-10]
 
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Molly]: /Harrypedia/people/prewett/molly//
 [Bill]: /Harrypedia/people/weasley/william_arthur//
 

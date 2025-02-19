@@ -22,7 +22,7 @@ _will_ fall in love with [Ginny] (or whomever as appropriate), but _has not done
 In her interviews, Mrs. Rowling says that she _intends_ that prophecy does not negate free will, that [Harry] and [Riddle] _could_ have ignored it, walked away, and both lived.[^240417-2] For my purposes, I will take this position, and [Dumbledore]'s speech to [Harry], as the correct interpretation. To the extent that divination _does_ involve time, it can only be true because it is a [self-fulfilling prophecy]. I care not what form of divination we are dealing with; if true magic is involved, you are seeing a _possible_ future that becomes _the_ future only because _someone made it so._
 
 [does not act]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/inaction//
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly//
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo//

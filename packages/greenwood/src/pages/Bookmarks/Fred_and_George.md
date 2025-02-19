@@ -27,5 +27,5 @@ These stories that are really about Fred and George, more than they are about Ha
 
 </dL>
 
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly//

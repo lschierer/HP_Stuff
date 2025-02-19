@@ -143,7 +143,7 @@ trial? It is reasonable to accept that [Lupin][] both believed him guilty and
 would have been unable to demand a trial. Why, however, did none of
 [Dumbledore][], [Andromeda][] Black, or his own blood family demand a trial?
 
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Lupin]: /Harrypedia/people/lupin/remus_john/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 [Andromeda]: /Harrypedia/people/black/andromeda/
@@ -247,10 +247,10 @@ of Azkaban][].
 [Bellatrix]: /Harrypedia/people/black/bellatrix/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 [Hagrid]: /Harrypedia/people/hagrid/rubeus/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
 [History]: /Harrypedia/history/
-[James]: /Harrypedia/people/potter/james/
+[James]: /Harrypedia/people/Potter/James/
 [Lily]: /Harrypedia/people/evans/lily_j/
 [Lupin]: /Harrypedia/people/lupin/remus_john/
 [Malfoy]: /Harrypedia/people/malfoy/

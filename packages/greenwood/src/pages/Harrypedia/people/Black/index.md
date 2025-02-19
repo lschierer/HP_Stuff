@@ -56,7 +56,7 @@ the [History][] timeline.
 [Longbottoms]: /Harrypedia/people/longbottom/
 [Grimmauld Place]: /Harrypedia/grimmauld_place/
 [Neville]: /Harrypedia/people/longbottom/neville/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 
 On a side note, while it flies in the face of some of what I've written above,
 Tigerman has an interesting theory in his work [RuneMaster][RMff1]. He suggests

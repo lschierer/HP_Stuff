@@ -23,7 +23,7 @@ pulled from school because her mother is killed in an attack by either
 [Hannah]: ./hannah/
 [Riddle]: ../riddle/tom_marvolo/
 [Class_and_Blood]: ../../culture/class_and_blood/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Slytherin]: ../slytherin/salazar/
 
 [^211004-15]:

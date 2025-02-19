@@ -50,8 +50,8 @@ things it triggered. For all the prophesy does not name [Dumbledore][], it
 shapes his actions much as the one that Macbeth hears shapes his actions.
 
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
-[Harry]: /Harrypedia/people/potter/harry_james/
-[Harry's]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry's]: /Harrypedia/people/Potter/Harry_James/
 [Dumbledore]: ../
 
 In the fan fiction work _[The Sound of Silence][BW95TSS1]_ [Dumbledore][]
@@ -193,10 +193,10 @@ complicated nature of the thorny problem to confuse the listener.
 
 [Wizengamot]: /Harrypedia/culture/government/
 [Black]: /Harrypedia/people/black/
-[Potter]: /Harrypedia/people/potter/
+[Potter]: /Harrypedia/people/Potter/
 [Narcissa Malfoy]: /Harrypedia/people/black/narcissa/
 [Dorea Black]: /Harrypedia/people/black/dorea/
-[James]: /Harrypedia/people/potter/james/
+[James]: /Harrypedia/people/Potter/James/
 [Malfoys]: /Harrypedia/people/malfoy/
 [Dursleys]: /Harrypedia/people/dursley/
 [abusive environment]: /Harrypedia/people/dursley/

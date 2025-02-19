@@ -45,4 +45,4 @@ These stories take that vague suggestion and run with it.
 [Astoria]: /Harrypedia/people/greengrass/astoria//
 [Ron]: /Harrypedia/people/weasley/ronald_bilius//
 [Hermione]: /Harrypedia/people/granger/hermione_jean//
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//

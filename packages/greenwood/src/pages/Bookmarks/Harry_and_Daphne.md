@@ -48,7 +48,7 @@ to watch.
 [WolfgangNH]: https://archiveofourown.org/users/WolfgangNH/
 [A Different Type of Bond]: https://archiveofourown.org/works/38269633
 [Daphne Greengrass and the Preemptive Adulterer]: https://archiveofourown.org/works/36587794
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Daphne]: /Harrypedia/people/greengrass/daphne//
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly//
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//

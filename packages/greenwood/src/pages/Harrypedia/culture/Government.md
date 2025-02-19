@@ -84,18 +84,18 @@ the [Black] and [Potter] families (though this might be considered part of
 my statement that it contradicts the origin stories).
 
 [Mr. Malfoy]: /Harrypedia/people/malfoy/lucius_abraxas//
-[Harry]: /Harrypedia/people/potter/harry_james//
-[Henry]: /Harrypedia/people/potter/henry/
+[Harry]: /Harrypedia/people/Potter/Harry_James//
+[Henry]: /Harrypedia/people/Potter/henry/
 [Sirius]: /Harrypedia/people/black/sirius_iii//
 [Arthur]: /Harrypedia/people/weasley/arthur//
-[Linfred]: /Harrypedia/people/potter//
+[Linfred]: /Harrypedia/people/Potter//
 [Black]: /Harrypedia/people/black//
-[Potter]: /Harrypedia/people/potter//
+[Potter]: /Harrypedia/people/Potter//
 [Peverell]: /Harrypedia/people/peverell//
 [Malfoy]: /Harrypedia/people/malfoy//
 [GSP1]: https://aaran-st-vines.nsns.fanficauthors.net/Great_Scott_Potter_This_is_War
 [GSP2]: https://aaran-st-vines.nsns.fanficauthors.net/Great_Scott_Potter_This_is_War
-[Pottermore]: http://potter/more.com/
+[Pottermore]: http://Potter/more.com/
 [RNN1]: https://www.fanfiction.net/s/7144149
 [RNN2]: https://www.fanfiction.net/s/7144149
 

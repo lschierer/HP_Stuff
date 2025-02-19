@@ -34,5 +34,5 @@ holes. These stories, often through the use of satire and/or farce, expose some 
 
 </dl>
 
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//

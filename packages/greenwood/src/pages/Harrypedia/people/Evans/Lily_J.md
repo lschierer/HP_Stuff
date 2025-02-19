@@ -60,8 +60,8 @@ the females in the series at the expense of the males.[^20210927-2]
 
 [GAFRIW1]: https://www.fanfiction.net/s/6126906
 [GAFRIW2]: https://www.fanfiction.net/s/6126906
-[James]: /Harrypedia/people/potter/james/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[James]: /Harrypedia/people/Potter/James/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [Lupin]: /Harrypedia/people/lupin/remus_john/
 [Snape]: /Harrypedia/people/snape/severus/
 

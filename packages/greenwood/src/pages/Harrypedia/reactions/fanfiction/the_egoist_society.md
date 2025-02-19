@@ -43,7 +43,7 @@ However, the typical pattern is that the author defines this magical society by 
 [International Confederation of Wizards]: /Harrypedia/culture/international_confederation_of_wizards/
 [Hogwarts]: /Harrypedia/hogwarts/
 [Statute of Secrecy]: /Harrypedia/culture/international_statute_of_secrecy/
-[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 
 [^240916-2]: I should cite some examples.
 

@@ -28,5 +28,5 @@ There are more stories dealing about them meeting when [Snape Dies].
 
 [Snape Dies]: ../snapedies
 [Lily]: /Harrypedia/people/evans/lily_j//
-[James]: /Harrypedia/people/potter/james//
+[James]: /Harrypedia/people/Potter/James//
 [Snape]: /Harrypedia/people/snape/severus//

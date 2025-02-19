@@ -79,9 +79,9 @@ that way, but I think it is clear at this point that the author's intent
 for Occlumency is fairly clear. The problem then is not so much Occlumency,
 but rather [Legilimency].
 
-[Harry]: /Harrypedia/people/potter/harry_james/
-[James]: /Harrypedia/people/potter/james/
-[James Potter]: /Harrypedia/people/potter/james/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
+[James]: /Harrypedia/people/Potter/James/
+[James Potter]: /Harrypedia/people/Potter/James/
 [Professor Snape]: /Harrypedia/people/snape/severus/
 [Snape]: /Harrypedia/people/snape/severus/
 [Draco]: /Harrypedia/people/malfoy/draco_lucius/

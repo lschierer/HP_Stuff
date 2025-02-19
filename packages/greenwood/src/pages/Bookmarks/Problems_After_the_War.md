@@ -21,5 +21,5 @@ These stories are notable because you do not always have a happy ending.
 
 </dl>
 
-[Harry]: /Harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/Potter/Harry_James//
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
