@@ -11,6 +11,7 @@
 /*  Default Colors */
 :root,
 ::backdrop {
+  --spectrum-background-base-color: var(--spectrum-gray-200);
   --sl-color-accent-high: var(--spectrum-cyan-1000);
   --sl-color-accent: var(--spectrum-cyan-700);
   --sl-color-accent-low: var(--spectrum-cyan-400);
@@ -54,7 +55,7 @@ body {
   display: flex;
   flex-direction: column;
   color: var(--sl-color-black);
-  background-color: var(--sl-color-bg);
+  background-color: var(--spectrum-background-base-color);
 
   --mod-body-font-color: var(--sl-color-black);
   --mod-heading-font-color: var(--sl-color-accent);
