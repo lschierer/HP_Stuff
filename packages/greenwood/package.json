@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@iconify-json/ion": "^1.2.2",
-    "@iconify/json": "^2.2.307",
+    "@iconify/json": "^2.2.308",
     "@lit/context": "^1.1.4",
     "@spectrum-css/actionbutton": "^7.1.1",
     "@spectrum-css/alertbanner": "^3.1.0",
@@ -53,7 +53,7 @@
     "autoconfig": "1.0.0-rc.1",
     "autoprefixer": "^10.4.20",
     "cssnano": "^7.0.6",
-    "postcss": "^8.5.2",
+    "postcss": "^8.5.3",
     "postcss-cli": "^11.0.0",
     "postcss-extend": "^1.0.5",
     "postcss-import": "^16.1.0",
@@ -73,7 +73,7 @@
     "remark-rehype": "^11.1.1",
     "remark-stringify": "^11.0.0",
     "ts-lit-plugin": "^2.0.2",
-    "tsx": "^4.19.2",
+    "tsx": "^4.19.3",
     "typescript": "^5.7.3",
     "typescript-plugin-css-modules": "^5.1.0",
     "unified": "^11.0.5"
