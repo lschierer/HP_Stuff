@@ -41,8 +41,8 @@ These stories take that vague suggestion and run with it.
 
 </dl>
 
-[Draco]: /harrypedia/people/malfoy/draco_lucius//
-[Astoria]: /harrypedia/people/greengrass/astoria//
-[Ron]: /harrypedia/people/weasley/ronald_bilius//
-[Hermione]: /harrypedia/people/granger/hermione_jean//
-[Harry]: /harrypedia/people/potter/harry_james//
+[Draco]: /Harrypedia/people/malfoy/draco_lucius//
+[Astoria]: /Harrypedia/people/greengrass/astoria//
+[Ron]: /Harrypedia/people/weasley/ronald_bilius//
+[Hermione]: /Harrypedia/people/granger/hermione_jean//
+[Harry]: /Harrypedia/people/potter/harry_james//

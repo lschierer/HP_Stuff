@@ -21,8 +21,8 @@ of wealth, but interacting with the muggle economy will always be, in a sense,
 free money to those with the most ambition and the fewest moral scruples, those
 willing to "use any means to achieve their ends."[^210420-14]
 
-[Malfoy]: /harrypedia/people/malfoy//
-[Malfoys]: /harrypedia/people/malfoy//
+[Malfoy]: /Harrypedia/people/malfoy//
+[Malfoys]: /Harrypedia/people/malfoy//
 
 [^210420-14]:
     Mrs. J. K. Rowling. _Harry Potter and the Sorcerer's Stone_

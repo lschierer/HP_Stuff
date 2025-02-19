@@ -89,18 +89,18 @@ magical world, or both.
   
 </dl>
 
-[Hogwarts]: /harrypedia/hogwarts//
-[Riddle]: /harrypedia/people/riddle/tom_marvolo//
+[Hogwarts]: /Harrypedia/hogwarts//
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo//
 [FanFiction.net]: https://www.fanfiction.net
 [AO3]: https://www.archiveofourown.org
-[Snape]: /harrypedia/people/snape/severus///
-[Draco]: /harrypedia/people/malfoy/draco_lucius//
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian//
-[Ginny]: /harrypedia/people/weasley/ginevra_molly//
-[Harry]: /harrypedia/people/potter/harry_james//
-[Professor Sprout]: /harrypedia/people/sprout/pomona//
+[Snape]: /Harrypedia/people/snape/severus///
+[Draco]: /Harrypedia/people/malfoy/draco_lucius//
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
+[Ginny]: /Harrypedia/people/weasley/ginevra_molly//
+[Harry]: /Harrypedia/people/potter/harry_james//
+[Professor Sprout]: /Harrypedia/people/sprout/pomona//
 [Baron Samedi]: https://en.wikipedia.org/wiki/Baron_Samedi
-[Horcruxes]: /harrypedia/magic/dark/horcruxes/
+[Horcruxes]: /Harrypedia/magic/dark/horcruxes/
 [The Hidden Hero]: https://archiveofourown.org/works/36929347
 [EveBB]: https://archiveofourown.org/users/EveBB/pseuds/EveBB
 [It's My Life]: https://www.fanfiction.net/s/6234089/

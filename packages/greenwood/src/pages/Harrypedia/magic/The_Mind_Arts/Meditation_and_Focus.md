@@ -44,10 +44,10 @@ thus something related, but different. I suspect it would work well against
 being said, he is right that it _would_ have benifits for the boys' control over
 their tempers.
 
-[Snape]: /harrypedia/people/snape/severus/
-[Sirius]: /harrypedia/people/black/sirius_iii/
-[Legilimency]: /harrypedia/magic/the_mind_arts/legilimency/
-[Occlumency]: /harrypedia/magic/the_mind_arts/occlumency/
+[Snape]: /Harrypedia/people/snape/severus/
+[Sirius]: /Harrypedia/people/black/sirius_iii/
+[Legilimency]: /Harrypedia/magic/the_mind_arts/legilimency/
+[Occlumency]: /Harrypedia/magic/the_mind_arts/occlumency/
 
 [^20200716-4]:
     know-it-all-bookworm . _[Harry Potter and the Secrets He's

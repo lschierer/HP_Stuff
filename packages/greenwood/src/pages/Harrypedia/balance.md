@@ -32,9 +32,9 @@ unbalanced towards evil.
   parts" of oneself.[^230109-1] As I discuss further on the page
   dedicated to it, this is not healthy.
 
-[Dark Magic]: /harrypedia/magic/dark/
-[non-beings]: /harrypedia/non-beings/
-[poltergeists]: /harrypedia/non-beings/poltergeist/
+[Dark Magic]: /Harrypedia/magic/dark/
+[non-beings]: /Harrypedia/non-beings/
+[poltergeists]: /Harrypedia/non-beings/poltergeist/
 
 Why do we not have shields that cannot be breached, or can only be cast to
 protect someone else, but are stronger than standard shields? Why do
@@ -49,7 +49,7 @@ that creature is so evil it needs its own balance. And yes, Buckbeak
 shows up a few times, but so too do Acromantula, which, again, are
 mostly evil.
 
-[Madam Pomfrey]: /harrypedia/people/pomfrey/
+[Madam Pomfrey]: /Harrypedia/people/pomfrey/
 
 In short, magic seems to have massively escalated the fallen nature of the
 world. If love is so powerful, why is [Lily][]'s self sacrifice the only
@@ -67,12 +67,12 @@ your will away is to become a cold emotionally distant person who
 borders on a trying to split their own personality? I'm sorry, if that
 is true, evil has won.
 
-[Lily]: /harrypedia/people/evans/lily_j/
-[Snape]: /harrypedia/people/snape/severus/
-[Riddle]: /harrypedia/people/riddle/tom_marvolo/
-[Harry]: /harrypedia/people/potter/harry_james/
+[Lily]: /Harrypedia/people/evans/lily_j/
+[Snape]: /Harrypedia/people/snape/severus/
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Harry]: /Harrypedia/people/potter/harry_james/
 [Brumous]: https://archiveofourown.org/works/42882966
-[Occlumency]: /harrypedia/magic/the_mind_arts/occlumency/
+[Occlumency]: /Harrypedia/magic/the_mind_arts/occlumency/
 
 [^211020-11]:
     [Harry Potter Wiki](https://harrypotter.fandom.com/wiki/)

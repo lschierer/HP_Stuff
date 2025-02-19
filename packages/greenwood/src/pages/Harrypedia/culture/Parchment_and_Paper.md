@@ -49,9 +49,9 @@ using parchment (or vellum) for documents that are _actually magical in nature_
 forms, etc), but not for standard every day things (like homework, class notes,
 and letters (unless you are including privacy charms)).
 
-[McGonagall]: /harrypedia/people/mcgonagall/minerva//
+[McGonagall]: /Harrypedia/people/mcgonagall/minerva//
 [Dip pen]: https://en.wikipedia.org/wiki/Dip_pen
-[Harry]: /harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/potter/harry_james//
 [Wikipedia]: https://en.wikipedia.org/
 
 [^230804]: citation needed.

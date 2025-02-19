@@ -39,10 +39,10 @@ kb0 in _Harry Potter: Choices_ uses a very similar concept,[^220729-1] but does
 not explain it well, the whole thing is, for lack of a better word, magically
 intuitive to Harry once he is told what to do in [Chapter 11][].
 
-[legilimency]: /harrypedia/magic/spells/legilimens/
-[occlumency]: /harrypedia/magic/the_mind_arts/occlumency/
-[Snape]: /harrypedia/people/snape/severus/
-[Harry]: /harrypedia/people/potter/harry_james/
+[legilimency]: /Harrypedia/magic/spells/legilimens/
+[occlumency]: /Harrypedia/magic/the_mind_arts/occlumency/
+[Snape]: /Harrypedia/people/snape/severus/
+[Harry]: /Harrypedia/people/potter/harry_james/
 [Chapter 11]: https://www.fanfiction.net/s/8820097/11/Harry-Potter-Choices
 
 [^220729-1]:

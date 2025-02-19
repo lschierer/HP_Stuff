@@ -25,5 +25,5 @@ bank and the [Goblins] as a whole?
   time, it generates little more than is needed for [Harry] to live off of
   comfortably but not extravagantly.
 
-[Harry]: /harrypedia/people/potter/harry_james/
-[Goblins]: /harrypedia/beings/goblin/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Goblins]: /Harrypedia/beings/goblin/

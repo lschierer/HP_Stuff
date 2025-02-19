@@ -13,8 +13,8 @@ The International Confederation of Wizards (ICW) is mentioned in several places 
 - [Molly Weasley][Molly] - citation needed
 - [Cornelius Fudge][Fudge] - the Goblet of Fire scene at the [Quidditch] World Cup, citation needed.
 
-[^241014-3]: This is part and parcel of the lack of [adults adulting/harrypedia/people/adults/)
+[^241014-3]: This is part and parcel of the lack of [adults adulting/Harrypedia/people/adults/)
 
-[Molly]: /harrypedia/people/prewett/molly//
-[Fudge]: /harrypedia/people/fudge/cornelius_oswald//
-[Quidditch]: /harrypedia/quidditch//
+[Molly]: /Harrypedia/people/prewett/molly//
+[Fudge]: /Harrypedia/people/fudge/cornelius_oswald//
+[Quidditch]: /Harrypedia/quidditch//

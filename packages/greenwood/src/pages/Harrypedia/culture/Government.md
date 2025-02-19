@@ -66,8 +66,8 @@ also be biologically related to the [Blacks]. The problem is that there is no
 Euphemia Black in the [Black] tree, and no reasonable [Black] who might have
 married [Henry Potter][Henry].
 
-[Malfoy Family]: /harrypedia/people/malfoy/
-[Blacks]: /harrypedia/people/black//
+[Malfoy Family]: /Harrypedia/people/malfoy/
+[Blacks]: /Harrypedia/people/black//
 
 _["Great Scott, Potter, This is War!"][GSP1]_ on the other hand assumes that
 membership is based on being an influential family back when our theoretical
@@ -83,16 +83,16 @@ Hallows. Lastly, it does not solve the problem of voting inheritance between
 the [Black] and [Potter] families (though this might be considered part of
 my statement that it contradicts the origin stories).
 
-[Mr. Malfoy]: /harrypedia/people/malfoy/lucius_abraxas//
-[Harry]: /harrypedia/people/potter/harry_james//
-[Henry]: /harrypedia/people/potter/henry/
-[Sirius]: /harrypedia/people/black/sirius_iii//
-[Arthur]: /harrypedia/people/weasley/arthur//
-[Linfred]: /harrypedia/people/potter//
-[Black]: /harrypedia/people/black//
-[Potter]: /harrypedia/people/potter//
-[Peverell]: /harrypedia/people/peverell//
-[Malfoy]: /harrypedia/people/malfoy//
+[Mr. Malfoy]: /Harrypedia/people/malfoy/lucius_abraxas//
+[Harry]: /Harrypedia/people/potter/harry_james//
+[Henry]: /Harrypedia/people/potter/henry/
+[Sirius]: /Harrypedia/people/black/sirius_iii//
+[Arthur]: /Harrypedia/people/weasley/arthur//
+[Linfred]: /Harrypedia/people/potter//
+[Black]: /Harrypedia/people/black//
+[Potter]: /Harrypedia/people/potter//
+[Peverell]: /Harrypedia/people/peverell//
+[Malfoy]: /Harrypedia/people/malfoy//
 [GSP1]: https://aaran-st-vines.nsns.fanficauthors.net/Great_Scott_Potter_This_is_War
 [GSP2]: https://aaran-st-vines.nsns.fanficauthors.net/Great_Scott_Potter_This_is_War
 [Pottermore]: http://potter/more.com/

@@ -18,9 +18,9 @@ this is somewhat murky, as it is possible to have both different kinds of
 inteligence and different possible ranges of inteligence and yet still be
 sentient, it is the _right_ definition.
 
-[Non-Beings]: /harrypedia/non-beings/
-[Animals]: /harrypedia/animals/
-[Vegitation]: /harrypedia/vegitation/
+[Non-Beings]: /Harrypedia/non-beings/
+[Animals]: /Harrypedia/animals/
+[Vegitation]: /Harrypedia/vegitation/
 
 [^211111-1]: document some animal/vegitable grey area
 

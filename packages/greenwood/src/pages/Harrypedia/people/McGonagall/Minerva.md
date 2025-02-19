@@ -19,15 +19,15 @@ really drawn to. This view is more or less seconded by _[When Is It a
 Contract][WIIAC]_ which focuses on the conflicts between her roles as Deputy and
 Head of House.[^210322-2]
 
-[adult]: /harrypedia/people/adults/
+[adult]: /Harrypedia/people/adults/
 
 Better detectives than I have pieced together her probable timeline, assuming
 you ignore the Fantastic Beasts movies. Born in 1935, she started [Hogwarts]
 in 1947.[^211103-1] She joined [Hogwarts] at a time when there was more than one teacher in the Transfiguration Department, approximately 2 or 3 years after her graduation.[^200720-7] She informs [Umbridge] that she will have been at Hogwarts "Thirty-nine years this December,"[^200720-8] sometime in the beginning of fifth year, or 1995. That puts her start date in 1956. Despite this, we are told that she intervened when [Leta Lestrange][LL2] was bullied at age 13 in 1910,[^211018-1] and when [Theseus][TS1] was a student.[^211018-2] This would require her to have either left [Hogwarts] for a time, or to have been a teacher for at least 85 years.[^211018-3]
 
-[LL2]: /harrypedia/people/lestrange/leta/
-[Umbridge]: /harrypedia/people/umbridge/dolores_jane/
-[TS1]: /harrypedia/people/scamander/theseus/
+[LL2]: /Harrypedia/people/lestrange/leta/
+[Umbridge]: /Harrypedia/people/umbridge/dolores_jane/
+[TS1]: /Harrypedia/people/scamander/theseus/
 
 The first problematic moment is easy to miss. Per the timeline above, she was
 already teaching at [Hogwarts] in 1981, and yet, on November 1st 1981, she is
@@ -76,7 +76,7 @@ purposefully going overboard to head off that type of behaviour. Better that
 [Harry] suffer rejection by his peers than mirror his father's early years in
 school.
 
-[James]: /harrypedia/people/potter/james/
+[James]: /Harrypedia/people/potter/james/
 
 The exact situation in Worldmaker's _[Furious Angels][WMFA1]_ is different, but
 the description of McGonagall is spot on:
@@ -108,7 +108,7 @@ and over again across the series, [Hagrid] does not have a realistic risk
 evaluation for people without his half-giant heritage. McGonagall should know
 this, and should be able and willing to compensate for it.
 
-[Hagrid]: /harrypedia/people/hagrid/rubeus/
+[Hagrid]: /Harrypedia/people/hagrid/rubeus/
 
 The only possible saving explanations for the detention are either that
 McGonagall had no choice, that [Dumbledore][AD1] in fact set it up and she was
@@ -150,9 +150,9 @@ stooges. He could not have prevented the fact of their resignation from
 getting out however. If they had more backbone, I have to believe they have
 the connections to have made their opinions known.
 
-[Sprout]: /harrypedia/people/sprout/pomona/
-[Flitwick]: /harrypedia/people/flitwick/filus/
-[Fudge]: /harrypedia/people/fudge/cornelius_oswald/
+[Sprout]: /Harrypedia/people/sprout/pomona/
+[Flitwick]: /Harrypedia/people/flitwick/filus/
+[Fudge]: /Harrypedia/people/fudge/cornelius_oswald/
 
 With this history of either following [Dumbledore][AD1]'s lead as blindly and
 mindlessly as a sheep, or of complicit negligence in the many situations
@@ -175,15 +175,15 @@ character does. That being said, I think old-crow is spot on in portraying her
 as someone who would resist change simply because it is change, and would resist
 incorporating non-magical classes no matter how needed or useful they might be.
 
-[Snape]: /harrypedia/people/snape/severus/
-[James]: /harrypedia/people/potter/james/
-[Neville]: /harrypedia/people/longbottom/neville/
-[Draco]: /harrypedia/people/malfoy/draco_lucius/
-[Harry]: /harrypedia/people/potter/harry_james/
-[Hermione]: /harrypedia/people/granger/hermione_jean/
-[RBW1]: /harrypedia/people/weasley/ronald_bilius//
-[AD1]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Hogwarts]: /harrypedia/hogwarts/
+[Snape]: /Harrypedia/people/snape/severus/
+[James]: /Harrypedia/people/potter/james/
+[Neville]: /Harrypedia/people/longbottom/neville/
+[Draco]: /Harrypedia/people/malfoy/draco_lucius/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[RBW1]: /Harrypedia/people/weasley/ronald_bilius//
+[AD1]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Hogwarts]: /Harrypedia/hogwarts/
 [OCUC1]: https://www.fanfiction.net/s/13903544/
 [CTB2]: https://archiveofourown.org/works/156533
 [WMFA1]: https://www.fanfiction.net/s/4175909

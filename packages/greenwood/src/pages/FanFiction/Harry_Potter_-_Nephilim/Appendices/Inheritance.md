@@ -110,20 +110,20 @@ There are in fact, though no-inworld scholar knows this, precise percentage base
     Mrs. J. K. Rowling & Sony Computer Entertainment Europe.
     _[Miranda Goshawk's Book of Spells](https://archive.org/details/0_20211019/)_ 2013. Page 66.
 
-[Raczidian]: /harrypedia/people/raczidian/
-[source works]: /fanfiction/harry_potter_-_nephilim/introduction/
+[Raczidian]: /Harrypedia/people/raczidian/
+[source works]: /FanFiction/harry_potter_-_nephilim/introduction/
 [Many Waters]: https://wikipedia.org/wiki/Many_Waters
-[AA]: /fanfiction/harry_potter_-_nephilim/appendices/points-of-divergence/
-[AB]: /fanfiction/harry_potter_-_nephilim/appendices/rules-of-magic/
-[AC]: /fanfiction/harry_potter_-_nephilim/appendices/magical-beings/
-[AD]: /fanfiction/harry_potter_-_nephilim/appendices/relative-power-levels/
-[AE]: /fanfiction/harry_potter_-_nephilim/appendices/life-expectancy/
-[Magical Contracts]: /fanfiction/harry_potter_-_nephilim/appendices/magical-contracts/
-[Soteriology, Missiology and Ecclesiology]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_g/
-[AH]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_h/
-[Appendix I]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_i/
+[AA]: /FanFiction/harry_potter_-_nephilim/appendices/points-of-divergence/
+[AB]: /FanFiction/harry_potter_-_nephilim/appendices/rules-of-magic/
+[AC]: /FanFiction/harry_potter_-_nephilim/appendices/magical-beings/
+[AD]: /FanFiction/harry_potter_-_nephilim/appendices/relative-power-levels/
+[AE]: /FanFiction/harry_potter_-_nephilim/appendices/life-expectancy/
+[Magical Contracts]: /FanFiction/harry_potter_-_nephilim/appendices/magical-contracts/
+[Soteriology, Missiology and Ecclesiology]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_g/
+[AH]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_h/
+[Appendix I]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_i/
 
 [^241123-1]: See [Soteriology, Missiology and Ecclesiology] and [Points of Divergence]
 
-[Points of Divergence]: /fanfiction/harry_potter_-_nephilim/appendices/points-of-divergence/
-[hippogriff]: /harrypedia/animals/hippogriff/
+[Points of Divergence]: /FanFiction/harry_potter_-_nephilim/appendices/points-of-divergence/
+[hippogriff]: /Harrypedia/animals/hippogriff/

@@ -94,28 +94,28 @@ depiction _certainly_ destroys anyone attempting to use _[Cursed Child]_
 to create one big happy Weasley-Potter-Malfoy family.
 
 [Shipping]: ../shipping/
-[Astoria]: /harrypedia/people/greengrass/astoria//
-[Draco]: /harrypedia/people/malfoy/draco_lucius//
-[Scorpius]: /harrypedia/people/malfoy/scorpius//
-[Greengrass]: /harrypedia/people/greengrass//
-[dark arts]: /harrypedia/magic/dark//
-[Rita]: /harrypedia/people/skeeter/rita//
-[Rita Skeeter]: /harrypedia/people/skeeter/rita//
-[Hogwarts]: /harrypedia/hogwarts/
-[Ron]: /harrypedia/people/weasley/ronald_bilius//
-[Hermione]: /harrypedia/people/granger/hermione_jean//
-[Harry]: /harrypedia/people/potter/harry_james//
-[Ginny]: /harrypedia/people/weasley/ginevra_molly//
-[George]: /harrypedia/people/weasley/george//
-[Neville]: /harrypedia/people/longbottom/neville//
-[Percy]: /harrypedia/people/weasley/percy_ignatius//
-[Audrey]: /harrypedia/people//
-[Luna]: /harrypedia/people/lovegood/luna//
-[Hannah Abbott]: /harrypedia/people/abbott/hannah//
-[Rolf Scamander]: /harrypedia/people/scamander/rolf//
+[Astoria]: /Harrypedia/people/greengrass/astoria//
+[Draco]: /Harrypedia/people/malfoy/draco_lucius//
+[Scorpius]: /Harrypedia/people/malfoy/scorpius//
+[Greengrass]: /Harrypedia/people/greengrass//
+[dark arts]: /Harrypedia/magic/dark//
+[Rita]: /Harrypedia/people/skeeter/rita//
+[Rita Skeeter]: /Harrypedia/people/skeeter/rita//
+[Hogwarts]: /Harrypedia/hogwarts/
+[Ron]: /Harrypedia/people/weasley/ronald_bilius//
+[Hermione]: /Harrypedia/people/granger/hermione_jean//
+[Harry]: /Harrypedia/people/potter/harry_james//
+[Ginny]: /Harrypedia/people/weasley/ginevra_molly//
+[George]: /Harrypedia/people/weasley/george//
+[Neville]: /Harrypedia/people/longbottom/neville//
+[Percy]: /Harrypedia/people/weasley/percy_ignatius//
+[Audrey]: /Harrypedia/people//
+[Luna]: /Harrypedia/people/lovegood/luna//
+[Hannah Abbott]: /Harrypedia/people/abbott/hannah//
+[Rolf Scamander]: /Harrypedia/people/scamander/rolf//
 [Quidditch]: ../quidditch/
-[Malfoy]: /harrypedia/people/malfoy//
-[Hannah]: /harrypedia/people/abbott/hannah//
+[Malfoy]: /Harrypedia/people/malfoy//
+[Hannah]: /Harrypedia/people/abbott/hannah//
 [Holyhead Harpies]: ../quidditch/
 
 [^AG]: Mrs. J. K. Rowling. "[Draco Malfoy]" 2014-12-22.

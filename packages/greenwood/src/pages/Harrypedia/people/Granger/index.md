@@ -47,11 +47,11 @@ else she would trust them when she faces problematic situations in later life).
 These are not the good parents who are eager to learn more about and experience
 the magical world that many fan fiction authors portray.
 
-[Harry]: /harrypedia/people/potter/harry_james/
-[Ron]: /harrypedia/people/weasley/ronald_bilius/
-[Weasleys]: /harrypedia/people/weasley
-[Hermione]: /harrypedia/people/granger/hermione_jean/
-[Gringotts]: /harrypedia/gringotts
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Weasleys]: /Harrypedia/people/weasley
+[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Gringotts]: /Harrypedia/gringotts
 
 [^221201-1]:
     Mrs. J. K. Rowling.

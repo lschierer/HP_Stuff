@@ -25,7 +25,7 @@ these questions, the overall impossibility of the [class
 schedule][Class_Schedule_Rant] comes more and more into play.
 
 [Class_Schedule_Rant]: ../class_schedule_rant
-[Trelawney]: /harrypedia/people/trelawney/sybill/
+[Trelawney]: /Harrypedia/people/trelawney/sybill/
 
 As I stated in my [rant][Class_Schedule_Rant], a few authors have attempted to
 make sense of [Hogwarts][]' class scheduling, class offerings, and related

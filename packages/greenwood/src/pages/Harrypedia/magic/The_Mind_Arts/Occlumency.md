@@ -79,13 +79,13 @@ that way, but I think it is clear at this point that the author's intent
 for Occlumency is fairly clear. The problem then is not so much Occlumency,
 but rather [Legilimency].
 
-[Harry]: /harrypedia/people/potter/harry_james/
-[James]: /harrypedia/people/potter/james/
-[James Potter]: /harrypedia/people/potter/james/
-[Professor Snape]: /harrypedia/people/snape/severus/
-[Snape]: /harrypedia/people/snape/severus/
-[Draco]: /harrypedia/people/malfoy/draco_lucius/
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[James]: /Harrypedia/people/potter/james/
+[James Potter]: /Harrypedia/people/potter/james/
+[Professor Snape]: /Harrypedia/people/snape/severus/
+[Snape]: /Harrypedia/people/snape/severus/
+[Draco]: /Harrypedia/people/malfoy/draco_lucius/
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 
 [^20210922-1]:
     Mrs. J. K. Rowling. "[Draco

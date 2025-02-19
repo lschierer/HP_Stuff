@@ -38,13 +38,13 @@ The alternative is that this household magic, which seams to be a mix of charms
 is taught at [Hogwarts]. If so, we should have seen some indication of this in
 the six years that [Harry] attends class.
 
-[Hagrid]: /harrypedia/people/hagrid/rubeus//
-[Hogwarts]: /harrypedia/hogwarts/
-[Harry]: /harrypedia/people/potter/harry_james//
-[Molly]: /harrypedia/people/prewett/molly//
-[Neville]: /harrypedia/people/longbottom/neville//
-[Ginny]: /harrypedia/people/weasley/ginevra_molly//
-[Lily Evens]: /harrypedia/people/evans/lily_j//
+[Hagrid]: /Harrypedia/people/hagrid/rubeus//
+[Hogwarts]: /Harrypedia/hogwarts/
+[Harry]: /Harrypedia/people/potter/harry_james//
+[Molly]: /Harrypedia/people/prewett/molly//
+[Neville]: /Harrypedia/people/longbottom/neville//
+[Ginny]: /Harrypedia/people/weasley/ginevra_molly//
+[Lily Evens]: /Harrypedia/people/evans/lily_j//
 
 [^210329-24]:
     Mrs. J. K. Rowling. _Harry Potter and the Goblet of Fire_

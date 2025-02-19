@@ -13,7 +13,7 @@ am trying to distinguish, however imperfectly, the mind as an object versus the
 mind as a means.
 
 [Occlumency]: ./occlumency/
-[Legilimens]: /harrypedia/magic/spells/legilimens/
+[Legilimens]: /Harrypedia/magic/spells/legilimens/
 [Legilimency]: ./legilimency/
 
 I dislike [Occlumency]. I am resigned to accepting a definition of it that I
@@ -99,10 +99,10 @@ long term use.
 - [Mind Palace](mind_palace)
 - [Obfuscomency]
 
-[Imperius Curse]: /harrypedia/magic/spells/imperio/
-[Imperius]: /harrypedia/magic/spells/imperio/
-[Confundus]: /harrypedia/magic/spells/confundus/
-[Confundus Charm]: /harrypedia/magic/spells/confundus/
+[Imperius Curse]: /Harrypedia/magic/spells/imperio/
+[Imperius]: /Harrypedia/magic/spells/imperio/
+[Confundus]: /Harrypedia/magic/spells/confundus/
+[Confundus Charm]: /Harrypedia/magic/spells/confundus/
 [Obfuscomency]: ./obfuscomency/
 
 [^20200716-1]:

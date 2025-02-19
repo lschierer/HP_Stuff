@@ -75,11 +75,11 @@ sometimes act of its own accord.[^200806-5] Naturally eleven year old [Riddle]
 knows nothing of wand lore and so is not deciding this, yet still, the wand
 must sense something of the wizard it is bonding with…
 
-[Harry]: /harrypedia/people/potter/harry_james//
-[Fleur]: /harrypedia/people/delacour/fleur_isabelle//
-[James Potter]: /harrypedia/people/potter/james//
-[Umbridge]: /harrypedia/people/umbridge/dolores_jane//
-[Riddle]: /harrypedia/people/riddle/tom_marvolo//
+[Harry]: /Harrypedia/people/potter/harry_james//
+[Fleur]: /Harrypedia/people/delacour/fleur_isabelle//
+[James Potter]: /Harrypedia/people/potter/james//
+[Umbridge]: /Harrypedia/people/umbridge/dolores_jane//
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo//
 [ww]: https://www.wizardingworld.com "WizardingWorld"
 [wand wood]: https://www.rowlingindex.org/work/wwpm/ "Harry Potter wiki article on Wand Wood"
 [size and flexibility]: https://www.rowlingindex.org/work/wlfpm/ "WizardingWorld article on Wand length"

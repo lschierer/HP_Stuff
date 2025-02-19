@@ -65,12 +65,12 @@ harder because the _curse_ in question is lost and unrecorded by history.[^24021
 
 [Moe64]: https://archiveofourown.org/users/Moe64/pseuds/Moe64
 [What We Do Today]: https://archiveofourown.org/works/42289347
-[Malfoy]: /harrypedia/people/malfoy/
-[Crouch]: /harrypedia/people/crouch/
-[Harry]: /harrypedia/people/potter/harry_james/
-[Kreacher]: /harrypedia/people/black/kreacher/
-[Hermione]: /harrypedia/people/granger/hermione_jean/
-[Regulas]: /harrypedia/people/black/regulas_arcturus/
+[Malfoy]: /Harrypedia/people/malfoy/
+[Crouch]: /Harrypedia/people/crouch/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Kreacher]: /Harrypedia/people/black/kreacher/
+[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Regulas]: /Harrypedia/people/black/regulas_arcturus/
 [Brownies]: https://en.wikipedia.org/wiki/Brownie_(folklore)
-[Imperius]: /harrypedia/magic/spells/imperio/
-[Hogwarts]: /harrypedia/hogwarts/
+[Imperius]: /Harrypedia/magic/spells/imperio/
+[Hogwarts]: /Harrypedia/hogwarts/

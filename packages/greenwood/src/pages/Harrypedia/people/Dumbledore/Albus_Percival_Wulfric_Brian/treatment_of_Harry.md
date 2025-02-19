@@ -49,9 +49,9 @@ not just his death experience in the forest in book seven, are one of the
 things it triggered. For all the prophesy does not name [Dumbledore][], it
 shapes his actions much as the one that Macbeth hears shapes his actions.
 
-[Riddle]: /harrypedia/people/riddle/tom_marvolo/
-[Harry]: /harrypedia/people/potter/harry_james/
-[Harry's]: /harrypedia/people/potter/harry_james/
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Harry's]: /Harrypedia/people/potter/harry_james/
 [Dumbledore]: ../
 
 In the fan fiction work _[The Sound of Silence][BW95TSS1]_ [Dumbledore][]
@@ -143,8 +143,8 @@ they were specifically talking about the Hallows, when you consider that
 [Hermione] also slowed down the hunt for the [horcruxes][] (see her page
 for details), I feel safe including this in my indictment.
 
-[horcrux]: /harrypedia/magic/dark/horcruxes/
-[horcruxes]: /harrypedia/magic/dark/horcruxes/
+[horcrux]: /Harrypedia/magic/dark/horcruxes/
+[horcruxes]: /Harrypedia/magic/dark/horcruxes/
 
 When you consider the potential cost if [Riddle][] had not been stopped, and
 further consider the fact _that it worked_, it is very hard to argue with
@@ -191,20 +191,20 @@ someone objects that [Harry][] must go to the [Dursleys][] because he will be
 safest there. Safest from what/who? [Dumbledore][] can now start to use the
 complicated nature of the thorny problem to confuse the listener.
 
-[Wizengamot]: /harrypedia/culture/government/
-[Black]: /harrypedia/people/black/
-[Potter]: /harrypedia/people/potter/
-[Narcissa Malfoy]: /harrypedia/people/black/narcissa/
-[Dorea Black]: /harrypedia/people/black/dorea/
-[James]: /harrypedia/people/potter/james/
-[Malfoys]: /harrypedia/people/malfoy/
-[Dursleys]: /harrypedia/people/dursley/
-[abusive environment]: /harrypedia/people/dursley/
+[Wizengamot]: /Harrypedia/culture/government/
+[Black]: /Harrypedia/people/black/
+[Potter]: /Harrypedia/people/potter/
+[Narcissa Malfoy]: /Harrypedia/people/black/narcissa/
+[Dorea Black]: /Harrypedia/people/black/dorea/
+[James]: /Harrypedia/people/potter/james/
+[Malfoys]: /Harrypedia/people/malfoy/
+[Dursleys]: /Harrypedia/people/dursley/
+[abusive environment]: /Harrypedia/people/dursley/
 [AD1]: ../
-[Ginny]: /harrypedia/people/weasley/ginevra_molly/
-[Hermione]: /harrypedia/people/granger/hermione_jean/
-[Riddle]: /harrypedia/people/riddle/tom_marvolo/
-[SS1]: /harrypedia/people/snape/severus/
+[Ginny]: /Harrypedia/people/weasley/ginevra_molly/
+[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[SS1]: /Harrypedia/people/snape/severus/
 [CAD1]: https://fanfictalk.com/archive/viewstory.php?sid=721
 [BW95TSS1]: https://www.fanfiction.net/s/12175260
 [WSM1]: https://www.gutenberg.org/cache/epub/1533/pg1533-images.html.utf8.gzip

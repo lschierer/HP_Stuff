@@ -44,9 +44,9 @@ actually do her job as a law enforcement official, and thus belong in the
 
 [RaspberryDreams1]: https://archiveofourown.org/users/RaspberryDreams1
 [Magical Blocks and Bonds]: https://archiveofourown.org/works/52672777/
-[Harry]: /harrypedia/people/potter/harry_james/
-[Susan]: /harrypedia/people/bones/susan/
-[Ron]: /harrypedia/people/weasley/ronald_bilius/
-[Responsible Adult]: /bookmarks/responsibleadults/
-[Amelia]: /harrypedia/people/bones/amelia_susan/
-[Draco]: /harrypedia/people/malfoy/draco_lucius/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Susan]: /Harrypedia/people/bones/susan/
+[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Responsible Adult]: /Bookmarks/responsibleadults/
+[Amelia]: /Harrypedia/people/bones/amelia_susan/
+[Draco]: /Harrypedia/people/malfoy/draco_lucius/

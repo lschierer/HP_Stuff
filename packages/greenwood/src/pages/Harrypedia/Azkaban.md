@@ -7,9 +7,9 @@ The [origin story][RIA] for Azkaban is interwoven with that for [Dementors]. It 
 
 This illogic is unfortunately typical. We do not know if the [dementors] were in fact destroyed or relocated. We do not know why they were thought to be indestructible, nor how the purge was accomplished. We do not know what was done with the [dark magic] residue embedded in the walls.
 
-[dark magic]: /harrypedia/magic/dark/
-[Dementors]: /harrypedia/non-beings/dementor/
-[dementors]: /harrypedia/non-beings/dementor/
+[dark magic]: /Harrypedia/magic/dark/
+[Dementors]: /Harrypedia/non-beings/dementor/
+[dementors]: /Harrypedia/non-beings/dementor/
 
 [^240212-2]:
     Mrs. J. K. Rowling.

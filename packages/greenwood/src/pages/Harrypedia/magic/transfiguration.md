@@ -42,12 +42,12 @@ deprivation entirely uncanonical, despite its logical soundness?
 [^221220-2]: Sovran. _[Meaning of One, Part One]: Stone and Fire_. Published 2006-07-06. Updated: 2007-04-02.
 
 [Meaning of One, Part One]: https://www.siye.co.uk/siye/series.php?seriesid=54
-[Egyptians]: /harrypedia/egypt/
-[Bill]: /harrypedia/people/weasley/william_arthur/
-[magic]: /harrypedia/magic/
-[Harry]: /harrypedia/people/potter/harry_james/
-[Flitwick]: /harrypedia/people/flitwick/filus/
-[Snape]: /harrypedia/people/snape/severus/
-[Slughorn]: /harrypedia/people/slughorn/horace_eugene_flaccus/
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[wand]: /harrypedia/magic/wands/
+[Egyptians]: /Harrypedia/egypt/
+[Bill]: /Harrypedia/people/weasley/william_arthur/
+[magic]: /Harrypedia/magic/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Flitwick]: /Harrypedia/people/flitwick/filus/
+[Snape]: /Harrypedia/people/snape/severus/
+[Slughorn]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[wand]: /Harrypedia/magic/wands/

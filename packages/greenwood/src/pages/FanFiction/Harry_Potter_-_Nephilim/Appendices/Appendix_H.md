@@ -182,20 +182,20 @@ To play with Mark Twain's words, to the extent that there is any moral to this,
 it is to show what could happen if a whole series of really bad choices were
 made. When the only choices the characters see are between bad and worse.
 
-[AA]: /fanfiction/harry_potter_-_nephilim/appendices/points-of-divergence/
-[AB]: /fanfiction/harry_potter_-_nephilim/appendices/rules-of-magic/
-[AC]: /fanfiction/harry_potter_-_nephilim/appendices/magical-beings/
-[AD]: /fanfiction/harry_potter_-_nephilim/appendices/relative-power-levels/
-[AE]: /fanfiction/harry_potter_-_nephilim/appendices/life-expectancy/
-[AF]: /fanfiction/harry_potter_-_nephilim/appendices/magical-contracts/
-[AG]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_g/
-[AH]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_h/
-[Appendix I]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_i/
-[Encyclopedic Reference]: /harrypedia/
-[FSSP]: /fanfiction/harry_potter_-_nephilim/appendices/fssp/
+[AA]: /FanFiction/harry_potter_-_nephilim/appendices/points-of-divergence/
+[AB]: /FanFiction/harry_potter_-_nephilim/appendices/rules-of-magic/
+[AC]: /FanFiction/harry_potter_-_nephilim/appendices/magical-beings/
+[AD]: /FanFiction/harry_potter_-_nephilim/appendices/relative-power-levels/
+[AE]: /FanFiction/harry_potter_-_nephilim/appendices/life-expectancy/
+[AF]: /FanFiction/harry_potter_-_nephilim/appendices/magical-contracts/
+[AG]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_g/
+[AH]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_h/
+[Appendix I]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_i/
+[Encyclopedic Reference]: /Harrypedia/
+[FSSP]: /FanFiction/harry_potter_-_nephilim/appendices/fssp/
 [FWoaO1]: https://archiveofourown.org/works/28507302
-[Inheritance]: /fanfiction/harry_potter_-_nephilim/appendices/inheritance/
-[Introduction]: /fanfiction/harry_potter_-_nephilim/introduction/
+[Inheritance]: /FanFiction/harry_potter_-_nephilim/appendices/inheritance/
+[Introduction]: /FanFiction/harry_potter_-_nephilim/introduction/
 [MW]: https://wikipedia.org/wiki/Many_Waters
 [TSL2]: https://archive.org/details/in.ernet.dli.2015.86985
 [TSL3]: https://archive.org/details/in.ernet.dli.2015.86985
@@ -203,7 +203,7 @@ made. When the only choices the characters see are between bad and worse.
 [WP1]: https://wikipedia.org/wiki/Soteriology
 [WP2]: https://wikipedia.org/wiki/Missiology
 [WP3]: https://wikipedia.org/wiki/Ecclesiology
-[ab]: /fanfiction/harry_potter_-_nephilim/appendices/rules-of-magic/
-[af]: /fanfiction/harry_potter_-_nephilim/appendices/magical-contracts/
-[ah]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_h
+[ab]: /FanFiction/harry_potter_-_nephilim/appendices/rules-of-magic/
+[af]: /FanFiction/harry_potter_-_nephilim/appendices/magical-contracts/
+[ah]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_h
 [ligers]: https://wikipedia.org/wiki/ligers

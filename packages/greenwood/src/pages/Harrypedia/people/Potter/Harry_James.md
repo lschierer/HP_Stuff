@@ -25,13 +25,13 @@ impossible essentially requires something along the lines of his mother's
 sacrifice not just magically protected him from Tom, but also magically
 protected him from the worst of the effects of his upbringing.
 
-[Dursleys]: /harrypedia/people/dursley/
+[Dursleys]: /Harrypedia/people/dursley/
 
 [_Don't Touch Me_](https://archiveofourown.org/works/702684) by ivybelle
 explores as a one-shot from when Harry and [Ginny] are dating the idea that
 perhaps Harry is simply really really good at hiding his reactions.[^200527-1]
 
-[Ginny]: /harrypedia/people/weasley/ginevra_molly/
+[Ginny]: /Harrypedia/people/weasley/ginevra_molly/
 
 [^200527-1]:
     ivybelle. _[Don't Touch Me](https://archiveofourown.org/works/702684)_,
@@ -113,7 +113,7 @@ for example. Similarly it is not uncommon for the books to jump over weeks and
 even occasionally (especially in the earlier books) months where nothing
 significant happens.
 
-[Shipping]: /harrypedia/shipping/
+[Shipping]: /Harrypedia/shipping/
 
 This is a problem because it is in these non-significant times that Harry would
 be growing in relationship with all the rest of his classmates, year mates, and
@@ -194,15 +194,15 @@ there are reasonable, if unconfirmed, explanations available. Harry's need for
 glasses is probably either an effect of from his scar, or an effect from living
 in the cupboard. Since both are speculation, we do not know which.
 
-[growth]: /harrypedia/misc/growth/
-[Hermione]: /harrypedia/people/granger/hermione_jean/
-[Lily]: /harrypedia/people/evans/lily_j/
-[James]: /harrypedia/people/potter/james/
-[Ron]: /harrypedia/people/weasley/ronald_bilius/
-[Fred]: /harrypedia/people/weasley/fred/
-[George]: /harrypedia/people/weasley/george/
-[Riddle]: /harrypedia/people/riddle/tom_marvolo/
-[SS1]: /harrypedia/people/snape/severus/
+[growth]: /Harrypedia/misc/growth/
+[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Lily]: /Harrypedia/people/evans/lily_j/
+[James]: /Harrypedia/people/potter/james/
+[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Fred]: /Harrypedia/people/weasley/fred/
+[George]: /Harrypedia/people/weasley/george/
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[SS1]: /Harrypedia/people/snape/severus/
 
 [^221024-4]:
     The research on this is somewhat mixed, and it would take more

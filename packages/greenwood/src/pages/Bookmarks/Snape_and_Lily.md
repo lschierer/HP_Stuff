@@ -27,6 +27,6 @@ author: "Luke Schierer"
 There are more stories dealing about them meeting when [Snape Dies].
 
 [Snape Dies]: ../snapedies
-[Lily]: /harrypedia/people/evans/lily_j//
-[James]: /harrypedia/people/potter/james//
-[Snape]: /harrypedia/people/snape/severus//
+[Lily]: /Harrypedia/people/evans/lily_j//
+[James]: /Harrypedia/people/potter/james//
+[Snape]: /Harrypedia/people/snape/severus//

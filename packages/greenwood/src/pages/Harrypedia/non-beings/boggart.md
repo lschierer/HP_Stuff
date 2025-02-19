@@ -29,12 +29,12 @@ facsimile of that something's magic_** (thus it can become a
 the fact that it can resurrect a suppressed memory and cause [Harry] to
 faint means that it is still a frighteningly over-powered creature.
 
-[Harry]: /harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/potter/harry_james//
 [tells]: https://www.rowlingindex.org/work/pmbog/
-[Dementors]: /harrypedia/non-beings/dementor/
-[Dementor]: /harrypedia/non-beings/dementor/
-[non-beings]: /harrypedia/non-beings/
-[balance of power]: /harrypedia/balance/
+[Dementors]: /Harrypedia/non-beings/dementor/
+[Dementor]: /Harrypedia/non-beings/dementor/
+[non-beings]: /Harrypedia/non-beings/
+[balance of power]: /Harrypedia/balance/
 
 [^211021-11]:
     Mrs. J. K. Rowling.

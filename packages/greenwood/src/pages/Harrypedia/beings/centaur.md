@@ -7,9 +7,9 @@ author: Luke Schierer
 [Centaurs] refused to be classifed as [beings], insisting on being considered
 [animals].[^231003-1]
 
-[beings]: /harrypedia/beings/
-[animals]: /harrypedia/animals/
-[Centaurs]: /harrypedia/animals/centaur/
+[beings]: /Harrypedia/beings/
+[animals]: /Harrypedia/animals/
+[Centaurs]: /Harrypedia/animals/centaur/
 
 [^231003-1]:
     Mrs. J. K. Rowling.

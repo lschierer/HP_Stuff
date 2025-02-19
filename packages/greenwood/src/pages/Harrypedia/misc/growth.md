@@ -14,7 +14,7 @@ no doubt reflect that, generally female, author's personal idea of what is
 attractive in a male. Many of these are fairly unrealistic, especially when
 they place [Harry][] at something over six feet tall somewhere in his teens.
 
-[Harry]: /harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/potter/harry_james//
 
 Eventually this bugged me enough that I wanted to document the unrealistic
 nature of these descriptions, so I looked up a "growth chart."[^220622-1] This
@@ -37,9 +37,9 @@ breaking height is almost always commented on when describing someone.
 [Harry][], not simply "tall." Notice for example how both [Hagrid][] and
 [Flitwick][] are described.
 
-[James]: /harrypedia/people/potter/james//
-[Hagrid]: /harrypedia/people/hagrid/rubeus//
-[Flitwick]: /harrypedia/people/flitwick/filus/
+[James]: /Harrypedia/people/potter/james//
+[Hagrid]: /Harrypedia/people/hagrid/rubeus//
+[Flitwick]: /Harrypedia/people/flitwick/filus/
 
 Interestingly, I have noted a similar issue with girls in at least one fan
 fiction.[^220726-8] The key consideration is that girls' growth drastically

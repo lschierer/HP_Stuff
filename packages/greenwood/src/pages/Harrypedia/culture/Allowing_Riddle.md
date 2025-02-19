@@ -61,13 +61,13 @@ dehumanising them the way we see with Jews in Germany. Excluding them from any
 real political power quite possibly, but within the context of some existing
 [class structure].
 
-[Riddle]: /harrypedia/people/riddle/tom_marvolo/
-[Magic]: /harrypedia/magic/
-[Ministry of Magic]: /harrypedia/culture/government
-[Harry]: /harrypedia/people/potter/harry_james/
-[notes]: /harrypedia/
-[Potter Family notes]: /harrypedia/people/potter/
-[Salazar]: /harrypedia/people/slytherin/salazar/
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Magic]: /Harrypedia/magic/
+[Ministry of Magic]: /Harrypedia/culture/government
+[Harry]: /Harrypedia/people/potter/harry_james/
+[notes]: /Harrypedia/
+[Potter Family notes]: /Harrypedia/people/potter/
+[Salazar]: /Harrypedia/people/slytherin/salazar/
 [class structure]: ../class_and_blood/
 [blood status]: ../class_and_blood/
 

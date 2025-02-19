@@ -12,9 +12,9 @@ There is a huge tendency among fan fiction authors to assume that many, or most 
 
 My own take, shared by at least some other authors, is that in the case of [parseltongue], the magic inherent in this language imbues in the snake abilities it does not inherently have. See the [parseltongue] page for details. This allows for a nuanced approach to other animals with varying levels of sentience that may or may not actually approach sapience.
 
-[parseltongue]: /harrypedia/magic/parseltongue//
-[Fantatic Beasts]: /harrypedia/fantaticbeasts//
-[Nagini]: /harrypedia/people/nagini//
-[sphinx]: /harrypedia/animals/sphinx//
-[jarvey]: /harrypedia/animals/jarvey//
-[hippogriff]: /harrypedia/animals/hippogriff//
+[parseltongue]: /Harrypedia/magic/parseltongue//
+[Fantatic Beasts]: /Harrypedia/fantaticbeasts//
+[Nagini]: /Harrypedia/people/nagini//
+[sphinx]: /Harrypedia/animals/sphinx//
+[jarvey]: /Harrypedia/animals/jarvey//
+[hippogriff]: /Harrypedia/animals/hippogriff//

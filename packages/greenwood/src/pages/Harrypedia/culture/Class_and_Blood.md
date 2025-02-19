@@ -56,11 +56,11 @@ the [Potters] are mostly pure-bloods. The same is probably true of the
 [Weasleys], [Longbottoms], [Abbotts], and any others who made up the
 minority who protested their inclusion on the Sacred Twenty-Eight list.
 
-[Potters]: /harrypedia/people/potter//
-[Weasleys]: /harrypedia/people/weasley/
-[Weasley]: /harrypedia/people/weasley/
-[Longbottoms]: /harrypedia/people/longbottom/
-[Abbotts]: /harrypedia/people/abbott/
+[Potters]: /Harrypedia/people/potter//
+[Weasleys]: /Harrypedia/people/weasley/
+[Weasley]: /Harrypedia/people/weasley/
+[Longbottoms]: /Harrypedia/people/longbottom/
+[Abbotts]: /Harrypedia/people/abbott/
 
 The [Weasleys] apparently became notorious for their protest, and incited a
 great deal of hatred. That hatred in a Renaissance, if not positively Medieval
@@ -101,9 +101,9 @@ curry favour with them, re-enforcing the beliefs. They will marry for money and
 power, re-enforcing these beliefs beyond school with social connections, and
 creating a feedback mechanism into the next generation.
 
-[Hogwarts]: /harrypedia/hogwarts/
-[Riddle]: /harrypedia/people/riddle/tom_marvolo//
-[Arthur]: /harrypedia/people/weasley/arthur//
+[Hogwarts]: /Harrypedia/hogwarts/
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo//
+[Arthur]: /Harrypedia/people/weasley/arthur//
 
 Eventually there are too many of them for one house at [Hogwarts]. More than
 a quarter of the population strongly supports blood status. More than a quarter
@@ -136,8 +136,8 @@ like Susan [Bones] or Hannah Abbott on one hand and Zacharias Smith
 on the other. We have Ravenclaws who are members of the DA, and others who
 steal from Luna.
 
-[Bones]: /harrypedia/people/bones/
-[Draco]: /harrypedia/people/malfoy/draco_lucius//
+[Bones]: /Harrypedia/people/bones/
+[Draco]: /Harrypedia/people/malfoy/draco_lucius//
 
 The only real argument against this is the distribution of first generation
 students in the various houses. We do not know enough about the students to
@@ -162,8 +162,8 @@ Slytherin would easily make use of. He or she would not be to "uppity" as long
 as you funded their research after all, and could be easily cheated out of any
 profitable patent-able discoveries…
 
-[Harry]: /harrypedia/people/potter/harry_james//
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian//
+[Harry]: /Harrypedia/people/potter/harry_james//
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
 [wwwbrpb]: https://www.wizardingworld.com/writing-by-jk-rowling/pure-blood
 
 [^200701-2]:

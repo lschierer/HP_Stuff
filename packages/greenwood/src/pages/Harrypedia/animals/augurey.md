@@ -11,7 +11,7 @@ feather by the [Hogwarts][] [Book of Admission][] quite the conundrum.
 Superstitions about their association with death have been disproven.[^220725-7]
 
 [Book of Admission]: https://www.rowlingindex.org/work/qaba/
-[Hogwarts]: /harrypedia/hogwarts/
+[Hogwarts]: /Harrypedia/hogwarts/
 
 [^220725-6]:
     Rowling, J.K.

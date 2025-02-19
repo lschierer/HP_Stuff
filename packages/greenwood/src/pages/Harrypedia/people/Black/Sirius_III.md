@@ -143,10 +143,10 @@ trial? It is reasonable to accept that [Lupin][] both believed him guilty and
 would have been unable to demand a trial. Why, however, did none of
 [Dumbledore][], [Andromeda][] Black, or his own blood family demand a trial?
 
-[Harry]: /harrypedia/people/potter/harry_james/
-[Lupin]: /harrypedia/people/lupin/remus_john/
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Andromeda]: /harrypedia/people/black/andromeda/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Lupin]: /Harrypedia/people/lupin/remus_john/
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Andromeda]: /Harrypedia/people/black/andromeda/
 
 Lets start with the easy ones: [Arcturus][], [Pollux][], and [Walburga][]
 Black. We know that [Walburga][] hated her son, enough to want him disowned.
@@ -212,7 +212,7 @@ that could mean before his curse _landed_ rather than before it was _cast_.
     does have a certain persuasiveness.
 
 [Abandoning Ship]: https://www.redhen-publications.com/abandoningShip.html
-[History]: /harrypedia/history/
+[History]: /Harrypedia/history/
 
 [^210517-4]:
     Some writers have speculated that long term exposure to dementors
@@ -242,26 +242,26 @@ of Azkaban][].
     Pottermore Limited © 2005. American Kindle Edition.
 
 
-[Andromeda]: /harrypedia/people/black/andromeda/
-[Arcturus]: /harrypedia/people/black/arcturus_ii/
-[Bellatrix]: /harrypedia/people/black/bellatrix/
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Hagrid]: /harrypedia/people/hagrid/rubeus/
-[Harry]: /harrypedia/people/potter/harry_james/
-[Hermione]: /harrypedia/people/granger/hermione_jean/
-[History]: /harrypedia/history/
-[James]: /harrypedia/people/potter/james/
-[Lily]: /harrypedia/people/evans/lily_j/
-[Lupin]: /harrypedia/people/lupin/remus_john/
-[Malfoy]: /harrypedia/people/malfoy/
-[Molly]: /harrypedia/people/prewett/molly/
-[Orion]: /harrypedia/people/black/orion/
-[Peter Pettigrew]: /harrypedia/people/pettigrew/peter/
-[Peter]: /harrypedia/people/pettigrew/peter/
-[Pettigrew]: /harrypedia/people/pettigrew/peter/
-[Pollux]: /harrypedia/people/black/pollux/
-[Regulus]: /harrypedia/people/black/regulus_arcturus/
-[Riddle]: /harrypedia/people/riddle/tom_marvolo/
-[SWM]: /harrypedia/people/snape/severus/swm/
-[Snape]: /harrypedia/people/snape/severus/
-[Walburga]: /harrypedia/people/black/walburga/
+[Andromeda]: /Harrypedia/people/black/andromeda/
+[Arcturus]: /Harrypedia/people/black/arcturus_ii/
+[Bellatrix]: /Harrypedia/people/black/bellatrix/
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Hagrid]: /Harrypedia/people/hagrid/rubeus/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[History]: /Harrypedia/history/
+[James]: /Harrypedia/people/potter/james/
+[Lily]: /Harrypedia/people/evans/lily_j/
+[Lupin]: /Harrypedia/people/lupin/remus_john/
+[Malfoy]: /Harrypedia/people/malfoy/
+[Molly]: /Harrypedia/people/prewett/molly/
+[Orion]: /Harrypedia/people/black/orion/
+[Peter Pettigrew]: /Harrypedia/people/pettigrew/peter/
+[Peter]: /Harrypedia/people/pettigrew/peter/
+[Pettigrew]: /Harrypedia/people/pettigrew/peter/
+[Pollux]: /Harrypedia/people/black/pollux/
+[Regulus]: /Harrypedia/people/black/regulus_arcturus/
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[SWM]: /Harrypedia/people/snape/severus/swm/
+[Snape]: /Harrypedia/people/snape/severus/
+[Walburga]: /Harrypedia/people/black/walburga/

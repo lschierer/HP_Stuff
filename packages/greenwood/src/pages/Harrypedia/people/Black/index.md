@@ -39,24 +39,24 @@ be unable to inherit as he is in line via his mother, who would be
 disqualified by gender. The dates for this line of speculation are in
 the [History][] timeline.
 
-[History]: /harrypedia/history/
-[Draco]: /harrypedia/people/malfoy/draco_lucius/
-[Phineus Nigellus]: /harrypedia/people/black/phineus_nigellus/
-[Cygnus I]: /harrypedia/people/black/cygnus/
-[Malfoy]: /harrypedia/people/malfoy/
-[Weasleys]: /harrypedia/people/weasley/
-[Weasley]: /harrypedia/people/weasley/
-[Harfang]: /harrypedia/people/longbottom/harfang/
-[Arthur]: /harrypedia/people/weasley/arthur/
-[Cedrella]: /harrypedia/people/black/cedrella/
-[Septimus]: /harrypedia/people/weasley/septimus/
-[Sirius III]: /harrypedia/people/black/sirius_iii/
-[Sirius II]: /harrypedia/people/black/sirius_ii/
-[Longbottom]: /harrypedia/people/longbottom/
-[Longbottoms]: /harrypedia/people/longbottom/
-[Grimmauld Place]: /harrypedia/grimmauld_place/
-[Neville]: /harrypedia/people/longbottom/neville/
-[Harry]: /harrypedia/people/potter/harry_james/
+[History]: /Harrypedia/history/
+[Draco]: /Harrypedia/people/malfoy/draco_lucius/
+[Phineus Nigellus]: /Harrypedia/people/black/phineus_nigellus/
+[Cygnus I]: /Harrypedia/people/black/cygnus/
+[Malfoy]: /Harrypedia/people/malfoy/
+[Weasleys]: /Harrypedia/people/weasley/
+[Weasley]: /Harrypedia/people/weasley/
+[Harfang]: /Harrypedia/people/longbottom/harfang/
+[Arthur]: /Harrypedia/people/weasley/arthur/
+[Cedrella]: /Harrypedia/people/black/cedrella/
+[Septimus]: /Harrypedia/people/weasley/septimus/
+[Sirius III]: /Harrypedia/people/black/sirius_iii/
+[Sirius II]: /Harrypedia/people/black/sirius_ii/
+[Longbottom]: /Harrypedia/people/longbottom/
+[Longbottoms]: /Harrypedia/people/longbottom/
+[Grimmauld Place]: /Harrypedia/grimmauld_place/
+[Neville]: /Harrypedia/people/longbottom/neville/
+[Harry]: /Harrypedia/people/potter/harry_james/
 
 On a side note, while it flies in the face of some of what I've written above,
 Tigerman has an interesting theory in his work [RuneMaster][RMff1]. He suggests

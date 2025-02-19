@@ -77,21 +77,21 @@ changing the characters to fit the new universe, but I believe they
 should still be recognisably themselves. There can, however, be a butterfly effect thing, where a character's personality grows a different way because of
 things that go differently from the books.
 
-[veela]: /harrypedia/beings/veela/
-[contracts]: /harrypedia/magic/contracts/
-[life debts]: /harrypedia/magic/contracts/
-[trace]: /harrypedia/magic/
-[Hermione]: /harrypedia/people/granger/hermione_jean/
-[Harry]: /harrypedia/people/potter/harry_james/
-[Draco]: /harrypedia/people/malfoy/draco_lucius/
-[Fleur]: /harrypedia/people/delacour/fleur_isabelle/
-[Nymphadora]: /harrypedia/people/tonks/nymphadora/
-[Sirius]: /harrypedia/people/black/sirius_iii/
-[Remus]: /harrypedia/people/lupin/remus_john/
-[Lily]: /harrypedia/people/evans/lily_j/
-[James]: /harrypedia/people/potter/james/
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Snape]: /harrypedia/people/snape/severus/
+[veela]: /Harrypedia/beings/veela/
+[contracts]: /Harrypedia/magic/contracts/
+[life debts]: /Harrypedia/magic/contracts/
+[trace]: /Harrypedia/magic/
+[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Draco]: /Harrypedia/people/malfoy/draco_lucius/
+[Fleur]: /Harrypedia/people/delacour/fleur_isabelle/
+[Nymphadora]: /Harrypedia/people/tonks/nymphadora/
+[Sirius]: /Harrypedia/people/black/sirius_iii/
+[Remus]: /Harrypedia/people/lupin/remus_john/
+[Lily]: /Harrypedia/people/evans/lily_j/
+[James]: /Harrypedia/people/potter/james/
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Snape]: /Harrypedia/people/snape/severus/
 
 
 [^240415-1]:

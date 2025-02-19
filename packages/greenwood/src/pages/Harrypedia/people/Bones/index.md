@@ -22,7 +22,7 @@ Or is [Amelia][] fairly broad minded?[^210701-3]
 [Susan]: susan/
 [Riddle]: ../riddle/tom_marvolo/
 [Amelia]: amelia_susan/
-[ClassLists]: /harrypedia/hogwarts/class_lists/
+[ClassLists]: /Harrypedia/hogwarts/class_lists/
 [Culture]: ../../culture/
 
 [^210701-3]:

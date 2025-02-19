@@ -29,17 +29,17 @@ Not only does society have no mechanism to deal with it, the fear would combine 
 
 The obvious exception to this is [Walburga], who from all accounts had no problems with cursing her own child. However, remember that [Sirius] left for [Hogwarts] the first time certainly healthy, probably reasonably happy, fairly typically spoiled rich brat. We have no evidence that she became violent towards him _before_ his sorting. _After_ his sorting, now in possession of his own wand and undergoing magical training, it is reasonable to guess that he is no longer at risk of becoming an [obscurial]. Even if that is not true, unknown in world, or up for debate either way, it is equally possible that the woman is simply insane, and an exception even for her own society.[^240228-3]
 
-[Walburga]: /harrypedia/people/black/walburga/
-[obscurial]: /harrypedia/beings/obscurus/
-[Hogwarts]: /harrypedia/hogwarts/
-[Sirius]: /harrypedia/people/black/sirius_iii/
-[house elves]: /harrypedia/beings/elves/house_elf/
-[MACUSA]: /harrypedia/macusa/
-[Ministry of Magic]: /harrypedia/culture/government/
-[Dursley]: /harrypedia/people/dursley/
-[Harry]: /harrypedia/people/potter/harry_james//
-[Vernon]: /harrypedia/people/dursley/vernon//
-[Petunia]: /harrypedia/people/evans/petunia//
+[Walburga]: /Harrypedia/people/black/walburga/
+[obscurial]: /Harrypedia/beings/obscurus/
+[Hogwarts]: /Harrypedia/hogwarts/
+[Sirius]: /Harrypedia/people/black/sirius_iii/
+[house elves]: /Harrypedia/beings/elves/house_elf/
+[MACUSA]: /Harrypedia/macusa/
+[Ministry of Magic]: /Harrypedia/culture/government/
+[Dursley]: /Harrypedia/people/dursley/
+[Harry]: /Harrypedia/people/potter/harry_james//
+[Vernon]: /Harrypedia/people/dursley/vernon//
+[Petunia]: /Harrypedia/people/evans/petunia//
 [unreliable narrator]: https://wikipedia.org/wiki/Unreliable_narrator
 
 [^240228-1]: Mrs. J. K. Rowling. _[Harry Potter and the Half-Blood Prince]_ American Kindle edition approx Location 611 of 8473.

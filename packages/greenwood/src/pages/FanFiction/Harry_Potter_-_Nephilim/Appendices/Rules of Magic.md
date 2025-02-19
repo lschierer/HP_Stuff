@@ -24,7 +24,7 @@ Individual nephil can be rated on a scale of 1 (low) to 10 (high) for access to 
 
 [Edict of Milan]: Wikipedia. "[Edict of Milan](https://wikipedia.org/wiki/Edict_of_Milan)" Last Edited: 2024-10-23.
 
-[AD]: /fanfiction/harry_potter_-_nephilim/appendices/relative-power-levels/
+[AD]: /FanFiction/harry_potter_-_nephilim/appendices/relative-power-levels/
 [abt]: #abilities-by-type
 
 [^221216-2]:
@@ -211,8 +211,8 @@ For each choir we list both the description of that choir and the traits we obse
     Dr. Andrew Sulavik. _[All About Angels](https://www.kofc.org/en/resources/cis/cis303.pdf)_
     © 1999-2021 by Knights of Columbus Supreme Council. Pages 15-16.
 
-[Riddle]: /harrypedia/people/riddle/tom_marvolo/
-[Harry]: /harrypedia/people/potter/harry_james/
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Harry]: /Harrypedia/people/potter/harry_james/
 
 ## Mapping to how the Nephilim themselves understand Magic
 
@@ -544,7 +544,7 @@ Nephil have some aspects of both. They are _mostly_ contingent beings that grow 
 
 [Arranged_marriage]: https://en.wikipedia.org/wiki/Arranged_marriage
 [Wikipedia]: https://en.wikipedia.org/
-[Imperius]: /harrypedia/magic/spells/imperio/
+[Imperius]: /Harrypedia/magic/spells/imperio/
 
 [^20210902-5]:
     Mrs. J. K. Rowling.

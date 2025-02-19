@@ -8,7 +8,7 @@ author: Luke Schierer
 
 Introduced in the early 1600s from Africa by [Eldon Elsrickle][].
 
-[Eldon Elsrickle]: /harrypedia/people/elsrickle/eldon/
+[Eldon Elsrickle]: /Harrypedia/people/elsrickle/eldon/
 
 ## Found in
 

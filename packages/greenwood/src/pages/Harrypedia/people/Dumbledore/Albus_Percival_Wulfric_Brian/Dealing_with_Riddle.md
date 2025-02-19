@@ -175,18 +175,18 @@ hunt them down. Why, knowing that he will die, he entrusts the knowledge to
 
 [^20210927-6]: See my [History] notes.
 
-[Culture]: /harrypedia/culture/
-[ICW]: /harrypedia/culture/
-[History]: /harrypedia/history/
-[horcruxes]: /harrypedia/magic/dark/horcruxes/
-[Horcruxes]: /harrypedia/magic/dark/horcruxes/
-[Lupin]: /harrypedia/people/lupin/remus_john/
-[Kingsley]: /harrypedia/people/shacklebolt/kingsley/
-[Moody]: /harrypedia/people/moody/
-[TMR1]: /harrypedia/people/riddle/tom_marvolo/
-[Harry]: /harrypedia/people/potter/harry_james/
-[Hermione]: /harrypedia/people/granger/hermione_jean/
-[Ron]: /harrypedia/people/weasley/ronald_bilius/
-[Bill]: /harrypedia/people/weasley/william_arthur/
-[Draco]: /harrypedia/people/malfoy/draco_lucius/
-[Snape]: /harrypedia/people/snape/severus/
+[Culture]: /Harrypedia/culture/
+[ICW]: /Harrypedia/culture/
+[History]: /Harrypedia/history/
+[horcruxes]: /Harrypedia/magic/dark/horcruxes/
+[Horcruxes]: /Harrypedia/magic/dark/horcruxes/
+[Lupin]: /Harrypedia/people/lupin/remus_john/
+[Kingsley]: /Harrypedia/people/shacklebolt/kingsley/
+[Moody]: /Harrypedia/people/moody/
+[TMR1]: /Harrypedia/people/riddle/tom_marvolo/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Bill]: /Harrypedia/people/weasley/william_arthur/
+[Draco]: /Harrypedia/people/malfoy/draco_lucius/
+[Snape]: /Harrypedia/people/snape/severus/

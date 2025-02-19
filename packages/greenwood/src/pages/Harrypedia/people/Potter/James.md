@@ -78,9 +78,9 @@ just insulted her best friend, and will go on to pick on him unmercifully.
 Perhaps [Lily] cannot really see James with an unbiased eye until
 after she herself has fallen out with [Snape]?
 
-[Ron]: /harrypedia/people/weasley/ronald_bilius/
-[Lily]: /harrypedia/people/evans/lily_j/
-[Snape]: /harrypedia/people/snape/severus/
+[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Lily]: /Harrypedia/people/evans/lily_j/
+[Snape]: /Harrypedia/people/snape/severus/
 
 ---
 
@@ -113,8 +113,8 @@ We have nothing but [Snape]'s (untrustworthy) word to stay that James knew of
 [Sirius] alone who told Snape about the tree,[^210511-2] it is typical of
 [Snape] that he blames James for [Sirius]' actions.
 
-[Sirius]: /harrypedia/people/black/sirius_iii/
-[Lupin]: /harrypedia/people/lupin/remus_john/
+[Sirius]: /Harrypedia/people/black/sirius_iii/
+[Lupin]: /Harrypedia/people/lupin/remus_john/
 
 ---
 
@@ -158,8 +158,8 @@ of his father's skills, but it seems unlikely that he did _poorly_ at the
 subject - his father would have tutored him over the summers should he have
 needed it. [Snape] and [Lily] are prodigies, and [Snape] seems to expect _everyone_ to find potions as intuitive as he does, so I take any disparagement he makes with a fairly large and active amount of suspicion.
 
-[McGonagall]: /harrypedia/people/mcgonagall/minerva/
-[Pettigrew]: /harrypedia/people/pettigrew/peter/
+[McGonagall]: /Harrypedia/people/mcgonagall/minerva/
+[Pettigrew]: /Harrypedia/people/pettigrew/peter/
 
 ---
 
@@ -188,9 +188,9 @@ in a worse light, portray [Snape] as a more innocent victim, but leave the
 core events sufficiently in place so that when [Harry] describes what he
 sees, it rings true to those who witnessed it. The fact that the [pensieve] clearly shows the tampering in [Slughorn]'s memory does not mean it is a foolproof means of doing so.[^240422-1]
 
-[Harry]: /harrypedia/people/potter/harry_james/
-[Slughorn]: /harrypedia/people/slughorn/horace_eugene_flaccus/
-[pensieve]: /harrypedia/magic/time/pensieve/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Slughorn]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
+[pensieve]: /Harrypedia/magic/time/pensieve/
 
 [^240422-1]: See my thoughts on the [pensieve].
 
@@ -307,7 +307,7 @@ woods.[^210511-3]
 > them off within days of each other, due to their advanced age, and James
 > Potter then inherited Ignotus [Peverell]’s Invisibility Cloak.[^210128-29]
 
-[Peverell]: /harrypedia/people/peverell/
+[Peverell]: /Harrypedia/people/peverell/
 
 ### When did he get the Cloak
 
@@ -331,9 +331,9 @@ with such evil already. Despite his many illicit forays out after curfew, this
 supposedly irresponsible boy kept the Cloak out of larcenous[^210318-7] enemy
 hands, despite the fact that he supposedly has no cunning or intelligence.
 
-[dark magic]: /harrypedia/magic/dark/
-[Fleamont]: /harrypedia/people/potter/fleamont/
-[Riddle]: /harrypedia/people/riddle/tom_marvolo/
+[dark magic]: /Harrypedia/magic/dark/
+[Fleamont]: /Harrypedia/people/potter/fleamont/
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
 
 ## Pure Speculation
 
@@ -358,10 +358,10 @@ The encounter in tunnel where he saves [Snape] no doubt _does_ have something to
 
 If either or both of these is true, James might well have been something of a peer leader across the school despite not being a prefect. As such he might well have been an obvious choice to an unbiased observer no matter how much [Snape] resents the choice. Either or both of these might also have influenced [Lily] to begin to reevaluate him as soon as her friendship with [Snape] was (pardon the pun) severed. For I refuse to believe that his ([Snape]'s) continual influence, proclaiming his own innocence (which she wanted to believe) and Potter's guilt had no effect on the impression that lead to the one encounter between them we see in [Snape]'s memory.
 
-[animagus]: /harrypedia/magic/
+[animagus]: /Harrypedia/magic/
 [Robin Hood]: https://en.wikipedia.org/wiki/Robin_Hood
-[Slughorn]: /harrypedia/people/slughorn/horace_eugene_flaccus/
-[D1]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Slughorn]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
+[D1]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 
 [^240422-3]: this is a really tempting tangent, but this page isn't about [Dumbledore].
 

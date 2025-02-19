@@ -157,9 +157,9 @@ not to know that something.[^241126-2]
     only protect a location that is in fact _secret_. Otherwise, one could share knowledge one obtained outside the contract without involving the contract. Thus [Lily] and [James] needed a new cottage, not a
     property historically associated with the [Potter family].
 
-[Lily]: /harrypedia/people/evans/lily_j/
-[James]: /harrypedia/people/potter/james/
-[Potter family]: /harrypedia/people/potter/
+[Lily]: /Harrypedia/people/evans/lily_j/
+[James]: /Harrypedia/people/potter/james/
+[Potter family]: /Harrypedia/people/potter/
 
 Contracts _can_ force you _feel_ things. Your emotions are just chemical
 effects, a contract can make you unnaturally happy or sad, incite or
@@ -247,15 +247,15 @@ Crabbe at 13 years old.[^230711-1] These two families with their
 history of dark dealings neither one wanted to risk the penalties that the
 children may have made themselves liable to.
 
-[AA]: /fanfiction/harry_potter_-_nephilim/appendices/points-of-divergence/
-[AB]: /fanfiction/harry_potter_-_nephilim/appendices/rules-of-magic/
-[AC]: /fanfiction/harry_potter_-_nephilim/appendices/magical-beings/
-[AD]: /fanfiction/harry_potter_-_nephilim/appendices/relative-power-levels/
-[AE]: /fanfiction/harry_potter_-_nephilim/appendices/life-expectancy/
-[AF]: /fanfiction/harry_potter_-_nephilim/appendices/magical-contracts/
-[AG]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_g/
-[AH]: /fanfiction/harry_potter_-_nephilim/appendices/appendix_h/
-[Imperius]: /harrypedia/magic/spells/imperio/
+[AA]: /FanFiction/harry_potter_-_nephilim/appendices/points-of-divergence/
+[AB]: /FanFiction/harry_potter_-_nephilim/appendices/rules-of-magic/
+[AC]: /FanFiction/harry_potter_-_nephilim/appendices/magical-beings/
+[AD]: /FanFiction/harry_potter_-_nephilim/appendices/relative-power-levels/
+[AE]: /FanFiction/harry_potter_-_nephilim/appendices/life-expectancy/
+[AF]: /FanFiction/harry_potter_-_nephilim/appendices/magical-contracts/
+[AG]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_g/
+[AH]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_h/
+[Imperius]: /Harrypedia/magic/spells/imperio/
 
 [^230103-2]:
     these include,

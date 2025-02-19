@@ -44,7 +44,7 @@ flattered by that. Because of this she blamed [James] for being immature
 (which was somewhat true), particularly when he would not admit _why_ he was
 attacking [Snape].[^230804-2]
 
-[Dark Magic]: /harrypedia/magic/dark/
+[Dark Magic]: /Harrypedia/magic/dark/
 
 [^230804-2]:
     In \_[Breaking Assumptions], the author presents an alternative theory,
@@ -70,10 +70,10 @@ attacking [Snape].[^230804-2]
     _[Harry Potter and the Order of the Phoenix](https://www.librarything.com/work/115/book/225886709)_
     Kindle Locations 9396-9398. Pottermore Limited. American Kindle Edition.
 
-[James]: /harrypedia/people/potter/james//
-[lily]: /harrypedia/people/evans/lily_j//
-[Snape]: /harrypedia/people/snape/severus//
-[Draco]: /harrypedia/people/malfoy/draco_lucius//
+[James]: /Harrypedia/people/potter/james//
+[lily]: /Harrypedia/people/evans/lily_j//
+[Snape]: /Harrypedia/people/snape/severus//
+[Draco]: /Harrypedia/people/malfoy/draco_lucius//
 
 [^221206-2]:
     Anelli, Melissa and Emerson Spartz.
@@ -88,8 +88,8 @@ This is not, however, the only example. Mrs. Rowling will then go on to pair
 [Ron] with [Hermione], pushing the idea that opposites attract, despite the
 fact that bickering and fighting is not the basis for a healthy relationship.
 
-[Ron]: /harrypedia/people/weasley/ronald_bilius//
-[Hermione]: /harrypedia/people/granger/hermione_jean//
+[Ron]: /Harrypedia/people/weasley/ronald_bilius//
+[Hermione]: /Harrypedia/people/granger/hermione_jean//
 
 We see very little of [Ginny] in most of the series, too little really.
 However, we see enough to further substantiate the theme that love is only
@@ -102,6 +102,6 @@ handle being unable to handle your emotions is to dive into a different
 relationship? (Interestingly, both [Ron] and [Hermione] kinda sorta try
 this in book six, it does not go well).
 
-[Ginny]: /harrypedia/people/weasley/ginevra_molly//
+[Ginny]: /Harrypedia/people/weasley/ginevra_molly//
 
 [^221206-6]: citation needed.

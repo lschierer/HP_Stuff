@@ -22,9 +22,9 @@ result when I try to look up corporal punishment in British schools tells me
 that [Harry][] probably never experienced any, but quite possibly heard about
 it.[^20200720-10]
 
-[Harry]: /harrypedia/people/potter/harry_james//
-[Molly]: /harrypedia/people/prewett/molly//
-[Bill]: /harrypedia/people/weasley/william_arthur//
+[Harry]: /Harrypedia/people/potter/harry_james//
+[Molly]: /Harrypedia/people/prewett/molly//
+[Bill]: /Harrypedia/people/weasley/william_arthur//
 
 [Rex Tims][FfnRT] points out in an authors note that a fifty point penalty is
 apparently a big deal, but if so, the end of year point totals seem really

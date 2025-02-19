@@ -54,11 +54,11 @@ incredibly well done. Almost even more rare is a story in which she is the centr
     </dd>
 </dl>
 
-[Fred]: /harrypedia/people/weasley/fred/
-[Hermione]: /harrypedia/people/granger/hermione_jean/
-[Harry]: /harrypedia/people/potter/harry_james/
-[McGonagall]: /harrypedia/people/mcgonagall/minerva/
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Molly]: /harrypedia/people/prewett/molly/
-[Ginny]: /harrypedia/people/weasley/ginevra_molly/
-[Neville]: /harrypedia/people/longbottom/neville/
+[Fred]: /Harrypedia/people/weasley/fred/
+[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[McGonagall]: /Harrypedia/people/mcgonagall/minerva/
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Molly]: /Harrypedia/people/prewett/molly/
+[Ginny]: /Harrypedia/people/weasley/ginevra_molly/
+[Neville]: /Harrypedia/people/longbottom/neville/

@@ -27,10 +27,10 @@ she values loyalty to her own house (we have no proof she knows about, uses,
 or approves of the badges' second message) against her.
 
 [blood status]: ../../../culture/class_and_blood
-[Harry]: /harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/potter/harry_james/
 [Salazar]: ../../slytherin/salazar
 [Ernie]: ../../macmillan
-[Riddle]: /harrypedia/people/riddle/tom_marvolo//
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo//
 
 [^211004-15]:
     Mrs. J. K. Rowling.

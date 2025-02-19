@@ -15,12 +15,12 @@ There are several things wrong with the premise these authors are working from.
 
 That being said, I will admit that the books *are* more than a bit absurd themselves.  They emphasise over and over again that [Harry] "has [Lily]'s eyes" and yet he inherited is father's near-sightedness.  This is ... illogical.  Sure, near-sightedness *is* often hereditary, but then he would have *his father's eyes* (at least in shape, colour clearly has no impact on focal distance).  Two wrongs (or more) wrongs do not make a right.
 
-[Lily]: /harrypedia/people/evans/lily_j/
-[Snape]: /harrypedia/people/snape/severus/
-[Harry]: /harrypedia/people/potter/harry_james/
-[Snape's Worst Memory]: /harrypedia/people/snape/severus/swm/
-[James]: /harrypedia/people/potter/james/
-[Sirius]: /harrypedia/people/black/sirius_iii/
+[Lily]: /Harrypedia/people/evans/lily_j/
+[Snape]: /Harrypedia/people/snape/severus/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Snape's Worst Memory]: /Harrypedia/people/snape/severus/swm/
+[James]: /Harrypedia/people/potter/james/
+[Sirius]: /Harrypedia/people/black/sirius_iii/
 
 [^250204-1]: Works including, but not limited to,
     * [Labgasod]. _[Three Hours](https://archiveofourown.org/works/51062065)_. Published: 2023-10-23. Completed: 2023-10-25.

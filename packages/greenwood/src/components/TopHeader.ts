@@ -20,7 +20,7 @@ export default class TopHeader extends HTMLElement {
               return `
               <div class="navItem">
                 <a
-                  href=${"/" + section.replaceAll(" ", "").toLowerCase() + "/"}
+                  href=${"/" + section.replaceAll(" ", "") + "/"}
                   class="spectrum-Link spectrum-Link--primary"
                 >
                   <span class="">${section.replaceAll("_", " ")}</span>

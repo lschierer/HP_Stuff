@@ -70,19 +70,19 @@ of the 1994-1995 school year, placing [Bill]'s last year in 1989, which
 _does_ match the chart above (school year 1988-1989). If [Bill]'s
 birthday is correct, that does not give much space for [Charlie]'s to move.
 
-[Hogwarts]: /harrypedia/hogwarts/
-[Quidditch]: /harrypedia/quidditch/
-[Gryffindor]: /harrypedia/hogwarts/gryffindor/
-[Harry]: /harrypedia/people/potter/harry_james//
-[Ginny]: /harrypedia/people/weasley/ginevra_molly/
-[Ron]: /harrypedia/people/weasley/ronald_bilius
-[George]: /harrypedia/people/weasley/george/
-[Fred]: /harrypedia/people/weasley/fred/
-[Percy]: /harrypedia/people/weasley/percy_ignatius/
-[Charlie]: /harrypedia/people/weasley/charlie/
-[Bill]: /harrypedia/people/weasley/william_arthur/
-[Arthur]: /harrypedia/people/weasley/arthur/
-[Molly]: /harrypedia/people/prewett/molly/
+[Hogwarts]: /Harrypedia/hogwarts/
+[Quidditch]: /Harrypedia/quidditch/
+[Gryffindor]: /Harrypedia/hogwarts/gryffindor/
+[Harry]: /Harrypedia/people/potter/harry_james//
+[Ginny]: /Harrypedia/people/weasley/ginevra_molly/
+[Ron]: /Harrypedia/people/weasley/ronald_bilius
+[George]: /Harrypedia/people/weasley/george/
+[Fred]: /Harrypedia/people/weasley/fred/
+[Percy]: /Harrypedia/people/weasley/percy_ignatius/
+[Charlie]: /Harrypedia/people/weasley/charlie/
+[Bill]: /Harrypedia/people/weasley/william_arthur/
+[Arthur]: /Harrypedia/people/weasley/arthur/
+[Molly]: /Harrypedia/people/prewett/molly/
 [lexicon]: https://www.hp-lexicon.org
 
 [^20210601-3]:

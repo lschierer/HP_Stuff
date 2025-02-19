@@ -17,16 +17,16 @@ The first chapter, as is expected _of_ a first chapter, has more questions than 
   - If placed before she arrived, there is a _very_ narrow window for it to have happened in unless [Dumbledore] planned everything _before the attack._ I wish, if only to make him a less evil character, I could eliminate that possibility.
   - If placed at some subsequent time, there is a window of time that [Harry] is incredibly vulnerable.
 
-[Hagrid]: /harrypedia/people/hagrid/rubeus//
-[Dursley]: /harrypedia/people/dursley//
-[Ministry]: /harrypedia/culture/government//
-[Petunia]: /harrypedia/people/evans/petunia//
-[McGonagall]: /harrypedia/people/mcgonagall/minerva//
-[Lily]: /harrypedia/people/evans/lily_j//
-[Harry]: /harrypedia/people/potter/harry_james//
-[Vernon]: /harrypedia/people/dursley/vernon//
+[Hagrid]: /Harrypedia/people/hagrid/rubeus//
+[Dursley]: /Harrypedia/people/dursley//
+[Ministry]: /Harrypedia/culture/government//
+[Petunia]: /Harrypedia/people/evans/petunia//
+[McGonagall]: /Harrypedia/people/mcgonagall/minerva//
+[Lily]: /Harrypedia/people/evans/lily_j//
+[Harry]: /Harrypedia/people/potter/harry_james//
+[Vernon]: /Harrypedia/people/dursley/vernon//
 [Dickens]: https://en.wikipedia.org/wiki/Charles_Dickens
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian//
-[Riddle]: /harrypedia/people/riddle/tom_marvolo//
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo//
 
 [^240424-1]: There is some evidence of this, Mrs. Rowling calls the device that [Dumbledore] uses a "Put-Outer" but it will later be called by the more elegant name "Deluminator."

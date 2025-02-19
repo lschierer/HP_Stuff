@@ -73,14 +73,14 @@ quill,[^230804] there is no canonical basis for this line of thought;
 it is pure speculation.
 
 [parchment]: ../parchment_and_paper/
-[McGonagall]: /harrypedia/people/mcgonagall/minerva//
+[McGonagall]: /Harrypedia/people/mcgonagall/minerva//
 [Dip pen]: https://en.wikipedia.org/wiki/Dip_pen
-[Harry]: /harrypedia/people/potter/harry_james//
+[Harry]: /Harrypedia/people/potter/harry_james//
 [Wikipedia]: https://en.wikipedia.org/
 
 [^231004-3]: See [wands]
 
-[wands]: /harrypedia/magic/wands//
+[wands]: /Harrypedia/magic/wands//
 
 [^231004-1]: citation needed.
 

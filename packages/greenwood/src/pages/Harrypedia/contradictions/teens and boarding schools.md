@@ -37,19 +37,19 @@ They do make for interesting speculation though.
 
 [^241203-1]: The brooms can go up over 100 miles an hour, and the bludger can catch up to players on them.
 
-[Cho]: /harrypedia/people/chang/cho/
-[Ginny]: /harrypedia/people/weasley/ginevra_molly/
-[Gryffindor]: /harrypedia/hogwarts/gryffindor/
-[Harry]: /harrypedia/people/potter/harry_james/
-[Hermione]: /harrypedia/people/granger/hermione_jean/
-[Hogwarts]: /harrypedia/hogwarts/
-[Lockhart]: /harrypedia/people/lockhart/gilderoy/
-[Luna]: /harrypedia/people/lovegood/luna/
-[Moody]: /harrypedia/people/moody/alastor/
-[Mrs. Weasley]: /harrypedia/people/prewett/molly/
-[Oliver Wood]: /harrypedia/people/wood/oliver/
-[Oliver]: /harrypedia/people/wood/oliver/
-[Quidditch]: /harrypedia/quidditch/
-[Ravenclaw]: /harrypedia/hogwarts/ravenclaw/
-[Ron]: /harrypedia/people/weasley/ronald_bilius/
-[Weasley]: /harrypedia/people/weasley/
+[Cho]: /Harrypedia/people/chang/cho/
+[Ginny]: /Harrypedia/people/weasley/ginevra_molly/
+[Gryffindor]: /Harrypedia/hogwarts/gryffindor/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hogwarts]: /Harrypedia/hogwarts/
+[Lockhart]: /Harrypedia/people/lockhart/gilderoy/
+[Luna]: /Harrypedia/people/lovegood/luna/
+[Moody]: /Harrypedia/people/moody/alastor/
+[Mrs. Weasley]: /Harrypedia/people/prewett/molly/
+[Oliver Wood]: /Harrypedia/people/wood/oliver/
+[Oliver]: /Harrypedia/people/wood/oliver/
+[Quidditch]: /Harrypedia/quidditch/
+[Ravenclaw]: /Harrypedia/hogwarts/ravenclaw/
+[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Weasley]: /Harrypedia/people/weasley/

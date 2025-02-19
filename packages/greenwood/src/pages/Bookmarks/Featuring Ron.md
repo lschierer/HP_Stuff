@@ -31,10 +31,10 @@ I have made no secret of the fact that [Ron] is not my most favourite character 
 
 </dl>
 
-[Ron]: /harrypedia/people/weasley/ronald_bilius/
-[Riddle]: /harrypedia/people/riddle/tom_marvolo/
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Harry]: /harrypedia/people/potter/harry_james/
-[goblins]: /harrypedia/beings/goblin/
-[veela]: /harrypedia/beings/veela/
-[Neville]: /harrypedia/people/longbottom/neville/
+[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[goblins]: /Harrypedia/beings/goblin/
+[veela]: /Harrypedia/beings/veela/
+[Neville]: /Harrypedia/people/longbottom/neville/

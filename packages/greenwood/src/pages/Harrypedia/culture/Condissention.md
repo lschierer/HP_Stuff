@@ -50,10 +50,10 @@ around for _centuries_. These two examples reiterate what I said discussing
 of what is available or better.
 
 [paper]: ../parchment_and_paper/
-[Harry]: /harrypedia/people/potter/harry_james//
-[Hermione]: /harrypedia/people/granger/hermione_jean//
-[Malfoy]: /harrypedia/people/malfoy/
-[Mr. Weasley]: /harrypedia/people/weasley/arthur//
+[Harry]: /Harrypedia/people/potter/harry_james//
+[Hermione]: /Harrypedia/people/granger/hermione_jean//
+[Malfoy]: /Harrypedia/people/malfoy/
+[Mr. Weasley]: /Harrypedia/people/weasley/arthur//
 [pgO1]: https://www.fanfiction.net/s/12954205
 [pgO2]: https://www.fanfiction.net/s/12954205
 [clothing]: ../clothing/

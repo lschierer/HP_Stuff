@@ -18,7 +18,7 @@ world vote for it?
 
 [^220705-5]: See my notes on [MACUSA].
 
-[MACUSA]: /harrypedia/macusa/
+[MACUSA]: /Harrypedia/macusa/
 
 [^220705-4]: Mrs. J. K. Rowling. "[Pure-Blood](https://www.rowlingindex.org/work/pmpbl/)" [The J.K. Rowling Index](https://www.rowlingindex.org). Published: 2012-10-18. Last Viewed: 2022-07-05.
 
@@ -65,5 +65,5 @@ Stories like this include, but are not limited to:
 
 - stowfords. _[First Steps](https://www.fanfiction.net/s/4257626/)_ Published: 2008-05-15. Updated: 2009-04-30. See [Chapter 5](https://www.fanfiction.net/s/4257626/5/First-Steps).
 
-[Immigration]: /harrypedia/culture/immigration/
-[Condescension]: /harrypedia/culture/condissention/
+[Immigration]: /Harrypedia/culture/immigration/
+[Condescension]: /Harrypedia/culture/condissention/

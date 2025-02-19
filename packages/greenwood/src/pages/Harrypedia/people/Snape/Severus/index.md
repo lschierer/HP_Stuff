@@ -20,7 +20,7 @@ and champion it. This gives us the epilogue, with a child of [Harry][]'s named
 Albus Severus, the two characters that Mrs. Rowling most wants the reader to
 forgive.
 
-[Harry]: /harrypedia/people/potter/harry_james/
+[Harry]: /Harrypedia/people/potter/harry_james/
 
 The books are, however, not _really_ children's books at all. I disagree with
 classifying the latter books as such, and am restricting my own children's
@@ -50,13 +50,13 @@ but you can see that, already, [McGonagall][] and [Dumbledore][] are allowing
 not just pranks, but actual evil to go unpunished. In such an environment, the
 needs of victims are not going to be addressed.
 
-[Dark Arts]: /harrypedia/magic/dark/
-[Dark Magic]: /harrypedia/magic/dark/
-[dark]: /harrypedia/magic/dark/
-[Lily]: /harrypedia/people/evans/lily_j/
-[Sirius]: /harrypedia/people/black/sirius_iii/
-[McGonagall]: /harrypedia/people/mcgonagall/minerva/
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Dark Arts]: /Harrypedia/magic/dark/
+[Dark Magic]: /Harrypedia/magic/dark/
+[dark]: /Harrypedia/magic/dark/
+[Lily]: /Harrypedia/people/evans/lily_j/
+[Sirius]: /Harrypedia/people/black/sirius_iii/
+[McGonagall]: /Harrypedia/people/mcgonagall/minerva/
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 
 As I said, we know little of Severus at school, but his memories from _the
 Deathly Hallows_ have a few things that are possibly suggestive. In one scene
@@ -76,8 +76,8 @@ refused to believe [Lily][]'s aversion to the [Dark Arts][] was real or well
 founded, and believed that she would find membership in the Death Eaters
 _impressive_.[^221206-1]
 
-[swm]: /harrypedia/people/snape/severus/swm/
-[James]: /harrypedia/people/potter/james/
+[swm]: /Harrypedia/people/snape/severus/swm/
+[James]: /Harrypedia/people/potter/james/
 
 [^221206-1]:
     Ms. Melissa Anelli and Mrs. J. K. Rowling.
@@ -102,7 +102,7 @@ pranks may certainly have crossed the line into bullying behaviour (which is
 deplorable), but _Severus_ returned fire with [dark][] magic, whenever [Lily][]
 was not around.
 
-[sectumsempra]: /harrypedia/magic/spells/sectumsempra/
+[sectumsempra]: /Harrypedia/magic/spells/sectumsempra/
 
 [^221220-4]:
     Mrs. J. K. Rowling.
@@ -122,7 +122,7 @@ fragment or not. Was it a reward, or did he earn the mark in some other way?
 That answer could significantly change your view of how much evil Severus has
 done by commission versus omission during this phase of his life.
 
-[Hogwarts]: /harrypedia/hogwarts/
+[Hogwarts]: /Harrypedia/hogwarts/
 
 [Dumbledore][]'s view is that becoming a spy balances the scales. Severus
 needs no punishment for his actions prior to hearing the prophesy.[^221014-1] I
@@ -142,7 +142,7 @@ Severus is showing evidence of denial about the strength of the attachment
 between [Lily][] and [James][], and a failure to understand what love really
 means.
 
-[Riddle]: /harrypedia/people/riddle/tom_marvolo/
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
 
 Some writers have tried to give Severus a pass on this one. They rightly point
 out that there was no chance that [Riddle][] would spare the entire family, and
@@ -223,7 +223,7 @@ especially critical to know the answer to these questions when Mrs. Rowling
 states in an interview that [Dumbledore][] thinks that dealing with horrible
 teachers is part of teaching his students about life.[^210412-6]
 
-[Slughorn]: /harrypedia/people/slughorn/horace_eugene_flaccus/
+[Slughorn]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
 
 Irregardless of if he does ever actually teach, his behaviour during these "lab"
 classes is unacceptable. The labs are unsafe, and his treatment of the students
@@ -268,7 +268,7 @@ sequence, as Snape yells at [Harry][], looking for him to thank him "on bended
 knee"[^210510-6], and then later, with Fudge talking about the Order of Merlin,
 gives us a huge insight into Snape's character.[^210523-2]
 
-[Lupin]: /harrypedia/people/lupin/remus_john/
+[Lupin]: /Harrypedia/people/lupin/remus_john/
 
 As [Riddle][] returns, what does Snape know about his activities? What could
 he have told [Dumbledore][] but chooses to hold back? What does he tell
@@ -290,8 +290,8 @@ much worse would [Hogwarts][] have been had a different Death Eater been
 Headmaster? How much could Severus have done to curb problems that he did not
 do? We cannot know. We know he helped some at least.
 
-[Ron]: /harrypedia/people/weasley/ronald_bilius/
-[Ginny]: /harrypedia/people/weasley/ginevra_molly/
+[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Ginny]: /Harrypedia/people/weasley/ginevra_molly/
 
 Severus is trying to reach [Harry][] when [Riddle][] decides [Harry][] must die.
 He (Severus) uses his the last of his strength to give [Harry][] memories
@@ -321,7 +321,7 @@ On a side note, it is widely speculated that Severus is [Draco][]'s godfather.
 [This][lc1] article does not specifically talk about that, but covers the
 available evidence as if it were.[^210517-6]
 
-[Draco]: /harrypedia/people/malfoy/draco_lucius/
+[Draco]: /Harrypedia/people/malfoy/draco_lucius/
 
 If you want a parallel but diverging view of Severus that allows for redeeming
 him more than this rant does, BajaB offers a fascinating take on him in
@@ -418,6 +418,6 @@ Oracle][ffnvo2]_.[^210603-1]
     I am not the only one to pick up on this. there are a number of
     fan fictions on what happens after Snape [dies][SnapeDies].
 
-[SnapeDies]: /bookmarks/snapedies/
+[SnapeDies]: /Bookmarks/snapedies/
 [Harry Potter and the Order of the Phoenix]: https://www.librarything.com/work/115/book/225886709
 [Harry Potter and the Half-Blood Prince]: https://www.librarything.com/work/1133624/book/203684961

@@ -16,9 +16,9 @@ Unknown
 
 This is extensively discussed as a [topic][] under [the Mind Arts][].
 
-[topic]: /harrypedia/magic/the_mind_arts/legilimency/
-[Legilimency]: /harrypedia/magic/the_mind_arts/legilimency/
-[the Mind Arts]: /harrypedia/magic/the_mind_arts/
+[topic]: /Harrypedia/magic/the_mind_arts/legilimency/
+[Legilimency]: /Harrypedia/magic/the_mind_arts/legilimency/
+[the Mind Arts]: /Harrypedia/magic/the_mind_arts/
 
 ## Found in
 

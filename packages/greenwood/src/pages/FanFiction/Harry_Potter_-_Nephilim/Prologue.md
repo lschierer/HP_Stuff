@@ -108,11 +108,11 @@ shard could not possess her son. A battle of wills and of magic began.
 
 [^20210218-2]: See my notes on the [Peverells][]
 
-[Peverells]: /harrypedia/people/peverell/
+[Peverells]: /Harrypedia/people/peverell/
 
 [power levels]: ../appendices/relative-power-levels/
 
-[^202104201]: See my notes on [Culture/harrypedia/culture/)
+[^202104201]: See my notes on [Culture/Harrypedia/culture/)
 
 [^202109028]:
     See the author's notes on

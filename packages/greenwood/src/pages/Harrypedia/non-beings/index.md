@@ -13,10 +13,10 @@ possibly [banshees][].[^211020-8] I agree the description and concepts they
 have come up with fits well with what Mrs. Rowling has provided for us. It is,
 however, philosophically unacceptable to me at a really fundamental level.
 
-[boggarts]: /harrypedia/non-beings/boggart/
-[dementors]: /harrypedia/non-beings/dementor/
-[poltergeists]: /harrypedia/non-beings/poltergeist/
-[banshees]: /harrypedia/non-beings/banshee/
+[boggarts]: /Harrypedia/non-beings/boggart/
+[dementors]: /Harrypedia/non-beings/dementor/
+[poltergeists]: /Harrypedia/non-beings/poltergeist/
+[banshees]: /Harrypedia/non-beings/banshee/
 
 The basic premise is that sufficient concentrations of magic mixed with the
 right negative emotion will produce a spirit that is functionally indestructible
@@ -24,7 +24,7 @@ and unkillable because, so the theory goes, being "alive" requires having a
 physical body. Since these things have never been "alive" they cannot be
 killed, only driven away.
 
-[balance of power]: /harrypedia/balance/
+[balance of power]: /Harrypedia/balance/
 
 There are two basic problems. The first is that they disrupt the overall
 [balance of power][] in the world Mrs. Rowling has created. The other problem

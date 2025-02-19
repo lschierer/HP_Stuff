@@ -76,21 +76,21 @@ author: Luke Schierer
 
 </dl>
 
-[Granger]: /harrypedia/people/granger//
-[Marietta]: /harrypedia/people/edgecombe/marietta//
-[Ginny]: /harrypedia/people/weasley/ginevra_molly//
-[Lavender]: /harrypedia/people/brown/lavender//
+[Granger]: /Harrypedia/people/granger//
+[Marietta]: /Harrypedia/people/edgecombe/marietta//
+[Ginny]: /Harrypedia/people/weasley/ginevra_molly//
+[Lavender]: /Harrypedia/people/brown/lavender//
 [Not the Smartest Witch]: https://www.fanfiction.net/s/10434054
-[Responsible Adult]: /bookmarks/responsibleadults/
-[McGonagall]: /harrypedia/people/mcgonagall/minerva//
-[Unspeakables]: /harrypedia/unspeakables//
-[Ron]: /harrypedia/people/weasley/ronald_bilius//
-[Hermione]: /harrypedia/people/granger/hermione_jean//
-[Harry]: /harrypedia/people/potter/harry_james//
-[canon]: /harrypedia//
-[canonical]: /harrypedia//
-[Sirius]: /harrypedia/people/black/sirius_iii//
-[Grimmauld Place]: /harrypedia/grimmauld_place//
+[Responsible Adult]: /Bookmarks/responsibleadults/
+[McGonagall]: /Harrypedia/people/mcgonagall/minerva//
+[Unspeakables]: /Harrypedia/unspeakables//
+[Ron]: /Harrypedia/people/weasley/ronald_bilius//
+[Hermione]: /Harrypedia/people/granger/hermione_jean//
+[Harry]: /Harrypedia/people/potter/harry_james//
+[canon]: /Harrypedia//
+[canonical]: /Harrypedia//
+[Sirius]: /Harrypedia/people/black/sirius_iii//
+[Grimmauld Place]: /Harrypedia/grimmauld_place//
 
 [^240325-1]:
     Mrs. J. K. Rowling.

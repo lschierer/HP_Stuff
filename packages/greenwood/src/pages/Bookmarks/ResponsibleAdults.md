@@ -295,36 +295,36 @@ because they showcase some aspect of adults being … adults.
 
 [^221214-2]: [Wikipedia](https://wikipedia.org). "[Emancipation of Minors](https://en.wikipedia.org/wiki/Emancipation_of_minors)" Last edited 2022-10-12.
 
-[Amelia]: /harrypedia/people/bones/amelia_susan/
-[Arthur]: /harrypedia/people/weasley/arthur/
-[Azkaban]: /harrypedia/azkaban/
-[Bill]: /harrypedia/people/weasley/william_arthur/
-[Dark Magic]: /harrypedia/magic/dark/
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Dursleys]: /harrypedia/people/dursley/
-[Harry]: /harrypedia/people/potter/harry_james/
-[Hermione]: /harrypedia/people/granger/hermione_jean/
-[Hogwarts]: /harrypedia/hogwarts/
-[Hufflepuff]: /harrypedia/hogwarts/hufflepuff/
-[James]: /harrypedia/people/potter/james/
-[Lily]: /harrypedia/people/evans/lily_j/
-[Lupin]: /harrypedia/people/lupin/remus_john/
-[Malfoy]: /harrypedia/people/malfoy/draco_lucius/
-[McGonagall]: /harrypedia/people/mcgonagall/minerva/
-[Molly]: /harrypedia/people/prewett/molly/
-[Neville]: /harrypedia/people/longbottom/neville/
-[Riddle]: /harrypedia/people/riddle/tom_marvolo/
-[Ron]: /harrypedia/people/weasley/ronald_bilius/
-[Sirius]: /harrypedia/people/black/sirius_iii/
-[Slytherin]: /harrypedia/hogwarts/slytherin/
-[Snape]: /harrypedia/people/snape/severus/
-[Sprout]: /harrypedia/people/sprout/pomona/
-[Statute of Secrecy]: /harrypedia/culture/international_statute_of_secrecy/
-[Umbridge]: /harrypedia/people/umbridge/dolores_jane/
-[Vernon]: /harrypedia/people/dursley/vernon/
-[basilisk]: /harrypedia/animals/basilisk/
-[typical adult]: /harrypedia/people/adults/
-[egoist]: /harrypedia/reactions/fanfiction/the_egoist_society/
+[Amelia]: /Harrypedia/people/bones/amelia_susan/
+[Arthur]: /Harrypedia/people/weasley/arthur/
+[Azkaban]: /Harrypedia/azkaban/
+[Bill]: /Harrypedia/people/weasley/william_arthur/
+[Dark Magic]: /Harrypedia/magic/dark/
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Dursleys]: /Harrypedia/people/dursley/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hogwarts]: /Harrypedia/hogwarts/
+[Hufflepuff]: /Harrypedia/hogwarts/hufflepuff/
+[James]: /Harrypedia/people/potter/james/
+[Lily]: /Harrypedia/people/evans/lily_j/
+[Lupin]: /Harrypedia/people/lupin/remus_john/
+[Malfoy]: /Harrypedia/people/malfoy/draco_lucius/
+[McGonagall]: /Harrypedia/people/mcgonagall/minerva/
+[Molly]: /Harrypedia/people/prewett/molly/
+[Neville]: /Harrypedia/people/longbottom/neville/
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Sirius]: /Harrypedia/people/black/sirius_iii/
+[Slytherin]: /Harrypedia/hogwarts/slytherin/
+[Snape]: /Harrypedia/people/snape/severus/
+[Sprout]: /Harrypedia/people/sprout/pomona/
+[Statute of Secrecy]: /Harrypedia/culture/international_statute_of_secrecy/
+[Umbridge]: /Harrypedia/people/umbridge/dolores_jane/
+[Vernon]: /Harrypedia/people/dursley/vernon/
+[basilisk]: /Harrypedia/animals/basilisk/
+[typical adult]: /Harrypedia/people/adults/
+[egoist]: /Harrypedia/reactions/FanFiction/the_egoist_society/
 
 [^lbcx]: including but not limited to
     - _[Who Let Her In Here?](https://archiveofourown.org/works/19495357)_

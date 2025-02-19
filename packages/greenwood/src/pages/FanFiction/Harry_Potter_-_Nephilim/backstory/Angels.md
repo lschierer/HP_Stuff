@@ -24,7 +24,7 @@ And yet, the Creator in His wisdom would not allow them to create a life that wa
 
 [^241120-1]: As per the [Introduction], the theology here is a fictional mix of nonsense largely based on [Many Waters].
 
-[Introduction]: /fanfiction/harry_potter_-_nephilim/introduction/
+[Introduction]: /FanFiction/harry_potter_-_nephilim/introduction/
 [Many Waters]: https://wikipedia.org/wiki/Many_Waters
 [proximate causes]: https://wikipedia.org/wiki/Proximate_cause
 

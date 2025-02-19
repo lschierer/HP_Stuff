@@ -30,11 +30,11 @@ respect with which she might be held.
     Head of Magical Law Enforcement, not the equivalent of the Head of State and
     Government?
 
-[Fudge]: /harrypedia/people/fudge/cornelius_oswald/
-[Tonks]: /harrypedia/people/tonks/nymphadora/
-[Harry]: /harrypedia/people/potter/harry_james/
-[Hagrid]: /harrypedia/people/hagrid/rubeus/
-[Sirius]: /harrypedia/people/black/sirius_iii/
+[Fudge]: /Harrypedia/people/fudge/cornelius_oswald/
+[Tonks]: /Harrypedia/people/tonks/nymphadora/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Hagrid]: /Harrypedia/people/hagrid/rubeus/
+[Sirius]: /Harrypedia/people/black/sirius_iii/
 
 [^221213-2]:
     Mrs. J. K. Rowling.

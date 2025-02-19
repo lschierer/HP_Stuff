@@ -51,11 +51,11 @@ sidebar:
     Hogwarts to the earliest Dumbledore could be headmaster and yet be winter
     _after_ [Remus][RL1] is bitten.
 
-[RL1]: /harrypedia/people/lupin/remus_john/
-[James]: /harrypedia/people/potter/james/
-[Lily]: /harrypedia/people/evans/lily_j/
-[TMR1]: /harrypedia/people/riddle/tom_marvolo/
-[H1]: /harrypedia/history
+[RL1]: /Harrypedia/people/lupin/remus_john/
+[James]: /Harrypedia/people/potter/james/
+[Lily]: /Harrypedia/people/evans/lily_j/
+[TMR1]: /Harrypedia/people/riddle/tom_marvolo/
+[H1]: /Harrypedia/history
 
 ### Character Analysis
 
@@ -69,8 +69,8 @@ you, but rather a complex one who requires more careful analysis to understand
 his flaws in the right context.
 
 [FI]: https://musings-of-apathy.fanficauthors.net/Family_Inseparable/index/
-[HS]: /harrypedia/people/slughorn/horace_eugene_flaccus/
-[hogwarts]: /harrypedia/hogwarts/
+[HS]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
+[hogwarts]: /Harrypedia/hogwarts/
 
 Musings of Apathy, in writing the original version of [Family Inseparable][FI],
 envisions Dumbledore as (my words) misguided, and perhaps ruthless, but not
@@ -165,8 +165,8 @@ Dumbledore are. In no particular order:
 - The above and [much more][ADtoh] concerning [Harry].
 - And even more about [how he dealt with Riddle][ADdwr].
 
-[Harry]: /harrypedia/people/potter/harry_james/
-[DMH1]: /harrypedia/magic/dark/horcruxes/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[DMH1]: /Harrypedia/magic/dark/horcruxes/
 
 [^220916-1]:
     Mrs. J. K. Rowling.
@@ -272,26 +272,26 @@ kept out of Azkaban.[^220916-2] Despite this, Dumbledore claims to be totally
 unable to assist [Sirius][SB3] in exonerating himself. Is this just a convenient
 excuse to prevent [Sirius][SB3] from being able to adopt [Harry]?
 
-[GG]: /harrypedia/people/grindelwald/gellert/
+[GG]: /Harrypedia/people/grindelwald/gellert/
 [Ariana]: ../ariana/
-[RBW]: /harrypedia/people/weasley/ronald_bilius/
-[MM]: /harrypedia/people/mcgonagall/minerva/
-[PS]: /harrypedia/people/sprout/pomona/
-[FF]: /harrypedia/people/flitwick/filus/
-[DF1]: /harrypedia/people/dursley/
-[Weasleys]: /harrypedia/people/weasley/
-[Horcruxes]: /harrypedia/magic/dark/horcruxes/
-[Malfoy]: /harrypedia/people/malfoy/
-[HPwc]: /harrypedia/culture/government/
-[SB3]: /harrypedia/people/black/sirius_iii/
-[SS]: /harrypedia/people/snape/severus/
+[RBW]: /Harrypedia/people/weasley/ronald_bilius/
+[MM]: /Harrypedia/people/mcgonagall/minerva/
+[PS]: /Harrypedia/people/sprout/pomona/
+[FF]: /Harrypedia/people/flitwick/filus/
+[DF1]: /Harrypedia/people/dursley/
+[Weasleys]: /Harrypedia/people/weasley/
+[Horcruxes]: /Harrypedia/magic/dark/horcruxes/
+[Malfoy]: /Harrypedia/people/malfoy/
+[HPwc]: /Harrypedia/culture/government/
+[SB3]: /Harrypedia/people/black/sirius_iii/
+[SS]: /Harrypedia/people/snape/severus/
 
 [^220916-2]:
     Mrs. J. K. Rowling.
     _[Harry Potter and the Goblet of Fire](https://www.librarything.com/work/113)_
     © 2003 Pottermore Publishing American Kindle Edition. Locations 8831-8833.
 
-[Occlumency]: /harrypedia/magic/the_mind_arts/occlumency/
+[Occlumency]: /Harrypedia/magic/the_mind_arts/occlumency/
 
 Other acts Dumbledore would have to defend by saying it was not his actions in
 any sense. Dumbledore directed [Snape][SS] to teach [Occlumency][], and claims

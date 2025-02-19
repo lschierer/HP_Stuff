@@ -10,7 +10,7 @@ spells: "Cure for Boils"
 
 Removes boils, such as those produced by the [Pimple Jinx][].
 
-[Pimple Jinx]: /harrypedia/magic/spells/pimple/
+[Pimple Jinx]: /Harrypedia/magic/spells/pimple/
 
 ## Found in
 

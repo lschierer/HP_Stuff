@@ -85,18 +85,18 @@ require something (a ring or a key) to unlock that was itself locked in the
 vault in question, because _everything_ the Potters owned was placed in the
 vault without forethought.[^210322-1]
 
-[Bellatrix]: /harrypedia/people/black/bellatrix/
-[Blacks]: /harrypedia/people/black/
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Fleamont]: /harrypedia/people/potter/fleamont/
-[Grimmauld Place]: /harrypedia/grimmauld_place/
-[Gringotts]: /harrypedia/gringotts/
-[Harry]: /harrypedia/people/potter/harry_james/
-[James]: /harrypedia/people/potter/james/
-[Lestranges]: /harrypedia/people/lestrange/
-[Linfred]: /harrypedia/people/linfred/
-[Riddle]: /harrypedia/people/riddle/tom_marvolo/
-[Sirius]: /harrypedia/people/black/sirius_iii/
+[Bellatrix]: /Harrypedia/people/black/bellatrix/
+[Blacks]: /Harrypedia/people/black/
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Fleamont]: /Harrypedia/people/potter/fleamont/
+[Grimmauld Place]: /Harrypedia/grimmauld_place/
+[Gringotts]: /Harrypedia/gringotts/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[James]: /Harrypedia/people/potter/james/
+[Lestranges]: /Harrypedia/people/lestrange/
+[Linfred]: /Harrypedia/people/linfred/
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Sirius]: /Harrypedia/people/black/sirius_iii/
 
 [Harry Potter and the Deathly Hallows]: https://www.goodreads.com/book/show/136251.Harry_Potter_and_the_Deathly_Hallows
 

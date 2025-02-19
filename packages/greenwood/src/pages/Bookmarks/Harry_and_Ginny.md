@@ -298,14 +298,14 @@ fiction rarely does it justice.
 
 [The Hidden Hero]: https://www.fanfiction.net/s/3995826
 [featuring Hermione]: ../featuring_hermione/
-[Luna]: /harrypedia/people/lovegood/luna//
-[Remus]: /harrypedia/people/lupin/remus_john//
-[Grimmauld Place]: /harrypedia/grimmauld_place/
-[Lucius]: /harrypedia/people/malfoy/lucius_abraxas//
-[Horcruxes]: /harrypedia/magic/dark/horcruxes/
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian//
-[Snape]: /harrypedia/people/snape/severus//
-[Draco]: /harrypedia/people/malfoy/draco_lucius//
+[Luna]: /Harrypedia/people/lovegood/luna//
+[Remus]: /Harrypedia/people/lupin/remus_john//
+[Grimmauld Place]: /Harrypedia/grimmauld_place/
+[Lucius]: /Harrypedia/people/malfoy/lucius_abraxas//
+[Horcruxes]: /Harrypedia/magic/dark/horcruxes/
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
+[Snape]: /Harrypedia/people/snape/severus//
+[Draco]: /Harrypedia/people/malfoy/draco_lucius//
 [Realizations]: https://www.fanfiction.net/s/7875381
 
 [^220711-1]:
@@ -316,14 +316,14 @@ fiction rarely does it justice.
 [X-Men]: https://en.wikipedia.com/wiki/X-Men
 [Mutant Storm]: https://www.fanfiction.net/s/7404056
 [Backward With Purpose Part I: Always and Always]: https://www.fanfiction.net/s/4101650
-[James]: /harrypedia/people/potter/james//
-[Lily]: /harrypedia/people/evans/lily_j//
-[Riddle]: /harrypedia/people/riddle/tom_marvolo//
-[Harry]: /harrypedia/people/potter/harry_james//
-[Percy]: /harrypedia/people/weasley/percy_ignatius//
-[Ginny]: /harrypedia/people/weasley/ginevra_molly//
-[Molly]: /harrypedia/people/prewett/molly//
-[Hermione]: /harrypedia/people/granger/hermione_jean//
-[Ron]: /harrypedia/people/weasley/ronald_bilius//
-[Sirius]: /harrypedia/people/black/sirius_iii//
-[Lupin]: /harrypedia/people/lupin/remus_john//
+[James]: /Harrypedia/people/potter/james//
+[Lily]: /Harrypedia/people/evans/lily_j//
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo//
+[Harry]: /Harrypedia/people/potter/harry_james//
+[Percy]: /Harrypedia/people/weasley/percy_ignatius//
+[Ginny]: /Harrypedia/people/weasley/ginevra_molly//
+[Molly]: /Harrypedia/people/prewett/molly//
+[Hermione]: /Harrypedia/people/granger/hermione_jean//
+[Ron]: /Harrypedia/people/weasley/ronald_bilius//
+[Sirius]: /Harrypedia/people/black/sirius_iii//
+[Lupin]: /Harrypedia/people/lupin/remus_john//

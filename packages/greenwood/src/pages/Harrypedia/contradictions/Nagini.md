@@ -18,10 +18,10 @@ I get that in a fictional world anything goes per the author's imagination, but 
 On the other hand, it may be that this is _why_ he is willing to make a snake, which would normally have a lifespan of 20 to 30 years in "perfect conditions"[^240326-3], to be a horcrux. It is certainly odd that he would attempt to ensure his immortality by entrusting his soul to something that will ultimately self-destruct due to its limited lifespan.
 
 [dementia]: https://www.cdc.gov/aging/dementia/
-[Animagus]: /harrypedia/magic//
-[horcrux]: /harrypedia/magic/dark/horcruxes//
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian//
-[Riddle]: /harrypedia/people/riddle/tom_marvolo//
+[Animagus]: /Harrypedia/magic//
+[horcrux]: /Harrypedia/magic/dark/horcruxes//
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo//
 
 [^240326-2]:
     [Callie Ahlgrim](https://www.businessinsider.com/author/callie-ahlgrim)

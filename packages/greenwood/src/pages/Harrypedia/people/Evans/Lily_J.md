@@ -13,9 +13,9 @@ Almost all of our facts about Lily come from [Snape]'s [Worst Memory][], or his
 dying memory dump. I do not regard either as a wholely reliable and unbiased
 source. See my thoughts on the [pensieve][].
 
-[pensieve]: /harrypedia/magic/time/pensieve/
-[Snape]: /harrypedia/people/snape/severus/
-[Worst Memory]: /harrypedia/people/snape/severus/swm/
+[pensieve]: /Harrypedia/magic/time/pensieve/
+[Snape]: /Harrypedia/people/snape/severus/
+[Worst Memory]: /Harrypedia/people/snape/severus/swm/
 
 - She had an antagonistic relationship with [James] minimally through their
   fifth year.
@@ -60,10 +60,10 @@ the females in the series at the expense of the males.[^20210927-2]
 
 [GAFRIW1]: https://www.fanfiction.net/s/6126906
 [GAFRIW2]: https://www.fanfiction.net/s/6126906
-[James]: /harrypedia/people/potter/james/
-[Harry]: /harrypedia/people/potter/harry_james/
-[Lupin]: /harrypedia/people/lupin/remus_john/
-[Snape]: /harrypedia/people/snape/severus/
+[James]: /Harrypedia/people/potter/james/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Lupin]: /Harrypedia/people/lupin/remus_john/
+[Snape]: /Harrypedia/people/snape/severus/
 
 [^20210927-4]:
     gredandforgerock.

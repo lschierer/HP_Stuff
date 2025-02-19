@@ -11,14 +11,14 @@ the end of the 1975-1976 school year when [Lily], [James] and their friends
 (or enemies as the case may be) were in their fifth year. We do not know the
 exact chronology, what follows is my best reconstruction.
 
-[Sirius]: /harrypedia/people/black/sirius_iii/
-[James]: /harrypedia/people/potter/james/
-[Lily]: /harrypedia/people/evans/lily_j/
-[Snape]: /harrypedia/people/snape/severus/
-[Severus]: /harrypedia/people/snape/severus/
-[McGonagall]: /harrypedia/people/mcgonagall/minerva/
-[Dumbledore]: /harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Lupin]: /harrypedia/people/lupin/remus_john/
+[Sirius]: /Harrypedia/people/black/sirius_iii/
+[James]: /Harrypedia/people/potter/james/
+[Lily]: /Harrypedia/people/evans/lily_j/
+[Snape]: /Harrypedia/people/snape/severus/
+[Severus]: /Harrypedia/people/snape/severus/
+[McGonagall]: /Harrypedia/people/mcgonagall/minerva/
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Lupin]: /Harrypedia/people/lupin/remus_john/
 
 ## What Happened
 
@@ -102,7 +102,7 @@ wronged him.
 - Once [Lily] states that [James] is "an arrogant toerag," [Snape] stops
   listening to anything she says.
 
-[Dark Magic]: /harrypedia/magic/dark/
+[Dark Magic]: /Harrypedia/magic/dark/
 
 ### Snape's second relevant memory, Order of the Phoenix version[^210921-8]
 
@@ -418,6 +418,6 @@ along makes that change to become someone she can see herself marrying _on his
 own_, **before she begins their relationship**. Only then does she allow herself
 to act on that attraction by agreeing to go out with him.
 
-[Occlumens]: /harrypedia/magic/the_mind_arts/occlumency/
-[Harry]: /harrypedia/people/potter/harry_james/
-[Hogwarts]: /harrypedia/hogwarts/
+[Occlumens]: /Harrypedia/magic/the_mind_arts/occlumency/
+[Harry]: /Harrypedia/people/potter/harry_james/
+[Hogwarts]: /Harrypedia/hogwarts/
