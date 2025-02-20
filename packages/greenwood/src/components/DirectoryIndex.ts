@@ -123,6 +123,16 @@ export default class DirectoryIndex extends HTMLElement {
                       >
                     </iconify-icon>
                   `;
+                  const descriptionTemplate = `
+                    <div slot="description"> ${
+                      entry.data
+                        ? entry.data.description
+                          ? entry.data.description
+                          : ""
+                        : ""
+                    }
+                    </div>
+                  `;
                   return `
                   <div class="cardItem">
                     <sp-card
@@ -134,15 +144,14 @@ export default class DirectoryIndex extends HTMLElement {
                       value="card-${index}"
                     >
                       ${imgTemplate}
-                      <div slot="description"> ${
+                      ${
                         entry.data
                           ? entry.data.description
-                            ? entry.data.description
+                            ? descriptionTemplate
                             : ""
                           : ""
                       }
-                      </div>
-                      <div slot="footer">""</div>
+
                     </sp-card>
                   </div>
                 `;
