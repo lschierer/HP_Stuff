@@ -15,7 +15,7 @@ collection: Nephilim
 >
 > My non-Mendelian inheritance is necessarily arbitrary and entirely made up out of my own head, becuse none of my [source works] give us any details what so ever on the topic.
 
-## The rules of magical inheritance as compiled from in-world research
+## The rules of magical inheritance as currently compiled
 
 1.  These rules must be applied as an ordered list, with earlier rules taking
     precidence over later rules.
@@ -62,7 +62,7 @@ collection: Nephilim
     - While all emotional magic falls in this category of corrupting the user,
       there are other classes of magic that do as well.
     - Magic that _decreases_ free will of the _target_ has _incredibly_ low thresholds.
-      - The [Imperius] curse
+      - The Imperius curse
       - the Confundus curse
       - some uses of memory charms
     - The thresholds involved for each kind of magic are very poorly researched
@@ -115,21 +115,21 @@ There are in fact, though no-inworld scholar knows this, precise percentage base
     Mrs. J. K. Rowling & Sony Computer Entertainment Europe.
     _[Miranda Goshawk's Book of Spells](https://archive.org/details/0_20211019/)_ 2013. Page 66.
 
-[Raczidian]: /Harrypedia/people/raczidian/
+[Raczidian]: /Harrypedia/People/Raczidian/
 [source works]: /FanFiction/Harry_Potter_-_Nephilim/introduction/
 [Many Waters]: https://wikipedia.org/wiki/Many_Waters
-[AA]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/points-of-divergence/
-[AB]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/rules-of-magic/
-[AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-beings/
+[AA]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Points of Divergence/>
+[AB]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Rules of Magic/>
+[AC]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Beings/>
 [Inheritance]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Inheritance/
-[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
-[AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
-[Magical Contracts]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/
+[AD]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Relative Power Levels/>
+[AE]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Life Expectancy/>
+[Magical Contracts]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
 [Soteriology, Missiology and Ecclesiology]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
 [AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
-[Appendix I]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_i/
+[Appendix I]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/>
 
 [^241123-1]: See [Soteriology, Missiology and Ecclesiology] and [Points of Divergence]
 
-[Points of Divergence]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/points-of-divergence/
+[Points of Divergence]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Points of Divergence/>
 [hippogriff]: /Harrypedia/animals/hippogriff/

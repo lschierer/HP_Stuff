@@ -252,8 +252,8 @@ can never be fully freed.
 [AF]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/
 [AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
 [AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
-[AI]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_i/
-[Appendix I]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_i/
+[AI]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/
+[Appendix I]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/
 [Flood]: /FanFiction/Harry_Potter_-_Nephilim/backstory/the_flood
 [goblin wars]: /FanFiction/Harry_Potter_-_Nephilim/backstory/the_dwarfs
 [Giants]: /FanFiction/Harry_Potter_-_Nephilim/backstory/giants

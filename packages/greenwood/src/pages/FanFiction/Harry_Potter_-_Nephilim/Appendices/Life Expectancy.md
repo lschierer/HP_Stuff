@@ -7,19 +7,34 @@ sidebar:
   order: 100
 ---
 
-| Average Power Level | US Males 1900 | US Males 2001 | US Male Nephilim 1900 | US Females 1900 | US Females 2001 | US Female Nephilim 1900 |
-| :-----------------: | :-----------: | :-----------: | :-------------------: | :-------------: | :-------------: | :---------------------: |
-|          0          |     51.5      |     77.8      |         51.5          |      58.3       |      82.8       |          58.3           |
-|          1          |     51.5      |     77.8      |         57.50         |      58.3       |      82.8       |          63.39          |
-|          2          |     51.5      |     77.8      |         64.71         |      58.3       |      82.8       |          69.65          |
-|          3          |     51.5      |     77.8      |         73.37         |      58.3       |      82.8       |          77.32          |
-|          4          |     51.5      |     77.8      |         83.77         |      58.3       |      82.8       |          86.75          |
-|          5          |     51.5      |     77.8      |         96.25         |      58.3       |      82.8       |          98.31          |
-|          6          |     51.5      |     77.8      |        111.24         |      58.3       |      82.8       |         112.51          |
-|          7          |     51.5      |     77.8      |        129.25         |      58.3       |      82.8       |         129.94          |
-|          8          |     51.5      |     77.8      |        150.86         |      58.3       |      82.8       |         151.33          |
-|          9          |     51.5      |     77.8      |        176.82         |      58.3       |      82.8       |         177.60          |
-|         10          |     51.5      |     77.8      |        207.99         |      58.3       |      82.8       |         209.83          |
+| Average Power Level | US Males 1900 | US Males 2001 | US Male Nephilim 1900 |
+| :-----------------: | :-----------: | :-----------: | :-------------------: |
+|          0          |     51.5      |     77.8      |         51.5          |
+|          1          |     51.5      |     77.8      |         57.50         |
+|          2          |     51.5      |     77.8      |         64.71         |
+|          3          |     51.5      |     77.8      |         73.37         |
+|          4          |     51.5      |     77.8      |         83.77         |
+|          5          |     51.5      |     77.8      |         96.25         |
+|          6          |     51.5      |     77.8      |        111.24         |
+|          7          |     51.5      |     77.8      |        129.25         |
+|          8          |     51.5      |     77.8      |        150.86         |
+|          9          |     51.5      |     77.8      |        176.82         |
+|         10          |     51.5      |     77.8      |        207.99         |
+
+| Average Power Level | US Females 1900 | US Females 2001 | US Female Nephilim 1900 |
+| :-----------------: | :-------------: | :-------------: | :---------------------: |
+|          0          |      58.3       |      82.8       |          58.3           |
+|          1          |      58.3       |      82.8       |          63.39          |
+|          2          |      58.3       |      82.8       |          69.65          |
+|          3          |      58.3       |      82.8       |          77.32          |
+|          4          |      58.3       |      82.8       |          86.75          |
+|          5          |      58.3       |      82.8       |          98.31          |
+|          6          |      58.3       |      82.8       |         112.51          |
+|          7          |      58.3       |      82.8       |         129.94          |
+|          8          |      58.3       |      82.8       |         151.33          |
+|          9          |      58.3       |      82.8       |         177.60          |
+|         10          |      58.3       |      82.8       |         209.83          |
+
 
 The above table is in part based on Ms. Felicitie C. Bell, Mr. Michael L. Miller. "[Life Tables for the United States Social Security Area 1900-2100]" 2005-08. SSA Pub. No. 11-11536.
 
@@ -92,5 +107,5 @@ This gives our central characters life expectancies as follows:
 
 \* Fleur is quarter-veela, see [The Veela Curse].
 
-[The Veela Curse]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_i/
+[The Veela Curse]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/>
 [Life Tables for the United States Social Security Area 1900-2100]: https://www.ssa.gov/oact/NOTES/pdf_studies/study120.pdf

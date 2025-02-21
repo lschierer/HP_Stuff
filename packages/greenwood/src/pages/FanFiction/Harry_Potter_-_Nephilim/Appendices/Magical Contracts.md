@@ -18,7 +18,7 @@ sidebar:
 
 ## Definition, Scope, and Limitations
 
-As has been stated in other works on the nephilim, with rare exceptions all modern nephilim have a widely mixed heritage that includes powers that we believe to be derived from fallen angels that can be classified as belonging to the order of Thrones.   This inheritance makes these nephilim subject to what we call, for lack of a better term, "contract magic."  Despite this naming, it is imperitive that one not let the word "contract" limit or misdirect one's thinking.  This is in fact a fairly large body of magic that pervades nephilim social life in a variety of ways. For example, the so called Unbreakable Vow is not _really_ a contract, but clearly falls in this category. These are contracts in the sense that at least one party agrees
+As has been stated in other works on the nephilim, with rare exceptions all modern nephilim have a widely mixed heritage that includes powers that we believe to be derived from fallen angels that can be classified as belonging to the order of Thrones.   This inheritance makes these nephilim subject to what we call, for lack of a better term, "contract magic."  Despite this naming, it is imperative that one not let the word "contract" limit or misdirect one's thinking.  This is in fact a fairly large body of magic that pervades nephilim social life in a variety of ways. For example, the so called Unbreakable Vow is not _really_ a contract, but clearly falls in this category. These are contracts in the sense that at least one party agrees
 
 - to do something
 - to _not_ do something
@@ -28,66 +28,66 @@ for, or with the other party, possibly, but not necessarily, in exchange for som
 
 **A magical contract can thus be an unilateral, bilateral _or_ multilateral exchange of goods, actions, _and/or_ persons.**
 
-For obvious reasons it is difficult, even with the cooperation of one or more of the nephilim, to perform any real testing in a controlled way on the bounds of contract magic.  Any such testing would quickly cross the lines of what could be ethically considered perissible, as ample obervational data exists to demonstrate that these contracts can be subtle in their implications, brutal in their self-enforcement, and thus the risk to the test subjects would be very very real.  This document then is largely the result of the Church's collected observations on the ways in which the nephilim have used this magic, the ways they have *attempted* to do so and failed, and what we know of the situations that distinguish each case. The theories advanced here are those that fit *all* known observational data, every effort has been made to exclude any theory for which there is *any* contracdictory evidence, no matter how small or unlikely.  This is done to give the highest level of assurance to what we *can* put forth, even though the end result is that we know very limited amounts.  Far too frequently the theories advanced raise more questions than they answer.
+For obvious reasons it is difficult, even with the cooperation of one or more of the nephilim, to perform any real testing in a controlled way on the bounds of contract magic.  Any such testing would quickly cross the lines of what could be ethically considered permissible, as ample observational data exists to demonstrate that these contracts can be subtle in their implications, brutal in their self-enforcement, and thus the risk to the test subjects would be very very real.  This document then is largely the result of the Church's collected observations on the ways in which the nephilim have used this magic, the ways they have *attempted* to do so and failed, and what we know of the situations that distinguish each case. The theories advanced here are those that fit *all* known observational data, every effort has been made to exclude any theory for which there is *any* contradictory evidence, no matter how small or unlikely.  This is done to give the highest level of assurance to what we *can* put forth, even though the end result is that we know very limited amounts.  Far too frequently the theories advanced raise more questions than they answer.
 
-All magical contracts are originated by one or more of the nephilim, their decendant races, or some combination thereof. The individual or individuals creating the contract are called the "originating participatants." All magical contracts are created to effect some end. This end must be considered a net good by at least one of the originating particants, or the magic of the contrat will fail. The end to be achieved must be possible, however it *may* require additional participants. If additional participants are required to achieve a proposed end, the additional participants are contractees. Originating participants cannot contract arbitrary persons as contractees, only those related to the originating participants in certain ways can be bound. All contractees must themselves also be of the nephilim or one of their decendant races.  Researchers speculate that these restrictions represent laws enforced by either direct Divine action or indirect action mediated via that angelic choir known as the Powers.
+All magical contracts are originated by one or more of the nephilim, their descendant races, or some combination thereof. The individual or individuals creating the contract are called the "originating participants." All magical contracts are created to effect some end. This end must be considered a net good by at least one of the originating participants, or the magic of the contract will fail. The end to be achieved must be possible, however it *may* require additional participants. If additional participants are required to achieve a proposed end, the additional participants are contractees. Originating participants cannot contract arbitrary persons as contractees, only those related to the originating participants in certain ways can be bound. All contractees must themselves also be of the nephilim or one of their descendant races.  Researchers speculate that these restrictions represent laws enforced by either direct Divine action or indirect action mediated via that angelic choir known as the Powers.
 
 ## Originating Participants and Contractees
 
-When the set of Originating Participants represents either a distinct set from the set of Contractees, a subset of Contractees, or when the full set of Participants can only be represented as the union of the Originating Particpants and the Contractees, there must exist one of a limited number of relationships between at least one Originating Participant and each Contractee.
+When the set of Originating Participants represents either a distinct set from the set of Contractees, a subset of Contractees, or when the full set of Participants can only be represented as the union of the Originating Participants and the Contractees, there must exist one of a limited number of relationships between at least one Originating Participant and each Contractee.
 
 That is, for each Contractee, an Originating Participant must be identifiable that meets the following conditions.
 
 - No full human may act either
-  - as Originating Participatant including both,
+  - as Originating Participant including both,
     - directly acting on his/her own behalf
     - acting via delegated authority (see below)
   - as Contractee
-- Any attempt by an Originating Participatant to effect an end *known to be* contrary
+- Any attempt by an Originating Participant to effect an end *known to be* contrary
   to natural law will fail.
   - This restriction does *not* apply retroactively. Situations have been observed where a Contractee has
     been bound by two or more contracts such that performing any one of them would, under the dictates of natural law, preclude the others. Careful consideration has in each such case demonstrated that each Contract was *possible* at the time of creation. The conflict arose only once one began execution.
   - The key phrasing in this restriction is "known to be." Several examples of immoral contracts have
-    been identified where sufficient evidence exists that the Originating Participatants had a deficit of understanding, and did in fact believe the contract to intend a good end. Researchers speculate that this restriction has been left intentionally weak because of its interaction with free will.  This may seem odd given that this magic is by its very nature *restricting* free will. We can only remind the reader that we have previously stated that these answers frequently raise more questions than they answer.
+    been identified where sufficient evidence exists that the Originating Participants had a deficit of understanding, and did in fact believe the contract to intend a good end. Researchers speculate that this restriction has been left intentionally weak because of its interaction with free will.  This may seem odd given that this magic is by its very nature *restricting* free will. We can only remind the reader that we have previously stated that these answers frequently raise more questions than they answer.
 - Contractees may be related to Originating Participates with a parent -> child relationship, such that
   the Contractee is the child of the Originating Participant.
-  - The inverse of the preceeding rule does not work, and any such attempt will fail.
+  - The inverse of the preceding rule does not work, and any such attempt will fail.
   - Contractees may not be related to Originating Participants with a sibling relationship.
-- Contractees may be decended from the Originating Participant to the N^th degree, that is there may be
-  any number of generations of parent->child relationships between the Originating Participatant
+- Contractees may be descended from the Originating Participant to the N^th degree, that is there may be
+  any number of generations of parent->child relationships between the Originating Participant
   and the Contractee.
   - This is a super set of the first rule.
-  - This allows only for strait lines. Uncles/Aunts cannot act as Originating Participatant for a
+  - This allows only for strait lines. Uncles/Aunts cannot act as Originating Participant for a
     nephew/niece of any degree.
   - Many nephilim have adopted clan-line "houses." Despite this, the head of house/clan can act as
-    Originating Participatant only as *biologically* related, not based on this legal/social authority over the extended family. However, these contracts *may* work under the next rule.
-- Authorized Originating Participatants under the first two rules *may* delegate their authority so long
+    Originating Participant only as *biologically* related, not based on this legal/social authority over the extended family. However, these contracts *may* work under the next rule.
+- Authorised Originating Participants under the first two rules *may* delegate their authority so long
   as all of the following are true:
-  - the delegation relationship is recongized by
+  - the delegation relationship is recognised by
     - the nephil delegating the authority
-    - the nephil recieving the authority
+    - the nephil receiving the authority
     - the nephil who will be the Contractee
   - delegated authority is limited/scoped
-    - the Delegated Originating Participatant is *in fact* acting within the scoped limits
-    - the Delegated Originating Participatant *believes* him/herself to be acting within the scoped limits
-    - the *Contractee* believes the Delegated Originating Participatant to be acting within the scoped
+    - the Delegated Originating Participant is *in fact* acting within the scoped limits
+    - the Delegated Originating Participant *believes* him/herself to be acting within the scoped limits
+    - the *Contractee* believes the Delegated Originating Participant to be acting within the scoped
       limits.
-  - certain delegations are implicet:
-    - these implicet delegations are scoped by natural law *and* societal law - **whichever is *more*
-      restrictive on the Delegated Originating Participatant**
+  - certain delegations are implicit:
+    - these implicit delegations are scoped by natural law *and* societal law - **whichever is *more*
+      restrictive on the Delegated Originating Participant**
     - parents to teachers
     - parents to governments
 
-Delegated Originating Participatant may be the most interesting of these. Many examples exist of these contracts behaving unexpectedly.
+Delegated Originating Participant may be the most interesting of these. Many examples exist of these contracts behaving unexpectedly.
 
-- A contract failed when for a good end, by a recognized teacher for a student. The student recognized
+- A contract failed when for a good end, by a recognised teacher for a student. The student recognised
   the teacher as his teacher, however the law of the land restricted teachers such that they could act with delegated authority only during defined hours, and the contract was made outside those hours.
 - A contract failed when for a good end, made by a government authority, for a person within the the
-  borders of that country, however, the nephil proposed as contractee did not recognize the government as his own. The proposed contractee was a so called "muggle-born" and did not recognize the "magical government" as legitimate.
+  borders of that country, however, the nephil proposed as contractee did not recognise the government as his own. The proposed contractee was a so called "muggle-born" and did not recognise the "magical government" as legitimate.
 - The following *worked*: A contract for an objectively *bad* end, *thought* to be good by the government
-  official acting as Delegated Originating Participatant, for a Contractee who recognized her authority as a governemnt official. The contract was within the scope of her authority as a government official.
+  official acting as Delegated Originating Participant, for a Contractee who recognised her authority as a government official. The contract was within the scope of her authority as a government official.
 
-Needless to say, these are only a miniscule subset of the numerous datapoints examined that, overtime, has lead to the above formulation of the delegated authority rule.
+Needless to say, these are only a minuscule subset of the numerous data points examined that, overtime, has lead to the above formulation of the delegated authority rule.
 
 ## Other Restrictions
 
@@ -95,12 +95,12 @@ Magical contracts need not be written on special paper, or even written at all, 
 Common ones include, but are not limited to:
 
 - full legal signature on a paper (or parchment) contract
-- formal statement of agreement using ritualized launguage with intent: "I, <name>, agree to xyz"
+- formal statement of agreement using ritualised language with intent: "I, <name>, agree to xyz"
 - repeated statements of agreement
   - using significant numbers (three, seven and ten are common)
-  - in short durations.
-- acting as if bound to the contract (ie common law marriage) for either
-  magically significant durations or contractually significant
+  - in short duration's.
+- acting as if bound to the contract (IE common law marriage) for either
+  magically significant duration's or contractually significant
   events/actions that are distinctly related to contract and clearly not
   part of your non-contract/pre-contract normal life
   - marriages are consummated
@@ -131,12 +131,12 @@ Common ones include, but are not limited to:
   - There is some moral ambiguity here that the Church struggles with.
     - A contract signed by a proxy does not make the bound person morally
       culpable for the existence of the contract, the (sometimes incredibly strong) temptations it creates, or in some cases, even for the *situations* it creates.
-    - A contract can trigger consequences that _preasure_ but do not _force_
+    - A contract can trigger consequences that _pressure_ but do not _force_
       the nephil's Will.
     - The contract or contracts can create all sorts of conditions where the Contractee is making
       decisions with impaired freedom. They can even (and have been known to) create situations where the only known options are between formal participation with evil and immediate material participation with evil, neither of which are _actually_ acceptable.[^241126-1]
 
-The key here is that Originating Participatant (or their delegates) must _intend_ **to** contract, even if they do not fully understand the scope or significance of the penalties or terms.
+The key here is that Originating Participant (or their delegates) must _intend_ **to** contract, even if they do not fully understand the scope or significance of the penalties or terms.
 
 [^241126-1]: See the chart at <https://web.archive.org/web/20210616023912/https://archphila.org/HHS/pdf/CoopEvilChart.pdf>.
 
@@ -190,11 +190,11 @@ A stronger contract might make you physically ill or even die if you failed
 to go through with the marriage.
 
 This becomes problematic when a nephil finds himself/herself bound to multiple different marriage
-contracts each of which requires that the contractee live and act on the marriage.  With penalties that can and frequently do include death for non-compliance, and contracts writen in ways that do *not* include the monogamy proper to a true marriage, but rather allow for the pagan concept of multiple spouces, the contractee frequently experiences severe temptation.  Careful and prudential judgement is needed to determine if, in any individual case, any of the nephilim in these relationships are operating under sufficient durress due to the contracts as to impair their free choice.  Part of this prudential judgement must include the reality that one or more of the participants may be poorly catechised or even entirely uncatecised as regards to a true and proper understanding of marriage. They may have approached the Church having grown in this understanding only after having been in relationship for some time, or because some subset of the participants is more catechised than other participants and desires guidance. Each situation will present unique challenges and careful consideration will need to be made of the particular particpants, the precise contract(s) involved, and the preasures on them.
+contracts each of which requires that the contractee live and act on the marriage.  With penalties that can and frequently do include death for non-compliance, and contracts written in ways that do *not* include the monogamy proper to a true marriage, but rather allow for the pagan concept of multiple spouses, the contractee frequently experiences severe temptation.  Careful and prudential judgement is needed to determine if, in any individual case, any of the nephilim in these relationships are operating under sufficient duress due to the contracts as to impair their free choice.  Part of this prudential judgement must include the reality that one or more of the participants may be poorly catechised or even entirely uncatecised as regards to a true and proper understanding of marriage. They may have approached the Church having grown in this understanding only after having been in relationship for some time, or because some subset of the participants is more catechised than other participants and desires guidance. Each situation will present unique challenges and careful consideration will need to be made of the particular participants, the precise contract(s) involved, and the pressures on them.
 
 ### The TriWizard Contract and the Goblet of Fire
 
-Historically three of the biggest European schools of magic have used an artifact they name "the Goblet of Fire" to conduct a magical lottery of student volunteers who are entered into a contract by virtue of winning this lottery.  The nephilim strongly believe that this contract involves, if violated, the loss of magic.  They are inaccurate, the actual *loss* of *being nephil* is not a possible consequence of a contract.  What it can do is prevent a Contractee who violates its terms from _using_ their magic, or rather, cause their own magic to bind itself that way. The nature of the selection, built into the Goblet, ensures that the Contractee has the necessary magic, inherited from the Thrones, to be able to self-bind this way. Those without sufficient magic of this type are inelgible for selection. It is worth noting that the nephilim community has an inacurate understanding of precisely how magic works, and thus how strength in magic is evaluated _by_ magic, this is a large part of why the selections made by the Goblet are such a mystery to them.
+Historically three of the biggest European schools of magic have used an artefact they name "the Goblet of Fire" to conduct a magical lottery of student volunteers who are entered into a contract by virtue of winning this lottery.  The nephilim strongly believe that this contract involves, if violated, the loss of magic.  They are inaccurate, the actual *loss* of *being nephil* is not a possible consequence of a contract.  What it can do is prevent a Contractee who violates its terms from _using_ their magic, or rather, cause their own magic to bind itself that way. The nature of the selection, built into the Goblet, ensures that the Contractee has the necessary magic, inherited from the Thrones, to be able to self-bind this way. Those without sufficient magic of this type are ineligible for selection. It is worth noting that the nephilim community has an inaccurate understanding of precisely how magic works, and thus how strength in magic is evaluated _by_ magic, this is a large part of why the selections made by the Goblet are such a mystery to them.
 
 ### Debt
 
@@ -239,7 +239,7 @@ peripherally) *aware of* the traditions they reject, and more, probably
 even aware that this magic *does in fact work*, but not predisposed to think
 in those terms. The fact that it is an outside their common patterns of thought
 gives them some level of protection from being bound while their knowledge that
-they can be bound raises their susceptability to it.
+they can be bound raises their susceptibility to it.
 
 Lastly, children, because they are more absolute in their thinking, more
 accepting of the idea that anything is possible, are more easily bound this
@@ -250,7 +250,7 @@ up knowing only his/her own extended family and one or two other families
 until it is time to enter an apprenticeship, join a magical secondary
 school (such as Hogwarts), or (if home schooled) join the workforce as an
 adult.  This is because the nephilim have learned, through bitter experience,
-that children will do all sorts of foolish and unfortunately irreversable things
+that children will do all sorts of foolish and unfortunately irreversible things
 if not carefully protected.
 
 ### Spontaneous Magical Marriage
@@ -260,10 +260,10 @@ call Spontaneous Magical Marriage (SMM), a form of marriage contract in
 which both parties may or may not have any power imbalance at all, but
 which old nephil families have learned, generally the hard way, usually
 caries particularly harsh penalties. One rather famous (in nephilim society)
-example of in recent times comes from magical Britian.  A SSM event occurred
+example of in recent times comes from magical Britain.  A SSM event occurred
 between then 13 year old Pollux Black and his cousin Irma Crabbe.[^230711-1]
 These two families with their history of dark dealings rightly feared the
-immaginations that the children might have had in creating penalties for their
+imaginations that the children might have had in creating penalties for their
 ill-defined contract.  Neither family wanted to risk these possibilities.
 
 This contract is famous in part due to the ages of the two contractees - both
@@ -272,21 +272,21 @@ that a contract would fail if it required the marital act before the age of 14.
 Interestingly, this contract did *not* fail.  Effectively, the children were
 contractually betrothed until the second child's 14th birthday, they were not
 *required* to act before this. However, under the then (and still) current laws in
-magical Britian, there was (is) no legal distinction between a marriage
+magical Britain, there was (is) no legal distinction between a marriage
 and a betrothal - thus from a *legal* perspective the children were married. This
-fact probably actually contributed to the noteriety of the situation, as the
-families insisted the marriage remained unconsumated, and thus that they *could*
+fact probably actually contributed to the notoriety of the situation, as the
+families insisted the marriage remained unconsummated, and thus that they *could*
 break it but were holding back out of concern for the children's welfare.  While
 there is no reason to doubt the veracity of either family, researchers have
 expressed considerable doubt over whether or not any such attempt to break the
 contract would in fact have worked.
 
 The SSM contract differs from other marriage contracts in several ways that
-make it a distict category of event worth separate consideration.
+make it a distinct category of event worth separate consideration.
 
 * In an SSM, the contract terms are unknown to everyone, including the Originating Participants.
 * The SSM is *always* created verbally, generally in the form of promises exchanged.
-* The SSM always produces a detectable effect, that is there is always a societally recognized
+* The SSM always produces a detectable effect, that is there is always a societally recognised
   sign produced that the Participants are in fact now married.
   - Where the SSM happens in modern European society, this typically takes the form of wedding
     rings spontaneously appearing on the participants' fingers.  These rings resist being removed.

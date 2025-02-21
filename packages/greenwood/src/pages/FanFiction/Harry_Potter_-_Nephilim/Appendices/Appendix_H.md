@@ -12,9 +12,9 @@ sidebar:
 > [!WARNING]
 > Please be fully aware of the [Authors Notes on the index page](../)
 
-From: <redacted> of the Archivio Apostolico Vaticano
+From: \<redacted\> of the Archivio Apostolico Vaticano
 
-To: <redacted>, Provincial of the <redacted> Province
+To: \<redacted\>, Provincial of the <redacted> Province
 
 Per your request, the following represents a summary of the current knowledge on the so-called "nephilim"[^230714-1], specifically concerning their historical origins and charicteristics.
 
@@ -104,18 +104,16 @@ The nephilim are physically more resilient than normal humans.  While their dead
 
 
 [zodiac symbols]: https://www.britannica.com/topic/zodiac
-[AA]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/points-of-divergence/
+[AA]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Points of Divergence/>
 [AB]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Rules of Magic/>
-[AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-beings/
-[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
-[AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
+[AC]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Beings/>
+[AD]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Relative Power Levels/>
+[AE]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Life Expectancy/>
 [AF]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
 [AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
-[AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
 [ab]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/rules-of-magic/
 [af]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
-[ah]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h
-[Appendix I]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_i/
+[Appendix I]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/>
 [Encyclopedic Reference]: /Harrypedia/
 [FSSP]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/fssp/
 [FWoaO1]: https://archiveofourown.org/works/28507302
@@ -128,3 +126,5 @@ The nephilim are physically more resilient than normal humans.  While their dead
 [WP3]: https://wikipedia.org/wiki/Ecclesiology
 
 [ligers]: https://wikipedia.org/wiki/ligers
+
+[^220628-2]: Mrs. J. K. Rowling. "[Uagadou](https://www.rowlingindex.org/work/pmuag/)" _[The J.K. Rowling Index](https://www.rowlingindex.org/)_ Published: 2016-01-31.

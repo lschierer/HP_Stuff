@@ -97,7 +97,7 @@ The commission has noted the following types when it comes to indirect effects, 
     inheritance, the complex interaction of their human inheritance, the in-human inheritance, and the inheritable aspects of outside agency upon them makes it
     in practice impossible to reliably predict precisely how closely a given nephilim child will approach humanity in morphology, intellectual capacity, emotional capacity, or any other metric.  It is equally impossible to reliably predict "power" - the raw ability to produce "magical" effects (this is the standard nephilim definition of "power level") except in broad statistical terms.
 
-[Veela]: ../appendix_i/
+[Veela]: <../Veela Pathology/>
 [The Screwtape Letters]: https://archive.org/details/in.ernet.dli.2015.86985
 
 ## Sacraments
@@ -131,7 +131,7 @@ The argument of this being a case of disposition is as follows.  That the nephil
 
 Secondly, because nearly all of the nephilim are aware of magical contracts by the time they reach an age to marry, they fear being subject to them. More than that, they feel unintentionally violating even contracts that *might* exist. Thus most nephilim, on approaching the alter for marriage, would hold back from a total gift of self, fearing that there might be a contract out there that he or she might need to honour.  This holding back would constitute the impediment, not the fact that he or she is a nephilim.
 
-[magical contracts]: ..Magical Contracts/
+[magical contracts]: <../Magical Contracts/>
 
 ### Holy Orders
 

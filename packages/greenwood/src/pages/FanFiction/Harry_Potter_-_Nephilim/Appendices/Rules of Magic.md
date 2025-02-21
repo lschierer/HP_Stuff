@@ -22,7 +22,10 @@ Experience with those who repent from witchcraft and other traffic with fallen s
 
 ### Power Levels
 
-Individual nephil can be rated on a scale of 1 (low) to 10 (high) for access to each class of [angelic abilities][abt].[^221216-2] These power levels are estimates, and no precise way exists to directly measure the precise ability of the nephilim. Despite this, scholars feel confident that these estimates provide useful and meaningful points of reference for the comparision of the abilies of any given nephilim. Estimates of some key figures of in the history related in this archive are available [here][AD]. For the purposes of this work:
+Individual nephil can be rated on a scale of 1 (low) to 10 (high) for access to each class of [angelic abilities][abt].[^221216-2] These power levels are estimates, and no precise way exists to directly measure the precise ability of the nephilim. Despite this, scholars feel confident that these estimates provide useful and meaningful points of reference for the comparison of the abilities of any given nephilim.
+
+> [!NOTE]
+> Author's Note. Estimates of some key figures of in the history related in this archive are available [here][AD].
 
 
 [AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
@@ -40,20 +43,20 @@ Individual nephil can be rated on a scale of 1 (low) to 10 (high) for access to 
 
 This begs the question "What do you mean by expected?" Obviously there is no
 standards body anywhere in the world that is grading students using these
-categories. While the Church has not hidden its research from the nephilim, they have proven remarkably resistant to benefitting from the body of knowledge the Church has compiled, or encorporating it into their own knowledge base in any way. The nephilim have either forgotten or actively deny that they are descended from angels, and refuse to think of their abilities in terms of the angelic choirs.
+categories. While the Church has not hidden its research from the nephilim, they have proven remarkably resistant to benefiting from the body of knowledge the Church has compiled, or incorporating it into their own knowledge base in any way. The nephilim have either forgotten or actively deny that they are descended from angels, and refuse to think of their abilities in terms of the angelic choirs.
 
-Given there is no objecetive standard based on these categories, scholars are attempting to describe a hypothetical situation. Given adequate but not necessarily superlative instruction, someone who does not meet the goal described in a given power level is being lazy, suppressing their abilities, or both. They are neglecting their own strengths.
+Given there is no objective standard based on these categories, scholars are attempting to describe a hypothetical situation. Given adequate but not necessarily superlative instruction, someone who does not meet the goal described in a given power level is being lazy, suppressing their abilities, or both. They are neglecting their own strengths.
 
 ### abilities by type
 
-Church scholars designate first generation nephilim the "primordial nephilim." By this we do not mean those from the prehistoric times, but rather, those that are immediate children of the humans that first transact with fallen spirits to gain power. These "primordial nephilim" are not different species, as they are cross fertile and in fact nearly all modern nephilim trace their origins to a wide variety of different primordial nephilim types. Rather, this is a nephil that is unique in that it is a single remarkably strong trait that can be independently inherited and traced through the generations. For categorizing these traits, the Church has found that the Areopagite model[^220628-4] of angelic choirs produces the most accurate results, and will be used here.
+Church scholars designate first generation nephilim the "primordial nephilim." By this we do not mean those from the prehistoric times, but rather, those that are immediate children of the humans that first transact with fallen spirits to gain power. These "primordial nephilim" are not different species, as they are cross fertile and in fact nearly all modern nephilim trace their origins to a wide variety of different primordial nephilim types. Rather, this is a nephil that is unique in that it is a single remarkably strong trait that can be independently inherited and traced through the generations. For categorising these traits, the Church has found that the Areopagite model[^220628-4] of angelic choirs produces the most accurate results, and will be used here.
 
-For each choir we list both the description of that choir and the traits we observe in the nephilim decending from fallen angels of that type. While most are obvious derivations, there are a couple of cases where the trait observed in the resulting nephilim is only remotely related to the description of the angelic choir. This suggests that further research into the nature of angels, the nature of magic, or both, is required. The ability to perform such research is limited by the fact that the rate of new primordial nephilim is (thankfully) extraordinarily low, and that even when it does occur, the clergy are not always both able and sufficiently educated to collect meanful data.
+For each choir we list both the description of that choir and the traits we observe in the nephilim descending from fallen angels of that type. While most are obvious derivations, there are a couple of cases where the trait observed in the resulting nephilim is only remotely related to the description of the angelic choir. This suggests that further research into the nature of angels, the nature of magic, or both, is required. The ability to perform such research is limited by the fact that the rate of new primordial nephilim is (thankfully) extraordinarily low, and that even when it does occur, the clergy are not always both able and sufficiently educated to collect meaningful data.
 
 #### Seraphim
 
 - These angels perceive God most directly, and know Him in and as Himself best.
-- The resulting nephil does not appear to have any ability to percieve God.
+- The resulting nephil does not appear to have any ability to perceive God.
 - As man is a limited image of God, the nephil has the ability to perceive the
   heart of the man/nephil. When used on other nephil, this allows access to information about the person's physical state, their will, and their memories. When used on humans, it allows only access to information about the person's physical state. However, an astute judge of human nature can combine this with situational awareness, historical information about the person, body language, and similar data to make highly accurate guesses.
 
@@ -76,8 +79,8 @@ For each choir we list both the description of that choir and the traits we obse
   active. The nephil has the ability to bind the will of other nephilim, and
   to defend against being so bound.
 - This ability has marginal _at best_ effect on full humans. Despite this, the magical population
-  continues to use spells intended to change behavior on full humans as part of their attempts at preserving their so called "International Statute of Secrecy."
-- Careful investigation with the aid of the rare cooperative nephil has shown that many of these behavior
+  continues to use spells intended to change behaviour on full humans as part of their attempts at preserving their so called "International Statute of Secrecy."
+- Careful investigation with the aid of the rare cooperative nephil has shown that many of these behaviour
   altering spells have a secondary mode of operation that affects brain chemistry that _does_ work on full humans frequently in ways that mimic the effects of hallucinogenic drugs, alcohol, or both.
 - There is at least some data indicating that these secondary modes of operation come from abilities in
   other categories automatically compensating for the failure of abilities in this category. However, scholars are unwilling to probe too deeply due to the danger to both the caster and the subject.
@@ -91,7 +94,7 @@ For each choir we list both the description of that choir and the traits we obse
 - These angels are responsible for ordering the work of all other angels.
   Their name implies actual, real authority.
 - The relationship between the way Dominions operate and the abilities the
-  nephilim gain is indirect, and one of several places that suggests flawed undersatnding.
+  nephilim gain is indirect, and one of several places that suggests flawed understanding.
 - God creates by decree - He spoke and the world was made. The nephilim are
   not capable of true creation, but have authority only over the _form_, but not the substance, of the material world. They can thus by their magic transmute the form of one thing to another.
 - This will be temporary unless the change is "locked" in place
@@ -113,7 +116,7 @@ For each choir we list both the description of that choir and the traits we obse
 - Interestingly, primordial nephilim and those who inherit from them appear to
   gain a passive ability as well. When they simply touch or handle certain raw materials (potions ingredients), these become "charged" with extra properties.
 - Like the magic inherited from the Dominions, the magic inherited from the
-  Virtues is highly temporary. It appears to require continous concentration on the part of the nephilim.
+  Virtues is highly temporary. It appears to require continuous concentration on the part of the nephilim.
 - Nephilim communities with inheritance from a spectrum of choirs have devised
   several ways around the time limitations. See latter sections for details.
 
@@ -143,7 +146,7 @@ For each choir we list both the description of that choir and the traits we obse
   places (unplottable, "muggle repelling", so on).
 - This differs from the Thrones in that the gifts from the Thrones affect
   individuals regardless of location.
-  - A Thrones dervived ability always affects a specific person regardless of
+  - A Thrones derived ability always affects a specific person regardless of
     where that person is.
   - A Principalities derived ability affects whoever happens to be in a
     specific location, regardless of who that person is.
@@ -174,10 +177,10 @@ For each choir we list both the description of that choir and the traits we obse
     you want to be somewhere else.
   - A primordial nephil from the Archangels would physically stop you from
     going there.
-  - The powers appear to combine in those who decend from both types
+  - The powers appear to combine in those who descend from both types
     particularly well.
 - Some of these magics appear to trigger corrupting changes with at very high
-  rates, to unusuually severe degrees, or both.
+  rates, to unusually severe degrees, or both.
 
 #### Angels
 
@@ -210,7 +213,7 @@ For each choir we list both the description of that choir and the traits we obse
 
 ## Mapping to how the Nephilim themselves understand Magic
 
-Nearly all nephilim communities categorize magic as follows:
+Nearly all nephilim communities categorise magic as follows:
 
 ### charms
 
@@ -260,7 +263,7 @@ Nearly all nephilim communities categorize magic as follows:
     like raw iron into raw gold. But even then, combining your
     transmutation with the Powers magic necessary to make it permanent is
     poorly understood, thus poorly taught, and so see the prior point.
-  - Few if any nephilim understand the real differences betwween conjuration,
+  - Few if any nephilim understand the real differences between conjuration,
     vanishing, and transmutation. Most attempt to teach all three as if they are the same thing.
 
 [^220718-1]:
@@ -272,7 +275,7 @@ Nearly all nephilim communities categorize magic as follows:
 
 ### Defence
 
-- Much of the content in this class is, as a mix of content categorized (by the
+- Much of the content in this class is, as a mix of content categorised (by the
   nephilim) elsewhere, particularly Charms, Runes, Transfiguration, and Care of Magical Creatures.[^241125-3]
 - Some of it, particularly as it comes to the study of specific counter curses
   and shields, comes from the Angels.
@@ -288,17 +291,17 @@ Nearly all nephilim communities categorize magic as follows:
 
 ### animagus
 
-- No modern nephilim realizes how integral to their very being the so called
+- No modern nephilim realises how integral to their very being the so called
   "animagus" transformation is.
 - For European nephilim, there is a pervasive believe that this ability can
-  only be accessed by a rare few through an absurbly difficult ritual that combines a ritual spell with aspects of transfiguration with a potion.
+  only be accessed by a rare few through an absurdly difficult ritual that combines a ritual spell with aspects of transfiguration with a potion.
 - The Uagadou[^220628-5] school teaches students ways to influence what animal
-  you become. In fact, only those who inherit from the Thrones, the Powers, and the Dominions can succeed at the method they teach. This method uses the melded powers from all three inheritances to transmute the student's own nature to the desired animal (or animals), so that when they exercise the inherit animagus ability, they become an "unnatural" (to that indivual) animal. Few ever realise how invasive this transmutation is to their sense
+  you become. In fact, only those who inherit from the Thrones, the Powers, and the Dominions can succeed at the method they teach. This method uses the melded powers from all three inheritances to transmute the student's own nature to the desired animal (or animals), so that when they exercise the inherit animagus ability, they become an "unnatural" (to that individual) animal. Few ever realise how invasive this transmutation is to their sense
   of self.
 - Other cultures have other ways of unlocking this ability, some of which are
   safer than others.
 - The ability itself needs to be "unlocked" only because the nephilim have
-  convinced themselves, subconciously, that it needs to be. Mostly because they have a mental image of themselves as human (which they are not).
+  convinced themselves, subconsciously, that it needs to be. Mostly because they have a mental image of themselves as human (which they are not).
 
 ### conjuring
 
@@ -327,9 +330,9 @@ Nearly all nephilim communities categorize magic as follows:
   the space that thing occupies, manipulating time such that it appears to have instantly dissolved.
 - Because it is explained so poorly, students new to the practice will often
   actually attempt to modify the physical properties of the thing being vanished instead of its chemical properties, resulting in transparent versions instead of something that has, to paraphrase one well known nephil scholar, gone into everything.
-- Vanishing is, highly problematic magic. When practiced on a living thing, you are killing that thing. Fortunately, it is _impossible_ to vanish anything that has an immortal soul, the magic simply will not work.[^241125-4]
+- Vanishing is, highly problematic magic. When practised on a living thing, you are killing that thing. Fortunately, it is _impossible_ to vanish anything that has an immortal soul, the magic simply will not work.[^241125-4]
 
-[^241125-4]: Church officials worried about this for centuries, and some scholars to this day refuse to accept the vision that revealed this tidbit. Some continue to worry about murder-by-vanishment.
+[^241125-4]: Church officials worried about this for centuries, and some scholars to this day refuse to accept the vision that revealed this titbit. Some continue to worry about murder-by-vanishment.
 
 ### Potions
 
@@ -379,12 +382,12 @@ Nearly all nephilim communities categorize magic as follows:
   when the scribe has both abilities.
 - Nephilim later found that Runes can be authored to _absorb_ power from the
   surrounding area to power connected sequences of runes.
-  - This was done by combining abilties from the Principalities, Virtues, and
+  - This was done by combining abilities from the Principalities, Virtues, and
     Powers. using abilities inherited from the Principalities, instead of being pre-charged via the Powers.
   - This has a side effect of reducing the effect of any attempt to use other
     magic in any way not connected to that rune sequence.
-  - For a school (like Hogwarts in England), nephilim children would be safeer
-    when practicing their magic because the effect of each spell would be lessened.
+  - For a school (like Hogwarts in England), nephilim children would be safer
+    when practising their magic because the effect of each spell would be lessened.
   - The hospital or clinic in the school would need to be shielded from most of
     the runes protecting the rest of the school to ensure that injuries could still be cured using magic at full efficacy.
   - Overall, this effect would bolster the idea that schools are one of the
@@ -405,7 +408,7 @@ Nearly all nephilim communities categorize magic as follows:
     seem like divination. Practices like palm reading, tea leaves, and
     crystal gazing grew from this magical insight into people
 - There is some crossover between the two, generally to the detriment of
-  both the user and any understanding of the truth. That is, some nephilim use magic to actively seak out or encourage their own possession.
+  both the user and any understanding of the truth. That is, some nephilim use magic to actively seek out or encourage their own possession.
 - Scholars have observed that where magic _is_ used to "trigger" prophecy, it
   is **_always_** corrupting, although the degree of corruption differs widely.
 - Most frequently, it appears evident that there is a lasting and inheritable
@@ -440,23 +443,23 @@ Nearly all nephilim communities categorize magic as follows:
   be unable to do more than manipulate emotional states. This manipulation goes beyond the simple transmutation of brain chemicals, it actually causes the brain to release the appropriate chemicals as if naturally in that emotional state.
 - All bidirectional legilimency is morally repugnant, and comes at a high risk
   of corrupting change.
-  - This change may be physical, spiritial, mental, or any combination
+  - This change may be physical, spiritual, mental, or any combination
     thereof.
-    - Reduced ability to resist concupicense is the most frequently observed
+    - Reduced ability to resist concupiscence is the most frequently observed
       change.
-    - In some cases this has been significantly noticable even within a single
+    - In some cases this has been significantly noticeable even within a single
       individual's lifespan.
     - In others it has been visible only by comparing across generations.
   - While all use of bidirectional legilimency is morally repugnant, the normal
     distinction between mortal and venial sin is still present. Scholars have observed the following patterns in nephilim who self-report having used this magic:
-    - Use of the magic due to fear for self or in defense of others appears to
-      produce less harmful changes. Scholars speculate that this constitues an impaired freedom.
+    - Use of the magic due to fear for self or in defence of others appears to
+      produce less harmful changes. Scholars speculate that this constitutes an impaired freedom.
     - Those self-taught in the art appear to go longer before experiencing any
       change. Scholars speculate the delay in effect is due to impaired knowledge.
     - At least one nephil has been recorded who performed legilimency
-      unconciously and required both great training and great concentration to _not_ use this magic. That individual appeared to experience no effects from her use of legilimency except the loss of trust of those around her. Scholars speculate that the lack of freedom involved is key.
+      unconsciously and required both great training and great concentration to _not_ use this magic. That individual appeared to experience no effects from her use of legilimency except the loss of trust of those around her. Scholars speculate that the lack of freedom involved is key.
   - There is an unknown threshold where the risk changes from a risk of a
-    _personally_ corrupting change to an _inheritable_ corrupting change. The purposes for which legilimency was used appear to be critical in determing where this threshold exists.
+    _personally_ corrupting change to an _inheritable_ corrupting change. The purposes for which legilimency was used appear to be critical in determining where this threshold exists.
 
 ### Occlumency
 
@@ -467,9 +470,9 @@ Nearly all nephilim communities categorize magic as follows:
 
 ### Contracts
 
-The history of the Church's interaction with the nephilim is repleat with examples of individuals who have been bound by magical contracts. There is more than sufficient documentary evidence to establish that at least some of these were created either without the subject's knowledge or even against the subjecet's will.
+The history of the Church's interaction with the nephilim is repeat with examples of individuals who have been bound by magical contracts. There is more than sufficient documentary evidence to establish that at least some of these were created either without the subject's knowledge or even against the subject's will.
 
-Even in the mundane world, arranged marriages were common in much of the world as late as the 18th century.[^220823-1] Just as the Church has been forced to develop norms around the reality that occasonally one or both persons approaching for marriage are under durress, and thus not free to validly celebrate the sacrament, anyone interacting with the nephilim must always be careful of the possibility that one or both nephilim are coerced by a contract. Indeed, so great is the risk that a contract will compel a nephil's behavior that some Church scholars believe that the nephilim are incapable of a total, free, and faithful gift of self except by exception and luck, and thus ought not be permitted the sacrament at all. Fortunately (for their souls) the nephilim community seems to have largely spontaneously developed societal norms such that these binding contracts are now much less frequent than they were in past centuries.
+Even in the mundane world, arranged marriages were common in much of the world as late as the 18th century.[^220823-1] Just as the Church has been forced to develop norms around the reality that occasionally one or both persons approaching for marriage are under duress, and thus not free to validly celebrate the sacrament, anyone interacting with the nephilim must always be careful of the possibility that one or both nephilim are coerced by a contract. Indeed, so great is the risk that a contract will compel a nephil's behaviour that some Church scholars believe that the nephilim are incapable of a total, free, and faithful gift of self except by exception and luck, and thus ought not be permitted the sacrament at all. Fortunately (for their souls) the nephilim community seems to have largely spontaneously developed societal norms such that these binding contracts are now much less frequent than they were in past centuries.
 
 - See [Magical Contracts][AF] for more details on these contracts.
 - See [Soteriology, Missiology and Ecclesiology][AG] for more on the Church's
@@ -477,17 +480,17 @@ Even in the mundane world, arranged marriages were common in much of the world a
 - See [The Nephilim][AH] for more details on the nature and origin of the
   nephilim.
 
-Magically speaking, contracts can be generalized in a few ways, depending on its precise nature.
+Magically speaking, contracts can be generalised in a few ways, depending on its precise nature.
 
 - A written contract is (unknown to the nephilim) essentially a highly modern
   form of runes. You use magic inherited from the Virtues to give your
   writing power, in this case power inherited from the Thrones to compel the
   will of those bound by the contract. The contract may be further infused
-  by the Powers to give it duration, and (almost always) may depend on the existence of the paper/parchement contract to ensure its persistence. Some nephilim communities have realized that destroying the physical contract will (usually) destroy the magical contract.
+  by the Powers to give it duration, and (almost always) may depend on the existence of the paper/parchment contract to ensure its persistence. Some nephilim communities have realised that destroying the physical contract will (usually) destroy the magical contract.
 - Magical Contracts, for unknown reasons, are not nearly as successful at
-  binding the will as more specialized magic like the [Imperius] curse. See [Magical Contracts][AF] for details. Nephilim, not understanding the fine
+  binding the will as more specialised magic like the [Imperius] curse. See [Magical Contracts][AF] for details. Nephilim, not understanding the fine
   grained conditions outlined there, do not understand why some contracts work and others do not.
-- Some nephilim believe that artifacts can create contracts and bind people
+- Some nephilim believe that artefacts can create contracts and bind people
   to them.
   - In actually, these objects have the contract inscribed on them, usually in the form of runes, almost always hidden or obscured from view.
   - These objects cannot unilaterally bind anyone. Users must be bound by
@@ -510,7 +513,7 @@ Magically speaking, contracts can be generalized in a few ways, depending on its
 
 ## Authors notes
 
-Here lets step beyond what might be gleaned by summarizing the various works available "in-world."
+Here lets step beyond what might be gleaned by summarising the various works available "in-world."
 
 "Standard" nephilim seem more or less humans with extra abilities, but this is
 not really true. If you consider creation as a hierarchy, humanity has always
