@@ -40,9 +40,13 @@ export const ChangeTheme = (storedTheme: ThemeSelection) => {
       if (!html.classList.contains(storedTheme)) {
         if (!storedTheme.localeCompare("light")) {
           html.classList.add("spectrum--light");
+          html.classList.add("light");
+          html.classList.remove("dark");
           html.classList.remove("spectrum--dark");
         } else {
           html.classList.remove("spectrum--light");
+          html.classList.remove("light");
+          html.classList.add("dark");
           html.classList.add("spectrum--dark");
         }
       }
