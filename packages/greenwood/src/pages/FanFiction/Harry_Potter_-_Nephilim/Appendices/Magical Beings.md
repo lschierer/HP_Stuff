@@ -51,10 +51,10 @@ have a strong distrust for the Church.
 
 [^241123-2]: Or at least the in-world version of it, see [Rules of Magic].
 
-[Rules of Magic]: /FanFiction/harry_potter_-_nephilim/appendices/rules-of-magic/
+[Rules of Magic]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/rules-of-magic/
 [Quill of Acceptance and Book of Admittance]: https://www.rowlingindex.org/work/qaba/
-[magical rules of inheritance]: /FanFiction/harry_potter_-_nephilim/appendices/inheritance/
-[its own rules]: /FanFiction/harry_potter_-_nephilim/appendices/inheritance/
+[magical rules of inheritance]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/inheritance/
+[its own rules]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/inheritance/
 [Imperius]: /Harrypedia/magic/spells/imperio/
 [Confundus]: /Harrypedia/magic/spells/confundus/
 
@@ -128,7 +128,7 @@ have a strong distrust for the Church.
     Author's note:
     The scholars here do not have the knowledge to be more precise, if you refer to the author's section of [Inheritance], you can see the effects of abusing magic on concupiscence. Over the centuries, this effect has been gradually reduced by goblins who have successfully lived virtuous lives against probability.
 
-[Inheritance]: /FanFiction/harry_potter_-_nephilim/appendices/inheritance/
+[Inheritance]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/inheritance/
 
 [^241125-8]:
     Author's note:
@@ -244,19 +244,19 @@ can never be fully freed.
   _capability._ Believed to be created by the ancestors of the goblins.
 
 [Many Waters]: https://wikipedia.org/wiki/Many_Waters
-[AA]: /FanFiction/harry_potter_-_nephilim/appendices/points-of-divergence/
-[AB]: /FanFiction/harry_potter_-_nephilim/appendices/rules-of-magic/
-[AC]: /FanFiction/harry_potter_-_nephilim/appendices/magical-beings/
-[AD]: /FanFiction/harry_potter_-_nephilim/appendices/relative-power-levels/
-[AE]: /FanFiction/harry_potter_-_nephilim/appendices/life-expectancy/
-[AF]: /FanFiction/harry_potter_-_nephilim/appendices/magical-contracts/
-[AG]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_g/
-[AH]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_h/
-[AI]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_i/
-[Appendix I]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_i/
-[Flood]: /FanFiction/harry_potter_-_nephilim/backstory/the_flood
-[goblin wars]: /FanFiction/harry_potter_-_nephilim/backstory/the_dwarfs
-[Giants]: /FanFiction/harry_potter_-_nephilim/backstory/giants
+[AA]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/points-of-divergence/
+[AB]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/rules-of-magic/
+[AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-beings/
+[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
+[AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
+[AF]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-contracts/
+[AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
+[AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
+[AI]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_i/
+[Appendix I]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_i/
+[Flood]: /FanFiction/Harry_Potter_-_Nephilim/backstory/the_flood
+[goblin wars]: /FanFiction/Harry_Potter_-_Nephilim/backstory/the_dwarfs
+[Giants]: /FanFiction/Harry_Potter_-_Nephilim/backstory/giants
 [Molly]: /Harrypedia/people/prewett/molly/
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
 [Fleur]: /Harrypedia/people/delacour/fleur_isabelle/

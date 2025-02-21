@@ -7,8 +7,11 @@
 @import "@spectrum-css/button";
 @import "@spectrum-css/picker";
 @import "@spectrum-css/menu";
+@import "remark-alerts/styles/github-base.css";
+@import "remark-alerts/styles/github-colors-light.css";
+@import "remark-alerts/styles/github-colors-dark-class.css";
 
-/*  Default Colors */
+/* Default Colors */
 :root,
 ::backdrop {
   --spectrum-background-base-color: var(--spectrum-gray-200);

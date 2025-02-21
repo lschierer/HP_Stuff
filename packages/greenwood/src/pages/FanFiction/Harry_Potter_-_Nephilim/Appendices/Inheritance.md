@@ -10,7 +10,7 @@ tableOfContents:
 collection: Nephilim
 ---
 
-> **Note**
+> [!NOTE]
 > For things like a [hippogriff] to exist, I need non-Mendelian for at least magical animals, and I have decided to extend that to magic itself, and to any trait that is, or comes to be, sufficiently closely associated with magic. This is necessarily a blurry line.
 >
 > My non-Mendelian inheritance is necessarily arbitrary and entirely made up out of my own head, becuse none of my [source works] give us any details what so ever on the topic.
@@ -19,21 +19,24 @@ collection: Nephilim
 
 1.  These rules must be applied as an ordered list, with earlier rules taking
     precidence over later rules.
-1.  Magical traits are almost always inherited following magical rules. However, periodically these rules stop working for no known reason. Whether or not these rules work is determined on a _per trait_ basis.
-1.  Any time these rules stop working, there is a significant drop in any behavior that cannot be explained by normal (mundane) natural philosophy,
+1.  Magical traits are almost always inherited following magical rules. However,
+    periodically these rules stop working for no known reason. Whether or not these rules work is determined on a _per trait_ basis.
+1.  Any time these rules stop working, there is a significant drop in any behavior that cannot be
+    explained by normal (mundane) natural philosophy,
     - Inexpecable behavior, while it might get vanishingly small, will never _fully_ disappear.
     - It takes multiple generations for any inexplicable behavior to reach the point where it can be described as "vanishingly small."
-1.  Most magical creatures are a mix of magical and non-magical traits. For any given creature, the vast majority of traits seem to follow Mendelian genetics most of the time.
+1.  Most magical creatures, including the nephilim, are a mix of magical and non-magical traits. For any
+    given creature, the vast majority of traits seem to follow Mendelian genetics most of the time.
 1.  For hereditary magical traits (including where appropriate, the ability to
     directly use magic), heredity is closely linked to gender. A male child will be more likely to inherit from his father, then next most likely to inherit from both parents, then from his mother. The reverse is true for a female child.
 1.  With any magical trait, there is a possibility of something truly bizarre
     happening. Some scholars blame these bizzare occurances on angelic and/or
-    demonic intervention in heredity.
+    demonic intervention in heredity.  Private revelation strongly supports this interpretation.
 1.  The ability to wield magic is not inherited as a single trait. Rather,
     there are 9 different traits associated with the ability to actively use magic (as differentiated from being passively magical). Interestingly, the magical community itself is either unaware or actively denies this knowledge.
-1.  Magic can be inherently corrupting.[^241123-1] If you actively use magic
-    that is in fact inherently corrupting, this corruption is itself inheritable much like concupisence itself is inheritable. The corrupting effects of magic can be felt in both the user _and_ the next _four_ generations.
-1.  All magic that _requires_ an emotional content (unforgivables require
+1.  Magic can be inherently corrupting[^241123-1] (that is some magic appears to inherently change the
+    nature of the user). If you actively use magic that is in fact inherently corrupting, this corruption is itself inheritable much like concupisence itself is inheritable. The corrupting effects of magic can be felt in both the user _and_ the next _four_ generations.  The nephilim have a *very* poor understanding of what is and is not inherently corrupting, with different communities having both very different and widely contradicting lists of magic to avoid and magic that is safe to use.
+1.  The Church believes that all magic that _requires_ an emotional content (unforgivables require
     hatred, the patronus requires positive emotions, so on) is inherently corrupting.
     - "Corrupting" here does not mean "evil" but rather "tends to change
       (corrupt) the user."
@@ -65,7 +68,7 @@ collection: Nephilim
     - The thresholds involved for each kind of magic are very poorly researched
       and not at all understood.
 
-## Things not known to the researchers in world
+## Extended Authors Note - Things not known to the researchers in world
 
 There are in fact, though no-inworld scholar knows this, precise percentage based probabilities of inheritance per trait:
 
@@ -73,7 +76,8 @@ There are in fact, though no-inworld scholar knows this, precise percentage base
     There is a 20% chance that purely natural/mundane (Mendelian) rules of inheritance will apply.
 1.  If the next generation is born with traits determined purely by Mendelian
     genetics per rule #1, then any supernatural ability not explainable by normal physics/biology/chemistry will degrade by 20%. However, keep in mind that no matter how many times you degrade their magic by 20%, it will never be zero. Some infinitesmal portion of them will still be magical, even if it is unusably and unnoticably small.
-1.  Non-magical traits in otherwise magical creatures have an 80% chance of following _Mendelian_ genetics. For example, in the nephilim, this _typically _ includes height, skin tone, hair color, eye color, so on.
+1.  Non-magical traits in otherwise magical creatures have an 80% chance of following _Mendelian_
+    genetics. For example, in the nephilim, this *typically* includes height, skin tone, hair color, eye color, so on.
 1.  For any **non-magical** trait that does _not_ follow Mendelian genetics,
     there is a 20% chance that the trait will become a hereditary magical trait.
 1.  Corruption is _caused_ not necessarily by the spell being cast, but
@@ -81,21 +85,22 @@ There are in fact, though no-inworld scholar knows this, precise percentage base
 1.  Each trait has a precise percentage based chance of being inherited:
     - a 50% chance of inheriting solely from the same gender parent,
     - a 14% chance of a partial inheritance from both parents,
-    - a 10% chance of inheriting the totality of the same gendered parent's ability or trait and a part of the opposite gender parent's ability or trait.
+    - a 10% chance of inheriting the totality of the same gendered parent's ability or trait and a part
+      of the opposite gender parent's ability or trait.
     - a 7.5% chance of a partial inheritance from just the same gender parent,
     - a 7% chance of inheriting solely from the opposite gender parent,
     - a 6% chance of inheriting the sum total of both parents,
     - a 4% chance of a partial inheritance from just the opposite gender parent,
-    - a 1% chance of something truly bizarre happening. Scholars are **_sometimes_** right in attributing causes to these bizarre occurances when they are studied.
-    - a 0.5% chance of becoming mundane (total loss of any behavior and ability n ot explicable by mundane natural philospophy). Scholars cannot distinguish this from the severe drop that occurs when a trait suddenly starts following Mendelian genetics.
+    - a 1% chance of something truly bizarre happening without any outside effect at all. Scholars are
+      **_sometimes_** right in attributing causes to these bizarre occurances when they are studied.
+    - a 0.5% chance of becoming mundane (total loss of any behavior and ability not explicable by mundane
+      natural philospophy). Scholars cannot distinguish this from the severe drop that occurs when a trait suddenly starts following Mendelian genetics.
     - Use of a corrupting magic sufficient to reach a change threshold
       frequently predisposes the next generation to be susceptible to either that type of magic, the type of emotions that are required for that magic, or both, by 10% _per ancestor_. That is, the next generation might have _stronger concupiscence_ and in fact _less free will._
       - If the total effect exceeds 90% (at 100% you would have no free will),
         then the odds of something bizarre happening goes up by one percent for every 10% of difference.
         - So if for example all of your progenitors on both sizes excessively used
-          the killing curse, you would be susceptible to (unable to control) hatred (anger) by 300% base. Since the total effect cannot remove your free will, the actual effect is more complicated. Your great-grandparents each had a 20% boost (10% from each of their parents). Your grandparents inherited that 20% boost _from both sides_ and _in addition_ a 10% boost because of each great-grandparent's own personal abuse of magic, yielding a 60% boost to your grandparent's experience of angry emotions, and a corresponding decrease in their ability to choose not to act on these emotions. Your parents were the first generation to exceed 90%: a 60% remote inheritance, plus a 10% immediate inheritance, from each parent, for a total of 140%. This is reduced to 90%, but the chance of something bizarre is increased by 5%. You then get the 90% anger _and_ the 5% bizarre factors as your remote inheritance, _plus_ the 10% anger boost from _your parent's_ personal abuse of magic (again from each parent). This puts your total anger boost at 200%, which is again reduced to 90%, but causes an additional boost on the chance of the bizarre, this time by 11%. This gets added to the 5% (per parent) from the remote inheritance, for a total chance of something bizarre happening to you at 16% over the base rate (5% from each parent plus 11% from 200 being 11\*10 over 90). One in five children in such a scenario would have something totally
-          inexplicable happen to them magically, physically, or both as they are
-          conceived, gestated and born.
+          the killing curse, you would be susceptible to (unable to control) hatred (anger) by 300% base. Since the total effect cannot remove your free will, the actual effect is more complicated. Your great-grandparents each had a 20% boost (10% from each of their parents). Your grandparents inherited that 20% boost _from both sides_ and _in addition_ a 10% boost because of each great-grandparent's own personal abuse of magic, yielding a 60% boost to your grandparent's experience of angry emotions, and a corresponding decrease in their ability to choose not to act on these emotions. Your parents were the first generation to exceed 90%: a 60% remote inheritance, plus a 10% immediate inheritance, from each parent, for a total of 140%. This is reduced to 90%, but the chance of something bizarre is increased by 5%. You then get the 90% anger _and_ the 5% bizarre factors as your remote inheritance, _plus_ the 10% anger boost from _your parent's_ personal abuse of magic (again from each parent). This puts your total anger boost at 200%, which is again reduced to 90%, but causes an additional boost on the chance of the bizarre, this time by 11%. This gets added to the 5% (per parent) from the remote inheritance, for a total chance of something bizarre happening to you at 16% over the base rate (5% from each parent plus 11% from 200 being 11\*10 over 90). One in five children in such a scenario would have something totally inexplicable happen to them magically, physically, or both as they are conceived, gestated and born.
         - Inbreeding would make the above worse, as some progenitors would be
           counted multiple times over.
         - Thus someone like Draco Malfoy actually does have tremendous trouble
@@ -111,19 +116,20 @@ There are in fact, though no-inworld scholar knows this, precise percentage base
     _[Miranda Goshawk's Book of Spells](https://archive.org/details/0_20211019/)_ 2013. Page 66.
 
 [Raczidian]: /Harrypedia/people/raczidian/
-[source works]: /FanFiction/harry_potter_-_nephilim/introduction/
+[source works]: /FanFiction/Harry_Potter_-_Nephilim/introduction/
 [Many Waters]: https://wikipedia.org/wiki/Many_Waters
-[AA]: /FanFiction/harry_potter_-_nephilim/appendices/points-of-divergence/
-[AB]: /FanFiction/harry_potter_-_nephilim/appendices/rules-of-magic/
-[AC]: /FanFiction/harry_potter_-_nephilim/appendices/magical-beings/
-[AD]: /FanFiction/harry_potter_-_nephilim/appendices/relative-power-levels/
-[AE]: /FanFiction/harry_potter_-_nephilim/appendices/life-expectancy/
-[Magical Contracts]: /FanFiction/harry_potter_-_nephilim/appendices/magical-contracts/
-[Soteriology, Missiology and Ecclesiology]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_g/
-[AH]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_h/
-[Appendix I]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_i/
+[AA]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/points-of-divergence/
+[AB]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/rules-of-magic/
+[AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-beings/
+[Inheritance]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Inheritance/
+[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
+[AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
+[Magical Contracts]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-contracts/
+[Soteriology, Missiology and Ecclesiology]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
+[AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
+[Appendix I]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_i/
 
 [^241123-1]: See [Soteriology, Missiology and Ecclesiology] and [Points of Divergence]
 
-[Points of Divergence]: /FanFiction/harry_potter_-_nephilim/appendices/points-of-divergence/
+[Points of Divergence]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/points-of-divergence/
 [hippogriff]: /Harrypedia/animals/hippogriff/

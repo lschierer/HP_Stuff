@@ -8,11 +8,13 @@ tableOfContents:
   minHeadingLevel: 2
   maxHeadingLevel: 4
 collection: Nephilim
+imports:
+  - /components/FanFiction/Harry_Potter_-_Nephilim/Appendices/PowerLevelTable.ts type="module"
 ---
 
 ## Overview
 
-Church scholars have studied magic almost continuously since the Church came out of hiding following the [Edict of Milan]. In addition to what the clergy have observed and compiled directly themselves, the Church has archived visions that various saints have had that disclose additional information. As these visions, like all visions of the saints, are not considered binding on the faithful, the Church considers this information useful, but not necessarily definitive. Church scholars have, from this research, derived these rules for how magic works.
+Church scholars have studied magic almost continuously since the Church came out of hiding following [the Edict of Milan][EoM]. In addition to what the clergy have observed and compiled directly themselves, the Church has archived visions that various saints have had that disclose additional information. As these visions, like all visions of the saints, are not considered binding on the faithful, the Church considers this information useful, but not necessarily definitive. Church scholars have, from this research, derived these rules for how magic works.
 
 ## Overall Rules
 
@@ -22,9 +24,8 @@ Experience with those who repent from witchcraft and other traffic with fallen s
 
 Individual nephil can be rated on a scale of 1 (low) to 10 (high) for access to each class of [angelic abilities][abt].[^221216-2] These power levels are estimates, and no precise way exists to directly measure the precise ability of the nephilim. Despite this, scholars feel confident that these estimates provide useful and meaningful points of reference for the comparision of the abilies of any given nephilim. Estimates of some key figures of in the history related in this archive are available [here][AD]. For the purposes of this work:
 
-[Edict of Milan]: Wikipedia. "[Edict of Milan](https://wikipedia.org/wiki/Edict_of_Milan)" Last Edited: 2024-10-23.
 
-[AD]: /FanFiction/harry_potter_-_nephilim/appendices/relative-power-levels/
+[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
 [abt]: #abilities-by-type
 
 [^221216-2]:
@@ -35,18 +36,7 @@ Individual nephil can be rated on a scale of 1 (low) to 10 (high) for access to 
     - old-crow. _[Dan Granger](https://www.fanfiction.net/s/10775872)_ Published: 2014-10-23. Updated: 2019-10-14.
     - kb0. _[The Lost Year](https://www.fanfiction.net/s/13815274)_ Published: 2021-02-09. Updated: 2021-03-24.
 
-| Power Level |                                                                                                                                                                                          Ability Estimate                                                                                                                                                                                           |
-| :---------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|      1      |                                                                                                                                                    <ul><li>some single weak ability within this category</li> <li>no conscious control</li></ul>                                                                                                                                                    |
-|      2      |                                                                                     <ul><li>**one** of the following:<ul><li>multiple barely detectable abilities</li> <li>conscious control of a single weak ability</li><li>single ability of moderate strength without conscious control</li></ul></li></ul>                                                                                     |
-|      3      |                                                                                                                                                          <ul><li>able to manipulate this category of magic with great difficulty</li></ul>                                                                                                                                                          |
-|      4      |                                                                                             <ul><li>able to achieve minimally acceptable levels of competence in this category of magic</li> <li>if some OWL test depended solely on this category of magic, expect to score in the P range.</li></ul>                                                                                              |
-|      5      |                                                                                                <ul><li>expected to achieve acceptable levels of proficiency in this category of magic</li> <li>if some OWL test depended solely on this category of magic, expect to score in the A range.</li></ul>                                                                                                |
-|      6      |                                              <ul><li>expected to be capable of more advanced learning in this category of magic.</li> <li>if some OWL test depended solely on this category of magic, expect to score in the E range.</li> <li>if some NEWT test depended solely on this category of magic, expect to score in the A range.</li></ul>                                               |
-|      7      | <ul><li>expected to be capable of doing well in an advanced course on this category of magic.</li> <li>if some OWL test depended solely on this category of magic, expect to score in the O range.</li> <li>if some NEWT test depended solely on this category of magic, expect to score in the E range.</li> <li>possibly capable of learning magics in this category beyond NEWT level.</li></ul> |
-|      8      |     <ul><li>expected to be capable of doing well in an advanced course on this category of magic.</li> <li>if some OWL test depended solely on this category of magic, expect to score in the O range.</li> <li>if some NEWT test depended solely on this category of magic, expect to score in the O range.</li> <li>capable of learning magics in this category beyond NEWT level.</li></ul>      |
-|      9      |                                                                     <ul><li>expected to learn OWL and NEWT level magics with relative ease.</li> <li>expected to learn magics beyond the NEWT level in this category of magic.</li> <li>instinctual (unconscious) use of magic in this category is extremely common.</li></ul>                                                                      |
-|     10      |                                                  <ul><li>learning this category of magic is more about finding out what is possible and fine-tuning abilities you already have.</li><li>OWL and NEWT practicals will be easy, but theory portions may be difficult for this person, because their magic is in fact instinctual in this area.</li></ul>                                                   |
+<powerlevel-table></powerlevel-table>
 
 This begs the question "What do you mean by expected?" Obviously there is no
 standards body anywhere in the world that is grading students using these
@@ -557,3 +547,4 @@ Nephil have some aspects of both. They are _mostly_ contingent beings that grow 
     [The J.K. Rowling Index](https://www.rowlingindex.org/). Publication Date: 2016-01-31. Last Viewed: 2022-06-28.
 
 [Quill of Acceptance and Book of Admittance]: https://www.rowlingindex.org/work/qaba/
+[EoM]: Wikipedia. "[Edict of Milan](https://wikipedia.org/wiki/Edict_of_Milan)" Last Edited: 2024-10-23.

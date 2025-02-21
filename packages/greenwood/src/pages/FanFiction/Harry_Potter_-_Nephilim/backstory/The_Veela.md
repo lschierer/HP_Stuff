@@ -46,5 +46,5 @@ The good angels, seeing this backlash, ceased to meddle (with a few relatively m
 
 [241120-9]: this is normal for nephil, see [The Nephilim]
 
-[The Nephilim]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_h/
-[Appendix I]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_i/
+[The Nephilim]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
+[Appendix I]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_i/

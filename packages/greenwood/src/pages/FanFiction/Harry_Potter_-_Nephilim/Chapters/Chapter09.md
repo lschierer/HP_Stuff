@@ -13,4 +13,4 @@ invisible to adults? Has this gradually changed due to continued
 [Legilimency][AC]? I think this last, they cannot
 see him. Decide on uniforms, this has a _lot_ of implications.
 
-[AC]: <../../appendices/magical-beings/>
+[AC]: <../../Appendices/magical-beings/>

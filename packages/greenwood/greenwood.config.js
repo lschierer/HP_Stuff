@@ -42,7 +42,12 @@ export default {
   prerender: false,
   staticRouter: false,
   markdown: {
-    plugins: ["rehype-autolink-headings", "remark-gfm", "remark-rehype"],
+    plugins: [
+      "rehype-autolink-headings",
+      "remark-alerts",
+      "remark-gfm",
+      "remark-rehype",
+    ],
     settings: {
       commonmark: true,
     },

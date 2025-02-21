@@ -247,14 +247,14 @@ Crabbe at 13 years old.[^230711-1] These two families with their
 history of dark dealings neither one wanted to risk the penalties that the
 children may have made themselves liable to.
 
-[AA]: /FanFiction/harry_potter_-_nephilim/appendices/points-of-divergence/
-[AB]: /FanFiction/harry_potter_-_nephilim/appendices/rules-of-magic/
-[AC]: /FanFiction/harry_potter_-_nephilim/appendices/magical-beings/
-[AD]: /FanFiction/harry_potter_-_nephilim/appendices/relative-power-levels/
-[AE]: /FanFiction/harry_potter_-_nephilim/appendices/life-expectancy/
-[AF]: /FanFiction/harry_potter_-_nephilim/appendices/magical-contracts/
-[AG]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_g/
-[AH]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_h/
+[AA]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/points-of-divergence/
+[AB]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/rules-of-magic/
+[AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-beings/
+[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
+[AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
+[AF]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-contracts/
+[AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
+[AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
 [Imperius]: /Harrypedia/magic/spells/imperio/
 
 [^230103-2]:

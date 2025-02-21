@@ -130,7 +130,7 @@ into by someone who did not notice him?
 
 [^211219-3]: See [Relative Power Levels].
 
-[Relative Power Levels]: <../../appendices/relative-power-levels/>
+[Relative Power Levels]: <../../Appendices/relative-power-levels/>
 
 [^210528-1]:
     being an American, I do not actually know much about British

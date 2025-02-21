@@ -9,60 +9,39 @@ sidebar:
 
 ## historical origin of the nephilim
 
-This section is pure AU fiction unique to this work.
+> [!WARNING]
+> Please be fully aware of the [Authors Notes on the index page](../)
 
-For my purposes, remember that per [Appendix A][AA] a nephil is a descendant of the union
-of a human and a fallen angel. What was the angel's motives in this? I am of course
-building off of the more supernatural interpretation of the concept of nephilim that
-some biblical scholars have proposed.[^230714-1] But remember, we are also building off
-of _[Many Waters][MW]_. So, with those thoughts in mind, let's build a story around
-this.
+From: <redacted> of the Archivio Apostolico Vaticano
 
-The basic premise is that the fallen angels wanted to mock God. They are unable to
-create from nothing as God does, so they are limited in what they can do. They
-take themselves, and they take humanity as their 'base material' and _make_ (not
-_create_) something of this 'material' but call the result their 'creation'.
+To: <redacted>, Provincial of the <redacted> Province
 
-- They are mocking God in that they have created something visually indistinguishable
-  from man, the centrepiece of His creation.
-- They are mocking God in that by giving their 'creation' some of their own abilities
-  and powers, they claim to have created something superior to God's creation. As we
-  have seen, they failed: the nephilim have less free will than either humanity or
-  angels because their being contains some of the limitations of each. They retain
-  some of the inability to change that an angel has, residing at once in a being that
-  is susceptible _to_ change.
-- They are mocking God by mocking marriage, in which humanity in a symbolic way
-  mirrors the inner life of the Trinity, and thus God himself. See below in the
-  Marriage and debt sections for details. Here they fail only in part. They do
-  succeed in creating a being that, because it can be forced into relationship,
-  can only conditionally give self to self. The Nephilim struggle to make a total,
-  free, faithful, and fruitful gift of self. It is possible for magic to be used on
-  them, or even accidentally by them, in ways that would violate any or all of these
-  conditions. However the unfallen angels did not simply sit back and allow this to
-  happen entirely unchallenged.
-- The fallen angels desired to make their mockery still more complete. Unfallen angels
-  intervened at various times and ways. Sometimes not to do so would create something
-  that _must not be_, sometimes to punish some or all nephilim, sometimes to fix what
-  in retrospect was a mistake when they intervened in the past. Recall that per my [rules][AA]
-  for this universe, an angel can make a well-intentioned mistake.
-  - that ensure the restrictions on [magical contracts][AF] exist.
-  - that the angelic nature's tendency to the absolute and the permanent does not prevent
-    the nephilim, who exist within time, from experiencing free will.
-  - that the abuse of the angelic power comes with equally magical consequences
-    - See my notes below on on Free Will, angels do not always act wisely here however well-intentioned.
-    - Angels have had to intervene to correct their own mistakes (not sins, honest mistakes)
-  - that these consequences tend to self limit abuses across generations
-    - so that free will is preserved
-    - so that justice is served
-    - so that redemption is both possible and desirable to each generation
-  - many other ways that frequently _appear_ arbitrary and/or capricious - see again that point about not always being wise.
+Per your request, the following represents a summary of the current knowledge on the so-called "nephilim"[^230714-1], specifically concerning their historical origins and charicteristics.
 
-Modern nephilim are the result of very mixed heritage, and thus have a wide variety
-of the powers defined in [Appendix B][AB]. _In a first generation nephil, that is not
-so._ Such a nephil has powers stemming from only one kind of angel. Thus (for example)
-'contracts' can affect these nephilim in only very narrow ways. The fallen angels, being angels,
-perfectly understand future implications of present states. The hybrid nephilim are
-in fact the intended mockery, the first generation ones were and are a means to that end.
+
+There is no single origin of the nephilim in the sense that there is for humanity.  Where humanity has, in its entiretly, decended from a single set of original parents, Adam and Eve, the nephilim emerge from a variety of human communities at at variety of different points in history.  Nor is it reasonable to believe that this is simply a case where one or more individuals have persisted in a community unaware of their heritage.  Rather, it seems inescable that there are, in fact and not merely in appearance, many different emergences of nephilim over history, and that *each* of these have come from human communities.
+
+This many origins conclusion, with each origin dependant upon a pre-existing fully human community is fitting in several ways.  One, it fits the available data in that it avoids a number of contraditions with revelation. Secondly, in that it fits with private revelation without making the believer dependant *upon* that revelation.
+
+The most reasonable conclusion is that the nephilim are _made_ and not _created_.  This distinction is important, as the evidence strongly links the origin of the nephilim to instances where humanity has practiced witch-craft, devil-worship, and other diabolic practices.  One or more of these practices appears to result in the existence of the nephilim.  Several apocraphal sources dating from Old Testament times of which we have reasonably complete fragments state that the nephilim are the result of some sort of "marriage ceremony" between a fallen angel and a human woman.  The ceremony is not described in any of these fragments, but is, per these sources, incredibly unsettling and/or unnerving upon those who witness it.  There is no evidence that directly contradicts these fragments except the reality that the fallen angels lack the power to *create* - hence the conclusion that the nephilim are *made*.
+
+Assuming these fragments are true, and given that there is apparent confirmation that there is at least some element of truth behind them in the form of private revelation, it appears that the existance of the nephilim is intended to be a direct affront to God.
+- The nephilim are, at least when they first emerge in a community (see below for
+  several important caveats), visually indistinguishable from normal humans.  Indeed, even today, most nephilim remain visually indistinguishable.  Given that humanity is the centerpiece of God's creation, the nephilim in and by their existence, could be said to mock that creation by duplicating His achievement. This would not be, in fact true - they are *made from humanity* and thus *dependant on them* but truth is no impediment to the father of lies.
+- Similarly, their makers might claim that they have *surpased* God's abilities,
+  in that the being they made is superior to that God created - the nephilim have
+  some of the powers of the angels in limited ways, and to varied limited degrees.
+  Again this claim is untrue.  For while they *do* have powers humanity does not,
+  humanity also has abilities the *nephilim* do not. See below.
+- Humanity is created and perpetuated through the union of man and woman.  Where
+  justice rules, this union occurs in and through marriage, and forms a symbol of
+  the inner life of the Trinity.  The nephilim mock this, in that they seem to be human, but seem equally incapable of marriage.
+- The nephilim themselves have at times in history made things in thier own
+  image.   There are a variety of creatures that now exist that have a variety of aspects of man.  Either the form of man (to various degrees) without the mind (or soul), or the ability to speak like a man while retaining the form of an animal, in numerous ways the nephilim have blured the distinction between humanity and the rest of creation.
+- The nephilim themselves now have a wide variety of morphology.  Many of these
+  phenotypes breed true, and many of them appear distinctingly *not*-human in very notiable ways.  Many, but not all of these, correlate with changes to intelectual capacity, measurable differences in ability to make rational decisions instead of acting on pure instinct, and measurable differences in creative capacity (the ability to create art, tell stories, to create culture).  In other words, in and of themselves they increasingly blur the lines between what is a being and what is an animal.
+
+For the purposes of this summary, it will be assumed that the nephilim are in fact in some unknown way a union of human and angelic natures, inheriting aspects of each.  Per your request, you are more interested in a practical understanding of what is than why we believe it to be, thus this summary does not attempt to explain where each fact is sourced from.
 
 [^230714-1]: Ms. Melissa Petruzzello. "[Nephilim]" [Britannica]. Last Updated 2023-07-04.
 
@@ -73,67 +52,31 @@ in fact the intended mockery, the first generation ones were and are a means to 
 ## Characteristics of the Nephilim
 
 As a distortion of God's creation, nephilim do not, cannot fit cleanly into
-either creation or Divine Law. [Soteriology][WP1], [Missiology][WP2], and
-[Ecclesiology][WP3] get interesting (and fictional) curlicues and footnotes
-trying to deal with the chaotic fallout of the interaction between the
-angelic and the human in a nephil's nature. This lets me do things to/with
-the characters that would not otherwise be at all moral. Some of this is
-covered in [Appendix G][AG].
+either creation or Divine Law. As best we, as researchers, can tell, [Soteriology][WP1], [Missiology][WP2], and [Ecclesiology][WP3] get interesting curlicues and footnotes trying to deal with the chaotic fallout of the interaction between the
+angelic and the human in a nephil's nature. The Church struggles greatly as her tribunals and as individual bishops and other Church officials have, at various times and places, been forced to adjudicate practical consequences.
 
-The reader might understand the nephilim by somewhat comparing them to mules or
-[ligers]. While in some ways they may appear to have advantages to one or both
-parent species, they are an artificial, unnatural 'creation'. Just as a
-hippogriff is impossible by normal genetics, and cannot be explained by Mendelian
-inheritance patterns, children of either two nephil or one human and one nephil
-do not follow purely Mendelian inheritance patterns. This is explained in detail
-in [Appendix C][AC].
+In many ways a useful analogy to understand the nephilim is to first look at other, naturally occuring, hybrids.  By somewhat comparing the nephilim to mules or
+[ligers], we can approach an understand of how it is that the nephilim are at the same time in some ways more capable than humanity and in other ways less capable.
+It is, however, important to note that neither the nephilim themselves, nor any of the hybrids they have created, like the so called hippogriff (which figures in human mythology, but which is *not* in fact a mythological animal, but a very rare but very real one) do *not **at all*** follow normal Mendelian inheritance patterns.  Or rather, they appear to *selectively* follow normal patterns just enough to defy formulating any alternative rules with any reliability.  We have attempted to explain the rules they do follow, in so far as there *are* any rules, in [an attached document][Inheritance].
+
+The primary difference between humans and the nephilim is that the nephilim have what they call "magic."  These abilities are poorly understood by the nephilim themselves.  Our understanding of their "magic"
+is covered in [this attached document][AB]
 
 ### Animagi
 
-In _[Many Waters][MW]_, all angels have an animal form with which they monitor and
-sometimes interact with humanity. This dual form is one of the things that the
-nephilim inherit from their (fallen) angelic parents. All nephil are animagi.
-However, normally a child, growing up around those who either do not have or do
-not use this power, begins to instinctively suppress the ability. This suppression
-thing is how I am merging the Harry Potter concept with the _[Many Waters][MW]_
-concept, and is thus found in neither original work. Some traditions, like that
-described in _Short Stories of Heroism_ are time consuming, difficult, and
-exacting.[^220628-1] In this work this is not because of the inherent difficulty
-of the actual magic, but rather the drawn out ritual is, functionally but
-unknowingly to the nephilim population (who largely have not studied any actual
-psychology), training the nephil to _allow_ the change, to overcome the
-enculturated inhibitions against using this power. Moreover, Magic is in part
-about belief, you cannot do something you believe you cannot do. Thus if you
-believe that the transformation is difficult, you can (unconsciously) _make it
-difficult._ This last (making magic difficult) applies to more than just
-animagi.
+Apocraphal sources tell us that each angel has an intrinsic shape that it will "naturally" assume when interacting with the physical world.  More accurately, it could be said to have a *set* of intrinsic *shapes*, one more or less human in appearance, and one that closely mimics a particular animal. This dual form is one of the things that the nephilim inherit from their (fallen) angelic parents. The nephilim refer to the ability to assume the shape of an animal as being an animagi, and most European nephilim will tell you that the ability is rare. It is not - all nephil are animagi.
 
-Uagadou is known for teaching self transfiguration.[^220628-2] Their results
-differ from the way most nephil communities handle the animagi ability. Rather
-than working with the student's innate form, the Uagadou school teaches
-students to mutate themselves, and thus to _change_ their innate form. They
-disregard the repercussions this has on the student's core personality, and
-sometimes even on the person's ability to function in normal human society.
+However, normally a child, growing up around those who either do not have or do
+not use this power, begins to instinctively suppress the ability. Some traditions, like that described in _Short Stories of Heroism_ (a fictional work produced for nephilim children) are time consuming, difficult, and exacting.[^220628-1]  In actuality this process is used not because of the inherent difficulty of the actual magic, but rather because the nephilim believes it necessary.  Functionally but unknowingly to the nephilim population (who largely have not studied any actual
+psychology), the ritual is training the nephil to *allow* the change, to overcome the enculturated inhibitions against using this power. Moreover, the nephilim's power, which they call magic, is in part about belief, you cannot do something you believe you cannot do. Thus if you believe that the transformation is difficult, you can (unconsciously but very actually) *make it difficult.* This last (making magic difficult) applies to more than just animagi.
+
+Uagadou (one of the nephilim centers for education) is known for teaching self transfiguration.[^220628-2] Their results differ from the way most nephil communities handle the animagi ability. Rather than working with the student's innate form, the Uagadou school teaches students to mutate themselves, and thus to *change* their innate form. They disregard the repercussions this has on the student's core personality, and sometimes even on the person's ability to function in normal human society.
 
 ### Free Will
 
-As stated in my [rules][AA], I believe that Mrs. Rowling set up a universe in
-which binding magical contracts can be forced on someone in at least some
-circumstances. I expound at some length on the topic in [Appendix F][AF].
+One of the key differences between the nephilim and humanity is that it is entirely possible for the nephilim to use their powers in ways that bind either their own will, or that of another of their kind.  This is covered in further detail in [the attached document][AF].
 
-More widely, we have two different kinds of beings with two different modes of
-exercising knowledge, and will. Angels were created and exist outside of time.
-At the moment of their creation, in some manner we lack the capacity to fully
-understand, they have a single moment of choice, as they grasp all they will
-ever know, and understand that knowledge as completely as they will ever do so.
-They choose, quite simply, to obey God, or to rebel. My _[Many Waters][MW]_
-infusion confuses this angelic nature somewhat, in that she depicts angels as
-manifestly confused, fumbling, and making well-intentioned mistakes. Her angels
-appear to exist in time. I am trying to rectify her mistake slightly. My angels
-_do_ make mistakes, but these mistakes happen outside of time, and so get rectified,
-if they are rectified at all, not by an angel learning, but by a different angel
-acting to different circumstances with a different understanding that is equally
-static.
+While you are more concerned with practical outcomes, it was decided this difference requires some elaboration.  The nephilim originate from two different kinds of beings with two different modes of exercising knowledge, and will. Angels were created and exist outside of time. At the moment of their creation, in some manner we lack the capacity to fully understand, they have a single moment of choice, as they grasp all they will ever know, and understand that knowledge as completely as they will ever do so. They choose, quite simply, to obey God, or to rebel.  This is confusing in that while they *desire* to obey God (assuming that to be their choice), their *ability* to do so is limited by their limited understanding of His Devine Will.  An angel is appparently capable of making mistakes, their mistakes, unlike those of humanity, are simply *always* honest ones.  Even more confusingly, angels *do not change*  while an angel might come to be *informed* (an angel will never figure this out on its own) that a given action was a mistake, it will act *precisely the same* given the same situation, because it *inheritly cannot learn*, it is as if it is unable to percieve that the two situations *are* the same and that what was a mistake will still be so.
 
 Humans in contrast are constantly learning and changing. For them an act of the
 will is contingent on their knowledge and understanding at the time, and as he/she
@@ -143,59 +86,38 @@ cannot be known until death brings with it both judgement and sufficient revelat
 of God's nature that the particular human is capable of gaining no greater
 understanding, and thus of no future change.
 
-How do we unite these two things into our fictional nephil? The attempt to do so,
-I posit, results in something less than either. The nephilim exist in time,
-as do humans. As such they grow and change, but their innermost nature inclines
-them to the absolute, fixed, and unchanging in a way that not even the most
-stubborn of human's does. It is easier for a nephil to learn, but it is much
-harder for the nephil to break _either_ a vice or a virtue, or even unlearn a
-"fact" that is later proven to be unfactual. A human can realize he/she was
-taught incorrectly, a nephil actually struggles with this.
+How do we unite these two things into our understanding of the nephilim? The attempt to do so, it is concluded, results in something less than either. The nephilim exist in time, as do humans. As such they grow and change, but their innermost nature inclines them to the absolute, fixed, and unchanging in a way that not even the most stubborn of human's does. It is easier for a nephil to learn, but it is much harder for the nephil to break _either_ a vice or a virtue, or even unlearn a "fact" that is later proven to be unfactual. A human can realize he/she was taught incorrectly, a nephil *actually struggles with this* - some based on apparent evidence *litterally cannot unlearn*.
 
-Thus it is not actually Hermione's fault that she trusts books too much, nor
-Draco's fault that he cannot see past his parent's bigotry. These are rather
-aspects of the fact that they are _not human_. This, combined with their
-greater average lifespan, also explains the inherent and relatively extreme
-conservatism of nephilim society. They are simply not capable of the rapid
+In your query you relate several anicdotes noting you changed the names to protect their privacy.  You should be aware that given the above conclusions about the nature of the nephilim, it is thus not actually GirlA's fault that she trusts books too much, nor BoyC's fault that he cannot see past his parent's bigotry. These are rather aspects of the fact that they are _not human_. This, combined with their greater average lifespan, also explains the inherent and relatively extreme conservatism of nephilim society. They are simply not capable of the rapid
 change that humanity experiences at the rate humanity experiences it.
 
 ### Physical Nature
 
-This union also has implications on the physical form of the nephilim. Here
-I am relying rather more on _[The Screwtape Letters][TSL]_ than on _[Many
-Waters][MW]_, though some is coming from both. C. S. Lewis describes his
-character as being transformed by his rage into a being that resembles a giant
-catepillar; his secretary takes writing each letter for the remainder of the
-book. L’Engle has angels able to have marital intercourse with humanity, and
-as I said, I have chosen the biblical interpretation that they have actual
-offspring.
+This union also has implications on the physical form of the nephilim.  Each nephilim is, as we have stated, an animagi.  That is, each has a base form that more or less appears human, but has the capability to change their form into that of a particular animal.  Note however that we stated that these animal forms can be changed, and that changes to these forms affect the personality of the individual.  The individual's animal form is always in at least some way a representation of that individual's core character.  Indeed, we speculate that these relationships between form and charater influenced human mythology and form the basis for things like the prevelance of animals [zodiac symbols].
 
-Taken together, I posit that the nephilim would be more resistant to a the type
-of total change that C. S. Lewis' main character experiences. They would not,
-however, be entirely immune to changes that would make them less human. Unlike
-an angel, they can repent from sin, so they can _also_ experience changes that
-remediate the effects of prior changes, either in themselves or in their
-forefathers. I do, in fact posit that these changes would be inheritable, just
-as Original Sin is inheritable.
+The nephilim's base form is also subject to change.  Based on observational evidence, unlike the changes to the animal form, the individual cannot effect long lasting or permenent change in his/her own base form.  Long lasting and even inheritable changes appear to most typically happen as an unintended consequence rather than as an intended one.  If private revelation is believed, we need to adjust the previous statement.  The changes *are* intended, but *not* by the indiviual nephilim, but rather form the result of angelic actions *upon* the nephilim.  More disturbingly, from what several sources claim of the visions granted to them, these changes represent actions from both those who obey God and those who do not.  In the very shape and beings of the nephilim, we can see power beyond imagining at work and at war.  In the fact that these shapes are *mostly* static, we can *infer* that these powers mostly cancel each other out.  In that each case where they clearly *haven't* canceled each other out can, on close research, be associated with the use of magic to blur the lines between animal and not-animal, we can *infer* that they become unbalenced by things the nephilim themselves do.
 
-To play with Mark Twain's words, to the extent that there is any moral to this,
-it is to show what could happen if a whole series of really bad choices were
-made. When the only choices the characters see are between bad and worse.
+The nephilim generally live longer than humans do.  They generally get sick less than we do but more than not at all, When they do get sick, the disease is usually (but not always) more virilent, accompanied by clearly magical symptoms, and frequently quite deadly. Fortunately, for unknown reasons the diseases they *do* get seem to *only* affect them.
 
-[AA]: /FanFiction/harry_potter_-_nephilim/appendices/points-of-divergence/
-[AB]: /FanFiction/harry_potter_-_nephilim/appendices/rules-of-magic/
-[AC]: /FanFiction/harry_potter_-_nephilim/appendices/magical-beings/
-[AD]: /FanFiction/harry_potter_-_nephilim/appendices/relative-power-levels/
-[AE]: /FanFiction/harry_potter_-_nephilim/appendices/life-expectancy/
-[AF]: /FanFiction/harry_potter_-_nephilim/appendices/magical-contracts/
-[AG]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_g/
-[AH]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_h/
-[Appendix I]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_i/
+The nephilim are physically more resilient than normal humans.  While their dead bodies show no differences from a normal humans (except where they have been mutated per above), it is clear that *something* is different while they live.  They survive acceleration better; they are merely bruised by impacts that would shatter human bones.  There is an important exception to this resilance, they appear more sensitive to lack of regular nutrition - they will not die from malnutrition the way a normal human would, but their growth is stunted more easily than that of a human child's, they become lethargic sooner, demonstrate trouble concentrating, and pretty much every other effect of severe malnurishment that a human does - *except* that they do not die from it.  The average nephilim appears to require on average 10 to 20 percent more calories per day, though the difference is less noticable if the individual avoids using their "magic."
+
+
+
+[zodiac symbols]: https://www.britannica.com/topic/zodiac
+[AA]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/points-of-divergence/
+[AB]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Rules of Magic/>
+[AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-beings/
+[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
+[AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
+[AF]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-contracts/
+[AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
+[AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
+[Appendix I]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_i/
 [Encyclopedic Reference]: /Harrypedia/
-[FSSP]: /FanFiction/harry_potter_-_nephilim/appendices/fssp/
+[FSSP]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/fssp/
 [FWoaO1]: https://archiveofourown.org/works/28507302
-[Inheritance]: /FanFiction/harry_potter_-_nephilim/appendices/inheritance/
-[Introduction]: /FanFiction/harry_potter_-_nephilim/introduction/
+[Inheritance]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Inheritance/
+[Introduction]: /FanFiction/Harry_Potter_-_Nephilim/introduction/
 [MW]: https://wikipedia.org/wiki/Many_Waters
 [TSL2]: https://archive.org/details/in.ernet.dli.2015.86985
 [TSL3]: https://archive.org/details/in.ernet.dli.2015.86985
@@ -203,7 +125,7 @@ made. When the only choices the characters see are between bad and worse.
 [WP1]: https://wikipedia.org/wiki/Soteriology
 [WP2]: https://wikipedia.org/wiki/Missiology
 [WP3]: https://wikipedia.org/wiki/Ecclesiology
-[ab]: /FanFiction/harry_potter_-_nephilim/appendices/rules-of-magic/
-[af]: /FanFiction/harry_potter_-_nephilim/appendices/magical-contracts/
-[ah]: /FanFiction/harry_potter_-_nephilim/appendices/appendix_h
+[ab]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/rules-of-magic/
+[af]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-contracts/
+[ah]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h
 [ligers]: https://wikipedia.org/wiki/ligers
