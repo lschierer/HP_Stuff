@@ -109,9 +109,12 @@ The nephilim are physically more resilient than normal humans.  While their dead
 [AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-beings/
 [AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
 [AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
-[AF]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-contracts/
+[AF]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
 [AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
 [AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
+[ab]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/rules-of-magic/
+[af]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
+[ah]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h
 [Appendix I]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_i/
 [Encyclopedic Reference]: /Harrypedia/
 [FSSP]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/fssp/
@@ -119,13 +122,9 @@ The nephilim are physically more resilient than normal humans.  While their dead
 [Inheritance]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Inheritance/
 [Introduction]: /FanFiction/Harry_Potter_-_Nephilim/introduction/
 [MW]: https://wikipedia.org/wiki/Many_Waters
-[TSL2]: https://archive.org/details/in.ernet.dli.2015.86985
-[TSL3]: https://archive.org/details/in.ernet.dli.2015.86985
 [TSL]: https://archive.org/details/in.ernet.dli.2015.86985
 [WP1]: https://wikipedia.org/wiki/Soteriology
 [WP2]: https://wikipedia.org/wiki/Missiology
 [WP3]: https://wikipedia.org/wiki/Ecclesiology
-[ab]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/rules-of-magic/
-[af]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-contracts/
-[ah]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h
+
 [ligers]: https://wikipedia.org/wiki/ligers

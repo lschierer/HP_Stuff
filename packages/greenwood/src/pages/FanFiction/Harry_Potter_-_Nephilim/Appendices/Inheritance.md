@@ -124,7 +124,7 @@ There are in fact, though no-inworld scholar knows this, precise percentage base
 [Inheritance]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Inheritance/
 [AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
 [AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
-[Magical Contracts]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-contracts/
+[Magical Contracts]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/
 [Soteriology, Missiology and Ecclesiology]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
 [AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
 [Appendix I]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_i/

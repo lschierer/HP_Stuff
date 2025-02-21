@@ -20,7 +20,7 @@ Church scholars have studied magic almost continuously since the Church came out
 
 Experience with those who repent from witchcraft and other traffic with fallen spirits has aided the Church scholars in the classification of the magic the nephilim use, as their magic is inherited from those who have fallen into these snares. Thus we know that magic can be subdivided into nine aspects, each corresponding to one of the nine angelic choirs. Each choirs appears to grant a distinct ability to those who are corrupted by members of that choirs, these abilities being inherited by their children. Further, should either the corrupted themselves, or their children, go on to procreate with others from a different "lineage," the powers will frequently combine in the next generation. Thus most modern nephilim have powers that derive from most if not all nine choirs.
 
-### power levels
+### Power Levels
 
 Individual nephil can be rated on a scale of 1 (low) to 10 (high) for access to each class of [angelic abilities][abt].[^221216-2] These power levels are estimates, and no precise way exists to directly measure the precise ability of the nephilim. Despite this, scholars feel confident that these estimates provide useful and meaningful points of reference for the comparision of the abilies of any given nephilim. Estimates of some key figures of in the history related in this archive are available [here][AD]. For the purposes of this work:
 
@@ -75,12 +75,16 @@ For each choir we list both the description of that choir and the traits we obse
   inheritance from them is, again like that from the Seraphim, much more
   active. The nephil has the ability to bind the will of other nephilim, and
   to defend against being so bound.
-- This ability has marginal _at best_ effect on full humans. Despite this, the magical population continues to use spells intended to change behavior on full humans as part of their attempts at preserving their so called "International Statute of Secrecy."
-- Careful investigation with the aid of the rare cooperative nephil has shown that many of these behavior altering spells have a secondary mode of operation that affects brain chemistry that _does_ work on full humans frequently in ways that mimic the effects of hallucinogenic drugs, alcohol, or both.
-- There is at least some data indicating that these secondary modes of operation come from abilities in other categories automatically compensating for the failure of abilities in this category. However, scholars are unwilling to probe too deeply due to the danger to both the caster and the subject.
+- This ability has marginal _at best_ effect on full humans. Despite this, the magical population
+  continues to use spells intended to change behavior on full humans as part of their attempts at preserving their so called "International Statute of Secrecy."
+- Careful investigation with the aid of the rare cooperative nephil has shown that many of these behavior
+  altering spells have a secondary mode of operation that affects brain chemistry that _does_ work on full humans frequently in ways that mimic the effects of hallucinogenic drugs, alcohol, or both.
+- There is at least some data indicating that these secondary modes of operation come from abilities in
+  other categories automatically compensating for the failure of abilities in this category. However, scholars are unwilling to probe too deeply due to the danger to both the caster and the subject.
 - Things like the imperious curse or the confundus charm fit in
   here.
-- Magical contracts are very real,[^221119-1] and any clergy dealing with the nephilim should be wary of the ways in which a nephil can affected by them.
+- Magical contracts are very real,[^221119-1] and any clergy dealing with the nephilim should be wary of
+  the ways in which a nephil can be affected by them.
 
 #### Dominions
 
@@ -519,16 +523,16 @@ humans, and _entirely_ outside the intended, natural hierarchy. Despite having g
 
 Nephil have some aspects of both. They are _mostly_ contingent beings that grow and change over time, but their use of magic is, in this universe, the use of an angelic power, and so it tends to either be 1) incredibly crippled compared to actual angels (for example, charms wear off really fast) or 2) incredibly permanent. In the canon books, you cannot remove Walburga's portrait from the wall without removing the wall, which might have been stupid for a house that will be passed down through generations, but clearly demonstrates that a momentary decision can have effects all out of proportion to the result. I am restricting that to magic used on things without immortal souls and to magic used on _other nephilim_ (or on races descending from nephilim, see [Magical Beings][AC]). Things that would be temptations to a human can be overriding compulsions to a nephil, and they are vulnerable to each other (and to others who can use similar powers) in ways that humans are not. See the notes on [contracts].
 
-[contracts]: ../magical-contracts/
+[contracts]: <../Magical Contracts/>
 
-[AA]: ../points-of-divergence/
-[AB]: ../rules-of-magic/
-[AC]: ../magical-beings/
-[AD]: ../relative-power-levels/
-[AE]: ../life-expectancy/
-[AF]: ../magical-contracts/
-[AG]: ../appendix_g/
-[AH]: ../appendix_h/
+[AA]: <../Points of Divergence/>
+[AB]: <../Rules of Magic/>
+[AC]: <../Magical Beings/>
+[AD]: <../Relative Power Levels/>
+[AE]: <../Life Expectancy/>
+[AF]: <../Magical Contracts/>
+[AG]: ../Appendix_G/
+[AH]: ../Appendix_H/
 
 [^220823-1]: [Wikipedia][]. "[Arranged_marriage]" Last edited: 2022-08-17.
 

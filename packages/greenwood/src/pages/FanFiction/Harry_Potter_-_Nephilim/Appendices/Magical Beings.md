@@ -249,7 +249,7 @@ can never be fully freed.
 [AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-beings/
 [AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
 [AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
-[AF]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-contracts/
+[AF]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/
 [AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
 [AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
 [AI]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_i/
