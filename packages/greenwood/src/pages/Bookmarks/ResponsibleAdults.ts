@@ -1,5 +1,5 @@
 export const prerender = false;
-import { type Route } from "../../lib/greenwoodPages.ts";
+import { type Compilation, type Route } from "../../lib/greenwoodPages.ts";
 import "../../lib/BookmarksList.ts";
 import BookmarksList from "../../lib/BookmarksList.ts";
 
@@ -50,7 +50,7 @@ function getFrontmatter() {
   };
 }
 
-function getLayout(compilation, route: Route) {
+function getLayout(compilation: Compilation, route: Route) {
   return `
   <body>
     <header>
