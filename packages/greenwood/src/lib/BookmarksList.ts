@@ -2,8 +2,8 @@ import rehypeStringify from "rehype-stringify";
 import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
+import rehypeLinkProcessor from "rehype-link-processor";
 import { unified } from "unified";
-import { DateTime } from "luxon";
 
 import fs from "node:fs/promises";
 import path from "node:path";
@@ -32,14 +32,20 @@ export default class BookmarksList {
         <dt>
           ${
             b.title.link
-              ? `<a href="${b.title.link}">${b.title.name}</a>`
-              : `<span>${b.title.name}</span>`
+              ? `<a
+                  href="${b.title.link}"
+                  class=" spectrum-Link spectrum-Link--quiet spectrum-Link--primary "
+                  ><cite>${b.title.name}</cite></a>`
+              : `<span><cite>${b.title.name}</cite></span>`
           }
         </dt>
         <dd>
           Author: ${
             b.author.link
-              ? `<a href="${b.author.link}">${b.author.name}</a>`
+              ? `<a
+                  href="${b.author.link}"
+                  class=" spectrum-Link spectrum-Link--quiet spectrum-Link--primary "
+                  >${b.author.name}</a>`
               : `<span>${b.author.name}</span>`
           }
         </dd>
@@ -62,7 +68,25 @@ export default class BookmarksList {
             }
         </dd>
         <dd>
-          Comments: ${unified().use(remarkParse).use(remarkGfm).use(remarkRehype).use(rehypeStringify).processSync(b.comments).toString()}
+          <span>Comments: </span>${unified()
+            .use(remarkParse)
+            .use(remarkGfm)
+            .use(remarkRehype)
+            .use(
+              rehypeLinkProcessor({
+                rules: [
+                  () => {
+                    return {
+                      className:
+                        "spectrum-Link spectrum-Link--quiet spectrum-Link--primary",
+                    };
+                  },
+                ],
+              })
+            )
+            .use(rehypeStringify)
+            .processSync(b.comments)
+            .toString()}
         </dd>
       `;
       })
