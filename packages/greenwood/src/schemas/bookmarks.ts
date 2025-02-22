@@ -12,7 +12,7 @@ export const Bookmark = z.object({
   dates: z.object({
     published: z.string().date().optional(),
     updated: z.string().date().optional(),
-    completed: z.string().date().optional(),
+    completed: z.union([z.string().date(), z.boolean()]).optional(),
   }),
   comments: z.string(),
 });

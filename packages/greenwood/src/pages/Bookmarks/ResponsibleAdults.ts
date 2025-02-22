@@ -7,8 +7,6 @@ import debugFunction from "../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
-} else {
-  console.log(`DEBUG not enabled for ${new URL(import.meta.url).pathname}`);
 }
 
 async function getBody() {
@@ -57,6 +55,7 @@ function getLayout(compilation: Compilation, route: Route) {
       <h1 class="spectrum-Heading spectrum-Heading--sizeXXL">
         ${route.title ? route.title : route.label}
       </h1>
+      <link rel="stylesheet" href="/styles/BookmarksList.css" />
     </header>
 
     <div class="main">

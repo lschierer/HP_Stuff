@@ -29,46 +29,67 @@ export default class BookmarksList {
     return this._bookmarks
       .map((b) => {
         return `
-        <dt>
+        <dt class="spectrum-Heading spectrum-Heading--sizeM">
           ${
             b.title.link
               ? `<a
                   href="${b.title.link}"
                   class=" spectrum-Link spectrum-Link--quiet spectrum-Link--primary "
-                  ><cite>${b.title.name}</cite></a>`
+                  ><cite >${b.title.name}</cite></a>`
               : `<span><cite>${b.title.name}</cite></span>`
           }
         </dt>
         <dd>
-          Author: ${
+          <span class=" spectrum-Detail spectrum-Detail--sizeM spectrum-Detail-strong ">Author: </span>
+          ${
             b.author.link
               ? `<a
                   href="${b.author.link}"
                   class=" spectrum-Link spectrum-Link--quiet spectrum-Link--primary "
                   >${b.author.name}</a>`
-              : `<span>${b.author.name}</span>`
+              : `<span class=" spectrum-Body spectrum-Body--sizeM ">${b.author.name}</span>`
           }
+
         </dd>
         <dd>
-          Date:
+          <span class="spectrum-Detail spectrum-Detail--sizeM spectrum-Detail-strong ">Date(s): </span><br/>
+            <ul class="dateList">
             ${
               b.dates.published
-                ? `<span>Published:</span> <span>${b.dates.published}</span>`
+                ? `
+                  <li class="spectrum-Detail spectrum-Detail--sizeM">
+                    <span class="spectrum-Detail-strong ">Published:</span>
+                    <span class="spectrum-Detail--light">${b.dates.published}</span>
+                  </li>
+                `
                 : ``
             }
             ${
               b.dates.updated
-                ? `<span>Updated: </span> <span>${b.dates.updated}</span>`
+                ? `
+                  <li class="spectrum-Detail spectrum-Detail--sizeM">
+                    <span class="spectrum-Detail-strong ">Updated:</span>
+                    <span class="spectrum-Detail--light">${b.dates.updated}</span>
+                  </li>
+                `
                 : ""
             }
             ${
               b.dates.completed
-                ? `<span>Completed: </span> <span>${b.dates.completed}</span>`
-                : ""
+                ? `
+                  <li class="spectrum-Detail spectrum-Detail--sizeM">
+                    <span class="spectrum-Detail-strong ">Completed:</span>
+                    <span class="spectrum-Detail--light">${b.dates.completed}</span>
+                  </li>
+                `
+                : b.dates.completed == undefined
+                  ? ""
+                  : `<span class="spectrum-Detail spectrum-Detail--sizeM  spectrum-Detail-strong spectrum-Detail-emphasized ">Incomplete.</span>`
             }
+            </ul>
         </dd>
         <dd>
-          <span>Comments: </span>${unified()
+          <span class=" spectrum-Detail spectrum-Detail--sizeM spectrum-Detail-strong">Comments: </span>${unified()
             .use(remarkParse)
             .use(remarkGfm)
             .use(remarkRehype)
