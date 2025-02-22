@@ -1,5 +1,5 @@
 import debugFunction from "./debug.ts";
-const DEBUG = debugFunction("lib/greenwoodpages.ts");
+const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
 import { z } from "zod";
 export type Compilation = {
