@@ -37,5 +37,17 @@
   },
   "dependencies": {
     "dotenv": "^16.4.7"
+  },
+  "pnpm": {
+    "ignoredBuiltDependencies": [
+      "@parcel/watcher",
+      "protobufjs",
+      "sharp"
+    ],
+    "onlyBuiltDependencies": [
+      "@pulumi/docker",
+      "@pulumi/docker-build",
+      "esbuild"
+    ]
   }
 }
