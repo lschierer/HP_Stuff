@@ -1,8 +1,81 @@
----
+export const prerender = false;
+import { type Route } from "../../lib/greenwoodPages.ts";
+import "../../lib/BookmarksList.ts";
+import BookmarksList from "../../lib/BookmarksList.ts";
+
+import debugFunction from "../../lib/debug.ts";
+const DEBUG = debugFunction(new URL(import.meta.url).pathname);
+if (DEBUG) {
+  console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
+} else {
+  console.log(`DEBUG not enabled for ${new URL(import.meta.url).pathname}`);
+}
+
+async function getBody() {
+  const bookmarksList = new BookmarksList();
+  bookmarksList.category = "ResponsibleAdults";
+  await bookmarksList.ParseBookmarks().then(() => {
+    if (DEBUG) {
+      console.log(
+        `after parsing getBody sees ${bookmarksList.bookmarks.length} bookmarks`
+      );
+    }
+  });
+  return `
+  <p>
+    So often children's literature is possible because the adults in those stories
+    are incompetent. Sometimes they are well-meaning, sometimes they are not,
+    sometimes they are _trying_ and failing, other times they are effectively
+    negligent. Sometimes they are simply effectively absent. Irregardless, the
+    story is only possible because children are doing things that adults should
+    have taken care of. The Harry Potter series is no exception, though it differs
+    from many in that it features adults in _all_ of these categories.
+  </p>
+  <p>
+    This is a collection of fan fiction stories that are note-worthy primarily
+    because they showcase some aspect of adults being … adults.
+  </p>
+  <dl>
+    ${bookmarksList.listBookMarks()}
+  </dl>
+  `;
+}
+
+function getFrontmatter() {
+  return {
+    title: "Adults Adulting",
+    collection: "Bookmarks",
+    description: "HP stories with responsible adults",
+    author: "Luke Schierer",
+  };
+}
+
+function getLayout(compilation, route: Route) {
+  return `
+  <body>
+    <header>
+      <h1 class="spectrum-Heading spectrum-Heading--sizeXXL">
+        ${route.title ? route.title : route.label}
+      </h1>
+    </header>
+
+    <div class="main">
+      <div class="content">
+        <content-outlet></content-outlet>
+
+      </div>
+    </div>
+  </body>
+  `;
+}
+export { getFrontmatter, getBody, getLayout };
+
+/*---
 title: Adults Adulting
 collection: Bookmarks
 description: HP stories with responsible adults
 author: "Luke Schierer"
+layout: bookmarks
 ---
 
 So often children's literature is possible because the adults in those stories
@@ -15,6 +88,8 @@ from many in that it features adults in _all_ of these categories.
 
 This is a collection of fan fiction stories that are note-worthy primarily
 because they showcase some aspect of adults being … adults.
+
+<bookmarks-list category="ResponsibleAdults"></bookmarks-list>
 
 <dl>
     <dt>
@@ -343,3 +418,5 @@ because they showcase some aspect of adults being … adults.
 [YoullNeverCatchMeAliveSaidHe]: https://archiveofourown.org/users/YoullNeverCatchMeAliveSaidHe/pseuds/YoullNeverCatchMeAliveSaidHe
 
 [FMPtrumpets]: https://archiveofourown.org/users/FMPtrumpets/pseuds/FMPtrumpets
+
+*/
