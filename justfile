@@ -23,6 +23,8 @@ build: install parse
 
 [working-directory: 'assets']
 parse: install
+  ./bin/bookmarkCollection.sh -o ../packages/starlight/src/content/
+  ./bin/bookmarkCollection.sh -o ../packages/greenwood/src/assets/
   ./bin/grampsJson2CollectionJson.sh -o ../packages/starlight/src/content/
   ./bin/grampsJson2CollectionJson.sh -o ../packages/greenwood/src/assets/
   ./bin/historyCollection.sh -o ../packages/starlight/src/content/
