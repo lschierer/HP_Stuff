@@ -2,6 +2,8 @@ import rehypeStringify from "rehype-stringify";
 import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
+import rehypeAddClasses from "rehype-add-classes";
+
 import rehypeLinkProcessor from "rehype-link-processor";
 import { unified } from "unified";
 
@@ -40,16 +42,16 @@ export default class BookmarksList {
           }
         </dt>
         <dd>
-          <span class=" spectrum-Detail spectrum-Detail--sizeM spectrum-Detail-strong ">Author: </span>
+          <span class=" spectrum-Detail spectrum-Detail--sizeM spectrum-Detail-strong ">Author: </span> <span class="spectrum-Body spectrum-Body--serif spectrum-Body--sizeXS">
           ${
             b.author.link
               ? `<a
                   href="${b.author.link}"
                   class=" spectrum-Link spectrum-Link--quiet spectrum-Link--primary "
                   >${b.author.name}</a>`
-              : `<span class=" spectrum-Body spectrum-Body--sizeM ">${b.author.name}</span>`
+              : `<span>${b.author.name}</span>`
           }
-
+          </span>
         </dd>
         <dd>
           <span class="spectrum-Detail spectrum-Detail--sizeM spectrum-Detail-strong ">Date(s): </span><br/>
@@ -89,22 +91,14 @@ export default class BookmarksList {
             </ul>
         </dd>
         <dd>
-          <span class=" spectrum-Detail spectrum-Detail--sizeM spectrum-Detail-strong">Comments: </span>${unified()
+          <span class=" spectrum-Detail spectrum-Detail--sizeM spectrum-Detail-strong">Comments: </span> ${unified()
             .use(remarkParse)
             .use(remarkGfm)
             .use(remarkRehype)
-            .use(
-              rehypeLinkProcessor({
-                rules: [
-                  () => {
-                    return {
-                      className:
-                        "spectrum-Link spectrum-Link--quiet spectrum-Link--primary",
-                    };
-                  },
-                ],
-              })
-            )
+            .use(rehypeAddClasses, {
+              a: "spectrum-Link spectrum-Link--quiet spectrum-Link--primary",
+              p: "spectrum-Body spectrum-Body--serif spectrum-Body--sizeM",
+            })
             .use(rehypeStringify)
             .processSync(b.comments)
             .toString()}
