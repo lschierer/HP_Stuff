@@ -21,6 +21,9 @@ export default class DirectoryIndex extends HTMLElement {
   private _recurse = false;
 
   async connectedCallback() {
+    if (DEBUG) {
+      console.log(`I have attributes ${JSON.stringify(this.attributes)}`);
+    }
     for (const attr of this.attributes) {
       if (DEBUG) {
         console.log(`evaluating attr ${attr.name} with value ${attr.value}`);
@@ -30,12 +33,13 @@ export default class DirectoryIndex extends HTMLElement {
           console.log(`setting directory attribute`);
         }
         this._directory = attr.value;
-        await this.getEntries();
       }
       if (!attr.name.localeCompare("recurse")) {
         this._recurse = true;
       }
     }
+    await this.getEntries();
+    this.renderEntries();
   }
 
   protected getEntries = async () => {
@@ -74,6 +78,9 @@ export default class DirectoryIndex extends HTMLElement {
           if (this._recurse) {
             this._entries.push(entry);
           } else {
+            if (DEBUG) {
+              console.log(`recurse set to false`);
+            }
             const stack = entry.route.split("/");
             const routeStack = this._directory.split("/");
             if (DEBUG) {
@@ -86,7 +93,6 @@ export default class DirectoryIndex extends HTMLElement {
         }
       }
     });
-    this.renderEntries();
   };
 
   constructor() {
