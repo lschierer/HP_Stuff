@@ -4,7 +4,6 @@ import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
 import rehypeAddClasses from "rehype-add-classes";
 
-import rehypeLinkProcessor from "rehype-link-processor";
 import { unified } from "unified";
 
 import fs from "node:fs/promises";
@@ -56,6 +55,16 @@ export default class BookmarksList {
         <dd>
           <span class="spectrum-Detail spectrum-Detail--sizeM spectrum-Detail-strong ">Date(s): </span><br/>
             <ul class="dateList">
+            ${
+              b.dates.series_start
+                ? `
+                  <li class="spectrum-Detail spectrum-Detail--sizeM">
+                    <span class="spectrum-Detail-strong ">Series Started:</span>
+                    <span class="spectrum-Detail--light">${b.dates.series_start}</span>
+                  </li>
+                `
+                : ""
+            }
             ${
               b.dates.published
                 ? `

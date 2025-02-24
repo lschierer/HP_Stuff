@@ -10,6 +10,7 @@ export const Bookmark = z.object({
     link: z.string().url().optional(),
   }),
   dates: z.object({
+    series_start: z.string().date().optional(),
     published: z.string().date().optional(),
     updated: z.string().date().optional(),
     completed: z.union([z.string().date(), z.boolean()]).optional(),
