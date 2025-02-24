@@ -6,7 +6,7 @@ import rehypeStringify from "rehype-stringify";
 import remarkGfm from "remark-gfm";
 import remarkParse from "remark-parse";
 import remarkRehype from "remark-rehype";
-import rehypeLinkProcessor from "rehype-link-processor";
+import rehypeAddClasses from "rehype-class-names";
 import { unified } from "unified";
 
 import debugFunction from "../../lib/debug.ts";
@@ -38,18 +38,10 @@ to an even greater extreme.
     .use(remarkParse)
     .use(remarkGfm)
     .use(remarkRehype)
-    .use(
-      rehypeLinkProcessor({
-        rules: [
-          () => {
-            return {
-              className:
-                "spectrum-Link spectrum-Link--quiet spectrum-Link--primary",
-            };
-          },
-        ],
-      })
-    )
+    .use(rehypeAddClasses, {
+      a: "spectrum-Link spectrum-Link--quiet spectrum-Link--primary",
+      p: "spectrum-Body spectrum-Body--serif spectrum-Body--sizeM",
+    })
     .use(rehypeStringify)
     .processSync(bodyText)
     .toString().concat(`

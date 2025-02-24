@@ -5,12 +5,7 @@ import {
 import "../../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../../lib/BookmarksList.ts";
 
-import rehypeStringify from "rehype-stringify";
-import remarkGfm from "remark-gfm";
-import remarkParse from "remark-parse";
-import remarkRehype from "remark-rehype";
-import rehypeLinkProcessor from "rehype-link-processor";
-import { unified } from "unified";
+import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
 
 import debugFunction from "../../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -33,25 +28,7 @@ While [Ginny] has flaws, I remain partial to this pairing. Unfortunately fan fic
       );
     }
   });
-  return unified()
-    .use(remarkParse)
-    .use(remarkGfm)
-    .use(remarkRehype)
-    .use(
-      rehypeLinkProcessor({
-        rules: [
-          () => {
-            return {
-              className:
-                "spectrum-Link spectrum-Link--quiet spectrum-Link--primary",
-            };
-          },
-        ],
-      })
-    )
-    .use(rehypeStringify)
-    .processSync(bodyText)
-    .toString().concat(`
+  return markdownTextProcessing(bodyText).concat(`
     <dl>
       ${bookmarksList.listBookMarks()}
     </dl>

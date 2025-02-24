@@ -1,11 +1,3 @@
-import rehypeStringify from "rehype-stringify";
-import remarkGfm from "remark-gfm";
-import remarkParse from "remark-parse";
-import remarkRehype from "remark-rehype";
-import rehypeAddClasses from "rehype-add-classes";
-
-import { unified } from "unified";
-
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -17,6 +9,8 @@ const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
+
+import markdownTextProcessing from "../lib/customMarkdownProcessing.ts";
 
 export default class BookmarksList {
   accessor category = "";
@@ -100,17 +94,7 @@ export default class BookmarksList {
             </ul>
         </dd>
         <dd>
-          <span class=" spectrum-Detail spectrum-Detail--sizeM spectrum-Detail-strong">Comments: </span> ${unified()
-            .use(remarkParse)
-            .use(remarkGfm)
-            .use(remarkRehype)
-            .use(rehypeAddClasses, {
-              a: "spectrum-Link spectrum-Link--quiet spectrum-Link--primary",
-              p: "spectrum-Body spectrum-Body--serif spectrum-Body--sizeM",
-            })
-            .use(rehypeStringify)
-            .processSync(b.comments)
-            .toString()}
+          <span class=" spectrum-Detail spectrum-Detail--sizeM spectrum-Detail-strong">Comments: </span> ${markdownTextProcessing(b.comments)}
         </dd>
       `;
       })
