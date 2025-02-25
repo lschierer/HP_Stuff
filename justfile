@@ -9,7 +9,7 @@ export NPX := `which npx`
 install:
   ${PNPM} install -r
 
-[working-directory: 'packages/starlight']
+[working-directory: 'packages/greenwood']
 dev: install
   ${PNPM} run dev
 
