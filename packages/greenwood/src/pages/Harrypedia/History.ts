@@ -52,7 +52,7 @@ const parseEvent = (
         continue;
       }
       fileName = fileName.split("/").pop() ?? "";
-      if (fileName.endsWith(".yaml")) {
+      if (fileName.endsWith(".json")) {
         fileName = fileName.slice(0, -5).padStart(4, "0");
       }
     }
@@ -82,9 +82,11 @@ const parseEvent = (
     }
     eventDate = DateTime.fromJSDate(event.date);
   }
-  if (eventDate !== undefined && eventDate.isValid) {
+  if (eventDate.isValid) {
     if (DEBUG2) {
-      console.log(`finalized date is ${eventDate.toString()}`);
+      console.log(
+        `finalized date is ${eventDate.toString()} for event ${JSON.stringify(event)}`
+      );
     }
   } else {
     console.log(

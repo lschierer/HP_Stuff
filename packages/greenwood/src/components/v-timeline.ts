@@ -22,10 +22,12 @@ export default class VerticalTimeline extends HTMLElement {
         );
       }
       if (
-        this.events !== undefined &&
-        this.events !== null &&
+        Array.isArray(JSON.parse(decodeURIComponent(this.events))) &&
         this.events.length > 0
       ) {
+        if (DEBUG) {
+          console.log(`VerticalTimeline getEvents found an events array`);
+        }
         const validate = Event.array().safeParse(
           JSON.parse(decodeURIComponent(this.events))
         );
@@ -36,7 +38,9 @@ export default class VerticalTimeline extends HTMLElement {
               blurb: event.blurb,
               description: event.description,
               source: event.source,
-              date: DateTime.fromISO(event.date as string).toJSDate(),
+              date: event.date
+                ? DateTime.fromISO(event.date as string).toJSDate()
+                : "unknown date",
             });
           });
         } else {
@@ -44,25 +48,35 @@ export default class VerticalTimeline extends HTMLElement {
             `this.events  is something odd, ${validate.error.message}`
           );
         }
+      } else {
+        if (DEBUG) {
+          console.log(
+            `this.events is ${Array.isArray(JSON.parse(decodeURIComponent(this.events)))} `
+          );
+          if (Array.isArray(this.events)) {
+            console.log(`this.events has length ${this.events.length}`);
+          }
+        }
       }
     }
   }
 
   connectedCallback() {
     if (DEBUG) {
-      console.log(`VerticalTimeline getEvents connectedCallback`);
+      console.log(`VerticalTimeline connectedCallback`);
     }
     this.getEvents();
     if (Array.isArray(this._events) && this._events.length > 0) {
+      if (DEBUG) {
+        console.log(`VerticalTimeline connectedCallback I have events`);
+      }
       this._events.sort((a, b) => {
-        if (a.date === null || a.date === undefined) {
-          if (b.date === null || b.date === undefined) {
+        if (a.date == "unknown date") {
+          if (b.date == "unknown date") {
             return 0;
           } else return -1;
-        } else if (b.date === null || b.date === undefined) {
-          if (a.date === null || a.date === undefined) {
-            return 0;
-          } else return 1;
+        } else if (b.date == "unknown date") {
+          return 1;
         } else if (a.date < b.date) {
           return -1;
         } else if (a.date > b.date) {
@@ -73,7 +87,10 @@ export default class VerticalTimeline extends HTMLElement {
       });
       const template = this._events
         .map((event, index) => {
-          const date = DateTime.fromJSDate(event.date);
+          const date =
+            event.date != "unknown date"
+              ? DateTime.fromJSDate(event.date)
+              : DateTime.now();
           const description = event.description ? event.description : "";
           const source =
             event.source && event.source !== ""
@@ -118,10 +135,13 @@ export default class VerticalTimeline extends HTMLElement {
                 ${this._events
                   .map((entry, index) => {
                     if (entry.source !== "") {
-                      const date = DateTime.fromJSDate(entry.date);
+                      const date =
+                        entry.date != "unknown date"
+                          ? DateTime.fromJSDate(entry.date)
+                          : DateTime.now();
                       return `
                       <li class="footnote spectrum-Typography">
-                        <a name="${`${date.toUnixInteger()}-${index}`}">
+                        <a name="${date.toUnixInteger()}-${index}">
                           ${entry.source}
                         </a>
                         <span class="spectrum-Body spectrum-Body--sizeS"><a href="#${date.toUnixInteger()}-${index}-item">return to entry &crarr;</a></span>

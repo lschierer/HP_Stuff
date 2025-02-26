@@ -14,6 +14,7 @@ const fileDebug: Record<string, boolean> = {
   "/pages/Harrypedia/History.ts": false,
   "/pages/Harrypedia/History.ts.1": false,
   "/pages/Harrypedia/History.ts.2": false,
+  "/components/v-timeline.ts": false,
 };
 
 function isAbsolutePath(path: string): boolean {

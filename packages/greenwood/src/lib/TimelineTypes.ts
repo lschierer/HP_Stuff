@@ -15,7 +15,7 @@ export const Events = z.object({
 export type Events = z.infer<typeof Events>;
 
 export const DisplayableEvent = Event.extend({
-  date: z.date(),
+  date: z.union([z.date(), z.literal("unknown date")]),
 });
 
 export type DisplayableEvent = z.infer<typeof DisplayableEvent>;
