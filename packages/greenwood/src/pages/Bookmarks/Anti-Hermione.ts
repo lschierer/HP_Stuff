@@ -2,12 +2,7 @@ import { type Compilation, type Route } from "../../lib/greenwoodPages.ts";
 import "../../lib/BookmarksList.ts";
 import BookmarksList from "../../lib/BookmarksList.ts";
 
-import rehypeStringify from "rehype-stringify";
-import remarkGfm from "remark-gfm";
-import remarkParse from "remark-parse";
-import remarkRehype from "remark-rehype";
-import rehypeAddClasses from "rehype-class-names";
-import { unified } from "unified";
+import markdownTextProcessing from "../../lib/customMarkdownProcessing.ts";
 
 import debugFunction from "../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -34,17 +29,7 @@ to an even greater extreme.
       );
     }
   });
-  return unified()
-    .use(remarkParse)
-    .use(remarkGfm)
-    .use(remarkRehype)
-    .use(rehypeAddClasses, {
-      a: "spectrum-Link spectrum-Link--quiet spectrum-Link--primary",
-      p: "spectrum-Body spectrum-Body--serif spectrum-Body--sizeM",
-    })
-    .use(rehypeStringify)
-    .processSync(bodyText)
-    .toString().concat(`
+  return markdownTextProcessing(bodyText).concat(`
     <dl>
       ${bookmarksList.listBookMarks()}
     </dl>
