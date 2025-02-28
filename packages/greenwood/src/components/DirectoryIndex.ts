@@ -38,6 +38,10 @@ export default class DirectoryIndex extends HTMLElement {
         this._recurse = true;
       }
     }
+    if (this._directory.includes("/")) {
+      const stack = this._directory.split("/");
+      this._directory = stack.map((s) => encodeURIComponent(s)).join("/");
+    }
     await this.getEntries();
     this.renderEntries();
   }
@@ -88,6 +92,20 @@ export default class DirectoryIndex extends HTMLElement {
             }
             if (stack.length <= routeStack.length + 1) {
               this._entries.push(entry);
+            }
+          }
+        } else {
+          if (DEBUG) {
+            if (
+              !entry.route.localeCompare(encodeURIComponent(this._directory))
+            ) {
+              console.log(
+                `excluding matching route ${entry.route} the same as ${this._directory}`
+              );
+            } else {
+              console.log(
+                `excluding non-matching route ${entry.route} while comparing ${this._directory}`
+              );
             }
           }
         }
