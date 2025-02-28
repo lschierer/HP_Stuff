@@ -11,6 +11,7 @@ const fileDebug: Record<string, boolean> = {
   "/components/SiteTitle.ts": false,
   "/components/ThemeSelector.ts": false,
   "/pages/Bookmarks/ResponsibleAdults.ts": false,
+  "/pages/Bookmarks/Dealing%20With%20Snape/After%20He%20Dies.ts": false,
   "/pages/Harrypedia/History.ts": false,
   "/pages/Harrypedia/History.ts.1": false,
   "/pages/Harrypedia/History.ts.2": false,
