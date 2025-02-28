@@ -33,7 +33,7 @@ export default class SiteTitle extends HTMLElement {
     this.shadowRoot?.adoptedStyleSheets.push(GlobalCSS);
     if (DEBUG) {
       console.log(
-        `styles currently ${(GlobalCSS as CSSStyleSheet).cssRules.length}`
+        `styles currently ${(GlobalCSS).cssRules.length}`
       );
     }
     this.shadowRoot?.adoptedStyleSheets.push(SiteTitleCSS);
