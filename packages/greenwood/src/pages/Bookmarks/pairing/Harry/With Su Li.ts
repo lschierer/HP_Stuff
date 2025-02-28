@@ -2,7 +2,7 @@ import {
   type Compilation,
   type Route,
 } from "../../../../lib/greenwoodPages.ts";
-import "../../lib/BookmarksList.ts";
+import "../../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../../lib/BookmarksList.ts";
 
 import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
