@@ -15,8 +15,8 @@
     "incremental": true,
     "isolatedModules": true,
     "lib": ["ES2023", "DOM", "DOM.Iterable"],
-    "module": "NodeNext",
-    "moduleResolution": "nodenext",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
     "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noImplicitAny": true,
@@ -34,7 +34,7 @@
         "strict": true
       }
     ],
-    "rewriteRelativeImportExtensions": true,
+    "rewriteRelativeImportExtensions": false,
     "skipLibCheck": true,
     "strict": true,
     "target": "ESNext",
