@@ -8,8 +8,6 @@ import debugFunction from "../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
-} else {
-  console.log(`DEBUG not enabled for ${new URL(import.meta.url).pathname}`);
 }
 
 async function getBody() {
