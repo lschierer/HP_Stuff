@@ -1,6 +1,4 @@
 import { type Compilation, type Route } from "../../lib/greenwoodPages.ts";
-import "../../lib/BookmarksList.ts";
-import BookmarksList from "../../lib/BookmarksList.ts";
 
 import markdownTextProcessing from "../../lib/customMarkdownProcessing.ts";
 
@@ -10,7 +8,7 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-async function getBody() {
+function getBody() {
   const bodyText = `
 [Ginny]'s missed birthday irks me.  It might just be the third person limited narration, but it fits a pattern I dislike. These stories are not necessarily notable in themselves, and while I did not want a full category page for them, they do not fit elsewhere. I want to call out that I am not the first or only person to note this problem.
 * _[The Forgotten Day](https://www.fanfiction.net/s/13183663)_ by
