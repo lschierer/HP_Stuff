@@ -1,0 +1,112 @@
+---
+interface Props {
+  grampsId: string;
+  isRoot: boolean;
+  maxDepth?: number;
+}
+
+import { getCollection } from "astro:content";
+import "@styles/AncestorsTreeChart.css";
+
+import IndividualName from "../IndividualName.astro";
+
+import { GedcomFamily, GedcomPerson } from "@schemas/gedcom";
+
+import { Debug } from "astro:components";
+
+const DEBUG = false;
+
+const { grampsId, isRoot, maxDepth = -1 } = Astro.props;
+const generations = maxDepth != -1 ? maxDepth : 2;
+
+const pentries = await getCollection("people");
+const fentries = await getCollection("families");
+
+let father: string = "";
+let mother: string = "";
+
+const individual =
+  pentries.find((entry) => {
+    return !entry.data.id.localeCompare(grampsId);
+  })?.data ?? undefined;
+
+const family = fentries.find((entry) => {
+  if (individual) {
+    return individual.parent_family_list.includes(entry.data.handle);
+  }
+  return false;
+});
+
+const findParent = (person: GedcomPerson.GedcomElement, handle: string) => {
+  return !person.handle.localeCompare(handle);
+};
+
+if (!family) {
+  if (DEBUG) {
+    console.log(`could not find family for ${grampsId}`);
+  }
+} else {
+  if (family.data.father_handle) {
+    const handle = family.data.father_handle;
+    father =
+      pentries.find((person) => findParent(person.data, handle))?.data.id ?? "";
+    if (DEBUG) {
+      console.log(`father is ${father}`);
+    }
+  }
+  if (family.data.mother_handle) {
+    const handle = family.data.mother_handle;
+    mother =
+      pentries.find((person) => findParent(person.data, handle))?.data.id ?? "";
+    if (DEBUG) {
+      console.log(`mother is ${mother}`);
+    }
+  }
+}
+---
+
+{
+  isRoot ? (
+    <ul class={isRoot ? "ascending-tree" : "leaf"}>
+      <li>
+        {(father.length > 0 || mother.length > 0) && (
+          <ul>
+            {father.length > 0 && (
+              <Astro.self isRoot={false} grampsId={father} />
+            )}
+            {mother.length > 0 && (
+              <Astro.self isRoot={false} grampsId={mother} />
+            )}
+          </ul>
+        )}
+        <IndividualName inline personId={grampsId} />
+      </li>
+    </ul>
+  ) : (
+    <li>
+      {(father.length > 0 || mother.length > 0) && (
+        <ul>
+          {father.length > 0 && generations ? (
+            <Astro.self
+              isRoot={false}
+              grampsId={father}
+              maxDepth={generations - 1}
+            />
+          ) : (
+            <li>
+              <IndividualName link={true} inline personId={father} />
+            </li>
+          )}
+          {mother.length > 0 && generations ? (
+            <Astro.self isRoot={false} grampsId={mother} />
+          ) : (
+            <li>
+              <IndividualName link={true} inline personId={mother} />
+            </li>
+          )}
+        </ul>
+      )}
+      <IndividualName link={true} inline personId={grampsId} />
+    </li>
+  )
+}

@@ -9,6 +9,7 @@ const fileDebug: Record<string, boolean> = {
   "/components/DirectoryIndex.ts": false,
   "/components/theme.ts": false,
   "/components/SiteTitle.ts": false,
+  "/components/grampsParser/GeneologicalStats.ts": false,
   "/components/ThemeSelector.ts": false,
   "/pages/Bookmarks/ResponsibleAdults.ts": false,
   "/pages/Bookmarks/Dealing%20With%20Snape/After%20He%20Dies.ts": false,
