@@ -1,7 +1,8 @@
 import {
   type Compilation,
-  type Route,
-} from "../../../../lib/greenwoodPages.ts";
+  type Page,
+  type GetFrontmatter,
+} from "@greenwood/cli";
 import "../../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../../lib/BookmarksList.ts";
 
@@ -13,7 +14,11 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-async function getBody() {
+const getBody: (
+  compilation: Compilation,
+  page: Page,
+  request: Request
+) => string | Promise<string> = async () => {
   const bodyText = `
 I really feel that [Hannah] is an under utilised character in fan fiction. Sure she backs down from her defence of him in second year and ends up wearing a badge in fourth, but both of these essentially boil down to the fact that sheis a [Hufflepuff] and not a [Gryffindor] - she _isn't_ brave, and getting along with (showing loyalty to) her housemates is _massively_ important to her. The latter however can easily be transferred to [Harry] by a romantic attachment overriding the House loyalty, as my first entry in this category does.
 
@@ -37,34 +42,18 @@ I really feel that [Hannah] is an under utilised character in fan fiction. Sure 
       ${bookmarksList.listBookMarks()}
     </dl>
     `);
-}
+};
 
-function getFrontmatter() {
+const getFrontmatter: GetFrontmatter = () => {
   return {
     title: "Harry With Hannah Abbott",
     collection: "Bookmarks",
     description: "HP stories with Harry and Hannah Abbott paired",
     author: "Luke Schierer",
+    data: {},
   };
-}
+};
 
-function getLayout(compilation: Compilation, route: Route) {
-  return `
-  <body>
-    <header>
-      <h1 class="spectrum-Heading spectrum-Heading--sizeXXL">
-        ${route.title ? route.title : route.label}
-      </h1>
-      <link rel="stylesheet" href="/styles/BookmarksList.css" />
-    </header>
+import getLayout from "../../../../layouts/Bookmarks.ts";
 
-    <div class="main">
-      <div class="content">
-        <content-outlet></content-outlet>
-
-      </div>
-    </div>
-  </body>
-  `;
-}
 export { getFrontmatter, getBody, getLayout };

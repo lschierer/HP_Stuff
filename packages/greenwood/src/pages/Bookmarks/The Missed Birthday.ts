@@ -1,5 +1,4 @@
-import { type Compilation, type Route } from "../../lib/greenwoodPages.ts";
-
+import { type GetFrontmatter, type GetBody } from "@greenwood/cli";
 import markdownTextProcessing from "../../lib/customMarkdownProcessing.ts";
 
 import debugFunction from "../../lib/debug.ts";
@@ -8,7 +7,7 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-function getBody() {
+const getBody: GetBody = () => {
   const bodyText = `
 [Ginny]'s missed birthday irks me.  It might just be the third person limited narration, but it fits a pattern I dislike. These stories are not necessarily notable in themselves, and while I did not want a full category page for them, they do not fit elsewhere. I want to call out that I am not the first or only person to note this problem.
 * _[The Forgotten Day](https://www.fanfiction.net/s/13183663)_ by
@@ -21,35 +20,18 @@ function getBody() {
 [Ginny]: /Harrypedia/people/Potter/Harry_James/
 `;
   return markdownTextProcessing(bodyText);
-}
+};
 
-function getFrontmatter() {
+const getFrontmatter: GetFrontmatter = () => {
   return {
     title: "The Missed Birthday",
     collection: "Bookmarks",
     description:
       "Several Authors have noted that Ginny's Birthday is a problem in canon",
     author: "Luke Schierer",
+    data: {},
   };
-}
+};
 
-function getLayout(compilation: Compilation, route: Route) {
-  return `
-  <body>
-    <header>
-      <h1 class="spectrum-Heading spectrum-Heading--sizeXXL">
-        ${route.title ? route.title : route.label}
-      </h1>
-      <link rel="stylesheet" href="/styles/BookmarksList.css" />
-    </header>
-
-    <div class="main">
-      <div class="content">
-        <content-outlet></content-outlet>
-
-      </div>
-    </div>
-  </body>
-  `;
-}
+import getLayout from "../../layouts/Bookmarks.ts";
 export { getFrontmatter, getBody, getLayout };

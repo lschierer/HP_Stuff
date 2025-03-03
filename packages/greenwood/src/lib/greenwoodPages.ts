@@ -1,66 +1,9 @@
 import debugFunction from "./debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
+import { type Page } from "@greenwood/cli";
+
 import { z } from "zod";
-export type Compilation = {
-  graph: Page[];
-  context: unknown;
-  // TODO put resources into manifest
-  /* eslint-disable  @typescript-eslint/no-explicit-any */
-  resources: Map<any, any>;
-  manifest: {
-    apis: Map<any, any>;
-  };
-};
-
-export type Route = {
-  id: string;
-  label: string;
-  title: string;
-  route: string;
-  layout: string;
-  data: {
-    collection: string;
-    author: string | string[];
-    tableOfContents: [];
-    imports: [];
-    tocHeading: number | string;
-  };
-  imports: [];
-  resources: [];
-  pageHref: string;
-  outputHref: string;
-  isSSR: boolean;
-  prerender: boolean;
-  isolation: boolean;
-  hydration: boolean;
-  servePage: string;
-};
-
-export const Page = z.object({
-  id: z.string(),
-  route: z.string(),
-  label: z.string(),
-  title: z.string().optional(),
-  data: z
-    .object({
-      sidebar: z
-        .object({
-          order: z.number().optional(),
-        })
-        .optional(),
-      author: z.string().optional(),
-      description: z.string().optional(),
-      tableOfContents: z
-        .object({
-          minHeadingLevel: z.number().optional(),
-          maxHeadingLevel: z.number().optional(),
-        })
-        .optional(),
-    })
-    .optional(),
-});
-export type Page = z.infer<typeof Page>;
 
 const baseSideBarEntry = z.object({
   name: z.string(),
@@ -96,47 +39,44 @@ export const sortbyContainsRoute = (a: Page, b: Page) => {
 };
 
 export const sortbyfrontmatter = (a: Page, b: Page) => {
-  if (
-    a.data !== undefined &&
-    a.data.sidebar !== undefined &&
-    a.data.sidebar.order !== undefined
-  ) {
-    if (DEBUG) {
-      console.log(`sorting by sidebar order`);
+  let orderA = -100000;
+  let orderB = -100000;
+
+  if (a.data !== undefined && Object.keys(a.data).includes("sidebar")) {
+    const sidebar: object = a.data["sidebar" as keyof typeof a.data];
+    if (Object.keys(sidebar).includes("order")) {
+      orderA = sidebar["order" as keyof typeof sidebar];
     }
-    if (
-      b.data !== undefined &&
-      b.data.sidebar !== undefined &&
-      b.data.sidebar.order !== undefined
-    ) {
-      return a.data.sidebar.order > b.data.sidebar.order
-        ? 1
-        : a.data.sidebar.order < b.data.sidebar.order
-          ? -1
-          : 0;
-    }
-    return -1;
-  } else if (
-    b.data !== undefined &&
-    b.data.sidebar !== undefined &&
-    b.data.sidebar.order !== undefined
-  ) {
-    if (DEBUG) {
-      console.log(`sorting by sidebar order`);
-    }
-    return 1;
   }
-  return 0;
+
+  if (b.data !== undefined && Object.keys(a.data).includes("sidebar")) {
+    const sidebar: object = b.data["sidebar" as keyof typeof b.data];
+    if (Object.keys(sidebar).includes("order")) {
+      orderB = sidebar["order" as keyof typeof sidebar];
+    }
+  }
+  if (DEBUG && (orderA != -100000 || orderB != -100000)) {
+    console.log(`sorting by frontmatter order`);
+  }
+  if (orderA != -100000 && orderB != -100000) {
+    return orderA < orderB ? -1 : orderA > orderB ? 1 : 0;
+  } else if (orderA != -100000) {
+    return -1;
+  } else if (orderB != -100000) {
+    return 1;
+  } else {
+    return 0;
+  }
 };
 
 export const sortbyTitle = (a: Page, b: Page) => {
-  if (a.title !== undefined) {
-    if (b.title !== undefined) {
+  if (a.title.length > 0) {
+    if (b.title.length > 0) {
       return a.title.toLowerCase().localeCompare(b.title.toLowerCase());
     }
     return a.title.toLowerCase().localeCompare(b.label.toLowerCase());
   }
-  if (b.title !== undefined) {
+  if (b.title.length > 0) {
     return a.label.toLowerCase().localeCompare(b.title.toLowerCase());
   }
   return 0;

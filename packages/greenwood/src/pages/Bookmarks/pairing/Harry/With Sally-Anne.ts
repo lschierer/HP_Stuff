@@ -1,7 +1,8 @@
 import {
   type Compilation,
-  type Route,
-} from "../../../../lib/greenwoodPages.ts";
+  type Page,
+  type GetFrontmatter,
+} from "@greenwood/cli";
 import "../../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../../lib/BookmarksList.ts";
 
@@ -13,7 +14,11 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-async function getBody() {
+const getBody: (
+  compilation: Compilation,
+  page: Page,
+  request: Request
+) => string | Promise<string> = async () => {
   const bodyText = `
 Sally-Anne [Perks] is the character that disappears between the sorting in book 1 and the time students are called in for their OWL practicals in book5. As we know literally nothing about her except her name, she is the perfect blank slate for a fan fiction author.
 
@@ -33,34 +38,18 @@ Sally-Anne [Perks] is the character that disappears between the sorting in book 
       ${bookmarksList.listBookMarks()}
     </dl>
     `);
-}
+};
 
-function getFrontmatter() {
+const getFrontmatter: GetFrontmatter = () => {
   return {
     title: "Harry With Sally-Anne Perks",
     collection: "Bookmarks",
     description: "HP stories with Harry and Sally-Anne Perks paired",
     author: "Luke Schierer",
+    data: {},
   };
-}
+};
 
-function getLayout(compilation: Compilation, route: Route) {
-  return `
-  <body>
-    <header>
-      <h1 class="spectrum-Heading spectrum-Heading--sizeXXL">
-        ${route.title ? route.title : route.label}
-      </h1>
-      <link rel="stylesheet" href="/styles/BookmarksList.css" />
-    </header>
+import getLayout from "../../../../layouts/Bookmarks.ts";
 
-    <div class="main">
-      <div class="content">
-        <content-outlet></content-outlet>
-
-      </div>
-    </div>
-  </body>
-  `;
-}
 export { getFrontmatter, getBody, getLayout };

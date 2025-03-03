@@ -1,7 +1,8 @@
 import {
   type Compilation,
-  type Route,
-} from "../../../../lib/greenwoodPages.ts";
+  type Page,
+  type GetFrontmatter,
+} from "@greenwood/cli";
 import "../../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../../lib/BookmarksList.ts";
 
@@ -13,7 +14,11 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-async function getBody() {
+const getBody: (
+  compilation: Compilation,
+  page: Page,
+  request: Request
+) => string | Promise<string> = async () => {
   const bodyText = `
 Many of these stories happen when [Amelia] [Bones] steps in to, you know, actually do her job as a law enforcement official, and thus belong in the [Responsible Adult] category. While that might happen in a few of these, it is not why they are included.
 
@@ -35,34 +40,18 @@ Many of these stories happen when [Amelia] [Bones] steps in to, you know, actual
       ${bookmarksList.listBookMarks()}
     </dl>
     `);
-}
+};
 
-function getFrontmatter() {
+const getFrontmatter: GetFrontmatter = () => {
   return {
     title: "Harry and Susan",
     collection: "Bookmarks",
     description: "HP stories in which Harry is paired with Susan Bones",
     author: "Luke Schierer",
+    data: {},
   };
-}
+};
 
-function getLayout(compilation: Compilation, route: Route) {
-  return `
-  <body>
-    <header>
-      <h1 class="spectrum-Heading spectrum-Heading--sizeXXL">
-        ${route.title ? route.title : route.label}
-      </h1>
-      <link rel="stylesheet" href="/styles/BookmarksList.css" />
-    </header>
+import getLayout from "../../../../layouts/Bookmarks.ts";
 
-    <div class="main">
-      <div class="content">
-        <content-outlet></content-outlet>
-
-      </div>
-    </div>
-  </body>
-  `;
-}
 export { getFrontmatter, getBody, getLayout };

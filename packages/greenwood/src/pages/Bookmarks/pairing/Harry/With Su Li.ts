@@ -1,7 +1,8 @@
 import {
   type Compilation,
-  type Route,
-} from "../../../../lib/greenwoodPages.ts";
+  type Page,
+  type GetFrontmatter,
+} from "@greenwood/cli";
 import "../../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../../lib/BookmarksList.ts";
 
@@ -13,7 +14,13 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-async function getBody() {
+import getLayout from "../../../../layouts/Bookmarks.ts";
+
+const getBody: (
+  compilation: Compilation,
+  page: Page,
+  request: Request
+) => string | Promise<string> = async () => {
   const bodyText = `
 For some reason this pairing is incredibly rare, and even more rarely are these stories actually finished. I am unsure why, as [Cho]'s character in the cannon books is clearly not a good romantic match for [Harry], and yet the introduction of chinese culture, or even psuedo-chinese culture allows for some interesting crossovers, or at least minor additions to the canon universe (cameos within the universe as it were).
 
@@ -34,34 +41,16 @@ For some reason this pairing is incredibly rare, and even more rarely are these 
       ${bookmarksList.listBookMarks()}
     </dl>
     `);
-}
+};
 
-function getFrontmatter() {
+const getFrontmatter: GetFrontmatter = () => {
   return {
     title: "Harry and Su Li",
     collection: "Bookmarks",
     description: "HP stories in which Harry is paired with Su Li",
     author: "Luke Schierer",
+    data: {},
   };
-}
+};
 
-function getLayout(compilation: Compilation, route: Route) {
-  return `
-  <body>
-    <header>
-      <h1 class="spectrum-Heading spectrum-Heading--sizeXXL">
-        ${route.title ? route.title : route.label}
-      </h1>
-      <link rel="stylesheet" href="/styles/BookmarksList.css" />
-    </header>
-
-    <div class="main">
-      <div class="content">
-        <content-outlet></content-outlet>
-
-      </div>
-    </div>
-  </body>
-  `;
-}
 export { getFrontmatter, getBody, getLayout };

@@ -1,4 +1,8 @@
-import { type Compilation, type Route } from "../../../lib/greenwoodPages.ts";
+import {
+  type Compilation,
+  type Page,
+  type GetFrontmatter,
+} from "@greenwood/cli";
 import "../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../lib/BookmarksList.ts";
 
@@ -10,7 +14,11 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-async function getBody() {
+const getBody: (
+  compilation: Compilation,
+  page: Page,
+  request: Request
+) => string | Promise<string> = async () => {
   const bodyText = `
 Let's take a look at what might have happened after [Snape] died.  Just because Mrs. Rowling gave him a total pass on his bad behavior does not mean we have to.
 
@@ -30,35 +38,18 @@ Let's take a look at what might have happened after [Snape] died.  Just because 
       ${bookmarksList.listBookMarks()}
     </dl>
     `);
-}
+};
 
-function getFrontmatter() {
+const getFrontmatter: GetFrontmatter = () => {
   return {
     title: "After Snape Dies",
     collection: "Bookmarks",
     description:
       "HP stories focusing on Snape's death, judgement, or afterlife",
     author: "Luke Schierer",
+    data: {},
   };
-}
+};
 
-function getLayout(compilation: Compilation, route: Route) {
-  return `
-  <body>
-    <header>
-      <h1 class="spectrum-Heading spectrum-Heading--sizeXXL">
-        ${route.title ? route.title : route.label}
-      </h1>
-      <link rel="stylesheet" href="/styles/BookmarksList.css" />
-    </header>
-
-    <div class="main">
-      <div class="content">
-        <content-outlet></content-outlet>
-
-      </div>
-    </div>
-  </body>
-  `;
-}
+import getLayout from "../../../layouts/Bookmarks.ts";
 export { getFrontmatter, getBody, getLayout };

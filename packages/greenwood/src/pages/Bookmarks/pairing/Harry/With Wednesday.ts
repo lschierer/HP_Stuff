@@ -1,7 +1,8 @@
 import {
   type Compilation,
-  type Route,
-} from "../../../../lib/greenwoodPages.ts";
+  type Page,
+  type GetFrontmatter,
+} from "@greenwood/cli";
 import "../../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../../lib/BookmarksList.ts";
 
@@ -13,7 +14,11 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-async function getBody() {
+const getBody: (
+  compilation: Compilation,
+  page: Page,
+  request: Request
+) => string | Promise<string> = async () => {
   const bodyText = `
 Harry Potter almost begs for a crossover with the Addams family, despite the
 differences in timelines in any iteration of the Addams family. If you are
@@ -40,34 +45,19 @@ real gems, some of which are even finished.
       ${bookmarksList.listBookMarks()}
     </dl>
     `);
-}
+};
 
-function getFrontmatter() {
+const getFrontmatter: GetFrontmatter = () => {
   return {
     title: "Harry With Wednesday Addams",
     collection: "Bookmarks",
     description: "HP stories with Harry and Wednesday Addams paired",
     author: "Luke Schierer",
+    data: {},
   };
-}
+};
 
-function getLayout(compilation: Compilation, route: Route) {
-  return `
-  <body>
-    <header>
-      <h1 class="spectrum-Heading spectrum-Heading--sizeXXL">
-        ${route.title ? route.title : route.label}
-      </h1>
-      <link rel="stylesheet" href="/styles/BookmarksList.css" />
-    </header>
+import getLayout from "../../../../layouts/Bookmarks.ts";
+import type { GetFrontmatter } from "@greenwood/cli";
 
-    <div class="main">
-      <div class="content">
-        <content-outlet></content-outlet>
-
-      </div>
-    </div>
-  </body>
-  `;
-}
 export { getFrontmatter, getBody, getLayout };

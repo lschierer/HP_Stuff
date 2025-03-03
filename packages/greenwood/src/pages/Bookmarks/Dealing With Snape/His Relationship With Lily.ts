@@ -1,4 +1,8 @@
-import { type Compilation, type Route } from "../../../lib/greenwoodPages.ts";
+import {
+  type Compilation,
+  type Page,
+  type GetFrontmatter,
+} from "@greenwood/cli";
 import "../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../lib/BookmarksList.ts";
 
@@ -10,7 +14,11 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-async function getBody() {
+const getBody: (
+  compilation: Compilation,
+  page: Page,
+  request: Request
+) => string | Promise<string> = async () => {
   const bodyText = `
 It irks me that any number of people seem to assume that [Snape] and [Lily] were on the path to a successful romantic relationship until their fight in fifth year; that [James] (or [Dumbledore]) must have drugged, tricked, or trapped her into a marriage, and that without interferance, she would be happy with [Snape].  Let's address that.
 
@@ -33,34 +41,18 @@ It irks me that any number of people seem to assume that [Snape] and [Lily] were
       ${bookmarksList.listBookMarks()}
     </dl>
     `);
-}
+};
 
-function getFrontmatter() {
+const getFrontmatter: GetFrontmatter = () => {
   return {
     title: "Snape's Relationship With Lily",
     collection: "Bookmarks",
     description: "HP stories about Snape's relationship with Lily",
     author: "Luke Schierer",
+    data: {},
   };
-}
+};
 
-function getLayout(compilation: Compilation, route: Route) {
-  return `
-  <body>
-    <header>
-      <h1 class="spectrum-Heading spectrum-Heading--sizeXXL">
-        ${route.title ? route.title : route.label}
-      </h1>
-      <link rel="stylesheet" href="/styles/BookmarksList.css" />
-    </header>
+import getLayout from "../../../layouts/Bookmarks.ts";
 
-    <div class="main">
-      <div class="content">
-        <content-outlet></content-outlet>
-
-      </div>
-    </div>
-  </body>
-  `;
-}
 export { getFrontmatter, getBody, getLayout };

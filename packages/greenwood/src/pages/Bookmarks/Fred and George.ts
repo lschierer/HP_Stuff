@@ -1,4 +1,8 @@
-import { type Compilation, type Route } from "../../lib/greenwoodPages.ts";
+import {
+  type Compilation,
+  type Page,
+  type GetFrontmatter,
+} from "@greenwood/cli";
 import "../../lib/BookmarksList.ts";
 import BookmarksList from "../../lib/BookmarksList.ts";
 
@@ -10,7 +14,11 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-async function getBody() {
+const getBody: (
+  compilation: Compilation,
+  page: Page,
+  request: Request
+) => string | Promise<string> = async () => {
   const bodyText = `
 These stories that are really about [Fred] and [George], more than they are about [Harry] himself.
 
@@ -32,34 +40,18 @@ These stories that are really about [Fred] and [George], more than they are abou
       ${bookmarksList.listBookMarks()}
     </dl>
     `);
-}
+};
 
-function getFrontmatter() {
+const getFrontmatter: GetFrontmatter = () => {
   return {
     title: "Featuring Fred and George",
     collection: "Bookmarks",
     description: "HP Stories featuring Fred and George as main characters",
     author: "Luke Schierer",
+    data: {},
   };
-}
+};
 
-function getLayout(compilation: Compilation, route: Route) {
-  return `
-  <body>
-    <header>
-      <h1 class="spectrum-Heading spectrum-Heading--sizeXXL">
-        ${route.title ? route.title : route.label}
-      </h1>
-      <link rel="stylesheet" href="/styles/BookmarksList.css" />
-    </header>
+import getLayout from "../../layouts/Bookmarks.ts";
 
-    <div class="main">
-      <div class="content">
-        <content-outlet></content-outlet>
-
-      </div>
-    </div>
-  </body>
-  `;
-}
 export { getFrontmatter, getBody, getLayout };

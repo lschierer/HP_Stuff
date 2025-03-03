@@ -1,4 +1,8 @@
-import { type Compilation, type Route } from "../../lib/greenwoodPages.ts";
+import {
+  type Compilation,
+  type Page,
+  type GetFrontmatter,
+} from "@greenwood/cli";
 import "../../lib/BookmarksList.ts";
 import BookmarksList from "../../lib/BookmarksList.ts";
 
@@ -10,7 +14,11 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-async function getBody() {
+const getBody: (
+  compilation: Compilation,
+  page: Page,
+  request: Request
+) => string | Promise<string> = async () => {
   const bodyText = `
 I am not often a fan of [Hermione] as a romantic partner for [Harry]. That
 being said, occasionally you come across one that, despite the pairing, is
@@ -33,34 +41,17 @@ incredibly well done. Almost even more rare is a story in which she is the centr
       ${bookmarksList.listBookMarks()}
     </dl>
     `);
-}
+};
 
-function getFrontmatter() {
+const getFrontmatter: GetFrontmatter = () => {
   return {
     title: "Featuring Hermione",
     collection: "Bookmarks",
     description: "HP stories in which Hermione is key",
     author: "Luke Schierer",
+    data: {},
   };
-}
+};
 
-function getLayout(compilation: Compilation, route: Route) {
-  return `
-  <body>
-    <header>
-      <h1 class="spectrum-Heading spectrum-Heading--sizeXXL">
-        ${route.title ? route.title : route.label}
-      </h1>
-      <link rel="stylesheet" href="/styles/BookmarksList.css" />
-    </header>
-
-    <div class="main">
-      <div class="content">
-        <content-outlet></content-outlet>
-
-      </div>
-    </div>
-  </body>
-  `;
-}
+import getLayout from "../../layouts/Bookmarks.ts";
 export { getFrontmatter, getBody, getLayout };
