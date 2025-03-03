@@ -10,7 +10,7 @@ import { type Database, type Person } from "../../lib/GrampsZodTypes";
 
 import GrampsCSS from "../../styles/Gramps.css?inline";
 
-import { IndividualName } from "./individualName";
+import "./IndividualName.ts";
 import { GrampsEvent } from "./events";
 
 const DEBUG = false;

@@ -48,7 +48,6 @@ export default class GeneologicalStats extends LitElement {
     if (DEBUG) {
       console.log(`familiesUrl is ${familiesUrl.toString()}`);
     }
-
     const familiesResponse = await fetch(familiesUrl);
     if (familiesResponse.ok) {
       const data = (await familiesResponse.json()) as object;

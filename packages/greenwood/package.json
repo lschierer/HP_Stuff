@@ -30,6 +30,7 @@
     "@spectrum-css/typography": "^8.1.0",
     "@spectrum-web-components/card": "^1.2.0",
     "@spectrum-web-components/popover": "^1.2.0",
+    "@spectrum-web-components/split-view": "^1.0.3",
     "@spectrum-web-components/theme": "^1.2.0",
     "iconify-icon": "^2.3.0",
     "lit": "^3.2.1",
