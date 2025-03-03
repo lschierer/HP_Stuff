@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Crabbe
 pageType: family
 title: Crabbe

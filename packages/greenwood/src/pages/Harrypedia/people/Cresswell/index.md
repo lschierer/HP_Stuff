@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Cresswell
 pageType: family
 title: Cresswell

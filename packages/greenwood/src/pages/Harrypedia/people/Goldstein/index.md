@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Goldstein
 pageType: family
 title: Goldstein

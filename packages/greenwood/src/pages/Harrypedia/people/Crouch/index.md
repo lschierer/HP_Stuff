@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Crouch
 pageType: family
 title: Crouch

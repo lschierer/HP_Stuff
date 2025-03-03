@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Bones
 pageType: family
 title: Bones

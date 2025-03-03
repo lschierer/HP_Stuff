@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Pomfrey
 pageType: family
 title: Pomfrey

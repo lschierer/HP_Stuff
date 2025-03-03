@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Greengrass
 pageType: family
 title: Greengrass

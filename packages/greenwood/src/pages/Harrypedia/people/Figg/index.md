@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 title: Figg
 pageType: family
 author: Luke Schierer

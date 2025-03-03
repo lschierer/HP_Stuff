@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Flitwick
 pageType: family
 title: Flitwick

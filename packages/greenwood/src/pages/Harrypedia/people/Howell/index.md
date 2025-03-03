@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Howell
 pageType: family
 title: Howell

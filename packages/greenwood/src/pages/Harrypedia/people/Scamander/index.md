@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Scamander
 pageType: family
 title: Scamander

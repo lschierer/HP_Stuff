@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Belby
 pageType: family
 title: Belby

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Edgecombe
 pageType: family
 title: Edgecombe

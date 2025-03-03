@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Riddle
 pageType: family
 title: Riddle

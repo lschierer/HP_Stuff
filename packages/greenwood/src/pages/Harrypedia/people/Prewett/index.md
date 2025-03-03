@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Prewett
 pageType: family
 title: Prewett

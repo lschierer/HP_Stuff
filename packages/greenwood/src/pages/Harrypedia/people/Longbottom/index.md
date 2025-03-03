@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Longbottom
 pageType: family
 title: Longbottom

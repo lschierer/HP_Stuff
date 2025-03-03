@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Fudge
 pageType: family
 title: Fudge

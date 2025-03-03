@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 title: Avery
 pageType: family
 author: Luke Schierer

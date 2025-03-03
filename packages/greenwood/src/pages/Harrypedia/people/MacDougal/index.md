@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: MacDougal
 pageType: family
 title: MacDougal

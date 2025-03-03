@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Jones
 pageType: family
 title: Jones

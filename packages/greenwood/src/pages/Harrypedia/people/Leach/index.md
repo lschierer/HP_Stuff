@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Leach
 pageType: family
 title: Leach

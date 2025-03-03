@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Prince
 pageType: family
 title: Prince

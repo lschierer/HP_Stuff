@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Shacklebolt
 pageType: family
 title: Shacklebolt

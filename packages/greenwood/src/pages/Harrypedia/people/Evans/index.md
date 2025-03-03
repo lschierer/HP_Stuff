@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Evans
 pageType: family
 title: Evans

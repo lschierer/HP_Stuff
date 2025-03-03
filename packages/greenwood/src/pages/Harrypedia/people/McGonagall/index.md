@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 title: McGonagall
 pageType: family
 author:

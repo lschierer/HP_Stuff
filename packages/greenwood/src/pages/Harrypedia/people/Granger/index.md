@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Granger
 pageType: family
 title: Granger

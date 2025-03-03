@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 pageType: family
 families: Patil
 title: Patil

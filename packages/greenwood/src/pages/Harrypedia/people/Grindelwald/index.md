@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Grindelwald
 pageType: family
 title: Grindelwald

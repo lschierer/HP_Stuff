@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Dursley
 pageType: family
 title: Dursley

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Hooch
 pageType: family
 title: Hooch

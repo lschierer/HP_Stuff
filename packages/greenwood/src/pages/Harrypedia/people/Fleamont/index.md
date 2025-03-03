@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Fleamont
 pageType: family
 title: Fleamont

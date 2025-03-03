@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 title: Gaunt
 pageType: family
 author: Luke Schierer

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Umbridge
 pageType: family
 title: Umbridge

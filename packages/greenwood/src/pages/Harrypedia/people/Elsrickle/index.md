@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Elsrickle
 pageType: family
 title: Elsrickle

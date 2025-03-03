@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Brown
 pageType: family
 title: Brown

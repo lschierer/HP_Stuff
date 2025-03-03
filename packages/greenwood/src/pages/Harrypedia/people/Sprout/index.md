@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Sprout
 pageType: family
 title: Sprout

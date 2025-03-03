@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Delacour
 pageType: family
 title: Delacour

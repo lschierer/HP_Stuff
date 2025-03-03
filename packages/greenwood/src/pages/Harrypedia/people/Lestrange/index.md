@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Lestrange
 pageType: family
 title: Lestrange

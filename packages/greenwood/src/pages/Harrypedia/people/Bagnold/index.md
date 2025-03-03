@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Bagnold
 pageType: family
 title: Bagnold

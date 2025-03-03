@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Malfoy
 pageType: family
 title: Malfoy

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: McLaggen
 pageType: family
 title: McLaggen

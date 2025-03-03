@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 title: Bulstrode
 pageType: family
 author: Luke Schierer

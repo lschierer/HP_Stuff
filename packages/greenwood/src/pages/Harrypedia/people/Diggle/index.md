@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Diggle
 pageType: family
 title: Diggle

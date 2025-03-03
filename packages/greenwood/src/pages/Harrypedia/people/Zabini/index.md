@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 title: Zabini
 pageType: family
 families: Zabini

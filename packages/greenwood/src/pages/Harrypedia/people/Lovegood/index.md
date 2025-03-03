@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Lovegood
 pageType: family
 title: Lovegood

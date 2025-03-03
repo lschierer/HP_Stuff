@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 pageType: family
 families: Black
 title: Black

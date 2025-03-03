@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Macillan
 pageType: family
 title: Macmillan

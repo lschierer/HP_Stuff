@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Snape
 pageType: family
 title: Snape

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 title: People in Harry Potter
 sidebar:
   order: 1

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Dumbledore
 pageType: family
 title: Dumbledore

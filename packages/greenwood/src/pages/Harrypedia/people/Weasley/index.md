@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Weasley
 pageType: family
 title: Weasley

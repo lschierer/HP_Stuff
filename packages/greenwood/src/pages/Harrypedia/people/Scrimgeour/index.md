@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 families: Scrimgeour
 pageType: family
 title: Scrimgeour

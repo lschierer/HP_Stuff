@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: family
 title: Potter
 families: Potter
 pageType: family
