@@ -5,7 +5,14 @@ import { DateTime } from "luxon";
 
 import markdownTextProcessing from "../../lib/customMarkdownProcessing.ts";
 
-import { type Compilation, type Route } from "../../lib/greenwoodPages.ts";
+import {
+  type Compilation,
+  type Page,
+  type GetFrontmatter,
+  type GetLayout,
+  type GetBody,
+  type Frontmatter,
+} from "@greenwood/cli";
 import {
   Event,
   Events,
@@ -30,7 +37,7 @@ const parseEvent = (
   fileName: string
 ): DisplayableEvent | undefined => {
   let description: string | undefined = undefined;
-  if (event.description !== null && event.description !== undefined) {
+  if (event.description !== undefined) {
     description = markdownTextProcessing(event.description);
   }
   let source: string | undefined = undefined;
@@ -38,7 +45,7 @@ const parseEvent = (
     source = markdownTextProcessing(event.source);
   }
   let eventDate: DateTime | undefined = undefined;
-  if (event.date == null || event.date == undefined) {
+  if (event.date == undefined) {
     if (DEBUG2) {
       console.log(`no date in event, filename is '${fileName}'`);
     }
@@ -166,7 +173,7 @@ const getCollectionContents = () => {
   return _events;
 };
 
-async function getBody(compilation: Compilation, route: Route) {
+const getBody: GetBody = () => {
   const _events = getCollectionContents();
   if (_events) {
     if (DEBUG) {
@@ -196,12 +203,18 @@ async function getBody(compilation: Compilation, route: Route) {
       </div>
     `;
   }
-}
+};
 
-async function getLayout(compilation: Compilation, route: Route) {
+const getLayout: GetLayout = (compilation: Compilation, route: string) => {
+  const page: Page | undefined = compilation.graph.find((p) => {
+    return !p.route.localeCompare(route);
+  });
   if (DEBUG) {
-    console.log(`route is ${JSON.stringify(route)}`);
+    console.log(
+      `route is ${JSON.stringify(route)} for ${page ? page.id : "unfound page"}`
+    );
   }
+
   return `
   <!doctype html>
   <html>
@@ -215,7 +228,7 @@ async function getLayout(compilation: Compilation, route: Route) {
       ${DEBUG ? `<span>History Layout </span>` : ""}
       <sp-split-view resizable primary-size="20%">
         <div class="nav">
-          <side-nav route="${route.route}"></side-nav>
+          <side-nav route="${route}"></side-nav>
         </div>
         <div>
           <main >
@@ -227,21 +240,18 @@ async function getLayout(compilation: Compilation, route: Route) {
   </html>
 
   `;
-}
+};
 
-async function getFrontmatter(
-  compilation: Compilation,
-  route: Route,
-  label: string,
-  id: string
-) {
+const getFrontmatter: GetFrontmatter = () => {
   return {
     collection: "Harrypedia",
     title: "History",
-    author: "Luke Schierer",
-    tableOfContents: false,
-  };
-}
+    data: {
+      author: "Luke Schierer",
+      tableOfContents: "false",
+    },
+  } as Frontmatter;
+};
 
 export { getFrontmatter, getBody, getLayout };
 
