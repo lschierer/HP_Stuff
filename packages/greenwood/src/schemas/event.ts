@@ -1,4 +1,4 @@
-import { z } from "astro:content";
+import { z } from "zod";
 
 export const event = z.object({
   type: z.string(),
