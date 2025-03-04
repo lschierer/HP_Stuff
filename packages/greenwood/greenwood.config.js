@@ -5,12 +5,10 @@ import { greenwoodPluginGoogleAnalytics } from "@greenwood/plugin-google-analyti
 import process from "node:process";
 
 //begin work around for https://github.com/TanStack/table/pull/5373
-import { ResourceInterface } from "@greenwood/cli/src/lib/resource-interface.js";
 
-class ProcessEnvReplaceResource extends ResourceInterface {
-  constructor(compilation) {
-    super();
-
+class ProcessEnvReplaceResource {
+  constructor(compilation, options) {
+    this.options = options;
     this.compilation = compilation;
   }
 
@@ -57,7 +55,8 @@ export default {
       //include the workaround from above.
       type: "resource",
       name: "process-env-replace",
-      provider: (compilation) => new ProcessEnvReplaceResource(compilation),
+      provider: (compilation, options) =>
+        new ProcessEnvReplaceResource(compilation, options),
     },
     greenwoodPluginTypeScript({
       extendConfig: true,
