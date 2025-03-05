@@ -39,7 +39,7 @@
     "strict": true,
     "target": "ESNext",
     "useDefineForClassFields": false,
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": false
   },
   "exclude": ["public"],
   "include": ["./**/*.ts", "./**/*.mts", "./**/*.tsx", "../../globals.d.ts"]
