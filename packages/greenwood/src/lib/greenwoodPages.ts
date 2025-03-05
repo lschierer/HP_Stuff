@@ -49,7 +49,7 @@ export const sortbyfrontmatter = (a: Page, b: Page) => {
     }
   }
 
-  if (b.data !== undefined && Object.keys(a.data).includes("sidebar")) {
+  if (b.data !== undefined && Object.keys(b.data).includes("sidebar")) {
     const sidebar: object = b.data["sidebar" as keyof typeof b.data];
     if (Object.keys(sidebar).includes("order")) {
       orderB = sidebar["order" as keyof typeof sidebar];
