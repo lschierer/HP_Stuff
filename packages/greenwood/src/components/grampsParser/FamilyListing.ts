@@ -187,11 +187,12 @@ export default class FamilyListing extends HTMLElement {
               return `
               <li id="person-${index}">
                 <individual-name inline link personId=${person.id} ></individual-name>
+                (
                 ${
                   person.event_ref_list.length > 0 &&
                   person.birth_ref_index >= 0 &&
                   person.birth_ref_index < person.event_ref_list.length
-                    ? `<gedcom-event handle=${person.event_ref_list[person.birth_ref_index].ref} ></gedcom-event>`
+                    ? ` <gedcom-event handle=${person.event_ref_list[person.birth_ref_index].ref} ></gedcom-event>`
                     : "Unknown"
                 }
                 -
@@ -202,6 +203,7 @@ export default class FamilyListing extends HTMLElement {
                     ? `<gedcom-event handle=${person.event_ref_list[person.death_ref_index].ref} ></gedcom-event>`
                     : "Unknown"
                 }
+                )
                 ${
                   fa[index].length > 0
                     ? fa[index]
