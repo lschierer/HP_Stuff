@@ -1,6 +1,12 @@
 import { z } from "zod";
 import { GedcomEvent } from "../../../schemas/gedcom/index.ts";
 
+import debugFunction from "../../../lib/debug.ts";
+const DEBUG = debugFunction(new URL(import.meta.url).pathname);
+if (DEBUG) {
+  console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
+}
+
 export async function handler(request: Request) {
   const params = new URLSearchParams(
     request.url.slice(request.url.indexOf("?"))
@@ -12,9 +18,13 @@ export async function handler(request: Request) {
     .array(GedcomEvent.GedcomElement)
     .safeParse(eventsImport.default);
   if (valid.success) {
-    console.log(`successful parse`);
+    if(DEBUG) {
+      console.log(`successful parse`);
+    }
   } else {
-    console.error(valid.error.message);
+    if(DEBUG) {
+      console.error(valid.error.message);
+    }
   }
   const events = valid.data;
   let body: GedcomEvent.GedcomElement | object = {};

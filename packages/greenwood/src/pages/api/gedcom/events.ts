@@ -13,11 +13,13 @@ export async function handler() {
     .array(GedcomEvent.GedcomElement)
     .safeParse(eventsImport.default);
   if (valid.success) {
-    if (DEBUG) {
+    if(DEBUG) {
       console.log(`successful parse`);
     }
   } else {
-    console.error(valid.error.message);
+    if(DEBUG) {
+      console.error(valid.error.message);
+    }
   }
   const events = valid.data;
   let body: GedcomEvent.GedcomElement | object = {};

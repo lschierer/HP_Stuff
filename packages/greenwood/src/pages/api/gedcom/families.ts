@@ -13,11 +13,13 @@ export async function handler() {
     .array(GedcomFamily.GedcomElement)
     .safeParse(familiesImport.default);
   if (valid.success) {
-    if (DEBUG) {
+    if(DEBUG) {
       console.log(`successful parse`);
     }
   } else {
-    console.error(valid.error.message);
+    if(DEBUG) {
+      console.error(valid.error.message);
+    }
   }
   const families = valid.data;
   let body: GedcomFamily.GedcomElement | object = {};
