@@ -445,6 +445,12 @@ importers:
       remark-rehype:
         specifier: ^11.1.1
         version: 11.1.1
+      signal-polyfill:
+        specifier: ^0.2.2
+        version: 0.2.2
+      signal-utils:
+        specifier: ^0.21.1
+        version: 0.21.1(signal-polyfill@0.2.2)
       unified:
         specifier: ^11.0.5
         version: 11.0.5
@@ -8905,6 +8911,14 @@ packages:
   signal-exit@4.1.0:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
+
+  signal-polyfill@0.2.2:
+    resolution: {integrity: sha512-p63Y4Er5/eMQ9RHg0M0Y64NlsQKpiu6MDdhBXpyywRuWiPywhJTpKJ1iB5K2hJEbFZ0BnDS7ZkJ+0AfTuL37Rg==}
+
+  signal-utils@0.21.1:
+    resolution: {integrity: sha512-i9cdLSvVH4j8ql8mz2lyrA93xL499P8wEbIev3ldSriXeUwqh+wM4Q5VPhIZ19gPtIS4BOopJuKB8l1+wH9LCg==}
+    peerDependencies:
+      signal-polyfill: ^0.2.0
 
   sigstore@2.3.1:
     resolution: {integrity: sha512-8G+/XDU8wNsJOQS5ysDVO0Etg9/2uA5gR9l4ZwijjlwxBcrU6RPfwi2+jJmbP+Ap1Hlp/nVAaEO4Fj22/SL2gQ==}
@@ -19859,6 +19873,12 @@ snapshots:
   signal-exit@3.0.7: {}
 
   signal-exit@4.1.0: {}
+
+  signal-polyfill@0.2.2: {}
+
+  signal-utils@0.21.1(signal-polyfill@0.2.2):
+    dependencies:
+      signal-polyfill: 0.2.2
 
   sigstore@2.3.1:
     dependencies:

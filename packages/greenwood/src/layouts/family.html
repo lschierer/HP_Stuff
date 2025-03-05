@@ -13,12 +13,12 @@
     family layout
     <sp-split-view resizable primary-size="20%">
       <div class="nav">
-        <side-nav route="${globalThis.page.route}"></side-nav>
+        <side-bar route="${globalThis.page.route}"></side-bar>
       </div>
       <div>
         <main>
           <family-listing
-            familyName=${globalThis.page.data.familes}
+            familyName="${globalThis.page.data.families}"
           ></family-listing>
           <content-outlet></content-outlet>
         </main>

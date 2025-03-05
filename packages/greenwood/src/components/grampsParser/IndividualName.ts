@@ -13,14 +13,18 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
+import GrampsState from "./state.ts";
+
 export default class IndividualName extends HTMLElement {
   private personId: string = "";
   private link: boolean = false;
   private inline = false;
 
+  private person: GedcomPerson.GedcomElement | null = null;
+
   protected getAttributes = () => {
     for (const attr of this.attributes) {
-      if (!attr.name.localeCompare("personId")) {
+      if (!attr.name.toLowerCase().localeCompare("personid")) {
         this.personId = attr.value;
       } else if (!attr.name.localeCompare("link")) {
         this.link = true;
@@ -30,9 +34,9 @@ export default class IndividualName extends HTMLElement {
     }
 
     if (DEBUG) {
-      console.log(`IndividualName.astro personId is ${this.personId}`);
-      console.log(`IndividualName.astro link is ${this.link}`);
-      console.log(`IndividualName.astro inline is ${this.inline}`);
+      console.log(`IndividualName getAttributes personId is ${this.personId}`);
+      console.log(`IndividualName getAttributes link is ${this.link}`);
+      console.log(`IndividualName getAttributes inline is ${this.inline}`);
     }
   };
 
@@ -145,57 +149,87 @@ export default class IndividualName extends HTMLElement {
     return name;
   };
 
+  protected getGrampsData = async () => {
+    const personResponse = await fetch(
+      new URL(`/api/gedcom/person?id=${this.personId}`, import.meta.url)
+    );
+    if (personResponse.ok) {
+      const data = (await personResponse.json()) as object;
+      const valid = GedcomPerson.GedcomElement.safeParse(data);
+      if (valid.success) {
+        this.person = valid.data;
+      } else {
+        if (DEBUG) {
+          console.warn(`retrieved invalid person`, valid.error.message);
+        }
+      }
+    } else {
+      if (DEBUG) {
+        console.warn(
+          `error fetchign person`,
+          personResponse.status,
+          personResponse.statusText
+        );
+      }
+    }
+  };
   async connectedCallback() {
     this.attachShadow({ mode: "open" });
     if (this.shadowRoot) {
       this.shadowRoot.adoptedStyleSheets.push(GrampsCSS);
       this.getAttributes();
       if (this.personId.length > 0) {
-        const personResponse = await fetch(
-          new URL(`/api/person?id=${this.personId}`, import.meta.url)
-        );
-        if (personResponse.ok) {
-          const data = personResponse.json();
-          const valid = GedcomPerson.GedcomElement.safeParse(data);
-          if (valid.success) {
-            const person = valid.data;
-            const name = this.displayName(person).trimEnd();
-
-            const iconName =
-              person.gender === male.JSONconstant
-                ? "ion-male"
-                : person.gender === male.JSONconstant
-                  ? "ion-female"
-                  : "tdesign:user-unknown";
-
-            const iconclasses =
-              person.gender === male.JSONconstant
-                ? "color-male"
-                : person.gender === female.JSONconstant
-                  ? "color-female"
-                  : "icon1";
-
-            const linkTarget = this.buildLinkTarget(person);
-            const nameFragmet = this.link
-              ? `<a href="${linkTarget}">${name}</a>`
-              : this.inline
-                ? name
-                : `<span class="bio">${name}</span>`;
-
-            if (this.inline) {
-              this.shadowRoot.innerHTML = `
-                <span>
-                  <iconify-icon icon=${iconName} iconclasses=${iconclasses} inline ></iconify-icon>
-                  ${nameFragmet}
-                </span>
-              `;
-            } else {
-              this.shadowRoot.innerHTML = `
-                <iconify-icon icon=${iconName} iconclasses=${iconclasses} ></iconify-icon>
-                ${nameFragmet}
-              `;
-            }
+        if (GrampsState.people.length == 0) {
+          await this.getGrampsData();
+        } else {
+          if (this.personId.length > 0) {
+            this.person =
+              GrampsState.people.find((p) => {
+                return !p.id.localeCompare(this.personId);
+              }) ?? GrampsState.people[0];
+          } else {
+            this.person = GrampsState.people[0];
           }
+        }
+        if (this.person) {
+          const name = this.displayName(this.person).trimEnd();
+          const iconName =
+            this.person.gender === male.JSONconstant
+              ? "ion-male"
+              : this.person.gender === female.JSONconstant
+                ? "ion-female"
+                : "tdesign:user-unknown";
+          const iconclasses =
+            this.person.gender === male.JSONconstant
+              ? "color-male"
+              : this.person.gender === female.JSONconstant
+                ? "color-female"
+                : "icon1";
+          const linkTarget = this.buildLinkTarget(this.person);
+          const nameFragmet = this.link
+            ? `<a href="${linkTarget}">${name}</a>`
+            : this.inline
+              ? name
+              : `<span class="bio">${name}</span>`;
+          if (this.inline) {
+            this.shadowRoot.innerHTML = `
+                  <span>
+                    <iconify-icon icon=${iconName} class=${iconclasses} inline ></iconify-icon>
+                    ${nameFragmet}
+                  </span>
+                `;
+          } else {
+            this.shadowRoot.innerHTML = `
+                  <iconify-icon icon=${iconName} iconclasses=${iconclasses} ></iconify-icon>
+                  ${nameFragmet}
+                `;
+          }
+        }
+      } else {
+        if (DEBUG) {
+          console.warn(
+            `IndividualName connectedCallback has no personId after getAttributes call`
+          );
         }
       }
     }

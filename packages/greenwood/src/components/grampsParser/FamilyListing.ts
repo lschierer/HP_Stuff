@@ -1,9 +1,9 @@
 import "./IndividualName.ts";
-import {
-  GedcomEvent,
-  GedcomFamily,
-  GedcomPerson,
-} from "../../schemas/gedcom/index.ts";
+import "./event.ts";
+
+import GrampsState from "./state.ts";
+
+import { GedcomPerson } from "../../schemas/gedcom/index.ts";
 
 import GrampsCSS from "../../styles/Gramps.css" with { type: "css" };
 import FamilyListingCSS from "../../styles/FamilyListing.css" with { type: "css" };
@@ -17,9 +17,6 @@ if (DEBUG) {
 export default class FamilyListing extends HTMLElement {
   public familyName: string = "";
   public handle: string = "";
-  private allFamilies = new Array<GedcomFamily.GedcomElement>();
-  private allEvents = new Array<GedcomEvent.GedcomElement>();
-  private allPeople = new Array<GedcomPerson.GedcomElement>();
 
   protected populateLocalAttributes = () => {
     for (const attr of this.attributes) {
@@ -30,10 +27,10 @@ export default class FamilyListing extends HTMLElement {
         if (DEBUG) {
           console.log(`found familyname attr with value ${attr.value}`);
         }
-        this.familyName = attr.name;
+        this.familyName = attr.value;
       }
       if (!attr.name.toLowerCase().localeCompare("handle")) {
-        this.handle = attr.name;
+        this.handle = attr.value;
       }
     }
     if (DEBUG) {
@@ -42,82 +39,57 @@ export default class FamilyListing extends HTMLElement {
   };
 
   protected findChildren = (handle: string) => {
-    return this.allPeople.filter((person) => {
+    return GrampsState.people.filter((person) => {
       return person.parent_family_list.includes(handle);
     });
   };
 
-  async connectedCallback() {
-    this.populateLocalAttributes();
-    this.attachShadow({ mode: "open" });
-    if (this.shadowRoot) {
-      this.shadowRoot.adoptedStyleSheets.push(GrampsCSS);
-      this.shadowRoot.adoptedStyleSheets.push(FamilyListingCSS);
-
-      const familyURL = new URL("/api/gedcom/families", import.meta.url);
-      const familyResponce = await fetch(familyURL);
-      if (familyResponce.ok) {
-        const data = (await familyResponce.json()) as object;
-        const valid = GedcomFamily.GedcomElement.array().safeParse(data);
-        if (valid.success) {
-          this.allFamilies = valid.data;
-        } else {
-          if (DEBUG) {
-            console.error(
-              `error fetching families in FamilyListing`,
-              valid.error.message
-            );
-          }
-        }
-      }
-
-      const eventURL = new URL("/api/gedcom/events", import.meta.url);
-      const eventResponce = await fetch(eventURL);
-      if (eventResponce.ok) {
-        const data = (await eventResponce.json()) as object;
-        const valid = GedcomEvent.GedcomElement.array().safeParse(data);
-        if (valid.success) {
-          this.allEvents = valid.data;
-        } else {
-          if (DEBUG) {
-            console.error(
-              `error fetching events in FamilyListing`,
-              valid.error.message
-            );
-          }
-        }
-      }
-
+  protected getGedcomData = async () => {
+    if (GrampsState.people.length == 0) {
       const peopleURL = new URL("/api/gedcom/people", import.meta.url);
       const peopleResponce = await fetch(peopleURL);
       if (peopleResponce.ok) {
         const data = (await peopleResponce.json()) as object;
         const valid = GedcomPerson.GedcomElement.array().safeParse(data);
         if (valid.success) {
-          this.allPeople = valid.data.filter((p) => {
-            return p.primary_name.surname_list
-              .map((sn) => {
-                return !sn.surname.localeCompare(this.familyName);
-              })
-              .includes(true);
-          });
+          valid.data
+            .filter((p) => {
+              return p.primary_name.surname_list
+                .map((sn) => {
+                  return !sn.surname.localeCompare(this.familyName);
+                })
+                .includes(true);
+            })
+            .map((p) => {
+              GrampsState.people.push(p);
+            });
           if (DEBUG) {
-            console.log(`starting with ${this.allPeople.length} people`);
+            console.log(`starting with ${GrampsState.people.length} people`);
           }
         } else {
           if (DEBUG) {
             console.error(
-              `error fetching events in FamilyListing`,
+              `error fetching people in FamilyListing`,
               valid.error.message
             );
           }
         }
       }
+    }
+  };
+
+  async connectedCallback() {
+    this.populateLocalAttributes();
+    await this.getGedcomData();
+    this.attachShadow({ mode: "open" });
+    if (this.shadowRoot) {
+      this.shadowRoot.adoptedStyleSheets.push(GrampsCSS);
+      this.shadowRoot.adoptedStyleSheets.push(FamilyListingCSS);
 
       const displaylist = new Array<GedcomPerson.GedcomElement>();
       const families = new Map<string, string[]>();
 
-      const p1 = this.allPeople
+      const p1 = GrampsState.people
         .filter((p1) => {
           if (this.handle.length > 0) {
             return p1.parent_family_list.includes(this.handle);
@@ -202,10 +174,16 @@ export default class FamilyListing extends HTMLElement {
         fk.push(key);
       });
 
-      this.shadowRoot.innerHTML = `
+      if (displaylist.length > 0) {
+        this.shadowRoot.innerHTML = `
         <ul class="familylisting">
           ${displaylist
             .map((person, index) => {
+              if (DEBUG) {
+                console.log(
+                  `for person ${person.id} fa has ${fa[index].length} entries `
+                );
+              }
               return `
               <li id="person-${index}">
                 <individual-name inline link personId=${person.id} ></individual-name>
@@ -213,7 +191,7 @@ export default class FamilyListing extends HTMLElement {
                   person.event_ref_list.length > 0 &&
                   person.birth_ref_index >= 0 &&
                   person.birth_ref_index < person.event_ref_list.length
-                    ? `<Event handle={person.event_ref_list[person.birth_ref_index].ref} />`
+                    ? `<gedcom-event handle=${person.event_ref_list[person.birth_ref_index].ref} ></gedcom-event>`
                     : "Unknown"
                 }
                 -
@@ -221,19 +199,22 @@ export default class FamilyListing extends HTMLElement {
                   person.event_ref_list.length > 0 &&
                   person.death_ref_index < person.event_ref_list.length &&
                   person.death_ref_index >= 0
-                    ? `<Event handle={person.event_ref_list[person.death_ref_index].ref} />`
+                    ? `<gedcom-event handle=${person.event_ref_list[person.death_ref_index].ref} ></gedcom-event>`
                     : "Unknown"
                 }
                 ${
                   fa[index].length > 0
                     ? fa[index]
                         .map((p2) => {
+                          if (DEBUG) {
+                            console.log(`p2 is ${p2}`);
+                          }
                           return `
                         <family-listing handle=${p2} familyName=${this.familyName} ></family-listing>
                       `;
                         })
-                        .join("")
-                    : ""
+                        .join("\n")
+                    : "\n"
                 }
               </li>
               `;
@@ -241,6 +222,7 @@ export default class FamilyListing extends HTMLElement {
             .join("")}
         </ul>
       `;
+      }
     }
   }
 }
