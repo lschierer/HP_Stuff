@@ -11,6 +11,7 @@ const fileDebug: Record<string, boolean> = {
   "/components/SiteTitle.ts": false,
   "/components/grampsParser/GeneologicalStats.ts": false,
   "/components/grampsParser/family.ts": true,
+  "/components/grampsParser/FamilyListing.ts": true,
   "/components/grampsParser/Family.ts.1": false,
   "/components/grampsParser/Family.ts.2": false,
   "/components/ThemeSelector.ts": false,

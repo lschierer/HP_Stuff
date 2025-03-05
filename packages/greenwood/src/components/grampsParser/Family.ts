@@ -1,16 +1,11 @@
-import { LitElement, html, type PropertyValues } from "lit";
-import { property, state } from "lit/decorators.js";
+import { LitElement, html } from "lit";
+import { property } from "lit/decorators.js";
 
 import GrampsCSS from "../../styles/Gramps.css" with { type: "css" };
 
-import {
-  GedcomPerson,
-  GedcomFamily,
-  GedcomEvent,
-} from "../../schemas/gedcom/index.ts";
+import { GedcomPerson } from "../../schemas/gedcom/index.ts";
 
 import "./IndividualName.ts";
-import { nothing } from "lit";
 
 import debugFunction from "../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
