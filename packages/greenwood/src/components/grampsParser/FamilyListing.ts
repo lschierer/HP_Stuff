@@ -2,7 +2,7 @@ import "./IndividualName.ts";
 import "./event.ts";
 
 import GrampsState from "./state.ts";
-import { getGrampsData } from "./state.ts";
+import { getGrampsData, familyListDisplayedIds } from "./state.ts";
 
 import { type GedcomPerson } from "../../schemas/gedcom/index.ts";
 
@@ -37,12 +37,6 @@ export default class FamilyListing extends HTMLElement {
     if (DEBUG) {
       console.log(`looking for ${this.familyName} and handle "${this.handle}"`);
     }
-  };
-
-  protected findChildren = (handle: string) => {
-    return GrampsState.people.filter((person) => {
-      return person.parent_family_list.includes(handle);
-    });
   };
 
   protected getGedcomData = async () => {
@@ -111,8 +105,12 @@ export default class FamilyListing extends HTMLElement {
         }
 
         if (this.handle.length == 0 && person.parent_family_list.length == 0) {
-          displaylist.push(person);
-          families.set(fk, fc);
+          if (!familyListDisplayedIds.has(person.id)) {
+            familyListDisplayedIds.add(person.id);
+            displaylist.push(person);
+            families.set(fk, fc);
+          }
+
           if (DEBUG) {
             console.log(
               `set key "${fk}" should match "${person.id}" for ${fc.length} children`
@@ -123,8 +121,12 @@ export default class FamilyListing extends HTMLElement {
             console.log(`${families.has(fk)} from test of has for ${fk}`);
           }
         } else if (person.parent_family_list.includes(this.handle)) {
-          displaylist.push(person);
-          families.set(fk, fc);
+          if (!familyListDisplayedIds.has(person.id)) {
+            familyListDisplayedIds.add(person.id);
+            displaylist.push(person);
+            families.set(fk, fc);
+          }
+
           if (DEBUG) {
             console.log(
               `set key ${fk} should match ${person.id} for ${fc.length} children`

@@ -27,6 +27,8 @@ const GrampsState = new SignalObject({
 
 export default GrampsState;
 
+export const familyListDisplayedIds = new SignalSet<string>();
+
 export const getGrampsData = async (base: string) => {
   const peopleURL = new URL("/api/gedcom/people", base);
   const peopleResponce = await fetch(peopleURL);
