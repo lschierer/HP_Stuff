@@ -62,6 +62,8 @@ body {
 
   --mod-body-font-color: var(--sl-color-black);
   --mod-heading-font-color: var(--sl-color-accent);
+  --mod-heading-serif-font-family: "Inconsolata", monospace;
+  --mod-body-serif-font-family: "Inconsolata", monospace;
 }
 
 sp-theme {

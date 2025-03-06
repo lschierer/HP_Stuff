@@ -19,6 +19,7 @@ export default class IndividualName extends HTMLElement {
   private personId: string = "";
   private link: boolean = false;
   private inline = false;
+  private icon: boolean = true;
 
   private person: GedcomPerson.GedcomElement | null = null;
 
@@ -30,6 +31,8 @@ export default class IndividualName extends HTMLElement {
         this.link = true;
       } else if (!attr.name.localeCompare("inline")) {
         this.inline = true;
+      } else if (!attr.name.toLocaleLowerCase().localeCompare("noicon")) {
+        this.icon = false;
       }
     }
 
@@ -169,25 +172,30 @@ export default class IndividualName extends HTMLElement {
   };
 
   async connectedCallback() {
-    this.attachShadow({ mode: "open" });
-    if (this.shadowRoot) {
-      this.shadowRoot.adoptedStyleSheets.push(GrampsCSS);
-      this.getAttributes();
-      if (this.personId.length > 0) {
-        if (GrampsState.people.length == 0) {
-          await this.getGrampsData();
+    document.adoptedStyleSheets.push(GrampsCSS);
+    this.getAttributes();
+    if (this.personId.length > 0) {
+      if (GrampsState.people.length == 0) {
+        await this.getGrampsData();
+      } else {
+        if (this.personId.length > 0) {
+          this.person =
+            GrampsState.people.find((p) => {
+              return !p.id.localeCompare(this.personId);
+            }) ?? GrampsState.people[0];
         } else {
-          if (this.personId.length > 0) {
-            this.person =
-              GrampsState.people.find((p) => {
-                return !p.id.localeCompare(this.personId);
-              }) ?? GrampsState.people[0];
-          } else {
-            this.person = GrampsState.people[0];
-          }
+          this.person = GrampsState.people[0];
         }
-        if (this.person) {
-          const name = this.displayName(this.person).trimEnd();
+      }
+      if (this.person) {
+        const name = this.displayName(this.person).trimEnd();
+        const linkTarget = this.buildLinkTarget(this.person);
+        const nameFragmet = this.link
+          ? `<a href="${linkTarget}">${name}</a>`
+          : this.inline
+            ? name
+            : `<span class="bio spectrum-Heading spectrum-Heading--serif spectrum-Heading--sizeL spectrum-Heading--heavy">${name}</span>`;
+        if (this.icon) {
           const iconName =
             this.person.gender === male.JSONconstant
               ? "ion-male"
@@ -200,32 +208,29 @@ export default class IndividualName extends HTMLElement {
               : this.person.gender === female.JSONconstant
                 ? "color-female"
                 : "icon1";
-          const linkTarget = this.buildLinkTarget(this.person);
-          const nameFragmet = this.link
-            ? `<a href="${linkTarget}">${name}</a>`
-            : this.inline
-              ? name
-              : `<span class="bio">${name}</span>`;
+
           if (this.inline) {
-            this.shadowRoot.innerHTML = `
-                  <span>
-                    <iconify-icon icon=${iconName} class=${iconclasses} inline ></iconify-icon>
-                    ${nameFragmet}
-                  </span>
-                `;
+            this.innerHTML = `
+                    <span>
+                      <iconify-icon icon=${iconName} class=${iconclasses} inline ></iconify-icon>
+                      ${nameFragmet}
+                    </span>
+                  `;
           } else {
-            this.shadowRoot.innerHTML = `
-                  <iconify-icon icon=${iconName} iconclasses=${iconclasses} ></iconify-icon>
-                  ${nameFragmet}
-                `;
+            this.innerHTML = `
+                    <iconify-icon icon=${iconName} class=${iconclasses} height="75%" ></iconify-icon>
+                    ${nameFragmet}
+                  `;
           }
+        } else {
+          this.innerHTML = nameFragmet;
         }
-      } else {
-        if (DEBUG) {
-          console.warn(
-            `IndividualName connectedCallback has no personId after getAttributes call`
-          );
-        }
+      }
+    } else {
+      if (DEBUG) {
+        console.warn(
+          `IndividualName connectedCallback has no personId after getAttributes call`
+        );
       }
     }
   }

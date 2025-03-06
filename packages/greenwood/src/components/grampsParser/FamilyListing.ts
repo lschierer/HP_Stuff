@@ -2,8 +2,9 @@ import "./IndividualName.ts";
 import "./event.ts";
 
 import GrampsState from "./state.ts";
+import { getGrampsData } from "./state.ts";
 
-import { GedcomPerson } from "../../schemas/gedcom/index.ts";
+import { type GedcomPerson } from "../../schemas/gedcom/index.ts";
 
 import GrampsCSS from "../../styles/Gramps.css" with { type: "css" };
 import FamilyListingCSS from "../../styles/FamilyListing.css" with { type: "css" };
@@ -46,35 +47,7 @@ export default class FamilyListing extends HTMLElement {
 
   protected getGedcomData = async () => {
     if (GrampsState.people.length == 0) {
-      const peopleURL = new URL("/api/gedcom/people", import.meta.url);
-      const peopleResponce = await fetch(peopleURL);
-      if (peopleResponce.ok) {
-        const data = (await peopleResponce.json()) as object;
-        const valid = GedcomPerson.GedcomElement.array().safeParse(data);
-        if (valid.success) {
-          valid.data
-            .filter((p) => {
-              return p.primary_name.surname_list
-                .map((sn) => {
-                  return !sn.surname.localeCompare(this.familyName);
-                })
-                .includes(true);
-            })
-            .map((p) => {
-              GrampsState.people.push(p);
-            });
-          if (DEBUG) {
-            console.log(`starting with ${GrampsState.people.length} people`);
-          }
-        } else {
-          if (DEBUG) {
-            console.error(
-              `error fetching people in FamilyListing`,
-              valid.error.message
-            );
-          }
-        }
-      }
+      await getGrampsData(import.meta.url);
     }
   };
 
@@ -90,6 +63,13 @@ export default class FamilyListing extends HTMLElement {
       const families = new Map<string, string[]>();
 
       const p1 = GrampsState.people
+        .filter((p0) => {
+          return p0.primary_name.surname_list
+            .map((sn) => {
+              return !sn.surname.localeCompare(this.familyName);
+            })
+            .includes(true);
+        })
         .filter((p1) => {
           if (this.handle.length > 0) {
             return p1.parent_family_list.includes(this.handle);
