@@ -1,5 +1,6 @@
 ---
 title: Euphemia Potter
+layout: person
 grampsID: I0004
 ---
 

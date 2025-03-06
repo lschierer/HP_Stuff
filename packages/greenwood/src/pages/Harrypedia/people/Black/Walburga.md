@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Black"
 title: Walburga
 grampsID: I0006

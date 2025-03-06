@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 families: Potter
 title: Harry James
 grampsID: I0000

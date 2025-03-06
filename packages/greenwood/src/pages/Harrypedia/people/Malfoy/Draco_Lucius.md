@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 title: Draco Lucius
 grampsID: I0039
 author: Luke Schierer

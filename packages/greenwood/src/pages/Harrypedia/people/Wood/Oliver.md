@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 title: Oliver Wood
 author: Luke Schierer
 ---

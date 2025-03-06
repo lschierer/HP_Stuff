@@ -1,5 +1,6 @@
 ---
 title: Ignotus Peverell
+layout: person
 grampsID: I0058
 ---
 

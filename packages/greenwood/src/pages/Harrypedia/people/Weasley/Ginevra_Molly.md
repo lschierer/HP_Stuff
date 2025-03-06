@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Weasley"
 title: Ginevra Molly
 grampsID: I0070

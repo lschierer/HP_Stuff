@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Flitwick"
 title: Filus
 grampsID: I0293

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Crabbe"
 title: Vincent
 grampsID: I0106

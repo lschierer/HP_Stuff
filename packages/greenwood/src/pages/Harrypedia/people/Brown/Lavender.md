@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 title: Lavender
 author: Luke Schierer
 grampsID: I0185

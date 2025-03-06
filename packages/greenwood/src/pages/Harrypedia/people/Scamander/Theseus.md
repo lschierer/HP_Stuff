@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Scamander"
 title: Theseus
 grampsID: I0213

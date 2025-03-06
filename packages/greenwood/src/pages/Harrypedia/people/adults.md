@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 title: Adults in the HP Series
 author: Luke Schierer
 ---

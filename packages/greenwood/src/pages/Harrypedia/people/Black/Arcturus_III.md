@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Black"
 title: Arcturus II
 grampsID: I0009

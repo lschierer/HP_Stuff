@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Blay"
 title: Blagdon
 grampsID: I0257

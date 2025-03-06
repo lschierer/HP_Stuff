@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 title: Cho Chang
 author: Luke Schierer
 ---

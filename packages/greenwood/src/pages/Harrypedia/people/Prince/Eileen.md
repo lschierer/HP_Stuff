@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Prince"
 title: Eileen
 grampsID: I0250

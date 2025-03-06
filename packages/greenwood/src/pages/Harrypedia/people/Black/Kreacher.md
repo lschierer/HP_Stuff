@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Black"
 title: Kreacher
 author: Luke Schierer

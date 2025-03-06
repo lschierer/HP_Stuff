@@ -3,7 +3,7 @@ collection: Harrypedia
 family: "Dumbledore"
 title: Albus Percival Wulfric Brian
 grampsID: I0061
-pageType: person
+layout: person
 author: Luke Schierer
 sidebar:
   order: 1

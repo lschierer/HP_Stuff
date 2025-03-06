@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Black"
 title: Andromeda
 grampsID: I0035

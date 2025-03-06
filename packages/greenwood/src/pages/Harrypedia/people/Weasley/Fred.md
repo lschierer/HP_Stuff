@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Weasley"
 title: Fred
 grampsID: I0071

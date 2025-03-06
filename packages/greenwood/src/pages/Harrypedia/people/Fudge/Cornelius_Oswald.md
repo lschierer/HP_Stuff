@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Fudge"
 title: Cornelius Oswald
 grampsID: I0198

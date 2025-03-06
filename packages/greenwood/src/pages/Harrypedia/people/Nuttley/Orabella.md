@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Nuttley"
 title: Orabella
 grampsID: I0298

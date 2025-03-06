@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Hooch"
 title: Rolanda
 grampsID: I0197

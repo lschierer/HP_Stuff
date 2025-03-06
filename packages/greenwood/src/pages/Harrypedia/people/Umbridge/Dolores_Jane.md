@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: Umbridge
 title: Dolores Jane
 grampsID: I0112

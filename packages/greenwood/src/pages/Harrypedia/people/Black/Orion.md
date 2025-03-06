@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Black"
 title: Orion
 grampsID: I0005

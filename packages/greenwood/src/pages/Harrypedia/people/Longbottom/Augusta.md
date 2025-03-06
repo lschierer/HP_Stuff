@@ -1,5 +1,6 @@
 ---
 title: Augusta Longbottom
+layout: person
 ---
 
 ## Analysis

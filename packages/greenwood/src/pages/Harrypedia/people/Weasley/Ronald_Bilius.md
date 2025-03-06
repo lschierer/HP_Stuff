@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Weasley"
 title: Ronald Bilius
 grampsID: I0064

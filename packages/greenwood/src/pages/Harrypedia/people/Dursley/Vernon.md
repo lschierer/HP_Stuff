@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Dursley"
 title: Vernon
 grampsID: I0096

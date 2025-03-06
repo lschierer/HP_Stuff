@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Sprout"
 title: Pomona
 grampsID: I0264

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Evans"
 title: Petunia
 grampsID: I0097

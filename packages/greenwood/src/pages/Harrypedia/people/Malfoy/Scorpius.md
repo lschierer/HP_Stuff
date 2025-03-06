@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 title: Scorpius
 pageType: person
 author: Luke Schierer

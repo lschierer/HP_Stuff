@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 title: Rufus
 grampsID: I0199
 author: Luke Schierer

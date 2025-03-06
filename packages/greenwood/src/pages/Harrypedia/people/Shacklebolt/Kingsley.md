@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Shacklebolt"
 title: Kingsley
 grampsID: I0278

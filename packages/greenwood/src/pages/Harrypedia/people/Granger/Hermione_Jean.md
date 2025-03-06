@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Granger"
 title: Hermione Jean
 grampsID: I0063

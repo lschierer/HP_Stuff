@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 title: James
 grampsID: I0001
 author: Luke Schierer

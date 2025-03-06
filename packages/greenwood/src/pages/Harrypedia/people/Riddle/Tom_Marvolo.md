@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Riddle"
 title: Tom Marvolo
 grampsID: I0247

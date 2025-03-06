@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 title: Merope
 author: Luke Schierer
 grampsID: I0304

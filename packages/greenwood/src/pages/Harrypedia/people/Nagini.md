@@ -1,4 +1,5 @@
 ---
 title: Nagini
+layout: person
 ---
 

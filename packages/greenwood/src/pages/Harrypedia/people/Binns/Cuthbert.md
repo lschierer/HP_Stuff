@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 title: Professor Cuthbert Binns
 author: Luke Schierer
 grampsID: I0301

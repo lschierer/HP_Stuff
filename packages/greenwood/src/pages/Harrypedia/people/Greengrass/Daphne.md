@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Greengrass"
 title: Daphne
 grampsID: I0179

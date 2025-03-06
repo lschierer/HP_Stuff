@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Weasley"
 title: Percy Ignatius
 grampsID: I0074

@@ -1,5 +1,6 @@
 ---
 title: Alice Longbottom
+layout: person
 grampsID: I0189
 ---
 

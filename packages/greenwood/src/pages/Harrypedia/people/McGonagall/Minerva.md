@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "McGonagall"
 title: Minerva
 grampsID: I0065

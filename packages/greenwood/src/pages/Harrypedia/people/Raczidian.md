@@ -1,5 +1,6 @@
 ---
 title: Raczidian
+layout: person
 ---
 
 Person who died in a particularly grotestque way upon performing the [Patronus] charm.[^241222-1]

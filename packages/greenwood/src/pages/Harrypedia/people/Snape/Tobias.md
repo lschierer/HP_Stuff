@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Snape"
 title: Tobias
 grampsID: I0249

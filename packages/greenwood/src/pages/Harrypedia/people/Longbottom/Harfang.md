@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Longbottom"
 title: Harfang
 grampsID: I0050

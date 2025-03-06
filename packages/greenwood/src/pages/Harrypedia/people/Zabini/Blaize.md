@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 title: Blaize
 grampsID: I0160
 pageType: person

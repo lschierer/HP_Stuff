@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 title: Arcturus Black
 author: Luke Schierer
 grampsID: I0020

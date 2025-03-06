@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Diggle"
 title: Dedalus
 grampsID: I0099

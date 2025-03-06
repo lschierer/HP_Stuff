@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Grindelwald"
 title: Gellert
 grampsID: I0260

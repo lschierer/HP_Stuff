@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Weasley"
 title: Charlie
 grampsID: I0095

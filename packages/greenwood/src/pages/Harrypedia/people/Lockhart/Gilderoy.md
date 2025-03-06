@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: Lockhart
 title: Gilderoy
 grampsID: I0302

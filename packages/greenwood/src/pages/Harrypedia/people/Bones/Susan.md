@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Bones"
 title: Susan
 grampsID: I0154

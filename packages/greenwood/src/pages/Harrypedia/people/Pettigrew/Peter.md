@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Pettigrew"
 title: Peter
 grampsID: I0277

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 title: Newton Artemis Fido
 author: Luke Schierer
 grampsID: I0214

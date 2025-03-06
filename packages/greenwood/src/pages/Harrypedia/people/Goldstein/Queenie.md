@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Goldstein"
 title: Queenie Goldstein
 grampsID: I0294

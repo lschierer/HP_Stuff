@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: Evans
 title: Lily J.
 grampsID: I0002

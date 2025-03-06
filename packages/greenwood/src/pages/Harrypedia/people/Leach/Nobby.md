@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Leach"
 title: Nobby
 grampsID: I0248

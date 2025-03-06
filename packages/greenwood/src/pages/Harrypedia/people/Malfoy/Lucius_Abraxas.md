@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Malfoy"
 title: Lucius Abraxas
 grampsID: I0038

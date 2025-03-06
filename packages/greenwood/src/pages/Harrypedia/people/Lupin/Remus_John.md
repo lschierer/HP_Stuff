@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Lupin"
 title: Remus John
 grampsID: I0060

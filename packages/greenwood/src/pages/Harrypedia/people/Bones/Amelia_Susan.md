@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Bones"
 title: "Amelia Susan"
 grampsID: I0111

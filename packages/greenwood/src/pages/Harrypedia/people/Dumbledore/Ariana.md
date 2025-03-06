@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: person
 family: "Dumbledore"
 title: Ariana
 grampsID: I0263
