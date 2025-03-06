@@ -43,7 +43,7 @@ export default class IndividualName extends HTMLElement {
   protected buildLinkTarget = (
     individual: GedcomPerson.GedcomElement
   ): string => {
-    let targetLocation = "/harrypedia/people/";
+    let targetLocation = "/Harrypedia/people/";
 
     if (Array.isArray(individual.primary_name.surname_list)) {
       let found = false;
@@ -55,7 +55,7 @@ export default class IndividualName extends HTMLElement {
             )
           ) {
             found = true;
-            const tsn = encodeURIComponent(sn.surname.toLowerCase());
+            const tsn = encodeURIComponent(sn.surname);
             targetLocation = `${targetLocation}/${tsn}/`;
             if (DEBUG) {
               console.log(
@@ -68,7 +68,7 @@ export default class IndividualName extends HTMLElement {
       /* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */
       if (!found && individual.primary_name.surname_list.length > 0) {
         const sn = individual.primary_name.surname_list[0].surname;
-        const tsn = encodeURIComponent(sn.toLowerCase());
+        const tsn = encodeURIComponent(sn);
         targetLocation = `${targetLocation}${tsn}/`;
         if (DEBUG) {
           console.log(
@@ -79,26 +79,20 @@ export default class IndividualName extends HTMLElement {
     }
 
     if (individual.primary_name.first_name.length > 0) {
-      const fn = individual.primary_name.first_name
-        .toLowerCase()
-        .replaceAll(" ", "_");
+      const fn = individual.primary_name.first_name.replaceAll(" ", "_");
       targetLocation = `${targetLocation}${fn}`;
     } else if (
       individual.primary_name.nick &&
       individual.primary_name.nick.length > 0
     ) {
-      const fn = individual.primary_name.nick
-        .toLowerCase()
-        .replaceAll(" ", "_");
+      const fn = individual.primary_name.nick.replaceAll(" ", "_");
       targetLocation = `${targetLocation}${fn}`;
     }
     if (
       individual.primary_name.suffix &&
       individual.primary_name.suffix.length > 0
     ) {
-      const suffix = individual.primary_name.suffix
-        .toLowerCase()
-        .replaceAll(" ", "_");
+      const suffix = individual.primary_name.suffix.replaceAll(" ", "_");
       targetLocation = `${targetLocation}_${suffix}`;
     }
     targetLocation = `${targetLocation}/`;
@@ -173,6 +167,7 @@ export default class IndividualName extends HTMLElement {
       }
     }
   };
+
   async connectedCallback() {
     this.attachShadow({ mode: "open" });
     if (this.shadowRoot) {
