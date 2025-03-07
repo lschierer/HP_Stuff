@@ -491,6 +491,9 @@ importers:
       '@tsconfig/node22':
         specifier: ^22.0.0
         version: 22.0.0
+      '@types/d3':
+        specifier: ^7.4.3
+        version: 7.4.3
       '@types/d3-org-chart':
         specifier: ^3.1.2
         version: 3.1.2

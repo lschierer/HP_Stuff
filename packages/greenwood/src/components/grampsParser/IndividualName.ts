@@ -16,7 +16,7 @@ if (DEBUG) {
 import GrampsState from "./state.ts";
 
 export default class IndividualName extends HTMLElement {
-  private personId: string = "";
+  accessor personId: string = "";
   private link: boolean = false;
   private inline = false;
   private icon: boolean = true;
@@ -102,7 +102,7 @@ export default class IndividualName extends HTMLElement {
     return targetLocation;
   };
 
-  protected displayName = (individual: GedcomPerson.GedcomElement) => {
+  readonly displayName = (individual: GedcomPerson.GedcomElement) => {
     let name = "";
     name = `${individual.primary_name.first_name} `;
     if (DEBUG) {
@@ -144,6 +144,36 @@ export default class IndividualName extends HTMLElement {
 
     name = `${name} ${individual.primary_name.suffix}`;
     return name;
+  };
+
+  readonly getIconName = (individual?: GedcomPerson.GedcomElement) => {
+    if (individual == undefined) {
+      if (this.person) {
+        individual = this.person;
+      } else {
+        return "tdesign:user-unknown";
+      }
+    }
+    return individual.gender === male.JSONconstant
+      ? "ion-male"
+      : individual.gender === female.JSONconstant
+        ? "ion-female"
+        : "tdesign:user-unknown";
+  };
+
+  readonly getIconClass = (individual?: GedcomPerson.GedcomElement) => {
+    if (individual == undefined) {
+      if (this.person) {
+        individual = this.person;
+      } else {
+        return "icon1";
+      }
+    }
+    return individual.gender === male.JSONconstant
+      ? "color-male"
+      : individual.gender === female.JSONconstant
+        ? "color-female"
+        : "icon1";
   };
 
   protected getGrampsData = async () => {
@@ -196,18 +226,8 @@ export default class IndividualName extends HTMLElement {
             ? name
             : `<span class="bio spectrum-Heading spectrum-Heading--serif spectrum-Heading--sizeL spectrum-Heading--heavy">${name}</span>`;
         if (this.icon) {
-          const iconName =
-            this.person.gender === male.JSONconstant
-              ? "ion-male"
-              : this.person.gender === female.JSONconstant
-                ? "ion-female"
-                : "tdesign:user-unknown";
-          const iconclasses =
-            this.person.gender === male.JSONconstant
-              ? "color-male"
-              : this.person.gender === female.JSONconstant
-                ? "color-female"
-                : "icon1";
+          const iconName = this.getIconName();
+          const iconclasses = this.getIconClass();
 
           if (this.inline) {
             this.innerHTML = `

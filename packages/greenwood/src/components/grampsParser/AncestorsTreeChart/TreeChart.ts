@@ -1,5 +1,3 @@
-import { OrgChart } from "d3-org-chart";
-
 import { StringEnum as PersonStrings } from "../../../schemas/gedcom/person.ts";
 import { StringEnum as FamilyStrings } from "../../../schemas/gedcom/family.ts";
 
@@ -8,6 +6,8 @@ import { type GedcomPerson } from "../../../schemas/gedcom/index.ts";
 import "../IndividualName.ts";
 
 import GrampsState from "../state.ts";
+
+import chart from "./SVGChart.ts";
 
 import { TreePerson } from "./TreePerson.ts";
 
@@ -23,7 +23,7 @@ export default class AncestorsTreeChart extends HTMLElement {
   public maxDepth: number = -1;
 
   private generations: number = this.maxDepth != -1 ? this.maxDepth : 2;
-  private treeData = new Array<TreePerson>();
+  private treeData: TreePerson[] = new Array<TreePerson>();
   private PresentInTree = new Set<string>();
 
   protected populateLocalAttributes = () => {
@@ -83,22 +83,30 @@ export default class AncestorsTreeChart extends HTMLElement {
   };
 
   protected addToTree = (
-    localRoot: GedcomPerson.GedcomElement | undefined
+    localRootPerson: GedcomPerson.GedcomElement | undefined,
+    localRootNode: TreePerson,
+    generation: number = -1
   ): void => {
-    if (localRoot == undefined) {
+    if (localRootPerson == undefined) {
       if (DEBUG) {
         console.warn(`addToTree localRoot is undefined`);
       }
+    } else if (generation > this.generations && this.generations > 0) {
+      if (DEBUG) {
+        console.log(
+          `I have reached the max generations, ${this.generations} is exceeded by ${generation}`
+        );
+      }
     } else {
       if (DEBUG) {
-        console.log(`addToTree for localRoot ${localRoot.id}`);
+        console.log(`addToTree for localRoot ${localRootPerson.id}`);
       }
 
       const father = GrampsState.people.find((p) => {
         const family = GrampsState.families.find((f) => {
           if (p.family_list.includes(f.handle)) {
             const cf = f.child_ref_list.find((c) => {
-              return !c.ref.localeCompare(localRoot.handle);
+              return !c.ref.localeCompare(localRootPerson.handle);
             });
             if (cf) {
               if (DEBUG) {
@@ -121,19 +129,24 @@ export default class AncestorsTreeChart extends HTMLElement {
       });
       if (father && !this.PresentInTree.has(father.id)) {
         if (DEBUG) {
-          console.log(`found father ${father.id} for ${localRoot.id}`);
+          console.log(`found father ${father.id} for ${localRootPerson.id}`);
         }
         this.PresentInTree.add(father.id);
         const node: TreePerson = {
           name: this.nameForPerson(father),
           id: father.id,
-          parentId: localRoot.id,
+          data: father,
+          parentId: localRootPerson.id,
         };
         const valid = TreePerson.safeParse(node);
         if (valid.success) {
-          this.treeData.push(valid.data);
           this.PresentInTree.add(father.id);
-          this.addToTree(father);
+          this.treeData.push(node);
+          this.addToTree(
+            father,
+            node,
+            generation >= 0 ? generation + 1 : generation
+          );
         } else {
           if (DEBUG) {
             console.error(
@@ -148,7 +161,7 @@ export default class AncestorsTreeChart extends HTMLElement {
         const family = GrampsState.families.find((f) => {
           if (p.family_list.includes(f.handle)) {
             const cf = f.child_ref_list.find((c) => {
-              return !c.ref.localeCompare(localRoot.handle);
+              return !c.ref.localeCompare(localRootPerson.handle);
             });
             if (cf) {
               if (!cf.mrel.string.localeCompare(FamilyStrings.Enum.Birth)) {
@@ -168,19 +181,24 @@ export default class AncestorsTreeChart extends HTMLElement {
       });
       if (mother && !this.PresentInTree.has(mother.id)) {
         if (DEBUG) {
-          console.log(`found mother ${mother.id} for ${localRoot.id}`);
+          console.log(`found mother ${mother.id} for ${localRootPerson.id}`);
         }
         this.PresentInTree.add(mother.id);
         const node: TreePerson = {
           name: this.nameForPerson(mother),
           id: mother.id,
-          parentId: localRoot.id,
+          data: mother,
+          parentId: localRootPerson.id,
         };
         const valid = TreePerson.safeParse(node);
         if (valid.success) {
-          this.treeData.push(valid.data);
+          this.treeData.push(node);
           this.PresentInTree.add(mother.id);
-          this.addToTree(mother);
+          this.addToTree(
+            mother,
+            node,
+            generation >= 0 ? generation + 1 : generation
+          );
         } else {
           if (DEBUG) {
             console.error(
@@ -206,13 +224,14 @@ export default class AncestorsTreeChart extends HTMLElement {
       const node: TreePerson = {
         name: this.nameForPerson(rootPerson),
         id: rootPerson.id,
+        data: rootPerson,
         parentId: "",
       };
       const valid = TreePerson.safeParse(node);
       if (valid.success) {
-        this.treeData.push(valid.data);
         this.PresentInTree.add(valid.data.id);
-        this.addToTree(rootPerson);
+        this.treeData.push(node);
+        this.addToTree(rootPerson, node, 0);
       } else {
         if (DEBUG) {
           console.error(
@@ -231,18 +250,25 @@ export default class AncestorsTreeChart extends HTMLElement {
   connectedCallback() {
     this.populateLocalAttributes();
     this.treeSetup();
-    this.innerHTML = `
-      ${DEBUG ? `<span>AncestorsTreeChart</span><br/>` : ""}
+    const template = document.createElement("template");
+    template.innerHTML = `
       <div id="familyTree">
       </div>
-      `;
-
+    `;
     if (this.treeData.length) {
       if (DEBUG) {
         console.log(`connectedCallback sees populated treeData`);
       }
-      new OrgChart().container("#familyTree").data(this.treeData).render();
+      const graphDiv = template.content.querySelector("#familyTree");
+      if (graphDiv) {
+        chart(this.treeData, graphDiv);
+      }
     }
+
+    this.innerHTML = `
+      ${DEBUG ? `<span>AncestorsTreeChart</span><br/>` : ""}
+      `;
+    this.appendChild(template.content.cloneNode(true));
   }
 }
 customElements.define("ancestors-treechart", AncestorsTreeChart);
