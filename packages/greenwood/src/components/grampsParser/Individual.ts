@@ -2,7 +2,7 @@ import { GedcomEvent, GedcomPerson } from "../../schemas/gedcom/index.ts";
 import { male, female, type genders } from "../../lib/GedcomConstants.ts";
 
 import "iconify-icon";
-import "./AncestorsTreeChart.ts";
+import "./AncestorsTreeChart/AncestorsTree.ts";
 import "./IndividualName.ts";
 import "./event.ts";
 import "./Family.ts";
