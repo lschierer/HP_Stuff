@@ -72,7 +72,6 @@ ul.bio {
 .TimelineCard {
   margin: 1px 0;
   width: 100%;
-  border-top-width: 0px;
   border-style: solid;
   border-color: var(--spectrum-blue-400);
   border-radius: 4px;

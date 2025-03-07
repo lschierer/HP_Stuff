@@ -8,13 +8,11 @@
   margin: 0;
   padding: 0;
   position: relative;
-  width: 50%; /* Ensure all nodes have equal sizes */
-  /* white-space: nowrap; /* Prevent wrapping */
 }
 
 /* Trunk styling */
 .ascending-tree {
-  margin: 0;
+  margin: 0 0 1em;
   text-align: center;
 }
 
@@ -22,79 +20,71 @@
 .ascending-tree,
 .ascending-tree ul {
   display: table;
+}
+
+.ascending-tree ul {
   width: 100%;
 }
 
 /* li styling */
 .ascending-tree li {
   display: table-cell;
-  padding: 0;
+  padding: 0.5em 0;
   vertical-align: bottom;
 }
 
-/* Horizontal bar */
 .ascending-tree li:after {
-  outline: solid 0.1em #bebebe;
+  outline: solid 1px orange;
   content: "";
   left: 0;
   position: absolute;
   right: 0;
-  bottom: 0.5em;
+  bottom: 0;
 }
-
-/* Left horizontal bar */
-.ascending-tree li:first-child:after {
+.ascending-tree li:first-child:before {
   left: 50%;
 }
-
-/* Right horizontal bar */
-.ascending-tree li:last-child:after {
-  right: calc(50% + 0.1em); /* Fix artifacts */
+.ascending-tree li:last-child:before {
+  right: 50%;
 }
 
-/* Text box */
-.ascending-tree span {
-  border: solid 0.1em #bebebe;
+.ascending-tree individual-name {
+  border: solid 0.1em green;
   border-radius: 0.2em;
   display: inline-block;
-  margin: 0 0.2em 1em;
+  margin: 0 0.2em 0.5em;
   padding: 0.2em 0.5em;
   position: relative;
 }
 
-/* Vertical bar */
-.ascending-tree span:before,
-.ascending-tree span:after {
-  outline: solid 0.1em #bebebe;
+/* | */
+.ascending-tree ul:before,
+.ascending-tree individual-name:before,
+.ascending-tree span:before {
+  outline: solid 1px blue;
   content: "";
   height: 0.5em;
   left: 50%;
   position: absolute;
 }
 
-/* Top vertical bar */
+.ascending-tree ul:before {
+  top: -0.5em;
+}
+
+.ascending-tree individual-name:before,
 .ascending-tree span:before {
-  top: -0.6em;
+  top: -0.55em;
 }
 
-/* Bottom vertical bar */
-.ascending-tree span:after {
-  bottom: -0.6em;
+/* The root node doesn't connect downwards */
+.ascending-tree > li {
+  margin-bottom: 0;
 }
 
-/* Prune leaves and root */
-.ascending-tree span:first-child:before, /* (top) leaves */
-.ascending-tree > li > span:after {
-  /* (bottom) root */
+.ascending-tree > li:before,
+.ascending-tree > li:after,
+.ascending-tree > li > individual-name::after,
+.ascending-tree > li > span::after {
   outline: none;
-}
-
-/* Hide bottom bar */
-.ascending-tree > li:after {
-  display: none;
-}
-
-/* Clear bottom margin */
-.ascending-tree > li > span {
-  margin: 0;
 }

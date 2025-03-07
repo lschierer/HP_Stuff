@@ -2,7 +2,7 @@ import { GedcomEvent, GedcomPerson } from "../../schemas/gedcom/index.ts";
 import { male, female, type genders } from "../../lib/GedcomConstants.ts";
 
 import "iconify-icon";
-
+import "./AncestorsTreeChart.ts";
 import "./IndividualName.ts";
 import "./event.ts";
 import "./Family.ts";
@@ -149,7 +149,7 @@ export default class GrampsIndividual extends HTMLElement {
                 ? "color-female"
                 : "icon1"
           );
-          const handle: string = this.person ? this.person.handle : "";
+          const handle: string = this.person.handle;
           const parentHandle =
             this.person.gender == male.JSONconstant
               ? "fatherHandle"
@@ -249,7 +249,7 @@ export default class GrampsIndividual extends HTMLElement {
                 </div>
               </div>
               <div class="TimelineCard rounded border-2">
-                <AncestorsTreeChart isRoot={true} grampsId={person.id} />
+                <ancestors-tree grampsId=${this.person.id} ></ancestors-tree>
               </div>
             </div>
           `;
