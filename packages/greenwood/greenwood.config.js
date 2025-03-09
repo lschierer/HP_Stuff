@@ -1,4 +1,3 @@
-import { greenwoodPluginTypeScript } from "@greenwood/plugin-typescript";
 import { greenwoodPluginPostCss } from "@greenwood/plugin-postcss";
 import { greenwoodPluginGoogleAnalytics } from "@greenwood/plugin-google-analytics";
 
@@ -34,6 +33,7 @@ class ProcessEnvReplaceResource {
 //end workaround
 
 export default {
+  useTsc: true,
   activeContent: true,
   isolation: true,
   optimization: "default",
@@ -58,9 +58,6 @@ export default {
       provider: (compilation, options) =>
         new ProcessEnvReplaceResource(compilation, options),
     },
-    greenwoodPluginTypeScript({
-      extendConfig: true,
-    }),
     greenwoodPluginPostCss({
       extendConfig: true,
     }),

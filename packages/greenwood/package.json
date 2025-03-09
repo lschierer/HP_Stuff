@@ -10,6 +10,7 @@
     "serve": "NODE_OPTIONS='--import @greenwood/cli/register' greenwood serve"
   },
   "dependencies": {
+    "@dagrejs/dagre": "^1.1.4",
     "@iconify-json/ion": "^1.2.2",
     "@iconify/json": "^2.2.313",
     "@lit/context": "^1.1.4",
@@ -33,10 +34,12 @@
     "@spectrum-web-components/split-view": "^1.2.0",
     "@spectrum-web-components/theme": "^1.2.0",
     "d3": "^7.9.0",
+    "d3-dag": "^1.1.0",
     "d3-dtree": "^2.4.1",
     "d3-flextree": "^2.1.2",
     "d3-hierarchy": "^3.1.2",
     "d3-org-chart": "^3.1.1",
+    "dagre-d3": "^0.6.4",
     "iconify-icon": "^2.3.0",
     "lit": "^3.2.1",
     "lodash": "^4.17.21",
@@ -51,10 +54,10 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@greenwood/cli": "0.32.0-alpha.0",
-    "@greenwood/plugin-google-analytics": "0.32.0-alpha.0",
-    "@greenwood/plugin-postcss": "0.32.0-alpha.0",
-    "@greenwood/plugin-typescript": "0.32.0-alpha.0",
+    "@greenwood/cli": "0.32.0-alpha.3",
+    "@greenwood/plugin-google-analytics": "0.32.0-alpha.3",
+    "@greenwood/plugin-postcss": "0.32.0-alpha.3",
+    "@greenwood/plugin-typescript": "0.32.0-alpha.3",
     "@tsconfig/node22": "^22.0.0",
     "@types/d3": "^7.4.3",
     "@types/d3-org-chart": "^3.1.2",
