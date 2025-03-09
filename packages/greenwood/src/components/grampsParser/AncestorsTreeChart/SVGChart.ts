@@ -1,5 +1,8 @@
 import * as d3 from "d3";
 
+import "@spectrum-web-components/card/sp-card.js";
+import "iconify-icon";
+
 import debugFunction from "../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
@@ -14,7 +17,17 @@ import IndividualName from "../IndividualName.ts";
 const getLabel = (d: TreePerson) => {
   const p = new IndividualName();
   p.personId = d.id;
-  return p.displayName(d.data);
+  return `
+    <sp-card
+      variant="quiet"
+      horizontal
+      subheading="${d.id}"
+      href="${p.buildLinkTarget(d.data)}"
+      >
+      <iconify-icon slot="preview" icon="${p.getIconName(d.data)}" width="none" inline class="${d.data.gender ? "color-male" : "color-female"}"></iconify-icon>
+      <span class="gedcomCard-Heading spectrum-Heading spectrum-Heading--sizeXXS" slot="heading">${p.displayName(d.data)}</span>
+    </sp-card>
+  `;
 };
 
 const drawTree = (flatData: TreePerson[], containerElement: Element) => {
@@ -26,15 +39,18 @@ const drawTree = (flatData: TreePerson[], containerElement: Element) => {
     container.select("svg").remove(); // Prevent duplicate trees on re-render
   }
 
-  // Set up dimensions (you can also use container.clientWidth/clientHeight)
-  const width = 800;
-  const height = 600;
+  // Set up dimensions (or use containerElement.clientWidth/clientHeight)
+  const width = 1250;
+  const height = 900;
+
+  // Define the size of the rectangular node.
+  const nodeWidth = 140;
+  const nodeHeight = 60;
 
   // Create an SVG element with viewBox and preserveAspectRatio for responsive scaling
   const svg = container
     .append("svg")
-    .attr("width", "100%")
-    .attr("height", "100%")
+    .attr("class", "svg-content")
     .attr("viewBox", `0 0 ${width} ${height}`)
     .attr("preserveAspectRatio", "xMidYMid meet");
 
@@ -56,13 +72,30 @@ const drawTree = (flatData: TreePerson[], containerElement: Element) => {
   // Here we use innerWidth for horizontal spacing (d.x) and innerHeight for vertical (d.y)
   const treeLayout = d3.tree<TreePerson>().size([innerWidth, innerHeight]);
 
-  // Compute the layout
+  // Compute the layout (assigns x and y positions)
   treeLayout(rootNode);
 
-  // Flip the vertical coordinate so that the root (which was at d.y=0) is at the bottom.
+  // Flip the vertical coordinate so that the root (which was at d.y = 0) is at the bottom.
   rootNode.each((d) => {
     d.y = innerHeight - (d.y ?? 0);
   });
+
+  // Adjust link endpoints so that they stop at the node borders.
+  // For a vertical layout with the root at the bottom:
+  // - Parent (source) link: use y - nodeSize/2 (top edge of parent's square).
+  // - Child (target) link: use y + nodeSize/2 (bottom edge of child's square).
+  const adjustedLinks = rootNode.links().map((link) => ({
+    source: {
+      x: link.source.x,
+      /* eslint-disable-next-line */
+      y: link.source.y! - nodeHeight / 2,
+    },
+    target: {
+      x: link.target.x,
+      /* eslint-disable-next-line */
+      y: link.target.y! + nodeHeight / 2,
+    },
+  }));
 
   // Draw links using a vertical link generator:
   const linkGenerator = d3
@@ -74,7 +107,7 @@ const drawTree = (flatData: TreePerson[], containerElement: Element) => {
     .y((d) => d.y);
 
   g.selectAll(".link")
-    .data(rootNode.links())
+    .data(adjustedLinks)
     .enter()
     .append("path")
     .attr("class", "link")
@@ -82,7 +115,7 @@ const drawTree = (flatData: TreePerson[], containerElement: Element) => {
     .attr("fill", "none")
     .attr("stroke", "#ccc");
 
-  // Draw nodes. Here we position nodes using d.x (horizontal) and d.y (vertical)
+  // Draw nodes. Position nodes using d.x (horizontal) and d.y (vertical)
   const node = g
     .selectAll(".node")
     .data(rootNode.descendants())
@@ -91,14 +124,32 @@ const drawTree = (flatData: TreePerson[], containerElement: Element) => {
     .attr("class", "node")
     .attr("transform", (d) => `translate(${d.x},${d.y})`);
 
-  node.append("circle").attr("r", 4).attr("fill", "steelblue");
-
   node
-    .append("text")
-    .attr("dy", 3)
-    .attr("x", (d) => (d.children ? -8 : 8))
-    .style("text-anchor", (d) => (d.children ? "end" : "start"))
-    .text((d) => d.data.name);
+    .append("rect")
+    .attr("x", -nodeWidth / 2)
+    .attr("y", -nodeHeight / 2)
+    .attr("width", nodeWidth)
+    .attr("height", nodeHeight)
+    .attr("fill", "none")
+    .attr("stroke", "steelblue");
+
+  // Append text inside the node. Center the text both horizontally and vertically.
+  node
+    .append("foreignObject")
+    .attr("x", -nodeWidth / 2)
+    .attr("y", -nodeHeight / 2)
+    .attr("width", nodeWidth)
+    .attr("height", nodeHeight)
+    .append("xhtml:div")
+    .style("width", `${nodeWidth}px`)
+    .style("height", `${nodeHeight}px`)
+    .style("display", "flex")
+    .style("align-items", "start")
+    .style("justify-content", "center")
+    // Use CSS to wrap text as needed; here we allow wrapping and center text
+    .style("text-align", "center")
+    .style("font-size", "10px")
+    .html((d) => getLabel(d.data));
 };
 
 export default drawTree;

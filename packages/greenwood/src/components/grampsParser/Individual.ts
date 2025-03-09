@@ -240,7 +240,11 @@ export default class GrampsIndividual extends HTMLElement {
                               .map((family, index) => {
                                 return `
                                 <li id="family-${index}">
-                                  <gramps-family familyHandle=${family} childrenHandles=${encodeURIComponent(JSON.stringify([handle]))}></gramps-family>
+                                  <gramps-family
+                                    familyHandle=${family}
+                                    childrenHandles=${encodeURIComponent(JSON.stringify([handle]))}
+
+                                  ></gramps-family>
                                 </li>
                               `;
                               })
@@ -254,7 +258,7 @@ export default class GrampsIndividual extends HTMLElement {
                 </div>
               </div>
               <div class="TimelineCard rounded border-2">
-                <ancestors-tree grampsId=${this.person.id} ></ancestors-tree>
+                <ancestors-tree grampsId=${this.person.id} maxDepth=7 ></ancestors-tree>
               </div>
             </div>
           `;

@@ -137,7 +137,7 @@ export default class AncestorsTreeChart extends HTMLElement {
           id: father.id,
           generation: localRootNode.generation + 1,
           data: father,
-          parentId: localRootPerson.id,
+          parentId: [localRootPerson.id],
         };
         const valid = TreePerson.safeParse(node);
         if (valid.success) {
@@ -154,6 +154,19 @@ export default class AncestorsTreeChart extends HTMLElement {
               `failed to create TreePerson for Father`,
               valid.error.message
             );
+          }
+        }
+      } else if (father) {
+        const node = this.treeData.find((n) => {
+          return !n.id.localeCompare(father.id);
+        });
+        if (node) {
+          if (Array.isArray(node.parentId)) {
+            if (!node.parentId.includes(localRootPerson.id)) {
+              node.parentId.push(localRootPerson.id);
+            }
+          } else {
+            node.parentId = [localRootPerson.id];
           }
         }
       }
@@ -190,7 +203,7 @@ export default class AncestorsTreeChart extends HTMLElement {
           id: mother.id,
           generation: localRootNode.generation + 1,
           data: mother,
-          parentId: localRootPerson.id,
+          parentId: [localRootPerson.id],
         };
         const valid = TreePerson.safeParse(node);
         if (valid.success) {
@@ -208,6 +221,18 @@ export default class AncestorsTreeChart extends HTMLElement {
               valid.error.message
             );
           }
+        }
+      } else if (mother) {
+      const node = this.treeData.find((n) => {
+        return !n.id.localeCompare(mother.id);
+      });
+      if (node) {
+        if (Array.isArray(node.parentId)) {
+          if (!node.parentId.includes(localRootPerson.id)) {
+            node.parentId.push(localRootPerson.id);
+          }
+        } else {
+          node.parentId = [localRootPerson.id];
         }
       }
     }
@@ -264,7 +289,6 @@ export default class AncestorsTreeChart extends HTMLElement {
       }
       const graphSelector = "#familyTree";
       this.innerHTML = `
-        ${DEBUG ? `<p class="spectrum-Body spectrum-Body--sizeXXS">AncestorsTreeChart</p>` : ""}
         `;
       const graphDiv = template.content.querySelector(graphSelector);
       if (graphDiv) {

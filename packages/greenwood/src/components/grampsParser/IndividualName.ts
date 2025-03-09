@@ -43,7 +43,7 @@ export default class IndividualName extends HTMLElement {
     }
   };
 
-  protected buildLinkTarget = (
+  readonly buildLinkTarget = (
     individual: GedcomPerson.GedcomElement
   ): string => {
     let targetLocation = "/Harrypedia/people/";

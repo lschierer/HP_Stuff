@@ -1,4 +1,19 @@
+@import "@spectrum-css/typography";
+
 /* Greatly inspired by Ross Angus's work: https://codepen.io/ross-angus/pen/jwxMjL */
+
+.color-male {
+  color: var(--color-male);
+}
+
+.color-female {
+  color: var(--color-female);
+}
+
+iconify-icon {
+  display: block;
+  height: 2em;
+}
 
 .svg-container {
   display: block;
@@ -10,10 +25,17 @@
   overflow: hidden;
 }
 .svg-content {
-  display: inline-block;
+  display: block;
+  max-width: 100%;
+  height: auto;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.gedcomCard-Heading {
+  width: 100%;
+  text-wrap: pretty;
 }
 
 /* Global styling */
