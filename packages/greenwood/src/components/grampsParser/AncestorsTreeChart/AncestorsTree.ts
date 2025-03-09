@@ -45,7 +45,7 @@ export default class AncestorsTreeWrapper extends HTMLElement {
     if (this.shadowRoot) {
       this.shadowRoot.adoptedStyleSheets.push(AncestorsTreeChartCSS);
       this.shadowRoot.innerHTML = `
-          ${DEBUG ? `<span>AncestorsTreeWrapper</span><br/>` : ""}
+          ${DEBUG ? `<p class="spectrum-Body spectrum-Body--sizeXXS">AncestorsTreeWrapper</p>` : ""}
           <ancestors-treechart isRoot grampsId=${this.grampsId} maxDepth=${this.maxDepth} ></ancestors-treechart>
       `;
     }

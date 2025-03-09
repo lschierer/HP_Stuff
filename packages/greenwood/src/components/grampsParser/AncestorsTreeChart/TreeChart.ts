@@ -7,7 +7,7 @@ import "../IndividualName.ts";
 
 import GrampsState from "../state.ts";
 
-import chart from "./SVGChart.ts";
+import drawTree from "./SVGChart.ts";
 
 import { TreePerson } from "./TreePerson.ts";
 
@@ -87,7 +87,7 @@ export default class AncestorsTreeChart extends HTMLElement {
     localRootNode: TreePerson,
     generation: number = -1
   ): void => {
-    if (localRootPerson == undefined) {
+    if (localRootPerson === undefined) {
       if (DEBUG) {
         console.warn(`addToTree localRoot is undefined`);
       }
@@ -99,7 +99,7 @@ export default class AncestorsTreeChart extends HTMLElement {
       }
     } else {
       if (DEBUG) {
-        console.log(`addToTree for localRoot ${localRootPerson.id}`);
+        console.log(`addToTree for localRoot ${localRootNode.id}`);
       }
 
       const father = GrampsState.people.find((p) => {
@@ -135,6 +135,7 @@ export default class AncestorsTreeChart extends HTMLElement {
         const node: TreePerson = {
           name: this.nameForPerson(father),
           id: father.id,
+          generation: localRootNode.generation + 1,
           data: father,
           parentId: localRootPerson.id,
         };
@@ -187,6 +188,7 @@ export default class AncestorsTreeChart extends HTMLElement {
         const node: TreePerson = {
           name: this.nameForPerson(mother),
           id: mother.id,
+          generation: localRootNode.generation + 1,
           data: mother,
           parentId: localRootPerson.id,
         };
@@ -224,8 +226,9 @@ export default class AncestorsTreeChart extends HTMLElement {
       const node: TreePerson = {
         name: this.nameForPerson(rootPerson),
         id: rootPerson.id,
+        generation: 0,
         data: rootPerson,
-        parentId: "",
+        parentId: null,
       };
       const valid = TreePerson.safeParse(node);
       if (valid.success) {
@@ -252,22 +255,23 @@ export default class AncestorsTreeChart extends HTMLElement {
     this.treeSetup();
     const template = document.createElement("template");
     template.innerHTML = `
-      <div id="familyTree">
+      <div id="familyTree" class="svg-container">
       </div>
     `;
     if (this.treeData.length) {
       if (DEBUG) {
         console.log(`connectedCallback sees populated treeData`);
       }
-      const graphDiv = template.content.querySelector("#familyTree");
+      const graphSelector = "#familyTree";
+      this.innerHTML = `
+        ${DEBUG ? `<p class="spectrum-Body spectrum-Body--sizeXXS">AncestorsTreeChart</p>` : ""}
+        `;
+      const graphDiv = template.content.querySelector(graphSelector);
       if (graphDiv) {
-        chart(this.treeData, graphDiv);
+        drawTree(this.treeData, graphDiv);
       }
     }
 
-    this.innerHTML = `
-      ${DEBUG ? `<span>AncestorsTreeChart</span><br/>` : ""}
-      `;
     this.appendChild(template.content.cloneNode(true));
   }
 }

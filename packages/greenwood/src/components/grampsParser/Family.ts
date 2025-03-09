@@ -4,7 +4,6 @@ import {
   type GedcomFamily,
   type GedcomPerson,
 } from "../../schemas/gedcom/index.ts";
-import { male } from "../../lib/GedcomConstants.ts";
 
 import "./IndividualName.ts";
 

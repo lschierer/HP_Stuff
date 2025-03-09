@@ -16,6 +16,7 @@ if (DEBUG) {
 }
 
 import GrampsState from "./state.ts";
+import IndividualName from "./IndividualName.ts";
 export default class GrampsIndividual extends HTMLElement {
   public personId: string = "";
 
@@ -142,7 +143,7 @@ export default class GrampsIndividual extends HTMLElement {
               : this.person.gender === female.JSONconstant
                 ? "ion-female"
                 : "tdesign:user-unknown";
-          const iconclasses = "spectrum-Icon spectrum-Icon--sizeXXL ".concat(
+          const iconclasses = "spectrum-Icon  ".concat(
             this.person.gender === male.JSONconstant
               ? "color-male"
               : this.person.gender === female.JSONconstant
@@ -154,6 +155,9 @@ export default class GrampsIndividual extends HTMLElement {
             this.person.gender == male.JSONconstant
               ? "fatherHandle"
               : "motherHandle";
+          const ine = new IndividualName();
+          ine.personId = this.person.id;
+
           this.shadowRoot.innerHTML = `
             <div class="spectrum-Typography">
               <div class=" CardContainer " role="figure">
@@ -161,18 +165,20 @@ export default class GrampsIndividual extends HTMLElement {
                   <iconify-icon
                     aria-hidden="true" role="img"
                     icon=${iconName} class="${iconclasses}"
-                    width="10em"
+                    height="none"
+                    width="none"
                   ></iconify-icon>
                 </div>
 
                 <div class=" CardBody ">
                   <div class=" Card-header ">
                     <div class=" Card-title ">
-                      <individual-name noIcon personId=${this.person.id}></individual-name>
+                      <span class="spectrum-Heading spectrum-Heading--serif spectrum-Heading--sizeL spectrum-Heading--heavy">
+                        ${ine.displayName(this.person)}
+                      </span>
                     </div>
                   </div>
 
-                  <div class=" Card-content ">
                     <div class=" Card-description ">
                       <div class="General ">
                         <ul class="bio">
@@ -198,6 +204,8 @@ export default class GrampsIndividual extends HTMLElement {
                           </li>
                         </ul>
                       </div>
+                    </div>
+                    <div class=" Card-Extra">
                       <div class="Unions">
                         ${
                           this.person.family_list.length > 0
@@ -241,11 +249,8 @@ export default class GrampsIndividual extends HTMLElement {
                         `
                             : ""
                         }
-
                       </div>
                     </div>
-                  </div>
-
                 </div>
               </div>
               <div class="TimelineCard rounded border-2">
