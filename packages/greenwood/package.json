@@ -54,13 +54,14 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@greenwood/cli": "0.32.0-alpha.3",
-    "@greenwood/plugin-google-analytics": "0.32.0-alpha.3",
-    "@greenwood/plugin-postcss": "0.32.0-alpha.3",
-    "@greenwood/plugin-typescript": "0.32.0-alpha.3",
+    "@greenwood/cli": "0.32.0-alpha.5",
+    "@greenwood/plugin-google-analytics": "0.32.0-alpha.5",
+    "@greenwood/plugin-postcss": "0.32.0-alpha.5",
+    "@greenwood/plugin-typescript": "0.32.0-alpha.5",
     "@tsconfig/node22": "^22.0.0",
     "@types/d3": "^7.4.3",
     "@types/d3-org-chart": "^3.1.2",
+    "@types/dagre": "^0.7.52",
     "@types/debug": "^4.1.12",
     "@types/hast": "^3.0.4",
     "@types/mdast": "^4.0.4",
