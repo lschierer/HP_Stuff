@@ -28,7 +28,7 @@ export default class GrampsIndividual extends HTMLElement {
   private gender: genders | undefined = undefined;
 
   protected getGedcomData = async () => {
-    if (GrampsState.people.length == 0) {
+    if (GrampsState.people.size == 0) {
       const personURL = new URL(
         `/api/gedcom/person?id=${this.personId}`,
         import.meta.url
@@ -38,9 +38,9 @@ export default class GrampsIndividual extends HTMLElement {
         const data = (await personResponse.json()) as object;
         const valid = GedcomPerson.GedcomElement.safeParse(data);
         if (valid.success) {
-          GrampsState.people.push(valid.data);
+          GrampsState.people.set(valid.data.id, valid.data);
           if (DEBUG) {
-            console.log(`starting with ${GrampsState.people.length} people`);
+            console.log(`starting with ${GrampsState.people.size} people`);
           }
           this.person = valid.data;
         } else {
@@ -61,9 +61,7 @@ export default class GrampsIndividual extends HTMLElement {
         }
       }
     } else {
-      const p = GrampsState.people.find((p) => {
-        return !p.id.localeCompare(this.personId);
-      });
+      const p = GrampsState.people.get(this.personId);
       if (p) {
         this.person = p;
       } else {
@@ -73,14 +71,14 @@ export default class GrampsIndividual extends HTMLElement {
       }
     }
 
-    if (!GrampsState.events.length) {
+    if (!GrampsState.events.size) {
       const eventsURL = new URL("/api/gedcom/events", import.meta.url);
       const eventsResponse = await fetch(eventsURL);
       if (eventsResponse.ok) {
         const data = (await eventsResponse.json()) as object;
         const valid = GedcomEvent.GedcomElement.array().safeParse(data);
         if (valid.success) {
-          valid.data.map((e) => GrampsState.events.push(e));
+          valid.data.map((e) => GrampsState.events.set(e.id, e));
         } else {
           console.warn(`error parsing events`, valid.error.message);
         }

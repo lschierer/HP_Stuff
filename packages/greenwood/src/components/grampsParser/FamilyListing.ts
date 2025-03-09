@@ -40,7 +40,7 @@ export default class FamilyListing extends HTMLElement {
   };
 
   protected getGedcomData = async () => {
-    if (GrampsState.people.length == 0) {
+    if (GrampsState.people.size == 0) {
       await getGrampsData(import.meta.url);
     }
   };
@@ -56,21 +56,23 @@ export default class FamilyListing extends HTMLElement {
       const displaylist = new Array<GedcomPerson.GedcomElement>();
       const families = new Map<string, string[]>();
 
-      const p1 = GrampsState.people
-        .filter((p0) => {
-          return p0.primary_name.surname_list
-            .map((sn) => {
-              return !sn.surname.localeCompare(this.familyName);
-            })
-            .includes(true);
-        })
-        .filter((p1) => {
-          if (this.handle.length > 0) {
-            return p1.parent_family_list.includes(this.handle);
-          } else {
-            return p1.parent_family_list.length == 0;
-          }
-        })
+      const p1 = new Array<GedcomPerson.GedcomElement>();
+      GrampsState.people.forEach((p0) => {
+        const nameMap = p0.primary_name.surname_list.map((sn) => {
+          return !sn.surname.localeCompare(this.familyName);
+        });
+        if (nameMap.includes(true)) {
+          p1.push(p0);
+        }
+      });
+
+      p1.filter((p2) => {
+        if (this.handle.length > 0) {
+          return p2.parent_family_list.includes(this.handle);
+        } else {
+          return p2.parent_family_list.length == 0;
+        }
+      })
         .sort((a, b) => {
           return a.id.localeCompare(b.id);
         })

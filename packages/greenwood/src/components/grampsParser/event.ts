@@ -1,6 +1,6 @@
 import GrampsCSS from "../../styles/Gramps.css" with { type: "css" };
 
-import { GedcomEvent } from "../../schemas/gedcom/index.ts";
+import { type GedcomEvent } from "../../schemas/gedcom/index.ts";
 
 import debugFunction from "../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -9,6 +9,7 @@ if (DEBUG) {
 }
 
 import GrampsState from "./state.ts";
+import { getGrampsData } from "./state.ts";
 
 export default class EventWrapper extends HTMLElement {
   public handle: string = "";
@@ -42,52 +43,28 @@ export default class EventWrapper extends HTMLElement {
   };
 
   protected getGedcomData = async () => {
-    if (GrampsState.events.length == 0) {
-      const eventsUrl = new URL("/api/gedcom/events", import.meta.url);
-      const eventsResponse = await fetch(eventsUrl);
-      if (eventsResponse.ok) {
-        const data = (await eventsResponse.json()) as object;
-        const valid = GedcomEvent.GedcomElement.array().safeParse(data);
-        if (valid.success) {
-          valid.data.map((e) => GrampsState.events.push(e));
-        } else {
-          if (DEBUG) {
-            console.warn(
-              `fetched invalid data for events`,
-              valid.error.message
-            );
-          }
-        }
-      } else {
-        if (DEBUG) {
-          console.warn(
-            `error fetching events data`,
-            eventsResponse.status,
-            eventsResponse.statusText
-          );
-        }
-      }
+    if (GrampsState.events.size == 0) {
+      await getGrampsData(import.meta.url);
     }
 
     if (this.handle.length > 0) {
-      this.entries = GrampsState.events.filter((e) => {
-        return !e.handle.localeCompare(this.handle);
-      });
+      this.event = GrampsState.events.get(this.handle);
     } else {
-      this.entries = GrampsState.events;
-    }
-
-    if (this.entries.length > 1 && this.type != undefined) {
-      this.entries.map((entry) => {
-        const data = entry;
-        data.attribute_list.map((attribute) => {
-          if (!attribute.type.string.localeCompare(this.type ?? "")) {
-            this.event = data;
-          }
+      if (this.type != undefined) {
+        GrampsState.events.forEach((entry) => {
+          entry.attribute_list.map((attribute) => {
+            if (!attribute.type.string.localeCompare(this.type ?? "")) {
+              this.event = entry;
+            }
+          });
         });
-      });
-    } else {
-      this.event = this.entries[0];
+      } else {
+        this.event = (
+          GrampsState.events.entries().next().value as Array<
+            number | GedcomEvent.GedcomElement
+          >
+        )[1] as GedcomEvent.GedcomElement;
+      }
     }
 
     if (this.event != undefined) {

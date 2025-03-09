@@ -2,13 +2,20 @@ export const prerender = false;
 import { LitElement, html, unsafeCSS, type PropertyValues } from "lit";
 import { state, property } from "lit/decorators.js";
 
-import { GedcomPerson, GedcomFamily, GedcomEvent } from "@schemas/gedcom";
+import {
+  GedcomPerson,
+  type GedcomFamily,
+  type GedcomEvent,
+} from "../../schemas/gedcom/index.ts";
 import { z } from "zod";
 
-import GrampsCSS from "../../styles/Gramps.css?inline";
+import GrampsCSS from "../../styles/Gramps.css" with { type: "css" };
 
-const DEBUG = true;
-
+import debugFunction from "../../lib/debug.ts";
+const DEBUG = debugFunction(new URL(import.meta.url).pathname);
+if (DEBUG) {
+  console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
+}
 export default class GenealogicalData extends LitElement {
   @property({ type: Array })
   public people: GedcomPerson.GedcomElement[] =
@@ -31,20 +38,13 @@ export default class GenealogicalData extends LitElement {
     this.url = new URL("/gramps/gramps.json", document.URL);
   }
 
-  async connectedCallback() {
-    super.connectedCallback();
-    if (DEBUG) console.log(`initial url is ${this.url}`);
-    if (this.url instanceof URL) {
-    }
-  }
+  static override styles = [unsafeCSS(GrampsCSS)];
 
-  static styles = [unsafeCSS(GrampsCSS)];
-
-  protected willUpdate(_changedProperties: PropertyValues): void {
+  protected override willUpdate(_changedProperties: PropertyValues): void {
     super.willUpdate(_changedProperties);
 
     if (_changedProperties.has("people")) {
-      if (this.people && !Array.isArray(this.people)) {
+      if (!Array.isArray(this.people)) {
         const valid = z
           .array(GedcomPerson.GedcomElement)
           .safeParse(JSON.parse(this.people));
@@ -56,14 +56,15 @@ export default class GenealogicalData extends LitElement {
             console.error(valid.error.message);
           }
         }
-      } else if (!this.people) {
+      } else if (!this.people.length) {
         if (DEBUG) {
           console.warn(`null this.people`);
         }
       }
     }
   }
-  render() {
+
+  override render() {
     if (DEBUG) {
       console.log(`grampsParser/index render; `);
     }

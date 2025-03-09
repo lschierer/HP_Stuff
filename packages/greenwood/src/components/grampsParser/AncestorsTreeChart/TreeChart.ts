@@ -1,15 +1,14 @@
 import { StringEnum as PersonStrings } from "../../../schemas/gedcom/person.ts";
-import { StringEnum as FamilyStrings } from "../../../schemas/gedcom/family.ts";
 
 import { type GedcomPerson } from "../../../schemas/gedcom/index.ts";
 
 import "../IndividualName.ts";
 
 import GrampsState from "../state.ts";
-
-import drawTree from "./SVGChart.ts";
+import { findFatherForChild, findMotherForChild } from "../state.ts";
 
 import { TreePerson } from "./TreePerson.ts";
+import IndividualName from "../IndividualName.ts";
 
 import debugFunction from "../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -22,7 +21,6 @@ export default class AncestorsTreeChart extends HTMLElement {
   public isRoot: boolean = false;
   public maxDepth: number = -1;
 
-  private generations: number = this.maxDepth != -1 ? this.maxDepth : 2;
   private treeData: TreePerson[] = new Array<TreePerson>();
   private PresentInTree = new Set<string>();
 
@@ -38,7 +36,6 @@ export default class AncestorsTreeChart extends HTMLElement {
         !attr.name.toLowerCase().localeCompare("maxDepth".toLowerCase())
       ) {
         this.maxDepth = Number(attr.value);
-        this.generations = this.maxDepth != -1 ? this.maxDepth : 2;
       }
     }
   };
@@ -82,166 +79,8 @@ export default class AncestorsTreeChart extends HTMLElement {
     return name;
   };
 
-  protected addToTree = (
-    localRootPerson: GedcomPerson.GedcomElement | undefined,
-    localRootNode: TreePerson,
-    generation: number = -1
-  ): void => {
-    if (localRootPerson === undefined) {
-      if (DEBUG) {
-        console.warn(`addToTree localRoot is undefined`);
-      }
-    } else if (generation > this.generations && this.generations > 0) {
-      if (DEBUG) {
-        console.log(
-          `I have reached the max generations, ${this.generations} is exceeded by ${generation}`
-        );
-      }
-    } else {
-      if (DEBUG) {
-        console.log(`addToTree for localRoot ${localRootNode.id}`);
-      }
-
-      const father = GrampsState.people.find((p) => {
-        const family = GrampsState.families.find((f) => {
-          if (p.family_list.includes(f.handle)) {
-            const cf = f.child_ref_list.find((c) => {
-              return !c.ref.localeCompare(localRootPerson.handle);
-            });
-            if (cf) {
-              if (DEBUG) {
-                console.log(`found family with cf ${f.id}`);
-              }
-              if (!cf.frel.string.localeCompare(FamilyStrings.Enum.Birth)) {
-                return true;
-              }
-              if (!cf.mrel.string.localeCompare(FamilyStrings.Enum.Birth)) {
-                return true;
-              }
-            }
-          }
-          return false;
-        });
-        if (family && family.father_handle) {
-          return !p.handle.localeCompare(family.father_handle);
-        }
-        return false;
-      });
-      if (father && !this.PresentInTree.has(father.id)) {
-        if (DEBUG) {
-          console.log(`found father ${father.id} for ${localRootPerson.id}`);
-        }
-        this.PresentInTree.add(father.id);
-        const node: TreePerson = {
-          name: this.nameForPerson(father),
-          id: father.id,
-          generation: localRootNode.generation + 1,
-          data: father,
-          parentId: [localRootPerson.id],
-        };
-        const valid = TreePerson.safeParse(node);
-        if (valid.success) {
-          this.PresentInTree.add(father.id);
-          this.treeData.push(node);
-          this.addToTree(
-            father,
-            node,
-            generation >= 0 ? generation + 1 : generation
-          );
-        } else {
-          if (DEBUG) {
-            console.error(
-              `failed to create TreePerson for Father`,
-              valid.error.message
-            );
-          }
-        }
-      } else if (father) {
-        const node = this.treeData.find((n) => {
-          return !n.id.localeCompare(father.id);
-        });
-        if (node) {
-          if (Array.isArray(node.parentId)) {
-            if (!node.parentId.includes(localRootPerson.id)) {
-              node.parentId.push(localRootPerson.id);
-            }
-          } else {
-            node.parentId = [localRootPerson.id];
-          }
-        }
-      }
-
-      const mother = GrampsState.people.find((p) => {
-        const family = GrampsState.families.find((f) => {
-          if (p.family_list.includes(f.handle)) {
-            const cf = f.child_ref_list.find((c) => {
-              return !c.ref.localeCompare(localRootPerson.handle);
-            });
-            if (cf) {
-              if (!cf.mrel.string.localeCompare(FamilyStrings.Enum.Birth)) {
-                return true;
-              }
-              if (!cf.frel.string.localeCompare(FamilyStrings.Enum.Birth)) {
-                return true;
-              }
-            }
-          }
-          return false;
-        });
-        if (family && family.mother_handle) {
-          return !p.handle.localeCompare(family.mother_handle);
-        }
-        return false;
-      });
-      if (mother && !this.PresentInTree.has(mother.id)) {
-        if (DEBUG) {
-          console.log(`found mother ${mother.id} for ${localRootPerson.id}`);
-        }
-        this.PresentInTree.add(mother.id);
-        const node: TreePerson = {
-          name: this.nameForPerson(mother),
-          id: mother.id,
-          generation: localRootNode.generation + 1,
-          data: mother,
-          parentId: [localRootPerson.id],
-        };
-        const valid = TreePerson.safeParse(node);
-        if (valid.success) {
-          this.treeData.push(node);
-          this.PresentInTree.add(mother.id);
-          this.addToTree(
-            mother,
-            node,
-            generation >= 0 ? generation + 1 : generation
-          );
-        } else {
-          if (DEBUG) {
-            console.error(
-              `failed to create TreePerson for mother`,
-              valid.error.message
-            );
-          }
-        }
-      } else if (mother) {
-      const node = this.treeData.find((n) => {
-        return !n.id.localeCompare(mother.id);
-      });
-      if (node) {
-        if (Array.isArray(node.parentId)) {
-          if (!node.parentId.includes(localRootPerson.id)) {
-            node.parentId.push(localRootPerson.id);
-          }
-        } else {
-          node.parentId = [localRootPerson.id];
-        }
-      }
-    }
-  };
-
   protected treeSetup = () => {
-    const rootPerson = GrampsState.people.find((p) => {
-      return !p.id.localeCompare(this.grampsId);
-    });
+    const rootPerson = GrampsState.people.get(this.grampsId);
     if (!rootPerson) {
       if (DEBUG) {
         console.error(`failed to find root person for ${this.grampsId}`);
@@ -259,7 +98,7 @@ export default class AncestorsTreeChart extends HTMLElement {
       if (valid.success) {
         this.PresentInTree.add(valid.data.id);
         this.treeData.push(node);
-        this.addToTree(rootPerson, node, 0);
+        this.addToTree(node, 0);
       } else {
         if (DEBUG) {
           console.error(
@@ -274,6 +113,64 @@ export default class AncestorsTreeChart extends HTMLElement {
       }
     }
   };
+
+  protected addToTree(localRootNode: TreePerson, generation: number = -2) {
+    if (generation < 0) {
+      generation = 0;
+    }
+    if (DEBUG) {
+      console.log(`finding parents of ${localRootNode.id} to add to tree`);
+    }
+    const ine = new IndividualName();
+
+    const father = findFatherForChild(localRootNode.data);
+    if (father) {
+      if (DEBUG) {
+        console.log(`found father "${father.id}" for "${localRootNode.id}"`);
+      }
+      const parentNode: TreePerson = {
+        name: ine.displayName(father),
+        id: father.id,
+        generation: generation,
+        data: father,
+        parentId: null,
+      };
+
+      if (localRootNode.parentId) {
+        localRootNode.parentId.push(father.id);
+      } else {
+        localRootNode.parentId = [father.id];
+      }
+
+      if (generation < this.maxDepth) {
+        this.treeData.push(parentNode);
+      }
+    }
+
+    const mother = findMotherForChild(localRootNode.data);
+    if (mother) {
+      if (DEBUG) {
+        console.log(`found mother "${mother.id}" for "${localRootNode.id}"`);
+      }
+      const parentNode: TreePerson = {
+        name: ine.displayName(mother),
+        id: mother.id,
+        generation: generation,
+        data: mother,
+        parentId: null,
+      };
+
+      if (localRootNode.parentId) {
+        localRootNode.parentId.push(mother.id);
+      } else {
+        localRootNode.parentId = [mother.id];
+      }
+
+      if (generation < this.maxDepth) {
+        this.treeData.push(parentNode);
+      }
+    }
+  }
 
   connectedCallback() {
     this.populateLocalAttributes();
@@ -292,7 +189,7 @@ export default class AncestorsTreeChart extends HTMLElement {
         `;
       const graphDiv = template.content.querySelector(graphSelector);
       if (graphDiv) {
-        drawTree(this.treeData, graphDiv);
+        //drawTree(this.treeData, graphDiv);
       }
     }
 

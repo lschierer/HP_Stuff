@@ -1,4 +1,5 @@
 import * as d3 from "d3";
+import dagre from "dagre";
 
 import "@spectrum-web-components/card/sp-card.js";
 import "iconify-icon";
@@ -28,6 +29,13 @@ const getLabel = (d: TreePerson) => {
       <span class="gedcomCard-Heading spectrum-Heading spectrum-Heading--sizeXXS" slot="heading">${p.displayName(d.data)}</span>
     </sp-card>
   `;
+};
+
+const drawDAG = (flatData: TreePerson[], containerElement: Element) => {
+  // Create a new directed graph
+  const g = new dagre.graphlib.Graph<TreePerson>();
+  g.setGraph({ rankdir: "BT" }); // bottom-to-top layout (root at bottom)
+  g.setDefaultEdgeLabel(() => ({}));
 };
 
 const drawTree = (flatData: TreePerson[], containerElement: Element) => {

@@ -37,8 +37,8 @@ export default class AncestorsTreeWrapper extends HTMLElement {
     if (DEBUG) {
       console.log(
         `AncestorsTree has `,
-        `${GrampsState.people.length} people `,
-        `${GrampsState.families.length} families `
+        `${GrampsState.people.size} people `,
+        `${GrampsState.families.size} families `
       );
     }
     this.attachShadow({ mode: "open" });

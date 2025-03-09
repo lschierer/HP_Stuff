@@ -63,20 +63,19 @@ export class GrampsFamily extends HTMLElement {
   };
 
   protected getData = async () => {
-    if (!GrampsState.people.length || !GrampsState.families.length) {
+    if (!GrampsState.people.size || !GrampsState.families.size) {
       await getGrampsData(import.meta.url);
     }
 
-    if (GrampsState.families.length) {
-      const found = GrampsState.families.find((family) => {
-        return !family.handle.localeCompare(this.familyHandle);
+    if (GrampsState.families.size) {
+      GrampsState.families.forEach((family) => {
+        if (!family.handle.localeCompare(this.familyHandle)) {
+          this._family = family;
+        }
       });
-      if (found) {
-        this._family = found;
-      }
     }
 
-    if (GrampsState.people.length > 0 && this._family) {
+    if (GrampsState.people.size > 0 && this._family) {
       if (DEBUG) {
         console.log(`looking for spouse and children`);
       }

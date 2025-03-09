@@ -205,16 +205,22 @@ export default class IndividualName extends HTMLElement {
     document.adoptedStyleSheets.push(GrampsCSS);
     this.getAttributes();
     if (this.personId.length > 0) {
-      if (GrampsState.people.length == 0) {
+      if (GrampsState.people.size == 0) {
         await this.getGrampsData();
       } else {
-        if (this.personId.length > 0) {
-          this.person =
-            GrampsState.people.find((p) => {
-              return !p.id.localeCompare(this.personId);
-            }) ?? GrampsState.people[0];
+        if (this.personId.length > 0 && GrampsState.people.size) {
+          const tempP = GrampsState.people.get(this.personId);
+          if (tempP) {
+            this.person = tempP;
+          } else {
+            this.person = GrampsState.people.entries().next().value as Array<
+              number | GedcomPerson.GedcomElement
+            >[1] as GedcomPerson.GedcomElement;
+          }
         } else {
-          this.person = GrampsState.people[0];
+          this.person = GrampsState.people.entries().next().value as Array<
+            number | GedcomPerson.GedcomElement
+          >[1] as GedcomPerson.GedcomElement;
         }
       }
       if (this.person) {

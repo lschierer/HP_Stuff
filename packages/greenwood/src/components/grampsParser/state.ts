@@ -1,4 +1,4 @@
-import { SignalArray } from "signal-utils/array";
+import { SignalMap } from "signal-utils/map";
 import { SignalSet } from "signal-utils/set";
 import { SignalObject } from "signal-utils/object";
 
@@ -9,20 +9,18 @@ import {
 } from "../../schemas/gedcom/index.ts";
 
 import debugFunction from "../../lib/debug.ts";
+
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
 const GrampsState = new SignalObject({
-  people: new SignalArray<GedcomPerson.GedcomElement>(),
-  peopleIDs: new SignalSet<string>(),
+  people: new SignalMap<string, GedcomPerson.GedcomElement>(),
 
-  families: new SignalArray<GedcomFamily.GedcomElement>(),
-  familyIds: new SignalSet<string>(),
+  families: new SignalMap<string, GedcomFamily.GedcomElement>(),
 
-  events: new SignalArray<GedcomEvent.GedcomElement>(),
-  eventIds: new SignalSet<string>(),
+  events: new SignalMap<string, GedcomEvent.GedcomElement>(),
 });
 
 export default GrampsState;
@@ -37,9 +35,8 @@ export const getGrampsData = async (base: string) => {
     const valid = GedcomPerson.GedcomElement.array().safeParse(data);
     if (valid.success) {
       valid.data.map((p) => {
-        if (!GrampsState.peopleIDs.has(p.id)) {
-          GrampsState.people.push(p);
-          GrampsState.peopleIDs.add(p.id);
+        if (!GrampsState.people.has(p.id)) {
+          GrampsState.people.set(p.id, p);
         }
       });
       if (DEBUG) {
@@ -59,9 +56,8 @@ export const getGrampsData = async (base: string) => {
     const valid = GedcomFamily.GedcomElement.array().safeParse(data);
     if (valid.success) {
       valid.data.map((f) => {
-        if (!GrampsState.familyIds.has(f.id)) {
-          GrampsState.families.push(f);
-          GrampsState.familyIds.add(f.id);
+        if (!GrampsState.families.has(f.id)) {
+          GrampsState.families.set(f.id, f);
         }
       });
       if (DEBUG) {
@@ -81,17 +77,86 @@ export const getGrampsData = async (base: string) => {
     const valid = GedcomEvent.GedcomElement.array().safeParse(data);
     if (valid.success) {
       valid.data.map((event) => {
-        if (!GrampsState.eventIds.has(event.id)) {
-          GrampsState.events.push(event);
-          GrampsState.eventIds.add(event.id);
+        if (!GrampsState.events.has(event.id)) {
+          GrampsState.events.set(event.id, event);
         }
       });
       if (DEBUG) {
-        console.log(`starting with ${GrampsState.events.length} events`);
+        console.log(`starting with ${GrampsState.events.size} events`);
       }
     } else {
       if (DEBUG) {
         console.error(`error fetching events in state`, valid.error.message);
+      }
+    }
+  }
+};
+
+export const findFatherForChild = (child: GedcomPerson.GedcomElement) => {
+  let family_id: string = "";
+  /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
+  for (const [k2, f] of GrampsState.families) {
+    if (f.child_ref_list.length) {
+      child.parent_family_list.map((pf) => {
+        const match = f.child_ref_list.find((crle) => {
+          return crle.ref.localeCompare(pf);
+        });
+        if (match) {
+          family_id = f.id;
+        }
+      });
+    }
+  }
+  let found = false;
+  /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
+  for (const [k, p] of GrampsState.people) {
+    /* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */
+    if (!found) {
+      if (family_id.length) {
+        const family = GrampsState.families.get(family_id);
+        if (family) {
+          if (family.father_handle) {
+            if (!family.father_handle.localeCompare(p.handle)) {
+              found = true;
+              return p;
+            }
+          }
+        }
+      }
+    }
+  }
+};
+
+export const findMotherForChild = (child: GedcomPerson.GedcomElement) => {
+  let family_id: string = "";
+  /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
+  for (const [k2, f] of GrampsState.families) {
+    if (f.child_ref_list.length) {
+      child.parent_family_list.map((pf) => {
+        const match = f.child_ref_list.find((crle) => {
+          return crle.ref.localeCompare(pf);
+        });
+        if (match) {
+          family_id = f.id;
+        }
+      });
+    }
+  }
+  let found = false;
+  /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
+  for (const [k, p] of GrampsState.people) {
+    /* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */
+    if (!found) {
+      if (family_id.length) {
+        const family = GrampsState.families.get(family_id);
+        if (family) {
+          if (family.mother_handle) {
+            if (!family.mother_handle.localeCompare(p.handle)) {
+              found = true;
+              return p;
+            }
+          }
+        }
       }
     }
   }
