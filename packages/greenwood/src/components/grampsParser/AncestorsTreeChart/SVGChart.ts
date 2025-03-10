@@ -1,5 +1,5 @@
-import * as d3 from "d3";
-import dagre from "dagre";
+import cytoscape from 'cytoscape';
+
 
 import "@spectrum-web-components/card/sp-card.js";
 import "iconify-icon";
@@ -10,14 +10,13 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-import { type TreePerson } from "./TreePerson";
+import { type TreePerson } from "./TreePerson.ts";
 
 import "../Individual.ts";
 import IndividualName from "../IndividualName.ts";
 
 const getLabel = (d: TreePerson) => {
   const p = new IndividualName();
-  p.personId = d.id;
   return `
     <sp-card
       variant="quiet"
@@ -31,133 +30,104 @@ const getLabel = (d: TreePerson) => {
   `;
 };
 
-const drawDAG = (flatData: TreePerson[], containerElement: Element) => {
-  // Create a new directed graph
-  const g = new dagre.graphlib.Graph<TreePerson>();
-  g.setGraph({ rankdir: "BT" }); // bottom-to-top layout (root at bottom)
-  g.setDefaultEdgeLabel(() => ({}));
-};
+const drawDAG = (
+  personsMap: Map<string, TreePerson>,
+  containerElement: Element
+) => {
+  // Create nodes array
+  const cyNodes = new Array<cytoscape.ElementsDefinition>();
 
-const drawTree = (flatData: TreePerson[], containerElement: Element) => {
-  const container = d3.select(containerElement);
-  if (container.empty()) {
-    console.error(`drawTree container is empty`);
-    return;
-  } else {
-    container.select("svg").remove(); // Prevent duplicate trees on re-render
-  }
+  personsMap.forEach((person) => {
+    const node:cytoscape.ElementsDefinition = {
+      nodes
+    }
+    cyNodes.push(node)
+    );
 
-  // Set up dimensions (or use containerElement.clientWidth/clientHeight)
-  const width = 1250;
-  const height = 900;
+    const cyEdges: { data: { id: string; source: string; target: string } }[] = [];
+    personsMap.forEach(person => {
+      if(person.parentId) {
+        person.parentId.forEach(childId => {
+          cyEdges.push({
+            data: { id: `${person.id}-${childId}`, source: person.id, target: childId }
+          });
+        });
+      }
+    });
 
-  // Define the size of the rectangular node.
-  const nodeWidth = 140;
-  const nodeHeight = 60;
+    // Initialize Cytoscape
+    const cy = cytoscape({
+      container: document.getElementById('graph-container'), // your container
+      elements: [...cyNodes, ...cyEdges],
+      layout: {
+        name: 'dagre', // if you install cytoscape-dagre extension; otherwise, try 'breadthfirst'
+        rankDir: 'TB', // 'TB' for top-to-bottom or 'BT' for bottom-to-top depending on your needs
+      },
+      style: [
+        {
+          selector: 'node',
+          style: {
+            label: 'data(label)',
+            'text-valign': 'center',
+            'background-color': '#ddd',
+            'text-outline-width': 1,
+            'text-outline-color': '#888'
+          }
+        },
+        {
+          selector: 'edge',
+          style: {
+            width: 2,
+            'line-color': '#999',
+            'target-arrow-color': '#999',
+            'target-arrow-shape': 'triangle'
+          }
+        }
+      ]
+    });
 
-  // Create an SVG element with viewBox and preserveAspectRatio for responsive scaling
-  const svg = container
-    .append("svg")
-    .attr("class", "svg-content")
-    .attr("viewBox", `0 0 ${width} ${height}`)
-    .attr("preserveAspectRatio", "xMidYMid meet");
+  void elk.layout(elkGraph).then((layout) => {
+    // layout.children now contains the computed positions for each node.
+    if (layout.children) {
+      layout.children.forEach((node: ElkNode) => {
+        if (Object.keys(node).includes("id")) {
+          if (Object.keys(node).includes("x")) {
+            if (Object.keys(node).includes("y")) {
+              const id = node["id" as keyof typeof node] as string;
+              const x = node["x" as keyof typeof node] as number;
+              const y = node["y" as keyof typeof node] as number;
+              const person = personsMap.get(node.id);
+              if (DEBUG) {
+                console.log(
+                  `Node ${id} at (${x}, ${y}) ${person ? "found" : "did not find"} ${person ? person.id : node.id}`
+                );
+              }
 
-  // Define margins
-  const margin = { top: 50, right: 50, bottom: 50, left: 50 };
-  const innerWidth = width - margin.left - margin.right;
-  const innerHeight = height - margin.top - margin.bottom;
-  const g = svg
-    .append("g")
-    .attr("transform", `translate(${margin.left},${margin.top})`);
+              const template = document.createElement("template");
+              template.innerHTML = person
+                ? getLabel(person)
+                : node.labels
+                  ? (node.labels[0].text ?? "badly defined node label")
+                  : "undefined node label";
+              const card = template.content.querySelector("sp-card");
+              if (card) {
+                // Position the card absolutely using the layout positions.
+                // ELK positions are for the top-left of each node.
+                card.style.position = "absolute";
+                card.style.left = `${x}px`;
+                card.style.top = `${y}px`;
 
-  // Convert the flat data into a hierarchy using d3.stratify
-  const rootNode = d3
-    .stratify<TreePerson>()
-    .id((d) => d.id)
-    .parentId((d) => d.parentId)(flatData);
+                containerElement.appendChild(template.content.cloneNode(true));
+              }
+            }
+          }
+        }
 
-  // Create a tree layout.
-  // Here we use innerWidth for horizontal spacing (d.x) and innerHeight for vertical (d.y)
-  const treeLayout = d3.tree<TreePerson>().size([innerWidth, innerHeight]);
-
-  // Compute the layout (assigns x and y positions)
-  treeLayout(rootNode);
-
-  // Flip the vertical coordinate so that the root (which was at d.y = 0) is at the bottom.
-  rootNode.each((d) => {
-    d.y = innerHeight - (d.y ?? 0);
+        // Append the card to your container (ensure it exists in your HTML)
+        document.getElementById("graph-container")?.appendChild(card);
+      });
+    }
   });
-
-  // Adjust link endpoints so that they stop at the node borders.
-  // For a vertical layout with the root at the bottom:
-  // - Parent (source) link: use y - nodeSize/2 (top edge of parent's square).
-  // - Child (target) link: use y + nodeSize/2 (bottom edge of child's square).
-  const adjustedLinks = rootNode.links().map((link) => ({
-    source: {
-      x: link.source.x,
-      /* eslint-disable-next-line */
-      y: link.source.y! - nodeHeight / 2,
-    },
-    target: {
-      x: link.target.x,
-      /* eslint-disable-next-line */
-      y: link.target.y! + nodeHeight / 2,
-    },
-  }));
-
-  // Draw links using a vertical link generator:
-  const linkGenerator = d3
-    .linkVertical<
-      d3.HierarchyPointLink<TreePerson>,
-      d3.HierarchyPointNode<TreePerson>
-    >()
-    .x((d) => d.x)
-    .y((d) => d.y);
-
-  g.selectAll(".link")
-    .data(adjustedLinks)
-    .enter()
-    .append("path")
-    .attr("class", "link")
-    .attr("d", (d) => linkGenerator(d))
-    .attr("fill", "none")
-    .attr("stroke", "#ccc");
-
-  // Draw nodes. Position nodes using d.x (horizontal) and d.y (vertical)
-  const node = g
-    .selectAll(".node")
-    .data(rootNode.descendants())
-    .enter()
-    .append("g")
-    .attr("class", "node")
-    .attr("transform", (d) => `translate(${d.x},${d.y})`);
-
-  node
-    .append("rect")
-    .attr("x", -nodeWidth / 2)
-    .attr("y", -nodeHeight / 2)
-    .attr("width", nodeWidth)
-    .attr("height", nodeHeight)
-    .attr("fill", "none")
-    .attr("stroke", "steelblue");
-
-  // Append text inside the node. Center the text both horizontally and vertically.
-  node
-    .append("foreignObject")
-    .attr("x", -nodeWidth / 2)
-    .attr("y", -nodeHeight / 2)
-    .attr("width", nodeWidth)
-    .attr("height", nodeHeight)
-    .append("xhtml:div")
-    .style("width", `${nodeWidth}px`)
-    .style("height", `${nodeHeight}px`)
-    .style("display", "flex")
-    .style("align-items", "start")
-    .style("justify-content", "center")
-    // Use CSS to wrap text as needed; here we allow wrapping and center text
-    .style("text-align", "center")
-    .style("font-size", "10px")
-    .html((d) => getLabel(d.data));
 };
 
-export default drawTree;
+export default drawDAG;

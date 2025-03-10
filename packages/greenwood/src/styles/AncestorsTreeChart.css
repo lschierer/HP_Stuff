@@ -1,7 +1,5 @@
 @import "@spectrum-css/typography";
 
-/* Greatly inspired by Ross Angus's work: https://codepen.io/ross-angus/pen/jwxMjL */
-
 .color-male {
   color: var(--color-male);
 }
@@ -15,42 +13,26 @@ iconify-icon {
   height: 2em;
 }
 
-.svg-container {
-  display: block;
-
-  position: relative;
-  width: 100%;
-  height: var(--timeline-height);
-  vertical-align: top;
-  overflow: hidden;
-}
-.svg-content {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.gedcomCard-Heading {
-  width: 100%;
-  text-wrap: pretty;
-}
+/* Greatly inspired by Ross Angus's work: https://codepen.io/ross-angus/pen/jwxMjL */
 
 /* Global styling */
+.leaf,
 .ascending-tree,
 .ascending-tree ul,
+.leaf li,
 .ascending-tree li {
   list-style: none;
   margin: 0;
   padding: 0;
   position: relative;
+  width: 50%; /* Ensure all nodes have equal sizes */
+  /* white-space: nowrap; /* Prevent wrapping */
 }
 
 /* Trunk styling */
-.ascending-tree {
-  margin: 0 0 1em;
+.ascending-tree,
+.leaf {
+  margin: 0;
   text-align: center;
 }
 
@@ -58,71 +40,75 @@ iconify-icon {
 .ascending-tree,
 .ascending-tree ul {
   display: table;
-}
-
-.ascending-tree ul {
   width: 100%;
 }
 
 /* li styling */
-.ascending-tree li {
+.ascending-tree li,
+.leaf li {
   display: table-cell;
-  padding: 0.5em 0;
+  padding: 0;
   vertical-align: bottom;
 }
 
-.ascending-tree li:after {
-  outline: solid 1px orange;
+/* Left horizontal bar */
+ul > li.ascending-tree > span::before {
+  outline: 0.1em solid #bebebe;
   content: "";
-  left: 0;
   position: absolute;
-  right: 0;
-  bottom: 0;
-}
-.ascending-tree li:first-child:before {
+
+  bottom: 0.5em;
   left: 50%;
 }
-.ascending-tree li:last-child:before {
-  right: 50%;
+
+/* Right horizontal bar */
+.ascending-tree li:last-child::after,
+.leaf li:last-child::after {
+  outline: 0.1em solid #bebebe;
+  content: "";
+  position: absolute;
+  bottom: 0.5em;
+  left: 0;
+  right: calc(50% + 0.1em); /* Fix artifacts */
 }
 
-.ascending-tree individual-name {
-  border: solid 0.1em green;
+/* Text box */
+.ascending-tree span,
+.leaf span {
+  border: solid 0.1em #bebebe;
   border-radius: 0.2em;
   display: inline-block;
-  margin: 0 0.2em 0.5em;
+  margin: 0 0.2em 1em;
   padding: 0.2em 0.5em;
   position: relative;
 }
 
-/* | */
-.ascending-tree ul:before,
-.ascending-tree individual-name:before,
-.ascending-tree span:before {
-  outline: solid 1px blue;
+/* Vertical bar */
+.ascending-tree span::before,
+.ascending-tree span::after,
+.leaf span::before,
+.leaf span::after {
+  outline: solid 0.1em #bebebe;
   content: "";
   height: 0.5em;
   left: 50%;
   position: absolute;
 }
 
-.ascending-tree ul:before {
-  top: -0.5em;
+/* Top vertical bar */
+.ascending-tree span::before {
+  top: -0.6em;
 }
 
-.ascending-tree individual-name:before,
-.ascending-tree span:before {
-  top: -0.55em;
+/* Bottom vertical bar */
+.ascending-tree span:after,
+.leaf span::after {
+  bottom: -0.6em;
 }
 
-/* The root node doesn't connect downwards */
-.ascending-tree > li {
-  margin-bottom: 0;
-}
-
-.ascending-tree > li:before,
-.ascending-tree > li:after,
-.ascending-tree > li > individual-name::after,
-.ascending-tree > li > span::after {
+/* Prune leaves and root */
+.ascending-tree span:first-child:before, /* (top) leaves */
+.ascending-tree > li > span:after {
+  /* (bottom) root */
   outline: none;
 }

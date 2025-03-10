@@ -1,5 +1,3 @@
-import { StringEnum as PersonStrings } from "../../../schemas/gedcom/person.ts";
-
 import { type GedcomPerson } from "../../../schemas/gedcom/index.ts";
 
 import "../IndividualName.ts";
@@ -7,7 +5,7 @@ import "../IndividualName.ts";
 import GrampsState from "../state.ts";
 import { findFatherForChild, findMotherForChild } from "../state.ts";
 
-import { TreePerson } from "./TreePerson.ts";
+import { type TreePerson } from "./TreePerson.ts";
 import IndividualName from "../IndividualName.ts";
 
 import debugFunction from "../../../lib/debug.ts";
@@ -21,175 +19,186 @@ export default class AncestorsTreeChart extends HTMLElement {
   public isRoot: boolean = false;
   public maxDepth: number = -1;
 
-  private treeData: TreePerson[] = new Array<TreePerson>();
-  private PresentInTree = new Set<string>();
+  private extended_family = new Map<string, TreePerson>();
 
   protected populateLocalAttributes = () => {
     for (const attr of this.attributes) {
       if (!attr.name.toLowerCase().localeCompare("grampsId".toLowerCase())) {
         this.grampsId = attr.value;
       } else if (
-        !attr.name.toLowerCase().localeCompare("isRoot".toLowerCase())
-      ) {
-        this.isRoot = true;
-      } else if (
         !attr.name.toLowerCase().localeCompare("maxDepth".toLowerCase())
       ) {
         this.maxDepth = Number(attr.value);
+      } else if (
+        !attr.name.toLowerCase().localeCompare("isRoot".toLowerCase())
+      ) {
+        this.isRoot = true;
       }
-    }
-  };
-
-  protected nameForPerson = (
-    person: GedcomPerson.GedcomElement,
-    withoutNick: boolean = false
-  ) => {
-    let name = "";
-    name = person.primary_name.first_name;
-    if (!withoutNick && person.primary_name.nick) {
-      name = name.concat(` (${person.primary_name.nick})`);
-    }
-    let lastName = person.primary_name.surname_list.find((sn) => {
-      return !sn.origintype.string.localeCompare(
-        PersonStrings.Enum["Birth Name"]
-      );
-    });
-    if (!lastName) {
-      lastName = person.primary_name.surname_list.find((sn) => {
-        return !sn.origintype.string.localeCompare(PersonStrings.Enum["Given"]);
-      });
-    }
-    if (!lastName) {
-      lastName = person.primary_name.surname_list.find((sn) => {
-        return sn.primary;
-      });
-    }
-    if (!lastName) {
-      lastName = person.primary_name.surname_list[0];
-    }
-    if (lastName.surname.length) {
-      if (DEBUG) {
-        console.log(`found lastname ${lastName.surname} for ${person.id}`);
-      }
-      name = name.concat(` ${lastName.surname}`);
-    }
-    if (person.primary_name.suffix) {
-      name = name.concat(` ${person.primary_name.suffix}`);
-    }
-    return name;
-  };
-
-  protected treeSetup = () => {
-    const rootPerson = GrampsState.people.get(this.grampsId);
-    if (!rootPerson) {
-      if (DEBUG) {
-        console.error(`failed to find root person for ${this.grampsId}`);
-      }
-      return;
-    } else {
-      const node: TreePerson = {
-        name: this.nameForPerson(rootPerson),
-        id: rootPerson.id,
-        generation: 0,
-        data: rootPerson,
-        parentId: null,
-      };
-      const valid = TreePerson.safeParse(node);
-      if (valid.success) {
-        this.PresentInTree.add(valid.data.id);
-        this.treeData.push(node);
-        this.addToTree(node, 0);
-      } else {
-        if (DEBUG) {
-          console.error(
-            `failed to create node for root person ${this.grampsId}`,
-            valid.error.message
-          );
-        }
-      }
-
-      if (DEBUG) {
-        console.log(`treeData is \n`, JSON.stringify(this.treeData));
-      }
-    }
-  };
-
-  protected addToTree(localRootNode: TreePerson, generation: number = -2) {
-    if (generation < 0) {
-      generation = 0;
     }
     if (DEBUG) {
-      console.log(`finding parents of ${localRootNode.id} to add to tree`);
+      console.log(
+        `found params grampsId: '${this.grampsId}', maxDepth: '${this.maxDepth}', isRoot: ${this.isRoot}`
+      );
     }
+  };
+
+  buildGenerationTable = (root: TreePerson) => {
+    // 2. root is already found and passed to this function.
+
+    // 3. Use a breadth-first search (BFS) to determine generations
+    const generations: TreePerson[][] = new Array<Array<TreePerson>>();
+    const queue: TreePerson[] = [{ ...root, generation: 0 }];
     const ine = new IndividualName();
 
-    const father = findFatherForChild(localRootNode.data);
-    if (father) {
-      if (DEBUG) {
-        console.log(`found father "${father.id}" for "${localRootNode.id}"`);
-      }
-      const parentNode: TreePerson = {
-        name: ine.displayName(father),
-        id: father.id,
-        generation: generation,
-        data: father,
-        parentId: null,
-      };
+    while (queue.length > 0) {
+      const person = queue.shift();
 
-      if (localRootNode.parentId) {
-        localRootNode.parentId.push(father.id);
-      } else {
-        localRootNode.parentId = [father.id];
-      }
+      // Initialize the generation array if needed
+      if (person) {
+        if (person.generation != undefined) {
+          if (!Array.isArray(generations[person.generation])) {
+            generations[person.generation] = new Array<TreePerson>();
+          }
+          generations[person.generation].push(person);
+        } else {
+          person.generation = 0;
+        }
+        const father = findFatherForChild(person.data);
+        if (father) {
+          const node: TreePerson = {
+            id: father.id,
+            name: ine.displayName(father),
+            generation: (person.generation ?? 0) + 1,
+            data: father,
+            parents: null,
+          };
+          if (!this.extended_family.has(father.id)) {
+            queue.push(node);
+            this.extended_family.set(father.id, node);
+          }
 
-      if (generation < this.maxDepth) {
-        this.treeData.push(parentNode);
+          if (Array.isArray(person.parents)) {
+            person.parents.push(node);
+          } else {
+            person.parents = [node];
+          }
+        }
+
+        const mother = findMotherForChild(person.data);
+        if (mother) {
+          const node: TreePerson = {
+            id: mother.id,
+            name: ine.displayName(mother),
+            generation: (person.generation ?? 0) + 1,
+            data: mother,
+            parents: null,
+          };
+
+          if (!this.extended_family.has(mother.id)) {
+            queue.push(node);
+            this.extended_family.set(mother.id, node);
+          }
+
+          if (Array.isArray(person.parents)) {
+            person.parents.push(node);
+          } else {
+            person.parents = [node];
+          }
+        }
       }
     }
 
-    const mother = findMotherForChild(localRootNode.data);
-    if (mother) {
-      if (DEBUG) {
-        console.log(`found mother "${mother.id}" for "${localRootNode.id}"`);
-      }
-      const parentNode: TreePerson = {
-        name: ine.displayName(mother),
-        id: mother.id,
-        generation: generation,
-        data: mother,
-        parentId: null,
-      };
+    // 5. Build the HTML table.
+    // The header row includes a "Generation" label plus columns for each person slot.
+    let html = "\n";
+    html += this.printList(generations[0][0], 0, true);
 
-      if (localRootNode.parentId) {
-        localRootNode.parentId.push(mother.id);
-      } else {
-        localRootNode.parentId = [mother.id];
-      }
+    return html;
+  };
 
-      if (generation < this.maxDepth) {
-        this.treeData.push(parentNode);
-      }
+  protected printList = (
+    localRoot: TreePerson,
+    generation = 0,
+    isRoot = false
+  ) => {
+    if (DEBUG) {
+      console.log(
+        `printList called for generation ${generation} and localRoot ${localRoot.id}`
+      );
     }
-  }
+
+    let returnable = "";
+    if (isRoot) {
+      returnable += `<ul class="ascending-tree" id="generations-${generation}">`;
+    }
+
+    const ine = new IndividualName();
+
+    if (DEBUG) {
+      console.log(`current localRoot is is `, localRoot.id);
+    }
+    if (Array.isArray(localRoot.parents) && localRoot.parents.length) {
+      returnable += `
+                <li class="ascending-tree">
+                  <ul class="${Array.isArray(localRoot.parents) && localRoot.parents.length ? "ascending-tree" : "leaf"}" id="generations-${generation + 1}">
+                    ${localRoot.parents.map((p) => this.printList(p as TreePerson, generation + 1)).join("\n")}
+                  </ul>
+                  <span>
+                    ${ine.displayName(localRoot.data)}
+                  </span>
+                </li>
+              `;
+    } else {
+      returnable += `
+                <li class="leaf">
+                  <span>
+                    ${ine.displayName(localRoot.data)}
+                  </span>
+                </li>
+              `;
+    }
+
+    if (isRoot) {
+      returnable += "</ul>";
+    }
+    return returnable;
+  };
 
   connectedCallback() {
     this.populateLocalAttributes();
-    this.treeSetup();
+
     const template = document.createElement("template");
     template.innerHTML = `
       <div id="familyTree" class="svg-container">
       </div>
     `;
-    if (this.treeData.length) {
+
+    const rootPerson = GrampsState.people.get(this.grampsId);
+    if (rootPerson) {
+      const ine = new IndividualName();
+      const rootNode: TreePerson = {
+        id: rootPerson.id,
+        name: ine.displayName(rootPerson),
+        generation: 0,
+        data: rootPerson,
+        parentId: new Array<string>(),
+      };
+
+      this.extended_family.set(rootNode.id, rootNode);
+
+      const table = this.buildGenerationTable(rootNode, this.extended_family);
       if (DEBUG) {
-        console.log(`connectedCallback sees populated treeData`);
+        console.log(
+          `after buildGenerationTable, I have map with size ${this.extended_family.size}`
+        );
       }
-      const graphSelector = "#familyTree";
-      this.innerHTML = `
-        `;
-      const graphDiv = template.content.querySelector(graphSelector);
-      if (graphDiv) {
-        //drawTree(this.treeData, graphDiv);
+      if (table) {
+        const familyTreeDiv = template.content.querySelector("#familyTree");
+        if (familyTreeDiv) {
+          const t2 = document.createElement("template");
+          template.innerHTML = table;
+          familyTreeDiv.appendChild(t2.content.cloneNode(true));
+        }
       }
     }
 

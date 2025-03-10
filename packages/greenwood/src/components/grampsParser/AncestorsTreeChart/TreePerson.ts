@@ -5,8 +5,8 @@ import { GedcomPerson } from "../../../schemas/gedcom/index.ts";
 export const TreePerson = z.object({
   name: z.string(),
   id: z.string(),
-  generation: z.number(),
+  generation: z.number().optional(),
   data: GedcomPerson.GedcomElement,
-  parentId: z.string().array().nullable(),
+  parents: z.any().array().nullable(),
 });
 export type TreePerson = z.infer<typeof TreePerson>;

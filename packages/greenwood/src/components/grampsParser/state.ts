@@ -93,70 +93,80 @@ export const getGrampsData = async (base: string) => {
 };
 
 export const findFatherForChild = (child: GedcomPerson.GedcomElement) => {
+  if (DEBUG) {
+    console.log(`findFatherForChild for child ${child.id}`);
+  }
   let family_id: string = "";
   /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
   for (const [k2, f] of GrampsState.families) {
-    if (f.child_ref_list.length) {
-      child.parent_family_list.map((pf) => {
-        const match = f.child_ref_list.find((crle) => {
-          return crle.ref.localeCompare(pf);
+    if (!family_id.length) {
+      if (f.child_ref_list.length) {
+        f.child_ref_list.forEach((crl) => {
+          if (!crl.ref.localeCompare(child.handle)) {
+            if (DEBUG) {
+              console.log(`found matching family ${f.id}`);
+            }
+            family_id = f.id;
+          }
         });
-        if (match) {
-          family_id = f.id;
-        }
-      });
+      }
     }
   }
-  let found = false;
-  /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
-  for (const [k, p] of GrampsState.people) {
-    /* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */
-    if (!found) {
-      if (family_id.length) {
-        const family = GrampsState.families.get(family_id);
-        if (family) {
-          if (family.father_handle) {
-            if (!family.father_handle.localeCompare(p.handle)) {
-              found = true;
-              return p;
-            }
+  const family = GrampsState.families.get(family_id);
+  let father_id = "";
+  if (family) {
+    if (family.father_handle) {
+      const parent_handle = family.father_handle;
+      GrampsState.people.forEach((pp) => {
+        if (!father_id.length && !pp.handle.localeCompare(parent_handle)) {
+          if (DEBUG) {
+            console.log(`found father ${pp.id}`);
           }
+          father_id = pp.id;
         }
+      });
+      if (father_id.length) {
+        return GrampsState.people.get(father_id);
       }
     }
   }
 };
 
 export const findMotherForChild = (child: GedcomPerson.GedcomElement) => {
+  if (DEBUG) {
+    console.log(`findMotherForChild for child ${child.id}`);
+  }
   let family_id: string = "";
   /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
   for (const [k2, f] of GrampsState.families) {
-    if (f.child_ref_list.length) {
-      child.parent_family_list.map((pf) => {
-        const match = f.child_ref_list.find((crle) => {
-          return crle.ref.localeCompare(pf);
+    if (!family_id.length) {
+      if (f.child_ref_list.length) {
+        f.child_ref_list.forEach((crl) => {
+          if (!crl.ref.localeCompare(child.handle)) {
+            if (DEBUG) {
+              console.log(`found matching family ${f.id}`);
+            }
+            family_id = f.id;
+          }
         });
-        if (match) {
-          family_id = f.id;
-        }
-      });
+      }
     }
   }
-  let found = false;
-  /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
-  for (const [k, p] of GrampsState.people) {
-    /* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */
-    if (!found) {
-      if (family_id.length) {
-        const family = GrampsState.families.get(family_id);
-        if (family) {
-          if (family.mother_handle) {
-            if (!family.mother_handle.localeCompare(p.handle)) {
-              found = true;
-              return p;
-            }
+  const family = GrampsState.families.get(family_id);
+  let mother_id = "";
+  if (family) {
+    if (family.mother_handle) {
+      const parent_handle = family.mother_handle;
+      GrampsState.people.forEach((pp) => {
+        if (!mother_id.length && !pp.handle.localeCompare(parent_handle)) {
+          if (DEBUG) {
+            console.log(`found father ${pp.id}`);
           }
+          mother_id = pp.id;
         }
+      });
+      if (mother_id.length) {
+        return GrampsState.people.get(mother_id);
       }
     }
   }
