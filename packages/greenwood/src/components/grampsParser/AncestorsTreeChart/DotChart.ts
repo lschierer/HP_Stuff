@@ -111,10 +111,12 @@ const initialSetup = (treeMap: Map<string, TreePerson>) => {
 
   // Create nodes
   for (const node of treeMap.values()) {
+    const genderClass = node.data.gender ? "father" : "mother";
     graph.addNode(
       new Node(node.id, {
         [dotAttribute.label]: ine.displayName(node.data),
         [dotAttribute.shape]: "rect",
+        [dotAttribute.class]: `familyNode ${genderClass}`,
       })
     );
   }
@@ -170,6 +172,7 @@ const initialSetup = (treeMap: Map<string, TreePerson>) => {
           [dotAttribute.width]: 0.05,
           [dotAttribute.height]: 0.05,
           [dotAttribute.label]: "",
+          [dotAttribute.class]: "familyNode junction",
         });
         graph.addNode(junctionNode);
 
