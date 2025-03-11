@@ -132,6 +132,7 @@ export default class AncestorsTreeChart extends HTMLElement {
     if (DEBUG) {
       console.log(`current localRoot is is `, localRoot.id);
     }
+
     if (Array.isArray(localRoot.parents) && localRoot.parents.length) {
       returnable += `
                 <li class="ascending-tree">

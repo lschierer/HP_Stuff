@@ -117,6 +117,7 @@ const initialSetup = (treeMap: Map<string, TreePerson>) => {
         [dotAttribute.label]: ine.displayName(node.data),
         [dotAttribute.shape]: "rect",
         [dotAttribute.class]: `familyNode ${genderClass}`,
+        [dotAttribute.href]: ine.buildLinkTarget(node.data),
       })
     );
   }
