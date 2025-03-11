@@ -4,7 +4,6 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 const fileDebug: Record<string, boolean> = {
-  "/components/DirectoryIndex.ts": false,
   "/components/FanFiction/Harry_Potter_-_Nephilim/Appendices/PowerLevelTable.ts":
     false,
   "/components/GlobalFooter.ts": false,
@@ -12,8 +11,9 @@ const fileDebug: Record<string, boolean> = {
   "/components/ThemeSelector.ts": false,
   "/components/TopHeader.ts": false,
   "/components/grampsParser/AncestorsTreeChart/AncestorsTree.ts": false,
-  "/components/grampsParser/AncestorsTreeChart/SVGChart.ts": true,
-  "/components/grampsParser/AncestorsTreeChart/TreeChart.ts": true,
+  "/components/grampsParser/AncestorsTreeChart/DotChart.ts": true,
+  "/components/grampsParser/AncestorsTreeChart/SVGChart.ts": false,
+  "/components/grampsParser/AncestorsTreeChart/TreeChart.ts": false,
   "/components/grampsParser/AncestorsTreeChart/TreePerson.ts": false,
   "/components/grampsParser/Family.ts": false,
   "/components/grampsParser/FamilyListing.ts": false,
@@ -22,11 +22,11 @@ const fileDebug: Record<string, boolean> = {
   "/components/grampsParser/IndividualName.ts": false,
   "/components/grampsParser/event.ts": false,
   "/components/grampsParser/genealogical-data.ts": false,
-  "/components/grampsParser/simpleIndividual.ts": false,
   "/components/grampsParser/state.ts": false,
   "/components/side-nav.ts": false,
   "/components/theme.ts": false,
   "/components/v-timeline.ts": false,
+
   "/layouts/Bookmarks.ts": false,
   "/lib/BookmarksList.ts": false,
   "/lib/GedcomConstants.ts": false,
