@@ -11,7 +11,7 @@ const fileDebug: Record<string, boolean> = {
   "/components/ThemeSelector.ts": false,
   "/components/TopHeader.ts": false,
   "/components/grampsParser/AncestorsTreeChart/AncestorsTree.ts": false,
-  "/components/grampsParser/AncestorsTreeChart/DotChart.ts": true,
+  "/components/grampsParser/AncestorsTreeChart/DotChart.ts": false,
   "/components/grampsParser/AncestorsTreeChart/SVGChart.ts": false,
   "/components/grampsParser/AncestorsTreeChart/TreeChart.ts": false,
   "/components/grampsParser/AncestorsTreeChart/TreePerson.ts": false,
