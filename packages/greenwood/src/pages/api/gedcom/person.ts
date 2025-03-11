@@ -1,8 +1,9 @@
-import { z } from "zod";
 import { GedcomPerson } from "../../../schemas/gedcom/index.ts";
 
 import debugFunction from "../../../lib/debug.ts";
-const DEBUG = debugFunction(new URL(import.meta.url).pathname);
+
+const FILENAME = new URL(import.meta.url).pathname;
+const DEBUG = debugFunction(FILENAME);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
@@ -12,21 +13,26 @@ export async function handler(request: Request) {
     request.url.slice(request.url.indexOf("?"))
   );
   const id = params.has("id") ? params.get("id") : "";
-
-  const peopleImport = await import("../../../assets/gedcom/people.json");
-  const valid = z
-    .array(GedcomPerson.GedcomElement)
-    .safeParse(peopleImport.default);
+  const jsonFile: string = "../../../assets/gedcom/people.json";
+  const peopleImport = (await import(jsonFile)) as object;
+  const valid = GedcomPerson.GedcomElement.array().safeParse(
+    peopleImport["default" as keyof typeof peopleImport]
+  );
   if (valid.success) {
-    if(DEBUG) {
-      console.log(`successful parse`);
+    if (DEBUG) {
+      console.log(`${FILENAME} has a successful parse of ${jsonFile}`);
     }
   } else {
-    if(DEBUG) {
+    if (DEBUG) {
       console.error(valid.error.message);
     }
   }
   const people = valid.data;
+  if (DEBUG) {
+    console.log(
+      `${FILENAME} has ${people ? people.length : 0} people, I will now look for id "${id}"`
+    );
+  }
   let body: GedcomPerson.GedcomElement | object = {};
   if (people && people.length > 0 && id) {
     const person = people.find((p) => {
@@ -34,6 +40,8 @@ export async function handler(request: Request) {
     });
     if (person) {
       body = person;
+    } else {
+      console.error(`${FILENAME} failed to find person for ${id}`);
     }
   }
 
