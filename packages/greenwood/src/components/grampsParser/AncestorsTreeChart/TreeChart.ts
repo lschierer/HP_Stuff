@@ -14,6 +14,8 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
+import drawTree from "./DotChart.ts";
+
 export default class AncestorsTreeChart extends HTMLElement {
   public grampsId: string = "";
   public isRoot: boolean = false;
@@ -110,10 +112,12 @@ export default class AncestorsTreeChart extends HTMLElement {
 
     // 5. Build the HTML table.
     // The header row includes a "Generation" label plus columns for each person slot.
-    let html = "\n";
-    html += this.printList(generations[0][0], 0, true);
-
-    return html;
+    /*
+      let html = "\n";
+      html += this.printList(generations[0][0], 0, true);
+      return html;
+    */
+    return drawTree(this.extended_family);
   };
 
   protected printList = (
@@ -164,7 +168,7 @@ export default class AncestorsTreeChart extends HTMLElement {
     return returnable;
   };
 
-  connectedCallback() {
+  async connectedCallback() {
     this.populateLocalAttributes();
 
     const template = document.createElement("template");
@@ -181,12 +185,12 @@ export default class AncestorsTreeChart extends HTMLElement {
         name: ine.displayName(rootPerson),
         generation: 0,
         data: rootPerson,
-        parentId: new Array<string>(),
+        parents: new Array<TreePerson>(),
       };
 
       this.extended_family.set(rootNode.id, rootNode);
 
-      const table = this.buildGenerationTable(rootNode, this.extended_family);
+      const table = await this.buildGenerationTable(rootNode);
       if (DEBUG) {
         console.log(
           `after buildGenerationTable, I have map with size ${this.extended_family.size}`
@@ -195,9 +199,7 @@ export default class AncestorsTreeChart extends HTMLElement {
       if (table) {
         const familyTreeDiv = template.content.querySelector("#familyTree");
         if (familyTreeDiv) {
-          const t2 = document.createElement("template");
-          template.innerHTML = table;
-          familyTreeDiv.appendChild(t2.content.cloneNode(true));
+          familyTreeDiv.appendChild(table);
         }
       }
     }

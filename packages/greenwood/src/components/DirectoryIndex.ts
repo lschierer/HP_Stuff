@@ -3,6 +3,8 @@ import { getContentByRoute } from "@greenwood/cli/src/data/client.js";
 import "iconify-icon";
 import "@spectrum-web-components/card/sp-card.js";
 
+import { type Page } from "@greenwood/cli";
+
 import * as Greenwood from "../lib/greenwoodPages.ts";
 
 import debugFunction from "../lib/debug.ts";
@@ -17,7 +19,7 @@ import DirectoryIndexCSS from "../styles/DirectoryIndex.css" with { type: "css" 
 
 export default class DirectoryIndex extends HTMLElement {
   private _directory = "";
-  private _entries = new Array<Greenwood.Page>();
+  private _entries = new Array<Page>();
   private _recurse = false;
 
   async connectedCallback() {
@@ -53,8 +55,8 @@ export default class DirectoryIndex extends HTMLElement {
     const entries = (
       (await getContentByRoute(
         this._directory.length > 0 ? this._directory : "/"
-      )) as Array<Greenwood.Page | undefined>
-    ).sort((a: Greenwood.Page | undefined, b: Greenwood.Page | undefined) => {
+      )) as Array<Page | undefined>
+    ).sort((a: Page | undefined, b: Page | undefined) => {
       if (a == undefined) {
         if (b == undefined) {
           return 0;
