@@ -119,35 +119,103 @@ const initialSetup = (treeMap: Map<string, TreePerson>) => {
     );
   }
 
-  // Create edges based on the parent relationship
+  // Create a map to track parent pairs for each person
+  const parentPairs = new Map<string, string[]>();
+
+  // Create a map to track junction nodes for parent pairs
+  const junctionNodes = new Map<string, string>();
+
+  // Group parents by child
   for (const person of treeMap.values()) {
-    for (const parentId of person.parents) {
+    if (person.parents.length > 0) {
+      parentPairs.set(person.id, person.parents);
+    }
+  }
+
+  // Create edges based on the parent relationship
+  for (const [childId, parents] of parentPairs) {
+    const childNode = graph.getNode(childId);
+    if (!childNode) continue;
+
+    if (parents.length === 1) {
+      // Single parent case - direct connection
+      const parentId = parents[0];
       const parent = treeMap.get(parentId);
       if (parent) {
         const parentNode = graph.getNode(parentId);
         if (parentNode) {
-          const personNode = graph.getNode(person.id);
-          if (personNode) {
-            if (parent.data.gender) {
+          const genderClass = parent.data.gender ? "father" : "mother";
+          graph.addEdge(
+            new Edge([childNode, parentNode], {
+              [dotAttribute.class]: `familyNode ${genderClass}`,
+              [dotAttribute.dir]: "back",
+            })
+          );
+        }
+      }
+    } else if (parents.length === 2) {
+      // Sort parent IDs to ensure consistent junction node IDs
+      const sortedParents = [...parents].sort();
+      const parentPairKey = sortedParents.join("_");
+
+      // Create or get existing junction node
+      let junctionId = junctionNodes.get(parentPairKey);
+      if (!junctionId) {
+        junctionId = `junction_${parentPairKey}`;
+        junctionNodes.set(parentPairKey, junctionId);
+
+        // Create new junction node
+        const junctionNode = new Node(junctionId, {
+          [dotAttribute.shape]: "point",
+          [dotAttribute.width]: 0.05,
+          [dotAttribute.height]: 0.05,
+          [dotAttribute.label]: "",
+        });
+        graph.addNode(junctionNode);
+
+        // Connect parents to junction
+        for (const parentId of parents) {
+          const parent = treeMap.get(parentId);
+          if (parent) {
+            const parentNode = graph.getNode(parentId);
+            if (parentNode) {
+              const genderClass = parent.data.gender ? "father" : "mother";
               graph.addEdge(
-                new Edge([personNode, parentNode], {
-                  [dotAttribute.class]: "familyNode father",
-                  [dotAttribute.dir]: "back",
-                })
-              );
-            } else {
-              graph.addEdge(
-                new Edge([personNode, parentNode], {
-                  [dotAttribute.class]: "familyNode mother",
+                new Edge([junctionNode, parentNode], {
+                  [dotAttribute.class]: `familyNode ${genderClass}`,
                   [dotAttribute.dir]: "back",
                 })
               );
             }
           }
         }
-      } else {
-        if (DEBUG) {
-          console.log(`treeMap.get returned invalid value for ${parentId}`);
+      }
+
+      // Connect junction to child
+      const jNode = graph.getNode(junctionId);
+      if (jNode) {
+        graph.addEdge(
+          new Edge([childNode, jNode], {
+            [dotAttribute.class]: "familyNode junction",
+            [dotAttribute.dir]: "back",
+          })
+        );
+      }
+    } else {
+      // More than 2 parents case (unusual but possible)
+      for (const parentId of parents) {
+        const parent = treeMap.get(parentId);
+        if (parent) {
+          const parentNode = graph.getNode(parentId);
+          if (parentNode) {
+            const genderClass = parent.data.gender ? "father" : "mother";
+            graph.addEdge(
+              new Edge([childNode, parentNode], {
+                [dotAttribute.class]: `familyNode ${genderClass}`,
+                [dotAttribute.dir]: "back",
+              })
+            );
+          }
         }
       }
     }
