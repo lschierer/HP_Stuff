@@ -1,0 +1,26 @@
+{
+  "name": "@hp-stuff/infrastructure",
+  "version": "1.0.0",
+  "description": "infrastructure package for the hp-fan.schierer.org website",
+  "type": "module",
+  "scripts": {
+    "dev": "sst dev",
+    "build": "sst build",
+    "deploy": "sst deploy",
+    "remove": "sst remove",
+    "console": "sst console",
+    "typecheck": "tsc --noEmit",
+    "test": "sst bind -- vitest run",
+    "gen": "hygen"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "typescript": "^5.8.2"
+  },
+  "dependencies": {
+    "sst": "^3.9.36"
+  }
+}
