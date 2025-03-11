@@ -1,5 +1,3 @@
-import { type GedcomPerson } from "../../../schemas/gedcom/index.ts";
-
 import "../IndividualName.ts";
 
 import GrampsState from "../state.ts";
@@ -72,7 +70,7 @@ export default class AncestorsTreeChart extends HTMLElement {
             name: ine.displayName(father),
             generation: (person.generation ?? 0) + 1,
             data: father,
-            parents: null,
+            parents: new Array<string>(),
           };
           if (!this.extended_family.has(father.id)) {
             queue.push(node);
@@ -80,9 +78,9 @@ export default class AncestorsTreeChart extends HTMLElement {
           }
 
           if (Array.isArray(person.parents)) {
-            person.parents.push(node);
+            person.parents.push(node.id);
           } else {
-            person.parents = [node];
+            person.parents = [node.id];
           }
         }
 
@@ -93,7 +91,7 @@ export default class AncestorsTreeChart extends HTMLElement {
             name: ine.displayName(mother),
             generation: (person.generation ?? 0) + 1,
             data: mother,
-            parents: null,
+            parents: new Array<string>(),
           };
 
           if (!this.extended_family.has(mother.id)) {
@@ -102,21 +100,14 @@ export default class AncestorsTreeChart extends HTMLElement {
           }
 
           if (Array.isArray(person.parents)) {
-            person.parents.push(node);
+            person.parents.push(node.id);
           } else {
-            person.parents = [node];
+            person.parents = [node.id];
           }
         }
       }
     }
 
-    // 5. Build the HTML table.
-    // The header row includes a "Generation" label plus columns for each person slot.
-    /*
-      let html = "\n";
-      html += this.printList(generations[0][0], 0, true);
-      return html;
-    */
     return drawTree(this.extended_family);
   };
 
@@ -145,7 +136,14 @@ export default class AncestorsTreeChart extends HTMLElement {
       returnable += `
                 <li class="ascending-tree">
                   <ul class="${Array.isArray(localRoot.parents) && localRoot.parents.length ? "ascending-tree" : "leaf"}" id="generations-${generation + 1}">
-                    ${localRoot.parents.map((p) => this.printList(p as TreePerson, generation + 1)).join("\n")}
+                    ${localRoot.parents
+                      .map((p) => {
+                        const pi = this.extended_family.get(p);
+                        if (pi) {
+                          return this.printList(pi, generation + 1);
+                        } else return "";
+                      })
+                      .join("\n")}
                   </ul>
                   <span>
                     ${ine.displayName(localRoot.data)}
@@ -185,7 +183,7 @@ export default class AncestorsTreeChart extends HTMLElement {
         name: ine.displayName(rootPerson),
         generation: 0,
         data: rootPerson,
-        parents: new Array<TreePerson>(),
+        parents: new Array<string>(),
       };
 
       this.extended_family.set(rootNode.id, rootNode);

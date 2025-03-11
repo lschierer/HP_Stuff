@@ -1,5 +1,70 @@
 @import "@spectrum-css/typography";
 
+.cluster {
+  color: var(--sl-color-bg);
+  fill: var(--sl-color-bg);
+}
+
+.node {
+  stroke: var(--sl-color-accent-high);
+  fill: var(--sl-color-bg);
+}
+
+.familyNode.edge {
+  stroke: var(--spectrum-purple-400);
+  fill: none;
+}
+
+.familyNode.father.edge {
+  stroke: var(--spectrum-blue-600);
+  fill: none;
+}
+
+.familyNode.mother.edge {
+  stroke: var(--spectrum-red-600);
+  fill: none;
+}
+
+.familyNode.node {
+  stroke: var(--spectrum-purple-600);
+  fill: var(--sl-color-bg);
+}
+
+.structural.familyNode.edge {
+  stroke: var(--spectrum-yellow-900);
+  fill: none;
+}
+
+.internal.personNode.node {
+  stroke: var(--spectrum-orange-700);
+  fill: var(--sl-color-bg);
+}
+
+.internal.familyNode.node {
+  stroke: var(--spectrum-orange-600);
+  fill: var(--sl-color-bg);
+}
+
+.internal.gp2g {
+  stroke: var(--spectrum-orange-500);
+  fill: none;
+}
+
+.internal.g2f {
+  stroke: var(--spectrum-orange-400);
+  fill: none;
+}
+
+.internal.g2fp {
+  stroke: var(--spectrum-orange-400);
+  fill: none;
+}
+
+.internal.g2f2 {
+  stroke: var(--spectrum-orange-300);
+  fill: none;
+}
+
 .color-male {
   color: var(--color-male);
 }

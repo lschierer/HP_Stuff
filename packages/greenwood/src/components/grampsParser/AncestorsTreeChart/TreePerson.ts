@@ -7,6 +7,6 @@ export const TreePerson = z.object({
   id: z.string(),
   generation: z.number().optional(),
   data: GedcomPerson.GedcomElement,
-  parents: z.any().array().nullable(),
+  parents: z.string().array(),
 });
 export type TreePerson = z.infer<typeof TreePerson>;
