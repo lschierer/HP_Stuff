@@ -1,5 +1,6 @@
 import { greenwoodPluginPostCss } from "@greenwood/plugin-postcss";
 import { greenwoodPluginGoogleAnalytics } from "@greenwood/plugin-google-analytics";
+import { greenwoodPluginAdapterAws } from "@greenwood/plugin-adapter-aws";
 
 import process from "node:process";
 
@@ -58,6 +59,9 @@ export default {
       provider: (compilation, options) =>
         new ProcessEnvReplaceResource(compilation, options),
     },
+    greenwoodPluginAdapterAws({
+      preset: "sst",
+    }),
     greenwoodPluginPostCss({
       extendConfig: true,
     }),
