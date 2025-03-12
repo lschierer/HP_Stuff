@@ -1,8 +1,8 @@
 @import "@spectrum-css/typography";
 
 :host {
-  --color-male: #006657;
-  --color-female: #380097;
+  --color-male: var(--spectrum-green-900);
+  --color-female: var(--spectrum-purple-900);
   --timeline-height: 47vh;
 }
 
