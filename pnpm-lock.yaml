@@ -364,9 +364,6 @@ importers:
       '@iconify-json/ion':
         specifier: ^1.2.2
         version: 1.2.2
-      '@iconify/json':
-        specifier: ^2.2.316
-        version: 2.2.316
       '@lit/context':
         specifier: ^1.1.4
         version: 1.1.4
@@ -2034,9 +2031,6 @@ packages:
 
   '@iconify/json@2.2.309':
     resolution: {integrity: sha512-xgaPDmVNeHmggEDHrbyntqPw8YzqIf96XOOqC7HbbDS4lf4a6mvYVCDYINSZjsw2Wvak3CL7PZLQ9ZgqoypMtg==}
-
-  '@iconify/json@2.2.316':
-    resolution: {integrity: sha512-nVBinEhlXrX7ZDNNjiR6pN06SmB/SzqxgpR+DkuNSMglC+/awrBiuF3RUwoCkJ3cDTK9aa86JJoKnIPFXSqo6g==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -12087,11 +12081,6 @@ snapshots:
       '@iconify/types': 2.0.0
 
   '@iconify/json@2.2.309':
-    dependencies:
-      '@iconify/types': 2.0.0
-      pathe: 1.1.2
-
-  '@iconify/json@2.2.316':
     dependencies:
       '@iconify/types': 2.0.0
       pathe: 1.1.2

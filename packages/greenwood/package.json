@@ -12,7 +12,6 @@
   "dependencies": {
     "@hpcc-js/wasm-graphviz": "^1.7.0",
     "@iconify-json/ion": "^1.2.2",
-    "@iconify/json": "^2.2.316",
     "@lit/context": "^1.1.4",
     "@spectrum-css/actionbutton": "^7.1.2",
     "@spectrum-css/alertbanner": "^3.1.0",
