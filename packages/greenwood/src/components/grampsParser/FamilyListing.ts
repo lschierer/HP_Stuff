@@ -1,8 +1,7 @@
 import "./IndividualName.ts";
 import "./event.ts";
 
-import GrampsState from "./state.ts";
-import { getGrampsData, familyListDisplayedIds } from "./state.ts";
+import { GrampsState, getGrampsData, familyListDisplayedIds } from "./state.ts";
 
 import { type GedcomPerson } from "../../schemas/gedcom/index.ts";
 
@@ -41,7 +40,7 @@ export default class FamilyListing extends HTMLElement {
 
   protected getGedcomData = async () => {
     if (GrampsState.people.size == 0) {
-      await getGrampsData(import.meta.url);
+      await getGrampsData();
     }
   };
 

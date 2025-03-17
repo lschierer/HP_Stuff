@@ -1,4 +1,5 @@
 import { SignalMap } from "signal-utils/map";
+import { SignalSet } from "signal-utils/set";
 import { SignalObject } from "signal-utils/object";
 
 import {
@@ -21,6 +22,8 @@ export const GrampsState = new SignalObject({
 
   events: new SignalMap<string, GedcomEvent.GedcomElement>(),
 });
+
+export const familyListDisplayedIds = new SignalSet<string>();
 
 export const getGrampsData = async () => {
   const basePath = "../../assets/gedcom";

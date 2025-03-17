@@ -1,5 +1,4 @@
 import { GedcomPerson } from "../../schemas/gedcom/index.ts";
-import { male, female } from "../../lib/GedcomConstants.ts";
 
 import "iconify-icon";
 import "./AncestorsTreeChart/AncestorsTree.ts";
@@ -26,7 +25,7 @@ export default class GrampsIndividual extends HTMLElement {
   private eventsRefs: GedcomPerson.EventRef[] =
     new Array<GedcomPerson.EventRef>();
 
-  protected populateLocalAttributes = () => {
+  protected getAttributes = () => {
     for (const attr of this.attributes) {
       if (DEBUG) {
         console.log(`attr has name ${attr.name}`);
@@ -91,26 +90,6 @@ export default class GrampsIndividual extends HTMLElement {
     if (this.person) {
       if (this.person.event_ref_list.length > 0) {
         this.eventsRefs.push(...this.person.event_ref_list);
-        this.BirthIndex = this.person.birth_ref_index;
-        this.DeathIndex = this.person.death_ref_index;
-        this.iconName =
-          this.person.gender === male.JSONconstant
-            ? "ion-male"
-            : this.person.gender === female.JSONconstant
-              ? "ion-female"
-              : "tdesign:user-unknown";
-        this.iconclasses = "spectrum-Icon  ".concat(
-          this.person.gender === male.JSONconstant
-            ? "color-male"
-            : this.person.gender === female.JSONconstant
-              ? "color-female"
-              : "icon1"
-        );
-        this.handle = this.person.handle;
-        this.parentHandle =
-          this.person.gender == male.JSONconstant
-            ? "fatherHandle"
-            : "motherHandle";
       }
     }
   };
@@ -268,7 +247,7 @@ export default class GrampsIndividual extends HTMLElement {
   };
 
   async connectedCallback() {
-    this.populateLocalAttributes();
+    this.getAttributes();
     await this.getGedcomData();
     this.attachShadow({ mode: "open" });
     if (this.shadowRoot) {

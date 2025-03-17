@@ -21,14 +21,10 @@ const body = (person: GedcomPerson.GedcomElement) => {
   let returnable = "";
   if (DEBUG) {
     returnable += `
-      <span class="debug">body for ${person.id}</span>
+      <span class="debug">fragment for ${person.id}</span>
     `;
   }
   returnable += `
-      <script
-        type="module"
-        src="../components/grampsParser/Individual.ts"
-      ></script>
       <gramps-individual
         personid="${person.id}"
       ></gramps-individual>
@@ -83,7 +79,7 @@ export const GedcomPeopleSourcePlugin = (): SourcePlugin => {
               .filter((sn) => sn.length > 0)[0];
             const suffix = person.primary_name.suffix;
             const name = `${first_name} ${last_name} ${suffix}`;
-            const FragmentRoute = `/api/gramps/people/${last_name}/${first_name}${suffix.length > 0 ? `_${suffix}` : ""}/`;
+            const FragmentRoute = `/api/gramps/people/${person.id}/`;
 
             const p: ExternalSourcePage = {
               id: person.id,
@@ -103,7 +99,9 @@ export const GedcomPeopleSourcePlugin = (): SourcePlugin => {
               id: person.id,
               layout: "person",
               title: name,
-              body: body(person),
+              body: DEBUG
+                ? `<span class="debug">body for ${person.id}</span>`
+                : "",
               route: BackupPersonRoute,
               label: `External-${name.replaceAll(" ", "_")}`,
               data: {
