@@ -1,5 +1,5 @@
 import { GedcomEvent, GedcomPerson } from "../../schemas/gedcom/index.ts";
-import { male, female, type genders } from "../../lib/GedcomConstants.ts";
+import { male, female } from "../../lib/GedcomConstants.ts";
 
 import "iconify-icon";
 import "./AncestorsTreeChart/AncestorsTree.ts";
@@ -17,15 +17,49 @@ if (DEBUG) {
 
 import GrampsState from "./state.ts";
 import IndividualName from "./IndividualName.ts";
+
 export default class GrampsIndividual extends HTMLElement {
   public personId: string = "";
 
-  private person: GedcomPerson.GedcomElement | undefined = undefined;
+  public person: GedcomPerson.GedcomElement | undefined = undefined;
   private eventsRefs: GedcomPerson.EventRef[] =
     new Array<GedcomPerson.EventRef>();
   private BirthIndex = -1;
   private DeathIndex = -1;
-  private gender: genders | undefined = undefined;
+  private iconName = "";
+  private iconclasses = "";
+  private handle = "";
+  private parentHandle = "";
+
+  protected populateLocalAttributes = () => {
+    for (const attr of this.attributes) {
+      if (DEBUG) {
+        console.log(`attr has name ${attr.name}`);
+      }
+      if (!attr.name.toLowerCase().localeCompare("personid")) {
+        if (DEBUG) {
+          console.log(`found personId attr with value ${attr.value}`);
+        }
+        this.personId = attr.value;
+      }
+      if (!attr.name.toLowerCase().localeCompare("person")) {
+        const valid = GedcomPerson.GedcomElement.safeParse(
+          JSON.parse(decodeURIComponent(attr.value))
+        );
+        if (valid.success) {
+          this.person = valid.data;
+          this.personId = this.person.id;
+        } else {
+          throw new Error(
+            `error parsing person in Individual.ts: \n ${valid.error.message}`
+          );
+        }
+      }
+    }
+    if (DEBUG) {
+      console.log(`looking for "${this.personId}"`);
+    }
+  };
 
   protected getGedcomData = async () => {
     if (GrampsState.people.size == 0) {
@@ -100,29 +134,25 @@ export default class GrampsIndividual extends HTMLElement {
         this.eventsRefs.push(...this.person.event_ref_list);
         this.BirthIndex = this.person.birth_ref_index;
         this.DeathIndex = this.person.death_ref_index;
+        this.iconName =
+          this.person.gender === male.JSONconstant
+            ? "ion-male"
+            : this.person.gender === female.JSONconstant
+              ? "ion-female"
+              : "tdesign:user-unknown";
+        this.iconclasses = "spectrum-Icon  ".concat(
+          this.person.gender === male.JSONconstant
+            ? "color-male"
+            : this.person.gender === female.JSONconstant
+              ? "color-female"
+              : "icon1"
+        );
+        this.handle = this.person.handle;
+        this.parentHandle =
+          this.person.gender == male.JSONconstant
+            ? "fatherHandle"
+            : "motherHandle";
       }
-      if (this.person.gender === male.JSONconstant) {
-        this.gender = male.textName;
-      } else {
-        this.gender = female.textName;
-      }
-    }
-  };
-
-  protected populateLocalAttributes = () => {
-    for (const attr of this.attributes) {
-      if (DEBUG) {
-        console.log(`attr has name ${attr.name}`);
-      }
-      if (!attr.name.toLowerCase().localeCompare("personid")) {
-        if (DEBUG) {
-          console.log(`found personId attr with value ${attr.value}`);
-        }
-        this.personId = attr.value;
-      }
-    }
-    if (DEBUG) {
-      console.log(`looking for "${this.personId}"`);
     }
   };
 
@@ -135,26 +165,8 @@ export default class GrampsIndividual extends HTMLElement {
       if (this.personId) {
         if (this.person) {
           this.processPerson();
-          const iconName =
-            this.person.gender === male.JSONconstant
-              ? "ion-male"
-              : this.person.gender === female.JSONconstant
-                ? "ion-female"
-                : "tdesign:user-unknown";
-          const iconclasses = "spectrum-Icon  ".concat(
-            this.person.gender === male.JSONconstant
-              ? "color-male"
-              : this.person.gender === female.JSONconstant
-                ? "color-female"
-                : "icon1"
-          );
-          const handle: string = this.person.handle;
-          const parentHandle =
-            this.person.gender == male.JSONconstant
-              ? "fatherHandle"
-              : "motherHandle";
+
           const ine = new IndividualName();
-          ine.personId = this.person.id;
 
           this.shadowRoot.innerHTML = `
             <div class="spectrum-Typography">
@@ -162,7 +174,7 @@ export default class GrampsIndividual extends HTMLElement {
                 <div class=" CardAsset ">
                   <iconify-icon
                     aria-hidden="true" role="img"
-                    icon=${iconName} class="${iconclasses}"
+                    icon=${this.iconName} class="${this.iconclasses}"
                     height="none"
                     width="none"
                   ></iconify-icon>
@@ -216,7 +228,7 @@ export default class GrampsIndividual extends HTMLElement {
                                   <li>
                                     <gramps-family
                                       familyHandle=${family}
-                                      ${parentHandle}=${handle}
+                                      ${this.parentHandle}=${this.handle}
                                     ></gramps-family>
                                   </li>
                                   `;
@@ -240,7 +252,7 @@ export default class GrampsIndividual extends HTMLElement {
                                 <li id="family-${index}">
                                   <gramps-family
                                     familyHandle=${family}
-                                    childrenHandles=${encodeURIComponent(JSON.stringify([handle]))}
+                                    childrenHandles=${encodeURIComponent(JSON.stringify([this.handle]))}
 
                                   ></gramps-family>
                                 </li>

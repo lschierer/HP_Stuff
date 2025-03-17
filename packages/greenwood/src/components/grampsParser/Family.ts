@@ -16,7 +16,7 @@ if (DEBUG) {
 import GrampsState from "./state.ts";
 import { getGrampsData } from "./state.ts";
 
-export class GrampsFamily extends HTMLElement {
+export default class GrampsFamily extends HTMLElement {
   public familyHandle: string = "";
 
   private _childHandles = new Array<string>();

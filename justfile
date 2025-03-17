@@ -10,7 +10,7 @@ install:
   ${PNPM} install -r
 
 [working-directory: 'packages/greenwood']
-dev: install
+dev: install parse
   ${PNPM} run dev
 
 [working-directory: 'packages/starlight']
