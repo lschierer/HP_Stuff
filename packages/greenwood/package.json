@@ -50,10 +50,10 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@greenwood/cli": "0.32.0-alpha.5",
-    "@greenwood/plugin-adapter-aws": "0.32.0-alpha.5",
-    "@greenwood/plugin-google-analytics": "0.32.0-alpha.5",
-    "@greenwood/plugin-postcss": "0.32.0-alpha.5",
+    "@greenwood/cli": "0.32.0-alpha.6",
+    "@greenwood/plugin-adapter-aws": "0.32.0-alpha.6",
+    "@greenwood/plugin-google-analytics": "0.32.0-alpha.6",
+    "@greenwood/plugin-postcss": "0.32.0-alpha.6",
     "@tsconfig/node22": "^22.0.0",
     "@types/d3": "^7.4.3",
     "@types/debug": "^4.1.12",

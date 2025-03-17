@@ -6,7 +6,7 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-import GrampsState from "../state.ts";
+import { GrampsState } from "../state.ts";
 import { getGrampsData } from "../state.ts";
 import "./TreeChart.ts";
 
@@ -33,7 +33,7 @@ export default class AncestorsTreeWrapper extends HTMLElement {
 
   async connectedCallback() {
     this.populateLocalAttributes();
-    await getGrampsData(import.meta.url);
+    await getGrampsData();
     if (DEBUG) {
       console.log(
         `AncestorsTree has `,

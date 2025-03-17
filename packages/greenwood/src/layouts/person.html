@@ -4,10 +4,6 @@
     <script type="module" src="../components/side-nav.ts"></script>
     <script type="module" src="../lib/Spectrum/SplitView.ts"></script>
     <link rel="stylesheet" href="/styles/gramps.css" />
-    <script
-      type="module"
-      src="../components/grampsParser/Individual.ts"
-    ></script>
   </head>
 
   <body>
@@ -18,9 +14,6 @@
       </div>
       <div>
         <main slot="right">
-          <gramps-individual
-            personid="${globalThis.page.data.grampsID}"
-          ></gramps-individual>
           <h3>Facts</h3>
           <content-outlet></content-outlet>
         </main>

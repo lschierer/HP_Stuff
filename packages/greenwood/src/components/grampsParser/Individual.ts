@@ -1,4 +1,4 @@
-import { GedcomEvent, GedcomPerson } from "../../schemas/gedcom/index.ts";
+import { GedcomPerson } from "../../schemas/gedcom/index.ts";
 import { male, female } from "../../lib/GedcomConstants.ts";
 
 import "iconify-icon";
@@ -6,6 +6,7 @@ import "./AncestorsTreeChart/AncestorsTree.ts";
 import "./IndividualName.ts";
 import "./event.ts";
 import "./Family.ts";
+import GrampsImmediateFamily from "./Family.ts";
 
 import GrampsCSS from "../../styles/Gramps.css" with { type: "css" };
 
@@ -15,7 +16,7 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-import GrampsState from "./state.ts";
+import { GrampsState, getGrampsData } from "./state.ts";
 import IndividualName from "./IndividualName.ts";
 
 export default class GrampsIndividual extends HTMLElement {
@@ -24,12 +25,6 @@ export default class GrampsIndividual extends HTMLElement {
   public person: GedcomPerson.GedcomElement | undefined = undefined;
   private eventsRefs: GedcomPerson.EventRef[] =
     new Array<GedcomPerson.EventRef>();
-  private BirthIndex = -1;
-  private DeathIndex = -1;
-  private iconName = "";
-  private iconclasses = "";
-  private handle = "";
-  private parentHandle = "";
 
   protected populateLocalAttributes = () => {
     for (const attr of this.attributes) {
@@ -61,38 +56,20 @@ export default class GrampsIndividual extends HTMLElement {
     }
   };
 
+  readonly initialize = async () => {
+    await this.getGedcomData();
+  };
+
   protected getGedcomData = async () => {
     if (GrampsState.people.size == 0) {
-      const personURL = new URL(
-        `/api/gedcom/person?id=${this.personId}`,
-        import.meta.url
-      );
-      const personResponse = await fetch(personURL);
-      if (personResponse.ok) {
-        const data = (await personResponse.json()) as object;
-        const valid = GedcomPerson.GedcomElement.safeParse(data);
-        if (valid.success) {
-          GrampsState.people.set(valid.data.id, valid.data);
-          if (DEBUG) {
-            console.log(`starting with ${GrampsState.people.size} people`);
-          }
-          this.person = valid.data;
-        } else {
-          if (DEBUG) {
-            console.error(
-              `error fetching people in FamilyListing`,
-              valid.error.message
-            );
-          }
-        }
+      await getGrampsData();
+      const p = GrampsState.people.get(this.personId);
+      if (p) {
+        this.person = p;
       } else {
-        if (DEBUG) {
-          console.warn(
-            `error fetching person data`,
-            personResponse.status,
-            personResponse.statusText
-          );
-        }
+        console.error(
+          `could not get person ${this.personId} despite getGrampsData call`
+        );
       }
     } else {
       const p = GrampsState.people.get(this.personId);
@@ -106,25 +83,7 @@ export default class GrampsIndividual extends HTMLElement {
     }
 
     if (!GrampsState.events.size) {
-      const eventsURL = new URL("/api/gedcom/events", import.meta.url);
-      const eventsResponse = await fetch(eventsURL);
-      if (eventsResponse.ok) {
-        const data = (await eventsResponse.json()) as object;
-        const valid = GedcomEvent.GedcomElement.array().safeParse(data);
-        if (valid.success) {
-          valid.data.map((e) => GrampsState.events.set(e.id, e));
-        } else {
-          console.warn(`error parsing events`, valid.error.message);
-        }
-      } else {
-        if (DEBUG) {
-          console.warn(
-            `error fetching events`,
-            eventsResponse.status,
-            eventsResponse.statusText
-          );
-        }
-      }
+      await getGrampsData();
     }
   };
 
@@ -156,6 +115,158 @@ export default class GrampsIndividual extends HTMLElement {
     }
   };
 
+  readonly getInnerHtml = async () => {
+    if (this.person) {
+      if (DEBUG) {
+        console.log(
+          `body function for ${this.person.id}`,
+          `${this.person.id} has ${this.person.family_list.length} family_list size`,
+          `${this.person.id} has ${this.person.parent_family_list.length} parent family list size}`
+        );
+      }
+      const personName = new IndividualName(this.person.id);
+      const eventsRefs = this.person.event_ref_list;
+      const BirthIndex = this.person.birth_ref_index;
+      const DeathIndex = this.person.death_ref_index;
+
+      const parent_families = new Array<GrampsImmediateFamily>();
+      const families_as_parent = new Array<GrampsImmediateFamily>();
+      for (const [key, cf] of GrampsState.families) {
+        if (DEBUG) {
+          console.log(`investigating ${key}`);
+        }
+        for (const fr of this.person.parent_family_list) {
+          if (!cf.handle.localeCompare(fr)) {
+            const gif = new GrampsImmediateFamily();
+            gif.grampsId = cf.id;
+            gif.IAmAParent = false;
+            parent_families.push(gif);
+          }
+        }
+        for (const fr of this.person.family_list) {
+          if (!cf.handle.localeCompare(fr)) {
+            const gif = new GrampsImmediateFamily();
+            gif.grampsId = cf.id;
+            gif.IAmAParent = true;
+            gif.ParentID = this.person.id;
+            families_as_parent.push(gif);
+          }
+        }
+      }
+
+      await Promise.all(
+        parent_families.map(async (f) => {
+          await f.initialize();
+        })
+      );
+
+      await Promise.all(
+        families_as_parent.map(async (f) => {
+          await f.initialize();
+        })
+      );
+
+      return `
+      <div class="spectrum-Typography">
+        <div class=" CardContainer " role="figure">
+          <div class=" CardAsset ">
+            <iconify-icon
+              aria-hidden="true" role="img"
+              icon=${personName.getIconName()} class="${personName.getIconClass()}"
+              height="none"
+              width="none"
+            ></iconify-icon>
+          </div>
+
+          <div class=" CardBody ">
+            <div class=" Card-header ">
+              <div class=" Card-title ">
+                <span class="spectrum-Heading spectrum-Heading--serif spectrum-Heading--sizeL spectrum-Heading--heavy">
+                  ${personName.displayName()}
+                </span>
+              </div>
+            </div>
+
+              <div class=" Card-description ">
+                <div class="General ">
+                  <ul class="bio">
+                    <li>
+                      Gramps Id:${" "}
+                      ${this.person.id}
+                    </li>
+                    <li>
+                      Birth:${" "}
+                      ${
+                        BirthIndex >= 0
+                          ? `<gedcom-event handle=${eventsRefs[BirthIndex].ref} ></gedcom-event>`
+                          : "Unknown"
+                      }
+                    </li>
+                    <li>
+                      Death:${" "}
+                      ${
+                        DeathIndex >= 0
+                          ? `<gedcom-event handle=${eventsRefs[DeathIndex].ref} ></gedcom-event>`
+                          : "Unknown"
+                      }
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class=" Card-Extra">
+                <div class="Unions">
+                  ${
+                    this.person.family_list.length > 0
+                      ? `
+                      <h4 class="spectrum-Heading spectrum-Heading--serif spectrum-Heading--sizeS">Unions & children</h4>
+                      <ul class="bio">
+                        ${families_as_parent
+                          .map((family) => {
+                            return `
+                            ${family.getList()}
+                          `;
+                          })
+                          .join("")}
+                      </ul>
+                    `
+                      : ""
+                  }
+                </div>
+                <div class="Parents">
+                  ${
+                    this.person.parent_family_list.length >= 1
+                      ? `
+                    <h4 class="spectrum-Heading spectrum-Heading--serif spectrum-Heading--sizeS">Parents and Siblings</h4>
+                    <ul class="bio">
+                      ${parent_families
+                        .map((family, index) => {
+                          return `
+                          <li id="family-${index}">
+                            <span>
+                              ${family.getList()}
+                            </span>
+                          </li>
+                          `;
+                        })
+                        .join("\n")}
+                    </ul>
+                  `
+                      : ""
+                  }
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="TimelineCard rounded border-2">
+          <ancestors-tree grampsId=${this.person.id} maxDepth=7 ></ancestors-tree>
+        </div>
+      </div>
+      `;
+    } else {
+      return "";
+    }
+  };
+
   async connectedCallback() {
     this.populateLocalAttributes();
     await this.getGedcomData();
@@ -166,112 +277,7 @@ export default class GrampsIndividual extends HTMLElement {
         if (this.person) {
           this.processPerson();
 
-          const ine = new IndividualName();
-
-          this.shadowRoot.innerHTML = `
-            <div class="spectrum-Typography">
-              <div class=" CardContainer " role="figure">
-                <div class=" CardAsset ">
-                  <iconify-icon
-                    aria-hidden="true" role="img"
-                    icon=${this.iconName} class="${this.iconclasses}"
-                    height="none"
-                    width="none"
-                  ></iconify-icon>
-                </div>
-
-                <div class=" CardBody ">
-                  <div class=" Card-header ">
-                    <div class=" Card-title ">
-                      <span class="spectrum-Heading spectrum-Heading--serif spectrum-Heading--sizeL spectrum-Heading--heavy">
-                        ${ine.displayName(this.person)}
-                      </span>
-                    </div>
-                  </div>
-
-                    <div class=" Card-description ">
-                      <div class="General ">
-                        <ul class="bio">
-                          <li>
-                            Gramps Id:${" "}
-                            ${this.personId}
-                          </li>
-                          <li>
-                            Birth:${" "}
-                            ${
-                              this.BirthIndex >= 0
-                                ? `<gedcom-event handle=${this.eventsRefs[this.BirthIndex].ref} ></gedcom-event>`
-                                : "Unknown"
-                            }
-                          </li>
-                          <li>
-                            Death:${" "}
-                            ${
-                              this.DeathIndex >= 0
-                                ? `<gedcom-event handle=${this.eventsRefs[this.DeathIndex].ref} ></gedcom-event>`
-                                : "Unknown"
-                            }
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    <div class=" Card-Extra">
-                      <div class="Unions">
-                        ${
-                          this.person.family_list.length > 0
-                            ? `
-                            <h4 class="spectrum-Heading spectrum-Heading--serif spectrum-Heading--sizeS">Unions & children</h4>
-                            <ul class="bio">
-                              ${this.person.family_list
-                                .map((family) => {
-                                  return `
-                                  <li>
-                                    <gramps-family
-                                      familyHandle=${family}
-                                      ${this.parentHandle}=${this.handle}
-                                    ></gramps-family>
-                                  </li>
-                                  `;
-                                })
-                                .join("\n")}
-
-                            </ul>
-                          `
-                            : ""
-                        }
-                      </div>
-                      <div class="Parents">
-                        ${
-                          this.person.parent_family_list.length >= 1
-                            ? `
-                          <h4 class="spectrum-Heading spectrum-Heading--serif spectrum-Heading--sizeS">Parents and Siblings</h4>
-                          <ul class="bio">
-                            ${this.person.parent_family_list
-                              .map((family, index) => {
-                                return `
-                                <li id="family-${index}">
-                                  <gramps-family
-                                    familyHandle=${family}
-                                    childrenHandles=${encodeURIComponent(JSON.stringify([this.handle]))}
-
-                                  ></gramps-family>
-                                </li>
-                              `;
-                              })
-                              .join("\n")}
-                          </ul>
-                        `
-                            : ""
-                        }
-                      </div>
-                    </div>
-                </div>
-              </div>
-              <div class="TimelineCard rounded border-2">
-                <ancestors-tree grampsId=${this.person.id} maxDepth=7 ></ancestors-tree>
-              </div>
-            </div>
-          `;
+          this.shadowRoot.innerHTML = await this.getInnerHtml();
         } else {
           console.warn(`No person found for ${this.personId}`);
         }

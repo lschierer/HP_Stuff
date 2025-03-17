@@ -107,17 +107,17 @@ const initialSetup = (treeMap: Map<string, TreePerson>) => {
   const levels = computeLevels(treeMap);
   const levelGroups = groupByLevel(levels);
   const graph = new Digraph("G");
-  const ine = new IndividualName();
 
   // Create nodes
   for (const node of treeMap.values()) {
+    const ine = new IndividualName(node.data.id);
     const genderClass = node.data.gender ? "father" : "mother";
     graph.addNode(
       new Node(node.id, {
-        [dotAttribute.label]: ine.displayName(node.data),
+        [dotAttribute.label]: ine.displayName(),
         [dotAttribute.shape]: "rect",
         [dotAttribute.class]: `familyNode ${genderClass}`,
-        [dotAttribute.href]: ine.buildLinkTarget(node.data),
+        [dotAttribute.href]: ine.buildLinkTarget(),
       })
     );
   }

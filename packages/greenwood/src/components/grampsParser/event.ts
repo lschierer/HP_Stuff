@@ -8,8 +8,7 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-import GrampsState from "./state.ts";
-import { getGrampsData } from "./state.ts";
+import { GrampsState, getGrampsData } from "./state.ts";
 
 export default class EventWrapper extends HTMLElement {
   public handle: string = "";
@@ -44,7 +43,7 @@ export default class EventWrapper extends HTMLElement {
 
   protected getGedcomData = async () => {
     if (GrampsState.events.size == 0) {
-      await getGrampsData(import.meta.url);
+      await getGrampsData();
     }
 
     if (this.handle.length > 0) {

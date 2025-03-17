@@ -1,5 +1,4 @@
 import { SignalMap } from "signal-utils/map";
-import { SignalSet } from "signal-utils/set";
 import { SignalObject } from "signal-utils/object";
 
 import {
@@ -15,7 +14,7 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-const GrampsState = new SignalObject({
+export const GrampsState = new SignalObject({
   people: new SignalMap<string, GedcomPerson.GedcomElement>(),
 
   families: new SignalMap<string, GedcomFamily.GedcomElement>(),
@@ -23,71 +22,73 @@ const GrampsState = new SignalObject({
   events: new SignalMap<string, GedcomEvent.GedcomElement>(),
 });
 
-export default GrampsState;
-
-export const familyListDisplayedIds = new SignalSet<string>();
-
-export const getGrampsData = async (base: string) => {
-  const peopleURL = new URL("/api/gedcom/people", base);
-  const peopleResponce = await fetch(peopleURL);
-  if (peopleResponce.ok) {
-    const data = (await peopleResponce.json()) as object;
-    const valid = GedcomPerson.GedcomElement.array().safeParse(data);
-    if (valid.success) {
+export const getGrampsData = async () => {
+  const basePath = "../../assets/gedcom";
+  if (!GrampsState.people.size) {
+    const peoplePath = basePath.concat("/people.json");
+    const peopleImport = (await import(peoplePath, {
+      with: { type: "json" },
+    })) as object;
+    const valid = GedcomPerson.GedcomElement.array().safeParse(
+      peopleImport["default" as keyof typeof peopleImport]
+    );
+    if (!valid.success) {
+      if (DEBUG) {
+        console.error(valid.error.message);
+      }
+    } else {
       valid.data.map((p) => {
         if (!GrampsState.people.has(p.id)) {
           GrampsState.people.set(p.id, p);
         }
       });
-      if (DEBUG) {
-        console.log(`starting with ${GrampsState.people.length} people`);
-      }
-    } else {
-      if (DEBUG) {
-        console.error(`error fetching people in state`, valid.error.message);
-      }
     }
   }
+  if (DEBUG) {
+    console.log(
+      `state.ts getGrampsData ending with people: ${GrampsState.people.size}`
+    );
+  }
 
-  const familyURL = new URL("/api/gedcom/families", base);
-  const familyResponse = await fetch(familyURL);
-  if (familyResponse.ok) {
-    const data = (await familyResponse.json()) as object;
-    const valid = GedcomFamily.GedcomElement.array().safeParse(data);
-    if (valid.success) {
+  if (!GrampsState.families.size) {
+    const familyPath = basePath.concat("/families.json");
+    const familyImport = (await import(familyPath, {
+      with: { type: "json" },
+    })) as object;
+    const valid = GedcomFamily.GedcomElement.array().safeParse(
+      familyImport["default" as keyof typeof familyImport]
+    );
+    if (!valid.success) {
+      if (DEBUG) {
+        console.error(valid.error.message);
+      }
+    } else {
       valid.data.map((f) => {
         if (!GrampsState.families.has(f.id)) {
           GrampsState.families.set(f.id, f);
         }
       });
-      if (DEBUG) {
-        console.log(`starting with ${GrampsState.families.length} families`);
-      }
-    } else {
-      if (DEBUG) {
-        console.error(`error fetching families in state`, valid.error.message);
-      }
     }
   }
 
-  const eventsURL = new URL("/api/gedcom/events", base);
-  const eventsResponse = await fetch(eventsURL);
-  if (eventsResponse.ok) {
-    const data = (await eventsResponse.json()) as object;
-    const valid = GedcomEvent.GedcomElement.array().safeParse(data);
-    if (valid.success) {
+  if (!GrampsState.events.size) {
+    const eventsPath = basePath.concat("/events.json");
+    const eventsImport = (await import(eventsPath, {
+      with: { type: "json" },
+    })) as object;
+    const valid = GedcomEvent.GedcomElement.array().safeParse(
+      eventsImport["default" as keyof typeof eventsImport]
+    );
+    if (!valid.success) {
+      if (DEBUG) {
+        console.error(valid.error.message);
+      }
+    } else {
       valid.data.map((event) => {
         if (!GrampsState.events.has(event.id)) {
           GrampsState.events.set(event.id, event);
         }
       });
-      if (DEBUG) {
-        console.log(`starting with ${GrampsState.events.size} events`);
-      }
-    } else {
-      if (DEBUG) {
-        console.error(`error fetching events in state`, valid.error.message);
-      }
     }
   }
 };
