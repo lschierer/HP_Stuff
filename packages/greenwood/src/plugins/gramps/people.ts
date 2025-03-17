@@ -1,5 +1,7 @@
 import type { SourcePlugin, ExternalSourcePage } from "@greenwood/cli";
 
+import process from "node:process";
+
 import debugFunction from "../../lib/debug.ts";
 
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -58,25 +60,26 @@ export const GedcomPeopleSourcePlugin = (): SourcePlugin => {
               console.log(`inspecting ${key}`);
             }
             const first_name = person.primary_name.first_name;
-            const last_name = person.primary_name.surname_list
-              .flatMap((sn) => {
-                if (
-                  sn.primary ||
-                  !sn.origintype.string.localeCompare(
-                    GedcomPerson.StringEnum.Enum["Birth Name"]
-                  ) ||
-                  !sn.origintype.string.localeCompare(
-                    GedcomPerson.StringEnum.Enum.Given
-                  )
-                ) {
-                  return sn.surname;
-                }
-                if (person.primary_name.surname_list.length == 1) {
-                  return sn.surname;
-                }
-                return "";
-              })
-              .filter((sn) => sn.length > 0)[0];
+            const last_name =
+              person.primary_name.surname_list
+                .flatMap((sn) => {
+                  if (
+                    sn.primary ||
+                    !sn.origintype.string.localeCompare(
+                      GedcomPerson.StringEnum.Enum["Birth Name"]
+                    ) ||
+                    !sn.origintype.string.localeCompare(
+                      GedcomPerson.StringEnum.Enum.Given
+                    )
+                  ) {
+                    return sn.surname;
+                  }
+                  if (person.primary_name.surname_list.length == 1) {
+                    return sn.surname;
+                  }
+                  return "";
+                })
+                .filter((sn) => sn.length > 0)[0] ?? "";
             const suffix = person.primary_name.suffix;
             const name = `${first_name} ${last_name} ${suffix}`;
             const FragmentRoute = `/api/gramps/people/${person.id}/`;
@@ -94,7 +97,12 @@ export const GedcomPeopleSourcePlugin = (): SourcePlugin => {
             console.log(`pushing Fragment page ${p.id} with title ${p.title}`);
             returnPages.push(p);
 
-            const BackupPersonRoute = `/Harrypedia/people/${last_name}/${first_name}${suffix.length > 0 ? `_${suffix}` : ""}/`;
+            let BackupPersonRoute = `/Harrypedia/people/${last_name.length ? last_name : "Unknown"}/`;
+            if (first_name.length) {
+              BackupPersonRoute += `{first_name}${suffix.length > 0 ? `_${suffix}` : ""}/`;
+            } else {
+              BackupPersonRoute += `${person.id}/`;
+            }
             const bp: ExternalSourcePage = {
               id: person.id,
               layout: "person",
