@@ -1,7 +1,5 @@
 import type { SourcePlugin, ExternalSourcePage } from "@greenwood/cli";
 
-import process from "node:process";
-
 import debugFunction from "../../lib/debug.ts";
 
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
