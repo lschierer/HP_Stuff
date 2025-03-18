@@ -15,6 +15,7 @@ interface SideBarNode {
   children: SideBarNode[];
   route?: string;
   title?: string;
+  page?: Page;
 }
 
 import SpectrumCSSSideNav from "@spectrum-css/sidenav/index.css" with { type: "css" };
@@ -99,6 +100,21 @@ export default class SideBar extends HTMLElement {
     return false;
   };
 
+  protected getOrder = (node: SideBarNode): number | null => {
+    if (node.page) {
+      if (node.page.data) {
+        if (Object.keys(node.page.data).includes("sidebar")) {
+          const sidebar =
+            node.page.data["sidebar" as keyof typeof node.page.data];
+          if (Object.keys(sidebar).includes("order")) {
+            return sidebar["order" as keyof typeof sidebar];
+          }
+        }
+      }
+    }
+    return null;
+  };
+
   protected generateSidebarHTML = (
     node: SideBarNode,
     level: number = 0
@@ -111,11 +127,37 @@ export default class SideBar extends HTMLElement {
       <ul class="spectrum-SideNav spectrum-SideNav--multiLevel spectrum-SideNav--hasIcon">
     `;
 
-    node.children.forEach((child) => {
-      let childContents = "";
+    node.children
+      .sort((a, b) => {
+        // Helper function to get order value if it exists
 
-      if (child.children.length) {
-        childContents += `
+        // First priority: Sort by order if available
+        const orderA = this.getOrder(a);
+        const orderB = this.getOrder(b);
+
+        if (orderA !== null && orderB !== null) {
+          return orderA - orderB;
+        } else if (orderA !== null) {
+          return -1; // A has order, B doesn't, so A comes first
+        } else if (orderB !== null) {
+          return 1; // B has order, A doesn't, so B comes first
+        }
+
+        // Second priority: Sort by title if available
+        const titleA = a.title && a.title.length ? a.title : a.name;
+        const titleB = b.title && b.title.length ? b.title : b.name;
+
+        if (!titleA && titleB) return 1;
+        if (titleA && !titleB) return -1;
+
+        // Default case: compare by name/title
+        return titleA.localeCompare(titleB);
+      })
+      .forEach((child) => {
+        let childContents = "";
+
+        if (child.children.length) {
+          childContents += `
           <iconify-icon
             icon="tabler:folder-open"
             height="1rem"
@@ -124,8 +166,8 @@ export default class SideBar extends HTMLElement {
             role="img"
           ></iconify-icon>
         `;
-      } else {
-        childContents += `
+        } else {
+          childContents += `
           <iconify-icon
             icon="ion:book-outline"
             height="1rem"
@@ -134,29 +176,29 @@ export default class SideBar extends HTMLElement {
             role="img"
           ></iconify-icon>
         `;
-      }
+        }
 
-      childContents += `
+        childContents += `
         <span class="${child.route ? "spectrum-SideNav-itemLink-text" : ""}">${
           child.title ? child.title : child.name
         }</span>
       `;
-      const selected = child.route
-        ? !child.route.localeCompare(this._route)
-        : false;
+        const selected = child.route
+          ? !child.route.localeCompare(this._route)
+          : false;
 
-      // Determine if this node should be expanded
-      // Always show top level nodes, and only expand nodes in the path to the current route
-      const shouldExpand = this.isInPathToCurrentRoute(child);
-      if (DEBUG) {
-        console.log(
-          `shouldExpand got ${shouldExpand} from isInPathToCurrentRoute`
-        );
-      }
+        // Determine if this node should be expanded
+        // Always show top level nodes, and only expand nodes in the path to the current route
+        const shouldExpand = this.isInPathToCurrentRoute(child);
+        if (DEBUG) {
+          console.log(
+            `shouldExpand got ${shouldExpand} from isInPathToCurrentRoute`
+          );
+        }
 
-      html +=
-        "  ".repeat(level + 1) +
-        `
+        html +=
+          "  ".repeat(level + 1) +
+          `
         <li
           id="${child.name}"
           class="spectrum-SideNav-item ${selected ? "is-selected" : ""}"
@@ -167,7 +209,7 @@ export default class SideBar extends HTMLElement {
           ${child.children.length && shouldExpand ? this.generateSidebarHTML(child, level + 2) : ""}
         </li>
       `;
-    });
+      });
 
     html += "  ".repeat(level) + "</ul>\n";
 
@@ -224,6 +266,7 @@ export default class SideBar extends HTMLElement {
         if (index === segments.length - 1) {
           childNode.route = page.route;
           childNode.title = this.getNavTitle(page);
+          childNode.page = page;
         }
 
         // Move to the next level
