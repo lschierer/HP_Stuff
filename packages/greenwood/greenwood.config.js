@@ -4,6 +4,8 @@ import { greenwoodPluginAdapterAws } from "@greenwood/plugin-adapter-aws";
 
 import { GedcomPeopleSourcePlugin } from "./src/plugins/gramps/people.ts";
 
+import { GedcomFamilySourcePlugin } from "./src/plugins/gramps/families.ts";
+
 import process from "node:process";
 
 //begin work around for https://github.com/TanStack/table/pull/5373
@@ -55,6 +57,7 @@ export default {
   },
   plugins: [
     GedcomPeopleSourcePlugin(),
+    GedcomFamilySourcePlugin(),
     {
       //include the workaround from above.
       type: "resource",

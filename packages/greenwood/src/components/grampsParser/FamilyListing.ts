@@ -1,7 +1,12 @@
 import "./IndividualName.ts";
 import "./event.ts";
 
-import { GrampsState, getGrampsData, familyListDisplayedIds } from "./state.ts";
+import {
+  GrampsState,
+  getGrampsData,
+  familyListDisplayedIds,
+  findBirthLastName,
+} from "./state.ts";
 
 import { type GedcomPerson } from "../../schemas/gedcom/index.ts";
 
@@ -17,6 +22,7 @@ if (DEBUG) {
 export default class FamilyListing extends HTMLElement {
   public familyName: string = "";
   public handle: string = "";
+  public showHeading: boolean = false;
 
   protected populateLocalAttributes = () => {
     for (const attr of this.attributes) {
@@ -31,6 +37,9 @@ export default class FamilyListing extends HTMLElement {
       }
       if (!attr.name.toLowerCase().localeCompare("handle")) {
         this.handle = attr.value;
+      }
+      if (!attr.name.toLowerCase().localeCompare("showHeading".toLowerCase())) {
+        this.showHeading = true;
       }
     }
     if (DEBUG) {
@@ -57,10 +66,8 @@ export default class FamilyListing extends HTMLElement {
 
       const p1 = new Array<GedcomPerson.GedcomElement>();
       GrampsState.people.forEach((p0) => {
-        const nameMap = p0.primary_name.surname_list.map((sn) => {
-          return !sn.surname.localeCompare(this.familyName);
-        });
-        if (nameMap.includes(true)) {
+        const lastname = findBirthLastName(p0);
+        if (!lastname.localeCompare(this.familyName)) {
           p1.push(p0);
         }
       });
@@ -159,6 +166,19 @@ export default class FamilyListing extends HTMLElement {
 
       if (displaylist.length > 0) {
         this.shadowRoot.innerHTML = `
+        ${
+          this.showHeading
+            ? `
+        <h2 class="spectrum-Heading spectrum-Heading--sizeXXL">
+          The Family of ${this.familyName}
+        </h2>
+        <h4 class="spectrum-Heading spectrum-Heading--sizeL">
+          Known Members:
+        </h4>
+        `
+            : ""
+        }
+
         <ul class="familylisting">
           ${displaylist
             .map((person, index) => {
@@ -206,6 +226,7 @@ export default class FamilyListing extends HTMLElement {
             })
             .join("")}
         </ul>
+        ${this.showHeading ? `<hr>` : ""}
       `;
       }
     }

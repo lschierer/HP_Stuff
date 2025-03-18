@@ -11,6 +11,7 @@ import { GedcomPerson } from "../../schemas/gedcom/index.ts";
 
 import {
   GrampsState,
+  findBirthLastName,
   getGrampsData,
 } from "../../components/grampsParser/state.ts";
 
@@ -35,7 +36,7 @@ const body = (person: GedcomPerson.GedcomElement) => {
 export const GedcomPeopleSourcePlugin = (): SourcePlugin => {
   return {
     type: "source",
-    name: "source-plugin-external-page",
+    name: "source-plugin-external-person-page",
     provider: (): (() => Promise<ExternalSourcePage[]>) => {
       return async function () {
         const returnPages = new Array<ExternalSourcePage>();
@@ -58,26 +59,8 @@ export const GedcomPeopleSourcePlugin = (): SourcePlugin => {
               console.log(`inspecting ${key}`);
             }
             const first_name = person.primary_name.first_name;
-            const last_name =
-              person.primary_name.surname_list
-                .flatMap((sn) => {
-                  if (
-                    sn.primary ||
-                    !sn.origintype.string.localeCompare(
-                      GedcomPerson.StringEnum.Enum["Birth Name"]
-                    ) ||
-                    !sn.origintype.string.localeCompare(
-                      GedcomPerson.StringEnum.Enum.Given
-                    )
-                  ) {
-                    return sn.surname;
-                  }
-                  if (person.primary_name.surname_list.length == 1) {
-                    return sn.surname;
-                  }
-                  return "";
-                })
-                .filter((sn) => sn.length > 0)[0] ?? "";
+            const last_name = findBirthLastName(person);
+
             const suffix = person.primary_name.suffix;
             const name = `${first_name} ${last_name} ${suffix}`;
             const FragmentRoute = `/api/gramps/people/${person.id}/`;

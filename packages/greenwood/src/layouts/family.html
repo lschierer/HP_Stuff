@@ -5,7 +5,7 @@
     <script type="module" src="../components/side-nav.ts"></script>
     <script
       type="module"
-      src="../components/grampsParser/FamilyListing.ts"
+      src="../components/grampsParser/FamilyPageSection.ts"
     ></script>
   </head>
 
@@ -17,9 +17,9 @@
       </div>
       <div>
         <main>
-          <family-listing
+          <family-section
             familyName="${globalThis.page.data.families}"
-          ></family-listing>
+          ></family-section>
           <content-outlet></content-outlet>
         </main>
       </div>

@@ -25,6 +25,8 @@ export const GrampsState = new SignalObject({
 
 export const familyListDisplayedIds = new SignalSet<string>();
 
+export const familyPagesCreated = new SignalSet<string>();
+
 export const getGrampsData = async () => {
   const basePath = "../../assets/gedcom";
   if (!GrampsState.people.size) {
@@ -174,4 +176,75 @@ export const findMotherForChild = (child: GedcomPerson.GedcomElement) => {
       }
     }
   }
+};
+
+export const findPersonByHandle = (handle: string) => {
+  if (GrampsState.people.size) {
+    for (const [key, person] of GrampsState.people) {
+      if (DEBUG) {
+        console.log(`inspecting ${key}`);
+      }
+      if (!person.handle.localeCompare(handle)) {
+        return person;
+      }
+    }
+  }
+};
+
+export const findBirthLastName = (person: GedcomPerson.GedcomElement) => {
+  const lastnameObject = person.primary_name.surname_list.find((sn) => {
+    if (sn.surname.length) {
+      if (
+        !person.primary_name.type.string.localeCompare(
+          GedcomPerson.StringEnum.Enum["Birth Name"]
+        )
+      ) {
+        if (DEBUG) {
+          console.log(`${person.id} has a birth name ${sn.surname}`);
+        }
+        return sn.surname;
+      }
+      if (
+        !person.primary_name.type.string.localeCompare(
+          GedcomPerson.StringEnum.Enum.Given
+        )
+      ) {
+        if (DEBUG) {
+          console.log(`${person.id} has a given name ${sn.surname}`);
+        }
+        return sn.surname;
+      }
+      if (
+        !sn.origintype.string.localeCompare(
+          GedcomPerson.StringEnum.Enum["Birth Name"]
+        )
+      ) {
+        if (DEBUG) {
+          console.log(
+            `${person.id} has surname with type Birth Name: ${sn.surname}`
+          );
+        }
+      }
+      if (
+        !sn.origintype.string.localeCompare(GedcomPerson.StringEnum.Enum.Given)
+      ) {
+        if (DEBUG) {
+          console.log(
+            `${person.id} has surname with type Given: ${sn.surname}`
+          );
+        }
+      }
+    }
+
+    return false;
+  });
+
+  if (lastnameObject) {
+    const lastname = lastnameObject.surname;
+    if (DEBUG) {
+      console.log(`found lastname ${lastname} for ${person.id}`);
+    }
+    return lastname;
+  }
+  return "Unknown";
 };
