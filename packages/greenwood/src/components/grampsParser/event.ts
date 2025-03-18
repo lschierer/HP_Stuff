@@ -47,7 +47,14 @@ export default class EventWrapper extends HTMLElement {
     }
 
     if (this.handle.length > 0) {
-      this.event = GrampsState.events.get(this.handle);
+      for (const [key, ce] of GrampsState.events) {
+        if (DEBUG) {
+          console.log(`inspecting ${key}`);
+        }
+        if (!this.handle.localeCompare(ce.handle)) {
+          this.event = ce;
+        }
+      }
     } else {
       if (this.type != undefined) {
         GrampsState.events.forEach((entry) => {
