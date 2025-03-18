@@ -92,12 +92,11 @@ export const GedcomPeopleSourcePlugin = (): SourcePlugin => {
                 grampsID: person.id,
               },
             };
-            console.log(`pushing Fragment page ${p.id} with title ${p.title}`);
             returnPages.push(p);
 
             let BackupPersonRoute = `/Harrypedia/people/${last_name.length ? last_name : "Unknown"}/`;
             if (first_name.length) {
-              BackupPersonRoute += `{first_name}${suffix.length > 0 ? `_${suffix}` : ""}/`;
+              BackupPersonRoute += `${first_name}${suffix.length > 0 ? `_${suffix}` : ""}/`;
             } else {
               BackupPersonRoute += `${person.id}/`;
             }
@@ -107,14 +106,13 @@ export const GedcomPeopleSourcePlugin = (): SourcePlugin => {
               title: name,
               body: DEBUG
                 ? `<span class="debug">body for ${person.id}</span>`
-                : "",
+                : `<span>This is a placeholder page</span>`,
               route: BackupPersonRoute,
               label: `External-${name.replaceAll(" ", "_")}`,
               data: {
                 grampsID: person.id,
               },
             };
-            console.log(`pushing Backup page ${bp.id} with title ${bp.title}`);
             returnPages.push(bp);
           }
         }
