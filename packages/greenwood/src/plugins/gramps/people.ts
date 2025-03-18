@@ -7,7 +7,7 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-import { GedcomPerson } from "../../schemas/gedcom/index.ts";
+import { type GedcomPerson } from "../../schemas/gedcom/index.ts";
 
 import {
   GrampsState,
