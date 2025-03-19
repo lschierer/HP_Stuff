@@ -30,7 +30,7 @@ export default class GeneologicalStats extends LitElement {
     new Array<GedcomEvent.GedcomElement>();
 
   protected getData = async () => {
-    const peopleUrl = new URL("/api/gedcom/people", import.meta.url);
+    const peopleUrl = "/api/gedcom/people";
     if (DEBUG) {
       console.log(`peopleUrl is ${peopleUrl.toString()}`);
     }
@@ -44,7 +44,7 @@ export default class GeneologicalStats extends LitElement {
       }
     }
 
-    const familiesUrl = new URL("/api/gedcom/families", import.meta.url);
+    const familiesUrl = "/api/gedcom/families";
     if (DEBUG) {
       console.log(`familiesUrl is ${familiesUrl.toString()}`);
     }
@@ -57,7 +57,7 @@ export default class GeneologicalStats extends LitElement {
       }
     }
 
-    const eventsUrl = new URL("/api/gedcom/events", import.meta.url);
+    const eventsUrl = "/api/gedcom/events";
     if (DEBUG) {
       console.log(`eventsURL is ${eventsUrl.toString()}`);
     }
