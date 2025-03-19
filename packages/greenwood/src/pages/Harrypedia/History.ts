@@ -3,6 +3,9 @@ import fs from "node:fs";
 
 import { DateTime } from "luxon";
 
+import { setTimeout } from "node:timers/promises";
+import pTimeout from "p-timeout";
+
 import markdownTextProcessing from "../../lib/customMarkdownProcessing.ts";
 
 import {
@@ -174,7 +177,14 @@ const getCollectionContents = () => {
   return _events;
 };
 
-const getBody: GetBody = () => {
+const getBody: GetBody = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  const delayedPromise = setTimeout(1);
+  await pTimeout(delayedPromise, {
+    milliseconds: 1,
+  });
+  /* end workaround */
+
   const _events = getCollectionContents();
   if (_events) {
     if (DEBUG) {
@@ -206,7 +216,17 @@ const getBody: GetBody = () => {
   }
 };
 
-const getLayout: GetLayout = (compilation: Compilation, route: string) => {
+const getLayout: GetLayout = async (
+  compilation: Compilation,
+  route: string
+) => {
+  /*start work around for GetFrontmatter requiring async */
+  const delayedPromise = setTimeout(1);
+  await pTimeout(delayedPromise, {
+    milliseconds: 1,
+  });
+  /* end workaround */
+
   const page: Page | undefined = compilation.graph.find((p) => {
     return !p.route.localeCompare(route);
   });
@@ -243,7 +263,14 @@ const getLayout: GetLayout = (compilation: Compilation, route: string) => {
   `;
 };
 
-const getFrontmatter: GetFrontmatter = () => {
+const getFrontmatter: GetFrontmatter = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  const delayedPromise = setTimeout(1);
+  await pTimeout(delayedPromise, {
+    milliseconds: 1,
+  });
+  /* end workaround */
+
   return {
     collection: "Harrypedia",
     title: "History",

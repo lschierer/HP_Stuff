@@ -2,6 +2,7 @@ import { greenwoodPluginPostCss } from "@greenwood/plugin-postcss";
 import { greenwoodPluginGoogleAnalytics } from "@greenwood/plugin-google-analytics";
 import { greenwoodPluginAdapterAws } from "@greenwood/plugin-adapter-aws";
 
+import { DirectoryIndexSourcePlugin } from "./src/plugins/DirectoryIndex.ts";
 import { GedcomPeopleSourcePlugin } from "./src/plugins/gramps/people.ts";
 
 import { GedcomFamilySourcePlugin } from "./src/plugins/gramps/families.ts";
@@ -56,6 +57,7 @@ export default {
     },
   },
   plugins: [
+    DirectoryIndexSourcePlugin(),
     GedcomPeopleSourcePlugin(),
     GedcomFamilySourcePlugin(),
     {
