@@ -6,6 +6,9 @@ import {
 import "../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../lib/BookmarksList.ts";
 
+import { setTimeout } from "node:timers/promises";
+import pTimeout from "p-timeout";
+
 import markdownTextProcessing from "../../../lib/customMarkdownProcessing.ts";
 
 import debugFunction from "../../../lib/debug.ts";
@@ -40,7 +43,14 @@ Let's take a look at what might have happened after [Snape] died.  Just because 
     `);
 };
 
-const getFrontmatter: GetFrontmatter = () => {
+const getFrontmatter: GetFrontmatter = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  const delayedPromise = setTimeout(1);
+  await pTimeout(delayedPromise, {
+    milliseconds: 1,
+  });
+  /* end workaround */
+
   return {
     title: "After Snape Dies",
     collection: "Bookmarks",
