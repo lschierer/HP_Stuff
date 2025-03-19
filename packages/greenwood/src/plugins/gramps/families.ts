@@ -48,7 +48,7 @@ export const GedcomFamilySourcePlugin = (): SourcePlugin => {
               console.log(`inspecting ${key}`);
             }
 
-            const lastname = findBirthLastName(person);
+            const lastname = findBirthLastName(person, true);
             if (!familyPagesCreated.has(lastname)) {
               familyPagesCreated.add(lastname);
 
@@ -56,7 +56,7 @@ export const GedcomFamilySourcePlugin = (): SourcePlugin => {
                 id: lastname,
                 title: lastname,
                 label: `External-${lastname}-fragment`,
-                route: `/api/gramps/families/${lastname}/`,
+                route: `/api/gramps/families/${lastname.replaceAll(" ", "_")}`,
                 body: body(lastname),
                 data: {},
               };
@@ -67,8 +67,7 @@ export const GedcomFamilySourcePlugin = (): SourcePlugin => {
 
                 title: lastname,
                 label: `External-${lastname}-fragment`,
-                route: `/Harrypedia/people/${lastname}/`,
-                layout: "family",
+                route: `/Harrypedia/people/${lastname.replaceAll(" ", "_")}/`,
                 collection: "Harrypedia",
                 body: `<span class="debug">Placeholder page for ${lastname}</span>`,
                 data: {

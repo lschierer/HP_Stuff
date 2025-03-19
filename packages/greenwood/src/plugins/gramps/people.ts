@@ -1,4 +1,5 @@
 import type { SourcePlugin, ExternalSourcePage } from "@greenwood/cli";
+import * as fs from "fs";
 
 import debugFunction from "../../lib/debug.ts";
 
@@ -59,11 +60,11 @@ export const GedcomPeopleSourcePlugin = (): SourcePlugin => {
               console.log(`inspecting ${key}`);
             }
             const first_name = person.primary_name.first_name;
-            const last_name = findBirthLastName(person);
+            const last_name = findBirthLastName(person, true);
 
             const suffix = person.primary_name.suffix;
             const name = `${first_name} ${last_name} ${suffix}`;
-            const FragmentRoute = `/api/gramps/people/${person.id}/`;
+            const FragmentRoute = `/api/gramps/people/${person.id}`;
 
             const p: ExternalSourcePage = {
               id: person.id,
@@ -77,26 +78,36 @@ export const GedcomPeopleSourcePlugin = (): SourcePlugin => {
             };
             returnPages.push(p);
 
-            let BackupPersonRoute = `/Harrypedia/people/${last_name.length ? last_name : "Unknown"}/`;
+            let BackupPersonRoute = `/Harrypedia/people/${last_name.length ? last_name.replaceAll(" ", "_") : "Unknown"}/`;
             if (first_name.length) {
-              BackupPersonRoute += `${first_name}${suffix.length > 0 ? `_${suffix}` : ""}/`;
+              BackupPersonRoute += `${first_name
+                .normalize("NFD")
+                .replace(/[\u0300-\u036f]/g, "")
+                .replaceAll(
+                  " ",
+                  "_"
+                )}${suffix.length > 0 ? `_${suffix}` : ""}/`;
             } else {
               BackupPersonRoute += `${person.id}/`;
             }
-            const bp: ExternalSourcePage = {
-              id: person.id,
-              layout: "person",
-              title: name,
-              body: DEBUG
-                ? `<span class="debug">body for ${person.id}</span>`
-                : `<span>This is a placeholder page</span>`,
-              route: BackupPersonRoute,
-              label: `External-${name.replaceAll(" ", "_")}`,
-              data: {
-                grampsID: person.id,
-              },
-            };
-            returnPages.push(bp);
+            const mdFile = `src/pages/${BackupPersonRoute.slice(0, -1)}.md`;
+            if (!fs.existsSync(mdFile)) {
+              console.log(`${mdFile} does not exist`);
+              const bp: ExternalSourcePage = {
+                id: person.id,
+                layout: "person",
+                title: name,
+                body: DEBUG
+                  ? `<span class="debug">body for ${person.id}</span>`
+                  : `<span>This is a placeholder page</span>`,
+                route: BackupPersonRoute,
+                label: `External-${name.replaceAll(" ", "_")}`,
+                data: {
+                  grampsID: person.id,
+                },
+              };
+              returnPages.push(bp);
+            }
           }
         }
         return returnPages;

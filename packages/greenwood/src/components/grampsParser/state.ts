@@ -191,7 +191,10 @@ export const findPersonByHandle = (handle: string) => {
   }
 };
 
-export const findBirthLastName = (person: GedcomPerson.GedcomElement) => {
+export const findBirthLastName = (
+  person: GedcomPerson.GedcomElement,
+  forLink: boolean = false
+) => {
   const lastnameObject = person.primary_name.surname_list.find((sn) => {
     if (sn.surname.length) {
       if (
@@ -243,6 +246,9 @@ export const findBirthLastName = (person: GedcomPerson.GedcomElement) => {
     const lastname = lastnameObject.surname;
     if (DEBUG) {
       console.log(`found lastname ${lastname} for ${person.id}`);
+    }
+    if (forLink) {
+      return lastname.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     }
     return lastname;
   }
