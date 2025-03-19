@@ -1,6 +1,8 @@
 @import "@spectrum-css/tokens";
 @import "@spectrum-css/typography";
 @import "@spectrum-css/sidenav";
+@import "@spectrum-web-components/styles/scale-medium.css";
+@import "@spectrum-web-components/styles/typography.css";
 
 * {
   --highcontrast-sidenav-top-level-font-color: var(--sl-color-accent);
