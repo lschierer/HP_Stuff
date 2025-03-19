@@ -13,6 +13,7 @@ import {
   type GetBody,
   type Frontmatter,
 } from "@greenwood/cli";
+
 import {
   Event,
   Events,
