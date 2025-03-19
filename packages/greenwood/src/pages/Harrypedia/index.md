@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Encyclopedic Reference of things Harry Potter
 sidebar:
   order: 0

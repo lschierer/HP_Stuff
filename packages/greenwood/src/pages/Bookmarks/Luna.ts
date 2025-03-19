@@ -47,6 +47,7 @@ const getFrontmatter: GetFrontmatter = () => {
     collection: "Bookmarks",
     description: "HP stories with Luna as a primary character",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

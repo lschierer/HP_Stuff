@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Quidditch
 author: Luke Schierer
 ---

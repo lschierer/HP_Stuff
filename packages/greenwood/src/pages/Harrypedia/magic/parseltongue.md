@@ -1,5 +1,6 @@
 ---
 title: Parseltongue
+layout: standard
 author: Luke Schierer
 collection: Harrypedia
 ---

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Goblins
 author: Luke Schierer
 sidebar:

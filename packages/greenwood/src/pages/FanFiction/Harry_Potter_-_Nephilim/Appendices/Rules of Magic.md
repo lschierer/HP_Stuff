@@ -1,5 +1,6 @@
 ---
 title: |
+layout: standard
   Rules of Magic
 author: Luke Schierer
 sidebar:

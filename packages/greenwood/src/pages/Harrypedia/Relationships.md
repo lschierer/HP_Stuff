@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Relationships as of the Epilogue
 author: Luke Schierer
 ---

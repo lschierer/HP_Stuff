@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Prevalence of Blood Bias
 author: Luke Schierer
 ---

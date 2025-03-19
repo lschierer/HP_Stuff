@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Dumbledore's Treatment of Harry
 author: Luke Schierer
 ---

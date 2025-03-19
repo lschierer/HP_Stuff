@@ -1,5 +1,6 @@
 ---
 title: "Harry paired with Hannah"
+layout: standard
 collection: Searches
 author: "Luke Schierer"
 sidebar:

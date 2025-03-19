@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: |
   The Mind Arts: Instant Death Defence
 author: Luke Schierer

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Reactions to Harry Potter and the Philosopher's Stone
 author: Luke Schierer
 imports:

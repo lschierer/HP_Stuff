@@ -1,5 +1,6 @@
 ---
 title: |
+layout: standard
   Non-Mendelian Inheritance
 author: Luke Schierer
 sidebar:

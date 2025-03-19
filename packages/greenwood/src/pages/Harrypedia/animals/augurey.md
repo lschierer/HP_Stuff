@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Augurey
 author: Luke Schierer
 ---

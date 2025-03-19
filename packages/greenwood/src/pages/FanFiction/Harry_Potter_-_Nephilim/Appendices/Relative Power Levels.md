@@ -1,5 +1,6 @@
 ---
 title: |
+layout: standard
   Relative Power Levels
 sidebar:
   order: 100

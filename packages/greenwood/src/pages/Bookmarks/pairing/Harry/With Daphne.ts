@@ -6,6 +6,9 @@ import {
 import "../../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../../lib/BookmarksList.ts";
 
+import { setTimeout } from "node:timers/promises";
+import pTimeout from "p-timeout";
+
 import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
 
 import debugFunction from "../../../../lib/debug.ts";
@@ -44,12 +47,20 @@ to watch.
     `);
 };
 
-const getFrontmatter: GetFrontmatter = () => {
+const getFrontmatter: GetFrontmatter = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  const delayedPromise = setTimeout(1);
+  await pTimeout(delayedPromise, {
+    milliseconds: 1,
+  });
+  /* end workaround */
+
   return {
     title: "Harry With Daphne Greengrass",
     collection: "Bookmarks",
     description: "HP stories with Harry and Daphne Greengrass paired",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

@@ -50,6 +50,7 @@ const getFrontmatter: GetFrontmatter = () => {
     collection: "Bookmarks",
     description: "HP Stories Notable for the Anti-Hermione Bias",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

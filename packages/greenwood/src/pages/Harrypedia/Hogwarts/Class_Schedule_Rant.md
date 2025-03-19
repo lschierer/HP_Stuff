@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Hogwarts Class Schedule Impossibility
 author: Luke Schierer
 ---

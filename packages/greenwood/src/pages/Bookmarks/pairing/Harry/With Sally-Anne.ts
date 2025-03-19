@@ -6,6 +6,9 @@ import {
 import "../../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../../lib/BookmarksList.ts";
 
+import { setTimeout } from "node:timers/promises";
+import pTimeout from "p-timeout";
+
 import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
 
 import debugFunction from "../../../../lib/debug.ts";
@@ -40,12 +43,20 @@ Sally-Anne [Perks] is the character that disappears between the sorting in book 
     `);
 };
 
-const getFrontmatter: GetFrontmatter = () => {
+const getFrontmatter: GetFrontmatter = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  const delayedPromise = setTimeout(1);
+  await pTimeout(delayedPromise, {
+    milliseconds: 1,
+  });
+  /* end workaround */
+
   return {
     title: "Harry With Sally-Anne Perks",
     collection: "Bookmarks",
     description: "HP stories with Harry and Sally-Anne Perks paired",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

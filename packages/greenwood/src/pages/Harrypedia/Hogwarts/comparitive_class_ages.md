@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Comparing how old students are in UK and US
 author: Luke Schierer
 ---

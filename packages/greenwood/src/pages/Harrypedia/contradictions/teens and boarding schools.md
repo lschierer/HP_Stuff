@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Teens, Boarding Schools, and Age Appropriate Literature
 author: Luke Schierer
 ---

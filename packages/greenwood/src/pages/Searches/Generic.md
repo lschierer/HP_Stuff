@@ -1,5 +1,6 @@
 ---
 title: "Generic Searches"
+layout: standard
 collection: Searches
 author: "Luke Schierer"
 sidebar:

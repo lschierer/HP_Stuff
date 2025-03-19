@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 type: "spell"
 title: Twitchy Ears
 spells: "Twitchy Ears"

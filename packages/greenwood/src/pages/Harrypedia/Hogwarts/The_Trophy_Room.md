@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: The Trophy Room
 author: Luke Schierer
 ---

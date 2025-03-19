@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Beautification Potion
 author: Luke Schierer
 type: "potion"

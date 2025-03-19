@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Policies on Punishing Students
 author: Luke Schierer
 ---

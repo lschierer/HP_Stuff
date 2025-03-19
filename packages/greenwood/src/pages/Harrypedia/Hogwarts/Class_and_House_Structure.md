@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Class and House Structure
 author: "Luke Schierer"
 ---

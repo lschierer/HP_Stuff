@@ -53,6 +53,7 @@ const getFrontmatter: GetFrontmatter = () => {
     collection: "Bookmarks",
     description: "HP stories with Harry and Wednesday Addams paired",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

@@ -1,5 +1,6 @@
 ---
 title: Chapter 2
+layout: standard
 author: Luke Schierer
 collection: Nephilim
 ---

@@ -1,4 +1,5 @@
 ---
 title: sphinx
+layout: standard
 ---
 

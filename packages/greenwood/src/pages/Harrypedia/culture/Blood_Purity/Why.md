@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Blood Purity
 author: Luke Schierer
 ---

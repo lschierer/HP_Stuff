@@ -1,5 +1,6 @@
 ---
 title: |
+layout: standard
   Soteriology, Missiology and Ecclesiology
 author: Luke Schierer
 collection: Nephilim

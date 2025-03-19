@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Dementors
 author: Luke Schierer
 ---

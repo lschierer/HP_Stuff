@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Professor McGonagall's Age
 author: Luke Schierer
 ---

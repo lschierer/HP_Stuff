@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: elves
 author: Luke Schierer
 sidebar:

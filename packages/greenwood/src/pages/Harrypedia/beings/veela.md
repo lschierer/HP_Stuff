@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Veela
 author: Luke Schierer
 ---

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: |
   The Mind Arts: Meditation and Focus
 author: Luke Schierer

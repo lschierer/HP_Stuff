@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Parchment and Paper in the Magical World
 author: Luke Schierer
 ---

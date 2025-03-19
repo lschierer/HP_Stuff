@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Snape's Worst Memory and Related Events
 author: Luke Schierer
 ---

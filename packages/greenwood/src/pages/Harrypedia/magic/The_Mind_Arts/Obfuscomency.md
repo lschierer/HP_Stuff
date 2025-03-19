@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: |
   The Mind Arts: Obfuscomency
 author: Luke Schierer

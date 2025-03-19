@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Education in the Magical World
 author: Luke Schierer
 ---

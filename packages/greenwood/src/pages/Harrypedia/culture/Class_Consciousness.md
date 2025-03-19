@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Class Consciousness in the Magical World
 author: Luke Schierer
 ---

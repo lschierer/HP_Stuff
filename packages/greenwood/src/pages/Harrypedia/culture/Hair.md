@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Hair in the Magical World
 author: Luke Schierer
 ---

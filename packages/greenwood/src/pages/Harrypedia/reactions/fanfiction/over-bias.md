@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Exaggerated Bias
 author: Luke Schierer
 ---

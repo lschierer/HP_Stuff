@@ -1,5 +1,6 @@
 ---
 title: Chapter 5
+layout: standard
 author: Luke Schierer
 collection: Nephilim
 ---

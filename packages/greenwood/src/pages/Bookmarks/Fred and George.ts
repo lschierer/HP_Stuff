@@ -48,6 +48,7 @@ const getFrontmatter: GetFrontmatter = () => {
     collection: "Bookmarks",
     description: "HP Stories featuring Fred and George as main characters",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

@@ -1,5 +1,6 @@
 ---
 title: "Characters Reading The Books"
+layout: standard
 collection: Searches
 author: "Luke Schierer"
 ---

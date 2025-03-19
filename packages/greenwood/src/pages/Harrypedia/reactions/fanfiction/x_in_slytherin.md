@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Main Characters in Slytherin
 ---
 

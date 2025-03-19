@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 type: "spell"
 title: Unbreakable Vow
 spells: "Unbreakable Vow"

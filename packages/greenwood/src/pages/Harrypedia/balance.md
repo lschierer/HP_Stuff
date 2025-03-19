@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Balance of Power
 author: Luke Schierer
 ---

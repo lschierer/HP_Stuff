@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Fan Fiction Augmenting the Epilogue
 author: Luke Schierer
 ---

@@ -1,6 +1,7 @@
 ---
 title: Bookmarks - Harry Pairings
 author: Luke Schierer
+layout: standard
 imports:
   - /components/DirectoryIndex.ts type="module"
 ---

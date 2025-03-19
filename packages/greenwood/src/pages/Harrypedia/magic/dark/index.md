@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Dark Magic
 sidebar:
   order: 1

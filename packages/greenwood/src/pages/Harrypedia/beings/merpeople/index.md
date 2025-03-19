@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Merpeople
 author: Luke Schierer
 sidebar:

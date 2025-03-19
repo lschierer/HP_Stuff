@@ -1,5 +1,6 @@
 ---
 title: "Harry and Addams family crossovers"
+layout: standard
 collection: Searches
 author: "Luke Schierer"
 sidebar:

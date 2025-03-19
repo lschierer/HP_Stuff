@@ -1,5 +1,6 @@
 ---
 title: "Notable for a problematic Dumbledore"
+layout: standard
 collection: Searches
 author: "Luke Schierer"
 ---

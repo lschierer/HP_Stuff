@@ -46,6 +46,7 @@ const getFrontmatter: GetFrontmatter = () => {
     collection: "Bookmarks",
     description: "HP stories focusing on travels through time",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

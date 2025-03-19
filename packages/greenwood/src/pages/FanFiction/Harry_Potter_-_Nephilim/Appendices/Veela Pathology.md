@@ -1,5 +1,6 @@
 ---
 title: |
+layout: standard
   The Veela Curse
 author: Luke Schierer
 sidebar:

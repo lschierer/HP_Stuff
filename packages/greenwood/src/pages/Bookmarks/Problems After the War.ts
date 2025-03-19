@@ -48,6 +48,7 @@ const getFrontmatter: GetFrontmatter = () => {
     collection: "Bookmarks",
     description: "HP stories featuring problems after the war",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

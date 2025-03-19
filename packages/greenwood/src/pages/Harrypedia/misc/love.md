@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Love in Harry Potter
 author: Luke Schierer
 ---

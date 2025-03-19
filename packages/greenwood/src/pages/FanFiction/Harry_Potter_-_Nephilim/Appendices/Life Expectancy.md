@@ -1,5 +1,6 @@
 ---
 title: |
+layout: standard
   Life Expectancy
 author: Luke Schierer
 collection: Nephilim

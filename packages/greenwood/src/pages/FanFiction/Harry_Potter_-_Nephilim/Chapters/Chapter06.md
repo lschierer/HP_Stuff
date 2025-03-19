@@ -1,5 +1,6 @@
 ---
 title: Chapter 6
+layout: standard
 author: Luke Schierer
 collection: Nephilim
 ---

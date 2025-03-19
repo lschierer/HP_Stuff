@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Basilisk
 author: Luke Schierer
 ---

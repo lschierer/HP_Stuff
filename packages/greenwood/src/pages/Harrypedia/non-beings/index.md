@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Non-Human Spirituous Apparitions
 author: Luke Schierer
 sidebar:

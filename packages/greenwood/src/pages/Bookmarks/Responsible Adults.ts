@@ -55,6 +55,7 @@ const getFrontmatter: GetFrontmatter = () => {
     collection: "Bookmarks",
     description: "HP stories with responsible adults",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

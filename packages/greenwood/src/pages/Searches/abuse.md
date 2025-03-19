@@ -1,5 +1,6 @@
 ---
 title: "Notable for calling out Neglect and Abuse"
+layout: standard
 collection: Searches
 author: "Luke Schierer"
 sidebar:

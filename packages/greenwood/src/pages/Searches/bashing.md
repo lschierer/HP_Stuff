@@ -1,5 +1,6 @@
 ---
 title: "Notable for Bashing Someone other than Dumbledore"
+layout: standard
 collection: Searches
 author: "Luke Schierer"
 sidebar:

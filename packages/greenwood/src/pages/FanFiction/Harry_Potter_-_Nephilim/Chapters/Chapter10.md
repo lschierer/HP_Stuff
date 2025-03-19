@@ -1,5 +1,6 @@
 ---
 title: Chapter 10
+layout: standard
 author: Luke Schierer
 collection: Nephilim
 ---

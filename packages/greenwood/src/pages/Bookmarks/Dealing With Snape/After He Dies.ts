@@ -57,6 +57,7 @@ const getFrontmatter: GetFrontmatter = async () => {
     description:
       "HP stories focusing on Snape's death, judgement, or afterlife",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

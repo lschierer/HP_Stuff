@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Hogwarts Curriculum
 author: Luke Schierer
 ---

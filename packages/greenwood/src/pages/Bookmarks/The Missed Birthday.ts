@@ -29,6 +29,7 @@ const getFrontmatter: GetFrontmatter = () => {
     description:
       "Several Authors have noted that Ginny's Birthday is a problem in canon",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

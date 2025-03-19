@@ -47,6 +47,7 @@ const getFrontmatter: GetFrontmatter = () => {
     description:
       "HP stories in which Harry Leaves the Wizarding World and/or England",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

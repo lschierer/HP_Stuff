@@ -49,6 +49,7 @@ const getFrontmatter: GetFrontmatter = () => {
     collection: "Bookmarks",
     description: "HP stories about Snape's relationship with Lily",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

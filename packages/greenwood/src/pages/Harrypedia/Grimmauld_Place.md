@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Number 12 Grimmauld Place
 author: Luke Schierer
 ---

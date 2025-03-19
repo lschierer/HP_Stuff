@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: The Mind Arts
 author: Luke Schierer
 sidebar:

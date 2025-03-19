@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Founding Hogwarts School of Witchcraft and Wizardry
 ---
 

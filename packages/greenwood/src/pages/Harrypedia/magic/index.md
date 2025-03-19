@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Magic in the Harry Potter Universe
 author: Luke Schierer
 sidebar:

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Banshees
 author: Luke Schierer
 ---

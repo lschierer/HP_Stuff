@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Wands
 author: Luke Schierer
 ---

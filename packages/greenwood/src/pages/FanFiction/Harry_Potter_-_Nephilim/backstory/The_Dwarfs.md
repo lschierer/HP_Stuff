@@ -1,5 +1,6 @@
 ---
 title: "Backstory: The Dwarfs"
+layout: standard
 tableOfContents: false
 author: Luke Schierer
 collection: Nephilim

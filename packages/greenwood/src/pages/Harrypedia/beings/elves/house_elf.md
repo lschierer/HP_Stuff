@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: House Elves
 author: Luke Schierer
 ---

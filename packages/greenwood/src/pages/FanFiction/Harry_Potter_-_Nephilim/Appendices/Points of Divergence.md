@@ -1,5 +1,6 @@
 ---
 title: |
+layout: standard
   Points of Divergence
 author: Luke Schierer
 tableOfContents:

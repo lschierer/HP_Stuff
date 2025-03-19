@@ -1,5 +1,6 @@
 ---
 title: "Harry paired with Ginny"
+layout: standard
 collection: Searches
 author: "Luke Schierer"
 sidebar:

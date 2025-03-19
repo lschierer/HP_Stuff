@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Class and Blood Status in the Magical World
 author: Luke Schierer
 ---

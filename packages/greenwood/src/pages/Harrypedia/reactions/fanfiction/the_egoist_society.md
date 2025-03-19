@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: The Egoist Society
 author: Luke Schierer
 ---

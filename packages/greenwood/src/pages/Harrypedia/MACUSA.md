@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Magical Congress of the United States of America (MACUSA)
 author: Luke Schierer
 ---

@@ -1,6 +1,7 @@
 ---
 title: Bookmarks - Pairing
 author: Luke Schierer
+layout: standard
 imports:
   - /components/DirectoryIndex.ts type="module"
 ---

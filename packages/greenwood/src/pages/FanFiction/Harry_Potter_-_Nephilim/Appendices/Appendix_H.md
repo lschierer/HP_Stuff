@@ -1,5 +1,6 @@
 ---
 title: |
+layout: standard
   What are the Nephilim
 author: Luke Schierer
 collection: Nephilim

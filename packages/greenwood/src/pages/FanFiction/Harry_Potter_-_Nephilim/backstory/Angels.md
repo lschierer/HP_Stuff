@@ -1,5 +1,6 @@
 ---
 title: "Backstory: Angels"
+layout: standard
 sidebar:
   order: 200
 author: Luke Schierer

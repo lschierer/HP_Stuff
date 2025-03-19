@@ -46,6 +46,7 @@ const getFrontmatter: GetFrontmatter = () => {
     collection: "Bookmarks",
     description: "HP stories in which Ron is key",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

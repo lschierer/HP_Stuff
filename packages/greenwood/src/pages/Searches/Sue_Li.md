@@ -1,5 +1,6 @@
 ---
 title: Harry paired with Sue Li
+layout: standard
 collection: Searches
 author: Luke Schierer
 sidebar:

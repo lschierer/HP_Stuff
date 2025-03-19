@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: |
   The Mind Arts: Mental Shields
 author: Luke Schierer

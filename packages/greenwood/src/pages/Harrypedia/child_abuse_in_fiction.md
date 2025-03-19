@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Abuse of Fictional Children
 author: Luke Schierer
 ---

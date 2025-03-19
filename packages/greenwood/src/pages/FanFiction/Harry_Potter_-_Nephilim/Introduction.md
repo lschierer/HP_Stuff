@@ -1,5 +1,6 @@
 ---
 title: Introduction
+layout: standard
 author: Luke Schierer
 collection: Nephilim
 sidebar:

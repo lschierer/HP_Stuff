@@ -1,5 +1,6 @@
 ---
 title: Chapter 11
+layout: standard
 author: Luke Schierer
 collection: Nephilim
 ---

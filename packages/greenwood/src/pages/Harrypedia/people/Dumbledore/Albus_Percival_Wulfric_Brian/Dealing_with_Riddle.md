@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Dumbledore and Tom Riddle
 author: Luke Schierer
 ---

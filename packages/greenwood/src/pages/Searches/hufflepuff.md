@@ -1,5 +1,6 @@
 ---
 title: "Notable for Harry Being in Hufflepuff"
+layout: standard
 collection: Searches
 author: "Luke Schierer"
 sidebar:

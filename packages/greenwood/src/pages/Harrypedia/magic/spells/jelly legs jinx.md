@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 type: "spell"
 title: Jelly Legs Jinx
 spells: "Jelly Legs"

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Class Lists by Year
 author: Luke Schierer
 ---

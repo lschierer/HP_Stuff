@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Does Dumbledore Ever Accomplish Anything?
 author: Luke Schierer
 ---

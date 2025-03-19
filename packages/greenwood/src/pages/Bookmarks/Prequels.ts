@@ -47,6 +47,7 @@ const getFrontmatter: GetFrontmatter = () => {
     collection: "Bookmarks",
     description: "HP stories predating our primary canon",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

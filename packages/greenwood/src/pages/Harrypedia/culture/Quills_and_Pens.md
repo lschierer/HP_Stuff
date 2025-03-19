@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Quills and Pens in the Magical World
 author: Luke Schierer
 ---

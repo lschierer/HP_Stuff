@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Ashwinder
 author: Luke Schierer
 ---

@@ -1,4 +1,5 @@
 ---
 title: jarvey
+layout: standard
 ---
 

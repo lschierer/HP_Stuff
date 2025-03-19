@@ -1,5 +1,6 @@
 ---
 title: |
+layout: standard
   Magical Contracts
 author: Luke Schierer
 collection: Nephilim

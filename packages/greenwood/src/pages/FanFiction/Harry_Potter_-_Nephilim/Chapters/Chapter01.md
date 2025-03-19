@@ -1,5 +1,6 @@
 ---
 title: Chapter 1
+layout: standard
 author: Luke Schierer
 collection: Nephilim
 ---

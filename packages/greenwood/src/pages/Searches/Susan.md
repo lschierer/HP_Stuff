@@ -1,5 +1,6 @@
 ---
 title: "Harry paired with Susan Bones"
+layout: standard
 collection: Searches
 author: "Luke Schierer"
 sidebar:

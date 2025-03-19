@@ -46,6 +46,7 @@ const getFrontmatter: GetFrontmatter = () => {
     collection: "Bookmarks",
     description: "HP stories HP stories that expose plot holes in the original",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

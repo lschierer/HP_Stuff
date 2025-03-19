@@ -1,5 +1,6 @@
 ---
 title: |
+layout: standard
   Umbridge's Quill
 author: Luke Schierer
 collection: Harrypedia

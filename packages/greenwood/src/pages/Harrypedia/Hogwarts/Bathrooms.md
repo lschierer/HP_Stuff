@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Bathrooms at Hogwarts
 author: Luke Schierer
 ---

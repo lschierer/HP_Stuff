@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Albus as the Great Manipulator
 author: Luke Schierer
 ---

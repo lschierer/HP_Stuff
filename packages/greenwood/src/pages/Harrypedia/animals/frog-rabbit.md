@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Frog-Rabbit
 author: Luke Schierer
 ---

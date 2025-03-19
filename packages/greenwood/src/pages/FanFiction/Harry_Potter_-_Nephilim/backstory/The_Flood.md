@@ -1,5 +1,6 @@
 ---
 title: "Backstory: The Flood"
+layout: standard
 author: Luke Schierer
 collection: nephilim
 sidebar:

@@ -1,5 +1,6 @@
 ---
 title: >
+layout: standard
   Harry's Genetic Make-up
 author: Luke Schierer
 collection: Harrypedia

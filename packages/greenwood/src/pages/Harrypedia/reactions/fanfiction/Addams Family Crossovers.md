@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Addams Family Crossovers
 author: Luke Schierer
 ---

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Nagini and Maledictus
 author: Luke Schierer
 ---

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Contradictions in Cannon
 sidebar:
   order: 1

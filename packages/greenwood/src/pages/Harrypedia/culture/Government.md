@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Government in the Magical World
 author: Luke Schierer
 ---

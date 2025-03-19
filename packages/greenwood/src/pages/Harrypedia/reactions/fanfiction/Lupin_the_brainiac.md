@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Remus Lupin, Brains of the Marauders
 author: Luke Schierer
 ---

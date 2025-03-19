@@ -49,6 +49,7 @@ const getFrontmatter: GetFrontmatter = () => {
     collection: "Bookmarks",
     description: "HP stories in which Harry is paired with Su Li",
     author: "Luke Schierer",
+    layout: "standard",
     data: {},
   };
 };

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Doubting Harry's Character
 author: Luke Schierer
 ---

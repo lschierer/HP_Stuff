@@ -1,5 +1,6 @@
 ---
 title: Harry Potter - Nephilim
+layout: standard
 author: Luke Schierer
 collection: FanFiction
 imports:

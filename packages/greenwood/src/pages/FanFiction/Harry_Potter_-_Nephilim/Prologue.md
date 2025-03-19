@@ -1,5 +1,6 @@
 ---
 title: Prologue
+layout: standard
 author: Luke Schierer
 collection: Nephilim
 sidebar:

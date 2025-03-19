@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Numbers in the Real World
 author: Luke Schierer
 ---

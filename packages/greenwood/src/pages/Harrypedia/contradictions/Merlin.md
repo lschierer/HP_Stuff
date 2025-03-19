@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Merlin and Harry Potter
 author: Luke Schierer
 ---

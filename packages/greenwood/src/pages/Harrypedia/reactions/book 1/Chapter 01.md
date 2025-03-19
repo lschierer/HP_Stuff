@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Reactions to Philosopher's Stone Chapter 1
 author: Luke Schierer
 ---

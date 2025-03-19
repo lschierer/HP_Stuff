@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Time Turners
 author: Luke Schierer
 ---

@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Sentient Species in Harry Potter
 author: Luke Schierer
 sidebar:

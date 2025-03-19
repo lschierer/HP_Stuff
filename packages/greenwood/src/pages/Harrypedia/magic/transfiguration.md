@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Transfiguration
 author: Luke Schierer
 ---

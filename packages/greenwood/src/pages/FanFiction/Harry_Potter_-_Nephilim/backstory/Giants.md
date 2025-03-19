@@ -1,5 +1,6 @@
 ---
 title: "Backstory: Giants"
+layout: standard
 tableOfContents: false
 author: Luke Schierer
 collection: Nephilim

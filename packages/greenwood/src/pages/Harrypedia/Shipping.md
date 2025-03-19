@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Relationships between Characters
 author: Luke Schierer
 ---

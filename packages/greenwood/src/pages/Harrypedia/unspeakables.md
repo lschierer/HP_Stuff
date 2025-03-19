@@ -1,5 +1,6 @@
 ---
 collection: Harrypedia
+layout: standard
 title: Unspeakables
 author: Luke Schierer
 ---

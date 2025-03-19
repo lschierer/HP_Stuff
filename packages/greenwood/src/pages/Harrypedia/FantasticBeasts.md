@@ -1,5 +1,6 @@
 ---
 title: Fantastic Beasts
+layout: standard
 author: Luke Schierer
 ---
 

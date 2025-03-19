@@ -1,5 +1,6 @@
 ---
 title: "Fan Fiction"
+layout: standard
 author: Luke Schierer
 imports:
   - /components/DirectoryIndex.ts type="module"

@@ -1,5 +1,6 @@
 ---
 title: "Backstory: Veela"
+layout: standard
 tableOfContents: false
 author: Luke Schierer
 collection: Nephilim

@@ -1,5 +1,6 @@
 ---
 title: Harry paired with Sally Anne
+layout: standard
 collection: Searches
 author: Luke Schierer
 sidebar:
