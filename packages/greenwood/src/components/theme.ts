@@ -22,12 +22,8 @@ export const ChangeTheme = (storedTheme: ThemeSelection) => {
     const scale = "medium";
     document.querySelectorAll("sp-theme").forEach((sptheme) => {
       void Promise.all([
-        import(
-          `/node_modules/@spectrum-web-components/theme/theme-${storedTheme}.js`
-        ),
-        import(
-          `/node_modules/@spectrum-web-components/theme/scale-${scale}.js`
-        ),
+        import(`@spectrum-web-components/theme/theme-${storedTheme}.js`),
+        import(`@spectrum-web-components/theme/scale-${scale}.js`),
       ]).then(() => {
         (sptheme as SPTheme).color = storedTheme as Theme;
         (sptheme as SPTheme).scale = scale;
