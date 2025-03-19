@@ -96,6 +96,7 @@ export const GedcomPeopleSourcePlugin = (): SourcePlugin => {
               const bp: ExternalSourcePage = {
                 id: person.id,
                 layout: "person",
+                collection: ["people", "Harrypedia", last_name],
                 title: name,
                 body: DEBUG
                   ? `<span class="debug">body for ${person.id}</span>`
