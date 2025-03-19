@@ -67,6 +67,7 @@ const fileDebug: Record<string, boolean> = {
   "/pages/api/gedcom/family.ts": false,
   "/pages/api/gedcom/people.ts": false,
   "/pages/api/gedcom/person.ts": false,
+  "/plugins/DirectoryIndex.ts": false,
   "/plugins/gramps/families.ts": false,
   "/plugins/gramps/people.ts": false,
   "/schemas/bookmarks.ts": false,
