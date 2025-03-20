@@ -19,7 +19,6 @@ export default class EventWrapper extends HTMLElement {
   private fromdate: string = "";
   private todate: string = "";
   private isinterval: boolean = false;
-  private entries = new Array<GedcomEvent.GedcomElement>();
 
   protected populateLocalAttributes = () => {
     for (const attr of this.attributes) {
