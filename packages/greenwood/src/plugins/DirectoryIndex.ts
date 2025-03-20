@@ -2,6 +2,8 @@ import type { SourcePlugin, ExternalSourcePage } from "@greenwood/cli";
 
 import * as fs from "fs";
 import * as path from "node:path";
+import { setTimeout } from "node:timers/promises";
+import pTimeout from "p-timeout";
 
 import debugFunction from "../lib/debug.ts";
 
@@ -67,6 +69,13 @@ export const DirectoryIndexSourcePlugin = (): SourcePlugin => {
     name: "source-plugin-external-directory-index-page",
     provider: (): (() => Promise<ExternalSourcePage[]>) => {
       return async function () {
+        /*start work around for GetFrontmatter requiring async */
+        const delayedPromise = setTimeout(1);
+        await pTimeout(delayedPromise, {
+          milliseconds: 1,
+        });
+        /* end workaround */
+
         const returnPages = new Array<ExternalSourcePage>();
 
         const missingIndexes = getMissingIndexes();

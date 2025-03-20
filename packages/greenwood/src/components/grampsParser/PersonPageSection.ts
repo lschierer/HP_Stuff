@@ -29,7 +29,7 @@ export default class PersonSection extends HTMLElement {
   async connectedCallback() {
     this.getAttributes();
     if (this.grampsId.length) {
-      const fragmentHtml = await fetch(`/api/gramps/people/${this.grampsId}/`, {
+      const fragmentHtml = await fetch(`/api/gramps/people/${this.grampsId}`, {
         method: "POST",
         body: "",
         headers: new Headers({

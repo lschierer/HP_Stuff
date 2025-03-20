@@ -30,7 +30,7 @@ export default class FamilySection extends HTMLElement {
     this.getAttributes();
     if (this.familyName.length) {
       const fragmentHtml = await fetch(
-        `/api/gramps/families/${this.familyName}/`,
+        `/api/gramps/families/${this.familyName}`,
         {
           method: "POST",
           body: "",
