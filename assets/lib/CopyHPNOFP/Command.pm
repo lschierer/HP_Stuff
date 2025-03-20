@@ -238,7 +238,6 @@ class CopyHPNOFP::Command {
         my $name = $childItem->basename();
         my $output = $sd->child($name);
         $childItem->copy($output);
-        $output->
       }
 
       foreach my $childItem ($id->children( qr/\.jpg\z/ )) {
