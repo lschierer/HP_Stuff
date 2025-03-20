@@ -8,6 +8,7 @@ export NPX := `which npx`
 
 install:
   ${PNPM} install -r
+  ./assets/bin/perldeps.sh
 
 [working-directory: 'packages/greenwood']
 dev: install parse
@@ -29,6 +30,7 @@ parse: install
   ./bin/grampsJson2CollectionJson.sh -o ../packages/greenwood/src/assets/
   ./bin/historyCollection.sh -o ../packages/starlight/src/content/
   ./bin/historyCollection.sh -o ../packages/greenwood/src/assets/
+  ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../packages/greenwood/src/pages/FanFiction/" -a ../packages/greenwood/src/assets -s ../packages/greenwood/src/styles
 
 [working-directory: 'infrastructure']
 deploy: build
