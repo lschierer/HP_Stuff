@@ -469,17 +469,17 @@ importers:
         version: 3.24.2
     devDependencies:
       '@greenwood/cli':
-        specifier: 0.32.0-alpha.6
-        version: 0.32.0-alpha.6
+        specifier: 0.32.0-alpha.7
+        version: 0.32.0-alpha.7
       '@greenwood/plugin-adapter-aws':
-        specifier: 0.32.0-alpha.6
-        version: 0.32.0-alpha.6(@greenwood/cli@0.32.0-alpha.6)
+        specifier: 0.32.0-alpha.7
+        version: 0.32.0-alpha.7(@greenwood/cli@0.32.0-alpha.7)
       '@greenwood/plugin-google-analytics':
-        specifier: 0.32.0-alpha.6
-        version: 0.32.0-alpha.6(@greenwood/cli@0.32.0-alpha.6)
+        specifier: 0.32.0-alpha.7
+        version: 0.32.0-alpha.7(@greenwood/cli@0.32.0-alpha.7)
       '@greenwood/plugin-postcss':
-        specifier: 0.32.0-alpha.6
-        version: 0.32.0-alpha.6(@greenwood/cli@0.32.0-alpha.6)
+        specifier: 0.32.0-alpha.7
+        version: 0.32.0-alpha.7(@greenwood/cli@0.32.0-alpha.7)
       '@tsconfig/node22':
         specifier: ^22.0.0
         version: 22.0.0
@@ -1651,18 +1651,23 @@ packages:
     engines: {node: ^18.20.5 || ^20.18.3 || >=22.12.0}
     hasBin: true
 
-  '@greenwood/plugin-adapter-aws@0.32.0-alpha.6':
-    resolution: {integrity: sha512-W56HEtaY8tJEg8ilGU472gMMrA3x0QtMWOZivQkH2qysfO43FS9QkaPJ/Nu+1Rm9IWdjhBZ1w3moTa/z1SJuSw==}
+  '@greenwood/cli@0.32.0-alpha.7':
+    resolution: {integrity: sha512-JVlArqEId2ccB/QO29k0KpX+EguDvx4G+rPh9XWrRcuUg6arEoClkjHykzSdKqlp7tsb+u4pfA4lNKHX6KSYHw==}
+    engines: {node: ^18.20.5 || ^20.18.3 || >=22.12.0}
+    hasBin: true
+
+  '@greenwood/plugin-adapter-aws@0.32.0-alpha.7':
+    resolution: {integrity: sha512-Z5kMRjEAiH89CvLXY0Xp14Xk3w9Wo38GTn2Fa+lYYtlZpnNx8Ux6J0NoDtSmFkcDrJW8QyUPL3OklMd3zOIyqA==}
     peerDependencies:
       '@greenwood/cli': ^0.31.0
 
-  '@greenwood/plugin-google-analytics@0.32.0-alpha.6':
-    resolution: {integrity: sha512-Ino/iXmlbBVKG7NMVb2CCMlTIr4KHY4aJWYZyxfux90s0PzK5hlL+y9IdW5qKsg+72mkmBQ6eNyG1ZGPyrqPaw==}
+  '@greenwood/plugin-google-analytics@0.32.0-alpha.7':
+    resolution: {integrity: sha512-JI8LhBS377ztD4YM3AhYs/Sk1booF1tkleY85GELgqs/XOwO3X+Xsq1OGCOcMQhZudfxVOpVqFt3vAQ0G2Xmrg==}
     peerDependencies:
       '@greenwood/cli': ^0.31.0
 
-  '@greenwood/plugin-postcss@0.32.0-alpha.6':
-    resolution: {integrity: sha512-B8Taiga/v5kBUvo9DQawNgHtlMjoPluZn6Qs3uRKiWHk6uX7oIVvkI6UP2Buigfs8TOi+0fz+wXRfb3/Vu8NdA==}
+  '@greenwood/plugin-postcss@0.32.0-alpha.7':
+    resolution: {integrity: sha512-H41NitnnXOr0T3hd8rG+RSDh+etyFgjuhmlaWM/inIFZ+a8wqrh3/PA5K8lkn2XPR8SZdw80NCI8eVJPmMWhNg==}
     peerDependencies:
       '@greenwood/cli': ^0.31.0
 
@@ -11236,17 +11241,47 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@greenwood/plugin-adapter-aws@0.32.0-alpha.6(@greenwood/cli@0.32.0-alpha.6)':
+  '@greenwood/cli@0.32.0-alpha.7':
     dependencies:
-      '@greenwood/cli': 0.32.0-alpha.6
+      '@rollup/plugin-commonjs': 28.0.3(rollup@4.36.0)
+      '@rollup/plugin-node-resolve': 15.3.1(rollup@4.36.0)
+      '@rollup/plugin-terser': 0.4.4(rollup@4.36.0)
+      acorn: 8.14.1
+      acorn-walk: 8.3.4
+      commander: 2.20.3
+      css-tree: 3.1.0
+      es-module-shims: 1.10.1
+      front-matter: 4.0.2
+      koa: 2.16.0
+      koa-body: 6.0.1
+      livereload: 0.9.3
+      markdown-toc: 1.2.0
+      node-html-parser: 1.4.9
+      rehype-raw: 7.0.0
+      rehype-stringify: 10.0.1
+      remark-frontmatter: 5.0.0
+      remark-parse: 11.0.0
+      remark-rehype: 11.1.1
+      rollup: 4.36.0
+      sucrase: 3.35.0
+      unified: 11.0.5
+      wc-compiler: 0.16.0
+    transitivePeerDependencies:
+      - bufferutil
+      - supports-color
+      - utf-8-validate
 
-  '@greenwood/plugin-google-analytics@0.32.0-alpha.6(@greenwood/cli@0.32.0-alpha.6)':
+  '@greenwood/plugin-adapter-aws@0.32.0-alpha.7(@greenwood/cli@0.32.0-alpha.7)':
     dependencies:
-      '@greenwood/cli': 0.32.0-alpha.6
+      '@greenwood/cli': 0.32.0-alpha.7
 
-  '@greenwood/plugin-postcss@0.32.0-alpha.6(@greenwood/cli@0.32.0-alpha.6)':
+  '@greenwood/plugin-google-analytics@0.32.0-alpha.7(@greenwood/cli@0.32.0-alpha.7)':
     dependencies:
-      '@greenwood/cli': 0.32.0-alpha.6
+      '@greenwood/cli': 0.32.0-alpha.7
+
+  '@greenwood/plugin-postcss@0.32.0-alpha.7(@greenwood/cli@0.32.0-alpha.7)':
+    dependencies:
+      '@greenwood/cli': 0.32.0-alpha.7
       postcss: 8.5.3
       postcss-import: 16.1.0(postcss@8.5.3)
       postcss-preset-env: 7.8.3(postcss@8.5.3)
