@@ -27,7 +27,7 @@ Many of these stories happen when [Amelia] [Bones] steps in to, you know, actual
 
 [Amelia]: /Harrypedia/people/Bones/Amelia_Susan/
 [Bones]: /Harrypedia/people/Bones/
-[Responsible Adult]: </Bookmarks/Responsible\ Adults/>
+[Responsible Adult]: </Bookmarks/Responsible_Adults/>
 `;
   const bookmarksList = new BookmarksList();
   bookmarksList.category = "Harry With Susan";
