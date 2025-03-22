@@ -7,22 +7,27 @@ import { GedcomPeopleSourcePlugin } from "./src/plugins/gramps/people.ts";
 
 import { GedcomFamilySourcePlugin } from "./src/plugins/gramps/families.ts";
 
+import type { Compilation, Resource } from "@greenwood/cli";
+
 import process from "node:process";
 
 //begin work around for https://github.com/TanStack/table/pull/5373
 
-class ProcessEnvReplaceResource {
-  constructor(compilation, options) {
+class ProcessEnvReplaceResource implements Resource {
+  private options: object;
+  private compilation: Compilation;
+
+  constructor(compilation: Compilation, options: object) {
     this.options = options;
     this.compilation = compilation;
   }
 
-  async shouldIntercept(url) {
+  async shouldIntercept(url: URL) {
     // your custom condition goes here
     return url.pathname.includes("tanstack");
   }
 
-  async intercept(url, request, response) {
+  async intercept(url: URL, request: Request, response: Response) {
     const body = await response.text();
     const env =
       process.env.__GWD_COMMAND__ === "develop" ? "development" : "production";
@@ -64,7 +69,7 @@ export default {
       //include the workaround from above.
       type: "resource",
       name: "process-env-replace",
-      provider: (compilation, options) =>
+      provider: (compilation: Compilation, options: object) =>
         new ProcessEnvReplaceResource(compilation, options),
     },
     greenwoodPluginAdapterAws({
