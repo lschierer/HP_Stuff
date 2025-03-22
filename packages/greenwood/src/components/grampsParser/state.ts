@@ -248,7 +248,8 @@ export const findBirthLastName = (
       console.log(`found lastname ${lastname} for ${person.id}`);
     }
     if (forLink) {
-      return lastname.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      //return lastname.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+      return encodeURIComponent(lastname);
     }
     return lastname;
   }

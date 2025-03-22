@@ -60,7 +60,11 @@ export const GedcomPeopleSourcePlugin = (): SourcePlugin => {
               console.log(`inspecting ${key}`);
             }
             const first_name = person.primary_name.first_name;
-            const last_name = findBirthLastName(person, true);
+            const last_name = findBirthLastName(person);
+            const last_name_link = findBirthLastName(person, true).replaceAll(
+              " ",
+              "_"
+            );
 
             const suffix = person.primary_name.suffix;
             const name = `${first_name} ${last_name} ${suffix}`;
@@ -78,15 +82,12 @@ export const GedcomPeopleSourcePlugin = (): SourcePlugin => {
             };
             returnPages.push(p);
 
-            let BackupPersonRoute = `/Harrypedia/people/${last_name.length ? last_name.replaceAll(" ", "_") : "Unknown"}/`;
+            let BackupPersonRoute = `/Harrypedia/people/${last_name_link.length ? last_name_link : "Unknown"}/`;
             if (first_name.length) {
-              BackupPersonRoute += `${first_name
-                .normalize("NFD")
-                .replace(/[\u0300-\u036f]/g, "")
-                .replaceAll(
-                  " ",
-                  "_"
-                )}${suffix.length > 0 ? `_${suffix}` : ""}/`;
+              BackupPersonRoute += `${encodeURIComponent(first_name).replaceAll(
+                " ",
+                "_"
+              )}${suffix.length > 0 ? `_${suffix}` : ""}/`;
             } else {
               BackupPersonRoute += `${person.id}/`;
             }
