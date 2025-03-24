@@ -1,6 +1,6 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": ["@tsconfig/node22/tsconfig.json", "../../tsconfig.json"],
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
     "types": ["node", "../../globals.d.ts", "./.sst/platform/config.d.ts"],
     "allowArbitraryExtensions": true,
