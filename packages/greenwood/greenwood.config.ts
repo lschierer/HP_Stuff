@@ -4,7 +4,6 @@ import { greenwoodPluginAdapterAws } from "@greenwood/plugin-adapter-aws";
 
 import { DirectoryIndexSourcePlugin } from "./src/plugins/DirectoryIndex.ts";
 import { GedcomPeopleSourcePlugin } from "./src/plugins/gramps/people.ts";
-
 import { GedcomFamilySourcePlugin } from "./src/plugins/gramps/families.ts";
 
 import type { Compilation, Resource } from "@greenwood/cli";
@@ -23,6 +22,10 @@ class ProcessEnvReplaceResource implements Resource {
   }
 
   async shouldIntercept(url: URL) {
+    /*start work around for GetFrontmatter requiring async */
+    await new Promise((resolve) => setTimeout(resolve, 1));
+    /* end workaround */
+
     // your custom condition goes here
     return url.pathname.includes("tanstack");
   }
