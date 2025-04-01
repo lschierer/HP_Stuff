@@ -429,8 +429,8 @@ importers:
         specifier: ^1.4.0
         version: 1.4.0
       greenwoodspectrumtheme:
-        specifier: 0.8.7-alpha.2
-        version: 0.8.7-alpha.2
+        specifier: 0.8.7-alpha.4
+        version: 0.8.7-alpha.4
       iconify-icon:
         specifier: ^2.3.0
         version: 2.3.0
@@ -5125,8 +5125,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.5.128:
-    resolution: {integrity: sha512-bo1A4HH/NS522Ws0QNFIzyPcyUUNV/yyy70Ho1xqfGYzPUme2F/xr4tlEOuM6/A538U1vDA7a4XfCd1CKRegKQ==}
+  electron-to-chromium@1.5.129:
+    resolution: {integrity: sha512-JlXUemX4s0+9f8mLqib/bHH8gOHf5elKS6KeWG3sk3xozb/JTq/RLXIv8OKUWiK4Ah00Wm88EFj5PYkFr4RUPA==}
 
   emoji-regex-xs@1.0.0:
     resolution: {integrity: sha512-LRlerrMYoIDrT6jgpeZ2YYl/L8EulRTt5hQcYjy5AInh7HWXKimpqx68aknBFpGL2+/IcogTcaydJEgaTmOpDg==}
@@ -5830,8 +5830,8 @@ packages:
     resolution: {integrity: sha512-vbmvP1Fe/fxuT2QuLVcqb2BfK7upGhhbLIt9/owWEvPYrZZEkelLcq2HqzxosV+PQ67dUFLaAeNpH7C4hhICAA==}
     engines: {node: '>=0.10.0'}
 
-  greenwoodspectrumtheme@0.8.7-alpha.2:
-    resolution: {integrity: sha512-HpMWZ0mzYYQ2SC5yPNXA0b1eqZqpGoLLuxzkbppN2aT2qWfexI9LHpGSUCyYtWVaDFQGMStR2sDiON2UxsYExw==}
+  greenwoodspectrumtheme@0.8.7-alpha.4:
+    resolution: {integrity: sha512-28eWTEDf7UmHAYcOegSsUnxhkx9kQVcIKLWavynnYg7GO3nnT3EXfBe0JJ/C+t3vAmVo4LbEyVbdg2hUkZ+ZTQ==}
 
   gulp-header@1.8.12:
     resolution: {integrity: sha512-lh9HLdb53sC7XIZOYzTXM4lFuXElv3EVkSDhsd7DoJBj7hm+Ni7D3qYbb+Rr8DuM8nRanBvkVO9d7askreXGnQ==}
@@ -14472,7 +14472,7 @@ snapshots:
   browserslist@4.24.4:
     dependencies:
       caniuse-lite: 1.0.30001707
-      electron-to-chromium: 1.5.128
+      electron-to-chromium: 1.5.129
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.24.4)
 
@@ -15400,7 +15400,7 @@ snapshots:
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.128: {}
+  electron-to-chromium@1.5.129: {}
 
   emoji-regex-xs@1.0.0: {}
 
@@ -16352,7 +16352,7 @@ snapshots:
       js-yaml: 3.14.1
       toml: 2.3.6
 
-  greenwoodspectrumtheme@0.8.7-alpha.2:
+  greenwoodspectrumtheme@0.8.7-alpha.4:
     dependencies:
       '@isomorphic-git/lightning-fs': 4.6.0
       '@spectrum-css/actionbutton': 7.1.3(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
