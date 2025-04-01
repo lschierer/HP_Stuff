@@ -9,9 +9,11 @@ export default tseslint.config(
       "packages/starlight/dist/**",
       "packages/greenwood/.greenwood/**",
       "packages/greenwood/public/**",
+      "packages/greenwood/node_modules/greenwoodspectrumtheme/dist/**",
     ],
   },
   {
+    ignores: ["packages/greenwood/node_modules/greenwoodspectrumtheme/dist/**"],
     extends: [
       tseslint.configs.recommendedTypeChecked,
       tseslint.configs.strictTypeChecked,
