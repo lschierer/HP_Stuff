@@ -182,7 +182,7 @@ export default class AncestorsTreeChart extends HTMLElement {
 
     const rootPerson = GrampsState.people.get(this.grampsId);
     if (rootPerson) {
-      const LocalRootName = new IndividualName();
+      const LocalRootName = new IndividualName(rootPerson.id);
       const rootNode: TreePerson = {
         id: rootPerson.id,
         name: LocalRootName.displayName(),

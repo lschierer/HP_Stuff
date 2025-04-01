@@ -1,6 +1,13 @@
 import { type Compilation, type Page, type GetLayout } from "@greenwood/cli";
 
-const getLayout: GetLayout = (compilation: Compilation, route: string) => {
+const getLayout: GetLayout = async (
+  compilation: Compilation,
+  route: string
+) => {
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
   const page: Page | undefined = compilation.graph.find((p) => {
     return !p.route.localeCompare(route);
   });

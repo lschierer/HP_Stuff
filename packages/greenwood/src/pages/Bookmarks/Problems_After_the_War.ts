@@ -42,7 +42,11 @@ These stories are notable because you do not always have a happy ending.
     `);
 };
 
-const getFrontmatter: GetFrontmatter = () => {
+const getFrontmatter: GetFrontmatter = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
   return {
     title: "All was *Not* Well",
     collection: "Bookmarks",

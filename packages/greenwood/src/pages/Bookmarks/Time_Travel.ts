@@ -40,7 +40,11 @@ const getBody: (
     `);
 };
 
-const getFrontmatter: GetFrontmatter = () => {
+const getFrontmatter: GetFrontmatter = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
   return {
     title: "Time Travel",
     collection: "Bookmarks",

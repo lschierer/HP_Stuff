@@ -1,6 +1,6 @@
 export const prerender = false;
 import { LitElement, html, unsafeCSS, type PropertyValues } from "lit";
-import { state, property } from "lit/decorators.js";
+import { property } from "lit/decorators.js";
 
 import {
   GedcomPerson,
@@ -28,15 +28,6 @@ export default class GenealogicalData extends LitElement {
   @property({ type: Array })
   public events: GedcomEvent.GedcomElement[] =
     new Array<GedcomEvent.GedcomElement>();
-
-  @state()
-  private url: URL | string | null;
-
-  constructor() {
-    super();
-
-    this.url = new URL("/gramps/gramps.json", document.URL);
-  }
 
   static override styles = [unsafeCSS(GrampsCSS)];
 

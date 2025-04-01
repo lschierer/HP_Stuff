@@ -49,8 +49,6 @@ const getFrontmatter: GetFrontmatter = async () => {
 
 // Function to load the nav fragment
 const loadNavFragment = async (compilation: Compilation, tocPage: Page) => {
-  if (!tocPage) return "";
-
   try {
     // Determine if we're in development or production mode
     const mode =
@@ -110,7 +108,7 @@ const loadNavFragment = async (compilation: Compilation, tocPage: Page) => {
       if (mode === "development") {
         // Try the public directory as fallback
         const altPath = path.join(
-          compilation.context?.outputDir || "public",
+          compilation.context.outputDir.pathname,
           tocPage.route.replace(/^\//, "").replace(/\/$/, ""),
           "nav.fragment.html"
         );
@@ -124,7 +122,8 @@ const loadNavFragment = async (compilation: Compilation, tocPage: Page) => {
           }
         } catch (altError) {
           console.warn(
-            `Could not load nav fragment from alternate location ${altPath}`
+            `Could not load nav fragment from alternate location ${altPath}`,
+            altError
           );
         }
       }
@@ -194,12 +193,12 @@ const getLayout: GetLayout = async (
     return false;
   });
 
+  let navContent = "";
   if (TOC) {
     console.log(`TOC.route is ${TOC.route}`);
+    // Load the nav fragment
+    navContent = await loadNavFragment(compilation, TOC);
   }
-
-  // Load the nav fragment
-  const navContent = await loadNavFragment(compilation, TOC);
 
   return `
     <head>
@@ -219,7 +218,7 @@ const getLayout: GetLayout = async (
           </main>
         </div>
         <div class="nav">
-          ${navContent ? navContent : ""}
+          ${navContent}
         </div>
       </sp-split-view>
       <script type="module" src="../lib/Spectrum/SplitView.ts"></script>

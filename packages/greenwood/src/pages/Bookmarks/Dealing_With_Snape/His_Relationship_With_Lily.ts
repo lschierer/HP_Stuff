@@ -43,7 +43,11 @@ It irks me that any number of people seem to assume that [Snape] and [Lily] were
     `);
 };
 
-const getFrontmatter: GetFrontmatter = () => {
+const getFrontmatter: GetFrontmatter = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
   return {
     title: "Snape's Relationship With Lily",
     collection: "Bookmarks",

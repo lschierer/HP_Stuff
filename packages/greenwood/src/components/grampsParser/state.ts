@@ -105,6 +105,9 @@ export const findFatherForChild = (child: GedcomPerson.GedcomElement) => {
   let family_id: string = "";
   /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
   for (const [k2, f] of GrampsState.families) {
+    if (DEBUG) {
+      console.log(`processing key ${k2}`);
+    }
     if (!family_id.length) {
       if (f.child_ref_list.length) {
         f.child_ref_list.forEach((crl) => {
@@ -136,6 +139,7 @@ export const findFatherForChild = (child: GedcomPerson.GedcomElement) => {
       }
     }
   }
+  return undefined;
 };
 
 export const findMotherForChild = (child: GedcomPerson.GedcomElement) => {
@@ -145,6 +149,9 @@ export const findMotherForChild = (child: GedcomPerson.GedcomElement) => {
   let family_id: string = "";
   /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
   for (const [k2, f] of GrampsState.families) {
+    if (DEBUG) {
+      console.log(`processing key ${k2}`);
+    }
     if (!family_id.length) {
       if (f.child_ref_list.length) {
         f.child_ref_list.forEach((crl) => {
@@ -176,6 +183,7 @@ export const findMotherForChild = (child: GedcomPerson.GedcomElement) => {
       }
     }
   }
+  return undefined;
 };
 
 export const findPersonByHandle = (handle: string) => {
@@ -189,6 +197,7 @@ export const findPersonByHandle = (handle: string) => {
       }
     }
   }
+  return undefined;
 };
 
 export const findBirthLastName = (

@@ -7,7 +7,11 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-const getBody: GetBody = () => {
+const getBody: GetBody = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
   const bodyText = `
 [Ginny]'s missed birthday irks me.  It might just be the third person limited narration, but it fits a pattern I dislike. These stories are not necessarily notable in themselves, and while I did not want a full category page for them, they do not fit elsewhere. I want to call out that I am not the first or only person to note this problem.
 * _[The Forgotten Day](https://www.fanfiction.net/s/13183663)_ by
@@ -22,7 +26,11 @@ const getBody: GetBody = () => {
   return markdownTextProcessing(bodyText);
 };
 
-const getFrontmatter: GetFrontmatter = () => {
+const getFrontmatter: GetFrontmatter = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
   return {
     title: "The Missed Birthday",
     collection: "Bookmarks",

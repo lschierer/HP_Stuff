@@ -40,7 +40,11 @@ holes. These stories, often through the use of satire and/or farce, expose some 
     `);
 };
 
-const getFrontmatter: GetFrontmatter = () => {
+const getFrontmatter: GetFrontmatter = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
   return {
     title: "Exposing Plot Holes",
     collection: "Bookmarks",

@@ -43,7 +43,11 @@ For some reason this pairing is incredibly rare, and even more rarely are these 
     `);
 };
 
-const getFrontmatter: GetFrontmatter = () => {
+const getFrontmatter: GetFrontmatter = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
   return {
     title: "Harry and Su Li",
     collection: "Bookmarks",

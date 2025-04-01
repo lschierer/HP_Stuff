@@ -73,9 +73,7 @@ export const GedcomFamilySourcePlugin = (): SourcePlugin => {
                 body: `<span class="debug">Placeholder page for ${lastname}</span>`,
                 data: {
                   families: lastname,
-                  sidebar: {
-                    order: 1,
-                  },
+                  order: "1",
                 },
               };
               returnPages.push(bp);

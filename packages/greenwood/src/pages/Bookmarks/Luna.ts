@@ -41,7 +41,11 @@ In general I feel that while [Luna] and [Harry] will almost always be friends, t
     `);
 };
 
-const getFrontmatter: GetFrontmatter = () => {
+const getFrontmatter: GetFrontmatter = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
   return {
     title: "All About Luna",
     collection: "Bookmarks",

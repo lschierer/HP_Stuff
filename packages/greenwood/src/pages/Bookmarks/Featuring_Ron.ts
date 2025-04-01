@@ -40,7 +40,11 @@ I have made no secret of the fact that [Ron] is not my most favourite character 
     `);
 };
 
-const getFrontmatter: GetFrontmatter = () => {
+const getFrontmatter: GetFrontmatter = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
   return {
     title: "Featuring Ron",
     collection: "Bookmarks",

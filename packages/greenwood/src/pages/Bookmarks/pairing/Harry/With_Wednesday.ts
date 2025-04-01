@@ -47,7 +47,11 @@ real gems, some of which are even finished.
     `);
 };
 
-const getFrontmatter: GetFrontmatter = () => {
+const getFrontmatter: GetFrontmatter = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
   return {
     title: "Harry With Wednesday Addams",
     collection: "Bookmarks",
@@ -59,6 +63,5 @@ const getFrontmatter: GetFrontmatter = () => {
 };
 
 import getLayout from "../../../../layouts/Bookmarks.ts";
-import type { GetFrontmatter } from "@greenwood/cli";
 
 export { getFrontmatter, getBody, getLayout };

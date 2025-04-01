@@ -6,9 +6,6 @@ import {
 import "../../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../../lib/BookmarksList.ts";
 
-import { setTimeout } from "node:timers/promises";
-import pTimeout from "p-timeout";
-
 import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
 
 import debugFunction from "../../../../lib/debug.ts";
@@ -45,10 +42,7 @@ Sally-Anne [Perks] is the character that disappears between the sorting in book 
 
 const getFrontmatter: GetFrontmatter = async () => {
   /*start work around for GetFrontmatter requiring async */
-  const delayedPromise = setTimeout(1);
-  await pTimeout(delayedPromise, {
-    milliseconds: 1,
-  });
+  await new Promise((resolve) => setTimeout(resolve, 1));
   /* end workaround */
 
   return {
