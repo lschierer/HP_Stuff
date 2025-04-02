@@ -7,7 +7,10 @@ import { GedcomFamilySourcePlugin } from "./src/plugins/gramps/families.ts";
 
 import type { Config } from "@greenwood/cli";
 
-import { config } from "./src/lib/staticConfig.ts";
+import { loadConfig } from "greenwoodspectrumtheme/config";
+const localConfig = "./src/spectrum-theme.config.ts";
+
+const config = await loadConfig(localConfig);
 
 const gc: Config = {
   useTsc: true,
