@@ -103,7 +103,7 @@ export const findFatherForChild = (child: GedcomPerson.GedcomElement) => {
     console.log(`findFatherForChild for child ${child.id}`);
   }
   let family_id: string = "";
-  /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
+   
   for (const [k2, f] of GrampsState.families) {
     if (DEBUG) {
       console.log(`processing key ${k2}`);
@@ -147,7 +147,7 @@ export const findMotherForChild = (child: GedcomPerson.GedcomElement) => {
     console.log(`findMotherForChild for child ${child.id}`);
   }
   let family_id: string = "";
-  /* eslint-disable-next-line @typescript-eslint/no-unused-vars */
+   
   for (const [k2, f] of GrampsState.families) {
     if (DEBUG) {
       console.log(`processing key ${k2}`);
