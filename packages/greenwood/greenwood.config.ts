@@ -5,12 +5,11 @@ import { greenwoodSpectrumThemePack } from "greenwoodspectrumtheme";
 import { GedcomPeopleSourcePlugin } from "./src/plugins/gramps/people.ts";
 import { GedcomFamilySourcePlugin } from "./src/plugins/gramps/families.ts";
 
-import type { Config } from "@greenwood/cli";
+import { loadConfig, type Config as PackConfig } from "./src/lib/config.ts";
+import localConfig from "./src/spectrum-theme.config.ts";
 
-import { loadConfig } from "greenwoodspectrumtheme/config";
-const localConfig = "./src/spectrum-theme.config.ts";
+const config = loadConfig(localConfig) as PackConfig;
 
-const config = await loadConfig(localConfig);
 
 const gc: Config = {
   useTsc: true,
