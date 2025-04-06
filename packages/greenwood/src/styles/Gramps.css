@@ -10,9 +10,11 @@ gramps-individual {
   height: calc(var(--timeline-height) + 20vh);
   display: block;
 }
-div {
+
+person-section div {
   height: 100%;
 }
+
 .CardContainer {
   width: 100%;
   height: 25%;

@@ -68,9 +68,18 @@ export const GedcomFamilySourcePlugin = (): SourcePlugin => {
 
                 title: lastname,
                 label: `External-${lastname}-fragment`,
+                layout: "standard",
+                imports: [
+                  '/components/grampsParser/FamilyPageSection.ts type="module"',
+                ],
                 route: `/Harrypedia/people/${lastname_link.replaceAll(" ", "_")}/`,
                 collection: "Harrypedia",
-                body: `<span class="debug">Placeholder page for ${lastname}</span>`,
+                body: `
+                  <family-section
+                    familyName="${lastname}"
+                  ></family-section>
+                  <span class="spectrum-Body spectrum-Body--serif">Placeholder page for ${lastname}</span>
+                `,
                 data: {
                   families: lastname,
                   order: "1",

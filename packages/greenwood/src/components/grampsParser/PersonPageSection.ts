@@ -26,21 +26,15 @@ export default class PersonSection extends HTMLElement {
       console.log(`looking for "${this.grampsId}"`);
     }
   };
-  async connectedCallback() {
+  connectedCallback() {
     this.getAttributes();
     if (this.grampsId.length) {
-      const fragmentHtml = await fetch(`/api/gramps/people/${this.grampsId}`, {
-        method: "POST",
-        body: "",
-        headers: new Headers({
-          "content-type": "application/x-www-form-urlencoded",
-        }),
-      }).then((resp) => resp.text());
-      const fragment = Document.parseHTMLUnsafe(fragmentHtml);
-      const content = fragment.querySelector("main");
-      if (content) {
-        this.innerHTML = content.innerHTML;
-      }
+      this.innerHTML = `
+        <script src="/components/grampsParser/Individual.ts" type="module"></script>
+        <gramps-individual
+          personid="${this.grampsId}"
+        ></gramps-individual>
+      `;
     }
   }
 }

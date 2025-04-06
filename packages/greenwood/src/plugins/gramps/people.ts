@@ -16,7 +16,10 @@ import {
   getGrampsData,
 } from "../../components/grampsParser/state.ts";
 
-const body = (person: GedcomPerson.GedcomElement) => {
+const body = (
+  person: GedcomPerson.GedcomElement,
+  fullPage: boolean = false
+) => {
   if (DEBUG) {
     console.log(`body function for ${person.id}`);
   }
@@ -26,11 +29,25 @@ const body = (person: GedcomPerson.GedcomElement) => {
       <span class="debug">fragment for ${person.id}</span>
     `;
   }
-  returnable += `
-      <gramps-individual
-        personid="${person.id}"
-      ></gramps-individual>
+
+  if (fullPage) {
+    returnable += DEBUG
+      ? `<span class="debug">body for ${person.id}</span>`
+      : `<span class="spectrum-Body spectrum-Body--serif">This is a placeholder page</span>`;
+    returnable = `
+      <person-section
+        grampsId="${person.id}"
+      ></person-section>
+      <h3 class="spectrum-Heading spectrum-Heading--serif spectrum-Heading--heavy spectrum-Heading--sizeL">Facts</h3>
+      ${returnable}
     `;
+  } else {
+    returnable += `
+        <gramps-individual
+          personid="${person.id}"
+        ></gramps-individual>
+      `;
+  }
   return returnable;
 };
 
@@ -96,12 +113,13 @@ export const GedcomPeopleSourcePlugin = (): SourcePlugin => {
               console.log(`${mdFile} does not exist`);
               const bp: ExternalSourcePage = {
                 id: person.id,
-                layout: "person",
+                layout: "standard",
+                imports: [
+                  '/components/grampsParser/PersonPageSection.ts type="module"',
+                ],
                 collection: ["people", "Harrypedia", last_name],
                 title: name,
-                body: DEBUG
-                  ? `<span class="debug">body for ${person.id}</span>`
-                  : `<span>This is a placeholder page</span>`,
+                body: body(person, true),
                 route: BackupPersonRoute,
                 label: `External-${name.replaceAll(" ", "_")}`,
                 data: {

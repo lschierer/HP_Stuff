@@ -26,24 +26,16 @@ export default class FamilySection extends HTMLElement {
       console.log(`looking for "${this.familyName}"`);
     }
   };
-  async connectedCallback() {
+  connectedCallback() {
     this.getAttributes();
     if (this.familyName.length) {
-      const fragmentHtml = await fetch(
-        `/api/gramps/families/${this.familyName}`,
-        {
-          method: "POST",
-          body: "",
-          headers: new Headers({
-            "content-type": "application/x-www-form-urlencoded",
-          }),
-        }
-      ).then((resp) => resp.text());
-      const fragment = Document.parseHTMLUnsafe(fragmentHtml);
-      const content = fragment.querySelector("main");
-      if (content) {
-        this.innerHTML = content.innerHTML;
-      }
+      this.innerHTML = `
+        <script type="module" src="/components/grampsParser/FamilyListing.ts"></script>
+        <family-listing
+          familyname="${this.familyName}"
+          showHeading
+        ></family-listing>
+      `;
     }
   }
 }
