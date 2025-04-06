@@ -169,10 +169,10 @@ export default class FamilyListing extends HTMLElement {
         ${
           this.showHeading
             ? `
-        <h2 class="spectrum-Heading spectrum-Heading--sizeXXL">
+        <h2 class="spectrum-Heading spectrum-Heading--sizeXL">
           The Family of ${this.familyName}
         </h2>
-        <h4 class="spectrum-Heading spectrum-Heading--sizeL">
+        <h4 class="spectrum-Heading spectrum-Heading--sizeM">
           Known Members:
         </h4>
         `
