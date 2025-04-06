@@ -1,30 +1,70 @@
-<!doctype html>
-<html>
-  <head>
-    <script type="module" src="../components/side-nav.ts"></script>
-    <script type="module" src="../lib/Spectrum/SplitView.ts"></script>
-    <link rel="stylesheet" href="/styles/gramps.css" />
-    <script
-      type="module"
-      src="../components/grampsParser/PersonPageSection.ts"
-    ></script>
-  </head>
+<head>
+  <link
+    rel="stylesheet"
+    href="/node_modules/greenwoodspectrumtheme/components/styles/global.css"
+  />
+  <link rel="stylesheet" href="/styles/gramps.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Micro+5&display=swap"
+    rel="stylesheet"
+  />
 
-  <body>
+  <script
+    type="module"
+    src="/node_modules/greenwoodspectrumtheme/components/components/theme.ts"
+  ></script>
+
+  <script type="module">
+    import "/node_modules/@spectrum-web-components/theme/sp-theme.js";
+    import "/node_modules/@spectrum-web-components/theme/src/themes.js";
+  </script>
+  <script type="module">
+    import "/node_modules/@spectrum-web-components/split-view/sp-split-view.js";
+  </script>
+  <script
+    type="module"
+    src="../components/grampsParser/PersonPageSection.ts"
+  ></script>
+</head>
+<body>
+  <sp-theme class="spectrum-Typography">
     <span>Person Layout</span>
+    <header>
+      <div class="topHeader" route="${globalThis.page.route}"></div>
+
+      <theme-component></theme-component>
+    </header>
+    <div class="title-section">
+      <h1 class="spectrum-Heading spectrum-Heading--sizeXXL">
+        ${globalThis.page.title}
+      </h1>
+    </div>
+
     <sp-split-view resizable primary-size="20%">
-      <div class="nav">
-        <side-bar route="${globalThis.page.route}"></side-bar>
-      </div>
+      <div class="nav"></div>
       <div>
-        <main slot="right">
+        <main>
           <person-section
             grampsId="${globalThis.page.data.grampsID}"
           ></person-section>
-          <h3>Facts</h3>
+          <h3
+            class="spectrum-Heading spectrum-Heading--serif spectrum-Heading--heavy spectrum-Heading--sizeL"
+          >
+            Facts
+          </h3>
           <content-outlet></content-outlet>
         </main>
       </div>
     </sp-split-view>
-  </body>
-</html>
+    <footer class="footer">
+      <span
+        id="copyright"
+        class="copyright spectrum-Detail spectrum-Detail--serif spectrum-Detail--sizeM spectrum-Detail--light"
+      >
+        COPYRIGHTPLACEHOLDER
+      </span>
+    </footer>
+  </sp-theme>
+</body>
