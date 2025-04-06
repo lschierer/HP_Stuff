@@ -472,17 +472,17 @@ importers:
         version: 3.24.2
     devDependencies:
       '@greenwood/cli':
-        specifier: 0.32.0-alpha.8
-        version: 0.32.0-alpha.8
+        specifier: 0.32.0-alpha.9
+        version: 0.32.0-alpha.9
       '@greenwood/plugin-adapter-aws':
-        specifier: 0.32.0-alpha.8
-        version: 0.32.0-alpha.8(@greenwood/cli@0.32.0-alpha.8)
+        specifier: 0.32.0-alpha.9
+        version: 0.32.0-alpha.9(@greenwood/cli@0.32.0-alpha.9)
       '@greenwood/plugin-google-analytics':
-        specifier: 0.32.0-alpha.8
-        version: 0.32.0-alpha.8(@greenwood/cli@0.32.0-alpha.8)
+        specifier: 0.32.0-alpha.9
+        version: 0.32.0-alpha.9(@greenwood/cli@0.32.0-alpha.9)
       '@greenwood/plugin-postcss':
-        specifier: 0.32.0-alpha.8
-        version: 0.32.0-alpha.8(@greenwood/cli@0.32.0-alpha.8)
+        specifier: 0.32.0-alpha.9
+        version: 0.32.0-alpha.9(@greenwood/cli@0.32.0-alpha.9)
       '@tsconfig/node22':
         specifier: ^22.0.1
         version: 22.0.1
@@ -1809,23 +1809,23 @@ packages:
     engines: {node: ^18.20.5 || ^20.18.3 || >=22.12.0}
     hasBin: true
 
-  '@greenwood/cli@0.32.0-alpha.8':
-    resolution: {integrity: sha512-VArE4iUcKfXA46Wra7ADZqRfRTDvxHcNP2WmKS1H38ITstwHM9gykI1tvpQpait2667bEebzrrC4JwjiJqivSg==}
+  '@greenwood/cli@0.32.0-alpha.9':
+    resolution: {integrity: sha512-+J228CKd9yzBrAOgF2CfNRd4Ups2jFp/wv3BQ29cZTqOWVuRf3Tx8+MxhPzF9R8Oq/4qgHI4vRYDIQyIRAy+aA==}
     engines: {node: ^18.20.5 || ^20.18.3 || >=22.12.0}
     hasBin: true
 
-  '@greenwood/plugin-adapter-aws@0.32.0-alpha.8':
-    resolution: {integrity: sha512-B/nsydiFdE0e9CvfEHojKXC0fMvWOWjnf8V2wwY0zJkekvJv6wl5eOU8lMfrceKa1M2TmW+nu8QwAx3/QXrCXg==}
+  '@greenwood/plugin-adapter-aws@0.32.0-alpha.9':
+    resolution: {integrity: sha512-CLxsK2jhXvTUe8DcIIN2JGHDXre78SwgLVuy11ya43tujOQmR1YxHWrdFNSooMgg2wWQqy9Q0WypGt3W/JCGLg==}
     peerDependencies:
       '@greenwood/cli': ^0.31.0
 
-  '@greenwood/plugin-google-analytics@0.32.0-alpha.8':
-    resolution: {integrity: sha512-kl0RhH0uYfulz5i9J5EAY82S+jxTCxduXhzwQTf8VGrB7kA6u4oo1spJRvSPqBw1hHblWkY6ohFn4ZK3Nht1FA==}
+  '@greenwood/plugin-google-analytics@0.32.0-alpha.9':
+    resolution: {integrity: sha512-5PMX8Dup7OoQFG8w8eHXAML/HDlHoIiY2htlScoCgow9LIcVUZBHRww1RlwHRPRy+7f0eE0DxuZnAwgIOCU0Dw==}
     peerDependencies:
       '@greenwood/cli': ^0.31.0
 
-  '@greenwood/plugin-postcss@0.32.0-alpha.8':
-    resolution: {integrity: sha512-VatTgJ+r8tFFmHhItzTg+bqdgcNHZnerZKV/Z8IOv6EGAwsjACyUeE3hF3Q1XdZcJPyXRW0YBlRZjooJH1OLvQ==}
+  '@greenwood/plugin-postcss@0.32.0-alpha.9':
+    resolution: {integrity: sha512-AtbGi+Upsevx06TpENpuDtEwVrZQ/dGHZzAx5gWMTD1BBai1PWi2300vrgMXHAoBR4eKdNa3kURD3wo9S5lziA==}
     peerDependencies:
       '@greenwood/cli': ^0.31.0
 
@@ -5846,9 +5846,6 @@ packages:
 
   greenwood@file:packages/greenwood:
     resolution: {directory: packages/greenwood, type: directory}
-
-  greenwoodspectrumtheme@0.9.1:
-    resolution: {integrity: sha512-xLGS8T6BBg4ThQFB/bjtdv9w2+uRW6t1xjJc5aExEuUqG+HN85hRbFoIZTNdChsQAL0jZW2dbhyMRVFvyp/uzg==}
 
   greenwoodspectrumtheme@0.9.2:
     resolution: {integrity: sha512-avPqTxGVTnaE06V330FqahJjiHrkMrkOUIDMK5dLyG3YiYJ8c8JLUIfevhgrIdSIzFikgJFJ0PEbwMDQz71tiQ==}
@@ -10055,6 +10052,10 @@ packages:
     resolution: {integrity: sha512-1UngRtP8cA8HFFR1O8JDPz7rCmdeAq5gYoEhuuwqCgnhW37QGhAkq/fuG6CKMB5D+R4zI5mzkkIHk1ZAQ41YTg==}
     engines: {node: '>=14'}
 
+  wc-compiler@0.17.0:
+    resolution: {integrity: sha512-08d31qhYjlJiTEfTEW3kpSdcNnx0j0eGaUIA1/+oyczJCxya7+tvbQ/Tz3wbS2kzd/t8iSxNYdfhpf43o6RVuA==}
+    engines: {node: '>=18'}
+
   web-component-analyzer@2.0.0:
     resolution: {integrity: sha512-UEvwfpD+XQw99sLKiH5B1T4QwpwNyWJxp59cnlRwFfhUW6JsQpw5jMeMwi7580sNou8YL3kYoS7BWLm+yJ/jVQ==}
     hasBin: true
@@ -11709,7 +11710,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@greenwood/cli@0.32.0-alpha.8':
+  '@greenwood/cli@0.32.0-alpha.9':
     dependencies:
       '@rollup/plugin-commonjs': 28.0.3(rollup@4.39.0)
       '@rollup/plugin-node-resolve': 15.3.1(rollup@4.39.0)
@@ -11733,23 +11734,23 @@ snapshots:
       rollup: 4.39.0
       sucrase: 3.35.0
       unified: 11.0.5
-      wc-compiler: 0.16.0
+      wc-compiler: 0.17.0
     transitivePeerDependencies:
       - bufferutil
       - supports-color
       - utf-8-validate
 
-  '@greenwood/plugin-adapter-aws@0.32.0-alpha.8(@greenwood/cli@0.32.0-alpha.8)':
+  '@greenwood/plugin-adapter-aws@0.32.0-alpha.9(@greenwood/cli@0.32.0-alpha.9)':
     dependencies:
-      '@greenwood/cli': 0.32.0-alpha.8
+      '@greenwood/cli': 0.32.0-alpha.9
 
-  '@greenwood/plugin-google-analytics@0.32.0-alpha.8(@greenwood/cli@0.32.0-alpha.8)':
+  '@greenwood/plugin-google-analytics@0.32.0-alpha.9(@greenwood/cli@0.32.0-alpha.9)':
     dependencies:
-      '@greenwood/cli': 0.32.0-alpha.8
+      '@greenwood/cli': 0.32.0-alpha.9
 
-  '@greenwood/plugin-postcss@0.32.0-alpha.8(@greenwood/cli@0.32.0-alpha.8)':
+  '@greenwood/plugin-postcss@0.32.0-alpha.9(@greenwood/cli@0.32.0-alpha.9)':
     dependencies:
-      '@greenwood/cli': 0.32.0-alpha.8
+      '@greenwood/cli': 0.32.0-alpha.9
       postcss: 8.5.3
       postcss-import: 16.1.0(postcss@8.5.3)
       postcss-preset-env: 7.8.3(postcss@8.5.3)
@@ -13547,7 +13548,7 @@ snapshots:
 
   '@types/acorn@4.0.6':
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.7
 
   '@types/aws-cloudfront-function@1.0.4': {}
 
@@ -16407,7 +16408,7 @@ snapshots:
       '@spectrum-web-components/split-view': 1.4.0
       '@spectrum-web-components/styles': 1.4.0
       '@spectrum-web-components/theme': 1.4.0
-      greenwoodspectrumtheme: 0.9.1
+      greenwoodspectrumtheme: 0.9.2
       iconify-icon: 2.3.0
       jsdom: 26.0.0
       lit: 3.2.1
@@ -16436,49 +16437,6 @@ snapshots:
       - canvas
       - supports-color
       - utf-8-validate
-
-  greenwoodspectrumtheme@0.9.1:
-    dependencies:
-      '@isomorphic-git/lightning-fs': 4.6.0
-      '@spectrum-css/actionbutton': 7.1.3(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/alertbanner': 3.1.1(@spectrum-css/button@14.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/closebutton@6.1.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/divider@5.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/button': 14.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/card': 11.1.0(@spectrum-css/actionbutton@7.1.3(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)(@spectrum-css/typography@8.1.0(@spectrum-css/tokens@16.0.1))
-      '@spectrum-css/closebutton': 6.1.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/divider': 5.1.0(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/icon': 9.1.0(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/link': 7.1.0(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/menu': 9.2.0(@spectrum-css/divider@5.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/page': 9.1.0(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/picker': 9.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/menu@9.2.0(@spectrum-css/divider@5.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/sidenav': 7.1.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/splitview': 7.1.0(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/table': 8.1.0(@spectrum-css/button@14.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/tokens': 16.0.1
-      '@spectrum-css/typography': 8.1.0(@spectrum-css/tokens@16.0.1)
-      '@spectrum-web-components/card': 1.4.0
-      '@spectrum-web-components/popover': 1.4.0
-      '@spectrum-web-components/split-view': 1.4.0
-      '@spectrum-web-components/styles': 1.4.0
-      '@spectrum-web-components/theme': 1.4.0
-      greenwoodspectrumtheme: 'link:'
-      iconify-icon: 2.3.0
-      isomorphic-git: 1.30.1
-      rehype-parse: 9.0.1
-      rehype-stringify: 10.0.1
-      unified: 11.0.5
-      unist-util-visit: 5.0.0
-      zod: 3.24.2
-    transitivePeerDependencies:
-      - '@spectrum-css/asset'
-      - '@spectrum-css/checkbox'
-      - '@spectrum-css/helptext'
-      - '@spectrum-css/popover'
-      - '@spectrum-css/progresscircle'
-      - '@spectrum-css/quickaction'
-      - '@spectrum-css/switch'
-      - '@spectrum-css/thumbnail'
-      - '@spectrum-css/tray'
 
   greenwoodspectrumtheme@0.9.2:
     dependencies:
@@ -18050,7 +18008,7 @@ snapshots:
 
   micromark-extension-mdx-expression@3.0.0:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.7
       devlop: 1.1.0
       micromark-factory-mdx-expression: 2.0.2
       micromark-factory-space: 2.0.1
@@ -18062,7 +18020,7 @@ snapshots:
   micromark-extension-mdx-jsx@3.0.1:
     dependencies:
       '@types/acorn': 4.0.6
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.7
       devlop: 1.1.0
       estree-util-is-identifier-name: 3.0.0
       micromark-factory-mdx-expression: 2.0.2
@@ -18079,7 +18037,7 @@ snapshots:
 
   micromark-extension-mdxjs-esm@3.0.0:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.7
       devlop: 1.1.0
       micromark-core-commonmark: 2.0.3
       micromark-util-character: 2.1.1
@@ -18115,7 +18073,7 @@ snapshots:
 
   micromark-factory-mdx-expression@2.0.2:
     dependencies:
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.7
       devlop: 1.1.0
       micromark-factory-space: 2.0.1
       micromark-util-character: 2.1.1
@@ -18180,7 +18138,7 @@ snapshots:
   micromark-util-events-to-acorn@2.0.2:
     dependencies:
       '@types/acorn': 4.0.6
-      '@types/estree': 1.0.6
+      '@types/estree': 1.0.7
       '@types/unist': 3.0.3
       devlop: 1.1.0
       estree-util-visit: 2.0.0
@@ -21617,6 +21575,15 @@ snapshots:
   walk-up-path@3.0.1: {}
 
   wc-compiler@0.16.0:
+    dependencies:
+      '@projectevergreen/acorn-jsx-esm': 0.1.0(acorn@8.14.1)
+      acorn: 8.14.1
+      acorn-walk: 8.3.4
+      astring: 1.9.0
+      parse5: 7.2.1
+      sucrase: 3.35.0
+
+  wc-compiler@0.17.0:
     dependencies:
       '@projectevergreen/acorn-jsx-esm': 0.1.0(acorn@8.14.1)
       acorn: 8.14.1
