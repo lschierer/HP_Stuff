@@ -99,10 +99,12 @@ const loadNavFragment = async (compilation: Compilation, tocPage: Page) => {
         console.log("Successfully loaded nav fragment");
       }
     } catch (error) {
-      console.warn(
-        `Could not load nav fragment from ${navFragmentPath}:`,
-        error
-      );
+      if (DEBUG) {
+        console.warn(
+          `Could not load nav fragment from ${navFragmentPath}:`,
+          error
+        );
+      }
 
       // Try an alternate location if the first attempt fails
       if (mode === "development") {
@@ -121,17 +123,22 @@ const loadNavFragment = async (compilation: Compilation, tocPage: Page) => {
             );
           }
         } catch (altError) {
-          console.warn(
-            `Could not load nav fragment from alternate location ${altPath}`,
-            altError
-          );
+          if (DEBUG) {
+            console.warn(
+              `Could not load nav fragment from alternate location ${altPath}`,
+              altError
+            );
+          }
         }
       }
     }
 
     return navContent;
   } catch (error) {
-    console.error("Error loading nav fragment:", error);
+    if (DEBUG) {
+      console.error("Error loading nav fragment:", error);
+    }
+
     return "";
   }
 };
@@ -155,12 +162,14 @@ const getLayout: GetLayout = async (
   }
 
   if (typeof route === "object") {
-    console.log(
-      `route has keys ${Object.keys(route)
-        .map((k) => k)
-        .join(" ")}`,
-      `route.keys looks like ${JSON.stringify(route["route" as keyof typeof route])}`
-    );
+    if (DEBUG) {
+      console.log(
+        `route has keys ${Object.keys(route)
+          .map((k) => k)
+          .join(" ")}`,
+        `route.keys looks like ${JSON.stringify(route["route" as keyof typeof route])}`
+      );
+    }
   }
 
   if (realRoute.endsWith("TOC/")) {
@@ -195,7 +204,9 @@ const getLayout: GetLayout = async (
 
   let navContent = "";
   if (TOC) {
-    console.log(`TOC.route is ${TOC.route}`);
+    if (DEBUG) {
+      console.log(`TOC.route is ${TOC.route}`);
+    }
     // Load the nav fragment
     navContent = await loadNavFragment(compilation, TOC);
   }
