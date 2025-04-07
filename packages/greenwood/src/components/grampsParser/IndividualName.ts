@@ -67,7 +67,7 @@ export default class IndividualName extends HTMLElement {
   };
 
   readonly buildLinkTarget = (): string => {
-    let targetLocation = "/Harrypedia/people/";
+    let targetLocation = "/Harrypedia/people";
 
     if (this.person) {
       if (Array.isArray(this.person.primary_name.surname_list)) {

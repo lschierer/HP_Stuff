@@ -264,3 +264,34 @@ export const findBirthLastName = (
   }
   return "Unknown";
 };
+
+export const findAnyLastName = (
+  person: GedcomPerson.GedcomElement,
+  forLink: boolean = false
+) => {
+  // First try to find a birth name
+  const birthLastName = findBirthLastName(person, forLink);
+  
+  // If we found a valid birth last name, return it
+  if (birthLastName !== "Unknown") {
+    return birthLastName;
+  }
+  
+  // Otherwise, look for any surname in the primary_name
+  if (person.primary_name.surname_list.length > 0) {
+    for (const surname of person.primary_name.surname_list) {
+      if (surname.surname && surname.surname.length > 0) {
+        if (DEBUG) {
+          console.log(`${person.id} has a non-birth surname ${surname.surname}`);
+        }
+        if (forLink) {
+          return encodeURIComponent(surname.surname);
+        }
+        return surname.surname;
+      }
+    }
+  }
+  
+  // If no surname found, return "Unknown"
+  return "Unknown";
+};
