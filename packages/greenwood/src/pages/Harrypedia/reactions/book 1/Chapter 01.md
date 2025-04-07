@@ -24,7 +24,7 @@ The first chapter, as is expected _of_ a first chapter, has more questions than 
 [Petunia]: /Harrypedia/people/evans/petunia//
 [McGonagall]: /Harrypedia/people/mcgonagall/minerva//
 [Lily]: /Harrypedia/people/evans/lily_j//
-[Harry]: /Harrypedia/people/Potter/Harry_James//
+[Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Vernon]: /Harrypedia/people/dursley/vernon//
 [Dickens]: https://en.wikipedia.org/wiki/Charles_Dickens
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//

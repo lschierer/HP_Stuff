@@ -35,7 +35,7 @@ god-child is expected and natural.
 [Sirius]: /Harrypedia/people/black/sirius_iii//
 [James]: /Harrypedia/people/Potter/James//
 [Walburga]: /Harrypedia/people/black/walburga/
-[Harry]: /Harrypedia/people/Potter/Harry_James//
+[Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Dorea]: /Harrypedia/people/black/dorea/
 [Harry Potter Wiki]: https://harrypotter.fandom.com/wiki
 

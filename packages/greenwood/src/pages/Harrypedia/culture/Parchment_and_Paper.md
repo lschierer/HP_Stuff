@@ -52,7 +52,7 @@ and letters (unless you are including privacy charms)).
 
 [McGonagall]: /Harrypedia/people/mcgonagall/minerva//
 [Dip pen]: https://en.wikipedia.org/wiki/Dip_pen
-[Harry]: /Harrypedia/people/Potter/Harry_James//
+[Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Wikipedia]: https://en.wikipedia.org/
 
 [^230804]: citation needed.

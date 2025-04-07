@@ -80,11 +80,11 @@ that way, but I think it is clear at this point that the author's intent
 for Occlumency is fairly clear. The problem then is not so much Occlumency,
 but rather [Legilimency].
 
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 [James]: /Harrypedia/people/Potter/James/
 [James Potter]: /Harrypedia/people/Potter/James/
-[Professor Snape]: /Harrypedia/people/snape/severus/
-[Snape]: /Harrypedia/people/snape/severus/
+[Professor Snape]: /Harrypedia/people/Snape/Severus/
+[Snape]: /Harrypedia/people/Snape/Severus/
 [Draco]: /Harrypedia/people/malfoy/draco_lucius/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 

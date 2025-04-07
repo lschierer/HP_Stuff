@@ -30,7 +30,7 @@ facsimile of that something's magic_** (thus it can become a
 the fact that it can resurrect a suppressed memory and cause [Harry] to
 faint means that it is still a frighteningly over-powered creature.
 
-[Harry]: /Harrypedia/people/Potter/Harry_James//
+[Harry]: </Harrypedia/people/Potter/Harry James/>/
 [tells]: https://www.rowlingindex.org/work/pmbog/
 [Dementors]: /Harrypedia/non-beings/dementor/
 [Dementor]: /Harrypedia/non-beings/dementor/

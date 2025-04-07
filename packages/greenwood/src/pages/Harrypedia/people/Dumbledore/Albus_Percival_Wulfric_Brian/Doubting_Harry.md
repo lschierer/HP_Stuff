@@ -119,7 +119,7 @@ such as [McGonagall][] and [Sprout][] might well pick up on that distrust.
 
 [Bill]: /Harrypedia/people/weasley/william_arthur/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
 [Hogwarts]: /Harrypedia/hogwarts/
 [Kingsley]: /Harrypedia/people/shacklebolt/kingsley/
@@ -131,6 +131,6 @@ such as [McGonagall][] and [Sprout][] might well pick up on that distrust.
 [Professor Sprout]: /Harrypedia/people/sprout/pomona/
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
 [Ron]: /Harrypedia/people/weasley/ronald_bilius/
-[Snape]: /Harrypedia/people/snape/severus/
+[Snape]: /Harrypedia/people/Snape/Severus/
 [Sprout]: /Harrypedia/people/sprout/pomona/
 [Tom Riddle]: /Harrypedia/people/riddle/tom_marvolo/

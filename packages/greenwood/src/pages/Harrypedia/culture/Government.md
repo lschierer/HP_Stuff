@@ -85,7 +85,7 @@ the [Black] and [Potter] families (though this might be considered part of
 my statement that it contradicts the origin stories).
 
 [Mr. Malfoy]: /Harrypedia/people/malfoy/lucius_abraxas//
-[Harry]: /Harrypedia/people/Potter/Harry_James//
+[Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Henry]: /Harrypedia/people/Potter/henry/
 [Sirius]: /Harrypedia/people/black/sirius_iii//
 [Arthur]: /Harrypedia/people/weasley/arthur//

@@ -1,6 +1,8 @@
 ---
 collection: Harrypedia
-layout: person
+imports: 
+  - /components/grampsParser/PersonPageSection.ts type="modules"
+layout: standard
 title: Potter Family Wealth
 author: "Luke Schierer"
 pageType: person
@@ -92,7 +94,7 @@ vault without forethought.[^210322-1]
 [Fleamont]: /Harrypedia/people/Potter/fleamont/
 [Grimmauld Place]: /Harrypedia/grimmauld_place/
 [Gringotts]: /Harrypedia/gringotts/
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 [James]: /Harrypedia/people/Potter/James/
 [Lestranges]: /Harrypedia/people/lestrange/
 [Linfred]: /Harrypedia/people/linfred/

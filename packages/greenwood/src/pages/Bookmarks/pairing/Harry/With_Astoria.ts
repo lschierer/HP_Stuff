@@ -26,7 +26,7 @@ pleasure, or drunkenness.
 These stories will focus on a version of [Astoria] that build off of the _lack_ of detail we have about her character. Mrs. Rowling's descriptions about the decision process that, in the cannon material, lead to her marriage is incredibly vague and in some ways even suggestive.
 These stories take that vague suggestion and run with it.
 
-[Draco]: /Harrypedia/people/Malfoy/Draco_Lucius/
+[Draco]: /Harrypedia/people/Malfoy/Draco Lucius/
 [Astoria]: /Harrypedia/people/Greengrass/Astoria/
 
 `;

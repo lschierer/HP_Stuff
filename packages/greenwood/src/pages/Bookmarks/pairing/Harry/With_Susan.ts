@@ -22,7 +22,7 @@ const getBody: (
   const bodyText = `
 Many of these stories happen when [Amelia] [Bones] steps in to, you know, actually do her job as a law enforcement official, and thus belong in the [Responsible Adult] category. While that might happen in a few of these, it is not why they are included.
 
-[Amelia]: /Harrypedia/people/Bones/Amelia_Susan/
+[Amelia]: /Harrypedia/people/Bones/Amelia Susan/
 [Bones]: /Harrypedia/people/Bones/
 [Responsible Adult]: </Bookmarks/Responsible_Adults/>
 `;

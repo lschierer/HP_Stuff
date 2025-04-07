@@ -28,6 +28,6 @@ author: Luke Schierer
 [bowl cut]: https://en.wikipedia.org/wiki/Bowl_cut
 [crew cut]: https://en.wikipedia.org/wiki/Crew_cut
 [Dudley]: /Harrypedia/people/dursley/dudley//
-[Harry]: /Harrypedia/people/Potter/Harry_James//
+[Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Lily]: /Harrypedia/people/evans/lily_j//
 [James]: /Harrypedia/people/Potter/James//

@@ -23,7 +23,7 @@ const getBody: (
 I really feel that [Hannah] is an under utilised character in fan fiction. Sure she backs down from her defence of him in second year and ends up wearing a badge in fourth, but both of these essentially boil down to the fact that sheis a [Hufflepuff] and not a [Gryffindor] - she _isn't_ brave, and getting along with (showing loyalty to) her housemates is _massively_ important to her. The latter however can easily be transferred to [Harry] by a romantic attachment overriding the House loyalty, as my first entry in this category does.
 
 [Hannah]: /Harrypedia/people/Abbott/Hannah/
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hufflepuff]: /Harrypedia/Hogwarts/Hufflepuff/
 [Gryffindor]: /Harrypedia/Hogwarts/Gryffindor/
 

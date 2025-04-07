@@ -22,7 +22,7 @@ const getBody: (
   const bodyText = `
 In general I feel that while [Luna] and [Harry] will almost always be friends, that unless you change one or the other significantly, they will never be more than that. Still, there are some stories where she is the main character that are worth remembering.
 
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 [Luna]: /Harrypedia/people/Lovegood/Luna/
 `;
   const bookmarksList = new BookmarksList();

@@ -83,7 +83,7 @@ things that go differently from the books.
 [life debts]: /Harrypedia/magic/contracts/
 [trace]: /Harrypedia/magic/
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 [Draco]: /Harrypedia/people/malfoy/draco_lucius/
 [Fleur]: /Harrypedia/people/delacour/fleur_isabelle/
 [Nymphadora]: /Harrypedia/people/tonks/nymphadora/
@@ -92,7 +92,7 @@ things that go differently from the books.
 [Lily]: /Harrypedia/people/evans/lily_j/
 [James]: /Harrypedia/people/Potter/James/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Snape]: /Harrypedia/people/snape/severus/
+[Snape]: /Harrypedia/people/Snape/Severus/
 
 
 [^240415-1]:

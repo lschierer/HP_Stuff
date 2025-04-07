@@ -21,7 +21,7 @@ const getBody: GetBody = async () => {
 * _[The Forgotten Summer Birthday](https://www.siye.co.uk/siye/viewstory.php?sid=130062)_ by [CharmHazel](https://www.siye.co.uk/siye/viewuser.php?uid=209861)
 
 
-[Ginny]: /Harrypedia/people/Potter/Harry_James/
+[Ginny]: </Harrypedia/people/Potter/Harry James/>
 `;
   return markdownTextProcessing(bodyText);
 };

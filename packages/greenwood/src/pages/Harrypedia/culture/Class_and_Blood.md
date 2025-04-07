@@ -163,7 +163,7 @@ Slytherin would easily make use of. He or she would not be to "uppity" as long
 as you funded their research after all, and could be easily cheated out of any
 profitable patent-able discoveries…
 
-[Harry]: /Harrypedia/people/Potter/Harry_James//
+[Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
 [wwwbrpb]: https://www.wizardingworld.com/writing-by-jk-rowling/pure-blood
 

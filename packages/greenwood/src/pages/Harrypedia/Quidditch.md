@@ -79,7 +79,7 @@ disadvantages to the captain being one or more of these? Does the answer
 depend in any way on the team's playing style?
 
 [Gwenog Jones]: /Harrypedia/people/jones/gwenog/
-[Harry]: /Harrypedia/people/Potter/Harry_James//
+[Harry]: </Harrypedia/people/Potter/Harry James/>/
 
 Many authors have attempted to do something with this, sometimes by radically
 changing the game.[^220705-3] Few have come up with compelling explanations

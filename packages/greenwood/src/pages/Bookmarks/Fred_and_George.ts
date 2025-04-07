@@ -24,7 +24,7 @@ These stories that are really about [Fred] and [George], more than they are abou
 
 [Fred]: /Harrypedia/people/Weasley/Fred/
 [George]: /Harrypedia/people/Weasley/George/
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 `;
   const bookmarksList = new BookmarksList();
   bookmarksList.category = "Fred and George";

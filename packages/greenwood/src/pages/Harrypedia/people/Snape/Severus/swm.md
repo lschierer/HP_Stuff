@@ -15,8 +15,8 @@ exact chronology, what follows is my best reconstruction.
 [Sirius]: /Harrypedia/people/black/sirius_iii/
 [James]: /Harrypedia/people/Potter/James/
 [Lily]: /Harrypedia/people/evans/lily_j/
-[Snape]: /Harrypedia/people/snape/severus/
-[Severus]: /Harrypedia/people/snape/severus/
+[Snape]: /Harrypedia/people/Snape/Severus/
+[Severus]: /Harrypedia/people/Snape/Severus/
 [McGonagall]: /Harrypedia/people/mcgonagall/minerva/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 [Lupin]: /Harrypedia/people/lupin/remus_john/
@@ -420,5 +420,5 @@ own_, **before she begins their relationship**. Only then does she allow herself
 to act on that attraction by agreeing to go out with him.
 
 [Occlumens]: /Harrypedia/magic/the_mind_arts/occlumency/
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hogwarts]: /Harrypedia/hogwarts/

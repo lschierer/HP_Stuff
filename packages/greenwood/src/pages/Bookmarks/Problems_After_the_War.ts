@@ -24,7 +24,7 @@ In general I prefer to sort based on the relationships involved. Where that is n
 
 These stories are notable because you do not always have a happy ending.
 
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 `;
   const bookmarksList = new BookmarksList();
   bookmarksList.category = "Problems After the War";

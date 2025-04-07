@@ -22,7 +22,7 @@ const getBody: (
   const bodyText = `
 These stories are primarily notable in that [Harry] leaves Britain, the magical world, or both.
 
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 `;
   const bookmarksList = new BookmarksList();
   bookmarksList.category = "Harry Leaves";

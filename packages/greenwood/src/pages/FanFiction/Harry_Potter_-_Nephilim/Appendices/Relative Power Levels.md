@@ -81,7 +81,7 @@ the history-making scores that characters like [Dumbledore] or [Harry] do.
 
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 
 ### Delacour
 

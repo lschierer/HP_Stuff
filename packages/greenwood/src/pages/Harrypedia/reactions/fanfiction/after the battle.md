@@ -26,7 +26,7 @@ In addition to the legitimate unanswered difficult questions that an author atte
 
 [horcrux]: /Harrypedia/magic/dark/horcruxes//
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
-[Harry]: /Harrypedia/people/Potter/Harry_James//
+[Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly//
 [Hogwarts]: /Harrypedia/hogwarts//
 [Neville]: /Harrypedia/people/longbottom/neville//

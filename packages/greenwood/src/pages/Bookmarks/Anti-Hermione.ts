@@ -24,9 +24,9 @@ These stories are reactions to the way that Mrs. Rowling allowed [Hermione] to e
 both [Ron] and [Harry] in the latter books, and/or to the way in which some fans take this
 to an even greater extreme.
 
-[Hermione]: /Harrypedia/people/Granger/Hermione_Jean/
-[Ron]: /Harrypedia/people/Weasley/Ronald_Bilius/
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
+[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 `;
   const bookmarksList = new BookmarksList();
   bookmarksList.category = "Anti-Hermione";

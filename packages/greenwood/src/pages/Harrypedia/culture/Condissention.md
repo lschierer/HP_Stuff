@@ -51,7 +51,7 @@ around for _centuries_. These two examples reiterate what I said discussing
 of what is available or better.
 
 [paper]: ../parchment_and_paper/
-[Harry]: /Harrypedia/people/Potter/Harry_James//
+[Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Hermione]: /Harrypedia/people/granger/hermione_jean//
 [Malfoy]: /Harrypedia/people/malfoy/
 [Mr. Weasley]: /Harrypedia/people/weasley/arthur//

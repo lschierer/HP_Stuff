@@ -22,7 +22,7 @@ const getBody: (
   const bodyText = `
 [Harry] is not the only character to go back in time in Fan Fiction.
 
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 `;
   const bookmarksList = new BookmarksList();
   bookmarksList.category = "Time Travel";

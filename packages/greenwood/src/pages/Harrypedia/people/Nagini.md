@@ -1,5 +1,0 @@
----
-title: Nagini
-layout: person
----
-

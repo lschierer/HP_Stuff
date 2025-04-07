@@ -185,9 +185,9 @@ hunt them down. Why, knowing that he will die, he entrusts the knowledge to
 [Kingsley]: /Harrypedia/people/shacklebolt/kingsley/
 [Moody]: /Harrypedia/people/moody/
 [TMR1]: /Harrypedia/people/riddle/tom_marvolo/
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
 [Ron]: /Harrypedia/people/weasley/ronald_bilius/
 [Bill]: /Harrypedia/people/weasley/william_arthur/
 [Draco]: /Harrypedia/people/malfoy/draco_lucius/
-[Snape]: /Harrypedia/people/snape/severus/
+[Snape]: /Harrypedia/people/Snape/Severus/

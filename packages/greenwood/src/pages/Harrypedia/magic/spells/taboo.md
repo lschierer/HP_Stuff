@@ -28,7 +28,7 @@ If is well known but restricted in some way, what does the restricting?
 _Why_ (for example) must one control the Ministry to set a Taboo?
 
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
 [Ron]: /Harrypedia/people/weasley/ronald_bilius/
 

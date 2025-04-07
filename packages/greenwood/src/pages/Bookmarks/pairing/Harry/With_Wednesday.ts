@@ -28,7 +28,7 @@ themes abound, despite the fact that it is entirely unnecessary, and, frankly,
 contrary to the original Addams source material. Despite that, there are some
 real gems, some of which are even finished.
 
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 
 `;
   const bookmarksList = new BookmarksList();

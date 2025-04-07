@@ -76,7 +76,7 @@ it is pure speculation.
 [parchment]: ../parchment_and_paper/
 [McGonagall]: /Harrypedia/people/mcgonagall/minerva//
 [Dip pen]: https://en.wikipedia.org/wiki/Dip_pen
-[Harry]: /Harrypedia/people/Potter/Harry_James//
+[Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Wikipedia]: https://en.wikipedia.org/
 
 [^231004-3]: See [wands]

@@ -51,8 +51,8 @@ things it triggered. For all the prophesy does not name [Dumbledore][], it
 shapes his actions much as the one that Macbeth hears shapes his actions.
 
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
-[Harry]: /Harrypedia/people/Potter/Harry_James/
-[Harry's]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
+[Harry's]: </Harrypedia/people/Potter/Harry James/>
 [Dumbledore]: ../
 
 In the fan fiction work _[The Sound of Silence][BW95TSS1]_ [Dumbledore][]
@@ -205,7 +205,7 @@ complicated nature of the thorny problem to confuse the listener.
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly/
 [Hermione]: /Harrypedia/people/granger/hermione_jean/
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
-[SS1]: /Harrypedia/people/snape/severus/
+[SS1]: /Harrypedia/people/Snape/Severus/
 [CAD1]: https://fanfictalk.com/archive/viewstory.php?sid=721
 [BW95TSS1]: https://www.fanfiction.net/s/12175260
 [WSM1]: https://www.gutenberg.org/cache/epub/1533/pg1533-images.html.utf8.gzip

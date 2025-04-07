@@ -16,7 +16,7 @@ There are a couple of realistic possibilities for [Hogwarts].
 
 It is *most likely* that there are, in fact, one pair of prefects per house and per year both.  The extra prefects are both incredibly absent in doing anything noticeable, represent an easily filled glaring hole in the student body.
 
-[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hogwarts]: /Harrypedia/hogwarts/
 [Percy]: /Harrypedia/people/weasley/percy_ignatius/
 [Gryffindor]: /Harrypedia/hogwarts/gryffindor/

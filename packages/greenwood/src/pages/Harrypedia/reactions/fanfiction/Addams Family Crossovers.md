@@ -30,4 +30,4 @@ Rowling's original work lacks any solidity to its moral framework.
     Family](https://.wikipedia.org/wiki/The_Addams_Family)".
 
 [Wednesday Addams]: https://en.wikipedia.org/wiki/Wednesday_Addams
-[Harry]: /Harrypedia/people/Potter/Harry_James//
+[Harry]: </Harrypedia/people/Potter/Harry James/>/
