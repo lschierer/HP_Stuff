@@ -104,21 +104,21 @@ export default class IndividualName extends HTMLElement {
       }
 
       if (this.person.primary_name.first_name.length > 0) {
-        const fn = this.person.primary_name.first_name.replaceAll(" ", "_");
+        const fn = this.person.primary_name.first_name;
         targetLocation = `${targetLocation}${fn}`;
       } else if (
         this.person.primary_name.nick &&
         this.person.primary_name.nick.length > 0
       ) {
-        const fn = this.person.primary_name.nick.replaceAll(" ", "_");
+        const fn = this.person.primary_name.nick;
         targetLocation = `${targetLocation}${fn}`;
       }
       if (
         this.person.primary_name.suffix &&
         this.person.primary_name.suffix.length > 0
       ) {
-        const suffix = this.person.primary_name.suffix.replaceAll(" ", "_");
-        targetLocation = `${targetLocation}_${suffix}`;
+        const suffix = this.person.primary_name.suffix;
+        targetLocation = `${targetLocation} ${suffix}`;
       }
       targetLocation = `${targetLocation}/`;
     }

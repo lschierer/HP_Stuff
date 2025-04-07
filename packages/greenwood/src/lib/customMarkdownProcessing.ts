@@ -11,8 +11,12 @@ const markdownTextProcessing = (rawText: string) => {
     .use(remarkGfm)
     .use(remarkRehype)
     .use(rehypeAddClasses, {
-      a: "spectrum-Link spectrum-Link--quiet spectrum-Link--primary",
-      p: "spectrum-Body spectrum-Body--serif spectrum-Body--sizeM",
+      "h1,h2,h3,h4,h5":
+        "spectrum-Heading spectrum-Heading--serif spectrum-Heading--heavy",
+      a: "spectrum-Link  spectrum-Link--primary",
+      "p,li": "spectrum-Body spectrum-Body--serif spectrum-Body--sizeM",
+      "blockquote,blockquote paragraph":
+        "spectrum-Detail spectrum-Detail--serif spectrum-Detail--sizeM",
     })
     .use(rehypeStringify)
     .processSync(rawText)

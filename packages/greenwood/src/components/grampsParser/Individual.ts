@@ -146,7 +146,7 @@ export default class GrampsIndividual extends HTMLElement {
       );
 
       return `
-      <div class="spectrum-Typography">
+      <div class="gramps-individual spectrum-Typography">
         <div class=" CardContainer " role="figure">
           <div class=" CardAsset ">
             <iconify-icon
@@ -202,7 +202,9 @@ export default class GrampsIndividual extends HTMLElement {
                         ${families_as_parent
                           .map((family) => {
                             return `
-                            ${family.getList()}
+                            <li>
+                              ${family.getList()}
+                            </li>
                           `;
                           })
                           .join("")}

@@ -6,6 +6,7 @@ if (DEBUG) {
 }
 
 import "./Individual.ts";
+import GrampsCSS from "../../styles/Gramps.css" with { type: "css" };
 
 export default class PersonSection extends HTMLElement {
   accessor grampsId = "";
@@ -27,6 +28,7 @@ export default class PersonSection extends HTMLElement {
     }
   };
   connectedCallback() {
+    document.adoptedStyleSheets.push(GrampsCSS);
     this.getAttributes();
     if (this.grampsId.length) {
       this.innerHTML = `

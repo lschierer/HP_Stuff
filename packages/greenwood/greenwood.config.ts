@@ -1,18 +1,23 @@
 import { greenwoodPluginPostCss } from "@greenwood/plugin-postcss";
 import type { Config } from "@greenwood/cli";
 
+import { exit } from "node:process";
+
 import { greenwoodSpectrumThemePack } from "greenwoodspectrumtheme";
 
-import { GedcomPeopleSourcePlugin } from "./src/plugins/gramps/people.ts";
-import { GedcomFamilySourcePlugin } from "./src/plugins/gramps/families.ts";
+import { GedcomSourcePlugin } from "./src/plugins/gramps.ts";
 
-import {
-  loadConfig,
-  type Config as PackConfig,
-} from "greenwoodspectrumtheme/config";
+import { Config as PackConfig } from "greenwoodspectrumtheme/config";
+
 import localConfig from "./src/spectrum-theme.config.ts";
 
-const config = loadConfig(localConfig) as PackConfig;
+const valid = PackConfig.safeParse(localConfig);
+if (!valid.success) {
+  console.error(valid.error.message);
+  throw new Error(valid.error.message);
+  exit(1);
+}
+const config = valid.data;
 
 const gc: Config = {
   useTsc: true,
@@ -23,6 +28,17 @@ const gc: Config = {
   staticRouter: false,
   markdown: {
     plugins: [
+      {
+        name: "rehype-class-names",
+        options: {
+          "h1,h2,h3,h4,h5":
+            "spectrum-Heading spectrum-Heading--serif spectrum-Heading--heavy",
+          a: "spectrum-Link  spectrum-Link--primary",
+          "p,li": "spectrum-Body spectrum-Body--serif spectrum-Body--sizeM",
+          "blockquote,blockquote paragraph":
+            "spectrum-Detail spectrum-Detail--serif spectrum-Detail--sizeM",
+        },
+      },
       "rehype-autolink-headings",
       "remark-alerts",
       "remark-gfm",
@@ -31,8 +47,7 @@ const gc: Config = {
   },
   plugins: [
     ...greenwoodSpectrumThemePack(config),
-    GedcomPeopleSourcePlugin(),
-    GedcomFamilySourcePlugin(),
+    GedcomSourcePlugin(),
 
     greenwoodPluginPostCss({
       extendConfig: true,
