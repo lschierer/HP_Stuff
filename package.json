@@ -27,6 +27,7 @@
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-sh": "^0.15.0",
+    "quicktype": "^23.0.171",
     "release-it": "^18.1.2",
     "release-it-pnpm": "^4.6.4",
     "stylelint-config-standard": "^37.0.0",

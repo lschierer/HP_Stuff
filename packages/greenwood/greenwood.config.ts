@@ -1,4 +1,5 @@
 import { greenwoodPluginPostCss } from "@greenwood/plugin-postcss";
+import { greenwoodPluginAdapterAws } from "@greenwood/plugin-adapter-aws";
 import type { Config } from "@greenwood/cli";
 
 import { exit } from "node:process";
@@ -48,10 +49,10 @@ const gc: Config = {
   plugins: [
     ...greenwoodSpectrumThemePack(config),
     GedcomSourcePlugin(),
-
     greenwoodPluginPostCss({
       extendConfig: true,
     }),
+    greenwoodPluginAdapterAws(),
   ],
 };
 export default gc;

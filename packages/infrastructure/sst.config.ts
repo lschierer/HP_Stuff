@@ -1,13 +1,14 @@
-/// <reference path="./.sst/platform/config.d.ts" />
-
 export default $config({
   app(input) {
     return {
-      name: "@hp-stuff/infrastructure",
-      removal: input?.stage === "production" ? "retain" : "remove",
-      protect: ["production"].includes(input?.stage),
+      name: "hpstuff",
+      removal: input.stage === "production" ? "retain" : "remove",
+      protect: ["production"].includes(input.stage),
       home: "aws",
+      region: "us-east-2",
     };
   },
-  async run() {},
+  async run() {
+    await import("./router.ts");
+  },
 });
