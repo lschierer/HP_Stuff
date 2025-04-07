@@ -48,7 +48,7 @@ most magic users do not believe in angels, much less fallen angels, and
 have a strong distrust for the Church.
 
 [Lily Evans]: /Harrypedia/people/evans/lily_j//
-[Hermione]: /Harrypedia/people/granger/hermione_jean//
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean//
 
 [^241123-2]: Or at least the in-world version of it, see [Rules of Magic].
 
@@ -259,7 +259,7 @@ can never be fully freed.
 [goblin wars]: /FanFiction/Harry_Potter_-_Nephilim/backstory/the_dwarfs
 [Giants]: /FanFiction/Harry_Potter_-_Nephilim/backstory/giants
 [Molly]: /Harrypedia/people/prewett/molly/
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Fleur]: /Harrypedia/people/delacour/fleur_isabelle/
 [knffnm]: http://kokopelli.nsns.fanficauthors.net/Maskirovat/Maskirovat/
 

@@ -90,7 +90,7 @@ This is not, however, the only example. Mrs. Rowling will then go on to pair
 fact that bickering and fighting is not the basis for a healthy relationship.
 
 [Ron]: /Harrypedia/people/weasley/ronald_bilius//
-[Hermione]: /Harrypedia/people/granger/hermione_jean//
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean//
 
 We see very little of [Ginny] in most of the series, too little really.
 However, we see enough to further substantiate the theme that love is only

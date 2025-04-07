@@ -420,7 +420,7 @@ this theory to work, [Riddle][] ought to have been at [eleven][], or
 [stable number]: /Harrypedia/magic/arithmancy/realworld/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly/
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 
 [^220728-5]:
     [Bible Study](https://www.biblestudy.org/). "[Meaning of

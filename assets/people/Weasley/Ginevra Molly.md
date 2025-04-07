@@ -34,7 +34,7 @@ While it looks fairly harsh, PercabethHinny noted in _Discovering the Truth_
 that [Hermione][] _might_ be misrepresenting Ginny's actual words (emphasis
 mine).[^20210513-2]
 
-[Hermione]: ../../granger/hermione_jean/
+[Hermione]: ../../Granger/Hermione Jean/
 
 [^20210513-3]:
     Mrs. J. K. Rowling.

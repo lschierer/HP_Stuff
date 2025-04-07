@@ -104,8 +104,8 @@ disagree?
 - They disagree over the potions book. Despite the use of Sectumsempra, I think
   [Harry] was right on this one. Certainly Hermione's _reasoning_ was wrong even if her conclusion was partially correct.
 
-[Professor McGonagall]: /Harrypedia/people/mcgonagall/minerva/
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Professor McGonagall]: /Harrypedia/people/McGonagall/Minerva/
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 [Malfoy]: /Harrypedia/people/malfoy/draco_lucius/
 
 [^230208-1]: Mrs. J. K. Rowling. _[Harry Potter and the Deathly Hallows]_ Pottermore Publishing. American Kindle Edition. Page 245.
@@ -338,7 +338,7 @@ year, though it is anyone's guess which specific event would be one too many.
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Ron]: /Harrypedia/people/weasley/ronald_bilius/
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly/
-[Black]: /Harrypedia/people/black/sirius_iii/
+[Black]: /Harrypedia/people/Black/sirius_iii/
 [Lavender]: /Harrypedia/people/brown/lavender/
 [McLaggen]: /Harrypedia/people/mclaggen/cormac/
 [TSWoHA]: https://www.fanfiction.net/s/5858832

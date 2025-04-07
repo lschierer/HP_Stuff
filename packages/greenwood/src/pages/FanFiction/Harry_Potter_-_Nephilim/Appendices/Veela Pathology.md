@@ -154,6 +154,6 @@ only to the extent her male parent was.
 
 [Fleur]: /Harrypedia/people/delacour/fleur_isabelle/
 [Molly]: /Harrypedia/people/prewett/molly/
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly/
 [knffnm]: http://kokopelli.nsns.fanficauthors.net/Maskirovat/Maskirovat/

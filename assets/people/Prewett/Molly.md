@@ -200,9 +200,9 @@ influenced by the various depictions I have read.
 
 [Arthur]: /Harrypedia/people/weasley/arthur/
 [Bill]: /Harrypedia/people/weasley/william_arthur/
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Sirius]: /Harrypedia/people/black/sirius_iii/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Sirius]: /Harrypedia/people/Black/sirius_iii/
 [Weasley]: /Harrypedia/people/weasley/
 [Weasleys]: /Harrypedia/people/weasley/
 [Fleur]: /Harrypedia/people/delacour/fleur_isabelle/

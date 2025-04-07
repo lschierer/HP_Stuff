@@ -188,11 +188,11 @@ seem to largely stem from a fairly black and white view of the world and
 [Slytherin]: /Harrypedia/hogwarts/slytherin/
 [Ravenclaw]: /Harrypedia/hogwarts/ravenclaw/
 [Malfoy]: /Harrypedia/people/malfoy/draco_lucius/
-[MM1]: /Harrypedia/people/mcgonagall/minerva/
+[MM1]: /Harrypedia/people/McGonagall/Minerva/
 [FF1]: /Harrypedia/people/flitwick/filus/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly/
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Harry Potter and the Goblet of Fire]: https://www.librarything.com/work/113
 [Ginny's]: /Harrypedia/people/weasley/ginevra_molly/
 [Lavender]: /Harrypedia/people/brown/lavender/

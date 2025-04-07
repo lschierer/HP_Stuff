@@ -82,16 +82,16 @@ things that go differently from the books.
 [contracts]: /Harrypedia/magic/contracts/
 [life debts]: /Harrypedia/magic/contracts/
 [trace]: /Harrypedia/magic/
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Draco]: /Harrypedia/people/malfoy/draco_lucius/
 [Fleur]: /Harrypedia/people/delacour/fleur_isabelle/
 [Nymphadora]: /Harrypedia/people/tonks/nymphadora/
-[Sirius]: /Harrypedia/people/black/sirius_iii/
+[Sirius]: /Harrypedia/people/Black/sirius_iii/
 [Remus]: /Harrypedia/people/lupin/remus_john/
 [Lily]: /Harrypedia/people/evans/lily_j/
 [James]: /Harrypedia/people/Potter/James/
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 [Snape]: /Harrypedia/people/Snape/Severus/
 
 

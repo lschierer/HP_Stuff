@@ -52,7 +52,7 @@ he worked for it, whereas his more intelligent friends found the material easy.
 
 [James]: /Harrypedia/people/Potter/James/
 [Lily]: /Harrypedia/people/evans/lily_j/
-[Sirius]: /Harrypedia/people/black/sirius_iii/
+[Sirius]: /Harrypedia/people/Black/sirius_iii/
 
 In many ways, this quote adequately says all there is to say:
 

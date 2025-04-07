@@ -172,9 +172,9 @@ incorporating non-magical classes no matter how needed or useful they might be.
 [Neville]: /Harrypedia/people/longbottom/neville/
 [Draco]: /Harrypedia/people/malfoy/draco_lucius/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [RBW1]: /Harrypedia/people/weasley/ronald_bilius//
-[AD1]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[AD1]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 [Hogwarts]: /Harrypedia/hogwarts/
 [OCUC1]: https://www.fanfiction.net/s/13903544/
 [CTB2]: https://archiveofourown.org/works/156533

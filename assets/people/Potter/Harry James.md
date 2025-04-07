@@ -187,7 +187,7 @@ glasses is probably either an effect of from his scar, or an effect from living
 in the cupboard. Since both are speculation, we do not know which.
 
 [growth]: /Harrypedia/misc/growth/
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Lily]: /Harrypedia/people/evans/lily_j/
 [James]: /Harrypedia/people/Potter/James/
 [Ron]: /Harrypedia/people/weasley/ronald_bilius/

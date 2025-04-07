@@ -13,7 +13,7 @@ they use their authority correctly for the common good, they are justified in
 their actions. He has, after all, been raised in the shadow of [Dumbledore][]'s
 utilitarianism, and so this is no surprise.
 
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 
 This Percy honestly believes that those new to the magical world have done
 something morally reprehensible because he has been told that they have done so

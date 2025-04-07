@@ -52,7 +52,7 @@ of what is available or better.
 
 [paper]: ../parchment_and_paper/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Hermione]: /Harrypedia/people/granger/hermione_jean//
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean//
 [Malfoy]: /Harrypedia/people/malfoy/
 [Mr. Weasley]: /Harrypedia/people/weasley/arthur//
 [pgO1]: https://www.fanfiction.net/s/12954205

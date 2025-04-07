@@ -51,7 +51,7 @@ back.
 [Slytherin]: /Harrypedia/hogwarts/slytherin/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Ron]: /Harrypedia/people/weasley/ronald_bilius/
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Goyle]: /Harrypedia/people/goyle/gregory/
 [Crabbe]: /Harrypedia/people/crabbe/vincent/
 

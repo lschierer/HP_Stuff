@@ -92,7 +92,7 @@ of his father's skills, but it seems unlikely that he did _poorly_ at the
 subject - his father would have tutored him over the summers should he have
 needed it. [Snape] and [Lily] are prodigies, and [Snape] seems to expect _everyone_ to find potions as intuitive as he does, so I take any disparagement he makes with a fairly large and active amount of suspicion.
 
-[McGonagall]: /Harrypedia/people/mcgonagall/minerva/
+[McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Pettigrew]: /Harrypedia/people/pettigrew/peter/
 
 
@@ -215,7 +215,7 @@ If either or both of these is true, James might well have been something of a pe
 [animagus]: /Harrypedia/magic/
 [Robin Hood]: https://en.wikipedia.org/wiki/Robin_Hood
 [Slughorn]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
-[D1]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[D1]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 
 [^240422-3]: this is a really tempting tangent, but this page isn't about [Dumbledore].
 

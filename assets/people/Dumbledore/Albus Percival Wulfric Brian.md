@@ -156,7 +156,7 @@ Dumbledore are. In no particular order:
 - And even more about [how he dealt with Riddle][ADdwr].
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[DMH1]: /Harrypedia/magic/dark/horcruxes/
+[DMH1]: /Harrypedia/magic/dark/Horcruxes/
 
 [^220916-1]:
     Mrs. J. K. Rowling.
@@ -265,15 +265,15 @@ excuse to prevent [Sirius][SB3] from being able to adopt [Harry]?
 [GG]: /Harrypedia/people/grindelwald/gellert/
 [Ariana]: ../ariana/
 [RBW]: /Harrypedia/people/weasley/ronald_bilius/
-[MM]: /Harrypedia/people/mcgonagall/minerva/
+[MM]: /Harrypedia/people/McGonagall/Minerva/
 [PS]: /Harrypedia/people/sprout/pomona/
 [FF]: /Harrypedia/people/flitwick/filus/
 [DF1]: /Harrypedia/people/dursley/
 [Weasleys]: /Harrypedia/people/weasley/
-[Horcruxes]: /Harrypedia/magic/dark/horcruxes/
+[Horcruxes]: /Harrypedia/magic/dark/Horcruxes/
 [Malfoy]: /Harrypedia/people/malfoy/
 [HPwc]: /Harrypedia/culture/government/
-[SB3]: /Harrypedia/people/black/sirius_iii/
+[SB3]: /Harrypedia/people/Black/sirius_iii/
 [SS]: /Harrypedia/people/Snape/Severus/
 
 [^220916-2]:

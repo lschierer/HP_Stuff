@@ -35,7 +35,7 @@ interact?
 
 We seem to have:
 
-- [Magical Animals](/Harrypedia/animals)
+- [Magical Animals](/Harrypedia/animals/)
 - [Spells](spells) - curses, hexes, jinks, charms, transfiguration
   - [wands][]
     > The wand is a European invention, and while African witches and wizards
@@ -76,7 +76,7 @@ We seem to have:
       Rowling's descriptions. How does the secret move into the other souls
       after the death of the first secret keeper? What is the mechanism that
       makes untransmittable knowledge now something "stored in your soul"?
-  - [Serpensortia](spells/serpensortia)
+  - [Serpensortia](spells/serpensortia/)
   - turning vinegar into wine is taught in charms class.[^210820-1]
     - some speculate that this only works with wine based vinegar, because the
       spell is reversing oxidation, not actually transfiguring. Under this
@@ -88,7 +88,7 @@ We seem to have:
     > Potions book and the right ingredients. The answer, unfortunately, is no.
     > There is always some element of wandwork necessary to make a
     > potion[^210702-4]
-  - I am compiling of [list of these as well](potions).
+  - I am compiling of [list of these as well](potions/).
 - [Runes][]
 - Divination - tea cups, horoscopes, star charts, crystal balls, so on.
 - Arithmancy - Per Google, this should be part of Divination, but is apparently
@@ -100,9 +100,9 @@ We seem to have:
 [BoST]: https://magicscrapbook.tumblr.com/post/162085200042/book-of-spells-transcript
 [hpl1]: https://www.hp-lexicon.org/thing/gamps-law-of-elemental-transfiguration/
 [AO1]: https://web.archive.org/
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 [Potions]: /Harrypedia/magic/potions/
 [Transfiguration]: /Harrypedia/magic/transfiguration/
 
@@ -316,7 +316,7 @@ page][dark].
 
 These are a huge topic, and need their own [page][Horcruxes] as well.
 
-[Horcruxes]: /Harrypedia/magic/dark/horcruxes/
+[Horcruxes]: /Harrypedia/magic/dark/Horcruxes/
 
 #### Unforgivables
 

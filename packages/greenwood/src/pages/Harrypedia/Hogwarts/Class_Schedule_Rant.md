@@ -118,7 +118,7 @@ informing [Harry] of anything 3) it provides reasons for her and [Ron]
 to fight.
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Hermione]: /Harrypedia/people/granger/hermione_jean//
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean//
 [Ron]: /Harrypedia/people/weasley/ronald_bilius//
 [Hogwarts]: ../
 [Notes]: ../../

@@ -22,12 +22,12 @@ The first chapter, as is expected _of_ a first chapter, has more questions than 
 [Dursley]: /Harrypedia/people/dursley//
 [Ministry]: /Harrypedia/culture/government//
 [Petunia]: /Harrypedia/people/evans/petunia//
-[McGonagall]: /Harrypedia/people/mcgonagall/minerva//
+[McGonagall]: /Harrypedia/people/McGonagall/Minerva//
 [Lily]: /Harrypedia/people/evans/lily_j//
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Vernon]: /Harrypedia/people/dursley/vernon//
 [Dickens]: https://en.wikipedia.org/wiki/Charles_Dickens
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian//
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo//
 
 [^240424-1]: There is some evidence of this, Mrs. Rowling calls the device that [Dumbledore] uses a "Put-Outer" but it will later be called by the more elegant name "Deluminator."

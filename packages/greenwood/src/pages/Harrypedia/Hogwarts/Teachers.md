@@ -12,10 +12,10 @@ title: Teachers
 - [Minerva McGonagall][McGonagall]
 - [Severus Snape][Snape]
 
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian//
 [Binns]: /Harrypedia/people/binns/cuthbert/
 [Flitwick]: /Harrypedia/people/flitwick/filus/
-[McGonagall]: /Harrypedia/people/mcgonagall/minerva//
+[McGonagall]: /Harrypedia/people/McGonagall/Minerva//
 [snape]: /Harrypedia/people/Snape/Severus//
 
 In more general terms, what is the role of the head of each house?

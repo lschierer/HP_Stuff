@@ -60,7 +60,7 @@ those outside the family anything not taught at school.
 
 [Weasleys]: /Harrypedia/people/weasley/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Hermione]: /Harrypedia/people/granger/hermione_jean//
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean//
 [tdgsm-1]: https://www.fanfiction.net/s/13049901
 
 [^210420-3]:

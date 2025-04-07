@@ -29,7 +29,7 @@ _Why_ (for example) must one control the Ministry to set a Taboo?
 
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Ron]: /Harrypedia/people/weasley/ronald_bilius/
 
 [^240212-1]:

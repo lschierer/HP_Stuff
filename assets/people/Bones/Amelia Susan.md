@@ -26,7 +26,7 @@ respect with which she might be held.
 [Tonks]: /Harrypedia/people/tonks/nymphadora/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hagrid]: /Harrypedia/people/hagrid/rubeus/
-[Sirius]: /Harrypedia/people/black/sirius_iii/
+[Sirius]: /Harrypedia/people/Black/sirius_iii/
 
 [^221213-2]:
     Mrs. J. K. Rowling.

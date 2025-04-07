@@ -144,8 +144,8 @@ they were specifically talking about the Hallows, when you consider that
 [Hermione] also slowed down the hunt for the [horcruxes][] (see her page
 for details), I feel safe including this in my indictment.
 
-[horcrux]: /Harrypedia/magic/dark/horcruxes/
-[horcruxes]: /Harrypedia/magic/dark/horcruxes/
+[horcrux]: /Harrypedia/magic/dark/Horcruxes/
+[horcruxes]: /Harrypedia/magic/dark/Horcruxes/
 
 When you consider the potential cost if [Riddle][] had not been stopped, and
 further consider the fact _that it worked_, it is very hard to argue with
@@ -193,17 +193,17 @@ safest there. Safest from what/who? [Dumbledore][] can now start to use the
 complicated nature of the thorny problem to confuse the listener.
 
 [Wizengamot]: /Harrypedia/culture/government/
-[Black]: /Harrypedia/people/black/
+[Black]: /Harrypedia/people/Black/
 [Potter]: /Harrypedia/people/Potter/
-[Narcissa Malfoy]: /Harrypedia/people/black/narcissa/
-[Dorea Black]: /Harrypedia/people/black/dorea/
+[Narcissa Malfoy]: /Harrypedia/people/Black/narcissa/
+[Dorea Black]: /Harrypedia/people/Black/dorea/
 [James]: /Harrypedia/people/Potter/James/
 [Malfoys]: /Harrypedia/people/malfoy/
 [Dursleys]: /Harrypedia/people/dursley/
 [abusive environment]: /Harrypedia/people/dursley/
 [AD1]: ../
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly/
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
 [SS1]: /Harrypedia/people/Snape/Severus/
 [CAD1]: https://fanfictalk.com/archive/viewstory.php?sid=721

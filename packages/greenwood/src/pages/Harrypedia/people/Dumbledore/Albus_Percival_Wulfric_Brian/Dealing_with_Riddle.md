@@ -179,14 +179,14 @@ hunt them down. Why, knowing that he will die, he entrusts the knowledge to
 [Culture]: /Harrypedia/culture/
 [ICW]: /Harrypedia/culture/
 [History]: /Harrypedia/history/
-[horcruxes]: /Harrypedia/magic/dark/horcruxes/
-[Horcruxes]: /Harrypedia/magic/dark/horcruxes/
+[horcruxes]: /Harrypedia/magic/dark/Horcruxes/
+[Horcruxes]: /Harrypedia/magic/dark/Horcruxes/
 [Lupin]: /Harrypedia/people/lupin/remus_john/
 [Kingsley]: /Harrypedia/people/shacklebolt/kingsley/
 [Moody]: /Harrypedia/people/moody/
 [TMR1]: /Harrypedia/people/riddle/tom_marvolo/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Ron]: /Harrypedia/people/weasley/ronald_bilius/
 [Bill]: /Harrypedia/people/weasley/william_arthur/
 [Draco]: /Harrypedia/people/malfoy/draco_lucius/

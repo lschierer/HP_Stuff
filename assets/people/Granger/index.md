@@ -40,7 +40,7 @@ the magical world that many fan fiction authors portray.
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Ron]: /Harrypedia/people/weasley/ronald_bilius/
 [Weasleys]: /Harrypedia/people/weasley
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Gringotts]: /Harrypedia/gringotts
 
 [^221201-1]:

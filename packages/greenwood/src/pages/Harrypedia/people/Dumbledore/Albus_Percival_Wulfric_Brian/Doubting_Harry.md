@@ -118,14 +118,14 @@ such as [McGonagall][] and [Sprout][] might well pick up on that distrust.
 [B12HPL2]: https://www.fanfiction.net/s/5366780
 
 [Bill]: /Harrypedia/people/weasley/william_arthur/
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Hogwarts]: /Harrypedia/hogwarts/
 [Kingsley]: /Harrypedia/people/shacklebolt/kingsley/
 [Lupin]: /Harrypedia/people/lupin/remus_john/
 [Malfoy]: /Harrypedia/people/malfoy/draco_lucius/
-[McGonagall]: /Harrypedia/people/mcgonagall/minerva/
+[McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Moody]: ./Harrypedia/people/moody/
 [Neville]: /Harrypedia/people/longbottom/neville/
 [Professor Sprout]: /Harrypedia/people/sprout/pomona/

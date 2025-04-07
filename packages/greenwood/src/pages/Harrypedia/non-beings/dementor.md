@@ -13,7 +13,7 @@ warning that they will not differentiate between bystanders and targets, they
 _do_ seem capable of following orders to some degree.[^211021-2]
 
 [Fudge]: /Harrypedia/people/fudge/cornelius_oswald/
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian//
 
 ### Inconsistencies
 

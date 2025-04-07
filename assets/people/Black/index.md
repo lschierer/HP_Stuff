@@ -31,17 +31,17 @@ the [History][] timeline.
 
 [History]: /Harrypedia/history/
 [Draco]: /Harrypedia/people/malfoy/draco_lucius/
-[Phineus Nigellus]: /Harrypedia/people/black/phineus_nigellus/
-[Cygnus I]: /Harrypedia/people/black/cygnus/
+[Phineus Nigellus]: /Harrypedia/people/Black/phineus_nigellus/
+[Cygnus I]: /Harrypedia/people/Black/cygnus/
 [Malfoy]: /Harrypedia/people/malfoy/
 [Weasleys]: /Harrypedia/people/weasley/
 [Weasley]: /Harrypedia/people/weasley/
 [Harfang]: /Harrypedia/people/longbottom/harfang/
 [Arthur]: /Harrypedia/people/weasley/arthur/
-[Cedrella]: /Harrypedia/people/black/cedrella/
+[Cedrella]: /Harrypedia/people/Black/cedrella/
 [Septimus]: /Harrypedia/people/weasley/septimus/
-[Sirius III]: /Harrypedia/people/black/sirius_iii/
-[Sirius II]: /Harrypedia/people/black/sirius_ii/
+[Sirius III]: /Harrypedia/people/Black/sirius_iii/
+[Sirius II]: /Harrypedia/people/Black/sirius_ii/
 [Longbottom]: /Harrypedia/people/longbottom/
 [Longbottoms]: /Harrypedia/people/longbottom/
 [Grimmauld Place]: /Harrypedia/grimmauld_place/

@@ -104,7 +104,7 @@ to create one big happy Weasley-Potter-Malfoy family.
 [Rita Skeeter]: /Harrypedia/people/skeeter/rita//
 [Hogwarts]: /Harrypedia/hogwarts/
 [Ron]: /Harrypedia/people/weasley/ronald_bilius//
-[Hermione]: /Harrypedia/people/granger/hermione_jean//
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean//
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly//
 [George]: /Harrypedia/people/weasley/george//

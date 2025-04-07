@@ -42,7 +42,7 @@ They do make for interesting speculation though.
 [Ginny]: /Harrypedia/people/weasley/ginevra_molly/
 [Gryffindor]: /Harrypedia/hogwarts/gryffindor/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Hogwarts]: /Harrypedia/hogwarts/
 [Lockhart]: /Harrypedia/people/lockhart/gilderoy/
 [Luna]: /Harrypedia/people/lovegood/luna/

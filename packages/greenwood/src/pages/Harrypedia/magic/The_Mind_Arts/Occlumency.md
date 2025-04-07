@@ -86,7 +86,7 @@ but rather [Legilimency].
 [Professor Snape]: /Harrypedia/people/Snape/Severus/
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Draco]: /Harrypedia/people/malfoy/draco_lucius/
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 
 [^20210922-1]:
     Mrs. J. K. Rowling. "[Draco

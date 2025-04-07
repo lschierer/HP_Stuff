@@ -68,7 +68,7 @@ Euphemia Black in the [Black] tree, and no reasonable [Black] who might have
 married [Henry Potter][Henry].
 
 [Malfoy Family]: /Harrypedia/people/malfoy/
-[Blacks]: /Harrypedia/people/black//
+[Blacks]: /Harrypedia/people/Black//
 
 _["Great Scott, Potter, This is War!"][GSP1]_ on the other hand assumes that
 membership is based on being an influential family back when our theoretical
@@ -87,10 +87,10 @@ my statement that it contradicts the origin stories).
 [Mr. Malfoy]: /Harrypedia/people/malfoy/lucius_abraxas//
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Henry]: /Harrypedia/people/Potter/henry/
-[Sirius]: /Harrypedia/people/black/sirius_iii//
+[Sirius]: /Harrypedia/people/Black/sirius_iii//
 [Arthur]: /Harrypedia/people/weasley/arthur//
 [Linfred]: /Harrypedia/people/Potter//
-[Black]: /Harrypedia/people/black//
+[Black]: /Harrypedia/people/Black//
 [Potter]: /Harrypedia/people/Potter//
 [Peverell]: /Harrypedia/people/peverell//
 [Malfoy]: /Harrypedia/people/malfoy//

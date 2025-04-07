@@ -36,7 +36,7 @@ However, the typical pattern is that the author defines this magical society by 
   - The result is that it comes across as incredibly pretentious, and done simply to make themselves different, and not out of any great attachment to the language, or indeed, the thought structures that made that way of speaking common when it was.
 
 [Gryffindor]: /Harrypedia/hogwarts/gryffindor/
-[McGonagall]: /Harrypedia/people/mcgonagall/minerva/
+[McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Grindelwald]: /Harrypedia/people/grindelwald/gellert/
 [Slytherin]: /Harrypedia/hogwarts/slytherin/

@@ -137,8 +137,8 @@ would have been unable to demand a trial. Why, however, did none of
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Lupin]: /Harrypedia/people/lupin/remus_john/
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
-[Andromeda]: /Harrypedia/people/black/andromeda/
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Andromeda]: /Harrypedia/people/Black/andromeda/
 
 Lets start with the easy ones: [Arcturus][], [Pollux][], and [Walburga][]
 Black. We know that [Walburga][] hated her son, enough to want him disowned.
@@ -234,26 +234,26 @@ of Azkaban][].
     Pottermore Limited © 2005. American Kindle Edition.
 
 
-[Andromeda]: /Harrypedia/people/black/andromeda/
-[Arcturus]: /Harrypedia/people/black/arcturus_ii/
-[Bellatrix]: /Harrypedia/people/black/bellatrix/
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Andromeda]: /Harrypedia/people/Black/andromeda/
+[Arcturus]: /Harrypedia/people/Black/arcturus_ii/
+[Bellatrix]: /Harrypedia/people/Black/bellatrix/
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 [Hagrid]: /Harrypedia/people/hagrid/rubeus/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [History]: /Harrypedia/history/
 [James]: /Harrypedia/people/Potter/James/
 [Lily]: /Harrypedia/people/evans/lily_j/
 [Lupin]: /Harrypedia/people/lupin/remus_john/
 [Malfoy]: /Harrypedia/people/malfoy/
 [Molly]: /Harrypedia/people/prewett/molly/
-[Orion]: /Harrypedia/people/black/orion/
+[Orion]: /Harrypedia/people/Black/orion/
 [Peter Pettigrew]: /Harrypedia/people/pettigrew/peter/
 [Peter]: /Harrypedia/people/pettigrew/peter/
 [Pettigrew]: /Harrypedia/people/pettigrew/peter/
-[Pollux]: /Harrypedia/people/black/pollux/
-[Regulus]: /Harrypedia/people/black/regulus_arcturus/
+[Pollux]: /Harrypedia/people/Black/pollux/
+[Regulus]: /Harrypedia/people/Black/regulus_arcturus/
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
 [SWM]: /Harrypedia/people/Snape/Severus/swm/
 [Snape]: /Harrypedia/people/Snape/Severus/
-[Walburga]: /Harrypedia/people/black/walburga/
+[Walburga]: /Harrypedia/people/Black/Walburga/

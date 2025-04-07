@@ -164,7 +164,7 @@ as you funded their research after all, and could be easily cheated out of any
 profitable patent-able discoveries…
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian//
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian//
 [wwwbrpb]: https://www.wizardingworld.com/writing-by-jk-rowling/pure-blood
 
 [^200701-2]:

@@ -28,8 +28,8 @@ Specifically looking at both the arrest of [Hagrid][] and the handling of
 and that [Dumbledore][] _could_ have done more in both cases.
 
 [Hagrid]: /Harrypedia/people/hagrid/rubeus/
-[SB]: /Harrypedia/people/black/sirius_iii/
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[SB]: /Harrypedia/people/Black/sirius_iii/
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 
 In the case of [Hagrid][], I suspect that Fudge is being fairly honest about
 his motives. _Some_ news about the Chamber must have leaked out to the wider

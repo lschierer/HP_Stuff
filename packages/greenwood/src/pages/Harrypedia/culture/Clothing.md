@@ -64,7 +64,7 @@ she says magical folk tend to wear "day to day."[^220630-2]
 
 [Mrs. Weasley]: /Harrypedia/people/prewett/molly//
 [Ron]: /Harrypedia/people/weasley/ronald_bilius//
-[Hermione]: /Harrypedia/people/granger/hermione_jean//
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean//
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Snape's]: /Harrypedia/people/Snape/Severus//
 [James]: /Harrypedia/people/Potter/James//

@@ -80,7 +80,7 @@ felt the need to attack personally. However, with an average of 6.77, she does n
 the history-making scores that characters like [Dumbledore] or [Harry] do.
 
 [Riddle]: /Harrypedia/people/riddle/tom_marvolo/
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 
 ### Delacour
@@ -361,5 +361,5 @@ them:
    Dumbledore, and Snape at a level where they need not fear Riddle overwhelming
    them in the mind arts.
 
-[horcruxes]: /Harrypedia/magic/dark/horcruxes/
-[horcrux]: /Harrypedia/magic/dark/horcruxes/
+[horcruxes]: /Harrypedia/magic/dark/Horcruxes/
+[horcrux]: /Harrypedia/magic/dark/Horcruxes/

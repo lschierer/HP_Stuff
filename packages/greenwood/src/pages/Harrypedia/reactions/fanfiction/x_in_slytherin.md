@@ -68,7 +68,7 @@ would have no need of a revolution.
 [Potter]: /Harrypedia/people/Potter/
 [Longbottom]: /Harrypedia/people/longbottom/
 [Crouch]: /Harrypedia/people/crouch/
-[Black]: /Harrypedia/people/black/
+[Black]: /Harrypedia/people/Black/
 [Prewett]: /Harrypedia/people/prewett/
 [Weasley]: /Harrypedia/people/weasley/
 [Lucius]: /Harrypedia/people/malfoy/lucius_abraxas/
@@ -86,7 +86,7 @@ would have no need of a revolution.
 [Slytherin]: /Harrypedia/hogwarts/slytherin/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Ron]: /Harrypedia/people/weasley/ronald_bilius/
-[Hermione]: /Harrypedia/people/granger/hermione_jean/
+[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Goyle]: /Harrypedia/people/goyle/gregory/
 
 [^230210-3]: I remember reading at least one example of this, but not where.

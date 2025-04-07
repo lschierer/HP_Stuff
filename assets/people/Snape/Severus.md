@@ -46,9 +46,9 @@ needs of victims are not going to be addressed.
 [Dark Magic]: /Harrypedia/magic/dark/
 [dark]: /Harrypedia/magic/dark/
 [Lily]: /Harrypedia/people/evans/lily_j/
-[Sirius]: /Harrypedia/people/black/sirius_iii/
-[McGonagall]: /Harrypedia/people/mcgonagall/minerva/
-[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Sirius]: /Harrypedia/people/Black/sirius_iii/
+[McGonagall]: /Harrypedia/people/McGonagall/Minerva/
+[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 
 As I said, we know little of Severus at school, but his memories from _the
 Deathly Hallows_ have a few things that are possibly suggestive. In one scene

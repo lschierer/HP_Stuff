@@ -68,12 +68,12 @@ your will away is to become a cold emotionally distant person who
 borders on a trying to split their own personality? I'm sorry, if that
 is true, evil has won.
 
-[Lily]: /Harrypedia/people/evans/lily_j/
+[Lily]: </Harrypedia/people/Evans/Lily J/>
 [Snape]: /Harrypedia/people/Snape/Severus/
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Brumous]: https://archiveofourown.org/works/42882966
-[Occlumency]: /Harrypedia/magic/the_mind_arts/occlumency/
+[Occlumency]: /Harrypedia/magic/The_Mind_Arts/Occlumency/
 
 [^211020-11]:
     [Harry Potter Wiki](https://harrypotter.fandom.com/wiki/)

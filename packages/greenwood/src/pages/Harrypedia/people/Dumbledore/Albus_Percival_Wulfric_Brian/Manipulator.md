@@ -58,7 +58,7 @@ make the next removal harder (thus I think he _was_ in fact able to resist
 [Fudge]: /Harrypedia/people/fudge/cornelius_oswald/
 [Umbridge]: /Harrypedia/people/umbridge/dolores_jane/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[AD1]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[AD1]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 
 [^211203-1]:
     Many works do this, but it can all be summarised with this one:
