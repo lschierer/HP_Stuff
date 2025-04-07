@@ -79,7 +79,7 @@ towards offence and defense, as befitting someone who comes from a family that [
 felt the need to attack personally. However, with an average of 6.77, she does not have
 the history-making scores that characters like [Dumbledore] or [Harry] do.
 
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
 [Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 

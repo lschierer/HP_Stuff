@@ -44,7 +44,7 @@
 [RL1]: /Harrypedia/people/lupin/remus_john/
 [James]: /Harrypedia/people/Potter/James/
 [Lily]: /Harrypedia/people/evans/lily_j/
-[TMR1]: /Harrypedia/people/riddle/tom_marvolo/
+[TMR1]: /Harrypedia/people/Riddle/Tom Marvolo/
 [H1]: /Harrypedia/history
 
 ### Character Analysis
@@ -60,7 +60,7 @@ his flaws in the right context.
 
 [FI]: https://musings-of-apathy.fanficauthors.net/Family_Inseparable/index/
 [HS]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
-[hogwarts]: /Harrypedia/hogwarts/
+[hogwarts]: /Harrypedia/Hogwarts/
 
 Musings of Apathy, in writing the original version of [Family Inseparable][FI],
 envisions Dumbledore as (my words) misguided, and perhaps ruthless, but not
@@ -264,14 +264,14 @@ excuse to prevent [Sirius][SB3] from being able to adopt [Harry]?
 
 [GG]: /Harrypedia/people/grindelwald/gellert/
 [Ariana]: ../ariana/
-[RBW]: /Harrypedia/people/weasley/ronald_bilius/
+[RBW]: /Harrypedia/people/Weasley/Ronald Bilius/
 [MM]: /Harrypedia/people/McGonagall/Minerva/
 [PS]: /Harrypedia/people/sprout/pomona/
 [FF]: /Harrypedia/people/flitwick/filus/
 [DF1]: /Harrypedia/people/dursley/
 [Weasleys]: /Harrypedia/people/weasley/
 [Horcruxes]: /Harrypedia/magic/dark/Horcruxes/
-[Malfoy]: /Harrypedia/people/malfoy/
+[Malfoy]: /Harrypedia/people/Malfoy/
 [HPwc]: /Harrypedia/culture/government/
 [SB3]: /Harrypedia/people/Black/sirius_iii/
 [SS]: /Harrypedia/people/Snape/Severus/

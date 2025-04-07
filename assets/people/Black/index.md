@@ -29,11 +29,11 @@ be unable to inherit as he is in line via his mother, who would be
 disqualified by gender. The dates for this line of speculation are in
 the [History][] timeline.
 
-[History]: /Harrypedia/history/
-[Draco]: /Harrypedia/people/malfoy/draco_lucius/
+[History]: /Harrypedia/History/
+[Draco]: /Harrypedia/people/Malfoy/Draco Lucius/
 [Phineus Nigellus]: /Harrypedia/people/Black/phineus_nigellus/
 [Cygnus I]: /Harrypedia/people/Black/cygnus/
-[Malfoy]: /Harrypedia/people/malfoy/
+[Malfoy]: /Harrypedia/people/Malfoy/
 [Weasleys]: /Harrypedia/people/weasley/
 [Weasley]: /Harrypedia/people/weasley/
 [Harfang]: /Harrypedia/people/longbottom/harfang/

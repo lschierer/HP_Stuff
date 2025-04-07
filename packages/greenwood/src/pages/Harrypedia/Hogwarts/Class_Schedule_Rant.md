@@ -119,7 +119,7 @@ to fight.
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean//
-[Ron]: /Harrypedia/people/weasley/ronald_bilius//
+[Ron]: /Harrypedia/people/Weasley/Ronald Bilius//
 [Hogwarts]: ../
 [Notes]: ../../
 

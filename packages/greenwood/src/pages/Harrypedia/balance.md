@@ -50,7 +50,7 @@ that creature is so evil it needs its own balance. And yes, Buckbeak
 shows up a few times, but so too do Acromantula, which, again, are
 mostly evil.
 
-[Madam Pomfrey]: /Harrypedia/people/pomfrey/
+[Madam Pomfrey]: /Harrypedia/people/Pomfrey/Poppy/
 
 In short, magic seems to have massively escalated the fallen nature of the
 world. If love is so powerful, why is [Lily][]'s self sacrifice the only

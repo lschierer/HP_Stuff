@@ -38,7 +38,7 @@ These are not the good parents who are eager to learn more about and experience
 the magical world that many fan fiction authors portray.
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
 [Weasleys]: /Harrypedia/people/weasley
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Gringotts]: /Harrypedia/gringotts

@@ -11,7 +11,7 @@ This idea is supported by lesser canonical sources. In England, the [Potters] ar
 
 [The Accidental Animagus]: https://www.fanfiction.net/s/9863146/89/The-Accidental-Animagus
 [Potters]: /Harrypedia/people/Potter//
-[Malfoys]: /Harrypedia/people/malfoy//
+[Malfoys]: /Harrypedia/people/Malfoy//
 [The Potter Family]: https://www.rowlingindex.org/work/pmpfam/
 [The Malfoy family]: https://www.rowlingindex.org/work/pmmf/
 [The J.K. Rowling Index]: https://www.rowlingindex.org/

@@ -36,7 +36,7 @@ his motives. _Some_ news about the Chamber must have leaked out to the wider
 Wizarding World (possibly via [Lucius][]), and Fudge feels that his popularity
 numbers are suffering. Why [Dumbledore][] does not act is more complicated.
 
-[Lucius]: /Harrypedia/people/malfoy/lucius_abraxas/
+[Lucius]: /Harrypedia/people/Malfoy/lucius_abraxas/
 
 The case of [Sirius][SB] is almost certainly more sinister. Fudge was one of
 the first on the scene,[^220906-3] and even as a "Junior Minister", probably
@@ -61,6 +61,6 @@ between opposing parties, he was [Dumbledore][]'s hand picked choice, or
 noted above, Fudge did not become Minister until 1990, which explains why he
 was so unsure of himself in his role as minister throughout the first book.
 
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
 [Bagnold]: /Harrypedia/people/bagnold/millicent/
-[Malfoy]: /Harrypedia/people/malfoy/lucius_abraxas/
+[Malfoy]: /Harrypedia/people/Malfoy/lucius_abraxas/

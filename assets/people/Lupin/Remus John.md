@@ -81,7 +81,7 @@ lapsed. He was his fundamental nature to let people down.
 
 Worse, it was not just his wife he abandoned. His rationale is both pathetic and absurd. He states that because he is a warewolf, his child will probably be a warewolf, and will therefore be better off without his/her warewolf father. It would, apparently, be better that the child face the disease without the help from someone who can empathise with the pain of both the disease and the resulting social ostracism. As a werewolf himself, he apparently has nothing of value to offer his child on coping with the affliction. As a being, he is allowing those nights to define the totality of his contribution to the child's life. Like many before him, he has internalised the prejudice against himself, and become his own worst enemy.
 
-[Gryffindor]: /Harrypedia/hogwarts/gryffindor/
+[Gryffindor]: /Harrypedia/Hogwarts/gryffindor/
 
 [^211202-3]: Any number of works have Harry call him out on this.
 

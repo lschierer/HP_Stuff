@@ -59,11 +59,11 @@ of the 1994-1995 school year, placing [Bill]'s last year in 1989, which
 _does_ match the chart above (school year 1988-1989). If [Bill]'s
 birthday is correct, that does not give much space for [Charlie]'s to move.
 
-[Hogwarts]: /Harrypedia/hogwarts/
+[Hogwarts]: /Harrypedia/Hogwarts/
 [Quidditch]: /Harrypedia/quidditch/
-[Gryffindor]: /Harrypedia/hogwarts/gryffindor/
+[Gryffindor]: /Harrypedia/Hogwarts/gryffindor/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Ginny]: /Harrypedia/people/weasley/ginevra_molly/
+[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
 [Ron]: /Harrypedia/people/weasley/ronald_bilius
 [George]: /Harrypedia/people/weasley/george/
 [Fred]: /Harrypedia/people/weasley/fred/

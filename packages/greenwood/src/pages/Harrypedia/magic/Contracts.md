@@ -43,11 +43,11 @@ is only one year younger, _will_ be affected by the law in the next year, and th
 
 In a world where magical contracts can in fact be binding, I can see how laws _might_ have their basis in an ancient contract, and thus be magically self-enforcing. It is thus _possible_ that a marriage law might actually have devastating consequences if not generally obeyed. Such a law would necessarily be an old one that for whatever reason gets triggered rather that being constantly in effect. However, once it _has_ been triggered, the idea that [Ginny] would irrationally ignore it while her friends and family are affected and groundlessly hope not to be affected in the next year is a step too far. Firstly because in a world where magical contracts exist, getting stuck into an unwanted marriage would be on the short list of nightmares for girls.[^240315-2] Secondly because [Ginny] cares deeply for her family, and would be too involved in the impact to them not to see it coming for her. Thirdly because the research that [Hermione] would inevitably do in such a situation would _certainly_ uncover that there was no escape for not just [Harry] and [Hermione], but also for [Ginny].
 
-[Ginny]: /Harrypedia/people/weasley/ginevra_molly//
+[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly//
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean//
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Umbridge]: /Harrypedia/people/umbridge/dolores_jane//
-[Malfoy]: /Harrypedia/people/malfoy//
+[Malfoy]: /Harrypedia/people/Malfoy//
 [Molly]: /Harrypedia/people/prewett/molly//
 [ttpbc]: https://www.fanfiction.net/s/13987875/
 [Ministers of Magic]: https://www.rowlingindex.org/work/msmpm/

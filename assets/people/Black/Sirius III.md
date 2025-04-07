@@ -204,7 +204,7 @@ that could mean before his curse _landed_ rather than before it was _cast_.
     does have a certain persuasiveness.
 
 [Abandoning Ship]: https://www.redhen-publications.com/abandoningShip.html
-[History]: /Harrypedia/history/
+[History]: /Harrypedia/History/
 
 [^210517-4]:
     Some writers have speculated that long term exposure to dementors
@@ -241,11 +241,11 @@ of Azkaban][].
 [Hagrid]: /Harrypedia/people/hagrid/rubeus/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean/
-[History]: /Harrypedia/history/
+[History]: /Harrypedia/History/
 [James]: /Harrypedia/people/Potter/James/
 [Lily]: /Harrypedia/people/evans/lily_j/
 [Lupin]: /Harrypedia/people/lupin/remus_john/
-[Malfoy]: /Harrypedia/people/malfoy/
+[Malfoy]: /Harrypedia/people/Malfoy/
 [Molly]: /Harrypedia/people/prewett/molly/
 [Orion]: /Harrypedia/people/Black/orion/
 [Peter Pettigrew]: /Harrypedia/people/pettigrew/peter/
@@ -253,7 +253,7 @@ of Azkaban][].
 [Pettigrew]: /Harrypedia/people/pettigrew/peter/
 [Pollux]: /Harrypedia/people/Black/pollux/
 [Regulus]: /Harrypedia/people/Black/regulus_arcturus/
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
 [SWM]: /Harrypedia/people/Snape/Severus/swm/
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Walburga]: /Harrypedia/people/Black/Walburga/

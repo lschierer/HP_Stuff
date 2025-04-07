@@ -119,7 +119,7 @@ const getCollectionContents = () => {
   if (DEBUG) {
     console.log(`History getCollectionContents cwd is ${process.cwd()}`);
   }
-  const matches = fs.globSync("./src/assets/history/*.json");
+  const matches = fs.globSync("./src/assets/History/*.json");
   const _events = new Array<DisplayableEvent>();
 
   if (Array.isArray(matches) && matches.length > 0) {

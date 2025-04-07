@@ -31,12 +31,12 @@ absence of an immediate family of his own, providing a legacy for his ward and
 god-child is expected and natural.
 
 [wEE1]: http://en.wikipedia.org/wiki/Fee_tail
-[Black]: /Harrypedia/people/Black//
-[Sirius]: /Harrypedia/people/Black/sirius_iii//
-[James]: /Harrypedia/people/Potter/James//
+[Black]: /Harrypedia/people/Black/
+[Sirius]: </Harrypedia/people/Black/Sirius III/>
+[James]: /Harrypedia/people/Potter/James/
 [Walburga]: /Harrypedia/people/Black/Walburga/
-[Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Dorea]: /Harrypedia/people/Black/dorea/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
+[Dorea]: /Harrypedia/people/Black/Dorea/
 [Harry Potter Wiki]: https://harrypotter.fandom.com/wiki
 
 [^211020-4]:

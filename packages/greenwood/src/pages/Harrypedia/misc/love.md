@@ -74,7 +74,7 @@ attacking [Snape].[^230804-2]
 [James]: /Harrypedia/people/Potter/James//
 [lily]: /Harrypedia/people/evans/lily_j//
 [Snape]: /Harrypedia/people/Snape/Severus//
-[Draco]: /Harrypedia/people/malfoy/draco_lucius//
+[Draco]: /Harrypedia/people/Malfoy/Draco Lucius//
 
 [^221206-2]:
     Anelli, Melissa and Emerson Spartz.
@@ -89,7 +89,7 @@ This is not, however, the only example. Mrs. Rowling will then go on to pair
 [Ron] with [Hermione], pushing the idea that opposites attract, despite the
 fact that bickering and fighting is not the basis for a healthy relationship.
 
-[Ron]: /Harrypedia/people/weasley/ronald_bilius//
+[Ron]: /Harrypedia/people/Weasley/Ronald Bilius//
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean//
 
 We see very little of [Ginny] in most of the series, too little really.
@@ -103,6 +103,6 @@ handle being unable to handle your emotions is to dive into a different
 relationship? (Interestingly, both [Ron] and [Hermione] kinda sorta try
 this in book six, it does not go well).
 
-[Ginny]: /Harrypedia/people/weasley/ginevra_molly//
+[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly//
 
 [^221206-6]: citation needed.

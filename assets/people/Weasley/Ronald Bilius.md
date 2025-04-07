@@ -185,16 +185,16 @@ with the thought of [Ravenclaw].[^221213-1]. Other than that, Ron's comments
 seem to largely stem from a fairly black and white view of the world and
 [Malfoy]'s over the top behaviour.
 
-[Slytherin]: /Harrypedia/hogwarts/slytherin/
-[Ravenclaw]: /Harrypedia/hogwarts/ravenclaw/
-[Malfoy]: /Harrypedia/people/malfoy/draco_lucius/
+[Slytherin]: /Harrypedia/Hogwarts/slytherin/
+[Ravenclaw]: /Harrypedia/Hogwarts/ravenclaw/
+[Malfoy]: /Harrypedia/people/Malfoy/Draco Lucius/
 [MM1]: /Harrypedia/people/McGonagall/Minerva/
 [FF1]: /Harrypedia/people/flitwick/filus/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Ginny]: /Harrypedia/people/weasley/ginevra_molly/
+[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Harry Potter and the Goblet of Fire]: https://www.librarything.com/work/113
-[Ginny's]: /Harrypedia/people/weasley/ginevra_molly/
+[Ginny's]: /Harrypedia/people/Weasley/Ginevra Molly/
 [Lavender]: /Harrypedia/people/brown/lavender/
 
 [^240313-1]:

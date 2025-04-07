@@ -36,15 +36,15 @@ interact?
 We seem to have:
 
 - [Magical Animals](/Harrypedia/animals/)
-- [Spells](spells) - curses, hexes, jinks, charms, transfiguration
+- [Spells] - curses, hexes, jinks, charms, transfiguration
   - [wands][]
     > The wand is a European invention, and while African witches and wizards
     > have adopted it as a useful tool in the last century, many spells are
     > cast simply by pointing the finger or through hand gestures.[^210304-5]
   - Mrs. Rowling published a Book of Spells only available on
     Playstation.[^210406-44] There seems to be a [transcript
-    available][BoST], and mentions a fair number of [spells](spells).
-  - I am putting together my own book of spells [here](spells). I am not
+    available][BoST], and mentions a fair number of [spells].
+  - I am putting together my own book of spells [here][spells]. I am not
     trying to build a useful spell book, but rather a reference of names and
     sources.
   - [Transfiguration][] is troubling on a few levels.
@@ -76,7 +76,7 @@ We seem to have:
       Rowling's descriptions. How does the secret move into the other souls
       after the death of the first secret keeper? What is the mechanism that
       makes untransmittable knowledge now something "stored in your soul"?
-  - [Serpensortia](spells/serpensortia/)
+  - [Serpensortia](./spells/serpensortia/)
   - turning vinegar into wine is taught in charms class.[^210820-1]
     - some speculate that this only works with wine based vinegar, because the
       spell is reversing oxidation, not actually transfiguring. Under this
@@ -97,6 +97,7 @@ We seem to have:
   above. It is also interesting that it is normal spoken English where nothing
   else we see of magic is.
 
+[spells]: <./spells/>
 [BoST]: https://magicscrapbook.tumblr.com/post/162085200042/book-of-spells-transcript
 [hpl1]: https://www.hp-lexicon.org/thing/gamps-law-of-elemental-transfiguration/
 [AO1]: https://web.archive.org/

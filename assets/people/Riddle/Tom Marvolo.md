@@ -41,7 +41,7 @@
 
 [^20210827-11]: See my [History] Notes.
 
-[History]: ../../../history/
+[History]: ../../../History/
 
 [^20210827-5]:
     Mrs. J. K. Rowling.

@@ -144,7 +144,7 @@ the connections to have made their opinions known.
 
 [Sprout]: /Harrypedia/people/sprout/pomona/
 [Flitwick]: /Harrypedia/people/flitwick/filus/
-[Fudge]: /Harrypedia/people/fudge/cornelius_oswald/
+[Fudge]: /Harrypedia/people/Fudge/Cornelius Oswald/
 
 With this history of either following [Dumbledore][AD1]'s lead as blindly and
 mindlessly as a sheep, or of complicit negligence in the many situations
@@ -170,12 +170,12 @@ incorporating non-magical classes no matter how needed or useful they might be.
 [Snape]: /Harrypedia/people/Snape/Severus/
 [James]: /Harrypedia/people/Potter/James/
 [Neville]: /Harrypedia/people/longbottom/neville/
-[Draco]: /Harrypedia/people/malfoy/draco_lucius/
+[Draco]: /Harrypedia/people/Malfoy/Draco Lucius/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean/
-[RBW1]: /Harrypedia/people/weasley/ronald_bilius//
+[RBW1]: /Harrypedia/people/Weasley/Ronald Bilius//
 [AD1]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
-[Hogwarts]: /Harrypedia/hogwarts/
+[Hogwarts]: /Harrypedia/Hogwarts/
 [OCUC1]: https://www.fanfiction.net/s/13903544/
 [CTB2]: https://archiveofourown.org/works/156533
 [WMFA1]: https://www.fanfiction.net/s/4175909

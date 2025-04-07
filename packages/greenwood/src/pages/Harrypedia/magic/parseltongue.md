@@ -25,9 +25,9 @@ While I recognise this is a massive amount of speculation, it fits the facts, an
 
 [basilisk]: /Harrypedia/animals/basilisk/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
 [sentience and sapience]: /Harrypedia/animals/
-[Nagini]: /Harrypedia/people/nagini/
+[Nagini]: /Harrypedia/people/Nagini/
 [Fantatic Beasts]: /Harrypedia/fantaticbeasts/
 
 [^241109-1]: I am purposefully not considering [Nagini], the [Fantastic Beasts] back story introduces too much complexity that Mrs. Rowling may or may not have considered when authoring the relevant sections of books 5, 6 and 7.

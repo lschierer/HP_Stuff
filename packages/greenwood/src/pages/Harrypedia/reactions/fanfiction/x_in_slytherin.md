@@ -71,21 +71,21 @@ would have no need of a revolution.
 [Black]: /Harrypedia/people/Black/
 [Prewett]: /Harrypedia/people/prewett/
 [Weasley]: /Harrypedia/people/weasley/
-[Lucius]: /Harrypedia/people/malfoy/lucius_abraxas/
-[Ravenclaw]: /Harrypedia/hogwarts/ravenclaw/
-[Gryffindor]: /Harrypedia/hogwarts/gryffindor/
-[Sorting Hat]: /Harrypedia/hogwarts/sorting_hat
-[Hat]: /Harrypedia/hogwarts/sorting_hat
-[Draco]: /Harrypedia/people/malfoy/draco_lucius/
+[Lucius]: /Harrypedia/people/Malfoy/lucius_abraxas/
+[Ravenclaw]: /Harrypedia/Hogwarts/ravenclaw/
+[Gryffindor]: /Harrypedia/Hogwarts/gryffindor/
+[Sorting Hat]: /Harrypedia/Hogwarts/sorting_hat
+[Hat]: /Harrypedia/Hogwarts/sorting_hat
+[Draco]: /Harrypedia/people/Malfoy/Draco Lucius/
 [Fred]: /Harrypedia/people/weasley/fred/
 [George]: /Harrypedia/people/weasley/george/
 [Percy]: /Harrypedia/people/weasley/percy_ignatius/
 [Neville]: /Harrypedia/people/longbottom/neville/
-[Ginny]: /Harrypedia/people/weasley/ginevra_molly/
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
-[Slytherin]: /Harrypedia/hogwarts/slytherin/
+[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Slytherin]: /Harrypedia/Hogwarts/slytherin/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Goyle]: /Harrypedia/people/goyle/gregory/
 

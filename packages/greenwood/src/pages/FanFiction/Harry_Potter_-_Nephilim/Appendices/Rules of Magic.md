@@ -209,7 +209,7 @@ For each choir we list both the description of that choir and the traits we obse
     Dr. Andrew Sulavik. _[All About Angels](https://www.kofc.org/en/resources/cis/cis303.pdf)_
     © 1999-2021 by Knights of Columbus Supreme Council. Pages 15-16.
 
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 
 ## Mapping to how the Nephilim themselves understand Magic

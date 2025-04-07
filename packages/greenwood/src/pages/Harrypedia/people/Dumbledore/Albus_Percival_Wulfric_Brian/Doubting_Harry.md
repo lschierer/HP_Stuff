@@ -121,16 +121,16 @@ such as [McGonagall][] and [Sprout][] might well pick up on that distrust.
 [Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean/
-[Hogwarts]: /Harrypedia/hogwarts/
+[Hogwarts]: /Harrypedia/Hogwarts/
 [Kingsley]: /Harrypedia/people/shacklebolt/kingsley/
 [Lupin]: /Harrypedia/people/lupin/remus_john/
-[Malfoy]: /Harrypedia/people/malfoy/draco_lucius/
+[Malfoy]: /Harrypedia/people/Malfoy/Draco Lucius/
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Moody]: ./Harrypedia/people/moody/
 [Neville]: /Harrypedia/people/longbottom/neville/
 [Professor Sprout]: /Harrypedia/people/sprout/pomona/
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
-[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Sprout]: /Harrypedia/people/sprout/pomona/
-[Tom Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Tom Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/

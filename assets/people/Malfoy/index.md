@@ -32,7 +32,7 @@ school.[^210816-3] This overlap is probably the reason why some authors have
 chosen to state that [Lucius][] may have inherited the relationship with
 [Riddle][] rather than having fostered it.
 
-[Riddle]: ../riddle/tom_marvolo/
+[Riddle]: ../Riddle/Tom Marvolo/
 [Lucius]: lucius_abraxas
 [History]: ../../history
 
@@ -79,4 +79,4 @@ chosen to state that [Lucius][] may have inherited the relationship with
     [Wizarding World](https://www.wizardingworld.com/) Originally Published on
     Pottermore: 2015-08-10. Last Viewed 2021-03-30.
 
-[Astoria]: ../greengrass/astoria/
+[Astoria]: ../Greengrass/Astoria/

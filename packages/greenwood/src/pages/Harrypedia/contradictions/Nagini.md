@@ -22,7 +22,7 @@ On the other hand, it may be that this is _why_ he is willing to make a snake, w
 [Animagus]: /Harrypedia/magic//
 [horcrux]: /Harrypedia/magic/dark/Horcruxes//
 [Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian//
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo//
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo//
 
 [^240326-2]:
     [Callie Ahlgrim](https://www.businessinsider.com/author/callie-ahlgrim)

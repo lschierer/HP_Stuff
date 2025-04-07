@@ -119,7 +119,7 @@ occur.[^210928-5]
       This article is fairly typical of what I found searching for when indoor
       bathrooms became common
     - The Victorian Emporium.
-      "[History of Bathrooms](https://www.thevictorianemporium.com/publications/history/article/history_of_bathrooms)"
+      "[History of Bathrooms](https://www.thevictorianemporium.com/publications/History/article/history_of_bathrooms)"
       [The Victorian Emporium](https://www.thevictorianemporium.com) 2011-08-04
       Note the distinction between _baths_ and _toilets_
 

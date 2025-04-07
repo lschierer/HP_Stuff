@@ -24,9 +24,9 @@ In her interviews, Mrs. Rowling says that she _intends_ that prophecy does not n
 
 [does not act]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/inaction//
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Ginny]: /Harrypedia/people/weasley/ginevra_molly//
+[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly//
 [Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian//
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo//
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo//
 
 [^240417-1]:
     Mrs. J. K. Rowling.

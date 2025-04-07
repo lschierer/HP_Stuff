@@ -23,7 +23,7 @@ this, he continues to work for the Ministry throughout the period of
 [Riddle][]'s control over it, apparently in a position in a position of trust
 (we do not hear of his demotion).
 
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
 
 This Percy is well represented in works such as, but not limited to, sbmcneil's _[Remember][]_.
 

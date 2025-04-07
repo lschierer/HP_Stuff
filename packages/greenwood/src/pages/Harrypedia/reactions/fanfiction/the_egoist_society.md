@@ -35,14 +35,14 @@ However, the typical pattern is that the author defines this magical society by 
   - I do not think I have ever seen it handled consistently, or indeed, at all beyond greetings. If the magical world held on to archaic language, they almost certainly did so across the board, not just when saying "hi."
   - The result is that it comes across as incredibly pretentious, and done simply to make themselves different, and not out of any great attachment to the language, or indeed, the thought structures that made that way of speaking common when it was.
 
-[Gryffindor]: /Harrypedia/hogwarts/gryffindor/
+[Gryffindor]: /Harrypedia/Hogwarts/gryffindor/
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Grindelwald]: /Harrypedia/people/grindelwald/gellert/
-[Slytherin]: /Harrypedia/hogwarts/slytherin/
-[Malfoy]: /Harrypedia/people/malfoy/draco_lucius/
+[Slytherin]: /Harrypedia/Hogwarts/slytherin/
+[Malfoy]: /Harrypedia/people/Malfoy/Draco Lucius/
 [International Confederation of Wizards]: /Harrypedia/culture/international_confederation_of_wizards/
-[Hogwarts]: /Harrypedia/hogwarts/
+[Hogwarts]: /Harrypedia/Hogwarts/
 [Statute of Secrecy]: /Harrypedia/culture/international_statute_of_secrecy/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 

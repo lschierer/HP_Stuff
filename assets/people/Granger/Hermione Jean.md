@@ -60,7 +60,7 @@ situations that [Harry] could better have handled. It is odd that the
 prophesy speaks of one who would be [Riddle]'s equal, but that [Harry] is,
 in many ways, carried along right up to the last scene in the Great Hall.
 
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
 
 On the other hand, he need not have been. Where did [Harry] and Hermione
 disagree?
@@ -106,7 +106,7 @@ disagree?
 
 [Professor McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
-[Malfoy]: /Harrypedia/people/malfoy/draco_lucius/
+[Malfoy]: /Harrypedia/people/Malfoy/Draco Lucius/
 
 [^230208-1]: Mrs. J. K. Rowling. _[Harry Potter and the Deathly Hallows]_ Pottermore Publishing. American Kindle Edition. Page 245.
 
@@ -336,13 +336,13 @@ have time (in the books we see) for them to recover from the events of sixth
 year, though it is anyone's guess which specific event would be one too many.
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Ron]: /Harrypedia/people/weasley/ronald_bilius/
-[Ginny]: /Harrypedia/people/weasley/ginevra_molly/
+[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
+[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
 [Black]: /Harrypedia/people/Black/sirius_iii/
 [Lavender]: /Harrypedia/people/brown/lavender/
 [McLaggen]: /Harrypedia/people/mclaggen/cormac/
 [TSWoHA]: https://www.fanfiction.net/s/5858832
-[Hogwarts]: /Harrypedia/hogwarts/
+[Hogwarts]: /Harrypedia/Hogwarts/
 [Confundus]: /Harrypedia/magic/spells/confundus/
 
 [^210818-3]:

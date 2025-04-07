@@ -115,7 +115,7 @@ but will not be taught, laws that they must follow, and _no way out_. Note that 
 then I cannot be held culpable for failure to obey Parliament. The fault must belong to the person(s) who created that situation (by placing me there without my knowledge, or otherwise causing me to believe I lived somewhere else).
 
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean//
-[Hogwarts]: /Harrypedia/hogwarts/
+[Hogwarts]: /Harrypedia/Hogwarts/
 
 The students might not have been kidnapped, in that they can go home for a few
 weeks at Christmas, and two months or so each summer, but they will

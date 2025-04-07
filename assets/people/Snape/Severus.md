@@ -114,7 +114,7 @@ fragment or not. Was it a reward, or did he earn the mark in some other way?
 That answer could significantly change your view of how much evil Severus has
 done by commission versus omission during this phase of his life.
 
-[Hogwarts]: /Harrypedia/hogwarts/
+[Hogwarts]: /Harrypedia/Hogwarts/
 
 [Dumbledore][]'s view is that becoming a spy balances the scales. Severus
 needs no punishment for his actions prior to hearing the prophesy.[^221014-1] I
@@ -134,7 +134,7 @@ Severus is showing evidence of denial about the strength of the attachment
 between [Lily][] and [James][], and a failure to understand what love really
 means.
 
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
 
 Some writers have tried to give Severus a pass on this one. They rightly point
 out that there was no chance that [Riddle][] would spare the entire family, and
@@ -282,8 +282,8 @@ much worse would [Hogwarts][] have been had a different Death Eater been
 Headmaster? How much could Severus have done to curb problems that he did not
 do? We cannot know. We know he helped some at least.
 
-[Ron]: /Harrypedia/people/weasley/ronald_bilius/
-[Ginny]: /Harrypedia/people/weasley/ginevra_molly/
+[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
+[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
 
 Severus is trying to reach [Harry][] when [Riddle][] decides [Harry][] must die.
 He (Severus) uses his the last of his strength to give [Harry][] memories
@@ -313,7 +313,7 @@ On a side note, it is widely speculated that Severus is [Draco][]'s godfather.
 [This][lc1] article does not specifically talk about that, but covers the
 available evidence as if it were.[^210517-6]
 
-[Draco]: /Harrypedia/people/malfoy/draco_lucius/
+[Draco]: /Harrypedia/people/Malfoy/Draco Lucius/
 
 If you want a parallel but diverging view of Severus that allows for redeeming
 him more than this rant does, BajaB offers a fascinating take on him in

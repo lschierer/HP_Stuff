@@ -102,8 +102,8 @@ curry favour with them, re-enforcing the beliefs. They will marry for money and
 power, re-enforcing these beliefs beyond school with social connections, and
 creating a feedback mechanism into the next generation.
 
-[Hogwarts]: /Harrypedia/hogwarts/
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo//
+[Hogwarts]: /Harrypedia/Hogwarts/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo//
 [Arthur]: /Harrypedia/people/weasley/arthur//
 
 Eventually there are too many of them for one house at [Hogwarts]. More than
@@ -138,7 +138,7 @@ on the other. We have Ravenclaws who are members of the DA, and others who
 steal from Luna.
 
 [Bones]: /Harrypedia/people/bones/
-[Draco]: /Harrypedia/people/malfoy/draco_lucius//
+[Draco]: /Harrypedia/people/Malfoy/Draco Lucius//
 
 The only real argument against this is the distribution of first generation
 students in the various houses. We do not know enough about the students to

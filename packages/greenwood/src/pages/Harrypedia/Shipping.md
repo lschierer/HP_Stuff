@@ -84,7 +84,7 @@ things that go differently from the books.
 [trace]: /Harrypedia/magic/
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Draco]: /Harrypedia/people/malfoy/draco_lucius/
+[Draco]: /Harrypedia/people/Malfoy/Draco Lucius/
 [Fleur]: /Harrypedia/people/delacour/fleur_isabelle/
 [Nymphadora]: /Harrypedia/people/tonks/nymphadora/
 [Sirius]: /Harrypedia/people/Black/sirius_iii/

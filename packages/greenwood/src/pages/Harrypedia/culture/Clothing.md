@@ -63,12 +63,12 @@ wear, would be more expensive than the essentially non-magical clothing that
 she says magical folk tend to wear "day to day."[^220630-2]
 
 [Mrs. Weasley]: /Harrypedia/people/prewett/molly//
-[Ron]: /Harrypedia/people/weasley/ronald_bilius//
+[Ron]: /Harrypedia/people/Weasley/Ronald Bilius//
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean//
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Snape's]: /Harrypedia/people/Snape/Severus//
 [James]: /Harrypedia/people/Potter/James//
-[Hogwarts]: /Harrypedia/hogwarts/
+[Hogwarts]: /Harrypedia/Hogwarts/
 [Mr. Weasley]: /Harrypedia/people/weasley/arthur//
 [Quidditch]: ../../quidditch
 

@@ -23,7 +23,7 @@ On the plus side, Mrs. Rowling lists a single first generation Minister of Magic
 My guess is not none (the essential premise for a work like _[Exiles]_), but also not all or nearly all (the essential premise for much of Mrs. Rowling's extra cannon writing about the post war universe).
 
 [Exiles]: https://www.fanfiction.net/s/14002719
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
 [Arthur Weasley]: /Harrypedia/people/weasley/arthur/
 [Weasley]: /Harrypedia/people/weasley/
 

@@ -66,7 +66,7 @@ harder because the _curse_ in question is lost and unrecorded by history.[^24021
 
 [Moe64]: https://archiveofourown.org/users/Moe64/pseuds/Moe64
 [What We Do Today]: https://archiveofourown.org/works/42289347
-[Malfoy]: /Harrypedia/people/malfoy/
+[Malfoy]: /Harrypedia/people/Malfoy/
 [Crouch]: /Harrypedia/people/crouch/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Kreacher]: /Harrypedia/people/Black/kreacher/
@@ -74,4 +74,4 @@ harder because the _curse_ in question is lost and unrecorded by history.[^24021
 [Regulas]: /Harrypedia/people/Black/regulas_arcturus/
 [Brownies]: https://en.wikipedia.org/wiki/Brownie_(folklore)
 [Imperius]: /Harrypedia/magic/spells/imperio/
-[Hogwarts]: /Harrypedia/hogwarts/
+[Hogwarts]: /Harrypedia/Hogwarts/

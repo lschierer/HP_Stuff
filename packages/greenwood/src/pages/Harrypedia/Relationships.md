@@ -94,19 +94,19 @@ suspect even that would add to the problems here. Either way, the
 depiction _certainly_ destroys anyone attempting to use _[Cursed Child]_
 to create one big happy Weasley-Potter-Malfoy family.
 
-[Shipping]: ../shipping/
-[Astoria]: /Harrypedia/people/greengrass/astoria//
-[Draco]: /Harrypedia/people/malfoy/draco_lucius//
-[Scorpius]: /Harrypedia/people/malfoy/scorpius//
-[Greengrass]: /Harrypedia/people/greengrass//
+[Shipping]: ../Shipping/
+[Astoria]: /Harrypedia/people/Greengrass/Astoria//
+[Draco]: /Harrypedia/people/Malfoy/Draco Lucius//
+[Scorpius]: /Harrypedia/people/Malfoy/Scorpius//
+[Greengrass]: /Harrypedia/people/Greengrass//
 [dark arts]: /Harrypedia/magic/dark//
-[Rita]: /Harrypedia/people/skeeter/rita//
-[Rita Skeeter]: /Harrypedia/people/skeeter/rita//
-[Hogwarts]: /Harrypedia/hogwarts/
-[Ron]: /Harrypedia/people/weasley/ronald_bilius//
+[Rita]: /Harrypedia/people/Skeeter/Rita//
+[Rita Skeeter]: /Harrypedia/people/Skeeter/Rita//
+[Hogwarts]: /Harrypedia/Hogwarts/
+[Ron]: /Harrypedia/people/Weasley/Ronald Bilius//
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean//
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Ginny]: /Harrypedia/people/weasley/ginevra_molly//
+[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly//
 [George]: /Harrypedia/people/weasley/george//
 [Neville]: /Harrypedia/people/longbottom/neville//
 [Percy]: /Harrypedia/people/weasley/percy_ignatius//
@@ -115,7 +115,7 @@ to create one big happy Weasley-Potter-Malfoy family.
 [Hannah Abbott]: /Harrypedia/people/abbott/hannah//
 [Rolf Scamander]: /Harrypedia/people/scamander/rolf//
 [Quidditch]: ../quidditch/
-[Malfoy]: /Harrypedia/people/malfoy//
+[Malfoy]: /Harrypedia/people/Malfoy//
 [Hannah]: /Harrypedia/people/abbott/hannah//
 [Holyhead Harpies]: ../quidditch/
 

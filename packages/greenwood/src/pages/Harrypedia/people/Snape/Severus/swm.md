@@ -364,7 +364,7 @@ was a mudblood. This would draw [Snape] deeper and deeper into [Riddle]'s
 atrocities and soul corrupting influence. You simply cannot be around such
 people without their evil rubbing off on you.
 
-[Riddle]: ../../../riddle/tom_marvolo/
+[Riddle]: ../../../Riddle/Tom Marvolo/
 
 People criticising [Lily] are essentially pushing her towards missionary
 dating. It is not _precisely_ the same situation, but it is close enough.
@@ -421,4 +421,4 @@ to act on that attraction by agreeing to go out with him.
 
 [Occlumens]: /Harrypedia/magic/the_mind_arts/occlumency/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Hogwarts]: /Harrypedia/hogwarts/
+[Hogwarts]: /Harrypedia/Hogwarts/

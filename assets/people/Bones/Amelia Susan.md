@@ -22,7 +22,7 @@ respect with which she might be held.
     Head of Magical Law Enforcement, not the equivalent of the Head of State and
     Government?
 
-[Fudge]: /Harrypedia/people/fudge/cornelius_oswald/
+[Fudge]: /Harrypedia/people/Fudge/Cornelius Oswald/
 [Tonks]: /Harrypedia/people/tonks/nymphadora/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hagrid]: /Harrypedia/people/hagrid/rubeus/

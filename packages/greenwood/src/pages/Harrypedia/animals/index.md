@@ -15,7 +15,7 @@ My own take, shared by at least some other authors, is that in the case of [pars
 
 [parseltongue]: /Harrypedia/magic/parseltongue//
 [Fantatic Beasts]: /Harrypedia/fantaticbeasts//
-[Nagini]: /Harrypedia/people/nagini//
+[Nagini]: /Harrypedia/people/Nagini//
 [sphinx]: /Harrypedia/animals/sphinx//
 [jarvey]: /Harrypedia/animals/jarvey//
 [hippogriff]: /Harrypedia/animals/hippogriff//

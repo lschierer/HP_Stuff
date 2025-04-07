@@ -79,10 +79,10 @@ On the other hand, it is easy to be over sensitive.
   of the truth of gender and gender roles. See my own objection about her
   reliance on public perception, this really fits in with that.
 
-[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
 [Lovegoods]: /Harrypedia/people/lovegood/
 [Weasleys]: /Harrypedia/people/weasley/
-[Ginny]: /Harrypedia/people/weasley/ginevra_molly/
+[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
 [Luna]: /Harrypedia/people/lovegood/luna/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Xeno]: /Harrypedia/people/lovegood/xenophilius/
@@ -209,11 +209,11 @@ influenced by the various depictions I have read.
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Quidditch]: /Harrypedia/quidditch/
 [Gringotts]: /Harrypedia/gringotts/
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
 
 [^210818-4]: See my [History] notes.
 
-[History]: /Harrypedia/history/
+[History]: /Harrypedia/History/
 
 [^211104-1]:
     Mrs. J. K. Rowling.

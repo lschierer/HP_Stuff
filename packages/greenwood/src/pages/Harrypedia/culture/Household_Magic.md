@@ -40,11 +40,11 @@ is taught at [Hogwarts]. If so, we should have seen some indication of this in
 the six years that [Harry] attends class.
 
 [Hagrid]: /Harrypedia/people/hagrid/rubeus//
-[Hogwarts]: /Harrypedia/hogwarts/
+[Hogwarts]: /Harrypedia/Hogwarts/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Molly]: /Harrypedia/people/prewett/molly//
 [Neville]: /Harrypedia/people/longbottom/neville//
-[Ginny]: /Harrypedia/people/weasley/ginevra_molly//
+[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly//
 [Lily Evens]: /Harrypedia/people/evans/lily_j//
 
 [^210329-24]:

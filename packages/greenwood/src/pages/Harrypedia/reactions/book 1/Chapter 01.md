@@ -28,6 +28,6 @@ The first chapter, as is expected _of_ a first chapter, has more questions than 
 [Vernon]: /Harrypedia/people/dursley/vernon//
 [Dickens]: https://en.wikipedia.org/wiki/Charles_Dickens
 [Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian//
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo//
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo//
 
 [^240424-1]: There is some evidence of this, Mrs. Rowling calls the device that [Dumbledore] uses a "Put-Outer" but it will later be called by the more elegant name "Deluminator."

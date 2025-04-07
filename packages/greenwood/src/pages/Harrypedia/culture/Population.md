@@ -46,11 +46,11 @@ Of course, I cannot be sure that this is what happened. It makes it hard to give
     "[Chapter 10: Ginny Starts to Heal](https://archiveofourown.org/works/38270980/chapters/96581148)"
     Published: 2022-04-09. Updated: 2023-03-05.
 
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo//
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo//
 [The Ancient Proliferation Covenent]: https://archiveofourown.org/works/38270980
 [magical marriage laws]: /Harrypedia/magic/contracts//
 [WolfgangNH]: https://archiveofourown.org/users/WolfgangNH/pseuds/WolfgangNH
-[CaHS]: /Harrypedia/hogwarts/class_and_house_structure/
-[Hogwarts]: /Harrypedia/hogwarts/
+[CaHS]: /Harrypedia/Hogwarts/class_and_house_structure/
+[Hogwarts]: /Harrypedia/Hogwarts/
 
 [^240319-5]: I am not the first to make any of these points, but I honestly cannot recall where I first read any of these ideas.

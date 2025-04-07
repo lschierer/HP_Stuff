@@ -55,7 +55,7 @@ just insulted her best friend, and will go on to pick on him unmercifully.
 Perhaps [Lily] cannot really see James with an unbiased eye until
 after she herself has fallen out with [Snape]?
 
-[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
 [Lily]: /Harrypedia/people/evans/lily_j/
 [Snape]: /Harrypedia/people/Snape/Severus/
 
@@ -187,7 +187,7 @@ hands, despite the fact that he supposedly has no cunning or intelligence.
 
 [dark magic]: /Harrypedia/magic/dark/
 [Fleamont]: /Harrypedia/people/Potter/fleamont/
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
 
 ## Pure Speculation
 

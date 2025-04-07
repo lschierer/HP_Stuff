@@ -85,7 +85,7 @@ but rather [Legilimency].
 [James Potter]: /Harrypedia/people/Potter/James/
 [Professor Snape]: /Harrypedia/people/Snape/Severus/
 [Snape]: /Harrypedia/people/Snape/Severus/
-[Draco]: /Harrypedia/people/malfoy/draco_lucius/
+[Draco]: /Harrypedia/people/Malfoy/Draco Lucius/
 [Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 
 [^20210922-1]:

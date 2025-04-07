@@ -23,7 +23,7 @@ protected him from the worst of the effects of his upbringing.
 explores as a one-shot from when Harry and [Ginny] are dating the idea that
 perhaps Harry is simply really really good at hiding his reactions.[^200527-1]
 
-[Ginny]: /Harrypedia/people/weasley/ginevra_molly/
+[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
 
 [^200527-1]:
     ivybelle. _[Don't Touch Me](https://archiveofourown.org/works/702684)_,
@@ -105,7 +105,7 @@ for example. Similarly it is not uncommon for the books to jump over weeks and
 even occasionally (especially in the earlier books) months where nothing
 significant happens.
 
-[Shipping]: /Harrypedia/shipping/
+[Shipping]: /Harrypedia/Shipping/
 
 This is a problem because it is in these non-significant times that Harry would
 be growing in relationship with all the rest of his classmates, year mates, and
@@ -190,10 +190,10 @@ in the cupboard. Since both are speculation, we do not know which.
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Lily]: /Harrypedia/people/evans/lily_j/
 [James]: /Harrypedia/people/Potter/James/
-[Ron]: /Harrypedia/people/weasley/ronald_bilius/
+[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
 [Fred]: /Harrypedia/people/weasley/fred/
 [George]: /Harrypedia/people/weasley/george/
-[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
 [SS1]: /Harrypedia/people/Snape/Severus/
 
 [^221024-4]:

@@ -55,7 +55,7 @@ Allowing himself to appear more fallible, more the victim, would endear him to
 make the next removal harder (thus I think he _was_ in fact able to resist
 [Fudge] and [Umbridge] in Book 5 for most of the year).
 
-[Fudge]: /Harrypedia/people/fudge/cornelius_oswald/
+[Fudge]: /Harrypedia/people/Fudge/Cornelius Oswald/
 [Umbridge]: /Harrypedia/people/umbridge/dolores_jane/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [AD1]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
