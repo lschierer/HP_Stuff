@@ -65,8 +65,8 @@ birthday is correct, that does not give much space for [Charlie]'s to move.
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 [Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
-[George]: /Harrypedia/people/Weasley/george/
-[Fred]: /Harrypedia/people/Weasley/fred/
+[George]: /Harrypedia/people/Weasley/George/
+[Fred]: /Harrypedia/people/Weasley/Fred/
 [Percy]: /Harrypedia/people/Weasley/Percy Ignatius/
 [Charlie]: /Harrypedia/people/Weasley/Charlie/
 [Bill]: /Harrypedia/people/Weasley/William Arthur/

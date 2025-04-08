@@ -281,7 +281,7 @@ excuse to prevent [Sirius][SB3] from being able to adopt [Harry]?
     _[Harry Potter and the Goblet of Fire](https://www.librarything.com/work/113)_
     © 2003 Pottermore Publishing American Kindle Edition. Locations 8831-8833.
 
-[Occlumency]: /Harrypedia/magic/the_mind_arts/occlumency/
+[Occlumency]: /Harrypedia/magic/the_mind_arts/Occlumency/
 
 Other acts Dumbledore would have to defend by saying it was not his actions in
 any sense. Dumbledore directed [Snape][SS] to teach [Occlumency][], and claims

@@ -191,8 +191,8 @@ in the cupboard. Since both are speculation, we do not know which.
 [Lily]: </Harrypedia/people/Evans/Lily J/>
 [James]: /Harrypedia/people/Potter/James/
 [Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
-[Fred]: /Harrypedia/people/Weasley/fred/
-[George]: /Harrypedia/people/Weasley/george/
+[Fred]: /Harrypedia/people/Weasley/Fred/
+[George]: /Harrypedia/people/Weasley/George/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [SS1]: /Harrypedia/people/Snape/Severus/
 

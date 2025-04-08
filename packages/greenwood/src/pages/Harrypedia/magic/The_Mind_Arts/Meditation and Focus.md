@@ -47,8 +47,8 @@ their tempers.
 
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Sirius]: </Harrypedia/people/Black/Sirius III/>
-[Legilimency]: /Harrypedia/magic/the_mind_arts/legilimency/
-[Occlumency]: /Harrypedia/magic/the_mind_arts/occlumency/
+[Legilimency]: /Harrypedia/magic/the_mind_arts/Legilimency/
+[Occlumency]: /Harrypedia/magic/the_mind_arts/Occlumency/
 
 [^20200716-4]:
     know-it-all-bookworm . _[Harry Potter and the Secrets He's

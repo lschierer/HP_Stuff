@@ -419,6 +419,6 @@ along makes that change to become someone she can see herself marrying _on his
 own_, **before she begins their relationship**. Only then does she allow herself
 to act on that attraction by agreeing to go out with him.
 
-[Occlumens]: /Harrypedia/magic/the_mind_arts/occlumency/
+[Occlumens]: /Harrypedia/magic/the_mind_arts/Occlumency/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hogwarts]: /Harrypedia/Hogwarts/

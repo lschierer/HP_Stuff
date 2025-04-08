@@ -24,7 +24,7 @@ In addition to the legitimate unanswered difficult questions that an author atte
   - A third version presents [Ginny] as hopelessly dominated by her family. This never rings very true.
   - The inverse is equally wierd. [Ginny] _is_ fiercely independent, but equally fiercely loves her family.
 
-[horcrux]: /Harrypedia/magic/dark/Horcruxes//
+[horcrux]: /Harrypedia/magic/dark/Horcruxes/
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>/

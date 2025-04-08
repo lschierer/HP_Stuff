@@ -156,7 +156,7 @@ really bad at maths.[^220713-5]
 
 [^220705-1]: Mr. Robbie Gonzalez. "[Free Throws Should Be Easy. Why Do Basketball Players Miss?](https://www.wired.com/story/almost-impossible-free-throws/)" [Wired](https://www.wired.com/) 2019-03-28. Last Viewed: 2022-07-05.
 
-[^220705-2]: InStat Limited. "[MASSIVE RESEARCH OF PENALTIES BY INSTAT](https://instatsport.com/football/article/penalty_research)" [InStat](https://instatsport.com). Last Viewed: 2022-07-05.
+[^220705-2]: InStat Limited. "[MASSIVE RESEARCH OF PENALTIES BY INSTAT](https://web.archive.org/web/20221207053824/https://instatsport.com/football/article/penalty_research)" [InStat](https://web.archive.org/web/20221207055946/http://instatsport.com/). Last Viewed: 2022-07-05.
 
 [^220705-3]:
     Sorcerer's Muse. _[Harry-Potter-and-the-Muggle-s-Daughter](https://www.fanfiction.net/s/12273541)_

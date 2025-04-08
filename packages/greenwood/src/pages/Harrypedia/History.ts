@@ -3,16 +3,10 @@ import fs from "node:fs";
 
 import { DateTime } from "luxon";
 
-import { setTimeout } from "node:timers/promises";
-import pTimeout from "p-timeout";
-
 import markdownTextProcessing from "../../lib/customMarkdownProcessing.ts";
 
 import {
-  type Compilation,
-  type Page,
   type GetFrontmatter,
-  type GetLayout,
   type GetBody,
   type Frontmatter,
 } from "@greenwood/cli";
@@ -179,10 +173,7 @@ const getCollectionContents = () => {
 
 const getBody: GetBody = async () => {
   /*start work around for GetFrontmatter requiring async */
-  const delayedPromise = setTimeout(1);
-  await pTimeout(delayedPromise, {
-    milliseconds: 1,
-  });
+  await new Promise((resolve) => setTimeout(resolve, 1));
   /* end workaround */
 
   const _events = getCollectionContents();
@@ -216,64 +207,16 @@ const getBody: GetBody = async () => {
   }
 };
 
-const getLayout: GetLayout = async (
-  compilation: Compilation,
-  route: string
-) => {
-  /*start work around for GetFrontmatter requiring async */
-  const delayedPromise = setTimeout(1);
-  await pTimeout(delayedPromise, {
-    milliseconds: 1,
-  });
-  /* end workaround */
-
-  const page: Page | undefined = compilation.graph.find((p) => {
-    return !p.route.localeCompare(route);
-  });
-  if (DEBUG) {
-    console.log(
-      `route is ${JSON.stringify(route)} for ${page ? page.id : "unfound page"}`
-    );
-  }
-
-  return `
-  <!doctype html>
-  <html>
-    <head>
-      <script type="module" src="../components/side-nav.ts"></script>
-      <script type="module" src="../components/v-timeline.ts"></script>
-      <script type="module" src="../lib/Spectrum/SplitView.ts"></script>
-    </head>
-
-    <body>
-      ${DEBUG ? `<span>History Layout </span>` : ""}
-      <sp-split-view resizable primary-size="20%">
-        <div class="nav">
-          <side-nav route="${route}"></side-nav>
-        </div>
-        <div>
-          <main >
-            <content-outlet></content-outlet>
-          </main>
-        </div>
-      </sp-split-view>
-    </body>
-  </html>
-
-  `;
-};
-
 const getFrontmatter: GetFrontmatter = async () => {
   /*start work around for GetFrontmatter requiring async */
-  const delayedPromise = setTimeout(1);
-  await pTimeout(delayedPromise, {
-    milliseconds: 1,
-  });
+  await new Promise((resolve) => setTimeout(resolve, 1));
   /* end workaround */
 
   return {
     collection: "Harrypedia",
     title: "History",
+    layout: "standard",
+    imports: ['/components/v-timeline.ts type="module"'],
     data: {
       author: "Luke Schierer",
       tableOfContents: "false",
@@ -281,24 +224,4 @@ const getFrontmatter: GetFrontmatter = async () => {
   } as Frontmatter;
 };
 
-export { getFrontmatter, getBody, getLayout };
-
-/*
----
-collection: Harrypedia
-layout: timeline
-title: History
-author: Luke Schierer
-tableOfContents: false
-banner:
-  content: |
-    Note that the tool creating this timeline fills in
-    unknown fields in dates.
-import:
-- /components/vertical-timeline.ts type="module"
-- /components/vertical-element.ts type="module"
----
-
-
-<vertical-timeline datacollection="history" ></vertical-timeline>
- */
+export { getFrontmatter, getBody };

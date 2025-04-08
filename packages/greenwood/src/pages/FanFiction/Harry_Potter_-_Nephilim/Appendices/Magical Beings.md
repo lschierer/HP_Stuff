@@ -245,10 +245,10 @@ can never be fully freed.
   _capability._ Believed to be created by the ancestors of the goblins.
 
 [Many Waters]: https://wikipedia.org/wiki/Many_Waters
-[AA]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/points-of-divergence/
+[AA]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Points of Divergence/
 [AB]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/rules-of-magic/
 [AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-beings/
-[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
+[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Relative Power Levels/
 [AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
 [AF]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
 [AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/

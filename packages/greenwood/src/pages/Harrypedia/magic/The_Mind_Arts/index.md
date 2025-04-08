@@ -13,9 +13,9 @@ the mind, whereas "mental arts" could be almost anything _using_ your mind. I
 am trying to distinguish, however imperfectly, the mind as an object versus the
 mind as a means.
 
-[Occlumency]: ./occlumency/
+[Occlumency]: ./Occlumency/
 [Legilimens]: /Harrypedia/magic/spells/legilimens/
-[Legilimency]: ./legilimency/
+[Legilimency]: ./Legilimency/
 
 I dislike [Occlumency]. I am resigned to accepting a definition of it that I
 am fairly confident is intended to be canonical to this universe; the problem

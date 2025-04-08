@@ -29,7 +29,7 @@ Individual nephil can be rated on a scale of 1 (low) to 10 (high) for access to 
 > Author's Note. Estimates of some key figures of in the history related in this archive are available [here][AD].
 
 
-[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
+[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Relative Power Levels/
 [abt]: #abilities-by-type
 
 [^221216-2]:

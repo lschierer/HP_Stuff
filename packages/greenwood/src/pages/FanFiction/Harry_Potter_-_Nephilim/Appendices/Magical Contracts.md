@@ -298,10 +298,10 @@ make it a distinct category of event worth separate consideration.
     that operated for years without anyone other than the participants being aware that a contract
     was in place.
 
-[AA]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/points-of-divergence/
+[AA]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Points of Divergence/
 [AB]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/rules-of-magic/
 [AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-beings/
-[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
+[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Relative Power Levels/
 [AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
 [AF]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-contracts/
 [AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/

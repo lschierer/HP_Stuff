@@ -107,7 +107,7 @@ to create one big happy Weasley-Potter-Malfoy family.
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>/
-[George]: /Harrypedia/people/Weasley/george//
+[George]: /Harrypedia/people/Weasley/George//
 [Neville]: /Harrypedia/people/Longbottom/Neville/
 [Percy]: /Harrypedia/people/Weasley/Percy Ignatius/
 [Audrey]: /Harrypedia/people//

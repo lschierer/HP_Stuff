@@ -77,8 +77,8 @@ would have no need of a revolution.
 [Sorting Hat]: /Harrypedia/Hogwarts/sorting_hat
 [Hat]: /Harrypedia/Hogwarts/sorting_hat
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>
-[Fred]: /Harrypedia/people/Weasley/fred/
-[George]: /Harrypedia/people/Weasley/george/
+[Fred]: /Harrypedia/people/Weasley/Fred/
+[George]: /Harrypedia/people/Weasley/George/
 [Percy]: /Harrypedia/people/Weasley/Percy Ignatius/
 [Neville]: /Harrypedia/people/Longbottom/Neville/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
