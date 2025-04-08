@@ -1,20 +1,24 @@
 {
   "$schema": "https://json.schemastore.org/linkinator-config.json",
+  "concurrency": 20,
   "markdown": true,
   "recurse": true,
   "browser": true,
   "skip": [
     "(www.)?archiveofourown.org",
+    "(www.)?bullionbypost.co.uk",
     "(www.)?fanfiction.net",
     "(www.)?goodreads.com",
     "(fonts|www)*.?googleapis.com",
     "gramps-project.org",
     "harrypotter.fandom.com",
     "(www.)?hp-lexicon.org",
-    "(www.)?thelibrarything.com",
+    "(www.)?librarything.com",
+    "(www.)privacypolicies.com",
     "(www.)?reddit.com",
     "(www.)?rowlingindex.org",
-    "wikipedia.org"
+    "wikipedia.org",
+    "(www.)?youronlinechoices.com"
   ],
   "silent": true
 }

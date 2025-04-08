@@ -158,8 +158,29 @@ class CopyHPNOFP::Command {
 
       foreach my $anchorNode ($dom->findnodes('//a[@href]')) {
         my $target = $anchorNode->getAttribute('href');
-        $target =~ s/(.*)\.xhtml/$1\//;
+        
+        # Handle links with fragments
+        if ($target =~ /^(.*)\.xhtml(#.*)?$/) {
+          my $base = $1;
+          my $fragment = $2 || '';
+          
+          # If this is a link to a chapter or author notes, make it an absolute path
+          if ($base =~ /^(Chapter\d+|AuthorNotes)$/) {
+            $target = "/FanFiction/Harry Potter and the Nightmares of Futures Past/$base/$fragment";
+          } else {
+            # Otherwise, keep it as a relative path
+            $target = "$base/$fragment";
+          }
+        } elsif ($target =~ /^#(.*)$/) {
+          # Handle same-page fragments - keep as is
+          $target = "#$1";
+        }
+        
         $anchorNode->setAttribute('href', $target);
+        
+        if($debug) {
+          say "Processed link: " . $anchorNode->getAttribute('href');
+        }
       }
 
       foreach my $imgNode ($dom->findnodes('//img')) {
