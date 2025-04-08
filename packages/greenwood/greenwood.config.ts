@@ -37,7 +37,7 @@ const gc: Config = {
           a: "spectrum-Link  spectrum-Link--primary",
           "p,li": "spectrum-Body spectrum-Body--serif spectrum-Body--sizeM",
           "blockquote,blockquote paragraph":
-            "spectrum-Detail spectrum-Detail--serif spectrum-Detail--sizeM",
+            "spectrum-Body spectrum-Body--serif spectrum-Body--sizeS",
         },
       },
       "rehype-autolink-headings",
