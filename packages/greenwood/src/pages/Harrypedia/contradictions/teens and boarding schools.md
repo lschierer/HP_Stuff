@@ -39,10 +39,10 @@ They do make for interesting speculation though.
 [^241203-1]: The brooms can go up over 100 miles an hour, and the bludger can catch up to players on them.
 
 [Cho]: /Harrypedia/people/chang/cho/
-[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
+[Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 [Gryffindor]: /Harrypedia/Hogwarts/gryffindor/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Hogwarts]: /Harrypedia/Hogwarts/
 [Lockhart]: /Harrypedia/people/lockhart/gilderoy/
 [Luna]: /Harrypedia/people/lovegood/luna/
@@ -52,5 +52,5 @@ They do make for interesting speculation though.
 [Oliver]: /Harrypedia/people/wood/oliver/
 [Quidditch]: /Harrypedia/quidditch/
 [Ravenclaw]: /Harrypedia/Hogwarts/ravenclaw/
-[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
+[Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [Weasley]: /Harrypedia/people/weasley/

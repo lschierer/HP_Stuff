@@ -46,12 +46,12 @@ disfavour. In the second scene, Draco has a clear shot at _personally_ winning
 that same favour. The path to victory seems clear, and his self confidence is
 back.
 
-[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [Slytherin]: /Harrypedia/Hogwarts/slytherin/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
-[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
+[Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Goyle]: /Harrypedia/people/goyle/gregory/
 [Crabbe]: /Harrypedia/people/crabbe/vincent/
 

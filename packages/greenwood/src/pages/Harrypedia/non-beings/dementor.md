@@ -12,8 +12,8 @@ uses them as a bodyguard.[^211021-1] Similarly, despite [Dumbledore][]'s
 warning that they will not differentiate between bystanders and targets, they
 _do_ seem capable of following orders to some degree.[^211021-2]
 
-[Fudge]: /Harrypedia/people/Fudge/Cornelius Oswald/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian//
+[Fudge]: </Harrypedia/people/Fudge/Cornelius Oswald/>
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>/
 
 ### Inconsistencies
 

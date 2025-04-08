@@ -21,7 +21,7 @@ That being said, I will admit that the books *are* more than a bit absurd themse
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Snape's Worst Memory]: /Harrypedia/people/Snape/Severus/swm/
 [James]: /Harrypedia/people/Potter/James/
-[Sirius]: /Harrypedia/people/Black/Sirius III/
+[Sirius]: </Harrypedia/people/Black/Sirius III/>
 
 [^250204-1]: Works including, but not limited to,
     * [Labgasod]. _[Three Hours](https://archiveofourown.org/works/51062065)_. Published: 2023-10-23. Completed: 2023-10-25.

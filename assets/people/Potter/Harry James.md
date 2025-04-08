@@ -23,7 +23,7 @@ protected him from the worst of the effects of his upbringing.
 explores as a one-shot from when Harry and [Ginny] are dating the idea that
 perhaps Harry is simply really really good at hiding his reactions.[^200527-1]
 
-[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
+[Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 
 [^200527-1]:
     ivybelle. _[Don't Touch Me](https://archiveofourown.org/works/702684)_,
@@ -187,13 +187,13 @@ glasses is probably either an effect of from his scar, or an effect from living
 in the cupboard. Since both are speculation, we do not know which.
 
 [growth]: /Harrypedia/misc/growth/
-[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Lily]: /Harrypedia/peopleEvans/Lily J/
 [James]: /Harrypedia/people/Potter/James/
-[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
+[Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [Fred]: /Harrypedia/people/weasley/fred/
 [George]: /Harrypedia/people/weasley/george/
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [SS1]: /Harrypedia/people/Snape/Severus/
 
 [^221024-4]:

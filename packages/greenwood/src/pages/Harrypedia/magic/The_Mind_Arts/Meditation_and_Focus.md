@@ -46,7 +46,7 @@ being said, he is right that it _would_ have benifits for the boys' control over
 their tempers.
 
 [Snape]: /Harrypedia/people/Snape/Severus/
-[Sirius]: /Harrypedia/people/Black/Sirius III/
+[Sirius]: </Harrypedia/people/Black/Sirius III/>
 [Legilimency]: /Harrypedia/magic/the_mind_arts/legilimency/
 [Occlumency]: /Harrypedia/magic/the_mind_arts/occlumency/
 

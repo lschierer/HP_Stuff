@@ -33,7 +33,7 @@ possibilities:
       deliberate malice on the Dursley's part. In other words, she is in part
       taken in by their act, and in part hopelessly naive.[^20210831-1]
 
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 
 [^20210831-1]:

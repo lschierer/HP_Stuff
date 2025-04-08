@@ -87,7 +87,7 @@ things that go differently from the books.
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>
 [Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>
 [Nymphadora]: /Harrypedia/people/Tonks/Nymphadora/
-[Sirius]: /Harrypedia/people/Black/Sirius III/
+[Sirius]: </Harrypedia/people/Black/Sirius III/>
 [Remus]: </Harrypedia/people/Lupin/Remus John/>
 [Lily]: </Harrypedia/peopleEvans/Lily J/>
 [James]: /Harrypedia/people/Potter/James/

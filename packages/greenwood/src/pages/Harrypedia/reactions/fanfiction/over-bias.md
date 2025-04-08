@@ -31,7 +31,7 @@ If your story depends on society being biased to that severe an extent, reconsid
 
 [Dirk Cresswell]: /Harrypedia/people/cresswell/dirk//
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Hermione]: /Harrypedia/people/Granger/Hermione Jean//
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>/
 
 [^240327-5]: Interestingly, I know of one work, _[Poison Pen](https://www.fanfiction.net/s/5554780/)_ that both accounts for the exceptions that Mrs. Rowling includes _and_ uses this exaggerated stereotype. In that story, [Cresswell] is arrested for falsifying his records when he is used _in the story_ as a counter example to the stereotype.
 

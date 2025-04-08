@@ -62,7 +62,7 @@ dehumanising them the way we see with Jews in Germany. Excluding them from any
 real political power quite possibly, but within the context of some existing
 [class structure].
 
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [Magic]: /Harrypedia/magic/
 [Ministry of Magic]: /Harrypedia/culture/government
 [Harry]: </Harrypedia/people/Potter/Harry James/>

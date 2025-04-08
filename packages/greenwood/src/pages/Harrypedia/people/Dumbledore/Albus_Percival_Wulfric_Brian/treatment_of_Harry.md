@@ -50,7 +50,7 @@ not just his death experience in the forest in book seven, are one of the
 things it triggered. For all the prophesy does not name [Dumbledore][], it
 shapes his actions much as the one that Macbeth hears shapes his actions.
 
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Harry's]: </Harrypedia/people/Potter/Harry James/>
 [Dumbledore]: ../
@@ -202,9 +202,9 @@ complicated nature of the thorny problem to confuse the listener.
 [Dursleys]: /Harrypedia/people/dursley/
 [abusive environment]: /Harrypedia/people/dursley/
 [AD1]: ../
-[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
-[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [SS1]: /Harrypedia/people/Snape/Severus/
 [CAD1]: https://fanfictalk.com/archive/viewstory.php?sid=721
 [BW95TSS1]: https://www.fanfiction.net/s/12175260

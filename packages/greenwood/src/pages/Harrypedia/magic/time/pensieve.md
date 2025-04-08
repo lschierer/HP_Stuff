@@ -59,9 +59,9 @@ would not only know this, but would be able to work around it. This would explai
 [Slughorn]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
 [Snape]: /Harrypedia/people/Snape/Severus/
 [James]: /Harrypedia/people/Potter/James/
-[Sirius]: /Harrypedia/people/Black/Sirius III/
+[Sirius]: </Harrypedia/people/Black/Sirius III/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 
 [^221202-10]:
     The idea that the pensieve can be used to invoke time was first

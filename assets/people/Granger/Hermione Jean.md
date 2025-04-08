@@ -60,7 +60,7 @@ situations that [Harry] could better have handled. It is odd that the
 prophesy speaks of one who would be [Riddle]'s equal, but that [Harry] is,
 in many ways, carried along right up to the last scene in the Great Hall.
 
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 
 On the other hand, he need not have been. Where did [Harry] and Hermione
 disagree?
@@ -105,8 +105,8 @@ disagree?
   [Harry] was right on this one. Certainly Hermione's _reasoning_ was wrong even if her conclusion was partially correct.
 
 [Professor McGonagall]: /Harrypedia/people/McGonagall/Minerva/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
-[Malfoy]: /Harrypedia/people/Malfoy/Draco Lucius/
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
+[Malfoy]: </Harrypedia/people/Malfoy/Draco Lucius/>
 
 [^230208-1]: Mrs. J. K. Rowling. _[Harry Potter and the Deathly Hallows]_ Pottermore Publishing. American Kindle Edition. Page 245.
 
@@ -160,8 +160,8 @@ what Mrs. Rowling writes - [Fleur] is attracted to [Bill] *because* he is
 that rare male who does not react. This has been so rare in her life as to
 stand out.
 
-[Fleur Delacour]: /Harrypedia/people/Delacour/Fleur Isabelle/
-[Fleur]: /Harrypedia/people/Delacour/Fleur Isabelle/
+[Fleur Delacour]: </Harrypedia/people/Delacour/Fleur Isabelle/>
+[Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>
 [Bill]: /Harrypedia/people/weasley/william_arthur/
 
 Hermione researches *everything* impulsively. She might not have known much
@@ -336,9 +336,9 @@ have time (in the books we see) for them to recover from the events of sixth
 year, though it is anyone's guess which specific event would be one too many.
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
-[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
-[Black]: /Harrypedia/people/Black/Sirius III/
+[Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
+[Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
+[Black]: </Harrypedia/people/Black/Sirius III/>
 [Lavender]: /Harrypedia/people/brown/lavender/
 [McLaggen]: /Harrypedia/people/mclaggen/cormac/
 [TSWoHA]: https://www.fanfiction.net/s/5858832

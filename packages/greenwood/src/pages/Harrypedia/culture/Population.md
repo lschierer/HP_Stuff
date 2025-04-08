@@ -46,7 +46,7 @@ Of course, I cannot be sure that this is what happened. It makes it hard to give
     "[Chapter 10: Ginny Starts to Heal](https://archiveofourown.org/works/38270980/chapters/96581148)"
     Published: 2022-04-09. Updated: 2023-03-05.
 
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo//
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>/
 [The Ancient Proliferation Covenent]: https://archiveofourown.org/works/38270980
 [magical marriage laws]: /Harrypedia/magic/contracts//
 [WolfgangNH]: https://archiveofourown.org/users/WolfgangNH/pseuds/WolfgangNH

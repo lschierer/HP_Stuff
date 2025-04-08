@@ -416,11 +416,11 @@ this theory to work, [Riddle][] ought to have been at [eleven][], or
 
 [eleven]: https://www.biblestudy.org/bibleref/meaning-of-numbers-in-bible/11.html
 [thirteen]: https://www.biblestudy.org/bibleref/meaning-of-numbers-in-bible/13.html
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [stable number]: /Harrypedia/magic/arithmancy/realworld/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 
 [^220728-5]:
     [Bible Study](https://www.biblestudy.org/). "[Meaning of

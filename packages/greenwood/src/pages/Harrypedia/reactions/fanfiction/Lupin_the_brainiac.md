@@ -15,11 +15,11 @@ If [Snape] _was_ \*_actually_ quite fallen in his younger years, we do not _actu
 
 [Snape]: /Harrypedia/people/Snape/Severus//
 [James]: /Harrypedia/people/Potter/James//
-[Sirius]: /Harrypedia/people/Black/Sirius III//
-[Lupin]: /Harrypedia/people/Lupin/Remus John//
-[Remus]: /Harrypedia/people/Lupin/Remus John//
-[Remus Lupin]: /Harrypedia/people/Lupin/Remus John//
-[Hermione]: /Harrypedia/people/Granger/Hermione Jean//
+[Sirius]: </Harrypedia/people/Black/Sirius III/>/
+[Lupin]: </Harrypedia/people/Lupin/Remus John/>/
+[Remus]: </Harrypedia/people/Lupin/Remus John/>/
+[Remus Lupin]: </Harrypedia/people/Lupin/Remus John/>/
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>/
 [Harry Potter and the Prisoner of Azkaban]: https://www.librarything.com/work/2742161
 [book seven]: https://www.librarything.com/work/3577382
 

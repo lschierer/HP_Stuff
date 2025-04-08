@@ -22,7 +22,7 @@ const getBody: (
   const bodyText = `
 I have made no secret of the fact that [Ron] is not my most favourite character in the series. These stories highlight what could have been.
 
-[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
+[Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
 `;
   const bookmarksList = new BookmarksList();
   bookmarksList.category = "Featuring Ron";

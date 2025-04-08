@@ -118,19 +118,19 @@ such as [McGonagall][] and [Sprout][] might well pick up on that distrust.
 [B12HPL2]: https://www.fanfiction.net/s/5366780
 
 [Bill]: /Harrypedia/people/weasley/william_arthur/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Hogwarts]: /Harrypedia/Hogwarts/
 [Kingsley]: /Harrypedia/people/shacklebolt/kingsley/
-[Lupin]: /Harrypedia/people/Lupin/Remus John/
-[Malfoy]: /Harrypedia/people/Malfoy/Draco Lucius/
+[Lupin]: </Harrypedia/people/Lupin/Remus John/>
+[Malfoy]: </Harrypedia/people/Malfoy/Draco Lucius/>
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Moody]: ./Harrypedia/people/moody/
 [Neville]: /Harrypedia/people/longbottom/neville/
 [Professor Sprout]: /Harrypedia/people/sprout/pomona/
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
-[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
+[Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Sprout]: /Harrypedia/people/sprout/pomona/
-[Tom Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Tom Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>

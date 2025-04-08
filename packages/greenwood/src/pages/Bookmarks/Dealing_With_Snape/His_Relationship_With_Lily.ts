@@ -23,9 +23,9 @@ const getBody: (
 It irks me that any number of people seem to assume that [Snape] and [Lily] were on the path to a successful romantic relationship until their fight in fifth year; that [James] (or [Dumbledore]) must have drugged, tricked, or trapped her into a marriage, and that without interferance, she would be happy with [Snape].  Let's address that.
 
 [Snape]: /Harrypedia/people/Snape/Severus/
-[Lily]: /Harrypedia/people/Evans/Lily J/
+[Lily]: </Harrypedia/people/Evans/Lily J/>
 [James]: /Harrypedia/people/Potter/James/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 `;
   const bookmarksList = new BookmarksList();
   bookmarksList.category = "Snape And Lily";

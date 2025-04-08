@@ -44,7 +44,7 @@ the six years that [Harry] attends class.
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Molly]: /Harrypedia/people/prewett/molly//
 [Neville]: /Harrypedia/people/longbottom/neville//
-[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly//
+[Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>/
 [Lily Evens]: /Harrypedia/peopleEvans/Lily J//
 
 [^210329-24]:

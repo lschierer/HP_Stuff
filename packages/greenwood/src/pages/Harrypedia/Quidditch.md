@@ -23,7 +23,7 @@ mascots caused in the 2014 World Cup.[^220628-9] Even at the school level,
 Quidditch has caused injury - Oliver Wood references "a couple of broken
 jaws".[^220628-10]
 
-[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly//
+[Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>/
 [Quidditch Through the Ages]: https://www.goodreads.com/book/show/111450.Quidditch_Through_the_Ages
 [The J.K. Rowling Index]: https://www.rowlingindex.org/
 

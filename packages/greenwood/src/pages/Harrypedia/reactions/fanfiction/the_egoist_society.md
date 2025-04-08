@@ -40,7 +40,7 @@ However, the typical pattern is that the author defines this magical society by 
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Grindelwald]: /Harrypedia/people/grindelwald/gellert/
 [Slytherin]: /Harrypedia/Hogwarts/slytherin/
-[Malfoy]: /Harrypedia/people/Malfoy/Draco Lucius/
+[Malfoy]: </Harrypedia/people/Malfoy/Draco Lucius/>
 [International Confederation of Wizards]: /Harrypedia/culture/international_confederation_of_wizards/
 [Hogwarts]: /Harrypedia/Hogwarts/
 [Statute of Secrecy]: /Harrypedia/culture/international_statute_of_secrecy/

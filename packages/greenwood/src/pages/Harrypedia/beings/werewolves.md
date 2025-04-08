@@ -32,7 +32,7 @@ On a side note, while [Lockhart] was a memory-stealing fraud,[^240411-7] the sto
 
 [Lockhart]: /Harrypedia/people/lockhart/gilderoy//
 [Edward Lupin]: /Harrypedia/people/Lupin/edward_remus//
-[Lupin]: /Harrypedia/people/Lupin/Remus John//
+[Lupin]: </Harrypedia/people/Lupin/Remus John/>/
 [Tonks]: /Harrypedia/people/Tonks/Nymphadora//
 [Legilimency]: /Harrypedia/magic/spells/legilimens/
 

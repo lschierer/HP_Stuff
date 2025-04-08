@@ -50,5 +50,5 @@ deprivation entirely uncanonical, despite its logical soundness?
 [Flitwick]: /Harrypedia/people/flitwick/filus/
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Slughorn]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [wand]: /Harrypedia/magic/wands/

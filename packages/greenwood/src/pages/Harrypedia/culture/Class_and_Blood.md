@@ -103,7 +103,7 @@ power, re-enforcing these beliefs beyond school with social connections, and
 creating a feedback mechanism into the next generation.
 
 [Hogwarts]: /Harrypedia/Hogwarts/
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo//
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>/
 [Arthur]: /Harrypedia/people/weasley/arthur//
 
 Eventually there are too many of them for one house at [Hogwarts]. More than
@@ -138,7 +138,7 @@ on the other. We have Ravenclaws who are members of the DA, and others who
 steal from Luna.
 
 [Bones]: /Harrypedia/people/bones/
-[Draco]: /Harrypedia/people/Malfoy/Draco Lucius//
+[Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>/
 
 The only real argument against this is the distribution of first generation
 students in the various houses. We do not know enough about the students to
@@ -164,7 +164,7 @@ as you funded their research after all, and could be easily cheated out of any
 profitable patent-able discoveries…
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian//
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>/
 [wwwbrpb]: https://www.wizardingworld.com/writing-by-jk-rowling/pure-blood
 
 [^200701-2]:

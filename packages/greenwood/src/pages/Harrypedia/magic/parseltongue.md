@@ -25,7 +25,7 @@ While I recognise this is a massive amount of speculation, it fits the facts, an
 
 [basilisk]: /Harrypedia/animals/basilisk/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [sentience and sapience]: /Harrypedia/animals/
 [Nagini]: /Harrypedia/people/Nagini/
 [Fantatic Beasts]: /Harrypedia/fantaticbeasts/

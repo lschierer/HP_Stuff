@@ -12,7 +12,7 @@ title: Teachers
 - [Minerva McGonagall][McGonagall]
 - [Severus Snape][Snape]
 
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian//
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>/
 [Binns]: /Harrypedia/people/binns/cuthbert/
 [Flitwick]: /Harrypedia/people/flitwick/filus/
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva//

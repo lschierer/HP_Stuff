@@ -103,7 +103,7 @@ We seem to have:
 [AO1]: https://web.archive.org/
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Potions]: /Harrypedia/magic/potions/
 [Transfiguration]: /Harrypedia/magic/transfiguration/
 

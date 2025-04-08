@@ -77,10 +77,10 @@ knows nothing of wand lore and so is not deciding this, yet still, the wand
 must sense something of the wizard it is bonding with…
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Fleur]: /Harrypedia/people/Delacour/Fleur Isabelle//
+[Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>/
 [James Potter]: /Harrypedia/people/Potter/James//
 [Umbridge]: /Harrypedia/people/umbridge/dolores_jane//
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo//
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>/
 [ww]: https://www.wizardingworld.com "WizardingWorld"
 [wand wood]: https://www.rowlingindex.org/work/wwpm/ "Harry Potter wiki article on Wand Wood"
 [size and flexibility]: https://www.rowlingindex.org/work/wlfpm/ "WizardingWorld article on Wand length"

@@ -25,9 +25,9 @@ In addition to the legitimate unanswered difficult questions that an author atte
   - The inverse is equally wierd. [Ginny] _is_ fiercely independent, but equally fiercely loves her family.
 
 [horcrux]: /Harrypedia/magic/dark/Horcruxes//
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian//
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly//
+[Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>/
 [Hogwarts]: /Harrypedia/Hogwarts//
 [Neville]: /Harrypedia/people/longbottom/neville//
 

@@ -74,7 +74,7 @@ are not made more aware of it.[^221216-1]
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Queenie Goldstein]: /Harrypedia/people/goldstein/queenie/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 
 [^221216-1]: works include, but not limited to:
 

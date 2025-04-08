@@ -90,7 +90,7 @@ vault without forethought.[^210322-1]
 
 [Bellatrix]: /Harrypedia/people/Black/bellatrix/
 [Blacks]: /Harrypedia/people/Black/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Fleamont]: /Harrypedia/people/Potter/fleamont/
 [Grimmauld Place]: /Harrypedia/grimmauld_place/
 [Gringotts]: /Harrypedia/gringotts/
@@ -98,8 +98,8 @@ vault without forethought.[^210322-1]
 [James]: /Harrypedia/people/Potter/James/
 [Lestranges]: /Harrypedia/people/lestrange/
 [Linfred]: /Harrypedia/people/linfred/
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
-[Sirius]: /Harrypedia/people/Black/Sirius III/
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
+[Sirius]: </Harrypedia/people/Black/Sirius III/>
 
 [Harry Potter and the Deathly Hallows]: https://www.goodreads.com/book/show/136251.Harry_Potter_and_the_Deathly_Hallows
 

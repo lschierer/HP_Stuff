@@ -22,7 +22,7 @@ const getBody: (
   const bodyText = `
 While [Ginny] has flaws, I remain partial to this pairing. Unfortunately fan fiction rarely does it justice.
 
-[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
+[Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 `;
   const bookmarksList = new BookmarksList();
   bookmarksList.category = "Harry With Ginny";

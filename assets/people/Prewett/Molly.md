@@ -79,10 +79,10 @@ On the other hand, it is easy to be over sensitive.
   of the truth of gender and gender roles. See my own objection about her
   reliance on public perception, this really fits in with that.
 
-[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
+[Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [Lovegoods]: /Harrypedia/people/lovegood/
 [Weasleys]: /Harrypedia/people/weasley/
-[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
+[Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 [Luna]: /Harrypedia/people/lovegood/luna/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Xeno]: /Harrypedia/people/lovegood/xenophilius/
@@ -200,16 +200,16 @@ influenced by the various depictions I have read.
 
 [Arthur]: /Harrypedia/people/weasley/arthur/
 [Bill]: /Harrypedia/people/weasley/william_arthur/
-[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
-[Sirius]: /Harrypedia/people/Black/Sirius III/
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
+[Sirius]: </Harrypedia/people/Black/Sirius III/>
 [Weasley]: /Harrypedia/people/weasley/
 [Weasleys]: /Harrypedia/people/weasley/
-[Fleur]: /Harrypedia/people/Delacour/Fleur Isabelle/
+[Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Quidditch]: /Harrypedia/quidditch/
 [Gringotts]: /Harrypedia/gringotts/
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 
 [^210818-4]: See my [History] notes.
 

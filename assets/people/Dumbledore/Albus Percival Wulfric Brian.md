@@ -41,10 +41,10 @@
     Hogwarts to the earliest Dumbledore could be headmaster and yet be winter
     _after_ [Remus][RL1] is bitten.
 
-[RL1]: /Harrypedia/people/Lupin/Remus John/
+[RL1]: </Harrypedia/people/Lupin/Remus John/>
 [James]: /Harrypedia/people/Potter/James/
 [Lily]: /Harrypedia/peopleEvans/Lily J/
-[TMR1]: /Harrypedia/people/Riddle/Tom Marvolo/
+[TMR1]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [H1]: /Harrypedia/history
 
 ### Character Analysis
@@ -264,7 +264,7 @@ excuse to prevent [Sirius][SB3] from being able to adopt [Harry]?
 
 [GG]: /Harrypedia/people/grindelwald/gellert/
 [Ariana]: ../ariana/
-[RBW]: /Harrypedia/people/Weasley/Ronald Bilius/
+[RBW]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [MM]: /Harrypedia/people/McGonagall/Minerva/
 [PS]: /Harrypedia/people/sprout/pomona/
 [FF]: /Harrypedia/people/flitwick/filus/
@@ -273,7 +273,7 @@ excuse to prevent [Sirius][SB3] from being able to adopt [Harry]?
 [Horcruxes]: /Harrypedia/magic/dark/Horcruxes/
 [Malfoy]: /Harrypedia/people/Malfoy/
 [HPwc]: /Harrypedia/culture/government/
-[SB3]: /Harrypedia/people/Black/Sirius III/
+[SB3]: </Harrypedia/people/Black/Sirius III/>
 [SS]: /Harrypedia/people/Snape/Severus/
 
 [^220916-2]:

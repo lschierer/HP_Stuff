@@ -14,7 +14,7 @@ const getBody: GetBody = async () => {
   const bodyText = `
 These stories are reactions to the way that Mrs. Rowling essentially justified every bad decision that [Dumbledore] made by having [Harry] not only forgive him, but name a child after him.
 
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 `;
   const bookmarksList = new BookmarksList();

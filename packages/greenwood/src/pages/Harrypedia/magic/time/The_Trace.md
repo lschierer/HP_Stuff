@@ -70,7 +70,7 @@ probably the latter. The whole "do not use magic outside of school" thing is
 more for muggle born witches and wizards rather than any real restriction. See
 [Culture][] for more on this.
 
-[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Culture]: /Harrypedia/culture/
 
 [^210810-4]:

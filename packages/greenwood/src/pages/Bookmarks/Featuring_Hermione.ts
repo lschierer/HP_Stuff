@@ -24,7 +24,7 @@ I am not often a fan of [Hermione] as a romantic partner for [Harry]. That
 being said, occasionally you come across one that, despite the pairing, is
 incredibly well done. Almost even more rare is a story in which she is the central character paired with _anyone else_ and yet remains well worth reading.
 
-[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 `;
   const bookmarksList = new BookmarksList();

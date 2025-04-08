@@ -136,8 +136,8 @@ would have been unable to demand a trial. Why, however, did none of
 [Dumbledore][], [Andromeda][] Black, or his own blood family demand a trial?
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Lupin]: /Harrypedia/people/Lupin/Remus John/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Lupin]: </Harrypedia/people/Lupin/Remus John/>
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Andromeda]: /Harrypedia/people/Black/andromeda/
 
 Lets start with the easy ones: [Arcturus][], [Pollux][], and [Walburga][]
@@ -237,14 +237,14 @@ of Azkaban][].
 [Andromeda]: /Harrypedia/people/Black/andromeda/
 [Arcturus]: /Harrypedia/people/Black/arcturus_ii/
 [Bellatrix]: /Harrypedia/people/Black/bellatrix/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Hagrid]: /Harrypedia/people/hagrid/rubeus/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [History]: /Harrypedia/History/
 [James]: /Harrypedia/people/Potter/James/
 [Lily]: /Harrypedia/peopleEvans/Lily J/
-[Lupin]: /Harrypedia/people/Lupin/Remus John/
+[Lupin]: </Harrypedia/people/Lupin/Remus John/>
 [Malfoy]: /Harrypedia/people/Malfoy/
 [Molly]: /Harrypedia/people/prewett/molly/
 [Orion]: /Harrypedia/people/Black/orion/
@@ -253,7 +253,7 @@ of Azkaban][].
 [Pettigrew]: /Harrypedia/people/pettigrew/peter/
 [Pollux]: /Harrypedia/people/Black/pollux/
 [Regulus]: /Harrypedia/people/Black/regulus_arcturus/
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [SWM]: /Harrypedia/people/Snape/Severus/swm/
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Walburga]: /Harrypedia/people/Black/Walburga/

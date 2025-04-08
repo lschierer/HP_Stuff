@@ -33,7 +33,7 @@ The obvious exception to this is [Walburga], who from all accounts had no proble
 [Walburga]: /Harrypedia/people/Black/Walburga/
 [obscurial]: /Harrypedia/beings/obscurus/
 [Hogwarts]: /Harrypedia/Hogwarts/
-[Sirius]: /Harrypedia/people/Black/Sirius III/
+[Sirius]: </Harrypedia/people/Black/Sirius III/>
 [house elves]: /Harrypedia/beings/elves/house_elf/
 [MACUSA]: /Harrypedia/macusa/
 [Ministry of Magic]: /Harrypedia/culture/government/

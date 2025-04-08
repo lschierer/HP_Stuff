@@ -55,7 +55,7 @@ just insulted her best friend, and will go on to pick on him unmercifully.
 Perhaps [Lily] cannot really see James with an unbiased eye until
 after she herself has fallen out with [Snape]?
 
-[Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
+[Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [Lily]: /Harrypedia/peopleEvans/Lily J/
 [Snape]: /Harrypedia/people/Snape/Severus/
 
@@ -187,7 +187,7 @@ hands, despite the fact that he supposedly has no cunning or intelligence.
 
 [dark magic]: /Harrypedia/magic/dark/
 [Fleamont]: /Harrypedia/people/Potter/fleamont/
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 
 ## Pure Speculation
 
@@ -215,7 +215,7 @@ If either or both of these is true, James might well have been something of a pe
 [animagus]: /Harrypedia/magic/
 [Robin Hood]: https://en.wikipedia.org/wiki/Robin_Hood
 [Slughorn]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
-[D1]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[D1]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 
 [^240422-3]: this is a really tempting tangent, but this page isn't about [Dumbledore].
 

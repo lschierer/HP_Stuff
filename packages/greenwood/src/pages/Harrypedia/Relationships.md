@@ -96,17 +96,17 @@ to create one big happy Weasley-Potter-Malfoy family.
 
 [Shipping]: ../Shipping/
 [Astoria]: /Harrypedia/people/Greengrass/Astoria//
-[Draco]: /Harrypedia/people/Malfoy/Draco Lucius//
+[Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>/
 [Scorpius]: /Harrypedia/people/Malfoy/Scorpius//
 [Greengrass]: /Harrypedia/people/Greengrass//
 [dark arts]: /Harrypedia/magic/dark//
 [Rita]: /Harrypedia/people/Skeeter/Rita//
 [Rita Skeeter]: /Harrypedia/people/Skeeter/Rita//
 [Hogwarts]: /Harrypedia/Hogwarts/
-[Ron]: /Harrypedia/people/Weasley/Ronald Bilius//
-[Hermione]: /Harrypedia/people/Granger/Hermione Jean//
+[Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>/
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Ginny]: /Harrypedia/people/Weasley/Ginevra Molly//
+[Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>/
 [George]: /Harrypedia/people/weasley/george//
 [Neville]: /Harrypedia/people/longbottom/neville//
 [Percy]: /Harrypedia/people/weasley/percy_ignatius//

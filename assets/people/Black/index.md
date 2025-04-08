@@ -30,7 +30,7 @@ disqualified by gender. The dates for this line of speculation are in
 the [History][] timeline.
 
 [History]: /Harrypedia/History/
-[Draco]: /Harrypedia/people/Malfoy/Draco Lucius/
+[Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>
 [Phineus Nigellus]: /Harrypedia/people/Black/phineus_nigellus/
 [Cygnus I]: /Harrypedia/people/Black/cygnus/
 [Malfoy]: /Harrypedia/people/Malfoy/
@@ -40,8 +40,8 @@ the [History][] timeline.
 [Arthur]: /Harrypedia/people/weasley/arthur/
 [Cedrella]: /Harrypedia/people/Black/cedrella/
 [Septimus]: /Harrypedia/people/weasley/septimus/
-[Sirius III]: /Harrypedia/people/Black/Sirius III/
-[Sirius II]: /Harrypedia/people/Black/Sirius II/
+[Sirius III]: </Harrypedia/people/Black/Sirius III/>
+[Sirius II]: </Harrypedia/people/Black/Sirius II/>
 [Longbottom]: /Harrypedia/people/longbottom/
 [Longbottoms]: /Harrypedia/people/longbottom/
 [Grimmauld Place]: /Harrypedia/grimmauld_place/

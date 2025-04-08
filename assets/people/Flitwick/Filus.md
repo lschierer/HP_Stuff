@@ -20,7 +20,7 @@ there is some slight evidence that suggests that Professor Flitwick is redeemabl
 
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Luna]: /Harrypedia/people/lovegood/luna/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Sprout]: /Harrypedia/people/sprout/pomona/
 
 [^20210322-3]:

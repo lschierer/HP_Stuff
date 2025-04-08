@@ -28,8 +28,8 @@ Specifically looking at both the arrest of [Hagrid][] and the handling of
 and that [Dumbledore][] _could_ have done more in both cases.
 
 [Hagrid]: /Harrypedia/people/hagrid/rubeus/
-[SB]: /Harrypedia/people/Black/Sirius III/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[SB]: </Harrypedia/people/Black/Sirius III/>
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 
 In the case of [Hagrid][], I suspect that Fudge is being fairly honest about
 his motives. _Some_ news about the Chamber must have leaked out to the wider
@@ -61,6 +61,6 @@ between opposing parties, he was [Dumbledore][]'s hand picked choice, or
 noted above, Fudge did not become Minister until 1990, which explains why he
 was so unsure of himself in his role as minister throughout the first book.
 
-[Riddle]: /Harrypedia/people/Riddle/Tom Marvolo/
+[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [Bagnold]: /Harrypedia/people/bagnold/millicent/
 [Malfoy]: /Harrypedia/people/Malfoy/lucius_abraxas/

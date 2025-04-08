@@ -70,7 +70,7 @@ harder because the _curse_ in question is lost and unrecorded by history.[^24021
 [Crouch]: /Harrypedia/people/crouch/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Kreacher]: /Harrypedia/people/Black/kreacher/
-[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Regulas]: /Harrypedia/people/Black/regulas_arcturus/
 [Brownies]: https://en.wikipedia.org/wiki/Brownie_(folklore)
 [Imperius]: /Harrypedia/magic/spells/imperio/
