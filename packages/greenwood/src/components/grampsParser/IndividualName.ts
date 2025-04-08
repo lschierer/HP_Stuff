@@ -67,7 +67,7 @@ export default class IndividualName extends HTMLElement {
   };
 
   readonly buildLinkTarget = (): string => {
-    let targetLocation = "/Harrypedia/people";
+    let targetLocation = "/Harrypedia/people/";
 
     if (this.person) {
       if (Array.isArray(this.person.primary_name.surname_list)) {
@@ -94,7 +94,7 @@ export default class IndividualName extends HTMLElement {
         if (!found && this.person.primary_name.surname_list.length > 0) {
           const sn = this.person.primary_name.surname_list[0].surname;
           const tsn = encodeURIComponent(sn);
-          targetLocation = `${targetLocation}${tsn}/`;
+          targetLocation = `${targetLocation}/${tsn}/`;
           if (DEBUG) {
             console.log(
               `found lastname ${sn} for ${this.grampsId}, targetLocation now ${targetLocation}`
@@ -123,7 +123,7 @@ export default class IndividualName extends HTMLElement {
       targetLocation = `${targetLocation}/`;
     }
 
-    return targetLocation;
+    return targetLocation.replaceAll("//", "/");
   };
 
   readonly displayName = () => {
