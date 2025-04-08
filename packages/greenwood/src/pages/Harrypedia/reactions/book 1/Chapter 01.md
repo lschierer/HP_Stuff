@@ -23,7 +23,7 @@ The first chapter, as is expected _of_ a first chapter, has more questions than 
 [Ministry]: /Harrypedia/culture/government//
 [Petunia]: /Harrypedia/people/Evans/petunia//
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva//
-[Lily]: </Harrypedia/peopleEvans/Lily J//>
+[Lily]: </Harrypedia/peopleEvans/Lily J/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Vernon]: /Harrypedia/people/dursley/vernon//
 [Dickens]: https://en.wikipedia.org/wiki/Charles_Dickens

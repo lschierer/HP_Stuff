@@ -72,7 +72,7 @@ attacking [Snape].[^230804-2]
     Kindle Locations 9396-9398. Pottermore Limited. American Kindle Edition.
 
 [James]: /Harrypedia/people/Potter/James//
-[lily]: </Harrypedia/peopleEvans/Lily J//>
+[lily]: </Harrypedia/peopleEvans/Lily J/>
 [Snape]: /Harrypedia/people/Snape/Severus//
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>/
 

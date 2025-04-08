@@ -285,7 +285,7 @@ Mrs. Rowling accepts a fallacy here: that sometimes an evil can be so great, so 
 [basilisk]: /Harrypedia/animals/basilisk/
 [fiendfire]: /Harrypedia/magic/spells/fiend-fire/
 
-[the killing curse]: </Harrypedia/magic/spells/avada kedavra//>
+[the killing curse]: </Harrypedia/magic/spells/avada kedavra/>
 
 [^240506-1]: Citation needed.
 
