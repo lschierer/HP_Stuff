@@ -90,7 +90,7 @@ Pius Thicknesse's puppet government.
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Arthur]: /Harrypedia/people/Weasley/Arthur/
 [Umbridge]: /Harrypedia/people/Umbridge/Dolores Jane/
-[Dean]: /Harrypedia/people/thomas/Dean/
+[Dean]: /Harrypedia/people/Thomas/Dean/
 [comparitive_class_ages]: ../comparitive_class_ages
 
 [^211001-1]:

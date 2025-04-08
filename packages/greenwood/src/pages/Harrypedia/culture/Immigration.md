@@ -161,7 +161,7 @@ Instead I suspect that some percentage of the magical culture actively _desires_
 
 [^240508-4]: See also [Class and Blood](../class_and_blood/) and [Class Consciousness](../class_consciousness/)
 
-[Ministry]: ../government/
+[Ministry]: ../Government/
 [MACUSA]: ../../macusa
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 
@@ -203,4 +203,4 @@ Instead I suspect that some percentage of the magical culture actively _desires_
 
 [Magna Carta]: https://www.parliament.uk/magnacarta/
 [ISWS]: ../international_statute_of_secrecy/
-[Ministry of Magic]: ../government/
+[Ministry of Magic]: ../Government/

@@ -25,8 +25,8 @@ are sometimes provided for NEWT students.[^20210928-7] Moreover, as you answer
 these questions, the overall impossibility of the [class
 schedule][Class_Schedule_Rant] comes more and more into play.
 
-[Class_Schedule_Rant]: ../class_schedule_rant
-[Trelawney]: /Harrypedia/people/trelawney/Sybill/
+[Class_Schedule_Rant]: ../Class_Schedule_Rant/
+[Trelawney]: /Harrypedia/people/Trelawney/Sybill/
 
 As I stated in my [rant][Class_Schedule_Rant], a few authors have attempted to
 make sense of [Hogwarts][]' class scheduling, class offerings, and related

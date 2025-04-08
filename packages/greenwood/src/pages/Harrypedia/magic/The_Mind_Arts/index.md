@@ -104,7 +104,7 @@ long term use.
 [Imperius]: /Harrypedia/magic/spells/imperio/
 [Confundus]: /Harrypedia/magic/spells/confundus/
 [Confundus Charm]: /Harrypedia/magic/spells/confundus/
-[Obfuscomency]: ./obfuscomency/
+[Obfuscomency]: ./Obfuscomency/
 
 [^20200716-1]:
     Mrs. J. K. Rowling. _Harry Potter and the Prisoner of Azkaban_

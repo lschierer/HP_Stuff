@@ -69,8 +69,8 @@ real political power quite possibly, but within the context of some existing
 [notes]: /Harrypedia/
 [Potter Family notes]: /Harrypedia/people/Potter/
 [Salazar]: /Harrypedia/people/Slytherin/Salazar/
-[class structure]: ../class_and_blood/
-[blood status]: ../class_and_blood/
+[class structure]: ../Class_and_Blood/
+[blood status]: ../Class_and_Blood/
 
 [^211004-9]:
     Mrs. J. K. Rowling.

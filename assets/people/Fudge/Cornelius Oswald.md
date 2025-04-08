@@ -27,7 +27,7 @@ Specifically looking at both the arrest of [Hagrid][] and the handling of
 [Sirius's][SB] escape, I strongly suspect that his actions are at best quasi-legal
 and that [Dumbledore][] _could_ have done more in both cases.
 
-[Hagrid]: /Harrypedia/people/hagrid/rubeus/
+[Hagrid]: /Harrypedia/people/Hagrid/Rubeus/
 [SB]: </Harrypedia/people/Black/Sirius III/>
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 

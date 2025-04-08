@@ -39,7 +39,7 @@ The alternative is that this household magic, which seams to be a mix of charms
 is taught at [Hogwarts]. If so, we should have seen some indication of this in
 the six years that [Harry] attends class.
 
-[Hagrid]: /Harrypedia/people/hagrid/Rubeus/
+[Hagrid]: /Harrypedia/people/Hagrid/Rubeus/
 [Hogwarts]: /Harrypedia/Hogwarts/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Molly]: /Harrypedia/people/Prewett/Molly/

@@ -96,7 +96,7 @@ vault without forethought.[^210322-1]
 [Gringotts]: /Harrypedia/gringotts/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [James]: /Harrypedia/people/Potter/James/
-[Lestranges]: /Harrypedia/people/lestrange/
+[Lestranges]: /Harrypedia/people/Lestrange/
 [Linfred]: /Harrypedia/people/linfred/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [Sirius]: </Harrypedia/people/Black/Sirius III/>

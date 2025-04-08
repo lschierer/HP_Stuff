@@ -21,7 +21,7 @@ there is some slight evidence that suggests that Professor Flitwick is redeemabl
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Luna]: /Harrypedia/people/Lovegood/Luna/
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
-[Sprout]: /Harrypedia/people/sprout/Pomona/
+[Sprout]: /Harrypedia/people/Sprout/Pomona/
 
 [^20210322-3]:
     Aealket.

@@ -128,9 +128,9 @@ such as [McGonagall][] and [Sprout][] might well pick up on that distrust.
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Moody]: ./Harrypedia/people/Moody/
 [Neville]: /Harrypedia/people/Longbottom/Neville/
-[Professor Sprout]: /Harrypedia/people/sprout/Pomona/
+[Professor Sprout]: /Harrypedia/people/Sprout/Pomona/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [Snape]: /Harrypedia/people/Snape/Severus/
-[Sprout]: /Harrypedia/people/sprout/Pomona/
+[Sprout]: /Harrypedia/people/Sprout/Pomona/
 [Tom Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>

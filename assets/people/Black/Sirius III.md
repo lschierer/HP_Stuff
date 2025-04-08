@@ -238,7 +238,7 @@ of Azkaban][].
 [Arcturus]: /Harrypedia/people/Black/arcturus_ii/
 [Bellatrix]: /Harrypedia/people/Black/Bellatrix/
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
-[Hagrid]: /Harrypedia/people/hagrid/rubeus/
+[Hagrid]: /Harrypedia/people/Hagrid/Rubeus/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [History]: /Harrypedia/History/

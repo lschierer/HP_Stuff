@@ -138,7 +138,7 @@ into by someone who did not notice him?
     schools, and have done only the most cursory research into them. Please
     forgive any inaccuracies.
 
-[^210810-1]: <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/239040/PRIMARY_national_curriculum_-_Physical_education.pdf> states that students should be taught to swim, and that performance should be compared, for each student, over time. Timed laps seems like one way a school would implement these two directives.
+[^210810-1]: <https://assets.publishing.service.gov.uk/Government/uploads/system/uploads/attachment_data/file/239040/PRIMARY_national_curriculum_-_Physical_education.pdf> states that students should be taught to swim, and that performance should be compared, for each student, over time. Timed laps seems like one way a school would implement these two directives.
 
 [^210902-9]: See the [History] page, The Children Act of 1989 was not in effect yet. Again, please forgive my butchering of actual British law.
 

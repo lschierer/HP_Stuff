@@ -17,7 +17,7 @@ Better detectives than I have pieced together her probable timeline, assuming
 you ignore the Fantastic Beasts movies. Born in 1935, she started [Hogwarts]
 in 1947.[^211103-1] She joined [Hogwarts] at a time when there was more than one teacher in the Transfiguration Department, approximately 2 or 3 years after her graduation.[^200720-7] She informs [Umbridge] that she will have been at Hogwarts "Thirty-nine years this December,"[^200720-8] sometime in the beginning of fifth year, or 1995. That puts her start date in 1956. Despite this, we are told that she intervened when [Leta Lestrange][LL2] was bullied at age 13 in 1910,[^211018-1] and when [Theseus][TS1] was a student.[^211018-2] This would require her to have either left [Hogwarts] for a time, or to have been a teacher for at least 85 years.[^211018-3]
 
-[LL2]: /Harrypedia/people/lestrange/Leta/
+[LL2]: /Harrypedia/people/Lestrange/Leta/
 [Umbridge]: /Harrypedia/people/Umbridge/Dolores Jane/
 [TS1]: /Harrypedia/people/Scamander/Theseus/
 
@@ -100,7 +100,7 @@ and over again across the series, [Hagrid] does not have a realistic risk
 evaluation for people without his half-giant heritage. McGonagall should know
 this, and should be able and willing to compensate for it.
 
-[Hagrid]: /Harrypedia/people/hagrid/rubeus/
+[Hagrid]: /Harrypedia/people/Hagrid/Rubeus/
 
 The only possible saving explanations for the detention are either that
 McGonagall had no choice, that [Dumbledore][AD1] in fact set it up and she was
@@ -142,7 +142,7 @@ stooges. He could not have prevented the fact of their resignation from
 getting out however. If they had more backbone, I have to believe they have
 the connections to have made their opinions known.
 
-[Sprout]: /Harrypedia/people/sprout/Pomona/
+[Sprout]: /Harrypedia/people/Sprout/Pomona/
 [Flitwick]: /Harrypedia/people/Flitwick/Filus/
 [Fudge]: </Harrypedia/people/Fudge/Cornelius Oswald/>
 

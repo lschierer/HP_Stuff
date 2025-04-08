@@ -34,7 +34,7 @@ chosen to state that [Lucius][] may have inherited the relationship with
 
 [Riddle]: <../Riddle/Tom Marvolo/>
 [Lucius]: lucius_abraxas
-[History]: ../../history
+[History]: ../../History/
 
 [^210816-3]: I cannot exactly document a negative for this one.
 

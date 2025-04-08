@@ -130,7 +130,7 @@ drawing attention from bystanders.
 In other words, this scene is precisely as innocent as it appears to most eleven
 year old readers encountering it for the first time. That being said, I have encountered one reasonably amusing alternative explanation. [RoseLilian], writes in one of her works that the [Ministry] arranges for a family to arrive towards the end of the boarding period, and to be purposefully noisy while actually being under charms to avoid attracting muggle attention. A magical child afraid or unsure of how to deal with the barrier will thus have a clear, friendly family to approach for help, being unaffected by spells that only target those without magic.[^240202-1] That we do not see such charms being cast is not really an objection, because, as previously noted, the book is from [Harry]'s point of view, and _he_ did not notice. It is also believable that as [Harry] starts to be in more danger, the [Ministry] would assign the task to someone else.
 
-[Ministry]: /Harrypedia/culture/government/
+[Ministry]: /Harrypedia/culture/Government/
 
 [^240202-1]:
     [RoseLilian].

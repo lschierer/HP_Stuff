@@ -192,7 +192,7 @@ someone objects that [Harry][] must go to the [Dursleys][] because he will be
 safest there. Safest from what/who? [Dumbledore][] can now start to use the
 complicated nature of the thorny problem to confuse the listener.
 
-[Wizengamot]: /Harrypedia/culture/government/
+[Wizengamot]: /Harrypedia/culture/Government/
 [Black]: /Harrypedia/people/Black/
 [Potter]: /Harrypedia/people/Potter/
 [Narcissa Malfoy]: /Harrypedia/people/Black/Narcissa/

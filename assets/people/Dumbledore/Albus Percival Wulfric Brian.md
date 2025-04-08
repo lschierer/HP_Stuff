@@ -45,7 +45,7 @@
 [James]: /Harrypedia/people/Potter/James/
 [Lily]: </Harrypedia/people/Evans/Lily J/>
 [TMR1]: </Harrypedia/people/Riddle/Tom Marvolo/>
-[H1]: /Harrypedia/history
+[H1]: /Harrypedia/History/
 
 ### Character Analysis
 
@@ -262,17 +262,17 @@ kept out of Azkaban.[^220916-2] Despite this, Dumbledore claims to be totally
 unable to assist [Sirius][SB3] in exonerating himself. Is this just a convenient
 excuse to prevent [Sirius][SB3] from being able to adopt [Harry]?
 
-[GG]: /Harrypedia/people/grindelwald/Gellert/
+[GG]: /Harrypedia/people/Grindelwald/Gellert/
 [Ariana]: ../Ariana/
 [RBW]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [MM]: /Harrypedia/people/McGonagall/Minerva/
-[PS]: /Harrypedia/people/sprout/Pomona/
+[PS]: /Harrypedia/people/Sprout/Pomona/
 [FF]: /Harrypedia/people/Flitwick/Filus/
 [DF1]: /Harrypedia/people/Dursley/
 [Weasleys]: /Harrypedia/people/Weasley/
 [Horcruxes]: /Harrypedia/magic/dark/Horcruxes/
 [Malfoy]: /Harrypedia/people/Malfoy/
-[HPwc]: /Harrypedia/culture/government/
+[HPwc]: /Harrypedia/culture/Government/
 [SB3]: </Harrypedia/people/Black/Sirius III/>
 [SS]: /Harrypedia/people/Snape/Severus/
 
@@ -734,7 +734,7 @@ scenes? Is his public face at all related to his private goals?
     _["For the Greater Good:" In Defense of Albus Dumbledore](http://www.mugglenet.com/2017/08/greater-good-defense-albus-dumbledore/)_
     Published 2017-08-02. Last viewed 2019-03-01.
 
-[ADdwr]: ./dealing_with_riddle/
+[ADdwr]: ./Dealing with Riddle/
 [ADtoh]: ./treatment_of_harry/
 [ADmm]: ./manipulator/
 [ADi]: ./inaction/

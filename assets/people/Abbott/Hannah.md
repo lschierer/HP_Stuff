@@ -19,7 +19,7 @@ up to peer pressure for a boy she's never even spoken to, or the fact that
 she values loyalty to her own house (we have no proof she knows about, uses,
 or approves of the badges' second message) against her.
 
-[blood status]: ../../../culture/class_and_blood
+[blood status]: ../../../culture/Class_and_Blood/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Salazar]: ../../Slytherin/Salazar/
 [Ernie]: ../../macmillan

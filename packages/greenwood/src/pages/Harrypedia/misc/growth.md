@@ -39,7 +39,7 @@ breaking height is almost always commented on when describing someone.
 [Flitwick][] are described.
 
 [James]: /Harrypedia/people/Potter/James/
-[Hagrid]: /Harrypedia/people/hagrid/Rubeus/
+[Hagrid]: /Harrypedia/people/Hagrid/Rubeus/
 [Flitwick]: /Harrypedia/people/Flitwick/Filus/
 
 Interestingly, I have noted a similar issue with girls in at least one fan

@@ -36,7 +36,7 @@ The obvious exception to this is [Walburga], who from all accounts had no proble
 [Sirius]: </Harrypedia/people/Black/Sirius III/>
 [house elves]: /Harrypedia/beings/elves/house_elf/
 [MACUSA]: /Harrypedia/macusa/
-[Ministry of Magic]: /Harrypedia/culture/government/
+[Ministry of Magic]: /Harrypedia/culture/Government/
 [Dursley]: /Harrypedia/people/Dursley/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Vernon]: /Harrypedia/people/Dursley/Vernon/

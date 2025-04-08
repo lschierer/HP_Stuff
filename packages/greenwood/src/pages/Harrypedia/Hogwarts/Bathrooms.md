@@ -54,7 +54,7 @@ such that boys cannot enter, and yet the girl's bathrooms are not? Right or
 wrong, the current furror over bathrooms indicates that the concern would
 occur.[^210928-5]
 
-[Founders]: ../founding/
+[Founders]: ../Founding/
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>/
 [Hogwarts]: ../
 [FWO1]: https://archiveofourown.org/works/28507302

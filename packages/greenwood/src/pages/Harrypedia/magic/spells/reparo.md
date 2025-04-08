@@ -16,7 +16,7 @@ Charm
 Other mending and repairing charms have been used over the centuries. This is, so far, the most effective. Created by [Orabella Nuttley][] from the [Improper Use of Magic Department][].
 
 [Orabella Nuttley]: /Harrypedia/people/nuttley/Orabella/
-[Improper Use of Magic Department]: /Harrypedia/culture/government/
+[Improper Use of Magic Department]: /Harrypedia/culture/Government/
 
 ## Found in
 

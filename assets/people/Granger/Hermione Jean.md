@@ -211,7 +211,7 @@ we look at the the advice she gives to [Ginny] for dealing with a debilitating c
 
 [Inducing Jealousy to Get Your Mate's Attention]: https://www.psychologytoday.com/us/blog/loves-evolver/201111/inducing-jealousy-get-your-mates-attention
 [Psycology Today]: https://www.psychologytoday.com/
-[Dean]: /Harrypedia/people/thomas/Dean/
+[Dean]: /Harrypedia/people/Thomas/Dean/
 
 The jealousy angle aside though, having [Ginny] using dating to build
 confidence was both high risk and unfair to the guys [Ginny] dated. High
