@@ -243,7 +243,7 @@ of Azkaban][].
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [History]: /Harrypedia/History/
 [James]: /Harrypedia/people/Potter/James/
-[Lily]: /Harrypedia/peopleEvans/Lily J/
+[Lily]: </Harrypedia/peopleEvans/Lily J/>
 [Lupin]: </Harrypedia/people/Lupin/Remus John/>
 [Malfoy]: /Harrypedia/people/Malfoy/
 [Molly]: /Harrypedia/people/prewett/molly/

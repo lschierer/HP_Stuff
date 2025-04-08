@@ -45,7 +45,7 @@ needs of victims are not going to be addressed.
 [Dark Arts]: /Harrypedia/magic/dark/
 [Dark Magic]: /Harrypedia/magic/dark/
 [dark]: /Harrypedia/magic/dark/
-[Lily]: /Harrypedia/peopleEvans/Lily J/
+[Lily]: </Harrypedia/peopleEvans/Lily J/>
 [Sirius]: </Harrypedia/people/Black/Sirius III/>
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>

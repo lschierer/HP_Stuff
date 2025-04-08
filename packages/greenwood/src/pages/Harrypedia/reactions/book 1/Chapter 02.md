@@ -29,5 +29,5 @@ author: Luke Schierer
 [crew cut]: https://en.wikipedia.org/wiki/Crew_cut
 [Dudley]: /Harrypedia/people/dursley/dudley//
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Lily]: /Harrypedia/peopleEvans/Lily J//
+[Lily]: </Harrypedia/peopleEvans/Lily J//>
 [James]: /Harrypedia/people/Potter/James//

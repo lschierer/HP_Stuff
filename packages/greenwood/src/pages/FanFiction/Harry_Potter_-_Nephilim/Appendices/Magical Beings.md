@@ -47,7 +47,7 @@ course, no one lost the magic the witch gained from her unholy union, but
 most magic users do not believe in angels, much less fallen angels, and
 have a strong distrust for the Church.
 
-[Lily Evans]: /Harrypedia/peopleEvans/Lily J//
+[Lily Evans]: </Harrypedia/peopleEvans/Lily J//>
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>/
 
 [^241123-2]: Or at least the in-world version of it, see [Rules of Magic].
@@ -250,11 +250,11 @@ can never be fully freed.
 [AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-beings/
 [AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/relative-power-levels/
 [AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
-[AF]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/
+[AF]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
 [AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
 [AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
-[AI]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/
-[Appendix I]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/
+[AI]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/>
+[Appendix I]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/>
 [Flood]: /FanFiction/Harry_Potter_-_Nephilim/backstory/the_flood
 [goblin wars]: /FanFiction/Harry_Potter_-_Nephilim/backstory/the_dwarfs
 [Giants]: /FanFiction/Harry_Potter_-_Nephilim/backstory/giants

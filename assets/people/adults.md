@@ -35,8 +35,8 @@ not physically, but metaphorically, as the one who could be his equal.[^210521-8
 
 [Molly]: ../prewett/molly/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Dumbledore]: ../Dumbledore/Albus Percival Wulfric Brian/
-[Riddle]: ../Riddle/Tom Marvolo/
+[Dumbledore]: <../Dumbledore/Albus Percival Wulfric Brian/>
+[Riddle]: <../Riddle/Tom Marvolo/>
 [Notes]: /Harrypedia//
 
 [^210521-8]:

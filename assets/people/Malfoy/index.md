@@ -32,7 +32,7 @@ school.[^210816-3] This overlap is probably the reason why some authors have
 chosen to state that [Lucius][] may have inherited the relationship with
 [Riddle][] rather than having fostered it.
 
-[Riddle]: ../Riddle/Tom Marvolo/
+[Riddle]: <../Riddle/Tom Marvolo/>
 [Lucius]: lucius_abraxas
 [History]: ../../history
 

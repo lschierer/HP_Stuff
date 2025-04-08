@@ -147,7 +147,7 @@ only to the extent her male parent was.
 
 [Appendix G]: ../appendix_g/
 [Appendix H]: ../appendix_h/
-[Appendix I]: ../Veela Pathology/
+[Appendix I]: <../Veela Pathology/>
 [the backstory]: ../../backstory/the_veela/
 
 [^210916-1]: Like in _[Maskirovat][knffnm]_.

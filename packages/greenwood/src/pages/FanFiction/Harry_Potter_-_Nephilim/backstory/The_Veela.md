@@ -45,7 +45,7 @@ The good angels, seeing this backlash, ceased to meddle (with a few relatively m
 
 [^241120-8]: See [Appendix I].
 
-[241120-9]: this is normal for nephil, see [The Nephilim]
+[241120-9]: <this is normal for nephil, see [The Nephilim]>
 
 [The Nephilim]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
-[Appendix I]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/
+[Appendix I]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/>

@@ -155,7 +155,7 @@ to make sense.
   times.
 
 [ab]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/rules-of-magic/
-[af]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/
+[af]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
 [ah]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h
 [Inheritance]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/inheritance/
 [FWoaO1]: https://archiveofourown.org/works/28507302

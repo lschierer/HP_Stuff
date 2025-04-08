@@ -81,10 +81,10 @@ must sense something of the wizard it is bonding with…
 [James Potter]: /Harrypedia/people/Potter/James//
 [Umbridge]: /Harrypedia/people/umbridge/dolores_jane//
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>/
-[ww]: https://www.wizardingworld.com "WizardingWorld"
-[wand wood]: https://www.rowlingindex.org/work/wwpm/ "Harry Potter wiki article on Wand Wood"
-[size and flexibility]: https://www.rowlingindex.org/work/wlfpm/ "WizardingWorld article on Wand length"
-[the article on cores]: https://www.rowlingindex.org/work/wcpm/ "WizardingWorld article on Wand Cores"
+[ww]: <https://www.wizardingworld.com "WizardingWorld">
+[wand wood]: <https://www.rowlingindex.org/work/wwpm/ "Harry Potter wiki article on Wand Wood">
+[size and flexibility]: <https://www.rowlingindex.org/work/wlfpm/ "WizardingWorld article on Wand length">
+[the article on cores]: <https://www.rowlingindex.org/work/wcpm/ "WizardingWorld article on Wand Cores">
 [20210511-9]: https://harrypotter.fandom.com/wiki/Wand_wood
 
 [^210512-1]:
@@ -158,6 +158,6 @@ must sense something of the wizard it is bonding with…
     [The J.K. Rowling Index](https://www.rowlingindex.org/)
     Originally published 2015-08-10. Last Viewed 2020-08-06.
 
-[Wand Woods]: https://www.rowlingindex.org/work/wwpm/ "Harry Potter wiki article on Wand Wood"
-[Wand Lengths & Flexibility]: https://www.rowlingindex.org/work/wlfpm/ "WizardingWorld article on Wand length"
-[Wand Cores]: https://www.rowlingindex.org/work/wcpm/ "WizardingWorld article on Wand Cores"
+[Wand Woods]: <https://www.rowlingindex.org/work/wwpm/ "Harry Potter wiki article on Wand Wood">
+[Wand Lengths & Flexibility]: <https://www.rowlingindex.org/work/wlfpm/ "WizardingWorld article on Wand length">
+[Wand Cores]: <https://www.rowlingindex.org/work/wcpm/ "WizardingWorld article on Wand Cores">

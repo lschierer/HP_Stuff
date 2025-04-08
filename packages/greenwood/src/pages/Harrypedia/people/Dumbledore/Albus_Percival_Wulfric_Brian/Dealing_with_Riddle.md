@@ -183,7 +183,7 @@ hunt them down. Why, knowing that he will die, he entrusts the knowledge to
 [Horcruxes]: /Harrypedia/magic/dark/Horcruxes/
 [Lupin]: </Harrypedia/people/Lupin/Remus John/>
 [Kingsley]: /Harrypedia/people/shacklebolt/kingsley/
-[Moody]: /Harrypedia/people/moody/
+[Moody]: /Harrypedia/people/Moody/Alastor/
 [TMR1]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>

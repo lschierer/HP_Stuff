@@ -9,7 +9,7 @@ Is [Amelia][] a traditionalist even if she also believes in justice?[^210701-2]
 Or is [Amelia][] fairly broad minded?[^210701-3]
 
 [Susan]: susan/
-[Riddle]: ../Riddle/Tom Marvolo/
+[Riddle]: <../Riddle/Tom Marvolo/>
 [Amelia]: amelia_susan/
 [ClassLists]: /Harrypedia/Hogwarts/class_lists/
 [Culture]: ../../culture/

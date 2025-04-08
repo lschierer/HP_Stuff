@@ -14,7 +14,7 @@ exact chronology, what follows is my best reconstruction.
 
 [Sirius]: </Harrypedia/people/Black/Sirius III/>
 [James]: /Harrypedia/people/Potter/James/
-[Lily]: /Harrypedia/peopleEvans/Lily J/
+[Lily]: </Harrypedia/peopleEvans/Lily J/>
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Severus]: /Harrypedia/people/Snape/Severus/
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
@@ -364,7 +364,7 @@ was a mudblood. This would draw [Snape] deeper and deeper into [Riddle]'s
 atrocities and soul corrupting influence. You simply cannot be around such
 people without their evil rubbing off on you.
 
-[Riddle]: ../../../Riddle/Tom Marvolo/
+[Riddle]: <../../../Riddle/Tom Marvolo/>
 
 People criticising [Lily] are essentially pushing her towards missionary
 dating. It is not _precisely_ the same situation, but it is close enough.

@@ -555,4 +555,4 @@ Nephil have some aspects of both. They are _mostly_ contingent beings that grow 
     [The J.K. Rowling Index](https://www.rowlingindex.org/). Publication Date: 2016-01-31. Last Viewed: 2022-06-28.
 
 [Quill of Acceptance and Book of Admittance]: https://www.rowlingindex.org/work/qaba/
-[EoM]: Wikipedia. "[Edict of Milan](https://wikipedia.org/wiki/Edict_of_Milan)" Last Edited: 2024-10-23.
+[EoM]: <Wikipedia. "[Edict of Milan](https://wikipedia.org/wiki/Edict_of_Milan)" Last Edited: 2024-10-23.>

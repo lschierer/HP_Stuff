@@ -45,7 +45,7 @@ the six years that [Harry] attends class.
 [Molly]: /Harrypedia/people/prewett/molly//
 [Neville]: /Harrypedia/people/longbottom/neville//
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>/
-[Lily Evens]: /Harrypedia/peopleEvans/Lily J//
+[Lily Evens]: </Harrypedia/peopleEvans/Lily J//>
 
 [^210329-24]:
     Mrs. J. K. Rowling. _Harry Potter and the Goblet of Fire_

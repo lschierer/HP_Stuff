@@ -51,7 +51,7 @@ exceptionally bright.[^211108-7] I do not doubt the man did well in school, but
 he worked for it, whereas his more intelligent friends found the material easy.
 
 [James]: /Harrypedia/people/Potter/James/
-[Lily]: /Harrypedia/peopleEvans/Lily J/
+[Lily]: </Harrypedia/peopleEvans/Lily J/>
 [Sirius]: </Harrypedia/people/Black/Sirius III/>
 
 In many ways, this quote adequately says all there is to say:
