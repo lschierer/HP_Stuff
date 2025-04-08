@@ -203,7 +203,7 @@ that could mean before his curse _landed_ rather than before it was _cast_.
     Red Hen Publications. I am not sure how much I am convinced by it, but it
     does have a certain persuasiveness.
 
-[Abandoning Ship]: https://www.redhen-publications.com/abandoningShip.html
+[Abandoning Ship]: https://www.redhen-publications.com/abandoning.html
 [History]: /Harrypedia/History/
 
 [^210517-4]:
@@ -235,7 +235,7 @@ of Azkaban][].
 
 
 [Andromeda]: /Harrypedia/people/Black/Andromeda/
-[Arcturus]: /Harrypedia/people/Black/arcturus_ii/
+[Arcturus]: /Harrypedia/people/Black/Arcturus II/
 [Bellatrix]: /Harrypedia/people/Black/Bellatrix/
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Hagrid]: /Harrypedia/people/Hagrid/Rubeus/
@@ -248,9 +248,9 @@ of Azkaban][].
 [Malfoy]: /Harrypedia/people/Malfoy/
 [Molly]: /Harrypedia/people/Prewett/Molly/
 [Orion]: /Harrypedia/people/Black/orion/
-[Peter Pettigrew]: /Harrypedia/people/pettigrew/peter/
-[Peter]: /Harrypedia/people/pettigrew/peter/
-[Pettigrew]: /Harrypedia/people/pettigrew/peter/
+[Peter Pettigrew]: /Harrypedia/people/Pettigrew/Peter/
+[Peter]: /Harrypedia/people/Pettigrew/Peter/
+[Pettigrew]: /Harrypedia/people/Pettigrew/Peter/
 [Pollux]: /Harrypedia/people/Black/Pollux/
 [Regulus]: /Harrypedia/people/Black/Regulus Arcturus/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>

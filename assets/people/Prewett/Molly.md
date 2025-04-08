@@ -95,7 +95,7 @@ On the other hand, it is easy to be over sensitive.
     Bloomsbury Publishing (2003). Kindle Location 2746.
 
 [^221202-2]:
-    [Red Hen Publications](https://www.redhen-publications.com/whohen.html).
+    [Red Hen Publications](https://www.redhen-publications.com/who-hen.html).
     "[Molly](https://www.redhen-publications.com/molly.html)" Last viewed 2022-12-02.
 
 ## Speculations

@@ -93,7 +93,7 @@ subject - his father would have tutored him over the summers should he have
 needed it. [Snape] and [Lily] are prodigies, and [Snape] seems to expect _everyone_ to find potions as intuitive as he does, so I take any disparagement he makes with a fairly large and active amount of suspicion.
 
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
-[Pettigrew]: /Harrypedia/people/pettigrew/peter/
+[Pettigrew]: /Harrypedia/people/Pettigrew/Peter/
 
 
 > “I’m bored,” said Sirius. “Wish it was full moon.”

@@ -1,7 +1,7 @@
 ---
 title: >
-layout: standard
   Harry's Genetic Make-up
+layout: standard
 author: Luke Schierer
 collection: Harrypedia
 ---
