@@ -183,7 +183,7 @@ If either or both of these is true, James might well have been something of a pe
 [^210629-3]:
     Ian Hycrest.
     _[Harry Potter and the Hands of Justice](https://www.fanfiction.net/s/13374289)_
-    [Chapter 10](<https://www.fan fiction.net/s/13374289/11/Harry-Potter-and-the-Hands-of-Justice>)
+    [Chapter 10](<https://www.fanfiction.net/s/13374289/11/Harry-Potter-and-the-Hands-of-Justice>)
     Published: 2019-08-27. Updated: 2020-01-14. Last Viewed: 2021-06-29.
 
 [^210629-2]:

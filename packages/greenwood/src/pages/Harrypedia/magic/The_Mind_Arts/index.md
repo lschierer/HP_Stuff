@@ -100,7 +100,7 @@ long term use.
 - [Mind Palace]
 - [Obfuscomency]
 
-[Instant Death]: <./Instant Death/>
+[Instant Death]: <./Death Defence/>
 [Meditation and focus]: <./Meditation and Focus/>
 [Mental Shields]: <./Mental Shields/>
 [Mind Palace]: <./Mind Palace/>
