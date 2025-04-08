@@ -189,13 +189,13 @@ seem to largely stem from a fairly black and white view of the world and
 [Ravenclaw]: /Harrypedia/Hogwarts/ravenclaw/
 [Malfoy]: </Harrypedia/people/Malfoy/Draco Lucius/>
 [MM1]: /Harrypedia/people/McGonagall/Minerva/
-[FF1]: /Harrypedia/people/flitwick/filus/
+[FF1]: /Harrypedia/people/flitwick/Filus/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Harry Potter and the Goblet of Fire]: https://www.librarything.com/work/113
 [Ginny's]: </Harrypedia/people/Weasley/Ginevra Molly/>
-[Lavender]: /Harrypedia/people/brown/lavender/
+[Lavender]: /Harrypedia/people/brown/Lavender/
 
 [^240313-1]:
     Mrs. J. K. Rowling.

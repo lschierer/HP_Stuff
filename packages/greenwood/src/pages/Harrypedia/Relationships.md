@@ -108,12 +108,12 @@ to create one big happy Weasley-Potter-Malfoy family.
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>/
 [George]: /Harrypedia/people/weasley/george//
-[Neville]: /Harrypedia/people/longbottom/neville//
-[Percy]: /Harrypedia/people/weasley/percy_ignatius//
+[Neville]: /Harrypedia/people/longbottom/Neville/
+[Percy]: /Harrypedia/people/weasley/Percy Ignatius/
 [Audrey]: /Harrypedia/people//
-[Luna]: /Harrypedia/people/lovegood/luna//
+[Luna]: /Harrypedia/people/lovegood/Luna/
 [Hannah Abbott]: /Harrypedia/people/abbott/hannah//
-[Rolf Scamander]: /Harrypedia/people/scamander/rolf//
+[Rolf Scamander]: /Harrypedia/people/scamander/Rolf/
 [Quidditch]: ../quidditch/
 [Malfoy]: /Harrypedia/people/Malfoy//
 [Hannah]: /Harrypedia/people/abbott/hannah//

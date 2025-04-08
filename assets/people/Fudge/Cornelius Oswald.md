@@ -20,8 +20,8 @@ rest of the [Department of Magical Law Enforcement][MLE] before [Umbridge][]
 starts to misuse them?
 
 [MLE]: /Harrypedia/culture/government
-[Amelia Bones]: /Harrypedia/people/bones/amelia_susan/
-[Umbridge]: /Harrypedia/people/umbridge/dolores_jane/
+[Amelia Bones]: /Harrypedia/people/bones/Amelia Susan/
+[Umbridge]: /Harrypedia/people/umbridge/Dolores Jane/
 
 Specifically looking at both the arrest of [Hagrid][] and the handling of
 [Sirius's][SB] escape, I strongly suspect that his actions are at best quasi-legal
@@ -36,7 +36,7 @@ his motives. _Some_ news about the Chamber must have leaked out to the wider
 Wizarding World (possibly via [Lucius][]), and Fudge feels that his popularity
 numbers are suffering. Why [Dumbledore][] does not act is more complicated.
 
-[Lucius]: /Harrypedia/people/Malfoy/lucius_abraxas/
+[Lucius]: /Harrypedia/people/Malfoy/Lucius Abraxas/
 
 The case of [Sirius][SB] is almost certainly more sinister. Fudge was one of
 the first on the scene,[^220906-3] and even as a "Junior Minister", probably
@@ -62,5 +62,5 @@ noted above, Fudge did not become Minister until 1990, which explains why he
 was so unsure of himself in his role as minister throughout the first book.
 
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
-[Bagnold]: /Harrypedia/people/bagnold/millicent/
-[Malfoy]: /Harrypedia/people/Malfoy/lucius_abraxas/
+[Bagnold]: /Harrypedia/people/bagnold/Millicent/
+[Malfoy]: /Harrypedia/people/Malfoy/Lucius Abraxas/

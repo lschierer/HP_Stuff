@@ -21,7 +21,7 @@ The first chapter, as is expected _of_ a first chapter, has more questions than 
 [Hagrid]: /Harrypedia/people/hagrid/rubeus//
 [Dursley]: /Harrypedia/people/dursley//
 [Ministry]: /Harrypedia/culture/government//
-[Petunia]: /Harrypedia/people/Evans/petunia//
+[Petunia]: /Harrypedia/people/Evans/Petunia/
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva//
 [Lily]: </Harrypedia/peopleEvans/Lily J/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>/

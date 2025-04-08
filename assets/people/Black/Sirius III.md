@@ -138,7 +138,7 @@ would have been unable to demand a trial. Why, however, did none of
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Lupin]: </Harrypedia/people/Lupin/Remus John/>
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
-[Andromeda]: /Harrypedia/people/Black/andromeda/
+[Andromeda]: /Harrypedia/people/Black/Andromeda/
 
 Lets start with the easy ones: [Arcturus][], [Pollux][], and [Walburga][]
 Black. We know that [Walburga][] hated her son, enough to want him disowned.
@@ -234,9 +234,9 @@ of Azkaban][].
     Pottermore Limited © 2005. American Kindle Edition.
 
 
-[Andromeda]: /Harrypedia/people/Black/andromeda/
+[Andromeda]: /Harrypedia/people/Black/Andromeda/
 [Arcturus]: /Harrypedia/people/Black/arcturus_ii/
-[Bellatrix]: /Harrypedia/people/Black/bellatrix/
+[Bellatrix]: /Harrypedia/people/Black/Bellatrix/
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Hagrid]: /Harrypedia/people/hagrid/rubeus/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
@@ -246,13 +246,13 @@ of Azkaban][].
 [Lily]: </Harrypedia/peopleEvans/Lily J/>
 [Lupin]: </Harrypedia/people/Lupin/Remus John/>
 [Malfoy]: /Harrypedia/people/Malfoy/
-[Molly]: /Harrypedia/people/prewett/molly/
+[Molly]: /Harrypedia/people/prewett/Molly/
 [Orion]: /Harrypedia/people/Black/orion/
 [Peter Pettigrew]: /Harrypedia/people/pettigrew/peter/
 [Peter]: /Harrypedia/people/pettigrew/peter/
 [Pettigrew]: /Harrypedia/people/pettigrew/peter/
-[Pollux]: /Harrypedia/people/Black/pollux/
-[Regulus]: /Harrypedia/people/Black/regulus_arcturus/
+[Pollux]: /Harrypedia/people/Black/Pollux/
+[Regulus]: /Harrypedia/people/Black/Regulus Arcturus/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [SWM]: /Harrypedia/people/Snape/Severus/swm/
 [Snape]: /Harrypedia/people/Snape/Severus/

@@ -17,9 +17,9 @@ Better detectives than I have pieced together her probable timeline, assuming
 you ignore the Fantastic Beasts movies. Born in 1935, she started [Hogwarts]
 in 1947.[^211103-1] She joined [Hogwarts] at a time when there was more than one teacher in the Transfiguration Department, approximately 2 or 3 years after her graduation.[^200720-7] She informs [Umbridge] that she will have been at Hogwarts "Thirty-nine years this December,"[^200720-8] sometime in the beginning of fifth year, or 1995. That puts her start date in 1956. Despite this, we are told that she intervened when [Leta Lestrange][LL2] was bullied at age 13 in 1910,[^211018-1] and when [Theseus][TS1] was a student.[^211018-2] This would require her to have either left [Hogwarts] for a time, or to have been a teacher for at least 85 years.[^211018-3]
 
-[LL2]: /Harrypedia/people/lestrange/leta/
-[Umbridge]: /Harrypedia/people/umbridge/dolores_jane/
-[TS1]: /Harrypedia/people/scamander/theseus/
+[LL2]: /Harrypedia/people/lestrange/Leta/
+[Umbridge]: /Harrypedia/people/umbridge/Dolores Jane/
+[TS1]: /Harrypedia/people/scamander/Theseus/
 
 The first problematic moment is easy to miss. Per the timeline above, she was
 already teaching at [Hogwarts] in 1981, and yet, on November 1st 1981, she is
@@ -142,8 +142,8 @@ stooges. He could not have prevented the fact of their resignation from
 getting out however. If they had more backbone, I have to believe they have
 the connections to have made their opinions known.
 
-[Sprout]: /Harrypedia/people/sprout/pomona/
-[Flitwick]: /Harrypedia/people/flitwick/filus/
+[Sprout]: /Harrypedia/people/sprout/Pomona/
+[Flitwick]: /Harrypedia/people/flitwick/Filus/
 [Fudge]: </Harrypedia/people/Fudge/Cornelius Oswald/>
 
 With this history of either following [Dumbledore][AD1]'s lead as blindly and
@@ -169,7 +169,7 @@ incorporating non-magical classes no matter how needed or useful they might be.
 
 [Snape]: /Harrypedia/people/Snape/Severus/
 [James]: /Harrypedia/people/Potter/James/
-[Neville]: /Harrypedia/people/longbottom/neville/
+[Neville]: /Harrypedia/people/longbottom/Neville/
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>

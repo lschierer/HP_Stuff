@@ -88,9 +88,9 @@ does seem believable of [Umbridge] and those like her who set up the laws under
 Pius Thicknesse's puppet government.
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Arthur]: /Harrypedia/people/weasley/arthur//
-[Umbridge]: /Harrypedia/people/umbridge/dolores_jane//
-[Dean]: /Harrypedia/people/thomas/dean/
+[Arthur]: /Harrypedia/people/weasley/Arthur/
+[Umbridge]: /Harrypedia/people/umbridge/Dolores Jane/
+[Dean]: /Harrypedia/people/thomas/Dean/
 [comparitive_class_ages]: ../comparitive_class_ages
 
 [^211001-1]:

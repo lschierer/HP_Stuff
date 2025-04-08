@@ -22,7 +22,7 @@ immediately strikes up a friendly conversation with the outcast girl. This is
 not in character for someone who uses derogatory names. The contradiction in
 Ginny's behaviour is unexplained, to my knowledge, by cannon sources.
 
-[Luna]: ../../lovegood/luna/
+[Luna]: ../../lovegood/Luna/
 
 > “Oh, for heaven’s sake, Harry, you can do better than her, ” said Hermione.
 > “Ginny’s told me all about her, apparently she’ll only believe in things as

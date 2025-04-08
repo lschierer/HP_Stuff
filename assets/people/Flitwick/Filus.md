@@ -19,9 +19,9 @@ there is some slight evidence that suggests that Professor Flitwick is redeemabl
   positive or a negative.
 
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
-[Luna]: /Harrypedia/people/lovegood/luna/
+[Luna]: /Harrypedia/people/lovegood/Luna/
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
-[Sprout]: /Harrypedia/people/sprout/pomona/
+[Sprout]: /Harrypedia/people/sprout/Pomona/
 
 [^20210322-3]:
     Aealket.

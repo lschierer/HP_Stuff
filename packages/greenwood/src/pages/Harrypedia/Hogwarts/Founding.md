@@ -50,7 +50,7 @@ for a time. From my own knowledge of the Aztecs and Toltecs suggests that this
 would not have been a positive influence on his life. If he was attracted to
 the dark arts, it may well date from this period.
 
-[Salazar]: /Harrypedia/people/slytherin/salazar/
+[Salazar]: /Harrypedia/people/slytherin/Salazar/
 
 ### Meeting and Starting a School
 

@@ -21,7 +21,7 @@ author: Luke Schierer
 [chapter two]: ../chapter-02/
 [first chapter]: ../chapter-01/
 [Dursley]: /Harrypedia/people/dursley/vernon//
-[Dudley]: /Harrypedia/people/dursley/dudley//
+[Dudley]: /Harrypedia/people/dursley/Dudley/
 [Dursleys]: /Harrypedia/people/dursley//
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [obscurials]: /Harrypedia/beings/obscurus//

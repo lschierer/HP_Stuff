@@ -258,7 +258,7 @@ can never be fully freed.
 [Flood]: /FanFiction/Harry_Potter_-_Nephilim/backstory/the_flood
 [goblin wars]: /FanFiction/Harry_Potter_-_Nephilim/backstory/the_dwarfs
 [Giants]: /FanFiction/Harry_Potter_-_Nephilim/backstory/giants
-[Molly]: /Harrypedia/people/prewett/molly/
+[Molly]: /Harrypedia/people/prewett/Molly/
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>
 [knffnm]: http://kokopelli.nsns.fanficauthors.net/Maskirovat/Maskirovat/

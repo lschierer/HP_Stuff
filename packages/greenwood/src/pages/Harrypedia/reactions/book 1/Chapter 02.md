@@ -22,12 +22,12 @@ author: Luke Schierer
 
 [^240424-2]: see [Comparing how old students are in UK and US/Harrypedia/Hogwarts/comparitive_class_ages/)
 
-[Dudley]: /Harrypedia/people/dursley/dudley//
+[Dudley]: /Harrypedia/people/dursley/Dudley/
 [Dursley]: /Harrypedia/people/dursley//
-[Petunia]: /Harrypedia/people/Evans/petunia//
+[Petunia]: /Harrypedia/people/Evans/Petunia/
 [bowl cut]: https://en.wikipedia.org/wiki/Bowl_cut
 [crew cut]: https://en.wikipedia.org/wiki/Crew_cut
-[Dudley]: /Harrypedia/people/dursley/dudley//
+[Dudley]: /Harrypedia/people/dursley/Dudley/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Lily]: </Harrypedia/peopleEvans/Lily J/>
 [James]: /Harrypedia/people/Potter/James//

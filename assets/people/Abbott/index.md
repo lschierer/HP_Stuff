@@ -14,7 +14,7 @@ pulled from school because her mother is killed in an attack by either
 [Riddle]: <../Riddle/Tom Marvolo/>
 [Class_and_Blood]: ../../culture/class_and_blood/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Slytherin]: ../slytherin/salazar/
+[Slytherin]: ../slytherin/Salazar/
 
 [^211004-15]:
     Mrs. J. K. Rowling.

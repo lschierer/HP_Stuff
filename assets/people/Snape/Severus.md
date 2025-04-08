@@ -184,8 +184,8 @@ out the way Snape was poorly dressed as proof, but this could be simply
 symptomatic of the same cluelessness of non-magical fashion we see in other
 magical characters coupled with their extreme poverty.
 
-[Tobias]: ../tobias
-[Eileen]: ../../prince/eileen
+[Tobias]: ../Tobias/
+[Eileen]: ../../prince/Eileen/
 
 Regardless, Severus is now, supposedly, a spy for [Dumbledore][]. How much does
 he know? Does he know that Pettigrew is a Death Eater? Does he know this
@@ -215,7 +215,7 @@ especially critical to know the answer to these questions when Mrs. Rowling
 states in an interview that [Dumbledore][] thinks that dealing with horrible
 teachers is part of teaching his students about life.[^210412-6]
 
-[Slughorn]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
+[Slughorn]: /Harrypedia/people/slughorn/Horace Eugene Flaccus/
 
 Irregardless of if he does ever actually teach, his behaviour during these "lab"
 classes is unacceptable. The labs are unsafe, and his treatment of the students

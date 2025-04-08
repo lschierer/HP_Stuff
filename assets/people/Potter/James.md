@@ -114,7 +114,7 @@ core events sufficiently in place so that when [Harry] describes what he
 sees, it rings true to those who witnessed it. The fact that the [pensieve] clearly shows the tampering in [Slughorn]'s memory does not mean it is a foolproof means of doing so.[^240422-1]
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Slughorn]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
+[Slughorn]: /Harrypedia/people/slughorn/Horace Eugene Flaccus/
 [pensieve]: /Harrypedia/magic/time/pensieve/
 
 [^240422-1]: See my thoughts on the [pensieve].
@@ -186,7 +186,7 @@ supposedly irresponsible boy kept the Cloak out of larcenous[^210318-7] enemy
 hands, despite the fact that he supposedly has no cunning or intelligence.
 
 [dark magic]: /Harrypedia/magic/dark/
-[Fleamont]: /Harrypedia/people/Potter/fleamont/
+[Fleamont]: /Harrypedia/people/Potter/Fleamont/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 
 ## Pure Speculation
@@ -214,7 +214,7 @@ If either or both of these is true, James might well have been something of a pe
 
 [animagus]: /Harrypedia/magic/
 [Robin Hood]: https://en.wikipedia.org/wiki/Robin_Hood
-[Slughorn]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
+[Slughorn]: /Harrypedia/people/slughorn/Horace Eugene Flaccus/
 [D1]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 
 [^240422-3]: this is a really tempting tangent, but this page isn't about [Dumbledore].

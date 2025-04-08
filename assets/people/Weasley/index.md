@@ -64,14 +64,14 @@ birthday is correct, that does not give much space for [Charlie]'s to move.
 [Gryffindor]: /Harrypedia/Hogwarts/gryffindor/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
-[Ron]: /Harrypedia/people/weasley/ronald_bilius
+[Ron]: /Harrypedia/people/weasley/Ronald Bilius/
 [George]: /Harrypedia/people/weasley/george/
 [Fred]: /Harrypedia/people/weasley/fred/
-[Percy]: /Harrypedia/people/weasley/percy_ignatius/
-[Charlie]: /Harrypedia/people/weasley/charlie/
-[Bill]: /Harrypedia/people/weasley/william_arthur/
-[Arthur]: /Harrypedia/people/weasley/arthur/
-[Molly]: /Harrypedia/people/prewett/molly/
+[Percy]: /Harrypedia/people/weasley/Percy Ignatius/
+[Charlie]: /Harrypedia/people/weasley/Charlie/
+[Bill]: /Harrypedia/people/weasley/William Arthur/
+[Arthur]: /Harrypedia/people/weasley/Arthur/
+[Molly]: /Harrypedia/people/prewett/Molly/
 [lexicon]: https://www.hp-lexicon.org
 
 [^20210601-3]:

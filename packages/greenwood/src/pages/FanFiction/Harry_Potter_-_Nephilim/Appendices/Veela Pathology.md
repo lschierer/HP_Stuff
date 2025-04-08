@@ -153,7 +153,7 @@ only to the extent her male parent was.
 [^210916-1]: Like in _[Maskirovat][knffnm]_.
 
 [Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>
-[Molly]: /Harrypedia/people/prewett/molly/
+[Molly]: /Harrypedia/people/prewett/Molly/
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 [knffnm]: http://kokopelli.nsns.fanficauthors.net/Maskirovat/Maskirovat/

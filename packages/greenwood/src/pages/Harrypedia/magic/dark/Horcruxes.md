@@ -57,7 +57,7 @@ about and properly investigate what an intact horcrux is doing in the
 Imperial Museum is a testimony to his overall dependence on the prophecy,
 and failure to act.
 
-[Bill]: /Harrypedia/people/weasley/william_arthur/
+[Bill]: /Harrypedia/people/weasley/William Arthur/
 
 [^210324-1]:
     Adapted from Itsme66.

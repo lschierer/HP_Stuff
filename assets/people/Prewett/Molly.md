@@ -83,9 +83,9 @@ On the other hand, it is easy to be over sensitive.
 [Lovegoods]: /Harrypedia/people/lovegood/
 [Weasleys]: /Harrypedia/people/weasley/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
-[Luna]: /Harrypedia/people/lovegood/luna/
+[Luna]: /Harrypedia/people/lovegood/Luna/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Xeno]: /Harrypedia/people/lovegood/xenophilius/
+[Xeno]: /Harrypedia/people/lovegood/Xenophilius/
 [Red Hen Publications]: https://www.redhen-publications.com/
 [RHPMolly]: https://www.redhen-publications.com/molly.html
 
@@ -198,8 +198,8 @@ influenced by the various depictions I have read.
   school. I doubt Molly approved. I strongly suspect that she considers girls
   playing [Quidditch] to be unlady-like.
 
-[Arthur]: /Harrypedia/people/weasley/arthur/
-[Bill]: /Harrypedia/people/weasley/william_arthur/
+[Arthur]: /Harrypedia/people/weasley/Arthur/
+[Bill]: /Harrypedia/people/weasley/William Arthur/
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Sirius]: </Harrypedia/people/Black/Sirius III/>

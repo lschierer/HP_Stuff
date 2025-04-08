@@ -57,12 +57,12 @@ Some fanfiction works that have built on this team:
 > us.[^211102-1]
 
 [Dealing_with_Riddle]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>dealing_with_riddle/
-[Grindelwald]: /Harrypedia/people/grindelwald/gellert/
+[Grindelwald]: /Harrypedia/people/grindelwald/Gellert/
 [TMR1]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [HJP1]: </Harrypedia/people/Potter/Harry James/>
 [DF1]: /Harrypedia/people/dursley/
 [AD1]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
-[Bill Weasley]: /Harrypedia/people/weasley/william_arthur/
+[Bill Weasley]: /Harrypedia/people/weasley/William Arthur/
 [Hogwarts]: /Harrypedia/Hogwarts/
 
 [^211102-1]:

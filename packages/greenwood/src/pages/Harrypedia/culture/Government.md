@@ -84,11 +84,11 @@ Hallows. Lastly, it does not solve the problem of voting inheritance between
 the [Black] and [Potter] families (though this might be considered part of
 my statement that it contradicts the origin stories).
 
-[Mr. Malfoy]: /Harrypedia/people/Malfoy/lucius_abraxas//
+[Mr. Malfoy]: /Harrypedia/people/Malfoy/Lucius Abraxas/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Henry]: /Harrypedia/people/Potter/henry/
 [Sirius]: </Harrypedia/people/Black/Sirius III/>/
-[Arthur]: /Harrypedia/people/weasley/arthur//
+[Arthur]: /Harrypedia/people/weasley/Arthur/
 [Linfred]: /Harrypedia/people/Potter//
 [Black]: /Harrypedia/people/Black//
 [Potter]: /Harrypedia/people/Potter//

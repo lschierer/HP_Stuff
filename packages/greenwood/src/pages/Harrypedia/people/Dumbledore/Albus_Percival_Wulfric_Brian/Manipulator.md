@@ -56,7 +56,7 @@ make the next removal harder (thus I think he _was_ in fact able to resist
 [Fudge] and [Umbridge] in Book 5 for most of the year).
 
 [Fudge]: </Harrypedia/people/Fudge/Cornelius Oswald/>
-[Umbridge]: /Harrypedia/people/umbridge/dolores_jane/
+[Umbridge]: /Harrypedia/people/umbridge/Dolores Jane/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [AD1]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 

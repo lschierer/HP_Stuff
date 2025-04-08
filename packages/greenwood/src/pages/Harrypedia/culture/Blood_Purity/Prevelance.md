@@ -24,7 +24,7 @@ My guess is not none (the essential premise for a work like _[Exiles]_), but als
 
 [Exiles]: https://www.fanfiction.net/s/14002719
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
-[Arthur Weasley]: /Harrypedia/people/weasley/arthur/
+[Arthur Weasley]: /Harrypedia/people/weasley/Arthur/
 [Weasley]: /Harrypedia/people/weasley/
 
 [^240318-1]: I am having trouble documenting where this line of reasoning, known now as the "Nuremberg Defence", was actually condemned.

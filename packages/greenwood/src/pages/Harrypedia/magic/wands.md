@@ -79,7 +79,7 @@ must sense something of the wizard it is bonding with…
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>/
 [James Potter]: /Harrypedia/people/Potter/James//
-[Umbridge]: /Harrypedia/people/umbridge/dolores_jane//
+[Umbridge]: /Harrypedia/people/umbridge/Dolores Jane/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>/
 [ww]: <https://www.wizardingworld.com "WizardingWorld">
 [wand wood]: <https://www.rowlingindex.org/work/wwpm/ "Harry Potter wiki article on Wand Wood">

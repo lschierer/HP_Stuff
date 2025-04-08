@@ -13,8 +13,8 @@ title: Teachers
 - [Severus Snape][Snape]
 
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>/
-[Binns]: /Harrypedia/people/binns/cuthbert/
-[Flitwick]: /Harrypedia/people/flitwick/filus/
+[Binns]: /Harrypedia/people/binns/Cuthbert/
+[Flitwick]: /Harrypedia/people/flitwick/Filus/
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva//
 [snape]: /Harrypedia/people/Snape/Severus//
 
@@ -55,7 +55,7 @@ more logically the advisor at that point, we need a more Charles Dickens
 feel about it. Which is probably precisely the point.
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Luna]: /Harrypedia/people/lovegood/luna//
+[Luna]: /Harrypedia/people/lovegood/Luna/
 [Stalky & Co.]: https://www.gutenberg.org/ebooks/3006
 
 [^20210521-6]: Mr. Rudyard Kipling. _Stalky & Co._ better citation needed.

@@ -40,7 +40,7 @@ The obvious exception to this is [Walburga], who from all accounts had no proble
 [Dursley]: /Harrypedia/people/dursley/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Vernon]: /Harrypedia/people/dursley/vernon//
-[Petunia]: /Harrypedia/people/Evans/petunia//
+[Petunia]: /Harrypedia/people/Evans/Petunia/
 [unreliable narrator]: https://wikipedia.org/wiki/Unreliable_narrator
 
 [^240228-1]: Mrs. J. K. Rowling. _[Harry Potter and the Half-Blood Prince]_ American Kindle edition approx Location 611 of 8473.

@@ -88,10 +88,10 @@ require something (a ring or a key) to unlock that was itself locked in the
 vault in question, because _everything_ the Potters owned was placed in the
 vault without forethought.[^210322-1]
 
-[Bellatrix]: /Harrypedia/people/Black/bellatrix/
+[Bellatrix]: /Harrypedia/people/Black/Bellatrix/
 [Blacks]: /Harrypedia/people/Black/
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
-[Fleamont]: /Harrypedia/people/Potter/fleamont/
+[Fleamont]: /Harrypedia/people/Potter/Fleamont/
 [Grimmauld Place]: /Harrypedia/grimmauld_place/
 [Gringotts]: /Harrypedia/gringotts/
 [Harry]: </Harrypedia/people/Potter/Harry James/>

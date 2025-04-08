@@ -17,7 +17,7 @@
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Ignotus]: /Harrypedia/people/peverell/ignotus/
-[Iolanthe]: /Harrypedia/people/peverell/iolanthe/
+[Iolanthe]: /Harrypedia/people/peverell/Iolanthe/
 
 [^241222-1]: I cannot find the original, not even in the [Internet Archive] but [here](https://harrypotter.fandom.com/wiki/Potter_family?file=Potterfamilytree-pottermore.jpg) is an archived copy.
 

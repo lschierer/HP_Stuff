@@ -195,8 +195,8 @@ complicated nature of the thorny problem to confuse the listener.
 [Wizengamot]: /Harrypedia/culture/government/
 [Black]: /Harrypedia/people/Black/
 [Potter]: /Harrypedia/people/Potter/
-[Narcissa Malfoy]: /Harrypedia/people/Black/narcissa/
-[Dorea Black]: /Harrypedia/people/Black/dorea/
+[Narcissa Malfoy]: /Harrypedia/people/Black/Narcissa/
+[Dorea Black]: /Harrypedia/people/Black/Dorea/
 [James]: /Harrypedia/people/Potter/James/
 [Malfoys]: /Harrypedia/people/Malfoy/
 [Dursleys]: /Harrypedia/people/dursley/

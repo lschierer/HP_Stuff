@@ -59,7 +59,7 @@ you, but rather a complex one who requires more careful analysis to understand
 his flaws in the right context.
 
 [FI]: https://musings-of-apathy.fanficauthors.net/Family_Inseparable/index/
-[HS]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
+[HS]: /Harrypedia/people/slughorn/Horace Eugene Flaccus/
 [hogwarts]: /Harrypedia/Hogwarts/
 
 Musings of Apathy, in writing the original version of [Family Inseparable][FI],
@@ -262,12 +262,12 @@ kept out of Azkaban.[^220916-2] Despite this, Dumbledore claims to be totally
 unable to assist [Sirius][SB3] in exonerating himself. Is this just a convenient
 excuse to prevent [Sirius][SB3] from being able to adopt [Harry]?
 
-[GG]: /Harrypedia/people/grindelwald/gellert/
-[Ariana]: ../ariana/
+[GG]: /Harrypedia/people/grindelwald/Gellert/
+[Ariana]: ../Ariana/
 [RBW]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [MM]: /Harrypedia/people/McGonagall/Minerva/
-[PS]: /Harrypedia/people/sprout/pomona/
-[FF]: /Harrypedia/people/flitwick/filus/
+[PS]: /Harrypedia/people/sprout/Pomona/
+[FF]: /Harrypedia/people/flitwick/Filus/
 [DF1]: /Harrypedia/people/dursley/
 [Weasleys]: /Harrypedia/people/weasley/
 [Horcruxes]: /Harrypedia/magic/dark/Horcruxes/

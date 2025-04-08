@@ -39,7 +39,7 @@ If they are, even before the deaths in book seven, we are already dealing with a
 
 Of course, I cannot be sure that this is what happened. It makes it hard to give them full benefit of the doubt as I analyse what goes on across the books.
 
-[Grindelwald]: /Harrypedia/people/grindelwald/gellert//
+[Grindelwald]: /Harrypedia/people/grindelwald/Gellert/
 
 [^240319-6]:
     [WolfgangNH]. _[The Ancient Proliferation Covenent]_

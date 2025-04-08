@@ -104,7 +104,7 @@ creating a feedback mechanism into the next generation.
 
 [Hogwarts]: /Harrypedia/Hogwarts/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>/
-[Arthur]: /Harrypedia/people/weasley/arthur//
+[Arthur]: /Harrypedia/people/weasley/Arthur/
 
 Eventually there are too many of them for one house at [Hogwarts]. More than
 a quarter of the population strongly supports blood status. More than a quarter

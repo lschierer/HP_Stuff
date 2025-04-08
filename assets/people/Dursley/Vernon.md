@@ -6,7 +6,7 @@
   legal implications, as seen [here][ukglc].
 
 [ukglc]: https://www.gov.uk/running-a-limited-company
-[PD]: /Harrypedia/people/Evans/petunia/
+[PD]: /Harrypedia/people/Evans/Petunia/
 
 [^220927-1]:
     Mrs. J. K. Rowling.
