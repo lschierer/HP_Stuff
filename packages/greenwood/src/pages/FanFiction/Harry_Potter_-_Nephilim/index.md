@@ -4,7 +4,7 @@ layout: standard
 author: Luke Schierer
 collection: FanFiction
 imports:
-  - /node_modules/greenwoodspectrumtheme/components/DirectoryIndex.ts type="module"
+  - /node_modules/greenwoodspectrumtheme/components/DirectoryIndex.js type="module"
 ---
 
 ## Chapter Listing:

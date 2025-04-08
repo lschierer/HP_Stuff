@@ -3,7 +3,7 @@ title: Harry Potter - Nephilim | Index of Appendices
 layout: standard
 author: Luke Schierer
 imports:
-  - /node_modules/greenwoodspectrumtheme/components/DirectoryIndex.ts type="module"
+  - /node_modules/greenwoodspectrumtheme/components/DirectoryIndex.js type="module"
 ---
 
 > [!WARNING]
