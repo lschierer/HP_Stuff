@@ -48,3 +48,6 @@ deploy: build-greenwood
 [working-directory: 'infrastructure']
 deploy-pulumi: build-starlight
   pulumi up
+
+check-links:
+  ${PNPM} exec linkinator "http://localhost:1984/"

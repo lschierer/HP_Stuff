@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json.schemastore.org/linkinator-config.json",
+  "markdown": true,
+  "recurse": true,
+  "browser": true,
+  "skip": [
+    "(www.)?archiveofourown.org",
+    "(www.)?fanfiction.net",
+    "(www.)?goodreads.com",
+    "(fonts|www)*.?googleapis.com",
+    "gramps-project.org",
+    "harrypotter.fandom.com",
+    "(www.)?hp-lexicon.org",
+    "(www.)?thelibrarything.com",
+    "(www.)?reddit.com",
+    "(www.)?rowlingindex.org",
+    "wikipedia.org"
+  ],
+  "silent": true
+}
