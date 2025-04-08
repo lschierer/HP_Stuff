@@ -1,6 +1,7 @@
 ---
 title: Bookmarks - Dealing with Snape
 author: Luke Schierer
+layout: standard
 imports:
   - /node_modules/greenwoodspectrumtheme/components/DirectoryIndex.js type="module"
 ---

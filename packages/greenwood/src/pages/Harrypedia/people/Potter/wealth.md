@@ -92,7 +92,7 @@ vault without forethought.[^210322-1]
 [Blacks]: /Harrypedia/people/Black/
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Fleamont]: /Harrypedia/people/Potter/Fleamont/
-[Grimmauld Place]: /Harrypedia/grimmauld_place/
+[Grimmauld Place]: /Harrypedia/Grimmauld_Place/
 [Gringotts]: /Harrypedia/gringotts/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [James]: /Harrypedia/people/Potter/James/

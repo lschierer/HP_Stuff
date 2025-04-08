@@ -44,7 +44,7 @@ the [History][] timeline.
 [Sirius II]: </Harrypedia/people/Black/Sirius II/>
 [Longbottom]: /Harrypedia/people/Longbottom/
 [Longbottoms]: /Harrypedia/people/Longbottom/
-[Grimmauld Place]: /Harrypedia/grimmauld_place/
+[Grimmauld Place]: /Harrypedia/Grimmauld_Place/
 [Neville]: /Harrypedia/people/Longbottom/Neville/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 

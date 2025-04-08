@@ -54,10 +54,9 @@ const getFrontmatter: GetFrontmatter = async () => {
     description: "HP stories about Snape's relationship with Lily",
     author: "Luke Schierer",
     layout: "standard",
+    imports: ["/styles/BookmarksList.css"],
     data: {},
   };
 };
 
-import getLayout from "../../../layouts/Bookmarks.ts";
-
-export { getFrontmatter, getBody, getLayout };
+export { getFrontmatter, getBody };

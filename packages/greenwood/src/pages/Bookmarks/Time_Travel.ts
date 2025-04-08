@@ -49,12 +49,11 @@ const getFrontmatter: GetFrontmatter = async () => {
     title: "Time Travel",
     collection: "Bookmarks",
     description: "HP stories focusing on travels through time",
+    imports: ["/styles/BookmarksList.css"],
     author: "Luke Schierer",
     layout: "standard",
     data: {},
   };
 };
 
-import getLayout from "../../layouts/Bookmarks.ts";
-
-export { getFrontmatter, getBody, getLayout };
+export { getFrontmatter, getBody };

@@ -22,7 +22,7 @@ or approves of the badges' second message) against her.
 [blood status]: ../../../culture/Class_and_Blood/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Salazar]: ../../Slytherin/Salazar/
-[Ernie]: ../../macmillan
+[Ernie]: ../../Macmillan/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>/
 
 [^211004-15]:

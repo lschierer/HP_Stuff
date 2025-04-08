@@ -53,10 +53,9 @@ const getFrontmatter: GetFrontmatter = async () => {
     description: "HP stories in which Harry is paired with Susan Bones",
     author: "Luke Schierer",
     layout: "standard",
+    imports: ["/styles/BookmarksList.css"],
     data: {},
   };
 };
 
-import getLayout from "../../../../layouts/Bookmarks.ts";
-
-export { getFrontmatter, getBody, getLayout };
+export { getFrontmatter, getBody };

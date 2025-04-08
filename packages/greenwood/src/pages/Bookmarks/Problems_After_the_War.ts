@@ -53,9 +53,9 @@ const getFrontmatter: GetFrontmatter = async () => {
     description: "HP stories featuring problems after the war",
     author: "Luke Schierer",
     layout: "standard",
+    imports: ["/styles/BookmarksList.css"],
     data: {},
   };
 };
 
-import getLayout from "../../layouts/Bookmarks.ts";
-export { getFrontmatter, getBody, getLayout };
+export { getFrontmatter, getBody };

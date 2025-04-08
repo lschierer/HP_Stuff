@@ -44,10 +44,9 @@ const getFrontmatter: GetFrontmatter = async () => {
     description: "HP Stories Notable for the Anti-Dumbledore Bias",
     author: "Luke Schierer",
     layout: "standard",
+    imports: ["/styles/BookmarksList.css"],
     data: {},
   };
 };
 
-import getLayout from "../../layouts/Bookmarks.ts";
-
-export { getFrontmatter, getBody, getLayout };
+export { getFrontmatter, getBody };

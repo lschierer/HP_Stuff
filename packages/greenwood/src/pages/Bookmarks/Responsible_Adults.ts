@@ -13,7 +13,6 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-import getLayout from "../../layouts/Bookmarks.ts";
 
 const getBody: (
   compilation: Compilation,
@@ -60,8 +59,9 @@ const getFrontmatter: GetFrontmatter = async () => {
     description: "HP stories with responsible adults",
     author: "Luke Schierer",
     layout: "standard",
+    imports: ["/styles/BookmarksList.css"],
     data: {},
   };
 };
 
-export { getFrontmatter, getBody, getLayout };
+export { getFrontmatter, getBody };

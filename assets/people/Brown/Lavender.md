@@ -30,5 +30,5 @@ have seen no canonical documentation for the belief.
 [Harry Potter Wiki]: https://harrypotter.fandom.com/wiki/
 [The Harry Potter Lexicon]: https://www.hp-lexicon.org/
 [Hermione]: <../../Granger/Hermione Jean/>
-[Greyback]: ../../Greyback/fenrir/
+[Greyback]: ../../Greyback/Fenrir/
 [dh]: https://www.librarything.com/work/3577382

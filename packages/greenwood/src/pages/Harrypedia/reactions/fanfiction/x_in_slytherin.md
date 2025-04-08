@@ -67,7 +67,7 @@ would have no need of a revolution.
 
 [Potter]: /Harrypedia/people/Potter/
 [Longbottom]: /Harrypedia/people/Longbottom/
-[Crouch]: /Harrypedia/people/crouch/
+[Crouch]: /Harrypedia/people/Crouch/
 [Black]: /Harrypedia/people/Black/
 [Prewett]: /Harrypedia/people/Prewett/
 [Weasley]: /Harrypedia/people/Weasley/

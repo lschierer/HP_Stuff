@@ -58,9 +58,9 @@ const getFrontmatter: GetFrontmatter = async () => {
       "HP stories focusing on Snape's death, judgement, or afterlife",
     author: "Luke Schierer",
     layout: "standard",
+    imports: ["/styles/BookmarksList.css"],
     data: {},
   };
 };
 
-import getLayout from "../../../layouts/Bookmarks.ts";
-export { getFrontmatter, getBody, getLayout };
+export { getFrontmatter, getBody };

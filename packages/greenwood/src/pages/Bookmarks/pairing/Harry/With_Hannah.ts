@@ -54,11 +54,10 @@ const getFrontmatter: GetFrontmatter = async () => {
     collection: "Bookmarks",
     description: "HP stories with Harry and Hannah Abbott paired",
     author: "Luke Schierer",
-    layout: "stanard",
+    layout: "standard",
+    imports: ["/styles/BookmarksList.css"],
     data: {},
   };
 };
 
-import getLayout from "../../../../layouts/Bookmarks.ts";
-
-export { getFrontmatter, getBody, getLayout };
+export { getFrontmatter, getBody };

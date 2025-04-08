@@ -67,4 +67,4 @@ Stories like this include, but are not limited to:
 - stowfords. _[First Steps](https://www.fanfiction.net/s/4257626/)_ Published: 2008-05-15. Updated: 2009-04-30. See [Chapter 5](https://www.fanfiction.net/s/4257626/5/First-Steps).
 
 [Immigration]: /Harrypedia/culture/immigration/
-[Condescension]: /Harrypedia/culture/condissention/
+[Condescension]: /Harrypedia/culture/Condissention/

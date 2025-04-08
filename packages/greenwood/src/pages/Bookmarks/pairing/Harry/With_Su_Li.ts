@@ -14,8 +14,6 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-import getLayout from "../../../../layouts/Bookmarks.ts";
-
 const getBody: (
   compilation: Compilation,
   page: Page,
@@ -54,8 +52,9 @@ const getFrontmatter: GetFrontmatter = async () => {
     description: "HP stories in which Harry is paired with Su Li",
     author: "Luke Schierer",
     layout: "standard",
+    imports: ["/styles/BookmarksList.css"],
     data: {},
   };
 };
 
-export { getFrontmatter, getBody, getLayout };
+export { getFrontmatter, getBody };
