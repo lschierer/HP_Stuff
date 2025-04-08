@@ -57,6 +57,9 @@ importers:
       jiti:
         specifier: ^2.4.2
         version: 2.4.2
+      linkinator:
+        specifier: ^6.1.2
+        version: 6.1.2(encoding@0.1.13)
       lint-staged:
         specifier: ^15.5.0
         version: 15.5.0
@@ -5534,6 +5537,10 @@ packages:
   functions-have-names@1.2.3:
     resolution: {integrity: sha512-xckBUXyTIqT97tq2x2AMb+g163b5JFysYk0x4qxNFwbfQkmNZoiRHb6sPzI9/QV33WeuvVYBUIiD4NzNIyqaRQ==}
 
+  gaxios@6.7.1:
+    resolution: {integrity: sha512-LDODD4TMYx7XXdpwxAVRAIAuB0bzv0s+ywFonY46k126qzQHT9ygyoa9tncmOiQmmDrik65UYsEkv3lbfqQ3yQ==}
+    engines: {node: '>=14'}
+
   gedcom-ts@1.1.1:
     resolution: {integrity: sha512-jd1HUhVM22yjcJCMotc47dir8Jk1qlNibD41hGBcm+/kFG02cEtudYPkq+p4aHfWblWq5ecm5D91Rjglghq5hw==}
 
@@ -5880,6 +5887,9 @@ packages:
 
   htmlparser2@8.0.2:
     resolution: {integrity: sha512-GYdjWKDkbRLkZ5geuHs5NY1puJ+PXwP7+fHPRz06Eirsb9ugf6d8kkXav6ADhcODhFFPMIXyxkxSuMf3D6NCFA==}
+
+  htmlparser2@9.1.0:
+    resolution: {integrity: sha512-5zfg6mHUoaer/97TxnGpxmbR7zJtPwIYFMZ/H5ucTlPZhKvtum05yiPK3Mgai3a0DyVxv7qYqoweaEd2nrYQzQ==}
 
   http-assert@1.5.0:
     resolution: {integrity: sha512-uPpH7OKX4H25hBmU6G1jWNaqJGpTXxey+YOUizJUAgu0AjLUeC8D73hTrhvDS5D+GJN1DN1+hhc/eF/wpxtp0w==}
@@ -6615,6 +6625,11 @@ packages:
     resolution: {integrity: sha512-6R1evfF/YPACIF01Lb2Dm0v2GZbJo06+wX5v1TByKt2drvkI2A2LlOgAOG1T/rxTlGEO4rdOlSrQabxmy7tfNg==}
     engines: {node: '>= 0.10'}
 
+  linkinator@6.1.2:
+    resolution: {integrity: sha512-PndSrQe21Hf4sn2vZldEzJmD0EUJbIsEy4jcZLcHd6IZfQ6rC6iv+Fwo666TWM9DcXjbCrHpxnVX6xaGrcJ/eA==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   lint-staged@15.5.0:
     resolution: {integrity: sha512-WyCzSbfYGhK7cU+UuDDkzUiytbfbi0ZdPy2orwtM75P3WTtQBzmG40cCxIa8Ii2+XjfxzLH6Be46tUfWS85Xfg==}
     engines: {node: '>=18.12.0'}
@@ -6798,6 +6813,11 @@ packages:
     resolution: {integrity: sha512-EeQZieAQmsI6c2tWLx0ETd0VjPwLV8qi+HT0dIsfVMERm0rCIuXfRvZXJbo1SgUi++lmuR1LVY+QzgNiLNvVpw==}
     peerDependencies:
       marked: '>=13 <16'
+
+  marked@13.0.3:
+    resolution: {integrity: sha512-rqRix3/TWzE9rIoFGIn8JmsVfhiuC8VIQ8IdX5TfzmeBucdY05/0UlzKaw0eVtpcN/OdVFpBk7CjKGo9iHJ/zA==}
+    engines: {node: '>= 18'}
+    hasBin: true
 
   marked@14.1.3:
     resolution: {integrity: sha512-ZibJqTULGlt9g5k4VMARAktMAjXoVnnr+Y3aCqW1oDftcV4BA3UmrBifzXoZyenHRk75csiPu9iwsTj4VNBT0g==}
@@ -8935,6 +8955,9 @@ packages:
     resolution: {integrity: sha512-61g9pCh0Vnh7IutZjtLGGpTA355+OPn2TyDv/6ivP2h/AdAVX9azsoxmg2/M6nZeQZNYBEwIcsne1mJd9oQItQ==}
     engines: {node: '>= 18'}
 
+  server-destroy@1.0.1:
+    resolution: {integrity: sha512-rb+9B5YBIEzYcD6x2VKidaa+cqYBJQKnU4oe4E3ANwRRN56yk/ua1YCJT1n21NTS8w6CcOclAKNP3PhdCXKYtQ==}
+
   set-function-length@1.2.2:
     resolution: {integrity: sha512-pgRc4hJ4/sNjWCSS9AmnS40x3bNMDTknHgL5UaMBTMyJnU90EgWh1Rz+MC9eFu4BuN/UwZjKQuY/1v3rM7HMfg==}
     engines: {node: '>= 0.4'}
@@ -9135,6 +9158,10 @@ packages:
 
   sprintf-js@1.1.3:
     resolution: {integrity: sha512-Oo+0REFV59/rz3gfJNKQiBlwfHaSESl1pcGyABQsnnIfWOFt6JNj5gCog2U6MLZ//IGYD+nA8nI+mTShREReaA==}
+
+  srcset@5.0.1:
+    resolution: {integrity: sha512-/P1UYbGfJVlxZag7aABNRrulEXAwCSDo7fklafOQrantuPTDmYgijJMks2zusPCVzgW9+4P69mq7w6pYuZpgxw==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
 
   sshpk@1.18.0:
     resolution: {integrity: sha512-2p2KJZTSqQ/I3+HX42EpYOa2l3f8Erv8MWKsy2I9uf4wA7yFIkXRffYdsx86y6z4vHtV8u7g+pPlr8/4ouAxsQ==}
@@ -16289,6 +16316,17 @@ snapshots:
 
   functions-have-names@1.2.3: {}
 
+  gaxios@6.7.1(encoding@0.1.13):
+    dependencies:
+      extend: 3.0.2
+      https-proxy-agent: 7.0.6
+      is-stream: 2.0.1
+      node-fetch: 2.7.0(encoding@0.1.13)
+      uuid: 9.0.1
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+
   gedcom-ts@1.1.1: {}
 
   get-caller-file@2.0.5: {}
@@ -16900,6 +16938,13 @@ snapshots:
   html-whitespace-sensitive-tag-names@3.0.1: {}
 
   htmlparser2@8.0.2:
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+      domutils: 3.2.2
+      entities: 4.5.0
+
+  htmlparser2@9.1.0:
     dependencies:
       domelementtype: 2.3.0
       domhandler: 5.0.3
@@ -17598,6 +17643,22 @@ snapshots:
 
   link-types@1.1.0: {}
 
+  linkinator@6.1.2(encoding@0.1.13):
+    dependencies:
+      chalk: 5.4.1
+      escape-html: 1.0.3
+      gaxios: 6.7.1(encoding@0.1.13)
+      glob: 10.4.5
+      htmlparser2: 9.1.0
+      marked: 13.0.3
+      meow: 13.2.0
+      mime: 4.0.7
+      server-destroy: 1.0.1
+      srcset: 5.0.1
+    transitivePeerDependencies:
+      - encoding
+      - supports-color
+
   lint-staged@15.5.0:
     dependencies:
       chalk: 5.4.1
@@ -17820,6 +17881,8 @@ snapshots:
     dependencies:
       github-slugger: 2.0.0
       marked: 14.1.3
+
+  marked@13.0.3: {}
 
   marked@14.1.3: {}
 
@@ -20637,6 +20700,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  server-destroy@1.0.1: {}
+
   set-function-length@1.2.2:
     dependencies:
       define-data-property: 1.1.4
@@ -20904,6 +20969,8 @@ snapshots:
   sprintf-js@1.0.3: {}
 
   sprintf-js@1.1.3: {}
+
+  srcset@5.0.1: {}
 
   sshpk@1.18.0:
     dependencies:
