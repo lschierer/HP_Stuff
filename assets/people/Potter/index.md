@@ -16,8 +16,8 @@
   * She uses two different colored lines, and we know that [Iolanthe] was the *granddauter* of [Ignotus], not his daugter as a litteral reading of the graphic would indicate.  Thus I believe that the places that we see the lighter coloured line, as we do between the two of them, indicates that more than one generation is passing between the names shown.
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Ignotus]: /Harrypedia/people/peverell/ignotus/
-[Iolanthe]: /Harrypedia/people/peverell/Iolanthe/
+[Ignotus]: /Harrypedia/people/Peverell/ignotus/
+[Iolanthe]: /Harrypedia/people/Peverell/Iolanthe/
 
 [^241222-1]: I cannot find the original, not even in the [Internet Archive] but [here](https://harrypotter.fandom.com/wiki/Potter_family?file=Potterfamilytree-pottermore.jpg) is an archived copy.
 

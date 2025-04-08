@@ -20,8 +20,8 @@ rest of the [Department of Magical Law Enforcement][MLE] before [Umbridge][]
 starts to misuse them?
 
 [MLE]: /Harrypedia/culture/government
-[Amelia Bones]: /Harrypedia/people/bones/Amelia Susan/
-[Umbridge]: /Harrypedia/people/umbridge/Dolores Jane/
+[Amelia Bones]: /Harrypedia/people/Bones/Amelia Susan/
+[Umbridge]: /Harrypedia/people/Umbridge/Dolores Jane/
 
 Specifically looking at both the arrest of [Hagrid][] and the handling of
 [Sirius's][SB] escape, I strongly suspect that his actions are at best quasi-legal

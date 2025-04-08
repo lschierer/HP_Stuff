@@ -33,7 +33,7 @@ One can see how this neatly fits as a nearly drop in replacement. The pure blood
 
 It is totally unnecessary to replace one of the few relatively reasonable backstories that Mrs. Rowling has given us. There are plenty of plot holes in this universe, let us not create more of them.
 
-[Umbridge]: /Harrypedia/people/umbridge/Dolores Jane/
+[Umbridge]: /Harrypedia/people/Umbridge/Dolores Jane/
 
 [^241127-2]: Mrs. J. K. Rowling. _[Short Stories from Hogwarts of Power, Politics and Pesky Poltergeists]_. Pottermore Publishing (2016)
 

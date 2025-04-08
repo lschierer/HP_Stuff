@@ -19,13 +19,13 @@ The first chapter, as is expected _of_ a first chapter, has more questions than 
   - If placed at some subsequent time, there is a window of time that [Harry] is incredibly vulnerable.
 
 [Hagrid]: /Harrypedia/people/hagrid/rubeus//
-[Dursley]: /Harrypedia/people/dursley//
+[Dursley]: /Harrypedia/people/Dursley/
 [Ministry]: /Harrypedia/culture/government//
 [Petunia]: /Harrypedia/people/Evans/Petunia/
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva//
 [Lily]: </Harrypedia/peopleEvans/Lily J/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Vernon]: /Harrypedia/people/dursley/vernon//
+[Vernon]: /Harrypedia/people/Dursley/Vernon/
 [Dickens]: https://en.wikipedia.org/wiki/Charles_Dickens
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>/

@@ -7,7 +7,7 @@ first impressions. Whatever I may once have thought, as I have come to think
 more deeply about the series, Hermione is no longer one of my favourite characters. I think that is why when I first started reading fan fiction I was
 so strongly drawn to the cannon [Harry]/[Ginny] pairing. Of the female characters in the books, few get consistently positive portrayals, and of those, only [Harry] only _really_ relates to Hermione, [Ginny], and [Luna]. [Ginny] and [Luna] are long enough topics to deserve their own pages.
 
-[Luna]: /Harrypedia/people/lovegood/Luna/
+[Luna]: /Harrypedia/people/Lovegood/Luna/
 [The_Half_Blood_Prince]: https://www.schierer.org/~luke/log/fiction/Harry_Potter/The_Half_Blood_Prince/
 
 #### Relating to other people's analysis
@@ -162,7 +162,7 @@ stand out.
 
 [Fleur Delacour]: </Harrypedia/people/Delacour/Fleur Isabelle/>
 [Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>
-[Bill]: /Harrypedia/people/weasley/William Arthur/
+[Bill]: /Harrypedia/people/Weasley/William Arthur/
 
 Hermione researches *everything* impulsively. She might not have known much
 about Veela at the world cup, but after seeing the guys react to them there,
@@ -339,8 +339,8 @@ year, though it is anyone's guess which specific event would be one too many.
 [Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 [Black]: </Harrypedia/people/Black/Sirius III/>
-[Lavender]: /Harrypedia/people/brown/Lavender/
-[McLaggen]: /Harrypedia/people/mclaggen/Cormac/
+[Lavender]: /Harrypedia/people/Brown/Lavender/
+[McLaggen]: /Harrypedia/people/McLaggen/Cormac/
 [TSWoHA]: https://www.fanfiction.net/s/5858832
 [Hogwarts]: /Harrypedia/Hogwarts/
 [Confundus]: /Harrypedia/magic/spells/confundus/
@@ -394,7 +394,7 @@ year, though it is anyone's guess which specific event would be one too many.
     I actually do not think she _was_ right, why could her parents not
     have been protected the way the [Dursleys] were?
 
-[Dursleys]: /Harrypedia/people/dursley/
+[Dursleys]: /Harrypedia/people/Dursley/
 
 [^240101-2]:
     Mrs. J. K. Rowling.

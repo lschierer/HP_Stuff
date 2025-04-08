@@ -29,7 +29,7 @@ In addition to the legitimate unanswered difficult questions that an author atte
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>/
 [Hogwarts]: /Harrypedia/Hogwarts//
-[Neville]: /Harrypedia/people/longbottom/Neville/
+[Neville]: /Harrypedia/people/Longbottom/Neville/
 
 [^240424-4]:
     Mrs. J. K. Rowling.

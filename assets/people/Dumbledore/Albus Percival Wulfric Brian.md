@@ -267,9 +267,9 @@ excuse to prevent [Sirius][SB3] from being able to adopt [Harry]?
 [RBW]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [MM]: /Harrypedia/people/McGonagall/Minerva/
 [PS]: /Harrypedia/people/sprout/Pomona/
-[FF]: /Harrypedia/people/flitwick/Filus/
-[DF1]: /Harrypedia/people/dursley/
-[Weasleys]: /Harrypedia/people/weasley/
+[FF]: /Harrypedia/people/Flitwick/Filus/
+[DF1]: /Harrypedia/people/Dursley/
+[Weasleys]: /Harrypedia/people/Weasley/
 [Horcruxes]: /Harrypedia/magic/dark/Horcruxes/
 [Malfoy]: /Harrypedia/people/Malfoy/
 [HPwc]: /Harrypedia/culture/government/

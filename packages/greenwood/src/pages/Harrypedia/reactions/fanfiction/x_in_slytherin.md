@@ -66,21 +66,21 @@ influence would then extend _far further_ than just that quarter. [Riddle]
 would have no need of a revolution.
 
 [Potter]: /Harrypedia/people/Potter/
-[Longbottom]: /Harrypedia/people/longbottom/
+[Longbottom]: /Harrypedia/people/Longbottom/
 [Crouch]: /Harrypedia/people/crouch/
 [Black]: /Harrypedia/people/Black/
-[Prewett]: /Harrypedia/people/prewett/
-[Weasley]: /Harrypedia/people/weasley/
+[Prewett]: /Harrypedia/people/Prewett/
+[Weasley]: /Harrypedia/people/Weasley/
 [Lucius]: /Harrypedia/people/Malfoy/Lucius Abraxas/
 [Ravenclaw]: /Harrypedia/Hogwarts/ravenclaw/
 [Gryffindor]: /Harrypedia/Hogwarts/gryffindor/
 [Sorting Hat]: /Harrypedia/Hogwarts/sorting_hat
 [Hat]: /Harrypedia/Hogwarts/sorting_hat
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>
-[Fred]: /Harrypedia/people/weasley/fred/
-[George]: /Harrypedia/people/weasley/george/
-[Percy]: /Harrypedia/people/weasley/Percy Ignatius/
-[Neville]: /Harrypedia/people/longbottom/Neville/
+[Fred]: /Harrypedia/people/Weasley/fred/
+[George]: /Harrypedia/people/Weasley/george/
+[Percy]: /Harrypedia/people/Weasley/Percy Ignatius/
+[Neville]: /Harrypedia/people/Longbottom/Neville/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [Slytherin]: /Harrypedia/Hogwarts/slytherin/

@@ -88,11 +88,11 @@ my statement that it contradicts the origin stories).
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Henry]: /Harrypedia/people/Potter/henry/
 [Sirius]: </Harrypedia/people/Black/Sirius III/>/
-[Arthur]: /Harrypedia/people/weasley/Arthur/
+[Arthur]: /Harrypedia/people/Weasley/Arthur/
 [Linfred]: /Harrypedia/people/Potter//
 [Black]: /Harrypedia/people/Black//
 [Potter]: /Harrypedia/people/Potter//
-[Peverell]: /Harrypedia/people/peverell//
+[Peverell]: /Harrypedia/people/Peverell/
 [Malfoy]: /Harrypedia/people/Malfoy//
 [GSP1]: https://aaran-st-vines.nsns.fanficauthors.net/Great_Scott_Potter_This_is_War
 [GSP2]: https://aaran-st-vines.nsns.fanficauthors.net/Great_Scott_Potter_This_is_War

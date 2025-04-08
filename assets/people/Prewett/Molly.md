@@ -80,12 +80,12 @@ On the other hand, it is easy to be over sensitive.
   reliance on public perception, this really fits in with that.
 
 [Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
-[Lovegoods]: /Harrypedia/people/lovegood/
-[Weasleys]: /Harrypedia/people/weasley/
+[Lovegoods]: /Harrypedia/people/Lovegood/
+[Weasleys]: /Harrypedia/people/Weasley/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
-[Luna]: /Harrypedia/people/lovegood/Luna/
+[Luna]: /Harrypedia/people/Lovegood/Luna/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Xeno]: /Harrypedia/people/lovegood/Xenophilius/
+[Xeno]: /Harrypedia/people/Lovegood/Xenophilius/
 [Red Hen Publications]: https://www.redhen-publications.com/
 [RHPMolly]: https://www.redhen-publications.com/molly.html
 
@@ -198,13 +198,13 @@ influenced by the various depictions I have read.
   school. I doubt Molly approved. I strongly suspect that she considers girls
   playing [Quidditch] to be unlady-like.
 
-[Arthur]: /Harrypedia/people/weasley/Arthur/
-[Bill]: /Harrypedia/people/weasley/William Arthur/
+[Arthur]: /Harrypedia/people/Weasley/Arthur/
+[Bill]: /Harrypedia/people/Weasley/William Arthur/
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Sirius]: </Harrypedia/people/Black/Sirius III/>
-[Weasley]: /Harrypedia/people/weasley/
-[Weasleys]: /Harrypedia/people/weasley/
+[Weasley]: /Harrypedia/people/Weasley/
+[Weasleys]: /Harrypedia/people/Weasley/
 [Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Quidditch]: /Harrypedia/quidditch/

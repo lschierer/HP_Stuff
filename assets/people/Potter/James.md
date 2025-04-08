@@ -161,7 +161,7 @@ woods.[^210511-3]
 > them off within days of each other, due to their advanced age, and James
 > Potter then inherited Ignotus [Peverell]’s Invisibility Cloak.[^210128-29]
 
-[Peverell]: /Harrypedia/people/peverell/
+[Peverell]: /Harrypedia/people/Peverell/
 
 ### When did he get the Cloak
 

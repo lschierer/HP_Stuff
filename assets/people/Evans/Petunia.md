@@ -3,6 +3,6 @@
 
 - Married [Vernon Dursley][VD].
 
-[VD]: /Harrypedia/people/dursley/vernon/
+[VD]: /Harrypedia/people/Dursley/Vernon/
 
 ### Speculation

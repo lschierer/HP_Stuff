@@ -40,7 +40,7 @@ breaking height is almost always commented on when describing someone.
 
 [James]: /Harrypedia/people/Potter/James//
 [Hagrid]: /Harrypedia/people/hagrid/rubeus//
-[Flitwick]: /Harrypedia/people/flitwick/Filus/
+[Flitwick]: /Harrypedia/people/Flitwick/Filus/
 
 Interestingly, I have noted a similar issue with girls in at least one fan
 fiction.[^220726-8] The key consideration is that girls' growth drastically

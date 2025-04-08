@@ -46,9 +46,9 @@ In a world where magical contracts can in fact be binding, I can see how laws _m
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>/
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Umbridge]: /Harrypedia/people/umbridge/Dolores Jane/
+[Umbridge]: /Harrypedia/people/Umbridge/Dolores Jane/
 [Malfoy]: /Harrypedia/people/Malfoy//
-[Molly]: /Harrypedia/people/prewett/Molly/
+[Molly]: /Harrypedia/people/Prewett/Molly/
 [ttpbc]: https://www.fanfiction.net/s/13987875/
 [Ministers of Magic]: https://www.rowlingindex.org/work/msmpm/
 [the Goblet of Fire]: https://www.librarything.com/work/113

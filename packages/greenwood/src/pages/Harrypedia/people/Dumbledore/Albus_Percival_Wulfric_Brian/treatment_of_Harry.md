@@ -199,8 +199,8 @@ complicated nature of the thorny problem to confuse the listener.
 [Dorea Black]: /Harrypedia/people/Black/Dorea/
 [James]: /Harrypedia/people/Potter/James/
 [Malfoys]: /Harrypedia/people/Malfoy/
-[Dursleys]: /Harrypedia/people/dursley/
-[abusive environment]: /Harrypedia/people/dursley/
+[Dursleys]: /Harrypedia/people/Dursley/
+[abusive environment]: /Harrypedia/people/Dursley/
 [AD1]: ../
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>

@@ -107,16 +107,16 @@ to create one big happy Weasley-Potter-Malfoy family.
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>/
-[George]: /Harrypedia/people/weasley/george//
-[Neville]: /Harrypedia/people/longbottom/Neville/
-[Percy]: /Harrypedia/people/weasley/Percy Ignatius/
+[George]: /Harrypedia/people/Weasley/george//
+[Neville]: /Harrypedia/people/Longbottom/Neville/
+[Percy]: /Harrypedia/people/Weasley/Percy Ignatius/
 [Audrey]: /Harrypedia/people//
-[Luna]: /Harrypedia/people/lovegood/Luna/
-[Hannah Abbott]: /Harrypedia/people/abbott/hannah//
-[Rolf Scamander]: /Harrypedia/people/scamander/Rolf/
+[Luna]: /Harrypedia/people/Lovegood/Luna/
+[Hannah Abbott]: /Harrypedia/people/Abbott/hannah//
+[Rolf Scamander]: /Harrypedia/people/Scamander/Rolf/
 [Quidditch]: ../quidditch/
 [Malfoy]: /Harrypedia/people/Malfoy//
-[Hannah]: /Harrypedia/people/abbott/hannah//
+[Hannah]: /Harrypedia/people/Abbott/hannah//
 [Holyhead Harpies]: ../quidditch/
 
 [^AG]: Mrs. J. K. Rowling. "[Draco Malfoy]" 2014-12-22.

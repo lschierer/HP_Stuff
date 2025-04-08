@@ -45,12 +45,12 @@ They do make for interesting speculation though.
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Hogwarts]: /Harrypedia/Hogwarts/
 [Lockhart]: /Harrypedia/people/lockhart/Gilderoy/
-[Luna]: /Harrypedia/people/lovegood/Luna/
-[Moody]: /Harrypedia/people/moody/Alastor/
-[Mrs. Weasley]: /Harrypedia/people/prewett/Molly/
+[Luna]: /Harrypedia/people/Lovegood/Luna/
+[Moody]: /Harrypedia/people/Moody/Alastor/
+[Mrs. Weasley]: /Harrypedia/people/Prewett/Molly/
 [Oliver Wood]: /Harrypedia/people/wood/Oliver/
 [Oliver]: /Harrypedia/people/wood/Oliver/
 [Quidditch]: /Harrypedia/quidditch/
 [Ravenclaw]: /Harrypedia/Hogwarts/ravenclaw/
 [Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
-[Weasley]: /Harrypedia/people/weasley/
+[Weasley]: /Harrypedia/people/Weasley/

@@ -54,7 +54,7 @@ of what is available or better.
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>/
 [Malfoy]: /Harrypedia/people/Malfoy/
-[Mr. Weasley]: /Harrypedia/people/weasley/Arthur/
+[Mr. Weasley]: /Harrypedia/people/Weasley/Arthur/
 [pgO1]: https://www.fanfiction.net/s/12954205
 [pgO2]: https://www.fanfiction.net/s/12954205
 [clothing]: ../clothing/

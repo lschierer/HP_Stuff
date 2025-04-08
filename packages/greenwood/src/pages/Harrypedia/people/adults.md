@@ -33,7 +33,7 @@ many things that make him an incredibly ambiguous figure. It is not a great
 leap to paint him as the Dark Lord of the prophecy, who has marked [Harry],
 not physically, but metaphorically, as the one who could be his equal.[^210521-8]
 
-[Molly]: ../prewett/Molly/
+[Molly]: ../Prewett/Molly/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Dumbledore]: <../Dumbledore/Albus Percival Wulfric Brian/>
 [Riddle]: <../Riddle/Tom Marvolo/>

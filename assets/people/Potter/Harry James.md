@@ -17,7 +17,7 @@ impossible essentially requires something along the lines of his mother's
 sacrifice not just magically protected him from Tom, but also magically
 protected him from the worst of the effects of his upbringing.
 
-[Dursleys]: /Harrypedia/people/dursley/
+[Dursleys]: /Harrypedia/people/Dursley/
 
 [_Don't Touch Me_](https://archiveofourown.org/works/702684) by ivybelle
 explores as a one-shot from when Harry and [Ginny] are dating the idea that
@@ -191,8 +191,8 @@ in the cupboard. Since both are speculation, we do not know which.
 [Lily]: </Harrypedia/peopleEvans/Lily J/>
 [James]: /Harrypedia/people/Potter/James/
 [Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
-[Fred]: /Harrypedia/people/weasley/fred/
-[George]: /Harrypedia/people/weasley/george/
+[Fred]: /Harrypedia/people/Weasley/fred/
+[George]: /Harrypedia/people/Weasley/george/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [SS1]: /Harrypedia/people/Snape/Severus/
 

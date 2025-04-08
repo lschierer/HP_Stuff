@@ -58,10 +58,10 @@ the [Potters] are mostly pure-bloods. The same is probably true of the
 minority who protested their inclusion on the Sacred Twenty-Eight list.
 
 [Potters]: /Harrypedia/people/Potter//
-[Weasleys]: /Harrypedia/people/weasley/
-[Weasley]: /Harrypedia/people/weasley/
-[Longbottoms]: /Harrypedia/people/longbottom/
-[Abbotts]: /Harrypedia/people/abbott/
+[Weasleys]: /Harrypedia/people/Weasley/
+[Weasley]: /Harrypedia/people/Weasley/
+[Longbottoms]: /Harrypedia/people/Longbottom/
+[Abbotts]: /Harrypedia/people/Abbott/
 
 The [Weasleys] apparently became notorious for their protest, and incited a
 great deal of hatred. That hatred in a Renaissance, if not positively Medieval
@@ -104,7 +104,7 @@ creating a feedback mechanism into the next generation.
 
 [Hogwarts]: /Harrypedia/Hogwarts/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>/
-[Arthur]: /Harrypedia/people/weasley/Arthur/
+[Arthur]: /Harrypedia/people/Weasley/Arthur/
 
 Eventually there are too many of them for one house at [Hogwarts]. More than
 a quarter of the population strongly supports blood status. More than a quarter
@@ -137,7 +137,7 @@ like Susan [Bones] or Hannah Abbott on one hand and Zacharias Smith
 on the other. We have Ravenclaws who are members of the DA, and others who
 steal from Luna.
 
-[Bones]: /Harrypedia/people/bones/
+[Bones]: /Harrypedia/people/Bones/
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>/
 
 The only real argument against this is the distribution of first generation

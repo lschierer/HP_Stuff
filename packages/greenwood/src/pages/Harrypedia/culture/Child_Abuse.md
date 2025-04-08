@@ -37,9 +37,9 @@ The obvious exception to this is [Walburga], who from all accounts had no proble
 [house elves]: /Harrypedia/beings/elves/house_elf/
 [MACUSA]: /Harrypedia/macusa/
 [Ministry of Magic]: /Harrypedia/culture/government/
-[Dursley]: /Harrypedia/people/dursley/
+[Dursley]: /Harrypedia/people/Dursley/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Vernon]: /Harrypedia/people/dursley/vernon//
+[Vernon]: /Harrypedia/people/Dursley/Vernon/
 [Petunia]: /Harrypedia/people/Evans/Petunia/
 [unreliable narrator]: https://wikipedia.org/wiki/Unreliable_narrator
 
