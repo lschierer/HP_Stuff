@@ -97,7 +97,7 @@ We seem to have:
   above. It is also interesting that it is normal spoken English where nothing
   else we see of magic is.
 
-[spells]: <./spells/>
+[spells]: ./spells/
 [BoST]: https://magicscrapbook.tumblr.com/post/162085200042/book-of-spells-transcript
 [hpl1]: https://www.hp-lexicon.org/thing/gamps-law-of-elemental-transfiguration/
 [AO1]: https://web.archive.org/

@@ -11,9 +11,9 @@ and just opinion pieces and commentators are working with an almost blank slate.
 
 
 > James Potter
-
+>
 > Born 27 March 1960
-
+>
 > Died 31 October 1981[^210128-23]
 
 
@@ -61,11 +61,11 @@ after she herself has fallen out with [Snape]?
 
 
 > "Quirrell said he hates me because he hated my father. Is that true?”
-
+>
 > “Well, they did rather detest each other. Not unlike yourself and Mr. Malfoy. And then, your father did something Snape could never forgive.”
-
+>
 > “What?”
-
+>
 > “He saved his life.”[^210128-5]
 
 
@@ -80,17 +80,8 @@ after she herself has fallen out with [Snape]?
 
 > “Black and Potter. Ringleaders of their little gang. Both very bright, of course exceptionally bright, in fact but I don’t think we’ve ever had such a pair of troublemakers”[^210128-19]
 
-It is interesting that so many people assume that James was a total idiot. I do
-not think that a realistic take on his character - I do not think anyone would
-say that [McGonagall] is given to false or light praise. We know he was good
-at transfiguration, but I think most people dismiss that because his only known
-accomplishment is the animagus transformation, and [Pettigrew] also accomplished that. My take is that it is actually a testament to James' skills
-that he was able to coach the unskilled [Pettigrew] through the process. I take it as a given that [Sirius] did not have the patience even pre-Azkaban, to help their slower less capable roommate through this achievement. I also wonder what other classes he took, and which ones he did how well at. Did
-he take Ancient Runes or Arithmancy? Who was top of the year at Defence?
-James' father was famous for potion making, perhaps James did not inherit all
-of his father's skills, but it seems unlikely that he did _poorly_ at the
-subject - his father would have tutored him over the summers should he have
-needed it. [Snape] and [Lily] are prodigies, and [Snape] seems to expect _everyone_ to find potions as intuitive as he does, so I take any disparagement he makes with a fairly large and active amount of suspicion.
+It is interesting that so many people assume that James was a total idiot. I do not think that a realistic take on his character - I do not think anyone would say that [McGonagall] is given to false or light praise. We know he was good
+at transfiguration, but I think most people dismiss that because his only known accomplishment is the animagus transformation, and [Pettigrew] also accomplished that. My take is that it is actually a testament to James' skills that he was able to coach the unskilled [Pettigrew] through the process. I take it as a given that [Sirius] did not have the patience even pre-Azkaban, to help their slower less capable roommate through this achievement. I also wonder what other classes he took, and which ones he did how well at. Did he take Ancient Runes or Arithmancy? Who was top of the year at Defence?  James' father was famous for potion making, perhaps James did not inherit all of his father's skills, but it seems unlikely that he did _poorly_ at the subject - his father would have tutored him over the summers should he have needed it. [Snape] and [Lily] are prodigies, and [Snape] seems to expect _everyone_ to find potions as intuitive as he does, so I take any disparagement he makes with a fairly large and active amount of suspicion.
 
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Pettigrew]: /Harrypedia/people/Pettigrew/Peter/
@@ -104,17 +95,10 @@ needed it. [Snape] and [Lily] are prodigies, and [Snape] seems to expect _everyo
 >
 > “This’ll liven you up, Padfoot,” said James quietly. “Look who it is ...”[^210128-12]
 
-I would have to find the citation, but I know I am not alone in wondering if
-this memory was tampered with. The fact that [Lupin] and [Sirius] would
-not deny anything in the brief fireplace conversation suggests that it is at
-best based on something factual, but then so too are the best lies. It would
-be a more cunning and effective plan to subtlety twist the memory to put James
-in a worse light, portray [Snape] as a more innocent victim, but leave the
-core events sufficiently in place so that when [Harry] describes what he
-sees, it rings true to those who witnessed it. The fact that the [pensieve] clearly shows the tampering in [Slughorn]'s memory does not mean it is a foolproof means of doing so.[^240422-1]
+I would have to find the citation, but I know I am not alone in wondering if this memory was tampered with. The fact that [Lupin] and [Sirius] would not deny anything in the brief fireplace conversation suggests that it is at best based on something factual, but then so too are the best lies. It would be a more cunning and effective plan to subtlety twist the memory to put James in a worse light, portray [Snape] as a more innocent victim, but leave the core events sufficiently in place so that when [Harry] describes what he sees, it rings true to those who witnessed it. The fact that the [pensieve] clearly shows the tampering in [Slughorn]'s memory does not mean it is a foolproof means of doing so.[^240422-1]
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Slughorn]: /Harrypedia/people/slughorn/Horace Eugene Flaccus/
+[Slughorn]: </Harrypedia/people/Slughorn/Horace Eugene Flaccus/>
 [pensieve]: /Harrypedia/magic/time/pensieve/
 
 [^240422-1]: See my thoughts on the [pensieve].
@@ -145,7 +129,7 @@ to behave that way to get the results she wants.
 
 > WAND: Eleven inches, mahogany[^210128-25]
 
-eleven inches is about average for a wand, it does not tell us much about James.
+Eleven inches is about average for a wand, it does not tell us much about James.
 The wood, mahogany, is not one listed on Pottermore's page about wand
 woods.[^210511-3]
 
@@ -165,25 +149,9 @@ woods.[^210511-3]
 
 ### When did he get the Cloak
 
-In book three, [Lupin] refers to seeing James use the cloak many
-times.[^210318-4] At first I was inclined to disregard this, the fact that
-[Lupin] knows that you still show up on the Marauder's Map implies that it
-was at school, but does not prove that. For all we know the two got curious
-when James inherited the cloak _after graduation_ and tested the cloak against
-the charms they had used. After all, while they had lost the map, as the
-creators, they could have recreated enough of its detection mechanisms to prove
-the test case, or alternately there may have been multiple copies of the map
-originally, only one of which was seized.[^210318-5] However, further down,
-he definitively places the cloak in James' possession by at least their fifth
-year, as it was used to get out of the castle each full moon.[^210318-6]
+In book three, [Lupin] refers to seeing James use the cloak many times.[^210318-4] At first I was inclined to disregard this, the fact that [Lupin] knows that you still show up on the Marauder's Map implies that it was at school, but does not prove that. For all we know the two got curious when James inherited the cloak _after graduation_ and tested the cloak against the charms they had used. After all, while they had lost the map, as the creators, they could have recreated enough of its detection mechanisms to prove the test case, or alternately there may have been multiple copies of the map originally, only one of which was seized.[^210318-5] However, further down, he definitively places the cloak in James' possession by at least their fifth year, as it was used to get out of the castle each full moon.[^210318-6]
 
-Given that he would not officially inherit the Cloak until his father dies, why
-was such a valuable heirloom sent with an irresponsible child to school? This
-is pure speculation, but one possibility is that James was _not_ as irresponsible as he is made out to be. By 1975 the [Riddle]'s violence was no doubt ramping up, if not already in full swing. We know, reference my discussion of James above, and my discussion of [Snape], that some of the Slytherin students are experimenting with [dark magic]. Perhaps [Fleamont] sent his son to school with the cloak as an additional layer of protection for a
-beloved, and yes, somewhat spoiled heir, knowing the boy (James) was feuding
-with such evil already. Despite his many illicit forays out after curfew, this
-supposedly irresponsible boy kept the Cloak out of larcenous[^210318-7] enemy
-hands, despite the fact that he supposedly has no cunning or intelligence.
+Given that he would not officially inherit the Cloak until his father dies, why was such a valuable heirloom sent with an irresponsible child to school? This is pure speculation, but one possibility is that James was _not_ as irresponsible as he is made out to be. By 1975 the [Riddle]'s violence was no doubt ramping up, if not already in full swing. We know, reference my discussion of James above, and my discussion of [Snape], that some of the Slytherin students are experimenting with [dark magic]. Perhaps [Fleamont] sent his son to school with the cloak as an additional layer of protection for a beloved, and yes, somewhat spoiled heir, knowing the boy (James) was feuding with such evil already. Despite his many illicit forays out after curfew, this supposedly irresponsible boy kept the Cloak out of larcenous[^210318-7] enemy hands, despite the fact that he supposedly has no cunning or intelligence.
 
 [dark magic]: /Harrypedia/magic/dark/
 [Fleamont]: /Harrypedia/people/Potter/Fleamont/
@@ -191,13 +159,7 @@ hands, despite the fact that he supposedly has no cunning or intelligence.
 
 ## Pure Speculation
 
-Consider some of the stuff [Harry] goes through in Books 1 and 2. Given
-that, Ian Hycrest speculates that with [Dumbledore][D1] and [McGonagall] even
-more distracted by the more active war that was then going on, and with
-[Slughorn] trying to avoid [Riddle]'s notice,[^210629-2] there were
-probably students openly planning on becoming Death Eaters, and openly
-preparing for their proposed careers, probably with no real repercussions.[^210629-3] In such an environment, James Potter, who hated the dark arts,[^210629-4] may have had reasons for his pranks that [Snape] and [Lily] were unwilling to acknowledge. He may, per Mr. Hycrest's theory, have been guilty of poor targeting and have occasionally over-reacted, but he was
-_reacting_ not _instigating_.
+Consider some of the stuff [Harry] goes through in Books 1 and 2. Given that, Ian Hycrest speculates that with [Dumbledore][D1] and [McGonagall] even more distracted by the more active war that was then going on, and with [Slughorn] trying to avoid [Riddle]'s notice,[^210629-2] there were probably students openly planning on becoming Death Eaters, and openly preparing for their proposed careers, probably with no real repercussions.[^210629-3] In such an environment, James Potter, who hated the dark arts,[^210629-4] may have had reasons for his pranks that [Snape] and [Lily] were unwilling to acknowledge. He may, per Mr. Hycrest's theory, have been guilty of poor targeting and have occasionally over-reacted, but he was _reacting_ not _instigating_.
 
 I am inclined to believe this view. James was, in his own mind, a sort of [Robin Hood] (who some believe may have been an earl) enacting humorous vigilante justice on those who practice [dark magic]. James knew his friends well, so he motivates [Sirius] by playing off the other's boredom rather than appealing to justice or chivalry. Appealing to boredom is more likely to actually motivate. Like the real [Robin Hood], James refuses to take himself seriously, and speaks flippantly of the revenge (he thinks of it as justice) he enacts against them. Those like [Lily] who have emotional attachments to the victims of this outlaw justice are disinclined to see beyond or beneath the light talk to the serious purpose beyond/behind it.
 
@@ -213,8 +175,8 @@ The encounter in tunnel where he saves [Snape] no doubt _does_ have something to
 If either or both of these is true, James might well have been something of a peer leader across the school despite not being a prefect. As such he might well have been an obvious choice to an unbiased observer no matter how much [Snape] resents the choice. Either or both of these might also have influenced [Lily] to begin to reevaluate him as soon as her friendship with [Snape] was (pardon the pun) severed. For I refuse to believe that his ([Snape]'s) continual influence, proclaiming his own innocence (which she wanted to believe) and Potter's guilt had no effect on the impression that lead to the one encounter between them we see in [Snape]'s memory.
 
 [animagus]: /Harrypedia/magic/
-[Robin Hood]: https://en.wikipedia.org/wiki/Robin_Hood
-[Slughorn]: /Harrypedia/people/slughorn/Horace Eugene Flaccus/
+[Robin Hood]: https://wikipedia.org/wiki/Robin_Hood
+[Slughorn]: </Harrypedia/people/Slughorn/Horace Eugene Flaccus/>
 [D1]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 
 [^240422-3]: this is a really tempting tangent, but this page isn't about [Dumbledore].
@@ -285,29 +247,29 @@ If either or both of these is true, James might well have been something of a pe
 
 [^230628-1]:
     Mrs. J. K. Rowling.
-    \_[Harry Potter and the Sorcerer's Stone]
+    _[Harry Potter and the Sorcerer's Stone]_
     p. 82. Pottermore Limited. American Kindle Edition.
 
 [Harry Potter and the Sorcerer's Stone]: https://www.librarything.com/work/5403381/book/225886281
 
 [^210920-1]:
     Mrs. J. K. Rowling.
-    _[Harry Potter and the Deathly Hallows](https://www.goodreads.com/book/show/136251.Harry_Potter_and_the_Deathly_Hallows)_
+    _[Harry Potter and the Deathly Hallows]_
     p. 277. Pottermore Publishing. American Kindle Edition.
 
 [^210128-24]:
     Mrs. J. K. Rowling.
-    _Harry Potter and the Deathly Hallows_ p. 277 Location 8526 of 9604.
+    _[Harry Potter and the Deathly Hallows]_ p. 277 Location 8526 of 9604.
     Pottermore Publishing. American Kindle Edition.
 
 [^210128-23]:
     Mrs. J. K. Rowling.
-    _Harry Potter and the Deathly Hallows_ p. 135 Location 4200 of 9604.
+    _[Harry Potter and the Deathly Hallows]_ p. 135 Location 4200 of 9604.
     Pottermore Publishing. American Kindle Edition.
 
 [^210128-22]:
     Mrs. J. K. Rowling.
-    _Harry Potter and the Deathly Hallows_ p. 73 Location 2312 of 9604.
+    _[Harry Potter and the Deathly Hallows]_ p. 73 Location 2312 of 9604.
     Pottermore Publishing. American Kindle Edition.
 
 [^210128-21]:
@@ -409,3 +371,5 @@ If either or both of these is true, James might well have been something of a pe
     Mrs. J. K. Rowling.
     _Harry Potter and the Order of the Phoenix_ Kindle Locations 2536-2538 of 13038.
     Pottermore Limited. American Kindle Edition.
+
+[Harry Potter and the Deathly Hallows]: https://www.librarything.com/work/3577382

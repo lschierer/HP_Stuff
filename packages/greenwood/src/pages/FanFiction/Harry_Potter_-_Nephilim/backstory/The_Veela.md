@@ -35,7 +35,7 @@ The fallen angels were enraged that the evil community had been thus brought dow
 
 The good angels, seeing this backlash, ceased to meddle (with a few relatively minor exceptions centuries later) and focused their efforts on preventing the enemy from making full use of the veela. See [Appendix I] for the resulting state.
 
-[dwarfs made trolls]: ../the_dwarfs/
+[dwarfs made trolls]: ../The_Dwarfs//
 
 [^241120-5]: This battle happening entirely on the spiritual plane, and unknown to any mortal.
 
@@ -47,5 +47,5 @@ The good angels, seeing this backlash, ceased to meddle (with a few relatively m
 
 [241120-9]: <this is normal for nephil, see [The Nephilim]>
 
-[The Nephilim]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
+[The Nephilim]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Appendix_H//
 [Appendix I]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/>

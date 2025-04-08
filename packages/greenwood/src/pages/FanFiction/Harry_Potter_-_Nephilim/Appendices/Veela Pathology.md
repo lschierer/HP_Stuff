@@ -99,7 +99,7 @@ Partial veela tend to take proportionately longer, averaging the normal rate of 
 The veela's _mental_ maturation is not accelerated during this time of accelerated physical growth, putting a mentally young girl in an adult's
 body for a period of years (with all the extra self control issues adding adult hormone levels to that lack of mental maturity would imply). This is why [Fleur]'s classmates dislike her so much - people tend to expect someone who appears older to behave older. They remember the brat.
 
-[Nephilim Inheritance]: ../inheritance/
+[Nephilim Inheritance]: ../Inheritance/
 
 ### Magical Abilities
 
@@ -137,18 +137,17 @@ only to the extent her male parent was.
 
 [Appendix A]: ../Points of Divergence/
 
-[Rules of Magic]: ../rules-of-magic/
+[Rules of Magic]: ../Rules of Magic/
 
 [Magical Beings]: ../magical-beings/
 
 [Relative Power Levels]: ../Relative Power Levels/
 
 [Life Expectancy]: ../life-expectancy/
-
 [Appendix G]: ../appendix_g/
-[Appendix H]: ../appendix_h/
+[Appendix H]: ../Appendix_H//
 [Appendix I]: <../Veela Pathology/>
-[the backstory]: ../../backstory/the_veela/
+[the backstory]: ../../backstory/The_Veela/
 
 [^210916-1]: Like in _[Maskirovat][knffnm]_.
 

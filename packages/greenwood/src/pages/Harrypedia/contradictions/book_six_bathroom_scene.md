@@ -39,6 +39,7 @@ while [Malfoy][] is frozen in time.
 
 [sectumsempra]: /Harrypedia/magic/spells/sectumsempra/
 [crucio]: /Harrypedia/magic/spells/cruciatus/
+
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Malfoy]: </Harrypedia/people/Malfoy/Draco Lucius/>/
 [Snape]: /Harrypedia/people/Snape/Severus/

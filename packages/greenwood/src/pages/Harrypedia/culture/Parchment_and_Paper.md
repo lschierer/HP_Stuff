@@ -52,6 +52,7 @@ and letters (unless you are including privacy charms)).
 
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Dip pen]: https://en.wikipedia.org/wiki/Dip_pen
+
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Wikipedia]: https://en.wikipedia.org/
 

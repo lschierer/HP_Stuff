@@ -3,4 +3,4 @@
 
 See notes on the [McLaggen][] family.
 
-[McLaggen]: ../../mclaggen
+[McLaggen]: ../../McLaggen/

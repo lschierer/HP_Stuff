@@ -15,6 +15,7 @@ If [Snape] _was_ \*_actually_ quite fallen in his younger years, we do not _actu
 
 [Snape]: /Harrypedia/people/Snape/Severus/
 [James]: /Harrypedia/people/Potter/James/
+
 [Sirius]: </Harrypedia/people/Black/Sirius III/>/
 [Lupin]: </Harrypedia/people/Lupin/Remus John/>/
 [Remus]: </Harrypedia/people/Lupin/Remus John/>/

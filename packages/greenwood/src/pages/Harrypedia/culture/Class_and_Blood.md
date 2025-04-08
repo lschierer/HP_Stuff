@@ -57,7 +57,7 @@ the [Potters] are mostly pure-bloods. The same is probably true of the
 [Weasleys], [Longbottoms], [Abbotts], and any others who made up the
 minority who protested their inclusion on the Sacred Twenty-Eight list.
 
-[Potters]: /Harrypedia/people/Potter//
+[Potters]: /Harrypedia/people/Potter/
 [Weasleys]: /Harrypedia/people/Weasley/
 [Weasley]: /Harrypedia/people/Weasley/
 [Longbottoms]: /Harrypedia/people/Longbottom/
@@ -103,6 +103,7 @@ power, re-enforcing these beliefs beyond school with social connections, and
 creating a feedback mechanism into the next generation.
 
 [Hogwarts]: /Harrypedia/Hogwarts/
+
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>/
 [Arthur]: /Harrypedia/people/Weasley/Arthur/
 
@@ -138,6 +139,7 @@ on the other. We have Ravenclaws who are members of the DA, and others who
 steal from Luna.
 
 [Bones]: /Harrypedia/people/Bones/
+
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>/
 
 The only real argument against this is the distribution of first generation

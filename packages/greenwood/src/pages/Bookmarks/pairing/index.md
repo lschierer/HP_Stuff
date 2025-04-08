@@ -6,7 +6,7 @@ imports:
   - /node_modules/greenwoodspectrumtheme/components/DirectoryIndex.js type="module"
 ---
 
-Some stories are of interest primarily because of the romantic relationships they advance.  Some are simply best categorized on those grounds despite being interesting for a variety of reasons.
+Some stories are of interest primarily because of the romantic relationships they advance. Some are simply best categorized on those grounds despite being interesting for a variety of reasons.
 
 ---
 

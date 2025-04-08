@@ -16,7 +16,7 @@ engendered by the Statute of Secrecy.
 
 Merpeople, as a group, have rejected classification as [beings](../)
 despite fully qualifying for such status.[^211111-4] She seems to have split
-them into three races: [Siren](siren), [selkies](selkies), and [merrow](merrow);
+them into three races: [Siren](siren/), [selkies](selkies/), and [merrow](merrow/);
 native to the Mediterranean, Scotland, and Ireland respectively.[^211111-5] This
 fits well with what I read in a recent [Tor][] [article][tbm1] on the variety of
 mermaid myths around the world.[^211111-6]

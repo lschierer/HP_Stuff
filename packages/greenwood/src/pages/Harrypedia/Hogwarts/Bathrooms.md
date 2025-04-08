@@ -55,6 +55,7 @@ wrong, the current furror over bathrooms indicates that the concern would
 occur.[^210928-5]
 
 [Founders]: ../Founding/
+
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>/
 [Hogwarts]: ../
 [FWO1]: https://archiveofourown.org/works/28507302

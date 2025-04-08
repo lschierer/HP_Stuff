@@ -1,4 +1,3 @@
-
 ### On Adults in General
 
 One of the challenges I have noticed across children's and young adult's

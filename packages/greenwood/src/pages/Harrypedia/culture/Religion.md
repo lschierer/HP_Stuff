@@ -24,7 +24,7 @@ parents agree on their behalf. This argument that they should practice
 the "magical religion" and/or "magical holidays" immediately triggers
 the [immigration] argument.
 
-[immigration]: ../immigration/
+[immigration]: ../Immigration/
 
 [^220715-1]: Works include but are not limited to:
 

@@ -73,15 +73,16 @@ inorganic materials in pens, but flows into one's writing when using a
 quill,[^230804] there is no canonical basis for this line of thought;
 it is pure speculation.
 
-[parchment]: ../parchment_and_paper/
+[parchment]: ../Parchment_and_Paper/
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Dip pen]: https://en.wikipedia.org/wiki/Dip_pen
+
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Wikipedia]: https://en.wikipedia.org/
 
 [^231004-3]: See [wands]
 
-[wands]: /Harrypedia/magic/wands//
+[wands]: /Harrypedia/magic/wands/
 
 [^231004-1]: citation needed.
 

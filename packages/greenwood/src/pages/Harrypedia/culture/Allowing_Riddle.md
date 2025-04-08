@@ -64,7 +64,7 @@ real political power quite possibly, but within the context of some existing
 
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [Magic]: /Harrypedia/magic/
-[Ministry of Magic]: /Harrypedia/culture/government
+[Ministry of Magic]: /Harrypedia/culture/Government/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [notes]: /Harrypedia/
 [Potter Family notes]: /Harrypedia/people/Potter/

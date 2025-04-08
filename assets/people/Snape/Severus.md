@@ -215,7 +215,7 @@ especially critical to know the answer to these questions when Mrs. Rowling
 states in an interview that [Dumbledore][] thinks that dealing with horrible
 teachers is part of teaching his students about life.[^210412-6]
 
-[Slughorn]: /Harrypedia/people/slughorn/Horace Eugene Flaccus/
+[Slughorn]: /Harrypedia/people/Slughorn/Horace Eugene Flaccus/
 
 Irregardless of if he does ever actually teach, his behaviour during these "lab"
 classes is unacceptable. The labs are unsafe, and his treatment of the students

@@ -50,7 +50,8 @@ around for _centuries_. These two examples reiterate what I said discussing
 [clothing] - that magical society in fact wishes to be _different_ regardless
 of what is available or better.
 
-[paper]: ../parchment_and_paper/
+[paper]: ../Parchment_and_Paper/
+
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>/
 [Malfoy]: /Harrypedia/people/Malfoy/

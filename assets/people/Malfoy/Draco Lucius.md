@@ -52,8 +52,8 @@ back.
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
-[Goyle]: /Harrypedia/people/goyle/gregory/
-[Crabbe]: /Harrypedia/people/crabbe/vincent/
+[Goyle]: /Harrypedia/people/Goyle/Gregory/
+[Crabbe]: /Harrypedia/people/Crabbe/Vincent/
 
 [^230210-4]: Mrs. J. K. Rowling. Quoted at "[SORTING HAT SONGS][]" on [MuggleNet][]. Last Viewed: 2023-02-10.
 

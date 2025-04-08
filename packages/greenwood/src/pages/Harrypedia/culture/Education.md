@@ -59,6 +59,7 @@ would have an unconscious taboo surrounding actually teaching
 those outside the family anything not taught at school.
 
 [Weasleys]: /Harrypedia/people/Weasley/
+
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>/
 [tdgsm-1]: https://www.fanfiction.net/s/13049901

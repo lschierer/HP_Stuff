@@ -19,7 +19,7 @@ handles personally as Minister of Magic. Where is [Amelia Bones][] and the
 rest of the [Department of Magical Law Enforcement][MLE] before [Umbridge][]
 starts to misuse them?
 
-[MLE]: /Harrypedia/culture/government
+[MLE]: /Harrypedia/culture/Government/
 [Amelia Bones]: /Harrypedia/people/Bones/Amelia Susan/
 [Umbridge]: /Harrypedia/people/Umbridge/Dolores Jane/
 
@@ -62,5 +62,5 @@ noted above, Fudge did not become Minister until 1990, which explains why he
 was so unsure of himself in his role as minister throughout the first book.
 
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
-[Bagnold]: /Harrypedia/people/bagnold/Millicent/
+[Bagnold]: /Harrypedia/people/Bagnold/Millicent/
 [Malfoy]: /Harrypedia/people/Malfoy/Lucius Abraxas/

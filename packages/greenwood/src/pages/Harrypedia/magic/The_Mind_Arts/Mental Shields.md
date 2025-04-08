@@ -41,7 +41,7 @@ not explain it well, the whole thing is, for lack of a better word, magically
 intuitive to Harry once he is told what to do in [Chapter 11][].
 
 [legilimency]: /Harrypedia/magic/spells/legilimens/
-[occlumency]: /Harrypedia/magic/the_mind_arts/Occlumency/
+[occlumency]: /Harrypedia/magic/The_Mind_Arts/Occlumency/
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Chapter 11]: https://www.fanfiction.net/s/8820097/11/Harry-Potter-Choices

@@ -28,8 +28,7 @@ Individual nephil can be rated on a scale of 1 (low) to 10 (high) for access to 
 > [!NOTE]
 > Author's Note. Estimates of some key figures of in the history related in this archive are available [here][AD].
 
-
-[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Relative Power Levels/
+[AD]: /FanFiction/Harry*Potter*-\_Nephilim/Appendices/Relative Power Levels/
 [abt]: #abilities-by-type
 
 [^221216-2]:
@@ -528,7 +527,6 @@ humans, and _entirely_ outside the intended, natural hierarchy. Despite having g
 Nephil have some aspects of both. They are _mostly_ contingent beings that grow and change over time, but their use of magic is, in this universe, the use of an angelic power, and so it tends to either be 1) incredibly crippled compared to actual angels (for example, charms wear off really fast) or 2) incredibly permanent. In the canon books, you cannot remove Walburga's portrait from the wall without removing the wall, which might have been stupid for a house that will be passed down through generations, but clearly demonstrates that a momentary decision can have effects all out of proportion to the result. I am restricting that to magic used on things without immortal souls and to magic used on _other nephilim_ (or on races descending from nephilim, see [Magical Beings][AC]). Things that would be temptations to a human can be overriding compulsions to a nephil, and they are vulnerable to each other (and to others who can use similar powers) in ways that humans are not. See the notes on [contracts].
 
 [contracts]: <../Magical Contracts/>
-
 [AA]: <../Points of Divergence/>
 [AB]: <../Rules of Magic/>
 [AC]: <../Magical Beings/>
@@ -555,4 +553,5 @@ Nephil have some aspects of both. They are _mostly_ contingent beings that grow 
     [The J.K. Rowling Index](https://www.rowlingindex.org/). Publication Date: 2016-01-31. Last Viewed: 2022-06-28.
 
 [Quill of Acceptance and Book of Admittance]: https://www.rowlingindex.org/work/qaba/
+
 [EoM]: <Wikipedia. "[Edict of Milan](https://wikipedia.org/wiki/Edict_of_Milan)" Last Edited: 2024-10-23.>

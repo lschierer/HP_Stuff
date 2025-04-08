@@ -41,9 +41,10 @@ However, the typical pattern is that the author defines this magical society by 
 [Grindelwald]: /Harrypedia/people/Grindelwald/Gellert/
 [Slytherin]: /Harrypedia/Hogwarts/Slytherin/
 [Malfoy]: </Harrypedia/people/Malfoy/Draco Lucius/>
-[International Confederation of Wizards]: /Harrypedia/culture/international_confederation_of_wizards/
+
+[International Confederation of Wizards]: /Harrypedia/culture/International Confederation of Wizards/
 [Hogwarts]: /Harrypedia/Hogwarts/
-[Statute of Secrecy]: /Harrypedia/culture/international_statute_of_secrecy/
+[Statute of Secrecy]: /Harrypedia/culture/International Statute of Secrecy/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 
 [^240916-2]: I should cite some examples.

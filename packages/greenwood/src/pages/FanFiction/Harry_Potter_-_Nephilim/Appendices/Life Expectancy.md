@@ -36,7 +36,6 @@ sidebar:
 |          9          |      58.3       |      82.8       |         177.60          |
 |         10          |      58.3       |      82.8       |         209.83          |
 
-
 The above table is in part based on Ms. Felicitie C. Bell, Mr. Michael L. Miller. "[Life Tables for the United States Social Security Area 1900-2100]" 2005-08. SSA Pub. No. 11-11536.
 
 I'm using 1900's US numbers essentially because 1) I do not have UK numbers 2)

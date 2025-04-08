@@ -94,10 +94,10 @@ really be [Occlumency], but they _might_ be other magical arts that replace,
 supplement, or complement it. Perhaps even ones that do not cause damage with
 long term use.
 
-- [Instant Death](death_defence)
-- [Meditation and focus](meditation_and_focus)
-- [Mental Shields](mental_shields)
-- [Mind Palace](mind_palace)
+- [Instant Death](Death Defence)
+- [Meditation and focus](Meditation and Focus)
+- [Mental Shields](Mental Shields)
+- [Mind Palace](Mind Palace)
 - [Obfuscomency]
 
 [Imperius Curse]: /Harrypedia/magic/spells/imperio/

@@ -20,10 +20,11 @@ The first chapter, as is expected _of_ a first chapter, has more questions than 
 
 [Hagrid]: /Harrypedia/people/Hagrid/Rubeus/
 [Dursley]: /Harrypedia/people/Dursley/
-[Ministry]: /Harrypedia/culture/Government//
+[Ministry]: /Harrypedia/culture/Government/
 [Petunia]: /Harrypedia/people/Evans/Petunia/
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Lily]: </Harrypedia/people/Evans/Lily J/>
+
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Vernon]: /Harrypedia/people/Dursley/Vernon/
 [Dickens]: https://en.wikipedia.org/wiki/Charles_Dickens

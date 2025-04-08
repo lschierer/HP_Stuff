@@ -45,7 +45,7 @@ presented to us by Mrs. Rowling are woefully insufficient. There has to be
 something that you can do to defend your privacy, and potentially even the
 integrity of your mind, without risking damage to yourself.
 
-[Occlumency]: /Harrypedia/magic/the_mind_arts/Occlumency/
+[Occlumency]: /Harrypedia/magic/The_Mind_Arts/Occlumency/
 
 Lastly, as I discuss when considering [Mental Shields] as an alternative to
 [Occlumency], using Legilimency must in some way undermine any defenses you
@@ -59,7 +59,7 @@ routinely uses this skill on [Harry] throughout the books, and that it is
 only because [Harry], our narrator, is himself unaware of it, that we in turn
 are not made more aware of it.[^221216-1]
 
-[Mental Shields]: /Harrypedia/magic/the_mind_arts/Mental Shields/
+[Mental Shields]: /Harrypedia/magic/The_Mind_Arts/Mental Shields/
 
 [^20191119-9]:
     Mrs. J. K. Rowling. _Harry Potter and the Order of
@@ -73,7 +73,7 @@ are not made more aware of it.[^221216-1]
 [dark arts]: /Harrypedia/magic/dark/
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Queenie Goldstein]: /Harrypedia/people/goldstein/queenie/
+[Queenie Goldstein]: /Harrypedia/people/Goldstein/Queenie/
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 
 [^221216-1]: works include, but not limited to:

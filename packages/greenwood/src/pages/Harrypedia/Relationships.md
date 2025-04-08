@@ -96,6 +96,7 @@ to create one big happy Weasley-Potter-Malfoy family.
 
 [Shipping]: ../Shipping/
 [Astoria]: /Harrypedia/people/Greengrass/Astoria/
+
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>/
 [Scorpius]: /Harrypedia/people/Malfoy/Scorpius//
 [Greengrass]: /Harrypedia/people/Greengrass//
@@ -115,7 +116,7 @@ to create one big happy Weasley-Potter-Malfoy family.
 [Hannah Abbott]: /Harrypedia/people/Abbott/hannah//
 [Rolf Scamander]: /Harrypedia/people/Scamander/Rolf/
 [Quidditch]: ../Quidditch/
-[Malfoy]: /Harrypedia/people/Malfoy//
+[Malfoy]: /Harrypedia/people/Malfoy/
 [Hannah]: /Harrypedia/people/Abbott/hannah//
 [Holyhead Harpies]: ../Quidditch/
 

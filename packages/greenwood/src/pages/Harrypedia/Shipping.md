@@ -94,7 +94,6 @@ things that go differently from the books.
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Snape]: /Harrypedia/people/Snape/Severus/
 
-
 [^240415-1]:
     [Jeconais].
     _[This Means War]_.

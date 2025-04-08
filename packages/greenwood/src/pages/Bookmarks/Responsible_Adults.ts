@@ -13,7 +13,6 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-
 const getBody: (
   compilation: Compilation,
   page: Page,

@@ -59,7 +59,7 @@ you, but rather a complex one who requires more careful analysis to understand
 his flaws in the right context.
 
 [FI]: https://musings-of-apathy.fanficauthors.net/Family_Inseparable/index/
-[HS]: /Harrypedia/people/slughorn/Horace Eugene Flaccus/
+[HS]: /Harrypedia/people/Slughorn/Horace Eugene Flaccus/
 [hogwarts]: /Harrypedia/Hogwarts/
 
 Musings of Apathy, in writing the original version of [Family Inseparable][FI],
@@ -281,7 +281,7 @@ excuse to prevent [Sirius][SB3] from being able to adopt [Harry]?
     _[Harry Potter and the Goblet of Fire](https://www.librarything.com/work/113)_
     © 2003 Pottermore Publishing American Kindle Edition. Locations 8831-8833.
 
-[Occlumency]: /Harrypedia/magic/the_mind_arts/Occlumency/
+[Occlumency]: /Harrypedia/magic/The_Mind_Arts/Occlumency/
 
 Other acts Dumbledore would have to defend by saying it was not his actions in
 any sense. Dumbledore directed [Snape][SS] to teach [Occlumency][], and claims

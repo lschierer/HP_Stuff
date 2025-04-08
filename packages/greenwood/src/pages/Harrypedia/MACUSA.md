@@ -102,17 +102,17 @@ the magical world?[^211210-1]
 
 [^210228-8]:
     Mrs. J. K. Rowling.
-    "[The Magical Congress of the United States of America (MACUSA)](https://www.wizardingworld.com/writing-by-jk-rowling/macusa)"
+    "[The Magical Congress of the United States of America (MACUSA)](https://www.wizardingworld.com/writing-by-jk-rowling/MACUSA/)"
     Originally published on Pottermore; 2016-10-06. © WIZARDING WORLD DIGITAL 2021 https://www.wizardingworld.com/ Last Viewed 2021-02-28.
 
 [^210228-9]:
     Mrs. J. K. Rowling.
-    "[The Magical Congress of the United States of America (MACUSA)](https://www.wizardingworld.com/writing-by-jk-rowling/macusa)"
+    "[The Magical Congress of the United States of America (MACUSA)](https://www.wizardingworld.com/writing-by-jk-rowling/MACUSA/)"
     Originally published on Pottermore; 2016-10-06. © WIZARDING WORLD DIGITAL 2021 https://www.wizardingworld.com/ Last Viewed 2021-02-28.
 
 [^210228-10]:
     Mrs. J. K. Rowling.
-    "[The Magical Congress of the United States of America (MACUSA)](https://www.wizardingworld.com/writing-by-jk-rowling/macusa)"
+    "[The Magical Congress of the United States of America (MACUSA)](https://www.wizardingworld.com/writing-by-jk-rowling/MACUSA/)"
     Originally published on Pottermore; 2016-10-06. © WIZARDING WORLD DIGITAL 2021 https://www.wizardingworld.com/ Last Viewed 2021-02-28.
 
 [^210228-11]:

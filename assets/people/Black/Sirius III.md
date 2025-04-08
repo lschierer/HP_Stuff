@@ -247,7 +247,7 @@ of Azkaban][].
 [Lupin]: </Harrypedia/people/Lupin/Remus John/>
 [Malfoy]: /Harrypedia/people/Malfoy/
 [Molly]: /Harrypedia/people/Prewett/Molly/
-[Orion]: /Harrypedia/people/Black/orion/
+[Orion]: /Harrypedia/people/Black/Orion/
 [Peter Pettigrew]: /Harrypedia/people/Pettigrew/Peter/
 [Peter]: /Harrypedia/people/Pettigrew/Peter/
 [Pettigrew]: /Harrypedia/people/Pettigrew/Peter/

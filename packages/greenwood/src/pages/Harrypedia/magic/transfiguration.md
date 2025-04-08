@@ -29,8 +29,6 @@ Did [Slughorn], who certainly did not intend to damage himself, purposefully
 only incompletely transfigure himself? Or is Sovran's theory of sensory
 deprivation entirely uncanonical, despite its logical soundness?
 
-
-
 [^221220-3]:
     Mrs. J. K. Rowling.
     _[Harry Potter and the Half-Blood Prince]_
@@ -43,12 +41,13 @@ deprivation entirely uncanonical, despite its logical soundness?
 [^221220-2]: Sovran. _[Meaning of One, Part One]: Stone and Fire_. Published 2006-07-06. Updated: 2007-04-02.
 
 [Meaning of One, Part One]: https://www.siye.co.uk/siye/series.php?seriesid=54
-[Egyptians]: /Harrypedia/egypt/
+[Egyptians]: /Harrypedia/Egypt/
+
 [Bill]: /Harrypedia/people/Weasley/William Arthur/
 [magic]: /Harrypedia/magic/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Flitwick]: /Harrypedia/people/Flitwick/Filus/
 [Snape]: /Harrypedia/people/Snape/Severus/
-[Slughorn]: /Harrypedia/people/slughorn/Horace Eugene Flaccus/
+[Slughorn]: /Harrypedia/people/Slughorn/Horace Eugene Flaccus/
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [wand]: /Harrypedia/magic/wands/

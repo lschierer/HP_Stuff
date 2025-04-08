@@ -30,6 +30,7 @@ The easiest example of this is the authors that talk about the ways in which mag
 If your story depends on society being biased to that severe an extent, reconsider. Are you writing about Harry Potter, or the American South before the Civil Rights era? While there are many parallels in Harry Potter to real events, none of them are perfect, and you lose something when you force the world to fit your historical stereotypes to exactly.
 
 [Dirk Cresswell]: /Harrypedia/people/Cresswell/Dirk/
+
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>/
 

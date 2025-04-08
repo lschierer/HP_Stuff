@@ -15,7 +15,7 @@ Charm
 
 Discovered by [Levina Monkstanley][] in 1772, working in the [Department of Mysteries][].
 
-[Levina Monkstanley]: /Harrypedia/people/monkstanley/Levina/
+[Levina Monkstanley]: /Harrypedia/people/Monkstanley/Levina/
 [Department of Mysteries]: /Harrypedia/culture/Government/
 
 ## Found in

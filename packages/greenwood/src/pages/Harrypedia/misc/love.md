@@ -74,6 +74,7 @@ attacking [Snape].[^230804-2]
 [James]: /Harrypedia/people/Potter/James/
 [lily]: </Harrypedia/people/Evans/Lily J/>
 [Snape]: /Harrypedia/people/Snape/Severus/
+
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>/
 
 [^221206-2]:

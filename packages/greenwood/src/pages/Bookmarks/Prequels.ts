@@ -57,5 +57,4 @@ const getFrontmatter: GetFrontmatter = async () => {
   };
 };
 
-
 export { getFrontmatter, getBody };

@@ -218,4 +218,5 @@ one) had made it clear, without words, that he would find it someday.
     See my notes on [relative power levels][rpl].
 
 [rpl]: <../../Appendices/Relative Power Levels/>
+
 [Notes]: ../../Appendices/Points of Divergence/

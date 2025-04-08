@@ -69,8 +69,9 @@ harder because the _curse_ in question is lost and unrecorded by history.[^24021
 [Malfoy]: /Harrypedia/people/Malfoy/
 [Crouch]: /Harrypedia/people/Crouch/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Kreacher]: /Harrypedia/people/Black/kreacher/
+[Kreacher]: /Harrypedia/people/Black/Kreacher/
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
+
 [Regulas]: /Harrypedia/people/Black/Regulas Arcturus/
 [Brownies]: https://en.wikipedia.org/wiki/Brownie_(folklore)
 [Imperius]: /Harrypedia/magic/spells/imperio/

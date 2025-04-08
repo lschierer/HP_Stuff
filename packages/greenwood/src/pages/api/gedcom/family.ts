@@ -18,11 +18,11 @@ export async function handler(request: Request) {
     .array(GedcomFamily.GedcomElement)
     .safeParse(familiesImport.default);
   if (valid.success) {
-    if(DEBUG) {
+    if (DEBUG) {
       console.log(`successful parse`);
     }
   } else {
-    if(DEBUG) {
+    if (DEBUG) {
       console.error(valid.error.message);
     }
   }

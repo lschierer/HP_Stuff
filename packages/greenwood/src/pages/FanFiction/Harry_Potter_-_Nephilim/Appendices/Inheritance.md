@@ -32,11 +32,11 @@ collection: Nephilim
     directly use magic), heredity is closely linked to gender. A male child will be more likely to inherit from his father, then next most likely to inherit from both parents, then from his mother. The reverse is true for a female child.
 1.  With any magical trait, there is a possibility of something truly bizarre
     happening. Some scholars blame these bizzare occurances on angelic and/or
-    demonic intervention in heredity.  Private revelation strongly supports this interpretation.
+    demonic intervention in heredity. Private revelation strongly supports this interpretation.
 1.  The ability to wield magic is not inherited as a single trait. Rather,
     there are 9 different traits associated with the ability to actively use magic (as differentiated from being passively magical). Interestingly, the magical community itself is either unaware or actively denies this knowledge.
 1.  Magic can be inherently corrupting[^241123-1] (that is some magic appears to inherently change the
-    nature of the user). If you actively use magic that is in fact inherently corrupting, this corruption is itself inheritable much like concupisence itself is inheritable. The corrupting effects of magic can be felt in both the user _and_ the next _four_ generations.  The nephilim have a *very* poor understanding of what is and is not inherently corrupting, with different communities having both very different and widely contradicting lists of magic to avoid and magic that is safe to use.
+    nature of the user). If you actively use magic that is in fact inherently corrupting, this corruption is itself inheritable much like concupisence itself is inheritable. The corrupting effects of magic can be felt in both the user _and_ the next _four_ generations. The nephilim have a _very_ poor understanding of what is and is not inherently corrupting, with different communities having both very different and widely contradicting lists of magic to avoid and magic that is safe to use.
 1.  The Church believes that all magic that _requires_ an emotional content (unforgivables require
     hatred, the patronus requires positive emotions, so on) is inherently corrupting.
     - "Corrupting" here does not mean "evil" but rather "tends to change
@@ -78,7 +78,7 @@ There are in fact, though no-inworld scholar knows this, precise percentage base
 1.  If the next generation is born with traits determined purely by Mendelian
     genetics per rule #1, then any supernatural ability not explainable by normal physics/biology/chemistry will degrade by 20%. However, keep in mind that no matter how many times you degrade their magic by 20%, it will never be zero. Some infinitesmal portion of them will still be magical, even if it is unusably and unnoticably small.
 1.  Non-magical traits in otherwise magical creatures have an 80% chance of following _Mendelian_
-    genetics. For example, in the nephilim, this *typically* includes height, skin tone, hair color, eye color, so on.
+    genetics. For example, in the nephilim, this _typically_ includes height, skin tone, hair color, eye color, so on.
 1.  For any **non-magical** trait that does _not_ follow Mendelian genetics,
     there is a 20% chance that the trait will become a hereditary magical trait.
 1.  Corruption is _caused_ not necessarily by the spell being cast, but
@@ -127,7 +127,7 @@ There are in fact, though no-inworld scholar knows this, precise percentage base
 [AE]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Life Expectancy/>
 [Magical Contracts]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
 [Soteriology, Missiology and Ecclesiology]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
-[AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_h/
+[AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Appendix_H//
 [Appendix I]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/>
 
 [^241123-1]: See [Soteriology, Missiology and Ecclesiology] and [Points of Divergence]

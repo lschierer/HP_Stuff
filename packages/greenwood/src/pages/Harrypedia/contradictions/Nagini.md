@@ -21,6 +21,7 @@ On the other hand, it may be that this is _why_ he is willing to make a snake, w
 [dementia]: https://www.cdc.gov/aging/dementia/
 [Animagus]: /Harrypedia/magic/
 [horcrux]: /Harrypedia/magic/dark/Horcruxes/
+
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>/
 
