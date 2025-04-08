@@ -26,7 +26,7 @@ build-starlight: install parse
 build-greenwood: install parse
   NODE_ENV=production ${PNPM} run build
 
-[working-direectory: 'packages/infrastructure']
+[working-directory: 'packages/infrastructure']
 build-infra: install
   ./bin/build.sh
   ${PNPM} run build
@@ -46,5 +46,5 @@ deploy: build-greenwood
   NODE_ENV=production ${PNPM} deploy
 
 [working-directory: 'infrastructure']
-deploy-pulumi: build
+deploy-pulumi: build-starlight
   pulumi up
