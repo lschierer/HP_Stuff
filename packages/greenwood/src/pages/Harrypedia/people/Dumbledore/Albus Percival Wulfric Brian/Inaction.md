@@ -62,7 +62,7 @@ Some fanfiction works that have built on this team:
 [HJP1]: </Harrypedia/people/Potter/Harry James/>
 [DF1]: /Harrypedia/people/Dursley/
 [AD1]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
-[Bill Weasley]: /Harrypedia/people/Weasley/William Arthur/
+[Bill Weasley]: </Harrypedia/people/Weasley/William Arthur/>
 [Hogwarts]: /Harrypedia/Hogwarts/
 
 [^211102-1]:

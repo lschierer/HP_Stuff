@@ -59,7 +59,7 @@ routinely uses this skill on [Harry] throughout the books, and that it is
 only because [Harry], our narrator, is himself unaware of it, that we in turn
 are not made more aware of it.[^221216-1]
 
-[Mental Shields]: /Harrypedia/magic/The_Mind_Arts/Mental Shields/
+[Mental Shields]: </Harrypedia/magic/The_Mind_Arts/Mental Shields/>
 
 [^20191119-9]:
     Mrs. J. K. Rowling. _Harry Potter and the Order of

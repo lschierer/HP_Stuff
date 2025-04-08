@@ -57,7 +57,7 @@ would not only know this, but would be able to work around it. This would explai
 
 [mind magics]: /Harrypedia/magic/The_Mind_Arts/
 
-[Slughorn]: /Harrypedia/people/Slughorn/Horace Eugene Flaccus/
+[Slughorn]: </Harrypedia/people/Slughorn/Horace Eugene Flaccus/>
 [Snape]: /Harrypedia/people/Snape/Severus/
 [James]: /Harrypedia/people/Potter/James/
 [Sirius]: </Harrypedia/people/Black/Sirius III/>

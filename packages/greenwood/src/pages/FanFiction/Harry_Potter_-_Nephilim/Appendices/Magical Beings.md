@@ -53,7 +53,7 @@ have a strong distrust for the Church.
 
 [^241123-2]: Or at least the in-world version of it, see [Rules of Magic].
 
-[Rules of Magic]: /FanFiction/Harry*Potter*-_Nephilim/Appendices/Rules of Magic/
+[Rules of Magic]: </FanFiction/Harry*Potter*-_Nephilim/Appendices/Rules of Magic/>
 [Quill of Acceptance and Book of Admittance]: https://www.rowlingindex.org/work/qaba/
 [magical rules of inheritance]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Inheritance/
 [its own rules]: /FanFiction/Harry_Potter_-\_Nephilim/Appendices/Inheritance/
@@ -247,10 +247,10 @@ can never be fully freed.
 
 [Many Waters]: https://wikipedia.org/wiki/Many_Waters
 
-[AA]: /FanFiction/Harry*Potter*-_Nephilim/Appendices/Points of Divergence/
-[AB]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Rules of Magic/
+[AA]: </FanFiction/Harry*Potter*-_Nephilim/Appendices/Points of Divergence/>
+[AB]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Rules of Magic/>
 [AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-beings/
-[AD]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Relative Power Levels/
+[AD]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Relative Power Levels/>
 [AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
 [AF]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
 [AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/

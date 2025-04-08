@@ -59,4 +59,4 @@ seduce Queen Elizabeth and thus take over the throne of England.[^230104-1]
 [The Malfoy Family]: https://www.rowlingindex.org/work/pmmf/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>/
-[Draco]: /Harrypedia/people/Malfoy/Draco Lucius/
+[Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>

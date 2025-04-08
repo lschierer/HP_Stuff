@@ -204,5 +204,5 @@ Instead I suspect that some percentage of the magical culture actively _desires_
 
 [Magna Carta]: https://www.parliament.uk/magnacarta/
 
-[ISWS]: ../International Statute of Secrecy/
+[ISWS]: <../International Statute of Secrecy/>
 [Ministry of Magic]: ../Government/

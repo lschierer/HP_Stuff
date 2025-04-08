@@ -31,7 +31,7 @@ the [History][] timeline.
 
 [History]: /Harrypedia/History/
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>
-[Phineus Nigellus]: /Harrypedia/people/Black/Phineus Nigellus/
+[Phineus Nigellus]: </Harrypedia/people/Black/Phineus Nigellus/>
 [Cygnus I]: /Harrypedia/people/Black/cygnus/
 [Malfoy]: /Harrypedia/people/Malfoy/
 [Weasleys]: /Harrypedia/people/Weasley/

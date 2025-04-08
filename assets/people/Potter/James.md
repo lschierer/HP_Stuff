@@ -176,15 +176,14 @@ If either or both of these is true, James might well have been something of a pe
 
 [animagus]: /Harrypedia/magic/
 [Robin Hood]: https://wikipedia.org/wiki/Robin_Hood
-[Slughorn]: </Harrypedia/people/Slughorn/Horace Eugene Flaccus/>
 [D1]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 
 [^240422-3]: this is a really tempting tangent, but this page isn't about [Dumbledore].
 
 [^210629-3]:
     Ian Hycrest.
-    _[Harry Potter and the Hands of Justice](https://www.fan fiction.net/s/13374289)_
-    [Chapter 10](https://www.fan fiction.net/s/13374289/11/Harry-Potter-and-the-Hands-of-Justice)
+    _[Harry Potter and the Hands of Justice](https://www.fanfiction.net/s/13374289)_
+    [Chapter 10](<https://www.fan fiction.net/s/13374289/11/Harry-Potter-and-the-Hands-of-Justice>)
     Published: 2019-08-27. Updated: 2020-01-14. Last Viewed: 2021-06-29.
 
 [^210629-2]:

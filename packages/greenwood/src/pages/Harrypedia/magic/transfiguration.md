@@ -43,11 +43,11 @@ deprivation entirely uncanonical, despite its logical soundness?
 [Meaning of One, Part One]: https://www.siye.co.uk/siye/series.php?seriesid=54
 [Egyptians]: /Harrypedia/Egypt/
 
-[Bill]: /Harrypedia/people/Weasley/William Arthur/
+[Bill]: </Harrypedia/people/Weasley/William Arthur/>
 [magic]: /Harrypedia/magic/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Flitwick]: /Harrypedia/people/Flitwick/Filus/
 [Snape]: /Harrypedia/people/Snape/Severus/
-[Slughorn]: /Harrypedia/people/Slughorn/Horace Eugene Flaccus/
+[Slughorn]: </Harrypedia/people/Slughorn/Horace Eugene Flaccus/>
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [wand]: /Harrypedia/magic/wands/

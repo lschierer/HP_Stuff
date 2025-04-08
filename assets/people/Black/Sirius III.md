@@ -235,7 +235,7 @@ of Azkaban][].
 
 
 [Andromeda]: /Harrypedia/people/Black/Andromeda/
-[Arcturus]: /Harrypedia/people/Black/Arcturus II/
+[Arcturus]: </Harrypedia/people/Black/Arcturus II/>
 [Bellatrix]: /Harrypedia/people/Black/Bellatrix/
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Hagrid]: /Harrypedia/people/Hagrid/Rubeus/
@@ -252,7 +252,7 @@ of Azkaban][].
 [Peter]: /Harrypedia/people/Pettigrew/Peter/
 [Pettigrew]: /Harrypedia/people/Pettigrew/Peter/
 [Pollux]: /Harrypedia/people/Black/Pollux/
-[Regulus]: /Harrypedia/people/Black/Regulus Arcturus/
+[Regulus]: </Harrypedia/people/Black/Regulus Arcturus/>
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [SWM]: /Harrypedia/people/Snape/Severus/swm/
 [Snape]: /Harrypedia/people/Snape/Severus/

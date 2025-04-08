@@ -189,6 +189,6 @@ hunt them down. Why, knowing that he will die, he entrusts the knowledge to
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
 
-[Bill]: /Harrypedia/people/Weasley/William Arthur/
+[Bill]: </Harrypedia/people/Weasley/William Arthur/>
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>
 [Snape]: /Harrypedia/people/Snape/Severus/

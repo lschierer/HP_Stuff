@@ -117,7 +117,7 @@ such as [McGonagall][] and [Sprout][] might well pick up on that distrust.
 [B12HPL1]: https://www.fanfiction.net/s/5366780
 [B12HPL2]: https://www.fanfiction.net/s/5366780
 
-[Bill]: /Harrypedia/people/Weasley/William Arthur/
+[Bill]: </Harrypedia/people/Weasley/William Arthur/>
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>

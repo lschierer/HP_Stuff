@@ -162,7 +162,7 @@ stand out.
 
 [Fleur Delacour]: </Harrypedia/people/Delacour/Fleur Isabelle/>
 [Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>
-[Bill]: /Harrypedia/people/Weasley/William Arthur/
+[Bill]: </Harrypedia/people/Weasley/William Arthur/>
 
 Hermione researches *everything* impulsively. She might not have known much
 about Veela at the world cup, but after seeing the guys react to them there,

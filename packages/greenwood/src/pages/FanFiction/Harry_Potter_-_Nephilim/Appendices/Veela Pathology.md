@@ -135,13 +135,13 @@ combine with her inheritance from the Dominions. No full veela is
 capable of permanent transmutation, and a "half-veela" is capable of it
 only to the extent her male parent was.
 
-[Appendix A]: ../Points of Divergence/
+[Appendix A]: <../Points of Divergence/>
 
-[Rules of Magic]: ../Rules of Magic/
+[Rules of Magic]: <../Rules of Magic/>
 
 [Magical Beings]: ../magical-beings/
 
-[Relative Power Levels]: ../Relative Power Levels/
+[Relative Power Levels]: <../Relative Power Levels/>
 
 [Life Expectancy]: ../life-expectancy/
 [Appendix G]: ../appendix_g/

@@ -111,7 +111,7 @@ shard could not possess her son. A battle of wills and of magic began.
 
 [Peverells]: /Harrypedia/people/Peverell/
 
-[power levels]: ../Appendices/Relative Power Levels/
+[power levels]: <../Appendices/Relative Power Levels/>
 
 [^202104201]: See my notes on [Culture/Harrypedia/culture/)
 
@@ -124,7 +124,7 @@ shard could not possess her son. A battle of wills and of magic began.
     [power levels].
 
 [^202109026]:
-    Per my initial [notes](../Appendices/Points of Divergence/), one of
+    Per my initial [notes](<../Appendices/Points of Divergence/>), one of
     the key aspects of this universe is that I was fairly mathematical about magic.
     Thus the most pivotal characters need a breakdown of their abilities.
     See the author's notes on [power levels].

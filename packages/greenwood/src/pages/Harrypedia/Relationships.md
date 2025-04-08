@@ -110,7 +110,7 @@ to create one big happy Weasley-Potter-Malfoy family.
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>/
 [George]: /Harrypedia/people/Weasley/George//
 [Neville]: /Harrypedia/people/Longbottom/Neville/
-[Percy]: /Harrypedia/people/Weasley/Percy Ignatius/
+[Percy]: </Harrypedia/people/Weasley/Percy Ignatius/>
 [Audrey]: /Harrypedia/people//
 [Luna]: /Harrypedia/people/Lovegood/Luna/
 [Hannah Abbott]: /Harrypedia/people/Abbott/hannah//

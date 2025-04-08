@@ -59,7 +59,7 @@ you, but rather a complex one who requires more careful analysis to understand
 his flaws in the right context.
 
 [FI]: https://musings-of-apathy.fanficauthors.net/Family_Inseparable/index/
-[HS]: /Harrypedia/people/Slughorn/Horace Eugene Flaccus/
+[HS]: </Harrypedia/people/Slughorn/Horace Eugene Flaccus/>
 [hogwarts]: /Harrypedia/Hogwarts/
 
 Musings of Apathy, in writing the original version of [Family Inseparable][FI],
@@ -734,7 +734,7 @@ scenes? Is his public face at all related to his private goals?
     _["For the Greater Good:" In Defense of Albus Dumbledore](http://www.mugglenet.com/2017/08/greater-good-defense-albus-dumbledore/)_
     Published 2017-08-02. Last viewed 2019-03-01.
 
-[ADdwr]: ./Dealing with Riddle/
+[ADdwr]: <./Dealing with Riddle/>
 [ADtoh]: ./treatment_of_harry/
 [ADmm]: ./manipulator/
 [ADi]: ./inaction/

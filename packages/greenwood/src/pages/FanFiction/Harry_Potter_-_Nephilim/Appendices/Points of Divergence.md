@@ -154,7 +154,7 @@ to make sense.
   positing that fallen angels continued to seduce women during the Old Testament
   times.
 
-[ab]: /FanFiction/Harry*Potter*-_Nephilim/Appendices/Rules of Magic/
+[ab]: </FanFiction/Harry*Potter*-_Nephilim/Appendices/Rules of Magic/>
 [af]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
 [ah]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Appendix_H/
 [Inheritance]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Inheritance/

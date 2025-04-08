@@ -199,7 +199,7 @@ influenced by the various depictions I have read.
   playing [Quidditch] to be unlady-like.
 
 [Arthur]: /Harrypedia/people/Weasley/Arthur/
-[Bill]: /Harrypedia/people/Weasley/William Arthur/
+[Bill]: </Harrypedia/people/Weasley/William Arthur/>
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Sirius]: </Harrypedia/people/Black/Sirius III/>

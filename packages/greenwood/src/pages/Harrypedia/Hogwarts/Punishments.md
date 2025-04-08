@@ -25,7 +25,7 @@ it.[^20200720-10]
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Molly]: /Harrypedia/people/Prewett/Molly/
-[Bill]: /Harrypedia/people/Weasley/William Arthur/
+[Bill]: </Harrypedia/people/Weasley/William Arthur/>
 
 [Rex Tims][FfnRT] points out in an authors note that a fifty point penalty is
 apparently a big deal, but if so, the end of year point totals seem really
