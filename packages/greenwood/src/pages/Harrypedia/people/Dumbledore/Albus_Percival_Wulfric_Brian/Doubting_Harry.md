@@ -123,7 +123,7 @@ such as [McGonagall][] and [Sprout][] might well pick up on that distrust.
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Hogwarts]: /Harrypedia/Hogwarts/
 [Kingsley]: /Harrypedia/people/shacklebolt/kingsley/
-[Lupin]: /Harrypedia/people/lupin/remus_john/
+[Lupin]: /Harrypedia/people/Lupin/Remus John/
 [Malfoy]: /Harrypedia/people/Malfoy/Draco Lucius/
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Moody]: ./Harrypedia/people/moody/

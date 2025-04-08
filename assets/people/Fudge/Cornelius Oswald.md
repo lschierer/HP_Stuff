@@ -28,7 +28,7 @@ Specifically looking at both the arrest of [Hagrid][] and the handling of
 and that [Dumbledore][] _could_ have done more in both cases.
 
 [Hagrid]: /Harrypedia/people/hagrid/rubeus/
-[SB]: /Harrypedia/people/Black/sirius_iii/
+[SB]: /Harrypedia/people/Black/Sirius III/
 [Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 
 In the case of [Hagrid][], I suspect that Fudge is being fairly honest about

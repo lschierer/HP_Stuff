@@ -24,10 +24,10 @@ author: Luke Schierer
 
 [Dudley]: /Harrypedia/people/dursley/dudley//
 [Dursley]: /Harrypedia/people/dursley//
-[Petunia]: /Harrypedia/people/evans/petunia//
+[Petunia]: /Harrypedia/people/Evans/petunia//
 [bowl cut]: https://en.wikipedia.org/wiki/Bowl_cut
 [crew cut]: https://en.wikipedia.org/wiki/Crew_cut
 [Dudley]: /Harrypedia/people/dursley/dudley//
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
-[Lily]: /Harrypedia/people/evans/lily_j//
+[Lily]: /Harrypedia/peopleEvans/Lily J//
 [James]: /Harrypedia/people/Potter/James//

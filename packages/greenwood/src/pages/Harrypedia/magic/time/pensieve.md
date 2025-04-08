@@ -59,7 +59,7 @@ would not only know this, but would be able to work around it. This would explai
 [Slughorn]: /Harrypedia/people/slughorn/horace_eugene_flaccus/
 [Snape]: /Harrypedia/people/Snape/Severus/
 [James]: /Harrypedia/people/Potter/James/
-[Sirius]: /Harrypedia/people/Black/sirius_iii/
+[Sirius]: /Harrypedia/people/Black/Sirius III/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 

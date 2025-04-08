@@ -79,19 +79,19 @@ should still be recognisably themselves. There can, however, be a butterfly effe
 things that go differently from the books.
 
 [veela]: /Harrypedia/beings/veela/
-[contracts]: /Harrypedia/magic/contracts/
-[life debts]: /Harrypedia/magic/contracts/
-[trace]: /Harrypedia/magic/
-[Hermione]: /Harrypedia/people/Granger/Hermione Jean/
+[contracts]: /Harrypedia/magic/Contracts/
+[life debts]: /Harrypedia/magic/Contracts/
+[trace]: /Harrypedia/magic/time/The_Trace/
+[Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Draco]: /Harrypedia/people/Malfoy/Draco Lucius/
-[Fleur]: /Harrypedia/people/delacour/fleur_isabelle/
-[Nymphadora]: /Harrypedia/people/tonks/nymphadora/
-[Sirius]: /Harrypedia/people/Black/sirius_iii/
-[Remus]: /Harrypedia/people/lupin/remus_john/
-[Lily]: /Harrypedia/people/evans/lily_j/
+[Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>
+[Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>
+[Nymphadora]: /Harrypedia/people/Tonks/Nymphadora/
+[Sirius]: /Harrypedia/people/Black/Sirius III/
+[Remus]: </Harrypedia/people/Lupin/Remus John/>
+[Lily]: </Harrypedia/peopleEvans/Lily J/>
 [James]: /Harrypedia/people/Potter/James/
-[Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
+[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Snape]: /Harrypedia/people/Snape/Severus/
 
 

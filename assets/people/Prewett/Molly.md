@@ -202,10 +202,10 @@ influenced by the various depictions I have read.
 [Bill]: /Harrypedia/people/weasley/william_arthur/
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
-[Sirius]: /Harrypedia/people/Black/sirius_iii/
+[Sirius]: /Harrypedia/people/Black/Sirius III/
 [Weasley]: /Harrypedia/people/weasley/
 [Weasleys]: /Harrypedia/people/weasley/
-[Fleur]: /Harrypedia/people/delacour/fleur_isabelle/
+[Fleur]: /Harrypedia/people/Delacour/Fleur Isabelle/
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Quidditch]: /Harrypedia/quidditch/
 [Gringotts]: /Harrypedia/gringotts/

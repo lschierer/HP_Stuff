@@ -181,7 +181,7 @@ hunt them down. Why, knowing that he will die, he entrusts the knowledge to
 [History]: /Harrypedia/History/
 [horcruxes]: /Harrypedia/magic/dark/Horcruxes/
 [Horcruxes]: /Harrypedia/magic/dark/Horcruxes/
-[Lupin]: /Harrypedia/people/lupin/remus_john/
+[Lupin]: /Harrypedia/people/Lupin/Remus John/
 [Kingsley]: /Harrypedia/people/shacklebolt/kingsley/
 [Moody]: /Harrypedia/people/moody/
 [TMR1]: /Harrypedia/people/Riddle/Tom Marvolo/

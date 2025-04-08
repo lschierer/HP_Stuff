@@ -23,10 +23,10 @@ respect with which she might be held.
     Government?
 
 [Fudge]: /Harrypedia/people/Fudge/Cornelius Oswald/
-[Tonks]: /Harrypedia/people/tonks/nymphadora/
+[Tonks]: /Harrypedia/people/Tonks/Nymphadora/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hagrid]: /Harrypedia/people/hagrid/rubeus/
-[Sirius]: /Harrypedia/people/Black/sirius_iii/
+[Sirius]: /Harrypedia/people/Black/Sirius III/
 
 [^221213-2]:
     Mrs. J. K. Rowling.

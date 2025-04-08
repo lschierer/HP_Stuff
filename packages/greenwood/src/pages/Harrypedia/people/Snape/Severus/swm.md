@@ -12,14 +12,14 @@ the end of the 1975-1976 school year when [Lily], [James] and their friends
 (or enemies as the case may be) were in their fifth year. We do not know the
 exact chronology, what follows is my best reconstruction.
 
-[Sirius]: /Harrypedia/people/Black/sirius_iii/
+[Sirius]: /Harrypedia/people/Black/Sirius III/
 [James]: /Harrypedia/people/Potter/James/
-[Lily]: /Harrypedia/people/evans/lily_j/
+[Lily]: /Harrypedia/peopleEvans/Lily J/
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Severus]: /Harrypedia/people/Snape/Severus/
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
-[Lupin]: /Harrypedia/people/lupin/remus_john/
+[Lupin]: /Harrypedia/people/Lupin/Remus John/
 
 ## What Happened
 

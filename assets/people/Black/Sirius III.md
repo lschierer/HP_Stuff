@@ -136,7 +136,7 @@ would have been unable to demand a trial. Why, however, did none of
 [Dumbledore][], [Andromeda][] Black, or his own blood family demand a trial?
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-[Lupin]: /Harrypedia/people/lupin/remus_john/
+[Lupin]: /Harrypedia/people/Lupin/Remus John/
 [Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 [Andromeda]: /Harrypedia/people/Black/andromeda/
 
@@ -243,8 +243,8 @@ of Azkaban][].
 [Hermione]: /Harrypedia/people/Granger/Hermione Jean/
 [History]: /Harrypedia/History/
 [James]: /Harrypedia/people/Potter/James/
-[Lily]: /Harrypedia/people/evans/lily_j/
-[Lupin]: /Harrypedia/people/lupin/remus_john/
+[Lily]: /Harrypedia/peopleEvans/Lily J/
+[Lupin]: /Harrypedia/people/Lupin/Remus John/
 [Malfoy]: /Harrypedia/people/Malfoy/
 [Molly]: /Harrypedia/people/prewett/molly/
 [Orion]: /Harrypedia/people/Black/orion/

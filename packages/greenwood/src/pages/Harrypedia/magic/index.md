@@ -463,7 +463,7 @@ operate? As I said, I think it has to be a detection ward of some sort. I
 have read ia number of different ideas about it. See the full article on the
 [Trace].
 
-[Trace]: /Harrypedia/magic/time/the_trace/
+[Trace]: /Harrypedia/magic/time/The_Trace/
 
 [^210810-4]:
     Mrs. J. K. Rowling.

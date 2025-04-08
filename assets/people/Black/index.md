@@ -40,8 +40,8 @@ the [History][] timeline.
 [Arthur]: /Harrypedia/people/weasley/arthur/
 [Cedrella]: /Harrypedia/people/Black/cedrella/
 [Septimus]: /Harrypedia/people/weasley/septimus/
-[Sirius III]: /Harrypedia/people/Black/sirius_iii/
-[Sirius II]: /Harrypedia/people/Black/sirius_ii/
+[Sirius III]: /Harrypedia/people/Black/Sirius III/
+[Sirius II]: /Harrypedia/people/Black/Sirius II/
 [Longbottom]: /Harrypedia/people/longbottom/
 [Longbottoms]: /Harrypedia/people/longbottom/
 [Grimmauld Place]: /Harrypedia/grimmauld_place/

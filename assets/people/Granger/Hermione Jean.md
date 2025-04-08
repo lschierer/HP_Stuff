@@ -160,8 +160,8 @@ what Mrs. Rowling writes - [Fleur] is attracted to [Bill] *because* he is
 that rare male who does not react. This has been so rare in her life as to
 stand out.
 
-[Fleur Delacour]: /Harrypedia/people/delacour/fleur_isabelle/
-[Fleur]: /Harrypedia/people/delacour/fleur_isabelle/
+[Fleur Delacour]: /Harrypedia/people/Delacour/Fleur Isabelle/
+[Fleur]: /Harrypedia/people/Delacour/Fleur Isabelle/
 [Bill]: /Harrypedia/people/weasley/william_arthur/
 
 Hermione researches *everything* impulsively. She might not have known much
@@ -338,7 +338,7 @@ year, though it is anyone's guess which specific event would be one too many.
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
 [Ginny]: /Harrypedia/people/Weasley/Ginevra Molly/
-[Black]: /Harrypedia/people/Black/sirius_iii/
+[Black]: /Harrypedia/people/Black/Sirius III/
 [Lavender]: /Harrypedia/people/brown/lavender/
 [McLaggen]: /Harrypedia/people/mclaggen/cormac/
 [TSWoHA]: https://www.fanfiction.net/s/5858832

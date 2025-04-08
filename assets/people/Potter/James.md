@@ -56,7 +56,7 @@ Perhaps [Lily] cannot really see James with an unbiased eye until
 after she herself has fallen out with [Snape]?
 
 [Ron]: /Harrypedia/people/Weasley/Ronald Bilius/
-[Lily]: /Harrypedia/people/evans/lily_j/
+[Lily]: /Harrypedia/peopleEvans/Lily J/
 [Snape]: /Harrypedia/people/Snape/Severus/
 
 

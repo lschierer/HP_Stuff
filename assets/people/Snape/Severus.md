@@ -45,8 +45,8 @@ needs of victims are not going to be addressed.
 [Dark Arts]: /Harrypedia/magic/dark/
 [Dark Magic]: /Harrypedia/magic/dark/
 [dark]: /Harrypedia/magic/dark/
-[Lily]: /Harrypedia/people/evans/lily_j/
-[Sirius]: /Harrypedia/people/Black/sirius_iii/
+[Lily]: /Harrypedia/peopleEvans/Lily J/
+[Sirius]: /Harrypedia/people/Black/Sirius III/
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Dumbledore]: /Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/
 
@@ -260,7 +260,7 @@ sequence, as Snape yells at [Harry][], looking for him to thank him "on bended
 knee"[^210510-6], and then later, with Fudge talking about the Order of Merlin,
 gives us a huge insight into Snape's character.[^210523-2]
 
-[Lupin]: /Harrypedia/people/lupin/remus_john/
+[Lupin]: /Harrypedia/people/Lupin/Remus John/
 
 As [Riddle][] returns, what does Snape know about his activities? What could
 he have told [Dumbledore][] but chooses to hold back? What does he tell

@@ -33,14 +33,14 @@ The obvious exception to this is [Walburga], who from all accounts had no proble
 [Walburga]: /Harrypedia/people/Black/Walburga/
 [obscurial]: /Harrypedia/beings/obscurus/
 [Hogwarts]: /Harrypedia/Hogwarts/
-[Sirius]: /Harrypedia/people/Black/sirius_iii/
+[Sirius]: /Harrypedia/people/Black/Sirius III/
 [house elves]: /Harrypedia/beings/elves/house_elf/
 [MACUSA]: /Harrypedia/macusa/
 [Ministry of Magic]: /Harrypedia/culture/government/
 [Dursley]: /Harrypedia/people/dursley/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Vernon]: /Harrypedia/people/dursley/vernon//
-[Petunia]: /Harrypedia/people/evans/petunia//
+[Petunia]: /Harrypedia/people/Evans/petunia//
 [unreliable narrator]: https://wikipedia.org/wiki/Unreliable_narrator
 
 [^240228-1]: Mrs. J. K. Rowling. _[Harry Potter and the Half-Blood Prince]_ American Kindle edition approx Location 611 of 8473.
