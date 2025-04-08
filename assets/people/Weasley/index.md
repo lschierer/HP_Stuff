@@ -60,8 +60,8 @@ _does_ match the chart above (school year 1988-1989). If [Bill]'s
 birthday is correct, that does not give much space for [Charlie]'s to move.
 
 [Hogwarts]: /Harrypedia/Hogwarts/
-[Quidditch]: /Harrypedia/quidditch/
-[Gryffindor]: /Harrypedia/Hogwarts/gryffindor/
+[Quidditch]: /Harrypedia/Quidditch/
+[Gryffindor]: /Harrypedia/Hogwarts/Gryffindor/
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 [Ron]: /Harrypedia/people/Weasley/Ronald Bilius/

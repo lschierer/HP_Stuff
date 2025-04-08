@@ -13,8 +13,8 @@ This thought pattern is generally used by those who have so strongly bought into
 
 If [Snape] _was_ \*_actually_ quite fallen in his younger years, we do not _actually_ need to minimize [James]' intelligence. I believe it was precisely his _actual_ ability that, in part, made [Snape] resent him so much. Do not be fooled by the comments [Snape] makes about [James] being a typical brainless jock.[^240130-3] This is a combination of hatred and self-delusion speaking.
 
-[Snape]: /Harrypedia/people/Snape/Severus//
-[James]: /Harrypedia/people/Potter/James//
+[Snape]: /Harrypedia/people/Snape/Severus/
+[James]: /Harrypedia/people/Potter/James/
 [Sirius]: </Harrypedia/people/Black/Sirius III/>/
 [Lupin]: </Harrypedia/people/Lupin/Remus John/>/
 [Remus]: </Harrypedia/people/Lupin/Remus John/>/

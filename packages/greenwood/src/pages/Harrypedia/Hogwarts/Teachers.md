@@ -15,8 +15,8 @@ title: Teachers
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>/
 [Binns]: /Harrypedia/people/Binns/Cuthbert/
 [Flitwick]: /Harrypedia/people/Flitwick/Filus/
-[McGonagall]: /Harrypedia/people/McGonagall/Minerva//
-[snape]: /Harrypedia/people/Snape/Severus//
+[McGonagall]: /Harrypedia/people/McGonagall/Minerva/
+[snape]: /Harrypedia/people/Snape/Severus/
 
 In more general terms, what is the role of the head of each house?
 [McGonagall] shows up to intervene in Gryffindor's internal discipline only

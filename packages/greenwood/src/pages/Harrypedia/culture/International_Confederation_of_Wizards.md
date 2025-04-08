@@ -18,4 +18,4 @@ The International Confederation of Wizards (ICW) is mentioned in several places 
 
 [Molly]: /Harrypedia/people/Prewett/Molly/
 [Fudge]: </Harrypedia/people/Fudge/Cornelius Oswald/>/
-[Quidditch]: /Harrypedia/quidditch//
+[Quidditch]: /Harrypedia/Quidditch//

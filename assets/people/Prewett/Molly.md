@@ -207,7 +207,7 @@ influenced by the various depictions I have read.
 [Weasleys]: /Harrypedia/people/Weasley/
 [Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>
 [Snape]: /Harrypedia/people/Snape/Severus/
-[Quidditch]: /Harrypedia/quidditch/
+[Quidditch]: /Harrypedia/Quidditch/
 [Gringotts]: /Harrypedia/gringotts/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 

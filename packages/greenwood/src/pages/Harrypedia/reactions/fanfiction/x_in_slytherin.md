@@ -72,8 +72,8 @@ would have no need of a revolution.
 [Prewett]: /Harrypedia/people/Prewett/
 [Weasley]: /Harrypedia/people/Weasley/
 [Lucius]: /Harrypedia/people/Malfoy/Lucius Abraxas/
-[Ravenclaw]: /Harrypedia/Hogwarts/ravenclaw/
-[Gryffindor]: /Harrypedia/Hogwarts/gryffindor/
+[Ravenclaw]: /Harrypedia/Hogwarts/Ravenclaw/
+[Gryffindor]: /Harrypedia/Hogwarts/Gryffindor/
 [Sorting Hat]: /Harrypedia/Hogwarts/sorting_hat
 [Hat]: /Harrypedia/Hogwarts/sorting_hat
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>
@@ -83,7 +83,7 @@ would have no need of a revolution.
 [Neville]: /Harrypedia/people/Longbottom/Neville/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
-[Slytherin]: /Harrypedia/Hogwarts/slytherin/
+[Slytherin]: /Harrypedia/Hogwarts/Slytherin/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>

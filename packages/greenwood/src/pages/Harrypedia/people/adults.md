@@ -37,7 +37,7 @@ not physically, but metaphorically, as the one who could be his equal.[^210521-8
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Dumbledore]: <../Dumbledore/Albus Percival Wulfric Brian/>
 [Riddle]: <../Riddle/Tom Marvolo/>
-[Notes]: /Harrypedia//
+[Notes]: /Harrypedia/
 
 [^210521-8]:
     This idea is not originally mine, but I do not remember which

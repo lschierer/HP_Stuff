@@ -68,7 +68,7 @@ real political power quite possibly, but within the context of some existing
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [notes]: /Harrypedia/
 [Potter Family notes]: /Harrypedia/people/Potter/
-[Salazar]: /Harrypedia/people/slytherin/Salazar/
+[Salazar]: /Harrypedia/people/Slytherin/Salazar/
 [class structure]: ../class_and_blood/
 [blood status]: ../class_and_blood/
 

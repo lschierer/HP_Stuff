@@ -95,7 +95,7 @@ depiction _certainly_ destroys anyone attempting to use _[Cursed Child]_
 to create one big happy Weasley-Potter-Malfoy family.
 
 [Shipping]: ../Shipping/
-[Astoria]: /Harrypedia/people/Greengrass/Astoria//
+[Astoria]: /Harrypedia/people/Greengrass/Astoria/
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>/
 [Scorpius]: /Harrypedia/people/Malfoy/Scorpius//
 [Greengrass]: /Harrypedia/people/Greengrass//
@@ -114,10 +114,10 @@ to create one big happy Weasley-Potter-Malfoy family.
 [Luna]: /Harrypedia/people/Lovegood/Luna/
 [Hannah Abbott]: /Harrypedia/people/Abbott/hannah//
 [Rolf Scamander]: /Harrypedia/people/Scamander/Rolf/
-[Quidditch]: ../quidditch/
+[Quidditch]: ../Quidditch/
 [Malfoy]: /Harrypedia/people/Malfoy//
 [Hannah]: /Harrypedia/people/Abbott/hannah//
-[Holyhead Harpies]: ../quidditch/
+[Holyhead Harpies]: ../Quidditch/
 
 [^AG]: Mrs. J. K. Rowling. "[Draco Malfoy]" 2014-12-22.
 

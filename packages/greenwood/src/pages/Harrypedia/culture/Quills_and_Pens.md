@@ -74,7 +74,7 @@ quill,[^230804] there is no canonical basis for this line of thought;
 it is pure speculation.
 
 [parchment]: ../parchment_and_paper/
-[McGonagall]: /Harrypedia/people/McGonagall/Minerva//
+[McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Dip pen]: https://en.wikipedia.org/wiki/Dip_pen
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Wikipedia]: https://en.wikipedia.org/

@@ -14,7 +14,7 @@ exact chronology, what follows is my best reconstruction.
 
 [Sirius]: </Harrypedia/people/Black/Sirius III/>
 [James]: /Harrypedia/people/Potter/James/
-[Lily]: </Harrypedia/peopleEvans/Lily J/>
+[Lily]: </Harrypedia/people/Evans/Lily J/>
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Severus]: /Harrypedia/people/Snape/Severus/
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/

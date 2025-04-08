@@ -89,7 +89,7 @@ things that go differently from the books.
 [Nymphadora]: /Harrypedia/people/Tonks/Nymphadora/
 [Sirius]: </Harrypedia/people/Black/Sirius III/>
 [Remus]: </Harrypedia/people/Lupin/Remus John/>
-[Lily]: </Harrypedia/peopleEvans/Lily J/>
+[Lily]: </Harrypedia/people/Evans/Lily J/>
 [James]: /Harrypedia/people/Potter/James/
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Snape]: /Harrypedia/people/Snape/Severus/

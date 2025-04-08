@@ -18,12 +18,12 @@ The first chapter, as is expected _of_ a first chapter, has more questions than 
   - If placed before she arrived, there is a _very_ narrow window for it to have happened in unless [Dumbledore] planned everything _before the attack._ I wish, if only to make him a less evil character, I could eliminate that possibility.
   - If placed at some subsequent time, there is a window of time that [Harry] is incredibly vulnerable.
 
-[Hagrid]: /Harrypedia/people/hagrid/rubeus//
+[Hagrid]: /Harrypedia/people/hagrid/Rubeus/
 [Dursley]: /Harrypedia/people/Dursley/
 [Ministry]: /Harrypedia/culture/government//
 [Petunia]: /Harrypedia/people/Evans/Petunia/
-[McGonagall]: /Harrypedia/people/McGonagall/Minerva//
-[Lily]: </Harrypedia/peopleEvans/Lily J/>
+[McGonagall]: /Harrypedia/people/McGonagall/Minerva/
+[Lily]: </Harrypedia/people/Evans/Lily J/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Vernon]: /Harrypedia/people/Dursley/Vernon/
 [Dickens]: https://en.wikipedia.org/wiki/Charles_Dickens

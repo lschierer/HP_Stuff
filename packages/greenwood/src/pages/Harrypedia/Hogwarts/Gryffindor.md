@@ -27,7 +27,7 @@ author: Luke Schierer
     [Hufflepuff][], it is clear that loyalty is not the defining factor of this
     house.
 
-[Hufflepuff]: ../hufflepuff/
+[Hufflepuff]: ../Hufflepuff/
 
 [^221221-2]: works include, but not limited to:
 

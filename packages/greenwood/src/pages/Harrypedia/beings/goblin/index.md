@@ -31,4 +31,4 @@ One thing of note, that I found in reading other people's ideas on this series.
 
 What does it take for [Hagrid][] of all people to classify a race as dangerous?
 
-[Hagrid]: /Harrypedia/people/hagrid/rubeus//
+[Hagrid]: /Harrypedia/people/hagrid/Rubeus/

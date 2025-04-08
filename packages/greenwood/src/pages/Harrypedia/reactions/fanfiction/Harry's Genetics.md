@@ -16,7 +16,7 @@ There are several things wrong with the premise these authors are working from.
 
 That being said, I will admit that the books *are* more than a bit absurd themselves.  They emphasise over and over again that [Harry] "has [Lily]'s eyes" and yet he inherited is father's near-sightedness.  This is ... illogical.  Sure, near-sightedness *is* often hereditary, but then he would have *his father's eyes* (at least in shape, colour clearly has no impact on focal distance).  Two wrongs (or more) wrongs do not make a right.
 
-[Lily]: </Harrypedia/peopleEvans/Lily J/>
+[Lily]: </Harrypedia/people/Evans/Lily J/>
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Snape's Worst Memory]: /Harrypedia/people/Snape/Severus/swm/

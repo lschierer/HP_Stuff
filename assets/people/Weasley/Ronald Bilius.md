@@ -185,8 +185,8 @@ with the thought of [Ravenclaw].[^221213-1]. Other than that, Ron's comments
 seem to largely stem from a fairly black and white view of the world and
 [Malfoy]'s over the top behaviour.
 
-[Slytherin]: /Harrypedia/Hogwarts/slytherin/
-[Ravenclaw]: /Harrypedia/Hogwarts/ravenclaw/
+[Slytherin]: /Harrypedia/Hogwarts/Slytherin/
+[Ravenclaw]: /Harrypedia/Hogwarts/Ravenclaw/
 [Malfoy]: </Harrypedia/people/Malfoy/Draco Lucius/>
 [MM1]: /Harrypedia/people/McGonagall/Minerva/
 [FF1]: /Harrypedia/people/Flitwick/Filus/

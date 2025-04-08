@@ -10,7 +10,7 @@ Just how old is [Professor McGonagall][McGonagall]? Has she worked at
 [^231003-3]
 
 [Hogwarts]: /Harrypedia/Hogwarts/
-[McGonagall]: /Harrypedia/people/McGonagall/Minerva//
+[McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 
 [^231003-2]:
     Mrs. J. K. Rowling.

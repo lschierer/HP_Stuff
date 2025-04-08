@@ -39,7 +39,7 @@ world, but that the movie over-emphasises the extent to which the magical
 world's fashion has kept up with the times. I talk more about that though in
 the [Culture] section.
 
-[Culture]: /Harrypedia//culture/
+[Culture]: /Harrypedia/culture/
 
 Of more concern here, I think the movie did much to cement the impression of
 Lupin as not just a bookworm, but as the brains of his group of
@@ -51,7 +51,7 @@ exceptionally bright.[^211108-7] I do not doubt the man did well in school, but
 he worked for it, whereas his more intelligent friends found the material easy.
 
 [James]: /Harrypedia/people/Potter/James/
-[Lily]: </Harrypedia/peopleEvans/Lily J/>
+[Lily]: </Harrypedia/people/Evans/Lily J/>
 [Sirius]: </Harrypedia/people/Black/Sirius III/>
 
 In many ways, this quote adequately says all there is to say:
@@ -81,7 +81,7 @@ lapsed. He was his fundamental nature to let people down.
 
 Worse, it was not just his wife he abandoned. His rationale is both pathetic and absurd. He states that because he is a warewolf, his child will probably be a warewolf, and will therefore be better off without his/her warewolf father. It would, apparently, be better that the child face the disease without the help from someone who can empathise with the pain of both the disease and the resulting social ostracism. As a werewolf himself, he apparently has nothing of value to offer his child on coping with the affliction. As a being, he is allowing those nights to define the totality of his contribution to the child's life. Like many before him, he has internalised the prejudice against himself, and become his own worst enemy.
 
-[Gryffindor]: /Harrypedia/Hogwarts/gryffindor/
+[Gryffindor]: /Harrypedia/Hogwarts/Gryffindor/
 
 [^211202-3]: Any number of works have Harry call him out on this.
 

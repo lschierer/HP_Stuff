@@ -43,7 +43,7 @@
 
 [RL1]: </Harrypedia/people/Lupin/Remus John/>
 [James]: /Harrypedia/people/Potter/James/
-[Lily]: </Harrypedia/peopleEvans/Lily J/>
+[Lily]: </Harrypedia/people/Evans/Lily J/>
 [TMR1]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [H1]: /Harrypedia/history
 

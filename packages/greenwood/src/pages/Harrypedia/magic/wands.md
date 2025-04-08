@@ -78,7 +78,7 @@ must sense something of the wizard it is bonding with…
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>/
-[James Potter]: /Harrypedia/people/Potter/James//
+[James Potter]: /Harrypedia/people/Potter/James/
 [Umbridge]: /Harrypedia/people/Umbridge/Dolores Jane/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>/
 [ww]: <https://www.wizardingworld.com "WizardingWorld">

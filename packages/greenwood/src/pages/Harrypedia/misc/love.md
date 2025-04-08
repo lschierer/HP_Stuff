@@ -71,9 +71,9 @@ attacking [Snape].[^230804-2]
     _[Harry Potter and the Order of the Phoenix](https://www.librarything.com/work/115/book/225886709)_
     Kindle Locations 9396-9398. Pottermore Limited. American Kindle Edition.
 
-[James]: /Harrypedia/people/Potter/James//
-[lily]: </Harrypedia/peopleEvans/Lily J/>
-[Snape]: /Harrypedia/people/Snape/Severus//
+[James]: /Harrypedia/people/Potter/James/
+[lily]: </Harrypedia/people/Evans/Lily J/>
+[Snape]: /Harrypedia/people/Snape/Severus/
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>/
 
 [^221206-2]:
