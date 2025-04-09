@@ -1,5 +1,5 @@
 ---
-title: >
+title: >-
   Harry's Genetic Make-up
 layout: standard
 author: Luke Schierer

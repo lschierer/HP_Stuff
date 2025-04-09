@@ -95,8 +95,8 @@ and letters (unless you are including privacy charms)).
     [All Empires Online History Community](http://www.allempires.com/) 2007-01-10. Last Viewed 2020-08-16.
 
 [^200816-10]:
-    Reginmund. "[The Rise and Fall of Parchment](http://www.allempires.com/article/index.php?q=parchment)"
-    [All Empires Online History Community](http://www.allempires.com/) 2007-01-10.
+    Reginmund. "[The Rise and Fall of Parchment](https://web.archive.org/web/20170108075941/http://www.allempires.com/article/index.php?q=parchment)"
+    [All Empires Online History Community](https://web.archive.org/web/20170220191707/http://www.allempires.com/) 2007-01-10.
     Last Viewed 2020-08-16.
 
 [^210220-2]: you see this in a number of works, but I currently remember:

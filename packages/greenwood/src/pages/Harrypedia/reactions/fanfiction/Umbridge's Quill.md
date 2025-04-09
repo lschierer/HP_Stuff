@@ -1,5 +1,5 @@
 ---
-title: |
+title: >-
   Umbridge's Quill
 layout: standard
 author: Luke Schierer

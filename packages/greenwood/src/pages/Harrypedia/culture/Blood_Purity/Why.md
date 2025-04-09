@@ -19,7 +19,7 @@ world vote for it?
 
 [^220705-5]: See my notes on [MACUSA].
 
-[MACUSA]: /Harrypedia/MACUSA//
+[MACUSA]: /Harrypedia/MACUSA/
 
 [^220705-4]: Mrs. J. K. Rowling. "[Pure-Blood](https://www.rowlingindex.org/work/pmpbl/)" [The J.K. Rowling Index](https://www.rowlingindex.org). Published: 2012-10-18. Last Viewed: 2022-07-05.
 

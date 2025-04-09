@@ -299,11 +299,11 @@ make it a distinct category of event worth separate consideration.
 
 [AA]: </FanFiction/Harry*Potter*-_Nephilim/Appendices/Points of Divergence/>
 [AB]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Rules of Magic/>
-[AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-beings/
+[AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Beings/
 [AD]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Relative Power Levels/>
 [AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
 [AF]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-contracts/
-[AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
+[AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Appendix_G/
 [AH]: /FanFiction/Harry_Potter_-\_Nephilim/Appendices/Appendix_H//
 [Imperius]: /Harrypedia/magic/spells/imperio/
 

@@ -106,7 +106,7 @@ real political power quite possibly, but within the context of some existing
 [^211004-4]:
     Aaran St Vines.
     _["Great Scott, Potter, This is
-    War!"](https://aaran-st-vines.nsns.fanficauthors.net/Great_Scott_Potter_This_is_War/)_
+    War!"](https://aaran-st-vines.fanficauthors.net/Great_Scott_Potter_This_is_War/index/)_
     Published: 2006-03-07. Updated: 2009-02-15. Last Viewed: 2021-10-04.
 
 [^211004-5]:

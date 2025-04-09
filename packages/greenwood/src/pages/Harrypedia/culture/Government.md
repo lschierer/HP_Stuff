@@ -94,9 +94,8 @@ my statement that it contradicts the origin stories).
 [Potter]: /Harrypedia/people/Potter/
 [Peverell]: /Harrypedia/people/Peverell/
 [Malfoy]: /Harrypedia/people/Malfoy/
-[GSP1]: https://aaran-st-vines.nsns.fanficauthors.net/Great_Scott_Potter_This_is_War
-[GSP2]: https://aaran-st-vines.nsns.fanficauthors.net/Great_Scott_Potter_This_is_War
-[Pottermore]: http://Potter/more.com/
+[GSP1]: https://aaran-st-vines.fanficauthors.net/Great_Scott_Potter_This_is_War/index/
+[Pottermore]: http://Pottermore.com/
 [RNN1]: https://www.fanfiction.net/s/7144149
 [RNN2]: https://www.fanfiction.net/s/7144149
 
@@ -104,14 +103,14 @@ my statement that it contradicts the origin stories).
 
 [^211007-1]:
     Aaran St Vines.
-    _["Great Scott, Potter, This is War!"][GSP2]_
+    _["Great Scott, Potter, This is War!"][GSP1]_
     Posted: 2006-03-07. Updated: 2009-02-15. Last Viewed: 2021-10-07.
 
 [^211007-2]:
     Aaran St Vines.
-    _["Great Scott, Potter, This is War!"][GSP2]_
-    [Chapter 15 - The Three-Thirty-Three Families](https://aaran-st-vines.nsns.fanficauthors.net/Great_Scott_Potter_This_is_War/Chapter_Fifteen__The_ThreeThirtyThree_Families/)
-    Posted: 2007-04-29. Updated: 2009-02-15. Last Viewed: 2021-10-07.
+    _["Great Scott, Potter, This is War!"][GSP1]_
+    [Chapter 15 - The Three-Thirty-Three Families](https://aaran-st-vines.fanficauthors.net/Great_Scott_Potter_This_is_War/Chapter_Fifteen__The_ThreeThirtyThree_Families/)
+    Posted: 2007-04-29. Updated: 2009-02-15. Last Viewed: 2025-04-08.
 
 [^210329-11]:
     Mrs. J. K. Rowling. _Harry Potter and the Deathly Hallows_

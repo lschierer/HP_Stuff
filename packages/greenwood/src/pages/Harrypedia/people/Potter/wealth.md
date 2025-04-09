@@ -92,7 +92,7 @@ vault without forethought.[^210322-1]
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [James]: /Harrypedia/people/Potter/James/
 [Lestranges]: /Harrypedia/people/Lestrange/
-[Linfred]: </Harrypedia/people/of Stinchcombe/Linfred/>
+[Linfred]: </Harrypedia/people/Unknown/Linfred/>
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 [Sirius]: </Harrypedia/people/Black/Sirius III/>
 [Harry Potter and the Deathly Hallows]: https://www.goodreads.com/book/show/136251.Harry_Potter_and_the_Deathly_Hallows

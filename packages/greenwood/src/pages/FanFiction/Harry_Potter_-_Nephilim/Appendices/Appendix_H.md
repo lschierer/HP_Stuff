@@ -109,7 +109,7 @@ The nephilim are physically more resilient than normal humans. While their dead 
 [AD]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Relative Power Levels/>
 [AE]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Life Expectancy/>
 [AF]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
-[AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
+[AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Appendix_G/
 
 [ab]: </FanFiction/Harry*Potter*-_Nephilim/Appendices/Rules of Magic/>
 [af]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>

@@ -163,7 +163,7 @@ to make sense.
 [TSL]: https://archive.org/details/in.ernet.dli.2015.86985
 [TSL2]: https://archive.org/details/in.ernet.dli.2015.86985
 [TSL3]: https://archive.org/details/in.ernet.dli.2015.86985
-[Introduction]: /FanFiction/Harry_Potter_-_Nephilim/introduction/
+[Introduction]: /FanFiction/Harry_Potter_-_Nephilim/Introduction/
 [Encyclopedic Reference]: /Harrypedia/
 [FSSP]: /FanFiction/Harry_Potter_-\_Nephilim/Appendices/FSSP/
 

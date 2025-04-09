@@ -53,14 +53,14 @@ intuitive to Harry once he is told what to do in [Chapter 11][].
 
 [^20191119-6]:
     muggledad.
-    _[Partners](https://www.faenfiction.com/fanfics/harry_potter/harry/anyone/463/0)_
-    [Chapter 8](https://www.faenfiction.com/fanfics/harry_potter/harry/anyone/463/17534>).
-    Last Viewed 2019-11-19.
+    _[Partners](https://www.fanfiction.net/s/5012016/)_
+    [Chapter 8](https://www.fanfiction.net/s/5012016/8/).
+    Last Viewed 2025-04-08. Published: 2009-04-22. Updated: 2010-01-31.
 
 [^20191119-7]:
     muggledad.
-    _[Partners](https://www.faenfiction.com/fanfics/harry_potter/harry/anyone/463/0)_
-    Last Viewed 2020-07-16.
+    _[Partners](https://www.fanfiction.net/s/5012016/)_
+    Last Viewed 2025-04-08. Published: 2009-04-22. Updated: 2010-01-31.
 
 [^20191119-8]:
     Mrs. J. K. Rowling. _Harry Potter and the Order of the Phoenix_.

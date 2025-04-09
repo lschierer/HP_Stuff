@@ -26,8 +26,8 @@ mermaid myths around the world.[^211111-6]
 
 [^211111-6]:
     Ms. Natasha Bowen.
-    "[Black Mermaids: The Waters Beyond Eurocentric Mythology](https://www.tor.com/2021/11/09/Black/-mermaids-the-waters-beyond-eurocentric-mythology/)"
-    [Tor.com](https://www.tor.com/) Published: 2021-11-09. Last Viewed: 2021-11-11.
+    "[Black Mermaids: The Waters Beyond Eurocentric Mythology](https://reactormag.com/black-mermaids-the-waters-beyond-eurocentric-mythology/)"
+    [Tor.com](https://www.tor.com/) Published: 2021-11-09. Last Viewed: 2025-04-08.
 
 [^211111-5]:
     [Harry Potter Wiki](https://harrypotter.fandom.com/wiki)

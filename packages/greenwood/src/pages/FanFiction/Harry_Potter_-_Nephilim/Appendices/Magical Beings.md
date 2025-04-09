@@ -53,10 +53,10 @@ have a strong distrust for the Church.
 
 [^241123-2]: Or at least the in-world version of it, see [Rules of Magic].
 
-[Rules of Magic]: </FanFiction/Harry*Potter*-_Nephilim/Appendices/Rules of Magic/>
+[Rules of Magic]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Rules of Magic/>
 [Quill of Acceptance and Book of Admittance]: https://www.rowlingindex.org/work/qaba/
 [magical rules of inheritance]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Inheritance/
-[its own rules]: /FanFiction/Harry_Potter_-\_Nephilim/Appendices/Inheritance/
+[its own rules]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Inheritance/
 [Imperius]: /Harrypedia/magic/spells/imperio/
 [Confundus]: /Harrypedia/magic/spells/confundus/
 
@@ -247,23 +247,23 @@ can never be fully freed.
 
 [Many Waters]: https://wikipedia.org/wiki/Many_Waters
 
-[AA]: </FanFiction/Harry*Potter*-_Nephilim/Appendices/Points of Divergence/>
+[AA]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Points of Divergence/>
 [AB]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Rules of Magic/>
-[AC]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/magical-beings/
+[AC]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Beings/>
 [AD]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Relative Power Levels/>
 [AE]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/life-expectancy/
 [AF]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
-[AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
-[AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Appendix_H//
+[AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Appendix_G/
+[AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Appendix_H/
 [AI]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/>
 [Appendix I]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/>
 [Flood]: /FanFiction/Harry_Potter_-_Nephilim/backstory/The_Flood/
 [goblin wars]: /FanFiction/Harry_Potter_-_Nephilim/backstory/The_Dwarfs/
-[Giants]: /FanFiction/Harry_Potter_-\_Nephilim/backstory/giants
+[Giants]: /FanFiction/Harry_Potter_-_Nephilim/backstory/The_Giants/
 [Molly]: /Harrypedia/people/Prewett/Molly/
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
 [Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>
-[knffnm]: http://kokopelli.nsns.fanficauthors.net/Maskirovat/Maskirovat/
+[knffnm]: http://kokopelli.fanficauthors.net/Maskirovat/Maskirovat/
 
 [^210518-1]:
     Mrs. J. K. Rowling. _Harry Potter and the Chamber of Secrets_
@@ -281,17 +281,19 @@ can never be fully freed.
 [^210916-5]:
     Mrs. J. K. Rowling
     _[Fantastic Beasts and Where to Find
-    Them](https://www.goodreads.com/book/show/41899.Fantastic_Beasts_and_Where_to_Find_Them)_
+    Them]_
     Kindle Locations 694-698. Pottermore. American Kindle Illustrated Edition.
 
 [^210916-4]:
     Mrs. J. K. Rowling
     _[Fantastic Beasts and Where to Find
-    Them](https://www.goodreads.com/book/show/41899.Fantastic_Beasts_and_Where_to_Find_Them)_
+    Them]_
     Kindle Location 564. Pottermore. American Kindle Illustrated Edition.
 
 [^210916-3]:
     This is an exaggerated version of Mrs. J. K. Rowling's
     "Acromantula" _[Fantastic Beasts and Where to Find
-    Them](https://www.goodreads.com/book/show/41899.Fantastic_Beasts_and_Where_to_Find_Them)_
+    Them]_
     Kindle Locations 265-266. Pottermore. American Kindle Illustrated Edition.
+
+[Fantastic Beasts and Where to Find Them]: https://www.goodreads.com/book/show/41899.Fantastic_Beasts_and_Where_to_Find_Them

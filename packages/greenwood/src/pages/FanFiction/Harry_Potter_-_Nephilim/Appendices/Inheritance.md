@@ -116,8 +116,8 @@ There are in fact, though no-inworld scholar knows this, precise percentage base
     Mrs. J. K. Rowling & Sony Computer Entertainment Europe.
     _[Miranda Goshawk's Book of Spells](https://archive.org/details/0_20211019/)_ 2013. Page 66.
 
-[Raczidian]: /Harrypedia/People/Raczidian/
-[source works]: /FanFiction/Harry_Potter_-_Nephilim/introduction/
+[Raczidian]: /Harrypedia/people/Raczidian/
+[source works]: /FanFiction/Harry_Potter_-_Nephilim/Introduction/
 [Many Waters]: https://wikipedia.org/wiki/Many_Waters
 [AA]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Points of Divergence/>
 [AB]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Rules of Magic/>
@@ -126,7 +126,7 @@ There are in fact, though no-inworld scholar knows this, precise percentage base
 [AD]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Relative Power Levels/>
 [AE]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Life Expectancy/>
 [Magical Contracts]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
-[Soteriology, Missiology and Ecclesiology]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/appendix_g/
+[Soteriology, Missiology and Ecclesiology]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Appendix_G/
 [AH]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Appendix_H//
 [Appendix I]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/>
 

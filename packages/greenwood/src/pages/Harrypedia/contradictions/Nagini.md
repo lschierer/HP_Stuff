@@ -18,7 +18,7 @@ I get that in a fictional world anything goes per the author's imagination, but 
 
 On the other hand, it may be that this is _why_ he is willing to make a snake, which would normally have a lifespan of 20 to 30 years in "perfect conditions"[^240326-3], to be a horcrux. It is certainly odd that he would attempt to ensure his immortality by entrusting his soul to something that will ultimately self-destruct due to its limited lifespan.
 
-[dementia]: https://www.cdc.gov/aging/dementia/
+[dementia]: https://web.archive.org/web/20240226212437/https://www.cdc.gov/aging/dementia/
 [Animagus]: /Harrypedia/magic/
 [horcrux]: /Harrypedia/magic/dark/Horcruxes/
 

@@ -144,7 +144,7 @@ only to the extent her male parent was.
 [Relative Power Levels]: <../Relative Power Levels/>
 
 [Life Expectancy]: ../life-expectancy/
-[Appendix G]: ../appendix_g/
+[Appendix G]: ../Appendix_G/
 [Appendix H]: ../Appendix_H//
 [Appendix I]: <../Veela Pathology/>
 [the backstory]: ../../backstory/The_Veela/

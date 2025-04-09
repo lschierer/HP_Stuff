@@ -202,10 +202,10 @@ one) had made it clear, without words, that he would find it someday.
     While I've reused the concept, my idea of the ritual is probably very different
     from the one intended by that work. The idea that the ritual would be hidden
     in actions that Voldemort would not recognise as such comes from Clell65619's
-    _[A Mother's Love](https://deluded-musings.fanficauthors.net/A_Mothers_Love/)_.
+    _[A Mother's Love](https://deluded-musings.fanficauthors.net/A_Mothers_Love/index/)_.
     Here I'm using the concept fairly similarly to the way
     the original author did. The idea of Lily being embedded
-    in Harry's scar comes from kokopelli's _[The Unexpected Horcrux](https://kokopelli.nsns.fanficauthors.net/The_Unexpected_Horcrux)_
+    in Harry's scar comes from kokopelli's _[The Unexpected Horcrux](https://kokopelli.fanficauthors.net/The_Unexpected_Horcrux/index/)_
     where again I am mutating the idea from the original. The idea that Lily
     would help Harry to learn is also used in Lady FoxFire's
     _[Justice Served With A Side Of Fries](https://www.fanfiction.net/s/6300111)_
