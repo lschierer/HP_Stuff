@@ -208,7 +208,7 @@ influenced by the various depictions I have read.
 [Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>
 [Snape]: /Harrypedia/people/Snape/Severus/
 [Quidditch]: /Harrypedia/Quidditch/
-[Gringotts]: /Harrypedia/gringotts/
+[Gringotts]: /Harrypedia/Gringotts/
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
 
 [^210818-4]: See my [History] notes.
