@@ -103,7 +103,7 @@ export const findFatherForChild = (child: GedcomPerson.GedcomElement) => {
     console.log(`findFatherForChild for child ${child.id}`);
   }
   let family_id: string = "";
-   
+
   for (const [k2, f] of GrampsState.families) {
     if (DEBUG) {
       console.log(`processing key ${k2}`);
@@ -147,7 +147,7 @@ export const findMotherForChild = (child: GedcomPerson.GedcomElement) => {
     console.log(`findMotherForChild for child ${child.id}`);
   }
   let family_id: string = "";
-   
+
   for (const [k2, f] of GrampsState.families) {
     if (DEBUG) {
       console.log(`processing key ${k2}`);
@@ -214,7 +214,9 @@ export const findBirthLastName = (
         if (DEBUG) {
           console.log(`${person.id} has a birth name ${sn.surname}`);
         }
-        return sn.surname;
+        let prefix = sn.prefix;
+        prefix = !prefix.localeCompare("of") ? "of " : prefix;
+        return `${prefix}${sn.surname}`;
       }
       if (
         !person.primary_name.type.string.localeCompare(
@@ -224,7 +226,9 @@ export const findBirthLastName = (
         if (DEBUG) {
           console.log(`${person.id} has a given name ${sn.surname}`);
         }
-        return sn.surname;
+        let prefix = sn.prefix;
+        prefix = !prefix.localeCompare("of") ? "of " : prefix;
+        return `${prefix}${sn.surname}`;
       }
       if (
         !sn.origintype.string.localeCompare(
@@ -257,8 +261,7 @@ export const findBirthLastName = (
       console.log(`found lastname ${lastname} for ${person.id}`);
     }
     if (forLink) {
-      //return lastname.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-      return encodeURIComponent(lastname);
+      return lastname;
     }
     return lastname;
   }
@@ -271,27 +274,33 @@ export const findAnyLastName = (
 ) => {
   // First try to find a birth name
   const birthLastName = findBirthLastName(person, forLink);
-  
+
   // If we found a valid birth last name, return it
   if (birthLastName !== "Unknown") {
     return birthLastName;
   }
-  
+
   // Otherwise, look for any surname in the primary_name
   if (person.primary_name.surname_list.length > 0) {
     for (const surname of person.primary_name.surname_list) {
       if (surname.surname && surname.surname.length > 0) {
         if (DEBUG) {
-          console.log(`${person.id} has a non-birth surname ${surname.surname}`);
+          console.log(
+            `${person.id} has a non-birth surname ${surname.surname}`
+          );
         }
         if (forLink) {
-          return encodeURIComponent(surname.surname);
+          let prefix = surname.prefix;
+          prefix = !prefix.localeCompare("of") ? "of " : prefix;
+          return `${prefix}${surname.surname}`;
         }
-        return surname.surname;
+        let prefix = surname.prefix;
+        prefix = !prefix.localeCompare("of") ? "of " : prefix;
+        return `${prefix}${surname.surname}`;
       }
     }
   }
-  
+
   // If no surname found, return "Unknown"
   return "Unknown";
 };

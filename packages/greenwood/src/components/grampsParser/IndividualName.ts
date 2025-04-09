@@ -92,9 +92,10 @@ export default class IndividualName extends HTMLElement {
         });
         /* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */
         if (!found && this.person.primary_name.surname_list.length > 0) {
+          let prefix = this.person.primary_name.surname_list[0].prefix;
+          prefix = !prefix.localeCompare("of") ? "of " : prefix;
           const sn = this.person.primary_name.surname_list[0].surname;
-          const tsn = encodeURIComponent(sn);
-          targetLocation = `${targetLocation}/${tsn}/`;
+          targetLocation = `${targetLocation}/${prefix}${sn}/`;
           if (DEBUG) {
             console.log(
               `found lastname ${sn} for ${this.grampsId}, targetLocation now ${targetLocation}`
@@ -118,7 +119,9 @@ export default class IndividualName extends HTMLElement {
         this.person.primary_name.suffix.length > 0
       ) {
         const suffix = this.person.primary_name.suffix;
-        targetLocation = `${targetLocation} ${suffix}`;
+        let prefix = this.person.primary_name.surname_list[0].prefix;
+        prefix = !prefix.localeCompare("of") ? "of " : prefix;
+        targetLocation = `${targetLocation} ${prefix}${suffix}`;
       }
       targetLocation = `${targetLocation}/`;
     }
@@ -146,7 +149,8 @@ export default class IndividualName extends HTMLElement {
               )
             ) {
               found = true;
-              name = `${name}${sn.surname}`;
+              const prefix = !sn.prefix.localeCompare("of") ? "of " : sn.prefix;
+              name = `${name}${prefix}${sn.surname}`;
               if (DEBUG) {
                 console.log(
                   `found lastname ${sn.surname} for ${this.grampsId}, name now ${name}`
@@ -157,8 +161,10 @@ export default class IndividualName extends HTMLElement {
         });
         /* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */
         if (!found && this.person.primary_name.surname_list.length > 0) {
+          let prefix = this.person.primary_name.surname_list[0].prefix;
+          prefix = !prefix.localeCompare("of") ? "of " : prefix;
           const sn = this.person.primary_name.surname_list[0].surname;
-          name = `${name}${sn}`;
+          name = `${name}${prefix}${sn}`;
           if (DEBUG) {
             console.log(
               `found lastname ${sn} for ${this.grampsId}, name now ${name}`
