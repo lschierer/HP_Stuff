@@ -4,6 +4,8 @@ import * as path from "node:path";
 import * as fs from "node:fs";
 import { fileURLToPath } from "node:url";
 
+import { defaultLayout } from "./layout";
+
 import debugFunction from "@shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
@@ -32,6 +34,13 @@ FanFiction.get("/*", (c) => {
     if (DEBUG) {
       console.log(`found ${realPath}`);
     }
+    const data = fs.readFileSync(realPath, "utf-8");
+    const html = defaultLayout({
+      title: "",
+      content: data,
+      markdownContent: false,
+    });
+    return c.html(html);
   } else {
     if (DEBUG) {
       console.log(`${realPath} not found`);
