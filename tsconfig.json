@@ -17,5 +17,5 @@
     "verbatimModuleSyntax": true
   },
   "exclude": ["./old/**/*.ts", "./old/**/*.js", "./old/**/*.cjs"],
-  "include": ["./bin/**/*.ts", "./lib/**/*.ts", "globals.d.ts"]
+  "include": ["./bin/**/*.ts", "./lib/**/*.ts", "myGlobals.d.ts"]
 }

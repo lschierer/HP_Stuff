@@ -5,6 +5,7 @@ import globals from "globals";
 export default tseslint.config(
   {
     ignores: [
+      "packages/vite-ssr/dist/**",
       "packages/starlight/.astro/**",
       "packages/starlight/dist/**",
       "packages/greenwood/.greenwood/**",
@@ -42,7 +43,9 @@ export default tseslint.config(
         ...globals.browser,
       },
       parserOptions: {
-        projectService: true,
+        projectService: {
+          allowDefaultProject: ["packages/*/vite.config.ts"],
+        },
         tsconfigRootDir: import.meta.dirname,
         projectFolderIgnoreList: ["**/node_modules/**"],
       },
