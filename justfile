@@ -32,14 +32,27 @@ build-infra: install
   ${PNPM} run build
 
 [working-directory: 'assets']
-parse: install
+parse-starlight: install
   ./bin/bookmarkCollection.sh -o ../packages/starlight/src/content/
-  ./bin/bookmarkCollection.sh -o ../packages/greenwood/src/assets/
   ./bin/grampsJson2CollectionJson.sh -o ../packages/starlight/src/content/
-  ./bin/grampsJson2CollectionJson.sh -o ../packages/greenwood/src/assets/
   ./bin/historyCollection.sh -o ../packages/starlight/src/content/
+
+[working-directory: 'assets']
+parse-greenwood: install
+  ./bin/bookmarkCollection.sh -o ../packages/greenwood/src/assets/
+  ./bin/grampsJson2CollectionJson.sh -o ../packages/greenwood/src/assets/
   ./bin/historyCollection.sh -o ../packages/greenwood/src/assets/
   ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../packages/greenwood/src/pages/FanFiction/" -a ../packages/greenwood/src/assets -s ../packages/greenwood/src/styles
+
+[working-directory: 'assets']
+parse-custom: install
+  ./bin/bookmarkCollection.sh -o ../packages/vite-frontend/src/assets/
+  ./bin/grampsJson2CollectionJson.sh -o ../packages/vite-frontend/src/assets/
+  ./bin/historyCollection.sh -o ../packages/vite-frontend/src/assets/
+  ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../packages/vite-frontend/src/FanFiction/" -a ../packages/vite-frontend/src/assets -s ../packages/vite-frontend/src/styles
+
+
+parse: parse-custom parse-greenwood parse-starlight
 
 [working-directory: 'packages/infrastructure']
 deploy: build-greenwood
