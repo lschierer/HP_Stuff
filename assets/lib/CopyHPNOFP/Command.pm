@@ -91,15 +91,15 @@ class CopyHPNOFP::Command {
 
   method setTemplate () {
 
-    my $templatePath = $ad->parent()->parent()->child('lib/HPNOFPtemplate.ts');
+    my $templatePath = $ad->parent()->parent()->child('shared/HPNOFPtemplate.ts');
     if($templatePath->exists()) {
       $template = $templatePath->slurp_utf8();
 
       my $newPath = $ad->parent()->parent()->child('layouts')->relative($od);
       $template =~ s/\.\.\/layouts/$newPath/;
 
-      my $debugPath = $ad->parent()->parent()->child('lib/debug.ts')->relative($od);
-      my $debugRegEx = '../lib/debug.ts';
+      my $debugPath = $ad->parent()->parent()->child('shared/debug.ts')->relative($od);
+      my $debugRegEx = '../shared/debug.ts';
       $template =~ s/$debugRegEx/$debugPath/;
 
       if($debug) {
@@ -121,7 +121,7 @@ class CopyHPNOFP::Command {
       );
       my $name = $file->basename('.xhtml');
 
-      my $output = $od->child("$name.ts");
+      my $output = $od->child("$name.fragment.html");
 
 
 
@@ -158,12 +158,12 @@ class CopyHPNOFP::Command {
 
       foreach my $anchorNode ($dom->findnodes('//a[@href]')) {
         my $target = $anchorNode->getAttribute('href');
-        
+
         # Handle links with fragments
         if ($target =~ /^(.*)\.xhtml(#.*)?$/) {
           my $base = $1;
           my $fragment = $2 || '';
-          
+
           # If this is a link to a chapter or author notes, make it an absolute path
           if ($base =~ /^(Chapter\d+|AuthorNotes)$/) {
             $target = "/FanFiction/Harry Potter and the Nightmares of Futures Past/$base/$fragment";
@@ -175,9 +175,9 @@ class CopyHPNOFP::Command {
           # Handle same-page fragments - keep as is
           $target = "#$1";
         }
-        
+
         $anchorNode->setAttribute('href', $target);
-        
+
         if($debug) {
           say "Processed link: " . $anchorNode->getAttribute('href');
         }
@@ -190,15 +190,17 @@ class CopyHPNOFP::Command {
       }
 
       my $bt = $dom->findnodes('//body')->[0];
+      my $article = $dom->createElement('article');
+      my $deepClone = 1;
+      foreach my $child ($bt->childNodes()) {
+        my $imported = $child->cloneNode($deepClone);
+        $article->appendChild($imported);
+      }
       $self->setTemplate();
 
       # Get the body element as a string without the DOCTYPE
       # Use the element method directly which handles a single node
-      my $html = $writer->element($bt);
-      my $body = $template =~ s/BODY/$html/r;
-
-
-      $body =~ s/TITLETEXT/$titleText/;
+      my $html = $writer->element($article);
 
       if($titleText eq 'Table of Contents') {
         $titleText = 'Harry Potter and the Nightmares of Futures Past';
@@ -235,7 +237,7 @@ class CopyHPNOFP::Command {
         }
       }
 
-      $output->spew_utf8($body);
+      $output->spew_utf8($html);
 
 
       return $titleText;

@@ -1,0 +1,21 @@
+ul.familylisting {
+  margin-inline-start: 0;
+  margin-block-start: 1px;
+  margin-block-end: 1px;
+}
+
+:where(ol, ul) {
+  padding-inline: 1em;
+}
+
+.familylisting li {
+  display: block;
+  list-style: none;
+  margin-left: 2px;
+  padding-left: 0em;
+  border-left: solid 0.1em var(--sl-color-accent);
+}
+
+iconify-icon {
+  padding-left: 1.5px;
+}

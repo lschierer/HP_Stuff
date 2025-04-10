@@ -1,7 +1,5 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
-import ssg from "@hono/vite-ssg";
-import build from "@hono/vite-build/node";
 import devServer from "@hono/vite-dev-server";
 
 export default defineConfig({
@@ -14,14 +12,13 @@ export default defineConfig({
   },
   plugins: [
     devServer({
-      entry: "./src/server/entry-server.ts",
-    }),
-    build({
-      entry: "./src/server/server.ts",
-      port: 3001,
-    }),
-    ssg({
-      entry: "./src/server/entry-server.ts",
+      entry: "./src/server/server.ts", // Point to server.ts instead of entry-server.ts
+      exclude: [],
+      // Add HMR options
+      hmr: {
+        // Enable HMR for server code
+        server: true,
+      },
     }),
   ],
   build: {
@@ -38,4 +35,6 @@ export default defineConfig({
       },
     },
   },
+  // Add this to see more detailed logs
+  logLevel: "info",
 });

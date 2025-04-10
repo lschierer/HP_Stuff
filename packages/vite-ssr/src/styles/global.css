@@ -1,0 +1,36 @@
+@import "@spectrum-css/tokens";
+@import "@spectrum-css/typography";
+@import "@spectrum-css/icon";
+@import "@spectrum-css/page";
+@import "@spectrum-css/link";
+@import "@spectrum-css/actionbutton";
+@import "@spectrum-css/button";
+@import "@spectrum-css/picker";
+@import "@spectrum-css/menu";
+@import "remark-alerts/styles/github-base.css";
+@import "remark-alerts/styles/github-colors-light.css";
+@import "remark-alerts/styles/github-colors-dark-class.css";
+
+html {
+  width: auto;
+  height: auto;
+}
+
+header h1.spectrum-Heading {
+  text-align: center;
+  color: var(--sl-color-accent);
+}
+
+main {
+  z-index: 1;
+  margin-left: 8px;
+  margin-right: 8px;
+  box-sizing: border-box;
+}
+
+div.content {
+  width: auto;
+  max-width: 100%;
+  margin-left: 1rem;
+  box-sizing: border-box;
+}

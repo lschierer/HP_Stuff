@@ -46,10 +46,10 @@ parse-greenwood: install
 
 [working-directory: 'assets']
 parse-custom: install
-  ./bin/bookmarkCollection.sh -o ../packages/vite-frontend/src/assets/
-  ./bin/grampsJson2CollectionJson.sh -o ../packages/vite-frontend/src/assets/
-  ./bin/historyCollection.sh -o ../packages/vite-frontend/src/assets/
-  ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../packages/vite-frontend/src/FanFiction/" -a ../packages/vite-frontend/src/assets -s ../packages/vite-frontend/src/styles
+  ./bin/bookmarkCollection.sh -o ../packages/vite-ssr/src/assets/
+  ./bin/grampsJson2CollectionJson.sh -o ../packages/vite-ssr/src/assets/
+  ./bin/historyCollection.sh -o ../packages/vite-ssr/src/assets/
+  ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../packages/vite-ssr/src/Pages/FanFiction/" -a ../packages/vite-ssr/src/assets -s ../packages/vite-ssr/src/styles
 
 
 parse: parse-custom parse-greenwood parse-starlight

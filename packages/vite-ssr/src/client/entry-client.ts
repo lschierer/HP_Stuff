@@ -3,7 +3,7 @@
  * This code only runs in the browser
  */
 
-import "../index.css";
+import "../styles/index.css";
 import { renderApp } from "@shared/app";
 
 // Hydrate the app on the client side
