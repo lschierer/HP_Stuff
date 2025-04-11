@@ -12,6 +12,7 @@ import { z } from "zod";
 import matter from "gray-matter";
 
 import TopHeaderSection from "@server/TopHeader";
+import FooterHeaderSection from "@server/FooterSection";
 
 //central control over whether or not to output debugging
 import debugFunction from "@shared/debug";
@@ -128,7 +129,12 @@ const processHtml = async (
     });
 
     const topHeader = new TopHeaderSection();
+    const footerSection = new FooterHeaderSection();
+    if (options.route) {
+      topHeader.route = options.route;
+    }
     topHeader.intercept(ast);
+    await footerSection.intercept(ast);
     return {
       frontMatter,
       html: unified().use(rehypeStringify).stringify(ast),
@@ -146,6 +152,7 @@ const processHtml = async (
 
 const CommonOptions = z.object({
   title: z.string(),
+  route: z.string().optional(),
 });
 type CommonOptions = z.infer<typeof CommonOptions>;
 
@@ -202,11 +209,20 @@ const getTemplate = (options: LayoutOptions) => {
       <body>
 
         <sp-theme class="spectrum-Typography">
-        <header>
-          <div class="topHeader" ></div>
-          <theme-provider></theme-provider>
-        </header>
+          <header>
+            <div class="topHeader" ></div>
+            <theme-provider></theme-provider>
+          </header>
           <page-outlet></page-outlet>
+          <footer class="footer">
+            <span
+              id="copyright"
+              class="copyright spectrum-Detail spectrum-Detail--serif spectrum-Detail--sizeM spectrum-Detail--light"
+            >
+              COPYRIGHTPLACEHOLDER
+            </span>
+          </footer>
+
         </sp-theme>
       </body>
     </html>

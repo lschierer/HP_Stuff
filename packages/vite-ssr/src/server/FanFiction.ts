@@ -39,6 +39,7 @@ FanFiction.get("/*", async (c) => {
     const data = fs.readFileSync(fragmentPath, "utf-8");
     result = await defaultLayout({
       title: "",
+      route: reqDir,
       content: data,
     });
   } else {

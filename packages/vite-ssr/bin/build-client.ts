@@ -5,7 +5,7 @@ import { resolve } from "path";
 const entries = await glob("src/client/**/*.ts");
 console.log("Matched client entries:", entries);
 
-import { mkdir, writeFile } from "fs/promises";
+import { mkdir } from "fs/promises";
 import { dirname } from "path";
 
 await Promise.all(
