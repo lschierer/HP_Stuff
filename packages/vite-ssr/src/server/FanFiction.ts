@@ -38,7 +38,6 @@ FanFiction.get("/*", (c) => {
     const html = defaultLayout({
       title: "",
       content: data,
-      markdownContent: false,
     });
     return c.html(html);
   } else {

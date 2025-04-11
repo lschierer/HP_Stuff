@@ -1,8 +1,12 @@
 import { defineConfig } from "vite";
 import { resolve } from "path";
 import devServer from "@hono/vite-dev-server";
+import * as path from "node:path";
+import process from "node:process";
 
 export default defineConfig({
+  base: "/",
+  root: path.join(process.cwd(), "./src"),
   resolve: {
     alias: {
       "@client": resolve(__dirname, "./src/client"),
@@ -10,9 +14,10 @@ export default defineConfig({
       "@shared": resolve(__dirname, "./src/shared"),
     },
   },
+
   plugins: [
     devServer({
-      entry: "./src/server/server.ts", // Point to server.ts instead of entry-server.ts
+      entry: "./server/server.ts", // Point to server.ts instead of entry-server.ts
       exclude: [],
       // Add HMR options
       hmr: {
@@ -32,6 +37,8 @@ export default defineConfig({
             ? "server/[name].js"
             : "client/[name].js";
         },
+        chunkFileNames: "client/[name]-[hash].js",
+        assetFileNames: "assets/[name]-[hash][extname]",
       },
     },
   },

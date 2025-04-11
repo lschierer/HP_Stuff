@@ -6,65 +6,55 @@
 import { Hono } from "hono";
 import { serveStatic } from "@hono/node-server/serve-static";
 import { serve } from "@hono/node-server";
+import * as path from "node:path";
+import process from "node:process";
+import { readFileSync } from "node:fs";
 
-import { fileURLToPath } from "url";
-import { dirname, resolve } from "path";
+import livereload from "livereload";
+
+if (process.env.NODE_ENV === "development") {
+  livereload.createServer().watch("dist");
+}
 
 import FanFiction from "./FanFiction";
 import debugFunction from "@shared/debug";
 
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
-const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = new Hono();
 const port = process.env.PORT || 3000;
 
-// Serve static assets
-app.use(
-  "/assets/*",
-  serveStatic({
-    root: fileURLToPath(new URL("../assets/", import.meta.url)),
-  })
-);
-app.use(
-  "/client/*",
-  serveStatic({ root: fileURLToPath(new URL("../", import.meta.url)) })
-);
-
-// Add this function to your server.ts file
-async function readTemplate(path: string): Promise<string> {
-  try {
-    const fs = await import("fs/promises");
-    return await fs.readFile(path, "utf-8");
-  } catch (error) {
-    if (DEBUG) console.error("Error reading template:", error);
-    return '<!DOCTYPE html><html><body><div id="app"><!--ssr-outlet--></div></body></html>';
-  }
-}
-
 app.route("/FanFiction", FanFiction);
 
-// Handle all routes
-app.get("*", async (c) => {
-  if (DEBUG) console.log("🌐 Default route handler called:", c.req.path);
+// ✅ Serve static /client/ files from dist/client
+const distPath = "dist";
+if (DEBUG) console.log(`Serving /client from ${distPath}`);
+app.use("/client/*", serveStatic({ root: distPath }));
 
+// ✅ Serve static /styles/ files from dist/styles
+if (DEBUG) console.log("Serving /styles from dist/styles");
+app.use("/styles/*", serveStatic({ root: "dist" }));
+
+// ✅ Explicit handler for root-level *.html pages
+app.get("/:page", async (c, next) => {
+  const { page } = c.req.param();
+  const filePath = path.join(process.cwd(), `dist/${page}.html`);
+  const handler = serveStatic({ path: filePath });
+  return await handler(c, next); // ✅ Now provides both args
+});
+
+app.get("/", async (c) => {
   try {
-    // Import the SSR entry point
-    const { render } = await import("./entry-server.js");
-
-    // Get the rendered app HTML
-    const { appHtml } = render();
-
-    // Read the index.html template
-    const template = await readTemplate(resolve(__dirname, "../../index.html"));
-
-    // Inject the rendered app into the template
-    const html = appHtml ? template.replace("<!--ssr-outlet-->", appHtml) : "";
-
+    const html = readFileSync("dist/index.html", "utf8");
     return c.html(html);
-  } catch (e) {
-    if (DEBUG) console.error(e);
-    return c.text("Internal Server Error", 500);
+  } catch {
+    return c.notFound();
   }
+});
+
+// ✅ Optional: fallback for true 404s
+app.notFound((c) => {
+  if (DEBUG) console.log(`404 fallback: ${c.req.path}`);
+  return c.text("Not found", 404);
 });
 
 // Export for SSG and serverless environments
@@ -74,8 +64,8 @@ export default {
 };
 
 // For development mode
-if (import.meta.env.DEV) {
-  if (DEBUG) console.log("🔧 Starting development server");
+if (process.env.NODE_ENV !== "production") {
+  console.log("🔧 Starting development server");
 
   // Store the server instance so we can close it on HMR
   let serverInstance: ReturnType<typeof serve> | null = null;
@@ -87,7 +77,7 @@ if (import.meta.env.DEV) {
         port: port as number,
       },
       (info) => {
-        if (DEBUG)
+        if (DEBUG || process.env.NODE_ENV !== "production")
           console.log(`🌍 Server is running on http://localhost:${info.port}`);
       }
     );

@@ -5,7 +5,7 @@
 
 import { Hono } from "hono";
 import { renderApp } from "@shared/app";
-import { defaultLayout } from "./layout.ts";
+import { defaultLayout } from "./layout";
 
 import debugFunction from "@shared/debug";
 
@@ -22,8 +22,7 @@ app.get("/", async (c) => {
   const rp = String(
     await defaultLayout({
       title: "",
-      content: appHtml,
-      markdownContent: false,
+      content: appHtml ?? "",
     })
   );
   return c.html(rp);

@@ -5,11 +5,10 @@ if (DEBUG) {
 }
 const fileDebug: Record<string, boolean> = {
   "/client/entry-client.ts": false,
-  "/server/FanFiction.ts": true,
+  "/server/FanFiction.ts": false,
   "/server/entry-server.ts": false,
-  "/server/layout.ts": false,
-  "/server/server.ts": false,
-  "/shared/HPNOFPtemplate.ts": false,
+  "/server/layout.ts": true,
+  "/server/server.ts": true,
   "/shared/app.ts": false,
   "/shared/debug.ts": false,
   "/vite-env.d.ts": false,
