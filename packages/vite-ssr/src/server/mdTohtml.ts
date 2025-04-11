@@ -29,6 +29,7 @@ export const mdTohtml = async (
     // Generate HTML from markdown content
     const result = await defaultLayout({
       title: "",
+      route: reqDir,
       markdownContent: fileContent,
     });
 

@@ -11,20 +11,30 @@ const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 import { config } from "@shared/config";
 
 export default class TopHeaderSection {
+  accessor route: string = "";
+
   private getNavSection = () => {
     return config.TOPLEVELSECTIONS.length
       ? config.TOPLEVELSECTIONS.split(",")
           .map((section) => {
-            return `
-            <div class="navItem">
-              <a
-                href=${"/" + section.replaceAll(" ", "") + "/"}
-                class="spectrum-Link spectrum-Link--primary spectrum-Link--quiet"
-              >
+            if (this.route.startsWith(`/${section.replaceAll(" ", "")}`)) {
+              return `
+              <div class="navItem">
                 <span class="spectrum-Heading spectrum-Heading--serif spectrum-Heading--sizeXS">${section.replaceAll("_", " ")}</span>
-              </a>
-            </div>
-          `;
+              </div>
+              `;
+            } else {
+              return `
+              <div class="navItem">
+                <a
+                  href=${"/" + section.replaceAll(" ", "") + "/"}
+                  class="spectrum-Link spectrum-Link--primary spectrum-Link--quiet"
+                >
+                  <span class="spectrum-Heading spectrum-Heading--serif spectrum-Heading--sizeXS">${section.replaceAll("_", " ")}</span>
+                </a>
+              </div>
+            `;
+            }
           })
           .join("")
       : "";

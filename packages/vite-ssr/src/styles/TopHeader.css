@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   grid-auto-rows: auto;
-  background-color: var(--spectrum-cyan-1000);
+  background-color: var(--sl-color-accent-high);
 }
 
 div.site-title-section {

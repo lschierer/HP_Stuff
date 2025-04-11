@@ -5,26 +5,25 @@ if (DEBUG) {
 }
 
 // src/client/ThemeSelector.ts
-import { LitElement, html, css } from "lit";
-import { customElement, property } from "lit/decorators.js";
 import { ChangeTheme, getTheme } from "./theme";
 
-@customElement("theme-select")
-export class ThemeSelector extends LitElement {
-  @property({ type: String })
-  value = getTheme();
+export class ThemeSelector extends HTMLElement {
+  private value = getTheme();
 
-  @property({ type: String })
-  label = "Theme";
-
-  static styles = css`
-    /* Your styles here */
-  `;
+  private label = "Theme";
 
   connectedCallback() {
-    super.connectedCallback();
     // Apply the theme when the component is connected
     ChangeTheme(this.value === "light" ? "light" : "dark");
+    const select = this.querySelector("#ThemeSelector");
+    this.innerHTML = this.render();
+    if (select) {
+      select.addEventListener("change", this.handleChange);
+    } else {
+      if (DEBUG) {
+        console.log(`cannot find select in template`);
+      }
+    }
   }
 
   // Use an arrow function to avoid the unbound method issue
@@ -35,13 +34,12 @@ export class ThemeSelector extends LitElement {
   };
 
   render() {
-    return html`
+    return `
       <select
         class="spectrum-Picker spectrum-Picker--sizeM"
         id="ThemeSelector"
         label="${this.label}"
         value="${this.value}"
-        @change="${this.handleChange}"
         width="6.25em"
       >
         <option value="dark" class="spectrum-Menu-item">dark</option>
@@ -51,3 +49,4 @@ export class ThemeSelector extends LitElement {
     `;
   }
 }
+customElements.define("theme-select", ThemeSelector);
