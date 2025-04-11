@@ -44,7 +44,11 @@ export default tseslint.config(
       },
       parserOptions: {
         projectService: {
-          allowDefaultProject: ["packages/*/vite.config.ts"],
+          allowDefaultProject: [
+            "packages/*/vite.config.ts",
+            "packages/*/bin/*.ts",
+            "eslint.config.mts",
+          ],
         },
         tsconfigRootDir: import.meta.dirname,
         projectFolderIgnoreList: ["**/node_modules/**"],
