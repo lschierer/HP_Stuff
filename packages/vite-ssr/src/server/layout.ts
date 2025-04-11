@@ -2,12 +2,14 @@ import { unified } from "unified";
 import remarkParse from "remark-parse";
 import remarkGfm from "remark-gfm";
 import remarkRehype from "remark-rehype";
+import remarkFrontmatter from "remark-frontmatter";
 import rehypeParse from "rehype-parse";
 import rehypeAddClasses from "rehype-class-names";
 import rehypeStringify from "rehype-stringify";
 import { visit } from "unist-util-visit";
 import type { Root } from "hast";
 import { z } from "zod";
+import matter from "gray-matter";
 
 //central control over whether or not to output debugging
 import debugFunction from "@shared/debug";
@@ -22,33 +24,91 @@ const classMap = {
     "spectrum-Body spectrum-Body--serif spectrum-Body--sizeS",
 };
 
+export const FrontMatter = z.object({
+  title: z.string(),
+  author: z.union([z.string(), z.array(z.string())]).optional(),
+  collection: z.union([z.string(), z.array(z.string())]).optional(),
+  layout: z.union([z.literal("splash"), z.literal("standard")]).optional(),
+  sidebar: z
+    .object({
+      order: z.number(),
+    })
+    .optional(),
+});
+export type FrontMatter = z.infer<typeof FrontMatter>;
+
+export const ParsedResult = z.object({
+  frontMatter: FrontMatter,
+  html: z.string(),
+});
+export type ParsedResult = z.infer<typeof ParsedResult>;
+
 const processHtml = async (
-  template: string,
-  options: LayoutOptions
-): Promise<string> => {
+  options: LayoutOptions,
+  template?: string
+): Promise<ParsedResult> => {
+  let frontMatter: FrontMatter = {
+    title: "",
+  };
   try {
     let contentAst: Root;
 
     if ("markdownContent" in options) {
-      const file = await unified()
+      if (DEBUG) {
+        console.log(`building content from markdown string`);
+      }
+
+      const { data, content } = matter(options.markdownContent);
+
+      const fileFM = FrontMatter.safeParse(data);
+      if (fileFM.success) {
+        frontMatter = fileFM.data;
+      }
+      if (DEBUG) {
+        console.log(`Extracted frontmatter:`, JSON.stringify(fileFM.data));
+      }
+
+      // Create a complete processor pipeline that outputs a string
+      const processor = unified()
         .use(remarkParse)
+        .use(remarkFrontmatter) // Add support for frontmatter
         .use(remarkGfm)
         .use(remarkRehype)
         .use(rehypeAddClasses, classMap)
-        .process(options.markdownContent);
+        .use(rehypeStringify);
 
-      contentAst = file.result as Root;
+      // Process the markdown to HTML string
+      const file = await processor.process(content);
+
+      // Parse the resulting HTML string back to an AST
+      contentAst = unified()
+        .use(rehypeParse, { fragment: true })
+        .parse(String(file));
     } else {
       if (DEBUG) {
         console.log(`building content from html string`);
       }
+      // Extract front matter using gray-matter
+      const { data: rawFrontmatter, content } = matter(options.content);
+
+      // Parse frontmatter with Zod schema
+      const fileFM = FrontMatter.safeParse(rawFrontmatter);
+      if (fileFM.success) {
+        frontMatter = fileFM.data;
+      }
+
       contentAst = unified()
         .use(rehypeParse, { fragment: true })
         .use(rehypeAddClasses, classMap)
-        .parse(options.content);
+        .parse(content);
     }
 
     const contentChildren = contentAst.children;
+
+    if (template === undefined) {
+      options.title = frontMatter.title;
+      template = getTemplate(options);
+    }
 
     const ast = unified().use(rehypeParse, { fragment: true }).parse(template);
 
@@ -65,10 +125,16 @@ const processHtml = async (
       }
     });
 
-    return unified().use(rehypeStringify).stringify(ast);
+    return {
+      frontMatter,
+      html: unified().use(rehypeStringify).stringify(ast),
+    };
   } catch (err) {
     if (DEBUG) console.error("Layout render error:", err);
-    return `<html><body><h1>Error rendering page</h1><pre>${JSON.stringify(err)}</pre></body></html>`;
+    return {
+      frontMatter,
+      html: `<html><body><h1>Error rendering page</h1><pre>${JSON.stringify(err)}</pre></body></html>`,
+    };
   }
 };
 
@@ -134,15 +200,15 @@ const getTemplate = (options: LayoutOptions) => {
   `;
 };
 
-const renderLayout = async (options: LayoutOptions): Promise<string> => {
-  //if (DEBUG) {
-  console.log(`in layout.ts renderLayout`);
-  //}
-  return await processHtml(getTemplate(options), options);
+const renderLayout = async (options: LayoutOptions): Promise<ParsedResult> => {
+  if (DEBUG) {
+    console.log(`in layout.ts renderLayout`);
+  }
+  return await processHtml(options);
 };
 
 export const defaultLayout = z
   .function()
   .args(LayoutOptions)
-  .returns(z.string().promise())
+  .returns(ParsedResult.promise())
   .implement(renderLayout);

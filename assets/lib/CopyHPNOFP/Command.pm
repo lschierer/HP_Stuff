@@ -30,7 +30,6 @@ class CopyHPNOFP::Command {
   field $od;
   field $ad;
   field $sd;
-  field $template;
 
   ADJUST {
     my $tp;
@@ -89,27 +88,7 @@ class CopyHPNOFP::Command {
     }
   }
 
-  method setTemplate () {
 
-    my $templatePath = $ad->parent()->parent()->child('shared/HPNOFPtemplate.ts');
-    if($templatePath->exists()) {
-      $template = $templatePath->slurp_utf8();
-
-      my $newPath = $ad->parent()->parent()->child('layouts')->relative($od);
-      $template =~ s/\.\.\/layouts/$newPath/;
-
-      my $debugPath = $ad->parent()->parent()->child('shared/debug.ts')->relative($od);
-      my $debugRegEx = '../shared/debug.ts';
-      $template =~ s/$debugRegEx/$debugPath/;
-
-      if($debug) {
-        say "templatePath is $templatePath";
-      }
-    } else {
-      croak "template file $templatePath not found";
-    }
-
-  }
 
   method processFile ($file) {
     if($file->is_file()) {
@@ -196,7 +175,6 @@ class CopyHPNOFP::Command {
         my $imported = $child->cloneNode($deepClone);
         $article->appendChild($imported);
       }
-      $self->setTemplate();
 
       # Get the body element as a string without the DOCTYPE
       # Use the element method directly which handles a single node
@@ -237,7 +215,24 @@ class CopyHPNOFP::Command {
         }
       }
 
-      $output->spew_utf8($html);
+      # on visual inspection, the files do not contain the author in predictable places.
+      # There are however only a few of them, so just hard code it based on the titles.
+      my $author = '';
+      if($titleText =~ /A Night at The Burrow/){
+        $author = 'Worfe';
+      } elsif($titleText =~ /G for Ginevra/) {
+        $author = 'Peach Wookiee';
+      } else {
+        $author = 'Matthew Schocke';
+      }
+      my $outDoc = sprintf(
+        "---\ntitle: %s\nauthor: %s\ncollection: %s\n---\n%s",
+        $titleText,
+        $author,
+        "\n  - HPNOFP\n  - FanFiction\n",
+        $html
+      );
+      $output->spew_utf8($outDoc);
 
 
       return $titleText;

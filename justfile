@@ -10,7 +10,7 @@ install:
   ${PNPM} install -r
   ./assets/bin/perldeps.sh
 
-[working-directory: 'packages/greenwood']
+[working-directory: 'packages/vite-ssr']
 dev: install parse
   ${PNPM} run dev
 
