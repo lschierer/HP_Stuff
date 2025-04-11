@@ -11,6 +11,8 @@ import type { Root } from "hast";
 import { z } from "zod";
 import matter from "gray-matter";
 
+import TopHeaderSection from "@server/TopHeader";
+
 //central control over whether or not to output debugging
 import debugFunction from "@shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -110,7 +112,7 @@ const processHtml = async (
       template = getTemplate(options);
     }
 
-    const ast = unified().use(rehypeParse, { fragment: true }).parse(template);
+    const ast = unified().use(rehypeParse).parse(template);
 
     visit(ast, "element", (node, index, parent) => {
       if (
@@ -125,6 +127,8 @@ const processHtml = async (
       }
     });
 
+    const topHeader = new TopHeaderSection();
+    topHeader.intercept(ast);
     return {
       frontMatter,
       html: unified().use(rehypeStringify).stringify(ast),
@@ -190,9 +194,18 @@ const getTemplate = (options: LayoutOptions) => {
         }
 
         <meta name="google-adsense-account" content="ca-pub-8360834774752607" />
+
+        <script type="module" src="/client/entry-client.js "></script>
+        <script type="module" src="/client/theme.js"></script>
+
       </head>
       <body>
+
         <sp-theme class="spectrum-Typography">
+        <header>
+          <div class="topHeader" ></div>
+          <theme-provider></theme-provider>
+        </header>
           <page-outlet></page-outlet>
         </sp-theme>
       </body>

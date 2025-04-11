@@ -7,12 +7,13 @@ import { Hono } from "hono";
 import { serveStatic } from "@hono/node-server/serve-static";
 import { serve } from "@hono/node-server";
 import * as path from "node:path";
-import process from "node:process";
 import { readFileSync } from "node:fs";
+
+import { config } from "@shared/config";
 
 import livereload from "livereload";
 
-if (process.env.NODE_ENV === "development") {
+if (config.NODE_ENV === "development") {
   livereload.createServer().watch("dist");
 }
 
@@ -64,7 +65,7 @@ export default {
 };
 
 // For development mode
-if (process.env.NODE_ENV !== "production") {
+if (config.NODE_ENV !== "production") {
   console.log("🔧 Starting development server");
 
   // Store the server instance so we can close it on HMR
@@ -77,7 +78,7 @@ if (process.env.NODE_ENV !== "production") {
         port: port as number,
       },
       (info) => {
-        if (DEBUG || process.env.NODE_ENV !== "production")
+        if (DEBUG || config.NODE_ENV !== "production")
           console.log(`🌍 Server is running on http://localhost:${info.port}`);
       }
     );

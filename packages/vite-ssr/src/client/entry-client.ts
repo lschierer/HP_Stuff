@@ -3,16 +3,18 @@
  * This code only runs in the browser
  */
 
-import "../styles/index.css";
-import { renderApp } from "@shared/app";
+// Add a comment to clearly identify client-side code during development
+import debugFunction from "@shared/debug";
 
-// Hydrate the app on the client side
-const appElement = document.getElementById("app");
-if (appElement) {
-  renderApp(appElement);
-} else {
-  console.warn(`client side application element not found`);
+const DEBUG = debugFunction(new URL(import.meta.url).pathname);
+if (DEBUG || !(process.env.NODE_ENV !== "production")) {
+  console.log("🌐 Client-side code is running in the browser");
+  console.log(`process.env.NODE_ENV is ${process.env.NODE_ENV}`);
+  console.log(`DEBUG is ${DEBUG}`);
+  console.log(`pathname is ${new URL(import.meta.url).pathname}`);
 }
 
-// Add a comment to clearly identify client-side code during development
-console.log("🌐 Client-side code is running in the browser");
+import "@spectrum-web-components/theme/sp-theme.js";
+import "@spectrum-web-components/theme/src/themes.js";
+import "@spectrum-web-components/split-view/sp-split-view.js";
+import "iconify-icon";

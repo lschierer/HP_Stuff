@@ -4,9 +4,10 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 const fileDebug: Record<string, boolean> = {
-  "/client/entry-client.ts": false,
+  "/client/entry-client.js": true,
   "/server/FanFiction.ts": false,
   "/server/entry-server.ts": false,
+  "/server/TopHeader.ts": true,
   "/server/layout.ts": true,
   "/server/server.ts": true,
   "/shared/app.ts": false,

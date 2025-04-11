@@ -822,18 +822,90 @@ importers:
 
   packages/vite-ssr:
     dependencies:
+      '@dotenvx/dotenvx':
+        specifier: ^1.39.1
+        version: 1.39.1
       '@hono/node-server':
         specifier: ^1.14.0
         version: 1.14.0(hono@4.7.6)
       '@hono/zod-validator':
         specifier: ^0.4.3
         version: 0.4.3(hono@4.7.6)(zod@3.24.2)
+      '@spectrum-css/actionbutton':
+        specifier: ^7.1.3
+        version: 7.1.3(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/alertbanner':
+        specifier: ^3.1.1
+        version: 3.1.1(@spectrum-css/button@14.1.6(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/closebutton@6.1.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/divider@5.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/button':
+        specifier: ^14.1.6
+        version: 14.1.6(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/card':
+        specifier: ^11.1.0
+        version: 11.1.0(@spectrum-css/actionbutton@7.1.3(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)(@spectrum-css/typography@8.1.0(@spectrum-css/tokens@16.0.1))
+      '@spectrum-css/closebutton':
+        specifier: ^6.1.0
+        version: 6.1.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/divider':
+        specifier: ^5.1.0
+        version: 5.1.0(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/icon':
+        specifier: ^9.1.0
+        version: 9.1.0(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/link':
+        specifier: ^7.1.0
+        version: 7.1.0(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/menu':
+        specifier: ^9.2.0
+        version: 9.2.0(@spectrum-css/divider@5.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/page':
+        specifier: ^9.1.0
+        version: 9.1.0(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/picker':
+        specifier: ^9.1.4
+        version: 9.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/menu@9.2.0(@spectrum-css/divider@5.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/sidenav':
+        specifier: ^7.1.0
+        version: 7.1.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/splitview':
+        specifier: ^7.1.0
+        version: 7.1.0(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/table':
+        specifier: ^8.1.0
+        version: 8.1.0(@spectrum-css/button@14.1.6(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/tokens':
+        specifier: ^16.0.1
+        version: 16.0.1
+      '@spectrum-css/typography':
+        specifier: ^8.1.0
+        version: 8.1.0(@spectrum-css/tokens@16.0.1)
+      '@spectrum-web-components/card':
+        specifier: ^1.4.0
+        version: 1.4.0
+      '@spectrum-web-components/popover':
+        specifier: ^1.4.0
+        version: 1.4.0
+      '@spectrum-web-components/split-view':
+        specifier: ^1.4.0
+        version: 1.4.0
+      '@spectrum-web-components/styles':
+        specifier: ^1.4.0
+        version: 1.4.0
+      '@spectrum-web-components/theme':
+        specifier: ^1.4.0
+        version: 1.4.0
+      dotenv:
+        specifier: ^16.4.7
+        version: 16.4.7
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
       hono:
         specifier: ^4.7.6
         version: 4.7.6
+      iconify-icon:
+        specifier: ^2.3.0
+        version: 2.3.0
       lit:
         specifier: ^3.2.1
         version: 3.2.1
@@ -1619,8 +1691,18 @@ packages:
     resolution: {integrity: sha512-WyOx8cJQ+FQus4Mm4uPIZA64gbk3Wxh0so5Lcii0aJifqwoVOlfFtorjLE0Hen4OYyHZMXDWqMmaQemBhgxFRQ==}
     engines: {node: '>=14'}
 
+  '@dotenvx/dotenvx@1.39.1':
+    resolution: {integrity: sha512-FIjEB/s3TSQBYnYA64GPkXJrOR6w5J52SSnl6gSoq1tp+4r9zLjaAsf65AgDv5emA4ypm90gVWv1XX0/bfHA/A==}
+    hasBin: true
+
   '@dual-bundle/import-meta-resolve@4.1.0':
     resolution: {integrity: sha512-+nxncfwHM5SgAtrVzgpzJOI1ol0PkumhVo469KCf9lUi21IGcY90G98VuHm9VRrUypmAzawAHO9bs6hqeADaVg==}
+
+  '@ecies/ciphers@0.2.3':
+    resolution: {integrity: sha512-tapn6XhOueMwht3E2UzY0ZZjYokdaw9XtL9kEyjhQ/Fb9vL9xTFbOaI+fV0AWvTpYu4BNloC6getKW6NtSg4mA==}
+    engines: {bun: '>=1', deno: '>=2', node: '>=16'}
+    peerDependencies:
+      '@noble/ciphers': ^1.0.0
 
   '@emnapi/runtime@1.4.0':
     resolution: {integrity: sha512-64WYIf4UYcdLnbKn/umDlNjQDSS8AgZrI/R9+x5ilkUVFxXcA1Ebl+gQLc/6mERA4407Xof0R7wEyEuj091CVw==}
@@ -2291,6 +2373,18 @@ packages:
   '@modelcontextprotocol/sdk@1.6.1':
     resolution: {integrity: sha512-oxzMzYCkZHMntzuyerehK3fV6A2Kwh5BD6CGEJSVDU2QNEhfLOptf2X7esQgaHZXHZY0oHmMsOtIDLP71UJXgA==}
     engines: {node: '>=18'}
+
+  '@noble/ciphers@1.2.1':
+    resolution: {integrity: sha512-rONPWMC7PeExE077uLE4oqWrZ1IvAfz3oH9LibVAcVCopJiA9R62uavnbEzdkVmJYI6M6Zgkbeb07+tWjlq2XA==}
+    engines: {node: ^14.21.3 || >=16}
+
+  '@noble/curves@1.8.1':
+    resolution: {integrity: sha512-warwspo+UYUPep0Q+vtdVB4Ugn8GGQj8iyB3gnRWsztmUHTI3S1nhdiWNsPUGL0vud7JlRRk1XEu7Lq1KGTnMQ==}
+    engines: {node: ^14.21.3 || >=16}
+
+  '@noble/hashes@1.7.1':
+    resolution: {integrity: sha512-B8XBPsn4vT/KJAGqDzbwztd+6Yte3P4V7iafm24bxgDe/mlRuK6xmWPuCNrKt2vDafZ8MfJLlchDG/vYafQEjQ==}
+    engines: {node: ^14.21.3 || >=16}
 
   '@nodelib/fs.scandir@2.1.5':
     resolution: {integrity: sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g==}
@@ -3169,6 +3263,20 @@ packages:
 
   '@spectrum-css/button@14.1.4':
     resolution: {integrity: sha512-gl+lhYhlR3Rc8+0aHHU0E/ZsKamNrSM8yS6fMmhuQHv+bnznsnRE+EQv0i+hw+xCEorFVUvE5MOYz/7/xndJsA==}
+    peerDependencies:
+      '@spectrum-css/icon': '>=9.0.0 <10.0.0'
+      '@spectrum-css/progresscircle': '>=5.0.0 <6.0.0'
+      '@spectrum-css/tokens': '>=16.0.0 <17.0.0'
+    peerDependenciesMeta:
+      '@spectrum-css/icon':
+        optional: true
+      '@spectrum-css/progresscircle':
+        optional: true
+      '@spectrum-css/tokens':
+        optional: true
+
+  '@spectrum-css/button@14.1.6':
+    resolution: {integrity: sha512-h4LTMT7sRYC9P0OKJn8vr7JJY8NU4xkcKvmwoph5sOgaFaDhNZ15JzO93FoKgAWMpFzh1CXGXyrIJhq2mBpc5A==}
     peerDependencies:
       '@spectrum-css/icon': '>=9.0.0 <10.0.0'
       '@spectrum-css/progresscircle': '>=5.0.0 <6.0.0'
@@ -4559,6 +4667,10 @@ packages:
     resolution: {integrity: sha512-PqMLy5+YGwhMh1wS04mVG44oqDsgyLRSKJBdOo1bnYhMKBW65gZF1dRp2OZRhiTjgUHljy99qkO7bsctLaw35Q==}
     engines: {node: '>=12.20.0'}
 
+  commander@11.1.0:
+    resolution: {integrity: sha512-yPVavfyCcRhmorC7rWlkHn15b4wDVgVmBA7kV4QVBsF7kv/9TKJAbAXVTxvTnwP8HHKjRCJDClKbciiYS7p0DQ==}
+    engines: {node: '>=16'}
+
   commander@13.1.0:
     resolution: {integrity: sha512-/rFeCpNJQbhSZjGVwO9RFV3xPqbnERS8MmIQzCtD/zl6gpJuV/bMLuN92oG3F7d8oDEHHRrujSXNUr8fpjntKw==}
     engines: {node: '>=18'}
@@ -5159,6 +5271,10 @@ packages:
 
   ecc-jsbn@0.1.2:
     resolution: {integrity: sha512-eh9O+hwRHNbG4BLTjEl3nw044CkGm5X6LoaCf7LPp7UU8Qrt47JYNi6nPX8xjW97TKGKm1ouctg0QSpZe9qrnw==}
+
+  eciesjs@0.4.14:
+    resolution: {integrity: sha512-eJAgf9pdv214Hn98FlUzclRMYWF7WfoLlkS9nWMTm1qcCwn6Ad4EGD9lr9HXMBfSrZhYQujRE+p0adPRkctC6A==}
+    engines: {bun: '>=1', deno: '>=2', node: '>=16'}
 
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
@@ -7612,6 +7728,10 @@ packages:
   object-keys@1.1.1:
     resolution: {integrity: sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==}
     engines: {node: '>= 0.4'}
+
+  object-treeify@1.1.33:
+    resolution: {integrity: sha512-EFVjAYfzWqWsBMRHPMAXLCDIJnpMhdWAqR7xG6M6a2cs6PMFpl/+Z20w9zDW4vkxOFfddegBKq9Rehd0bxWE7A==}
+    engines: {node: '>= 10'}
 
   object.assign@4.1.7:
     resolution: {integrity: sha512-nK28WOo+QIjBkDduTINE4JkF/UJJKyf2EJxvJKfblDpyg0Q+pkOHNTL0Qwy6NP6FhE/EnzV73BxxqcJaXY9anw==}
@@ -11871,7 +11991,23 @@ snapshots:
 
   '@ctrl/tinycolor@4.1.0': {}
 
+  '@dotenvx/dotenvx@1.39.1':
+    dependencies:
+      commander: 11.1.0
+      dotenv: 16.4.7
+      eciesjs: 0.4.14
+      execa: 5.1.1
+      fdir: 6.4.3(picomatch@4.0.2)
+      ignore: 5.3.2
+      object-treeify: 1.1.33
+      picomatch: 4.0.2
+      which: 4.0.0
+
   '@dual-bundle/import-meta-resolve@4.1.0': {}
+
+  '@ecies/ciphers@0.2.3(@noble/ciphers@1.2.1)':
+    dependencies:
+      '@noble/ciphers': 1.2.1
 
   '@emnapi/runtime@1.4.0':
     dependencies:
@@ -12644,6 +12780,14 @@ snapshots:
       zod-to-json-schema: 3.24.3(zod@3.24.2)
     transitivePeerDependencies:
       - supports-color
+
+  '@noble/ciphers@1.2.1': {}
+
+  '@noble/curves@1.8.1':
+    dependencies:
+      '@noble/hashes': 1.7.1
+
+  '@noble/hashes@1.7.1': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -13729,7 +13873,20 @@ snapshots:
       '@spectrum-css/icon': 9.1.0(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/tokens': 16.0.1
 
+  '@spectrum-css/alertbanner@3.1.1(@spectrum-css/button@14.1.6(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/closebutton@6.1.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/divider@5.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)':
+    optionalDependencies:
+      '@spectrum-css/button': 14.1.6(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/closebutton': 6.1.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/divider': 5.1.0(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/icon': 9.1.0(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/tokens': 16.0.1
+
   '@spectrum-css/button@14.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)':
+    optionalDependencies:
+      '@spectrum-css/icon': 9.1.0(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/tokens': 16.0.1
+
+  '@spectrum-css/button@14.1.6(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)':
     optionalDependencies:
       '@spectrum-css/icon': 9.1.0(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/tokens': 16.0.1
@@ -13786,6 +13943,12 @@ snapshots:
   '@spectrum-css/table@8.1.0(@spectrum-css/button@14.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)':
     optionalDependencies:
       '@spectrum-css/button': 14.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/icon': 9.1.0(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/tokens': 16.0.1
+
+  '@spectrum-css/table@8.1.0(@spectrum-css/button@14.1.6(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)':
+    optionalDependencies:
+      '@spectrum-css/button': 14.1.6(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/icon': 9.1.0(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/tokens': 16.0.1
 
@@ -15340,6 +15503,8 @@ snapshots:
       table-layout: 4.1.1
       typical: 7.3.0
 
+  commander@11.1.0: {}
+
   commander@13.1.0: {}
 
   commander@2.20.3: {}
@@ -15922,6 +16087,13 @@ snapshots:
     dependencies:
       jsbn: 0.1.1
       safer-buffer: 2.1.2
+
+  eciesjs@0.4.14:
+    dependencies:
+      '@ecies/ciphers': 0.2.3(@noble/ciphers@1.2.1)
+      '@noble/ciphers': 1.2.1
+      '@noble/curves': 1.8.1
+      '@noble/hashes': 1.7.1
 
   ee-first@1.1.1: {}
 
@@ -16893,8 +17065,8 @@ snapshots:
       '@hpcc-js/wasm-graphviz': 1.7.0
       '@lit/context': 1.1.4
       '@spectrum-css/actionbutton': 7.1.3(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/alertbanner': 3.1.1(@spectrum-css/button@14.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/closebutton@6.1.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/divider@5.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/button': 14.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/alertbanner': 3.1.1(@spectrum-css/button@14.1.6(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/closebutton@6.1.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/divider@5.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/button': 14.1.6(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/card': 11.1.0(@spectrum-css/actionbutton@7.1.3(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)(@spectrum-css/typography@8.1.0(@spectrum-css/tokens@16.0.1))
       '@spectrum-css/divider': 5.1.0(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/icon': 9.1.0(@spectrum-css/tokens@16.0.1)
@@ -16904,7 +17076,7 @@ snapshots:
       '@spectrum-css/picker': 9.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/menu@9.2.0(@spectrum-css/divider@5.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/sidenav': 7.1.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/splitview': 7.1.0(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/table': 8.1.0(@spectrum-css/button@14.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/table': 8.1.0(@spectrum-css/button@14.1.6(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/tokens': 16.0.1
       '@spectrum-css/typography': 8.1.0(@spectrum-css/tokens@16.0.1)
       '@spectrum-web-components/card': 1.4.0
@@ -19079,6 +19251,8 @@ snapshots:
   object-inspect@1.13.4: {}
 
   object-keys@1.1.1: {}
+
+  object-treeify@1.1.33: {}
 
   object.assign@4.1.7:
     dependencies:
