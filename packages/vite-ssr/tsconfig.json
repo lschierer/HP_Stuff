@@ -34,7 +34,8 @@
     "paths": {
       "@client/*": ["src/client/*"],
       "@server/*": ["src/server/*"],
-      "@shared/*": ["src/shared/*"]
+      "@shared/*": ["src/shared/*"],
+      "@schemas/*": ["src/schemas/*"]
     }
   },
   "include": ["src"]
