@@ -4,14 +4,16 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 const fileDebug: Record<string, boolean> = {
-  "/client/entry-client.js": true,
+  "/client/entry-client.js": false,
+  "/scripts/gedcomExportToHtml.ts": true,
   "/server/FanFiction.ts": false,
   "/server/entry-server.ts": false,
-  "/server/TopHeader.ts": true,
+  "/server/TopHeader.ts": false,
   "/server/layout.ts": true,
-  "/server/server.ts": true,
+  "/server/server.ts": false,
   "/shared/app.ts": false,
   "/shared/debug.ts": false,
+  "/shared/gedcom/IndividualName.ts": true,
   "/vite-env.d.ts": false,
 };
 

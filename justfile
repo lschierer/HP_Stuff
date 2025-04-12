@@ -10,7 +10,7 @@ install:
   ${PNPM} install -r
   ./assets/bin/perldeps.sh
 
-[working-directory: 'packages/vite-ssr']
+[working-directory: 'packages/hono']
 dev: install parse
   ${PNPM} run dev
 
@@ -46,10 +46,10 @@ parse-greenwood: install
 
 [working-directory: 'assets']
 parse-custom: install
-  ./bin/bookmarkCollection.sh -o ../packages/vite-ssr/src/assets/
-  ./bin/grampsJson2CollectionJson.sh -o ../packages/vite-ssr/src/assets/
-  ./bin/historyCollection.sh -o ../packages/vite-ssr/src/assets/
-  ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../packages/vite-ssr/src/Pages/FanFiction/" -a ../packages/vite-ssr/src/assets -s ../packages/vite-ssr/src/styles
+  ./bin/bookmarkCollection.sh -o ../packages/hono/src/assets/
+  ./bin/grampsJson2CollectionJson.sh -o ../packages/hono/src/assets/
+  ./bin/historyCollection.sh -o ../packages/hono/src/assets/
+  ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../packages/hono/src/Pages/FanFiction/" -a ../packages/hono/src/assets -s ../packages/hono/src/styles
 
 
 parse: parse-custom parse-greenwood parse-starlight

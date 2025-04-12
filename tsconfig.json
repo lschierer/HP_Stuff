@@ -14,8 +14,22 @@
     "resolveJsonModule": true,
     "strict": true,
     "target": "ES2023",
-    "verbatimModuleSyntax": true
+    "verbatimModuleSyntax": true,
+    "rootDir": "."
   },
-  "exclude": ["./old/**/*.ts", "./old/**/*.js", "./old/**/*.cjs"],
-  "include": ["./bin/**/*.ts", "./lib/**/*.ts", "myGlobals.d.ts"]
+  "exclude": [
+    "./old/**/*.ts",
+    "./old/**/*.js",
+    "./old/**/*.cjs",
+    "node_modules",
+    "packages/**/node_modules",
+    "packages/**/dist",
+    "bin/**/*.d.ts"
+  ],
+  "include": [
+    "./bin/**/*.ts",
+    "./lib/**/*.ts",
+    "myGlobals.d.ts",
+    "packages/**/*.ts"
+  ]
 }

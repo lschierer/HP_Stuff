@@ -1,26 +1,26 @@
-import { SignalMap } from "signal-utils/map";
-import { SignalSet } from "signal-utils/set";
-import { SignalObject } from "signal-utils/object";
+import {
+  GedcomEvent,
+  GedcomFamily,
+  GedcomPerson,
+} from "../../schemas/gedcom/index";
 
-import { GedcomEvent, GedcomFamily, GedcomPerson } from "@schemas/gedcom/index";
-
-import debugFunction from "@shared/debug";
+import debugFunction from "../debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-export const GrampsState = new SignalObject({
-  people: new SignalMap<string, GedcomPerson.GedcomElement>(),
+export const GrampsState = {
+  people: new Map<string, GedcomPerson.GedcomElement>(),
 
-  families: new SignalMap<string, GedcomFamily.GedcomElement>(),
+  families: new Map<string, GedcomFamily.GedcomElement>(),
 
-  events: new SignalMap<string, GedcomEvent.GedcomElement>(),
-});
+  events: new Map<string, GedcomEvent.GedcomElement>(),
+};
 
-export const familyListDisplayedIds = new SignalSet<string>();
+export const familyListDisplayedIds = new Set<string>();
 
-export const familyPagesCreated = new SignalSet<string>();
+export const familyPagesCreated = new Set<string>();
 
 export const getGrampsData = async () => {
   const basePath = "../../assets/gedcom";

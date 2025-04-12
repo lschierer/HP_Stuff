@@ -11,8 +11,8 @@
     "watch:html": "chokidar 'src/**/*.html' -c 'pnpm build:html' --initial",
     "build:css": "./bin/build-css.sh",
     "build:ts": "tsc && tsc-alias",
-    "build:client": "tsx bin/build-client.ts",
-    "build:html": "rsync -av --include='*/' --include='*.html' --exclude='*' src/ dist/",
+    "build:client": "tsx ./src/scripts/build-client.ts",
+    "build:html": "./bin/build-Html.sh",
     "build": "pnpm build:css && pnpm build:ts && pnpm build:html",
     "serve": "node dist/server/index.js"
   },
@@ -68,6 +68,7 @@
     "cssnano": "^7.0.6",
     "esbuild": "^0.25.2",
     "glob": "^11.0.1",
+    "js-yaml": "^4.1.0",
     "livereload": "^0.9.3",
     "nodemon": "^3.1.9",
     "postcss": "^8.5.3",

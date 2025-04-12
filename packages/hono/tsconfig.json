@@ -38,5 +38,6 @@
       "@schemas/*": ["src/schemas/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "bin/**/*.ts"],
+  "exclude": ["dist", "**/*.d.ts"]
 }

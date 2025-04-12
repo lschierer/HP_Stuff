@@ -18,6 +18,8 @@ import FooterHeaderSection from "@server/FooterSection";
 import debugFunction from "@shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
+import { FrontMatter, ParsedResult } from "@schemas/page";
+
 const classMap = {
   "h1,h2,h3,h4,h5":
     "spectrum-Heading spectrum-Heading--serif spectrum-Heading--heavy",
@@ -26,25 +28,6 @@ const classMap = {
   "blockquote,blockquote paragraph":
     "spectrum-Body spectrum-Body--serif spectrum-Body--sizeS",
 };
-
-export const FrontMatter = z.object({
-  title: z.string(),
-  author: z.union([z.string(), z.array(z.string())]).optional(),
-  collection: z.union([z.string(), z.array(z.string())]).optional(),
-  layout: z.union([z.literal("splash"), z.literal("standard")]).optional(),
-  sidebar: z
-    .object({
-      order: z.number(),
-    })
-    .optional(),
-});
-export type FrontMatter = z.infer<typeof FrontMatter>;
-
-export const ParsedResult = z.object({
-  frontMatter: FrontMatter,
-  html: z.string(),
-});
-export type ParsedResult = z.infer<typeof ParsedResult>;
 
 const processHtml = async (
   options: LayoutOptions,

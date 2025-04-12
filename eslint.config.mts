@@ -5,11 +5,10 @@ import globals from "globals";
 export default tseslint.config(
   {
     ignores: [
-      "packages/vite-ssr/dist/**",
+      "**/dist/**",
       "packages/starlight/.astro/**",
-      "packages/starlight/dist/**",
       "packages/greenwood/.greenwood/**",
-      "packages/greenwood/public/**",
+      "**/public/**",
       "packages/greenwood/node_modules/greenwoodspectrumtheme/dist/**",
     ],
   },
@@ -46,7 +45,6 @@ export default tseslint.config(
         projectService: {
           allowDefaultProject: [
             "packages/*/vite.config.ts",
-            "packages/*/bin/*.ts",
             "eslint.config.mts",
           ],
         },
