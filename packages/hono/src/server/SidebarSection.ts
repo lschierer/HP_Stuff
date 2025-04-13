@@ -1,0 +1,79 @@
+import { fromHtml } from "hast-util-from-html";
+import type { Root, Element } from "hast";
+import { visit } from "unist-util-visit";
+import debugFunction from "@shared/debug";
+import sidebarRoutes from "@shared/sidebar-routes.json";
+import { type NavigationItem } from "@schemas/page";
+
+const DEBUG = debugFunction(new URL(import.meta.url).pathname);
+
+export default class SidebarSection {
+  accessor route: string = "";
+
+  intercept(tree: Root): Root {
+    const navElement = this.findNavPlaceholder(tree);
+    if (!navElement) {
+      if (DEBUG) console.warn("Sidebar: No .nav element found in AST.");
+      return tree;
+    }
+
+    const html = this.buildSidebarHtml(sidebarRoutes);
+    const sidebarAst = fromHtml(html, { fragment: true });
+
+    const en = sidebarAst.children.filter((child) => child.type === "element");
+    navElement.children = en;
+    return tree;
+  }
+
+  private findNavPlaceholder(ast: Root): Element | null {
+    let found: Element | null = null;
+    visit(ast, "element", (node) => {
+      if (
+        node.tagName === "div" &&
+        Array.isArray(node.properties.className) &&
+        node.properties.className.includes("nav")
+      ) {
+        found = node;
+      }
+    });
+    return found;
+  }
+
+  private buildSidebarHtml(tree: NavigationItem): string {
+    const currentHref = this.route;
+    console.log(`building sidebar with route ${this.route}`);
+
+    const render = (node: NavigationItem): string => {
+      console.log(
+        `render for node ${node.route ? node.route : node.title ? `title: ${node.title}` : "untitled"} `
+      );
+      const isSelected = node.route === currentHref;
+      const label = node.route
+        ? `<a href="${node.route}" class="spectrum-SideNav-itemLink${isSelected ? " is-selected" : ""}">${node.title}</a>`
+        : `<span class="spectrum-SideNav-itemLink">${node.title}</span>`;
+      if (node.children.length) {
+        if (node.route && node.route.length) {
+          if (this.route.startsWith(node.route)) {
+            node.expanded = true;
+          }
+        }
+        for (const child of node.children) {
+          if (child.route && child.route.length > 1) {
+            if (this.route.startsWith(child.route)) {
+              child.expanded = true;
+              node.expanded = true;
+            }
+          }
+        }
+      }
+      const children =
+        node.children.length && node.expanded
+          ? `<ul class="spectrum-SideNav">${node.children.map(render).join("")}</ul>`
+          : "";
+
+      return `<li class="spectrum-SideNav-item">${label}${children}</li>`;
+    };
+
+    return `<nav class="spectrum-SideNav"><ul class="spectrum-SideNav">${tree.children.map(render).join("")}</ul></nav>`;
+  }
+}

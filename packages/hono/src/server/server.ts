@@ -6,6 +6,7 @@
 import { Hono } from "hono";
 import { serveStatic } from "@hono/node-server/serve-static";
 import { serve } from "@hono/node-server";
+import { showRoutes } from "hono/dev";
 import * as path from "node:path";
 import { readFileSync } from "node:fs";
 
@@ -18,6 +19,7 @@ if (config.NODE_ENV === "development") {
 }
 
 import FanFiction from "./FanFiction";
+import Harrypedia from "./Harrypedia";
 import debugFunction from "@shared/debug";
 
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -25,6 +27,7 @@ const app = new Hono();
 const port = process.env.PORT || 3000;
 
 app.route("/FanFiction", FanFiction);
+app.route("/Harrypedia", Harrypedia);
 
 // ✅ Serve static /client/ files from dist/client
 const distPath = "dist";
@@ -54,7 +57,7 @@ app.get("/", async (c) => {
 
 // ✅ Optional: fallback for true 404s
 app.notFound((c) => {
-  if (DEBUG) console.log(`404 fallback: ${c.req.path}`);
+  if (DEBUG) console.log(`server.ts 404 fallback: ${c.req.path}`);
   return c.text("Not found", 404);
 });
 
@@ -88,6 +91,12 @@ if (config.NODE_ENV !== "production") {
 
   // Start the server initially
   startServer();
+
+  if (DEBUG) {
+    showRoutes(app, {
+      verbose: true,
+    });
+  }
 
   // Handle HMR for Vite
   if (import.meta.hot) {

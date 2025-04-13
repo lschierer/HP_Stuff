@@ -2,7 +2,9 @@ import * as path from "node:path";
 import * as fs from "node:fs";
 import { fileURLToPath } from "node:url";
 
-import { defaultLayout, type ParsedResult } from "./layout";
+import { type ParsedResult } from "@schemas/page";
+
+import { defaultLayout } from "./layout";
 
 import debugFunction from "@shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -18,7 +20,7 @@ export const mdTohtml = async (
 
   const mdPath = path.join(
     fileURLToPath(import.meta.url),
-    "../../pages/",
+    "../../Pages/",
     reqDir,
     `${reqFile}.md`
   );
@@ -37,7 +39,7 @@ export const mdTohtml = async (
     return result;
   } else {
     if (DEBUG) {
-      return `<span>No File found for ${reqPath}</span>`;
+      return `<span>No File found for ${reqPath} at ${mdPath} </span>`;
     }
     return "";
   }

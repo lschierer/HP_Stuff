@@ -38,6 +38,6 @@
       "@schemas/*": ["src/schemas/*"]
     }
   },
-  "include": ["src", "bin/**/*.ts"],
+  "include": ["src", "bin/**/*.ts", "src/**/*.json"],
   "exclude": ["dist", "**/*.d.ts"]
 }

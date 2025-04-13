@@ -4,7 +4,8 @@ import * as path from "node:path";
 import * as fs from "node:fs";
 import { fileURLToPath } from "node:url";
 
-import { defaultLayout, ParsedResult } from "./layout";
+import { ParsedResult } from "@schemas/page";
+import { defaultLayout } from "./layout";
 import { mdTohtml } from "./mdTohtml";
 
 import debugFunction from "@shared/debug";
@@ -26,7 +27,7 @@ FanFiction.get("/*", async (c) => {
 
   const fragmentPath = path.join(
     fileURLToPath(import.meta.url),
-    "../../pages/",
+    "../../Pages/",
     reqDir,
     `${reqFile}.fragment.html`
   );

@@ -19,6 +19,7 @@ import debugFunction from "@shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
 import { FrontMatter, ParsedResult } from "@schemas/page";
+import SidebarSection from "@server/SidebarSection";
 
 const classMap = {
   "h1,h2,h3,h4,h5":
@@ -113,11 +114,16 @@ const processHtml = async (
 
     const topHeader = new TopHeaderSection();
     const footerSection = new FooterHeaderSection();
+    const sidebarSection = new SidebarSection();
     if (options.route) {
       topHeader.route = options.route;
+      sidebarSection.route = options.route;
     }
     topHeader.intercept(ast);
     await footerSection.intercept(ast);
+    if (options.sidebar) {
+      sidebarSection.intercept(ast);
+    }
     return {
       frontMatter,
       html: unified().use(rehypeStringify).stringify(ast),
@@ -136,6 +142,7 @@ const processHtml = async (
 const CommonOptions = z.object({
   title: z.string(),
   route: z.string().optional(),
+  sidebar: z.boolean().optional(),
 });
 type CommonOptions = z.infer<typeof CommonOptions>;
 
@@ -154,6 +161,14 @@ export type LayoutOptions = z.infer<typeof LayoutOptions>;
 
 // default template for my site
 const getTemplate = (options: LayoutOptions) => {
+  const isMarkdown = "markdownContent" in options;
+  const isSplash = !isMarkdown || options.route === "/" || !options.sidebar;
+  const useStandard = (isMarkdown && !isSplash) || options.sidebar;
+  if (DEBUG) {
+    console.log(
+      `getTemplate: isMarkdown: ${isMarkdown}; isSplash: ${isSplash}; useStandard: ${useStandard}`
+    );
+  }
   return `
     <!doctype html>
     <html lang="en" class="spectrum spectrum-Typography">
@@ -164,7 +179,8 @@ const getTemplate = (options: LayoutOptions) => {
           Luke's HP Site${options.title.length ? ` - ${options.title}` : ""}
         </title>
         <meta name="description" content="Luke's Harry Potter Fan Site" />
-        <link rel="stylesheet" href="/styles/global.css" />
+        <link rel="stylesheet" href="/styles/global2.css" />
+        <link rel="stylesheet" href="/styles/${useStandard ? "standard.css" : "splash.css"}" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -196,7 +212,29 @@ const getTemplate = (options: LayoutOptions) => {
             <div class="topHeader" ></div>
             <theme-provider></theme-provider>
           </header>
-          <page-outlet></page-outlet>
+
+          ${
+            useStandard
+              ? `
+            <div class="title-section">
+              <h1 class="spectrum-Heading spectrum-Heading--sizeXXL">
+                ${options.title}
+              </h1>
+            </div>
+            <sp-split-view resizable primary-size="20%">
+            <div class="nav"></div>
+            <div class="main">
+              <main>
+                <page-outlet></page-outlet>
+              </main>
+            </div>
+            </sp-split-view>
+          `
+              : `
+            <page-outlet></page-outlet>
+          `
+          }
+
           <footer class="footer">
             <span
               id="copyright"
@@ -215,6 +253,9 @@ const getTemplate = (options: LayoutOptions) => {
 const renderLayout = async (options: LayoutOptions): Promise<ParsedResult> => {
   if (DEBUG) {
     console.log(`in layout.ts renderLayout`);
+  }
+  if (options.route && options.route.length > 1) {
+    options.sidebar = true;
   }
   return await processHtml(options);
 };

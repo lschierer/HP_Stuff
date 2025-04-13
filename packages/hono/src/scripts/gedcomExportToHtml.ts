@@ -5,14 +5,14 @@ import yaml from "js-yaml";
 import debugFunction from "@shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
-import { type NavigatonItem } from "@schemas/page";
+import { type NavigationItem } from "@schemas/page";
 import { GrampsState, getGrampsData } from "@shared/gedcom/state";
 import IndividualName from "@shared/gedcom/IndividualName";
 
 const staticPersonFiles = path.join(process.cwd(), "../../assets/people");
 
 const doConversion = async () => {
-  const returnPages = new Array<NavigatonItem>();
+  const returnPages = new Array<NavigationItem>();
   await getGrampsData();
   if (!GrampsState.people.size) {
     if (DEBUG) {
@@ -76,7 +76,7 @@ const doConversion = async () => {
         encoding: "utf-8",
         flag: "w",
       });
-      const ni: NavigatonItem = {
+      const ni: NavigationItem = {
         title: individualName.displayName(),
         route: routePath,
         html: pageContent,

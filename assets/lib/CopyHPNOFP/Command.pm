@@ -226,7 +226,7 @@ class CopyHPNOFP::Command {
         $author = 'Matthew Schocke';
       }
       my $outDoc = sprintf(
-        "---\ntitle: %s\nauthor: %s\ncollection: %s\n---\n%s",
+        "---\ntitle: >-\n  %s\nauthor: %s\ncollection: %s\n---\n%s",
         $titleText,
         $author,
         "\n  - HPNOFP\n  - FanFiction\n",
