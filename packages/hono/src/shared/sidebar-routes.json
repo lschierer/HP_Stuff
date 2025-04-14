@@ -2,7 +2,30 @@
   "title": "Pages",
   "children": [
     {
-      "title": "FanFiction",
+      "title": "Bookmarks",
+      "route": "/Bookmarks",
+      "children": [
+        {
+          "title": "Bookmarks - Dealing with Snape",
+          "route": "/Bookmarks/Dealing_With_Snape",
+          "children": []
+        },
+        {
+          "title": "Bookmarks - Pairing",
+          "route": "/Bookmarks/pairing",
+          "children": [
+            {
+              "title": "Bookmarks - Harry Pairings",
+              "route": "/Bookmarks/pairing/Harry",
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Fan Fiction",
+      "route": "/FanFiction",
       "children": [
         {
           "title": "Harry Potter and the Nightmares of Futures Past",
@@ -475,11 +498,6 @@
         {
           "title": "Gringotts Bank",
           "route": "/Harrypedia/Gringotts",
-          "children": []
-        },
-        {
-          "title": "History.ts",
-          "route": "/Harrypedia/History.ts",
           "children": []
         },
         {
@@ -4110,6 +4128,95 @@
         },
         {
           "title": "vegitation",
+          "children": []
+        }
+      ]
+    },
+    {
+      "title": "Searches",
+      "children": [
+        {
+          "title": "Harry paired with Astoria",
+          "route": "/Searches/Astoria",
+          "children": []
+        },
+        {
+          "title": "Notable for a problematic Dumbledore",
+          "route": "/Searches/DumbleDore",
+          "children": []
+        },
+        {
+          "title": "Generic Searches",
+          "route": "/Searches/Generic",
+          "children": []
+        },
+        {
+          "title": "Harry paired with Ginny",
+          "route": "/Searches/Ginny",
+          "children": []
+        },
+        {
+          "title": "Harry paired with Hannah",
+          "route": "/Searches/Hannah",
+          "children": []
+        },
+        {
+          "title": "Harry and Addams family crossovers",
+          "route": "/Searches/Harry_and_the_Addams",
+          "children": []
+        },
+        {
+          "title": "Harry paired with Sally Anne",
+          "route": "/Searches/Sally_Anne",
+          "children": []
+        },
+        {
+          "title": "Harry paired with Sue Li",
+          "route": "/Searches/Sue_Li",
+          "children": []
+        },
+        {
+          "title": "Harry paired with Susan Bones",
+          "route": "/Searches/Susan",
+          "children": []
+        },
+        {
+          "title": "Notable for calling out Neglect and Abuse",
+          "route": "/Searches/abuse",
+          "children": []
+        },
+        {
+          "title": "Notable for Bashing Someone other than Dumbledore",
+          "route": "/Searches/bashing",
+          "children": []
+        },
+        {
+          "title": "Notable for Harry Being in Hufflepuff",
+          "route": "/Searches/hufflepuff",
+          "children": []
+        },
+        {
+          "title": "Characters Reading The Books",
+          "route": "/Searches/reading",
+          "children": []
+        }
+      ]
+    },
+    {
+      "title": "api",
+      "children": [
+        {
+          "title": "gedcom",
+          "children": []
+        }
+      ]
+    },
+    {
+      "title": "policy",
+      "children": [
+        {
+          "title": "Privacy Policy",
+          "route": "/policy/privacy",
           "children": []
         }
       ]

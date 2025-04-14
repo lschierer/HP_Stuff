@@ -97,44 +97,4 @@ if (config.NODE_ENV !== "production") {
       verbose: true,
     });
   }
-
-  // Handle HMR for Vite
-  if (import.meta.hot) {
-    import.meta.hot.accept((newModule) => {
-      if (DEBUG) console.log("🔄 HMR update detected, restarting server...");
-      if (newModule === undefined) {
-        if (DEBUG) console.warn(`newModule is undefined`);
-      }
-
-      // Close the existing server if it exists
-      if (serverInstance) {
-        serverInstance.close((err) => {
-          if (err) {
-            if (DEBUG) console.error(`❌ Error closing server: ${err}`);
-          } else {
-            if (DEBUG) console.log("✅ Previous server instance closed");
-          }
-
-          // Start a new server with the updated module
-          startServer();
-        });
-      } else {
-        // Just in case the server wasn't started or stored properly
-        startServer();
-      }
-    });
-
-    // Cleanup on dispose
-    import.meta.hot.dispose(() => {
-      if (DEBUG) console.log("🧹 Cleaning up server resources");
-      if (serverInstance) {
-        serverInstance.close((err) => {
-          if (err) {
-            if (DEBUG)
-              console.error("❌ Error closing server on dispose:", err);
-          }
-        });
-      }
-    });
-  }
 }

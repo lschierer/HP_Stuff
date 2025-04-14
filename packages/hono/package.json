@@ -10,7 +10,7 @@
     "watch:css": "chokidar 'src/styles/**/*.css' -c 'pnpm build:css' --initial",
     "watch:html": "chokidar 'src/**/*.html' -c 'pnpm build:html' --initial",
     "build:css": "./bin/build-css.sh",
-    "build:ts": "tsc && tsc-alias",
+    "build:ts": "./bin/build-server.sh",
     "build:client": "tsx ./src/scripts/build-client.ts",
     "build:html": "./bin/build-Html.sh",
     "build": "pnpm build:css && pnpm build:ts && pnpm build:client && pnpm build:html",
