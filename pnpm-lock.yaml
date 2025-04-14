@@ -589,11 +589,11 @@ importers:
   packages/hono:
     dependencies:
       '@dotenvx/dotenvx':
-        specifier: ^1.39.1
-        version: 1.39.1
+        specifier: ^1.40.0
+        version: 1.40.0
       '@hono/node-server':
-        specifier: ^1.14.0
-        version: 1.14.0(hono@4.7.6)
+        specifier: ^1.14.1
+        version: 1.14.1(hono@4.7.6)
       '@hono/zod-validator':
         specifier: ^0.4.3
         version: 0.4.3(hono@4.7.6)(zod@3.24.2)
@@ -661,11 +661,14 @@ importers:
         specifier: ^1.4.0
         version: 1.4.0
       dotenv:
-        specifier: ^16.4.7
-        version: 16.4.7
+        specifier: ^16.5.0
+        version: 16.5.0
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
+      hastscript:
+        specifier: ^9.0.1
+        version: 9.0.1
       hono:
         specifier: ^4.7.6
         version: 4.7.6
@@ -676,8 +679,8 @@ importers:
         specifier: ^1.30.1
         version: 1.30.1
       lit:
-        specifier: ^3.2.1
-        version: 3.2.1
+        specifier: ^3.3.0
+        version: 3.3.0
       rehype:
         specifier: ^13.0.2
         version: 13.0.2
@@ -706,9 +709,6 @@ importers:
         specifier: ^3.24.2
         version: 3.24.2
     devDependencies:
-      '@greenwood/plugin-postcss':
-        specifier: 0.32.0-alpha.9
-        version: 0.32.0-alpha.9(@greenwood/cli@0.32.0-alpha.9)
       '@types/hast':
         specifier: ^3.0.4
         version: 3.0.4
@@ -716,8 +716,8 @@ importers:
         specifier: ^0.9.5
         version: 0.9.5
       '@types/node':
-        specifier: ^22.14.0
-        version: 22.14.0
+        specifier: ^22.14.1
+        version: 22.14.1
       autoprefixer:
         specifier: ^10.4.21
         version: 10.4.21(postcss@8.5.3)
@@ -1014,7 +1014,7 @@ importers:
         version: 5.8.3
       vite:
         specifier: ^6.2.5
-        version: 6.2.5(@types/node@22.14.0)(jiti@2.4.2)(less@4.3.0)(sass@1.86.3)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1)
+        version: 6.2.5(@types/node@22.14.1)(jiti@2.4.2)(less@4.3.0)(sass@1.86.3)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1)
 
 packages:
 
@@ -1700,8 +1700,8 @@ packages:
     resolution: {integrity: sha512-WyOx8cJQ+FQus4Mm4uPIZA64gbk3Wxh0so5Lcii0aJifqwoVOlfFtorjLE0Hen4OYyHZMXDWqMmaQemBhgxFRQ==}
     engines: {node: '>=14'}
 
-  '@dotenvx/dotenvx@1.39.1':
-    resolution: {integrity: sha512-FIjEB/s3TSQBYnYA64GPkXJrOR6w5J52SSnl6gSoq1tp+4r9zLjaAsf65AgDv5emA4ypm90gVWv1XX0/bfHA/A==}
+  '@dotenvx/dotenvx@1.40.0':
+    resolution: {integrity: sha512-cfYHAIBkSfI0nuOagBhqYGq0k/pSIPdbM7+/IROcdGMjUxYdNXXqzO1d6b9u9dY4rancte3fR/4wGI4Zb09USg==}
     hasBin: true
 
   '@dual-bundle/import-meta-resolve@4.1.0':
@@ -2025,8 +2025,8 @@ packages:
   '@hapi/bourne@3.0.0':
     resolution: {integrity: sha512-Waj1cwPXJDucOib4a3bAISsKJVb15MKi9IvmTI/7ssVEm6sywXGjVJDhl6/umt1pK1ZS7PacXU3A1PmFKHEZ2w==}
 
-  '@hono/node-server@1.14.0':
-    resolution: {integrity: sha512-YUCxJwgHRKSqjrdTk9e4VMGKN27MK5r4+MGPyZTgKH+IYbK+KtYbHeOcPGJ91KGGD6RIQiz2dAHxvjauNhOS8g==}
+  '@hono/node-server@1.14.1':
+    resolution: {integrity: sha512-vmbuM+HPinjWzPe7FFPWMMQMsbKE9gDPhaH0FFdqbGpkT5lp++tcWDTxwBl5EgS5y6JVgIaCdjeHRfQ4XRBRjQ==}
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
@@ -2365,6 +2365,9 @@ packages:
   '@lit/reactive-element@2.0.4':
     resolution: {integrity: sha512-GFn91inaUa2oHLak8awSIigYz0cU0Payr1rcFsrkf5OJ5eSPxElyZfKh0f2p9FsTiZWXQdWGJeXZICEfXXYSXQ==}
 
+  '@lit/reactive-element@2.1.0':
+    resolution: {integrity: sha512-L2qyoZSQClcBmq0qajBVbhYEcG6iK0XfLn66ifLe/RfC0/ihpc+pl0Wdn8bJ8o+hj38cG0fGXRgSS20MuXn7qA==}
+
   '@lit/task@1.0.2':
     resolution: {integrity: sha512-ofj/fahKhhS1SpbPSC57OMo2BXMxHG/y4sxH/ahWzXT5dh1kxjex7WqbL8ammb6zIlqbFCj6z2aGFYOh/qCQ+g==}
 
@@ -2393,6 +2396,10 @@ packages:
 
   '@noble/hashes@1.7.1':
     resolution: {integrity: sha512-B8XBPsn4vT/KJAGqDzbwztd+6Yte3P4V7iafm24bxgDe/mlRuK6xmWPuCNrKt2vDafZ8MfJLlchDG/vYafQEjQ==}
+    engines: {node: ^14.21.3 || >=16}
+
+  '@noble/hashes@1.7.2':
+    resolution: {integrity: sha512-biZ0NUSxyjLLqo6KxEJ1b+C2NAx0wtDoFvCaXHGgUkeHzf3Xc1xKumFKREuT7f7DARNZ/slvYUwFG6B0f2b6hQ==}
     engines: {node: ^14.21.3 || >=16}
 
   '@nodelib/fs.scandir@2.1.5':
@@ -3797,6 +3804,9 @@ packages:
 
   '@types/node@22.14.0':
     resolution: {integrity: sha512-Kmpl+z84ILoG+3T/zQFyAJsU6EPTmOCj8/2+83fSN6djd6I4o7uOuGIH6vq3PrjY5BGitSbFuMN18j3iknubbA==}
+
+  '@types/node@22.14.1':
+    resolution: {integrity: sha512-u0HuPQwe/dHrItgHHpmw3N2fYCR6x4ivMNbPHRkBVP4CvN+kiRrKHWk3i8tXiO/joPwXLMYvF9TTF0eqgHIuOw==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -5264,6 +5274,10 @@ packages:
     resolution: {integrity: sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ==}
     engines: {node: '>=12'}
 
+  dotenv@16.5.0:
+    resolution: {integrity: sha512-m/C+AwOAr9/W1UOIZUo232ejMNnJAJtYQjUbHoNTBNTJSvqzzDh7vnrei3o3r3m9blf6ZoDkvcw0VmozNRFJxg==}
+    engines: {node: '>=12'}
+
   dset@3.1.4:
     resolution: {integrity: sha512-2QF/g9/zTaPDc3BjNcVTGoBbXBgYfMTTceLaYcFJ/W9kggFUkhxD/hMEeuLKbugyef9SqAx8cpgwlIP/jinUTA==}
     engines: {node: '>=4'}
@@ -5288,8 +5302,8 @@ packages:
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
 
-  electron-to-chromium@1.5.135:
-    resolution: {integrity: sha512-8gXUdEmvb+WCaYUhA0Svr08uSeRjM2w3x5uHOc1QbaEVzJXB8rgm5eptieXzyKoVEtinLvW6MtTcurA65PeS1Q==}
+  electron-to-chromium@1.5.136:
+    resolution: {integrity: sha512-kL4+wUTD7RSA5FHx5YwWtjDnEEkIIikFgWHR4P6fqjw1PPLlqYkxeOb++wAauAssat0YClCy8Y3C5SxgSkjibQ==}
 
   emoji-regex-xs@1.0.0:
     resolution: {integrity: sha512-LRlerrMYoIDrT6jgpeZ2YYl/L8EulRTt5hQcYjy5AInh7HWXKimpqx68aknBFpGL2+/IcogTcaydJEgaTmOpDg==}
@@ -6970,11 +6984,20 @@ packages:
   lit-element@4.1.1:
     resolution: {integrity: sha512-HO9Tkkh34QkTeUmEdNYhMT8hzLid7YlMlATSi1q4q17HE5d9mrrEHJ/o8O2D0cMi182zK1F3v7x0PWFjrhXFew==}
 
+  lit-element@4.2.0:
+    resolution: {integrity: sha512-MGrXJVAI5x+Bfth/pU9Kst1iWID6GHDLEzFEnyULB/sFiRLgkd8NPK/PeeXxktA3T6EIIaq8U3KcbTU5XFcP2Q==}
+
   lit-html@3.2.1:
     resolution: {integrity: sha512-qI/3lziaPMSKsrwlxH/xMgikhQ0EGOX2ICU73Bi/YHFvz2j/yMCIrw4+puF2IpQ4+upd3EWbvnHM9+PnJn48YA==}
 
+  lit-html@3.3.0:
+    resolution: {integrity: sha512-RHoswrFAxY2d8Cf2mm4OZ1DgzCoBKUKSPvA1fhtSELxUERq2aQQ2h05pO9j81gS1o7RIRJ+CePLogfyahwmynw==}
+
   lit@3.2.1:
     resolution: {integrity: sha512-1BBa1E/z0O9ye5fZprPtdqnc0BFzxIxTTOO/tQFmyC/hj1O3jL4TfmLBw0WEwjAokdLwpclkvGgDJwTIh0/22w==}
+
+  lit@3.3.0:
+    resolution: {integrity: sha512-DGVsqsOIHBww2DqnuZzW7QsuCdahp50ojuDaBPC7jUDRpYoH0z7kHBBYZewRzer75FwtrkmkKk7iOAwSaWdBmw==}
 
   livereload-js@3.4.1:
     resolution: {integrity: sha512-5MP0uUeVCec89ZbNOT/i97Mc+q3SxXmiUGhRFOTmhrGPn//uWVQdCvcLJDy64MSBR5MidFdOR7B9viumoavy6g==}
@@ -12000,10 +12023,10 @@ snapshots:
 
   '@ctrl/tinycolor@4.1.0': {}
 
-  '@dotenvx/dotenvx@1.39.1':
+  '@dotenvx/dotenvx@1.40.0':
     dependencies:
       commander: 11.1.0
-      dotenv: 16.4.7
+      dotenv: 16.5.0
       eciesjs: 0.4.14
       execa: 5.1.1
       fdir: 6.4.3(picomatch@4.0.2)
@@ -12408,7 +12431,7 @@ snapshots:
 
   '@hapi/bourne@3.0.0': {}
 
-  '@hono/node-server@1.14.0(hono@4.7.6)':
+  '@hono/node-server@1.14.1(hono@4.7.6)':
     dependencies:
       hono: 4.7.6
 
@@ -12693,8 +12716,8 @@ snapshots:
 
   '@lit-labs/observers@2.0.5':
     dependencies:
-      '@lit/reactive-element': 2.0.4
-      lit-html: 3.2.1
+      '@lit/reactive-element': 2.1.0
+      lit-html: 3.3.0
 
   '@lit-labs/ssr-client@1.1.7':
     dependencies:
@@ -12708,13 +12731,13 @@ snapshots:
     dependencies:
       '@lit-labs/ssr-client': 1.1.7
       '@lit-labs/ssr-dom-shim': 1.3.0
-      '@lit/reactive-element': 2.0.4
+      '@lit/reactive-element': 2.1.0
       '@parse5/tools': 0.3.0
       '@types/node': 16.18.126
       enhanced-resolve: 5.18.1
       lit: 3.2.1
       lit-element: 4.1.1
-      lit-html: 3.2.1
+      lit-html: 3.3.0
       node-fetch: 3.3.2
       parse5: 7.2.1
 
@@ -12723,6 +12746,10 @@ snapshots:
       '@lit/reactive-element': 2.0.4
 
   '@lit/reactive-element@2.0.4':
+    dependencies:
+      '@lit-labs/ssr-dom-shim': 1.3.0
+
+  '@lit/reactive-element@2.1.0':
     dependencies:
       '@lit-labs/ssr-dom-shim': 1.3.0
 
@@ -12797,6 +12824,8 @@ snapshots:
       '@noble/hashes': 1.7.1
 
   '@noble/hashes@1.7.1': {}
+
+  '@noble/hashes@1.7.2': {}
 
   '@nodelib/fs.scandir@2.1.5':
     dependencies:
@@ -13981,7 +14010,7 @@ snapshots:
 
   '@spectrum-web-components/base@1.4.0':
     dependencies:
-      lit: 3.2.1
+      lit: 3.3.0
 
   '@spectrum-web-components/button@1.4.0':
     dependencies:
@@ -14088,7 +14117,7 @@ snapshots:
   '@spectrum-web-components/styles@1.4.0':
     dependencies:
       '@spectrum-web-components/base': 1.4.0
-      lit: 3.2.1
+      lit: 3.3.0
 
   '@spectrum-web-components/theme@1.4.0':
     dependencies:
@@ -14172,7 +14201,7 @@ snapshots:
 
   '@types/conventional-commits-parser@5.0.1':
     dependencies:
-      '@types/node': 22.14.0
+      '@types/node': 22.14.1
 
   '@types/cookies@0.9.0':
     dependencies:
@@ -14401,6 +14430,10 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
+  '@types/node@22.14.1':
+    dependencies:
+      undici-types: 6.21.0
+
   '@types/normalize-package-data@2.4.4': {}
 
   '@types/parse-path@7.0.3': {}
@@ -14462,7 +14495,7 @@ snapshots:
 
   '@types/ws@8.18.1':
     dependencies:
-      '@types/node': 22.14.0
+      '@types/node': 22.14.1
 
   '@typescript-eslint/eslint-plugin@8.29.1(@typescript-eslint/parser@8.29.1(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(typescript@5.8.3)':
     dependencies:
@@ -15110,7 +15143,7 @@ snapshots:
   browserslist@4.24.4:
     dependencies:
       caniuse-lite: 1.0.30001713
-      electron-to-chromium: 1.5.135
+      electron-to-chromium: 1.5.136
       node-releases: 2.0.19
       update-browserslist-db: 1.1.3(browserslist@4.24.4)
 
@@ -16080,6 +16113,8 @@ snapshots:
 
   dotenv@16.4.7: {}
 
+  dotenv@16.5.0: {}
+
   dset@3.1.4: {}
 
   dunder-proto@1.0.1:
@@ -16102,11 +16137,11 @@ snapshots:
       '@ecies/ciphers': 0.2.3(@noble/ciphers@1.2.1)
       '@noble/ciphers': 1.2.1
       '@noble/curves': 1.8.1
-      '@noble/hashes': 1.7.1
+      '@noble/hashes': 1.7.2
 
   ee-first@1.1.1: {}
 
-  electron-to-chromium@1.5.135: {}
+  electron-to-chromium@1.5.136: {}
 
   emoji-regex-xs@1.0.0: {}
 
@@ -17074,8 +17109,8 @@ snapshots:
       '@hpcc-js/wasm-graphviz': 1.7.0
       '@lit/context': 1.1.4
       '@spectrum-css/actionbutton': 7.1.3(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/alertbanner': 3.1.1(@spectrum-css/button@14.1.6(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/closebutton@6.1.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/divider@5.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/button': 14.1.6(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/alertbanner': 3.1.1(@spectrum-css/button@14.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/closebutton@6.1.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/divider@5.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/button': 14.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/card': 11.1.0(@spectrum-css/actionbutton@7.1.3(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)(@spectrum-css/typography@8.1.0(@spectrum-css/tokens@16.0.1))
       '@spectrum-css/divider': 5.1.0(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/icon': 9.1.0(@spectrum-css/tokens@16.0.1)
@@ -17085,7 +17120,7 @@ snapshots:
       '@spectrum-css/picker': 9.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/menu@9.2.0(@spectrum-css/divider@5.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/sidenav': 7.1.0(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/splitview': 7.1.0(@spectrum-css/tokens@16.0.1)
-      '@spectrum-css/table': 8.1.0(@spectrum-css/button@14.1.6(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
+      '@spectrum-css/table': 8.1.0(@spectrum-css/button@14.1.4(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1))(@spectrum-css/icon@9.1.0(@spectrum-css/tokens@16.0.1))(@spectrum-css/tokens@16.0.1)
       '@spectrum-css/tokens': 16.0.1
       '@spectrum-css/typography': 8.1.0(@spectrum-css/tokens@16.0.1)
       '@spectrum-web-components/card': 1.4.0
@@ -18232,7 +18267,17 @@ snapshots:
       '@lit/reactive-element': 2.0.4
       lit-html: 3.2.1
 
+  lit-element@4.2.0:
+    dependencies:
+      '@lit-labs/ssr-dom-shim': 1.3.0
+      '@lit/reactive-element': 2.1.0
+      lit-html: 3.3.0
+
   lit-html@3.2.1:
+    dependencies:
+      '@types/trusted-types': 2.0.7
+
+  lit-html@3.3.0:
     dependencies:
       '@types/trusted-types': 2.0.7
 
@@ -18241,6 +18286,12 @@ snapshots:
       '@lit/reactive-element': 2.0.4
       lit-element: 4.1.1
       lit-html: 3.2.1
+
+  lit@3.3.0:
+    dependencies:
+      '@lit/reactive-element': 2.1.0
+      lit-element: 4.2.0
+      lit-html: 3.3.0
 
   livereload-js@3.4.1: {}
 
@@ -19591,7 +19642,7 @@ snapshots:
 
   parse5@3.0.3:
     dependencies:
-      '@types/node': 22.14.0
+      '@types/node': 22.14.1
 
   parse5@5.1.0: {}
 
@@ -22199,7 +22250,7 @@ snapshots:
     dependencies:
       '@types/postcss-modules-local-by-default': 4.0.2
       '@types/postcss-modules-scope': 3.0.4
-      dotenv: 16.4.7
+      dotenv: 16.5.0
       icss-utils: 5.1.0(postcss@8.5.3)
       less: 4.3.0
       lodash.camelcase: 4.3.0
@@ -22491,6 +22542,22 @@ snapshots:
       rollup: 4.39.0
     optionalDependencies:
       '@types/node': 22.14.0
+      fsevents: 2.3.3
+      jiti: 2.4.2
+      less: 4.3.0
+      sass: 1.86.3
+      stylus: 0.62.0
+      terser: 5.39.0
+      tsx: 4.19.3
+      yaml: 2.7.1
+
+  vite@6.2.5(@types/node@22.14.1)(jiti@2.4.2)(less@4.3.0)(sass@1.86.3)(stylus@0.62.0)(terser@5.39.0)(tsx@4.19.3)(yaml@2.7.1):
+    dependencies:
+      esbuild: 0.25.2
+      postcss: 8.5.3
+      rollup: 4.39.0
+    optionalDependencies:
+      '@types/node': 22.14.1
       fsevents: 2.3.3
       jiti: 2.4.2
       less: 4.3.0
