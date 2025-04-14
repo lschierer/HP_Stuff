@@ -13,7 +13,7 @@
     "build:ts": "tsc && tsc-alias",
     "build:client": "tsx ./src/scripts/build-client.ts",
     "build:html": "./bin/build-Html.sh",
-    "build": "pnpm build:css && pnpm build:ts && pnpm build:html",
+    "build": "pnpm build:css && pnpm build:ts && pnpm build:client && pnpm build:html",
     "serve": "node dist/server/index.js"
   },
   "dependencies": {

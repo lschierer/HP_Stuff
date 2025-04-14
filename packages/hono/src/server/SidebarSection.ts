@@ -41,15 +41,20 @@ export default class SidebarSection {
 
   private buildSidebarHtml(tree: NavigationItem): string {
     const currentHref = this.route;
-    console.log(`building sidebar with route ${this.route}`);
+    if (DEBUG) {
+      console.log(`building sidebar with route ${this.route}`);
+    }
 
     const render = (node: NavigationItem): string => {
-      console.log(
-        `render for node ${node.route ? node.route : node.title ? `title: ${node.title}` : "untitled"} `
-      );
+      if (DEBUG) {
+        console.log(
+          `render for node ${node.route ? node.route : node.title ? `title: ${node.title}` : "untitled"} `
+        );
+      }
+
       const isSelected = node.route === currentHref;
       const label = node.route
-        ? `<a href="${node.route}" class="spectrum-SideNav-itemLink${isSelected ? " is-selected" : ""}">${node.title}</a>`
+        ? `<a href="${node.route}" class="spectrum-SideNav-itemLink">${node.title}</a>`
         : `<span class="spectrum-SideNav-itemLink">${node.title}</span>`;
       if (node.children.length) {
         if (node.route && node.route.length) {
@@ -68,12 +73,17 @@ export default class SidebarSection {
       }
       const children =
         node.children.length && node.expanded
-          ? `<ul class="spectrum-SideNav">${node.children.map(render).join("")}</ul>`
+          ? `<ul class="spectrum-SideNav spectrum-SideNav--multiLevel">${node.children.map(render).join("")}</ul>`
           : "";
 
-      return `<li class="spectrum-SideNav-item">${label}${children}</li>`;
+      return `<li class="spectrum-SideNav-item ${isSelected ? " is-selected" : ""}">${label}${children}</li>`;
     };
 
-    return `<nav class="spectrum-SideNav"><ul class="spectrum-SideNav">${tree.children.map(render).join("")}</ul></nav>`;
+    return `
+      <script type="module">
+        import "/client/SpectrumSideNav.js"
+      </script>
+      <nav class="spectrum-SideNav"><ul class="spectrum-SideNav spectrum-SideNav--multiLevel">${tree.children.map(render).join("")}</ul></nav>
+    `;
   }
 }

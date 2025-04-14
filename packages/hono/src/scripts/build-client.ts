@@ -1,11 +1,11 @@
 import { build } from "esbuild";
 import { glob } from "glob";
-import { resolve } from "path";
+import { resolve } from "node:path";
+import { mkdirSync } from "node:fs";
 
 const entries = await glob("src/client/**/*.ts");
 console.log("Matched client entries:", entries);
 
-import { mkdir } from "fs/promises";
 import { dirname } from "path";
 
 await Promise.all(
@@ -13,7 +13,7 @@ await Promise.all(
     const relPath = entry.replace("src/client/", "");
     const outFile = resolve("dist/client", relPath.replace(/\.ts$/, ".js"));
 
-    await mkdir(dirname(outFile), { recursive: true });
+    mkdirSync(dirname(outFile), { recursive: true });
 
     await build({
       entryPoints: [entry],
