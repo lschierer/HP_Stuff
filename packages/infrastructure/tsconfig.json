@@ -1,16 +1,18 @@
 {
-  "extends": "@tsconfig/node22/tsconfig.json",
-  "compilerOptions": {
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "allowImportingTsExtensions": true,
-    "noEmit": true,
-    "baseUrl": ".",
-    "strict": true,
-    "strictNullChecks": true,
-    "types": ["node", "./.sst/platform/config.d.ts"],
-    "paths": {
-      "@hp-stuff/infrastructure/*": ["./src/*"]
-    }
-  }
+    "compilerOptions": {
+        "strict": true,
+        "outDir": "bin",
+        "target": "es2020",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "experimentalDecorators": true,
+        "pretty": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "files": [
+        "index.ts"
+    ]
 }

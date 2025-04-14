@@ -1,13 +1,2 @@
-# dependencies
-node_modules
-
-# sst
-.sst
-.build
-
-# misc
-.DS_Store
-.env*.local
-
-# typescript
-*.tsbuildinfo
+/bin/
+/node_modules/

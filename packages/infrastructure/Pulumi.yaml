@@ -1,0 +1,10 @@
+name: hp-stuff
+description: Luke's HP Fan Site
+runtime:
+  name: nodejs
+  options:
+    packagemanager: pnpm
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-typescript

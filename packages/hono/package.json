@@ -14,7 +14,8 @@
     "build:client": "tsx ./src/scripts/build-client.ts",
     "build:html": "./bin/build-Html.sh",
     "build": "pnpm build:css && pnpm build:ts && pnpm build:client && pnpm build:html",
-    "serve": "node dist/server/index.js"
+    "serve": "node --experimental-specifier-resolution=node dist/server/server.js",
+    "build:lambda": "pnpm build && tsx ./src/scripts/prepare-lambda-package.ts"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "^1.40.0",
@@ -41,6 +42,7 @@
     "@spectrum-web-components/split-view": "^1.4.0",
     "@spectrum-web-components/styles": "^1.4.0",
     "@spectrum-web-components/theme": "^1.4.0",
+    "aws-lambda": "^1.0.7",
     "dotenv": "^16.5.0",
     "gray-matter": "^4.0.3",
     "hastscript": "^9.0.1",
@@ -59,6 +61,7 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.136",
     "@types/hast": "^3.0.4",
     "@types/livereload": "^0.9.5",
     "@types/node": "^22.14.1",

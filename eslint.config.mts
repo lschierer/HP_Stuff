@@ -67,5 +67,12 @@ export default tseslint.config(
     rules: {
       "@typescript-eslint/no-unused-vars": "off",
     },
+  },
+  // Add a new configuration specifically for packages/infrastructure
+  {
+    files: ["packages/infrastructure/**/*.ts", "packages/infrastructure/**/*.mts"],
+    rules: {
+      "@typescript-eslint/no-unused-vars": "off",
+    },
   }
 );
