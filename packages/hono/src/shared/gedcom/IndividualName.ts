@@ -53,6 +53,8 @@ export default class IndividualName {
         targetLocation += `Unknown/`;
       }
 
+      let isUnknownFirstName = false;
+      
       if (this.person.primary_name.first_name.length > 0) {
         const fn = this.person.primary_name.first_name;
         targetLocation = `${targetLocation}${fn}`;
@@ -68,11 +70,15 @@ export default class IndividualName {
       ) {
         targetLocation += this.person.primary_name.call;
       } else {
-        targetLocation += "Unknown";
+        // For unknown first names, use the ID to make the URL unique
+        isUnknownFirstName = true;
+        targetLocation += `Unknown-${this.person.id}`;
       }
+      
       if (
         this.person.primary_name.suffix &&
-        this.person.primary_name.suffix.length > 0
+        this.person.primary_name.suffix.length > 0 &&
+        !isUnknownFirstName // Don't add suffix for unknown first names with ID
       ) {
         const suffix = this.person.primary_name.suffix;
         let prefix = this.person.primary_name.surname_list[0].prefix;
