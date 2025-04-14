@@ -1,10 +1,5 @@
 import { unified } from "unified";
-import remarkParse from "remark-parse";
-import remarkGfm from "remark-gfm";
-import remarkRehype from "remark-rehype";
-import remarkFrontmatter from "remark-frontmatter";
 import rehypeParse from "rehype-parse";
-import rehypeAddClasses from "rehype-class-names";
 import rehypeStringify from "rehype-stringify";
 import { visit } from "unist-util-visit";
 import type { Root } from "hast";
@@ -14,21 +9,14 @@ import matter from "gray-matter";
 import TopHeaderSection from "@server/TopHeader";
 import FooterHeaderSection from "@server/FooterSection";
 
+import { parseHtmlToHast, parseMarkdownToHast } from "./parseToHast";
+
 //central control over whether or not to output debugging
 import debugFunction from "@shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
 import { FrontMatter, ParsedResult } from "@schemas/page";
 import SidebarSection from "@server/SidebarSection";
-
-const classMap = {
-  "h1,h2,h3,h4,h5":
-    "spectrum-Heading spectrum-Heading--serif spectrum-Heading--heavy",
-  a: "spectrum-Link  spectrum-Link--primary",
-  "p,li": "spectrum-Body spectrum-Body--serif spectrum-Body--sizeM",
-  "blockquote,blockquote paragraph":
-    "spectrum-Body spectrum-Body--serif spectrum-Body--sizeS",
-};
 
 const processHtml = async (
   options: LayoutOptions,
@@ -55,22 +43,7 @@ const processHtml = async (
         console.log(`Extracted frontmatter:`, JSON.stringify(fileFM.data));
       }
 
-      // Create a complete processor pipeline that outputs a string
-      const processor = unified()
-        .use(remarkParse)
-        .use(remarkFrontmatter) // Add support for frontmatter
-        .use(remarkGfm)
-        .use(remarkRehype)
-        .use(rehypeAddClasses, classMap)
-        .use(rehypeStringify);
-
-      // Process the markdown to HTML string
-      const file = await processor.process(content);
-
-      // Parse the resulting HTML string back to an AST
-      contentAst = unified()
-        .use(rehypeParse, { fragment: true })
-        .parse(String(file));
+      contentAst = await parseMarkdownToHast(content);
     } else {
       if (DEBUG) {
         console.log(`building content from html string`);
@@ -84,10 +57,7 @@ const processHtml = async (
         frontMatter = fileFM.data;
       }
 
-      contentAst = unified()
-        .use(rehypeParse, { fragment: true })
-        .use(rehypeAddClasses, classMap)
-        .parse(content);
+      contentAst = parseHtmlToHast(content);
     }
 
     const contentChildren = contentAst.children;

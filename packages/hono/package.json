@@ -43,6 +43,7 @@
     "@spectrum-web-components/theme": "^1.4.0",
     "dotenv": "^16.4.7",
     "gray-matter": "^4.0.3",
+    "hastscript": "^9.0.1",
     "hono": "^4.7.6",
     "iconify-icon": "^2.3.0",
     "isomorphic-git": "^1.30.1",

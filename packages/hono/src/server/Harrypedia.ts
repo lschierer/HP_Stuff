@@ -10,6 +10,9 @@ import { defaultLayout } from "./layout";
 import { mdTohtml } from "./mdTohtml";
 
 import debugFunction from "@shared/debug";
+
+import History from "./History";
+
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
 console.log(`🔍 Harrypedia module is being loaded with DEBUG ${DEBUG}`);
@@ -74,6 +77,8 @@ app.get("/", async (c) => {
     return c.notFound();
   }
 });
+
+app.route("/History", History);
 
 app.get("/*", async (c) => {
   if (DEBUG) {
