@@ -2,7 +2,7 @@ import { unified } from "unified";
 import rehypeParse from "rehype-parse";
 import rehypeStringify from "rehype-stringify";
 import { visit } from "unist-util-visit";
-import type { Root } from "hast";
+import type { ElementContent, Root } from "hast";
 import { z } from "zod";
 import matter from "gray-matter";
 
@@ -17,6 +17,74 @@ const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
 import { FrontMatter, ParsedResult } from "@schemas/page";
 import SidebarSection from "@server/SidebarSection";
+
+/**
+ * Check if a route is a family index page
+ * @param route The route to check
+ * @returns True if the route is a family index page
+ */
+const isFamilyIndexPage = (route: string): boolean => {
+  const routeParts: (string | undefined)[] = route.split("/");
+  // Check if the route matches /Harrypedia/people/<lastname>/index
+  // or /Harrypedia/people/<lastname>/ (which resolves to index)
+  const result =
+    routeParts.length >= 4 &&
+    routeParts[1] === "Harrypedia" &&
+    routeParts[2] === "people" &&
+    (routeParts[4] === "index" ||
+      routeParts[4] === undefined ||
+      routeParts[4] === "");
+  if (DEBUG) {
+    if (!result && routeParts.length >= 4) {
+      console.log(`4th routeParts is ${routeParts[4]}`);
+    }
+    console.log(`${route} ${result ? "is" : "is not"} a family index page`);
+  }
+  return result;
+};
+
+/**
+ * Modify the AST for family index pages
+ * - Add the FamilyListing.css stylesheet
+ * - Add the familylisting class to the first ul element
+ * @param ast The AST to modify
+ */
+const modifyFamilyIndexPage = (ast: Root): void => {
+  // Add the CSS link to the head
+  visit(ast, "element", (node) => {
+    if (node.tagName === "head") {
+      const linkElement: ElementContent = {
+        type: "element",
+        tagName: "link",
+        properties: {
+          rel: "stylesheet",
+          href: "/styles/FamilyListing.css",
+        },
+        children: [],
+      };
+      node.children.push(linkElement);
+    }
+  });
+
+  // Add the familylisting class to the first ul element
+  let foundFirstUl = false;
+  visit(ast, "element", (node) => {
+    if (node.tagName === "ul" && !foundFirstUl) {
+      foundFirstUl = true;
+
+      if (!node.properties.className) {
+        node.properties.className = ["familylisting"];
+      } else if (Array.isArray(node.properties.className)) {
+        node.properties.className.push("familylisting");
+      } else {
+        node.properties.className = [
+          node.properties.className as string,
+          "familylisting",
+        ];
+      }
+    }
+  });
+};
 
 const processHtml = async (
   options: LayoutOptions,
@@ -81,6 +149,14 @@ const processHtml = async (
         }
       }
     });
+
+    // Check if this is a family index page and modify the content accordingly
+    if (options.route && isFamilyIndexPage(options.route)) {
+      if (DEBUG) {
+        console.log(`Detected family index page: ${options.route}`);
+      }
+      modifyFamilyIndexPage(ast);
+    }
 
     const topHeader = new TopHeaderSection();
     const footerSection = new FooterHeaderSection();
