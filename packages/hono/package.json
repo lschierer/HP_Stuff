@@ -1,5 +1,5 @@
 {
-  "name": "@hp-stuff/frontend",
+  "name": "@hp-stuff/hono",
   "private": true,
   "version": "0.0.1",
   "type": "module",
@@ -35,11 +35,11 @@
     "@spectrum-css/table": "^8.1.0",
     "@spectrum-css/tokens": "^16.0.1",
     "@spectrum-css/typography": "^8.1.0",
-    "@spectrum-web-components/card": "^1.4.0",
-    "@spectrum-web-components/popover": "^1.4.0",
-    "@spectrum-web-components/split-view": "^1.4.0",
-    "@spectrum-web-components/styles": "^1.4.0",
-    "@spectrum-web-components/theme": "^1.4.0",
+    "@spectrum-web-components/card": "^1.5.0",
+    "@spectrum-web-components/popover": "^1.5.0",
+    "@spectrum-web-components/split-view": "^1.5.0",
+    "@spectrum-web-components/styles": "^1.5.0",
+    "@spectrum-web-components/theme": "^1.5.0",
     "aws-lambda": "^1.0.7",
     "cosmiconfig": "^9.0.0",
     "cosmiconfig-typescript-loader": "^6.1.0",
@@ -61,7 +61,7 @@
     "zod": "^3.24.2"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.136",
+    "@types/aws-lambda": "^8.10.149",
     "@types/hast": "^3.0.4",
     "@types/livereload": "^0.9.5",
     "@types/node": "^22.14.1",

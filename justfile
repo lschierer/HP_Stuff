@@ -10,17 +10,9 @@ install:
   ${PNPM} install -r
   ./assets/bin/perldeps.sh
 
-[working-directory: 'packages/hono']
+[working-directory: 'packages/greenwood']
 dev: install parse
   ${PNPM} run dev
-
-[working-directory: 'packages/starlight']
-check-starlight: install
-  ${NPX} tsc --noEmit -p .;
-
-[working-directory: 'packages/starlight']
-build-starlight: install parse
-  ${PNPM} run build
 
 [working-directory: 'packages/greenwood']
 build-greenwood: install parse
@@ -31,36 +23,21 @@ build-infra: install
   ./bin/build.sh
   ${PNPM} run build
 
-[working-directory: 'assets']
-parse-starlight: install
-  ./bin/bookmarkCollection.sh -o ../packages/starlight/src/content/
-  ./bin/grampsJson2CollectionJson.sh -o ../packages/starlight/src/content/
-  ./bin/historyCollection.sh -o ../packages/starlight/src/content/
 
 [working-directory: 'assets']
-parse-greenwood: install
+parse: install
+  mkdir -p ../packages/greenwood/src/assets/
+  mkdir -p ../packages/greenwood/src/pages/FanFiction/
+  mkdir -p ../packages/greenwood/src/styles
   ./bin/bookmarkCollection.sh -o ../packages/greenwood/src/assets/
   ./bin/grampsJson2CollectionJson.sh -o ../packages/greenwood/src/assets/
   ./bin/historyCollection.sh -o ../packages/greenwood/src/assets/
   ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../packages/greenwood/src/pages/FanFiction/" -a ../packages/greenwood/src/assets -s ../packages/greenwood/src/styles
 
-[working-directory: 'assets']
-parse-custom: install
-  ./bin/bookmarkCollection.sh -o ../packages/hono/src/assets/
-  ./bin/grampsJson2CollectionJson.sh -o ../packages/hono/src/assets/
-  ./bin/historyCollection.sh -o ../packages/hono/src/assets/
-  ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../packages/hono/src/Pages/FanFiction/" -a ../packages/hono/src/assets -s ../packages/hono/src/styles
-
-
-parse: parse-custom parse-greenwood parse-starlight
 
 [working-directory: 'packages/infrastructure']
 deploy: build-greenwood
   NODE_ENV=production ${PNPM} deploy
-
-[working-directory: 'infrastructure']
-deploy-pulumi: build-starlight
-  pulumi up
 
 check-links:
   ${PNPM} exec linkinator "http://localhost:1984/"

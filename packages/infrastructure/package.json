@@ -2,13 +2,13 @@
     "name": "hp-stuff",
     "main": "index.ts",
     "devDependencies": {
-        "@types/node": "^18",
-        "typescript": "^5.0.0"
+        "@types/node": "^18.19.86",
+        "typescript": "^5.8.3"
     },
     "dependencies": {
-        "@pulumi/aws": "^6.0.0",
+        "@pulumi/aws": "^6.77.0",
         "@pulumi/aws-iam": "^0.2.0",
-        "@pulumi/awsx": "^2.0.2",
-        "@pulumi/pulumi": "^3.113.0"
+        "@pulumi/awsx": "^2.21.1",
+        "@pulumi/pulumi": "^3.162.0"
     }
 }
