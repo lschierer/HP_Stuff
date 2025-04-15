@@ -4,24 +4,24 @@ import { unified } from "unified";
 import rehypeParse from "rehype-parse";
 import { visit } from "unist-util-visit";
 import type { Element, Root } from "hast";
-import process from "node:process";
 import git from "isomorphic-git";
 import { type ReadCommitResult } from "isomorphic-git";
+import { fileURLToPath } from "node:url";
 
 import debugFunction from "@shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
-import { config } from "@shared/config";
+import { LocalConfig } from "./server";
 
 export default class FooterHeaderSection {
-  private repo = process.cwd();
+  private repo = fileURLToPath(new URL(import.meta.url));
 
   constructor() {
-    if (config.REPO.length) {
-      if (config.REPO.startsWith("file://")) {
-        this.repo = config.REPO.replace("file://", "");
+    if (LocalConfig && LocalConfig.REPO.length) {
+      if (LocalConfig.REPO.startsWith("file://")) {
+        this.repo = LocalConfig.REPO.replace("file://", "");
       } else {
-        this.repo = config.REPO;
+        this.repo = LocalConfig.REPO;
       }
     } else {
       this.repo = "./";
@@ -153,13 +153,14 @@ export default class FooterHeaderSection {
 
   protected getPrivacyPolicy = () => {
     if (
-      config.PRIVACYPOLICY &&
-      config.PRIVACYPOLICY.length &&
-      !(config.PRIVACYPOLICY.toLowerCase() === "false")
+      LocalConfig &&
+      LocalConfig.PRIVACYPOLICY &&
+      LocalConfig.PRIVACYPOLICY.length &&
+      !(LocalConfig.PRIVACYPOLICY.toLowerCase() === "false")
     ) {
       return `
         <span class="privacy spectrum-Detail spectrum-Detail--serif spectrum-Detail--sizeM spectrum-Detail--light">
-          <a href="${config.PRIVACYPOLICY}" class="spectrum-Link spectrum-Link--quiet spectrum-Link--primary">
+          <a href="${LocalConfig.PRIVACYPOLICY}" class="spectrum-Link spectrum-Link--quiet spectrum-Link--primary">
             Privacy Policy
           </a>
         </span>
@@ -193,8 +194,12 @@ export default class FooterHeaderSection {
     }
     const repoAuthors = new Set<string>();
 
-    if (config.AUTHORS !== "git" && Array.isArray(config.AUTHORS)) {
-      for (const author of config.AUTHORS) {
+    if (
+      LocalConfig &&
+      LocalConfig.AUTHORS !== "git" &&
+      Array.isArray(LocalConfig.AUTHORS)
+    ) {
+      for (const author of LocalConfig.AUTHORS) {
         repoAuthors.add(author);
       }
     } else {

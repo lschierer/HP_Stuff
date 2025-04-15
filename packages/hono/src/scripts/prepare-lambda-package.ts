@@ -92,6 +92,8 @@ try {
   // Only include production dependencies needed for Lambda
   const requiredDeps: string[] = [
     "hono",
+    "@hono/node-server",
+    "@hono/node-server/serve-static",
     "@hono/zod-validator",
     "zod",
     "gray-matter",
@@ -99,8 +101,9 @@ try {
     "rehype-parse",
     "rehype-stringify",
     "unist-util-visit",
-    "dotenv",
     "aws-lambda",
+    "cosmiconfig",
+    "yaml",
   ];
 
   requiredDeps.forEach((dep) => {

@@ -8,14 +8,14 @@ import type { Element, Root } from "hast";
 import debugFunction from "@shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
-import { config } from "@shared/config";
+import { LocalConfig } from "./server";
 
 export default class TopHeaderSection {
   accessor route: string = "";
 
   private getNavSection = () => {
-    return config.TOPLEVELSECTIONS.length
-      ? config.TOPLEVELSECTIONS.split(",")
+    return LocalConfig && LocalConfig.TOPLEVELSECTIONS.length
+      ? LocalConfig.TOPLEVELSECTIONS.split(",")
           .map((section) => {
             if (this.route.startsWith(`/${section.replaceAll(" ", "")}`)) {
               return `
@@ -67,15 +67,17 @@ export default class TopHeaderSection {
   };
 
   private getSiteTitle = () => {
-    const siteTitle = config.SITETITLE ? config.SITETITLE : "";
+    const siteTitle =
+      LocalConfig && LocalConfig.SITETITLE ? LocalConfig.SITETITLE : "";
     if (DEBUG) {
       console.log(`siteTitle is ${siteTitle}`);
     }
-    const siteLogo = config.SITELOGO
-      ? config.SITELOGO.endsWith(".svg")
-        ? this.getSvgLogo(config.SITELOGO)
-        : this.getImgLogo(config.SITELOGO, siteTitle)
-      : "";
+    const siteLogo =
+      LocalConfig && LocalConfig.SITELOGO
+        ? LocalConfig.SITELOGO.endsWith(".svg")
+          ? this.getSvgLogo(LocalConfig.SITELOGO)
+          : this.getImgLogo(LocalConfig.SITELOGO, siteTitle)
+        : "";
 
     return `
       <a href='/' class="site-title spectrum-Link spectrum-Link--quiet spectrum-Link--secondary">

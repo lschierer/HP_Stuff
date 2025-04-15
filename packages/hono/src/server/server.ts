@@ -9,9 +9,12 @@ import { serve } from "@hono/node-server";
 import { showRoutes } from "hono/dev";
 import * as path from "node:path";
 import { readFileSync } from "node:fs";
+import yaml from "js-yaml";
+import * as fs from "node:fs";
 
-import { config } from "@shared/config";
+import { cosmiconfig } from "cosmiconfig";
 
+import { Config } from "@shared/config";
 import debugFunction from "@shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
@@ -19,12 +22,66 @@ import FanFiction from "./FanFiction";
 import Harrypedia from "./Harrypedia";
 import Searches from "./Searches";
 
+const loadConfig = async () => {
+  const explorer = cosmiconfig("hp-stuff", {
+    searchPlaces: ["config.yaml"],
+    loaders: {
+      ".yaml": (filepath) => {
+        const valid = Config.safeParse(
+          yaml.load(fs.readFileSync(filepath, "utf-8"))
+        );
+        if (valid.success) {
+          return valid.data;
+        }
+        return false;
+      },
+      ".yml": (filepath) => {
+        const valid = Config.safeParse(
+          yaml.load(fs.readFileSync(filepath, "utf-8"))
+        );
+        if (valid.success) {
+          return valid.data;
+        }
+        return false;
+      },
+    },
+  });
+
+  const result = await explorer.search().catch((error: unknown) => {
+    if (DEBUG) {
+      console.error(
+        `failed to find result for config `,
+        error instanceof Error ? error.message : JSON.stringify(error)
+      );
+    }
+  });
+
+  if (result && !result.isEmpty) {
+    return result;
+  } else {
+    return false;
+  }
+};
+
 export const app = new Hono();
 const port = process.env.PORT || 3000;
 
+let config:
+  | false
+  | {
+      config: Config;
+      filepath: string;
+      isEmpty?: boolean;
+    }
+  | Config = await loadConfig();
+if (config) {
+  config = config.config;
+}
+export const LocalConfig = config;
+
 // Conditionally initialize livereload in development mode
 if (
-  config.NODE_ENV === "development" &&
+  process.env.NODE_ENV === "development" &&
   !process.env.AWS_LAMBDA_FUNCTION_NAME
 ) {
   // Use dynamic import for livereload
@@ -92,7 +149,10 @@ export default {
 };
 
 // For development mode - only start the server when not in Lambda environment
-if (config.NODE_ENV !== "production" && !process.env.AWS_LAMBDA_FUNCTION_NAME) {
+if (
+  process.env.NODE_ENV !== "production" &&
+  !process.env.AWS_LAMBDA_FUNCTION_NAME
+) {
   console.log("🔧 Starting development server");
 
   // Store the server instance so we can close it on HMR
@@ -105,7 +165,7 @@ if (config.NODE_ENV !== "production" && !process.env.AWS_LAMBDA_FUNCTION_NAME) {
         port: port as number,
       },
       (info) => {
-        if (DEBUG || config.NODE_ENV !== "production")
+        if (DEBUG || process.env.NODE_ENV !== "production")
           console.log(`🌍 Server is running on http://localhost:${info.port}`);
       }
     );

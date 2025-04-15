@@ -1,8 +1,6 @@
 import { z } from "zod";
-import "dotenv/config";
 
 export const Config = z.object({
-  NODE_ENV: z.union([z.literal("development"), z.literal("production")]),
   SITETITLE: z
     .string()
     .min(3)
@@ -42,5 +40,3 @@ export const Config = z.object({
     .describe('the branch of the repository if not "main"'),
 });
 export type Config = z.infer<typeof Config>;
-
-export const config = Config.parse(process.env);

@@ -1,0 +1,11 @@
+- SITETITLE: >-
+    Luke's HP Fan Site
+- TOPLEVELSECTIONS:
+    - Harrypedia
+    - Fan Fiction
+    - Searches
+    - Bookmarks
+- BRANCH: customToolchain
+- PRIVACYPOLICY: "false"
+- REPO: "file://../../"
+- AUTHORS: git
