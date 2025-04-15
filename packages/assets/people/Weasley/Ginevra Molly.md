@@ -1,4 +1,3 @@
-
 ### Analysis
 
 #### Snippet analysis
@@ -50,4 +49,3 @@ mine).[^20210513-2]
     Mrs. J. K. Rowling.
     _[Harry Potter and the Order of the Phoenix](https://www.librarything.com/work/115/book/225886709)_
     Kindle Locations 3858-3860. Pottermore Limited. American Kindle Edition.
-

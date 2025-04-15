@@ -1,4 +1,3 @@
-
 Unlike the [Longbottom][] family, there is a slight indication that the Malfoy
 family might actually be ennobled. While I see no indication of it in the
 books, Mrs. Rowling's Pottermore writings talk about them getting a "prime

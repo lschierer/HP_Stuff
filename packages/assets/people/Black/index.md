@@ -1,4 +1,3 @@
-
 Unlike the [Longbottom][] family, we have at least one cannon reference for the
 blacks as a "noble" family. We do not know if that means they were in fact
 part of the peerage or not though. A significant part of a ton of existing

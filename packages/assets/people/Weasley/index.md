@@ -1,4 +1,3 @@
-
 ### Analysis
 
 #### Weasley Ages
@@ -62,6 +61,7 @@ birthday is correct, that does not give much space for [Charlie]'s to move.
 [Hogwarts]: /Harrypedia/Hogwarts/
 [Quidditch]: /Harrypedia/Quidditch/
 [Gryffindor]: /Harrypedia/Hogwarts/Gryffindor/
+
 [Harry]: </Harrypedia/people/Potter/Harry James/>/
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 [Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>

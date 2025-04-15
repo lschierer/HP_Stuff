@@ -1,4 +1,3 @@
-
 - Born to Merope Gaunt.[^20210827-1]
 - Started Hogwarts: 1938-09-01[^20210827-3]
 - Finished Hogwarts: 1945-06-??[^20210827-4]

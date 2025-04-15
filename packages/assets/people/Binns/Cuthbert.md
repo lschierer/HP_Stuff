@@ -1,4 +1,3 @@
-
 ### topics mentioned in class
 
 - Emeric the Evil[^20210519-1]

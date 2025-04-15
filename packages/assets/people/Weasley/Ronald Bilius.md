@@ -1,4 +1,3 @@
-
 ### Analysis
 
 When you first read the [Harry] Potter books for the first time, you

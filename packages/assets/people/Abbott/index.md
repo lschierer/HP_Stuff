@@ -1,4 +1,3 @@
-
 One of the curious things is how few works pair [Harry] with [Hannah]
 Abbott. The Abbott family is listed as one of the so-called "Sacred
 Twenty-Eight",[^211004-10] and yet Mrs. Rowling seems to have had a fair

@@ -1,4 +1,3 @@
-
 Son of [Draco] and [Astoria], essentially nothing is known of him unless you accept what I consider the fan fiction work, _[Cursed Child]_.
 
 [Draco]: <../Draco Lucius/>

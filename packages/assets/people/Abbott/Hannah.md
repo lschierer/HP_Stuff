@@ -1,4 +1,3 @@
-
 ### Analysis
 
 The Abbott family is listed as one of the so-called "Sacred Twenty-Eight",
@@ -23,6 +22,7 @@ or approves of the badges' second message) against her.
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Salazar]: ../../Slytherin/Salazar/
 [Ernie]: ../../Macmillan/
+
 [Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>/
 
 [^211004-15]:

@@ -1,4 +1,3 @@
-
 ### Analysis
 
 Almost all of our facts about Lily come from [Snape]'s [Worst Memory], or his
@@ -45,13 +44,14 @@ the movie's depiction of her.
 Along the same lines, the portrayal of her in _[I'm Where][GAFRIW]_ resonates
 with me. [Harry] calls her out for being blinded by prejudice,[^20210927-4]
 effectively, someone who forms a first impression of someone and refuses to
-reevaluate it despite contrary evidence. *This* view seems to fit the *truly
-tiny* amount we know of her from the books much more than [Lupin]'s movie
+reevaluate it despite contrary evidence. _This_ view seems to fit the _truly
+tiny_ amount we know of her from the books much more than [Lupin]'s movie
 quote, which I am inclined to dismiss as the movie's overall tendency to lionise
 the females in the series at the expense of the males.[^20210927-2]
 
 [GAFRIW]: https://www.fanfiction.net/s/6126906
 [James]: /Harrypedia/people/Potter/James/
+
 [Harry]: <</Harrypedia/people/Potter/Harry James/>>
 [Lupin]: <</Harrypedia/people/Lupin/Remus John/>>
 

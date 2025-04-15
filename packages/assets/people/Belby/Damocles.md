@@ -1,4 +1,3 @@
-
 ### Analysis
 
 Damocles Belby was taught by [Slughorn]

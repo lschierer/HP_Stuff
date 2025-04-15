@@ -1,4 +1,3 @@
-
 ### Analysis
 
 There are two competing arguments for Charlie's birthday. I am currently foregoing

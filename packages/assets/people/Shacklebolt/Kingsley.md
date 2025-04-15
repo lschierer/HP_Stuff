@@ -1,4 +1,3 @@
-
 ### Analysis
 
 Mrs. Rowling tells us, [apocryphally][] that Kingsley would be an effective and

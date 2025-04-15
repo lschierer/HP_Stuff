@@ -1,4 +1,3 @@
-
 As I have noted elsewhere, one of the problematic things with writing child
 protagonists is that it almost _requires_ incompetent adults. Unfortunately
 this so often means dysfunctional families as well. Mrs. Rowling seems

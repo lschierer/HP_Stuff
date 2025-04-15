@@ -1,4 +1,3 @@
-
 - She states she learned to fly on a Silver Arrow.[^221108-1] This places her after 1901, and _most likely_ before 1926.[^221108-2]
 - She has yellow eyes.[^221108-3]
 

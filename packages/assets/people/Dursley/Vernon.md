@@ -1,4 +1,3 @@
-
 - Married [Petunia Evans][PD]
 - Director of Grunnings.[^220927-1] As best I can tell, this is a board of
   directors type position, except that there is probably only one of them in

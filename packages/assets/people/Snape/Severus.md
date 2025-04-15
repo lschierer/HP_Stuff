@@ -1,4 +1,3 @@
-
 ### Analysis
 
 One of Mrs. Rowling great themes across the Harry Potter series is the

@@ -1,4 +1,3 @@
-
 [Susan] Bones' grandparents are the ones killed by
 [Riddle].[^210301-1] She lost an uncle, aunt, and
 cousins to one of the ten death eaters freed during _Order of the

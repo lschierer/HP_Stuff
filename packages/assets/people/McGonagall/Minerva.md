@@ -1,4 +1,3 @@
-
 Despite being nearly universally portrayed as a pure-blood in fan fiction, she is in fact a half-blood who grew up in the mundane world. She should be familiar with early 19th century fashion, customs and technology.
 
 ### Analysis
@@ -173,6 +172,7 @@ incorporating non-magical classes no matter how needed or useful they might be.
 [Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hermione]: </Harrypedia/people/Granger/Hermione Jean/>
+
 [RBW1]: </Harrypedia/people/Weasley/Ronald Bilius/>/
 [AD1]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Hogwarts]: /Harrypedia/Hogwarts/

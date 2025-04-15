@@ -1,4 +1,3 @@
-
 ### Analysis
 
 Draco is a coward, a bully, and a very conflicted young man. Over the course of

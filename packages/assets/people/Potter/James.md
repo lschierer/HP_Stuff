@@ -1,4 +1,3 @@
-
 ## Analysis
 
 James Potter is one of the more controversial figures in the Harry Potter
@@ -9,13 +8,11 @@ and just opinion pieces and commentators are working with an almost blank slate.
 
 > Harry remembered that his father had been pure-blood,[^210128-17]
 
-
 > James Potter
 >
 > Born 27 March 1960
 >
 > Died 31 October 1981[^210128-23]
-
 
 > “Who wants to be in Slytherin? I think I’d leave, wouldn’t you?” James asked
 > the boy lounging on the seats opposite him, and with a jolt, Harry realized
@@ -59,7 +56,6 @@ after she herself has fallen out with [Snape]?
 [Lily]: </Harrypedia/people/Evans/Lily J/>
 [Snape]: /Harrypedia/people/Snape/Severus/
 
-
 > "Quirrell said he hates me because he hated my father. Is that true?”
 >
 > “Well, they did rather detest each other. Not unlike yourself and Mr. Malfoy. And then, your father did something Snape could never forgive.”
@@ -68,24 +64,19 @@ after she herself has fallen out with [Snape]?
 >
 > “He saved his life.”[^210128-5]
 
-
 > but your father, who’d heard what Sirius had done, went after Snape and pulled him back,[^210128-20]
-
 
 > “Your father would have been proud,” she said. “He was an excellent Quidditch player himself.”[^210128-4]
 
-
 > “I have no hesitation in saying that James would have been highly disappointed if his son had never found any of the secret passages out of the castle.”[^210128-21]
-
 
 > “Black and Potter. Ringleaders of their little gang. Both very bright, of course exceptionally bright, in fact but I don’t think we’ve ever had such a pair of troublemakers”[^210128-19]
 
 It is interesting that so many people assume that James was a total idiot. I do not think that a realistic take on his character - I do not think anyone would say that [McGonagall] is given to false or light praise. We know he was good
-at transfiguration, but I think most people dismiss that because his only known accomplishment is the animagus transformation, and [Pettigrew] also accomplished that. My take is that it is actually a testament to James' skills that he was able to coach the unskilled [Pettigrew] through the process. I take it as a given that [Sirius] did not have the patience even pre-Azkaban, to help their slower less capable roommate through this achievement. I also wonder what other classes he took, and which ones he did how well at. Did he take Ancient Runes or Arithmancy? Who was top of the year at Defence?  James' father was famous for potion making, perhaps James did not inherit all of his father's skills, but it seems unlikely that he did _poorly_ at the subject - his father would have tutored him over the summers should he have needed it. [Snape] and [Lily] are prodigies, and [Snape] seems to expect _everyone_ to find potions as intuitive as he does, so I take any disparagement he makes with a fairly large and active amount of suspicion.
+at transfiguration, but I think most people dismiss that because his only known accomplishment is the animagus transformation, and [Pettigrew] also accomplished that. My take is that it is actually a testament to James' skills that he was able to coach the unskilled [Pettigrew] through the process. I take it as a given that [Sirius] did not have the patience even pre-Azkaban, to help their slower less capable roommate through this achievement. I also wonder what other classes he took, and which ones he did how well at. Did he take Ancient Runes or Arithmancy? Who was top of the year at Defence? James' father was famous for potion making, perhaps James did not inherit all of his father's skills, but it seems unlikely that he did _poorly_ at the subject - his father would have tutored him over the summers should he have needed it. [Snape] and [Lily] are prodigies, and [Snape] seems to expect _everyone_ to find potions as intuitive as he does, so I take any disparagement he makes with a fairly large and active amount of suspicion.
 
 [McGonagall]: /Harrypedia/people/McGonagall/Minerva/
 [Pettigrew]: /Harrypedia/people/Pettigrew/Peter/
-
 
 > “I’m bored,” said Sirius. “Wish it was full moon.”
 >
@@ -103,7 +94,6 @@ I would have to find the citation, but I know I am not alone in wondering if thi
 
 [^240422-1]: See my thoughts on the [pensieve].
 
-
 > Harry wondered why James didn’t tell Wormtail to get a grip on himself, but James seemed to be enjoying the attention. Harry noticed his father had a habit of rumpling up his hair as though to make sure it did not get too tidy, and also that he kept looking over at the girls by the water’s edge.[^210128-11]
 
 [Harry] has not noticed at this point that his mother is one of those girls.
@@ -112,14 +102,12 @@ enjoying it as a (probably mistaken) indication that what he is doing might
 attract _[Lily]'s_? Perception is everything, and _[Snape]'s_ memory does
 not really tell us what is going on in _James'_ head.
 
-
 > Lily, whose furious expression had twitched for an instant as though she was going to smile, said, “Let him down!”[^210128-15]
 
 She did not like James' behaviour, but she was not fully immune to the humour in
 the situation either. At least some of her behaviour is a false front, probably
 because she feels she should behave that way, or because she feels she _needs_
 to behave that way to get the results she wants.
-
 
 > Lupin burst out laughing. “Sometimes you remind me a lot of James. He called
 > it my ‘furry little problem’ in company. Many people were under the impression
@@ -133,12 +121,10 @@ Eleven inches is about average for a wand, it does not tell us much about James.
 The wood, mahogany, is not one listed on Pottermore's page about wand
 woods.[^210511-3]
 
-
 > Euphemia and Fleamont Potter tried and failed for many years to bring a child
 > into the world before baby James came along. They were much older, and
 > wealthy, so James grew up in a doting environment without the compromise of
 > siblings, in a home without material limits.[^210128-27]
-
 
 > Fleamont and Euphemia lived long enough to see James marry a Muggle-born girl
 > called Lily Evans, but not to meet their grandson, Harry. Dragon pox carried
@@ -183,7 +169,7 @@ If either or both of these is true, James might well have been something of a pe
 [^210629-3]:
     Ian Hycrest.
     _[Harry Potter and the Hands of Justice](https://www.fanfiction.net/s/13374289)_
-    [Chapter 10](<https://www.fanfiction.net/s/13374289/11/Harry-Potter-and-the-Hands-of-Justice>)
+    [Chapter 10](https://www.fanfiction.net/s/13374289/11/Harry-Potter-and-the-Hands-of-Justice)
     Published: 2019-08-27. Updated: 2020-01-14. Last Viewed: 2021-06-29.
 
 [^210629-2]:

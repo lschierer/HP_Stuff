@@ -31,30 +31,30 @@ else
   echo "OUTPUTDIR is '$OUTPUTDIR'"
 fi
 
-export JQ=`which jq`;
+export JQ=$(which jq)
 
-export CWD=`pwd`;
+export CWD=$(pwd)
 export full="$CWD/potter_universe.json"
 
-export target="$OUTPUTDIR/gedcom/";
+export target="$OUTPUTDIR/gedcom/"
 
 if [ -d $target ]; then
   rm -rf $target
 fi
 mkdir $target
 
-cat $full | $JQ -n 'inputs | ."_class"' | sort -u  | tr -d '"' |sort | while read line; do
+cat $full | $JQ -n 'inputs | ."_class"' | sort -u | tr -d '"' | sort | while read line; do
 
-if [[ "$line" == 'Person' ]]; then
-  export targetfile=$target`echo people | tr '[:upper:]' '[:lower:]'`.json
-elif [[ "$line" == 'Family' ]]; then
-  export targetfile=$target`echo families | tr '[:upper:]' '[:lower:]'`.json
-else
-  export targetfile=$target`echo $line | tr '[:upper:]' '[:lower:]'`s.json
-fi
-export field=`echo $line | tr -d '[:blank:]'`
+  if [[ "$line" == 'Person' ]]; then
+    export targetfile=$target$(echo people | tr '[:upper:]' '[:lower:]').json
+  elif [[ "$line" == 'Family' ]]; then
+    export targetfile=$target$(echo families | tr '[:upper:]' '[:lower:]').json
+  else
+    export targetfile=$target$(echo $line | tr '[:upper:]' '[:lower:]')s.json
+  fi
+  export field=$(echo $line | tr -d '[:blank:]')
 
-cat $full | $JQ -n "[inputs | select(.\"_class\" == \"$field\") | with_entries(if .key == \"gramps_id\" then .key = \"id\" else . end) ]" > $targetfile
+  cat $full | $JQ -n "[inputs | select(.\"_class\" == \"$field\") | with_entries(if .key == \"gramps_id\" then .key = \"id\" else . end) ]" > $targetfile
 
 done
 

@@ -1,4 +1,3 @@
-
 Every fan fiction author who attempts to deal with the problem of [Harry]'s home
 situation has to account for Arabella Figg. What, exactly, was her role?
 Different authors have different takes on this, and much of the answer depends

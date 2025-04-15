@@ -31,12 +31,12 @@ else
   echo "OUTPUTDIR is '$OUTPUTDIR'"
 fi
 
-export YQ=`which yq`;
+export YQ=$(which yq)
 
-rm -rf "$OUTPUTDIR/history";
-mkdir "$OUTPUTDIR/history";
+rm -rf "$OUTPUTDIR/history"
+mkdir "$OUTPUTDIR/history"
 
 find ./history -type f -iname '*.yaml' -print0 | while read -r -d '' file; do
-  j=`basename "$file" .yaml`;
+  j=$(basename "$file" .yaml)
   $YQ eval -o=json "$file" > "$OUTPUTDIR/history/$j.json"
 done

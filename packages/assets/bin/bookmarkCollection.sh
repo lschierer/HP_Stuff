@@ -31,14 +31,14 @@ else
   echo "OUTPUTDIR is '$OUTPUTDIR'"
 fi
 
-export YQ=`which yq`;
+export YQ=$(which yq)
 
 if [ -d "$OUTPUTDIR/Bookmarks" ]; then
-  rm -rf "$OUTPUTDIR/Bookmarks";
+  rm -rf "$OUTPUTDIR/Bookmarks"
 fi
-mkdir "$OUTPUTDIR/Bookmarks";
+mkdir "$OUTPUTDIR/Bookmarks"
 
 find ./Bookmarks -type f -iname '*.yaml' -print0 | while read -r -d '' file; do
-  j=`basename "$file" .yaml`;
+  j=$(basename "$file" .yaml)
   $YQ eval -o=json "$file" > "$OUTPUTDIR/Bookmarks/$j.json"
 done

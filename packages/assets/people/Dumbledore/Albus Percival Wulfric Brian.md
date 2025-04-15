@@ -1,4 +1,3 @@
-
 ### Analysis
 
 ### timeline Speculation

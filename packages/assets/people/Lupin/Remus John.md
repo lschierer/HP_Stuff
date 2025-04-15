@@ -1,4 +1,3 @@
-
 - Lupin considers it so highly probable that his child will be a werewolf that
   "if, by some miracle, it is not like me, then it will be better off, a hundred
   times so, without a father"[^211007-5]

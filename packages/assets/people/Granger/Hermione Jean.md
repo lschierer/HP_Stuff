@@ -1,4 +1,3 @@
-
 ### Analysis
 
 [An old post][The_Half_Blood_Prince] reminds me that it has been so long since
@@ -32,24 +31,25 @@ her credit for fourteen in one place, before pointing out a temper tantrum more
 appropriate for a four year old) girl.[^200706-4] I am not sure I would go
 quite that far; I think that Hermione does grow some over the course of the series.
 
-Another work, _[Of Hearts and Heroes]_ has a different but equally insightful take on Hermione.[^241211-1]  It is short enough to quote:
+Another work, _[Of Hearts and Heroes]_ has a different but equally insightful take on Hermione.[^241211-1] It is short enough to quote:
 
-> Hermione reeled, taken aback.  Did she do that?  Did she really make everyone feel stupid?  She didn’t mean to, she just … well, school was the only thing she was ever good at.  When she was little, her parents were always so embarrassed by the strange things that were always happening around her and the only thing that ever made them proud were her good results.
+> Hermione reeled, taken aback. Did she do that? Did she really make everyone feel stupid? She didn’t mean to, she just … well, school was the only thing she was ever good at. When she was little, her parents were always so embarrassed by the strange things that were always happening around her and the only thing that ever made them proud were her good results.
 >
-> The kids at her Muggle primary school didn’t like her.  No one liked her.  No, that wasn’t true.  The teachers liked her.  As long as Hermione knew all the answers and followed all the rules the teachers loved her.  And when the teachers loved her, her parents didn’t look at her as if she were a … disappointment.[^241211-2]
+> The kids at her Muggle primary school didn’t like her. No one liked her. No, that wasn’t true. The teachers liked her. As long as Hermione knew all the answers and followed all the rules the teachers loved her. And when the teachers loved her, her parents didn’t look at her as if she were a … disappointment.[^241211-2]
 
-I find this particularly insightful, but it is important to remember that the author, here, is writing from Hermione's perspective, not a perspective of objective fact.  I doubt her parents are/were *actually* disappointed in her.  Hermione read that in their reactions, but she is essentially an incredibly insecure young girl who does not *actually* understand people, their motives or their reactions *nearly* as well as she thinks they do.  She *deeply* craves acceptance and approval.  Children *are* often very cruel, and so I do not doubt that Hermione *did* experience a great deal of difficulty in school.  This probably *did* lead to a cycle where her academic excellence lead to teasing which Hermione reacted badly to, which caused accidental magic, which caused further problems.
+I find this particularly insightful, but it is important to remember that the author, here, is writing from Hermione's perspective, not a perspective of objective fact. I doubt her parents are/were _actually_ disappointed in her. Hermione read that in their reactions, but she is essentially an incredibly insecure young girl who does not _actually_ understand people, their motives or their reactions _nearly_ as well as she thinks they do. She _deeply_ craves acceptance and approval. Children _are_ often very cruel, and so I do not doubt that Hermione _did_ experience a great deal of difficulty in school. This probably _did_ lead to a cycle where her academic excellence lead to teasing which Hermione reacted badly to, which caused accidental magic, which caused further problems.
 
-Her parents may not have been disappointed in *her*, but they *were* at a total loss at how to help her, and no doubt *were* disappointed, or rather, upset with each failure.  If her parents tried to coach her in getting along better with her classmates, Hermione probably *did* detect disappointment with each failure.  This may or may not actually have been in any way actually directed or intended as disappointment *in her* though. We lack data, and even if I were not building off of fan fiction speculation, Hermione herself is an unreliable witness. Hermione *is* very bright in some vectors of intelligence, but as Ms. Onim discusses, *not* when it comes to interpersonal aspects.
+Her parents may not have been disappointed in _her_, but they _were_ at a total loss at how to help her, and no doubt _were_ disappointed, or rather, upset with each failure. If her parents tried to coach her in getting along better with her classmates, Hermione probably _did_ detect disappointment with each failure. This may or may not actually have been in any way actually directed or intended as disappointment _in her_ though. We lack data, and even if I were not building off of fan fiction speculation, Hermione herself is an unreliable witness. Hermione _is_ very bright in some vectors of intelligence, but as Ms. Onim discusses, _not_ when it comes to interpersonal aspects.
 
-Still, however her parents *actually intended* in their reactions, it is entirely believable that Hermione *believes* that her correct answers and the corresponding grades are the only source of approval in her life.  This would explain the obsessive behaviours around them without introducing equally speculative abusive or neglectful parents.  This also provides a believable segue into those works where Hermione has become what she is in part because she has historically bullied overworked school teachers into simply giving her the grades for her oversized papers rather than working with her to actually learn to write.
+Still, however her parents _actually intended_ in their reactions, it is entirely believable that Hermione _believes_ that her correct answers and the corresponding grades are the only source of approval in her life. This would explain the obsessive behaviours around them without introducing equally speculative abusive or neglectful parents. This also provides a believable segue into those works where Hermione has become what she is in part because she has historically bullied overworked school teachers into simply giving her the grades for her oversized papers rather than working with her to actually learn to write.
 
 [^241211-1]: [Emmilyne]. _[Of Hearts and Heroes]_. "[Chapter 47: And It All Came Tumbling Down](https://archiveofourown.org/works/4670303/chapters/10814993)" Published: 2015-08-28. Completed: 2015-09-06.
 
 [^241211-2]: [Emmilyne]. _[Of Hearts and Heroes]_. "[Chapter 47: And It All Came Tumbling Down](https://archiveofourown.org/works/4670303/chapters/10814993)" Published: 2015-08-28. Completed: 2015-09-06.
 
-[Of Hearts and Heroes]: <https://archiveofourown.org/works/4670303/>
-[Emmilyne]: <https://archiveofourown.org/users/Emmilyne/pseuds/Emmilyne>
+[Of Hearts and Heroes]: https://archiveofourown.org/works/4670303/
+[Emmilyne]: https://archiveofourown.org/users/Emmilyne/pseuds/Emmilyne
+
 #### Hermione and Harry
 
 I do think that Mrs. Rowling became, to an extent, a victim of her own success
@@ -114,33 +114,33 @@ disagree?
 
 Overall, the list has Hermione unambiguously right one time, [Harry] unambiguously right 3 times, and the point contested between them another three times (one time we cannot judge where it falls). In other words, if [Harry] had been allowed to stand up to Hermione, he could have been allowed to show case his own reasoning skills and to have taken charge more. He would then have been more of the leader, more of [Riddle]'s equal.
 
-On a related note, I very strongly believe that those who push the [Harry]/Hermione pairing have spent way too much time watching the movies (which certainly do push this pairing).  While I have read, and accept, that there is a strong element of wish fulfilment in desiring the pairing for female fans, the text simply does not, *at all* support this pairing.
+On a related note, I very strongly believe that those who push the [Harry]/Hermione pairing have spent way too much time watching the movies (which certainly do push this pairing). While I have read, and accept, that there is a strong element of wish fulfilment in desiring the pairing for female fans, the text simply does not, _at all_ support this pairing.
 
 #### Crookshanks
 
-Hermione's relationship with her pet cat, Crookshanks, is also worth a further look.  If you pay attention in _[Prisoner of Azkaban]_, Hermione is in fact incredibly insensitive. I am not faulting her for buying Crookshanks. She is not obligated to avoid owning a cat just because [Ron] owns a rat. Hedwig should have been just as prone to attacking Scabbers as Crookshanks; the reality of the pets chosen for Hogwarts is that some of them are predators of others of them. Owls eat small cats if they can, cats eat small owls if they can. Both will kill toads if they are given a chance. Rats aren't even on the approved list, probably precisely because the two most common pets will so commonly hunt them.
+Hermione's relationship with her pet cat, Crookshanks, is also worth a further look. If you pay attention in _[Prisoner of Azkaban]_, Hermione is in fact incredibly insensitive. I am not faulting her for buying Crookshanks. She is not obligated to avoid owning a cat just because [Ron] owns a rat. Hedwig should have been just as prone to attacking Scabbers as Crookshanks; the reality of the pets chosen for Hogwarts is that some of them are predators of others of them. Owls eat small cats if they can, cats eat small owls if they can. Both will kill toads if they are given a chance. Rats aren't even on the approved list, probably precisely because the two most common pets will so commonly hunt them.
 
 [Prisoner of Azkaban]: https://www.librarything.com/work/2742161/book/225886376
 
 The problem is not her choice of pet, the problem is her attitude. Hermione is
 heedless and uncaring. Sure it is natural that Crookshanks would hunt Scabbers.
-*So why would Hermione carry him into the boy's dorm with her?* We never hear of
+_So why would Hermione carry him into the boy's dorm with her?_ We never hear of
 any other cats wandering around the common room, any of which would be equally
 likely to attack Scabbers. Presumably these other cats are kept contained in
 dorm rooms when their owners are not actively playing with them. Why is
 Hermione never held responsible for Crookshanks' habit of wandering around
 campus? Sure Mrs. Noris does, but are there really only two cats in Hogwarts
 when it is one of the three approved pets? I think it far more likely that all
-the other cats are *kept contained.* Strange cats would fight if they were not
+the other cats are _kept contained._ Strange cats would fight if they were not
 kept relatively segregated. Alternately, perhaps magical cat pets are normally
-abnormally well behaved. If that is the case, Crookshanks is *quite* the
-exception, and Hermione should have been called to *do something* about it, or
+abnormally well behaved. If that is the case, Crookshanks is _quite_ the
+exception, and Hermione should have been called to _do something_ about it, or
 send him home. Worse, while she does burst into tears now and then, she never
 does express sorrow for the pain her cat has caused [Ron]. If my cat ate my
 best friend's pet, I might not blame the cat, but I would apologise for
 allowing it to happen.
 
-Remember what I said about the firebolt being part of a pattern? Consider this a second data point. Hermione *never* admits fault, and is *never* called on her faults.
+Remember what I said about the firebolt being part of a pattern? Consider this a second data point. Hermione _never_ admits fault, and is _never_ called on her faults.
 
 #### Veela (and Fleur in particular)
 
@@ -156,7 +156,7 @@ anything, the ability to resist it cannot be common. If the ability to resist
 it is *un*common, then you should not despise or deride a guy just because he
 lacks that ability. We might admire someone's photographic memory, but we are
 not going to ridicule someone who lacks it. In point of fact, this fits with
-what Mrs. Rowling writes - [Fleur] is attracted to [Bill] *because* he is
+what Mrs. Rowling writes - [Fleur] is attracted to [Bill] _because_ he is
 that rare male who does not react. This has been so rare in her life as to
 stand out.
 
@@ -164,7 +164,7 @@ stand out.
 [Fleur]: </Harrypedia/people/Delacour/Fleur Isabelle/>
 [Bill]: </Harrypedia/people/Weasley/William Arthur/>
 
-Hermione researches *everything* impulsively. She might not have known much
+Hermione researches _everything_ impulsively. She might not have known much
 about Veela at the world cup, but after seeing the guys react to them there,
 she would have read about them in the Hogwarts library. She would have known
 that [Ron]'s reaction was involuntary. What [Fleur] is doing is roughly
@@ -189,18 +189,18 @@ would have given [Fleur] a pass. Blaming both for the effect is basically
 displaying the worst of shallow female jealousy. It is the kind of behaviour
 that she would normally ascribe to Pansy.
 
-This one alone has mitigation, to an extent. Being male, I cannot *really* speak
-for the mindset involved, but most young girls are *extremely* insecure about
+This one alone has mitigation, to an extent. Being male, I cannot _really_ speak
+for the mindset involved, but most young girls are _extremely_ insecure about
 their appearance. No matter how true or false the common perception of Veela may
 be (and, as stated, Hermione should know precisely how true it is), Hermione,
-Ginny, and every other woman would be *aware* of that cultural baggage. That is,
+Ginny, and every other woman would be _aware_ of that cultural baggage. That is,
 they would be aware of [Fleur]'s magically enhanced beauty, which they can never
-live up to. This would enhance their own insecurity (and Hermione is, in fact, *incredibly* insecure). If I did not have several *pages* of other issues with Hermione's behaviour, I would be inclined to utterly ignore this topic. As it stands, I include it to illustrate that each point is part of a pattern of insecure and immature behaviour that persists through the entire series.
+live up to. This would enhance their own insecurity (and Hermione is, in fact, _incredibly_ insecure). If I did not have several _pages_ of other issues with Hermione's behaviour, I would be inclined to utterly ignore this topic. As it stands, I include it to illustrate that each point is part of a pattern of insecure and immature behaviour that persists through the entire series.
 
 #### Advice to [Ginny]
 
-Hermione *is* a very shallow female in many ways, something we see when
-we look at the the advice she gives to [Ginny] for dealing with a debilitating crush. The boy you like is not paying attention to you? Date some other guys. The cynical part of me hears this as "Make him jealous." While that approach happens to work in this case, [Harry] *does* get jealous of [Dean], it is not a smart strategy.[^230208-2]
+Hermione _is_ a very shallow female in many ways, something we see when
+we look at the the advice she gives to [Ginny] for dealing with a debilitating crush. The boy you like is not paying attention to you? Date some other guys. The cynical part of me hears this as "Make him jealous." While that approach happens to work in this case, [Harry] _does_ get jealous of [Dean], it is not a smart strategy.[^230208-2]
 
 [^230208-2]:
     Ms. Davia Sills. "[Inducing Jealousy to Get Your Mate's Attention]"
@@ -215,12 +215,12 @@ we look at the the advice she gives to [Ginny] for dealing with a debilitating c
 
 The jealousy angle aside though, having [Ginny] using dating to build
 confidence was both high risk and unfair to the guys [Ginny] dated. High
-risk in that the breakups and rejection that [Ginny] might have faced *in*
+risk in that the breakups and rejection that [Ginny] might have faced _in_
 those relationships might have destroyed the confidence that Hermione was
 hoping to build up. Unfair in that [Ginny] was entering relationships
-*intending* them to be temporary, *intending* to breakup with the guys
+_intending_ them to be temporary, _intending_ to breakup with the guys
 eventually when [Harry] someday noticed her. This might be perfectly good
-from pop culture's standpoint, but it is *horrible* morality. Lastly, high risk (though again pop culture does not recognise this) in that [Ginny] was not going to learn how to have a successful relationship when all of her experience came from experiences she entered into with a mental escape plan.
+from pop culture's standpoint, but it is _horrible_ morality. Lastly, high risk (though again pop culture does not recognise this) in that [Ginny] was not going to learn how to have a successful relationship when all of her experience came from experiences she entered into with a mental escape plan.
 
 #### Hermione's Parents
 
@@ -228,7 +228,7 @@ Hermione's relationship with her own parents is one of the more curious things
 in the series. She seems to spend less and less time with her parents, and by
 the summer between sixth and seventh year, is falls into classical magical
 thinking. Her decision to remove her parents memories of having a child
-*without consulting them*, however well intentioned, is condescending and
+_without consulting them_, however well intentioned, is condescending and
 paternalistic - an attitude wholly inappropriate for a daughter/parent
 relationship. Like the incident with the firebolt, her conclusions and thus
 actions might in the end be the right ones,[^240101-1] but her reasoning is all wrong.
@@ -236,7 +236,7 @@ actions might in the end be the right ones,[^240101-1] but her reasoning is all 
 Frankly, as a parent, this is the section that utterly horrifies me. By fourth
 year, as a fifteen year old girl, Hermione has essentially divorced herself
 from her parents. If one of my children were to do that, I would be devastated.
-I *understand* that one of the nearly universal fatal flaws of having children
+I _understand_ that one of the nearly universal fatal flaws of having children
 as protagonists in literature is the impossibility of portraying adults
 reasonably, but consider this as one of Hermione's parents. Assume, for the
 same of having a series, that [Harry]'s participation in the war is in fact
@@ -246,7 +246,7 @@ against the dysfunction that has allowed [Harry]'s situation to occur, but I
 can accept that it would eventually escalate world wide if not stopped. When
 you cannot flee, you have to stand and fight.
 
-Hermione does not give her parents this chance. Starting *at age twelve* she
+Hermione does not give her parents this chance. Starting _at age twelve_ she
 starts censoring all the important details of what happens at school. That is
 totally unacceptable. No reasonable parent would accept that behaviour. As a
 consequence of this, she feels less and less connected to them. A reasonable
@@ -257,7 +257,7 @@ year, and they notice so little that they neither demand she come home for
 Christmas break, nor that she stay with them the summer after fifth year.
 
 Speaking of which, if Hermione is not explaining things to them, how does she
-end up with the Order *all summer*? It cannot be "for safety" - her parents
+end up with the Order _all summer_? It cannot be "for safety" - her parents
 have not been told she is in danger. Again we are seeing a portrayal of
 Hermione's parents as essentially neglectful to the point of criminal
 negligence. Our daughter is off with we do not really know who for the entire
@@ -273,21 +273,21 @@ her parents lives? This is a really big question if she planned on the move
 being essentially permanent, but it is an impossible one if she planned on them
 being able to return should the war ever end successfully. What did she do
 with their house, their business, the clientele that business' success is based
-on? Is there any extended family *or even close friends* with whom she is
+on? Is there any extended family _or even close friends_ with whom she is
 causing her parents to cut off all contact essentially overnight and without
 explanation?
 
 And it would have to be without explanation. How could it be otherwise? Her
-parents do not even know their own names. Having a new identity, *they* cannot
+parents do not even know their own names. Having a new identity, _they_ cannot
 be responsible for mothballing the dental practice, contacting friends or
 family, or any of the dozens of details that would need to happen if they are
 to go overseas in a way they can hope to return from.
 
 I am unsure how necessary it was to modify give them a new identity this way. I
-agree they *did* probably need to either go into hiding or leave the country (at
+agree they _did_ probably need to either go into hiding or leave the country (at
 least temporarily). If I "woke up" from this however, was de-enchanted to find
 myself in Australia having had no say in going, I would be massively upset.
-The person who caused this would have to admit to having *been wrong to do so* to repair that relationship. If they do not, how can I trust them?
+The person who caused this would have to admit to having _been wrong to do so_ to repair that relationship. If they do not, how can I trust them?
 
 ### Hermione and Ron
 
@@ -300,7 +300,7 @@ Equally concerning is the way that Hermione sends the canaries to attack [Ron] w
 attack, while not premeditated, is a vicious violet use of magic with intent to harm. The birds _did_ draw blood, cause scarring, and _could_ have damaged him more severely (if for example they had reached his eyes while pecking his head).
 Without re-reading more recently than I have, I cannot recall if this is before or after Hermione's 17th birthday. If after, and had [Ron] chosen to press charges (and assuming that [Hogwarts] were the sort of school that were possible - which it is not), she would have been tried as an adult. In the mundane world, she it would have been one of the charges listed in either the [Offences against the Person Act of 1861] or something that later replaced or amended it. People would probably be quicker to condemn this relationship violence if it were male on female instead of female on male. As a thought exercise, imagine that [Ron] had attacked Hermione rather than yelling at her when he was first enraged with jealousy over her relationship with Krum.
 
-It also isn't the first time that Hermione has attacked someone - the use of the [Confundus] spell on [McLaggen] to help [Ron] win the keep trial must be categorised as an attack as well.[^240417-3] Once again people are generally willing to forgive her because it is 1) female on male violence 2) against a disliked character 3) results in a favourable outcome 4) done to help someone she has feelings for([Ron]). None of these *actually* justify her actions.
+It also isn't the first time that Hermione has attacked someone - the use of the [Confundus] spell on [McLaggen] to help [Ron] win the keep trial must be categorised as an attack as well.[^240417-3] Once again people are generally willing to forgive her because it is 1) female on male violence 2) against a disliked character 3) results in a favourable outcome 4) done to help someone she has feelings for([Ron]). None of these _actually_ justify her actions.
 
 [Offences against the Person Act of 1861]: https://www.legislation.gov.uk/ukpga/Vict/24-25/100/enacted/data.pdf
 

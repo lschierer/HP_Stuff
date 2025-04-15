@@ -1,4 +1,3 @@
-
 ## Peverell Brothers
 
 "The Tale of the Three Brothers" as quoted in Chapter 21 of _the Deathly

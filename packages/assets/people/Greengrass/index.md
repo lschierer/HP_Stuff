@@ -1,4 +1,3 @@
-
 Per an interview, Daphne was part of Pansy Parkinson's "gang"[^200520-1]. This
 is apparently established as part of book 5, but seems to be fairly debated. A
 word search on the American Kindle edition shows her name only in relation to

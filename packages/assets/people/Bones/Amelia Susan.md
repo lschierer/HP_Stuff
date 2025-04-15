@@ -1,4 +1,3 @@
-
 ### Physical Appearance
 
 > A broad, square-jawed witch with very short gray hair sat on Fudge’s left; she wore a monocle and looked forbidding.[^221213-3]

@@ -1,4 +1,3 @@
-
 The McLaggen family is apparently well connected, sufficiently so to impress
 Slughorn.[^210318-2] Given Scrimgeour's behaviour across book six and the bit
 of book seven he is alive for, my guess is that Scrimgeour is not a sympathiser

@@ -1,4 +1,3 @@
-
 ### Analysis
 
 The [Harry Potter Wiki] lists Lavender as dying in the battle on May 2nd

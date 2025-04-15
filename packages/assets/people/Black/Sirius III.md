@@ -1,4 +1,3 @@
-
 - Sirius did not, as he is often accused, give Harry to [Hagrid][]; he (Sirius)
   arrived second.[^210517-1]
 
@@ -232,7 +231,6 @@ of Azkaban][].
     Mrs. J. K. Rowling.
     _Harry Potter and the Order of the Phoenix_ Kindle Locations 9822-9830 of 13038.
     Pottermore Limited © 2005. American Kindle Edition.
-
 
 [Andromeda]: /Harrypedia/people/Black/Andromeda/
 [Arcturus]: </Harrypedia/people/Black/Arcturus II/>

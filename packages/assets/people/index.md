@@ -1,4 +1,3 @@
-
 I initially started keeping my notes on people and relationships in Harry
 Potter in [Gramps] however, this required a jumping through a lot of hoops to
 make it accessible. I needed to export it out in multiple formats, first as an
@@ -12,7 +11,8 @@ personalities, motivations, backstories, abilities, and so on. This was
 unacceptable. This site attempts to combine that information into a single
 more accessible and more unified experience. We will see how well I succeed.
 
-----
+---
+
 <br/><geneological-stats></geneological-stats>
 
 [ikiwiki]: http://ikiwiki.info/

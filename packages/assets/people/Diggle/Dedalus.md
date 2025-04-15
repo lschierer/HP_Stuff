@@ -1,4 +1,3 @@
-
 ### Analysis
 
 - Lives in Kent[^220927-4]

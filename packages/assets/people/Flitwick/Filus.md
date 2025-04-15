@@ -1,4 +1,3 @@
-
 ### Analysis
 
 Where I end up reluctantly very critical of [Professor McGonagall][McGonagall],

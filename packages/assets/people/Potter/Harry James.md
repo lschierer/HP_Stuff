@@ -1,4 +1,3 @@
-
 ### Analysis
 
 #### Effects of abuse
@@ -230,8 +229,7 @@ in the cupboard. Since both are speculation, we do not know which.
 
 [^200710-1]: Mrs. J. K. Rowling. _Harry Potter and the Order of the Phoenix_ Kindle Locations 9456-9457. Pottermore Limited. American Kindle Edition.
 
-[^200710-2]:
-    Mrs. J. K. Rowling. _Harry Potter and the Sorcerer's Stone_ p. 208. Pottermore Limited. American Kindle Edition.
+[^200710-2]: Mrs. J. K. Rowling. _Harry Potter and the Sorcerer's Stone_ p. 208. Pottermore Limited. American Kindle Edition.
 
 [^200710-3]:
     Tom Kristal.

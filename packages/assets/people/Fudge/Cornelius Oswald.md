@@ -1,4 +1,3 @@
-
 - Fudge was Junior Minister in the Department of Magical Catastrophes in November of 1981.[^220906-1]
 - Elected Minister of Magic in 1990.[^220906-2]
 

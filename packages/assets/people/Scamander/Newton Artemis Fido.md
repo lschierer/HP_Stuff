@@ -1,4 +1,3 @@
-
 Normally goes by "Newt".
 
 ### Analysis

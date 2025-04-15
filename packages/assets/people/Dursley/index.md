@@ -1,4 +1,3 @@
-
 ### As a family
 
 The Dursley family is a children's book caricature, and next to impossible to
@@ -122,4 +121,3 @@ In short, as another (better) author puts it,
 While Mrs. Rowling may have chosen not to show us everything, she has shown
 enough that a reasonable adult should be able to see the forest as well as the
 trees.
-
