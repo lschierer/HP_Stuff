@@ -1,3 +1,0 @@
----
-title: Lysandra Yaxley
----

@@ -1,4 +1,0 @@
----
-collection: Harrypedia
-title: Egypt
----
