@@ -1,21 +1,19 @@
 {
-  "name": "@hp-stuff/vite-frontend",
+  "name": "@hp-stuff/frontend",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "dotenvx run -f .env.development -fk .env.keys --  concurrently -k -n SERVER,CLIENT,CSS,HTML -c green,blue,magenta,cyan \"pnpm:watch:server\" \"pnpm:watch:client\" \"pnpm:watch:css\" \"pnpm:watch:html\"",
+    "dev": "NODE_ENV=development concurrently -k -n SERVER,CLIENT,CSS,HTML -c green,blue,magenta,cyan \"pnpm:watch:server\" \"pnpm:watch:client\" \"pnpm:watch:css\" \"pnpm:watch:html\"",
     "watch:server": "nodemon --watch src/shared --watch src/server --ext ts,json --exec \"tsx src/server/server.ts\"",
     "watch:client": "chokidar 'src/shared/**/*.ts' 'src/client/**/*.ts' -c 'pnpm build:client' --initial",
     "watch:css": "chokidar 'src/styles/**/*.css' -c 'pnpm build:css' --initial",
     "watch:html": "chokidar 'src/**/*.html' -c 'pnpm build:html' --initial",
     "build:css": "./bin/build-css.sh",
-    "build:ts": "./bin/build-server.sh",
+    "build:ts": "tsc && tsc-alias",
     "build:client": "tsx ./src/scripts/build-client.ts",
     "build:html": "./bin/build-Html.sh",
-    "build": "pnpm build:css && pnpm build:ts && pnpm build:client && pnpm build:html",
-    "serve": "node --experimental-specifier-resolution=node dist/server/server.js",
-    "build:lambda": "pnpm build && tsx ./src/scripts/prepare-lambda-package.ts"
+    "build": "./bin/build-server.sh"
   },
   "dependencies": {
     "@dotenvx/dotenvx": "^1.40.0",

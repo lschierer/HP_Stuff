@@ -1,90 +1,92 @@
 import * as aws from "@pulumi/aws";
+import * as path from "path";
+import * as fs from "fs";
+
 import * as pulumi from "@pulumi/pulumi";
 
-// Create an S3 bucket to host the static website
-const staticSiteBucket = new aws.s3.Bucket("staticSiteBucket", {
-  website: {
-    indexDocument: "index.html",
-    errorDocument: "404.html",
-  },
+import { execSync } from "child_process";
+
+// 🔁 Run the build script in the hono package
+const honoDir = path.resolve(__dirname, "..", "hono");
+
+console.log("🔨 Building Hono Lambda...");
+execSync("pnpm build", {
+  cwd: honoDir,
+  stdio: "inherit", // stream output live
 });
 
-// Upload static files to the S3 bucket
-const staticFiles = new aws.s3.BucketObject("index.html", {
-  bucket: staticSiteBucket,
-  source: new pulumi.asset.FileAsset("../hono/dist/index.html"),
-  contentType: "text/html",
-});
+console.log("✅ Hono build complete.");
 
-const lambdaRole = new aws.iam.Role("lambdaRole", {
+// 🧠 Path to your built app entry point
+const lambdaPath = path.resolve(
+  __dirname,
+  "..",
+  "hono",
+  "dist",
+  "server",
+  "server.js"
+);
+
+const role = new aws.iam.Role("lambdaRole", {
   assumeRolePolicy: aws.iam.assumeRolePolicyForPrincipal({
     Service: "lambda.amazonaws.com",
   }),
 });
 
-const lambdaRolePolicyAttachment = new aws.iam.RolePolicyAttachment(
-  "lambdaRolePolicy",
-  {
-    role: lambdaRole.name,
-    policyArn: aws.iam.ManagedPolicies.AWSLambdaBasicExecutionRole,
-  }
+new aws.iam.RolePolicyAttachment("lambdaFullAccess", {
+  role: role.name,
+  policyArn: aws.iam.ManagedPolicy.AWSLambdaBasicExecutionRole,
+});
+
+const lambdaFileArchive = new pulumi.asset.FileArchive(
+  path.resolve(__dirname, "..", "hono", "lambda-dist")
 );
 
-// Create a Lambda function for the dynamic pages
-const dynamicFunction = new aws.lambda.Function("dynamicFunction", {
+const honoLambda = new aws.lambda.Function("honoHandler", {
   runtime: "nodejs22.x",
   code: new pulumi.asset.AssetArchive({
-    ".": new pulumi.asset.FileArchive("../hono/dist/"),
+    ".": lambdaFileArchive,
   }),
-  handler: "server.handler",
-  role: lambdaRole.arn,
+  handler: "index.handler", // You’ll need to export handler in server.js!
+  role: role.arn,
+  memorySize: 512,
+  timeout: 10,
+  environment: {
+    variables: {
+      NODE_ENV: "production",
+    },
+  },
 });
 
-// Create an API Gateway Rest API
-const restApi = new aws.apigateway.RestApi("restApi", {
-  description: "API for dynamic content",
+const api = new aws.apigatewayv2.Api("honoApi", {
+  protocolType: "HTTP",
 });
 
-// Create a resource for the root path
-const rootResource = new aws.apigateway.Resource("rootResource", {
-  restApi: restApi.id,
-  parentId: restApi.rootResourceId,
-  pathPart: "",
+const honoIntegration = new aws.apigatewayv2.Integration("honoIntegration", {
+  apiId: api.id,
+  integrationType: "AWS_PROXY",
+  integrationUri: honoLambda.invokeArn,
+  integrationMethod: "POST",
+  payloadFormatVersion: "2.0",
 });
 
-// Create a resource for the dynamic path
-const dynamicResource = new aws.apigateway.Resource("dynamicResource", {
-  restApi: restApi.id,
-  parentId: rootResource.id,
-  pathPart: "dynamic",
+new aws.apigatewayv2.Route("honoRoute", {
+  apiId: api.id,
+  routeKey: "$default",
+  target: pulumi.interpolate`integrations/${honoIntegration.id}`,
 });
 
-// Create a GET method for the dynamic resource
-const getMethod = new aws.apigateway.Method("getMethod", {
-  restApi: restApi.id,
-  resourceId: dynamicResource.id,
-  httpMethod: "GET",
-  authorization: "NONE",
-  apiKeyRequired: false,
-  requestModels: {},
+new aws.apigatewayv2.Stage("defaultStage", {
+  apiId: api.id,
+  name: "$default",
+  autoDeploy: true,
 });
 
-// Integrate the Lambda function with the GET method
-const lambdaIntegration = new aws.apigateway.Integration("lambdaIntegration", {
-  restApi: restApi.id,
-  resourceId: dynamicResource.id,
-  httpMethod: getMethod.httpMethod,
-  integrationHttpMethod: "POST",
-  type: "AWS_PROXY",
-  uri: dynamicFunction.invokeArn,
+new aws.lambda.Permission("apiPermission", {
+  action: "lambda:InvokeFunction",
+  function: honoLambda.name,
+  principal: "apigateway.amazonaws.com",
+  sourceArn: pulumi.interpolate`${api.executionArn}/*/*`,
 });
 
-// Deploy the API
-const deployment = new aws.apigateway.Deployment("deployment", {
-  restApi: restApi.id,
-  stageName: "prod",
-});
-
-// Export the URLs
-export const staticSiteUrl = staticSiteBucket.websiteEndpoint;
-export const apiUrl = pulumi.interpolate`${deployment.invokeUrl}/dynamic`;
+export const endpoint = api.apiEndpoint;

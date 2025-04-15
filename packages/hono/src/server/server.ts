@@ -9,8 +9,6 @@ import { serve } from "@hono/node-server";
 import { showRoutes } from "hono/dev";
 import * as path from "node:path";
 import { readFileSync } from "node:fs";
-import { handle } from "hono/aws-lambda";
-import type { APIGatewayProxyEvent } from "aws-lambda";
 
 import { config } from "@shared/config";
 
@@ -21,7 +19,7 @@ import FanFiction from "./FanFiction";
 import Harrypedia from "./Harrypedia";
 import Searches from "./Searches";
 
-const app = new Hono();
+export const app = new Hono();
 const port = process.env.PORT || 3000;
 
 // Conditionally initialize livereload in development mode
@@ -86,16 +84,6 @@ app.notFound((c) => {
   if (DEBUG) console.log(`server.ts 404 fallback: ${c.req.path}`);
   return c.text("Not found", 404);
 });
-
-// AWS Lambda handler
-export const handler = async (event: APIGatewayProxyEvent) => {
-  /*start work around for requiring async */
-  await new Promise((resolve) => setTimeout(resolve, 1));
-  /* end workaround */
-
-  if (DEBUG) console.log("AWS Lambda handler called", { path: event.path });
-  return handle(app);
-};
 
 // Export for SSG and serverless environments
 export default {

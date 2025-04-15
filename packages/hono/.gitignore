@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 .lambda
+lambda-dist
 lambda-deployment.zip
 *.local
 
