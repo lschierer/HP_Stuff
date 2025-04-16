@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { GedcomPerson, GedcomFamily } from "./gedcom/index.ts";
+import { GedcomPerson, GedcomFamily } from "./gedcom/index";
 
 const persondata = z.object({
   gedcomclass: z.literal("person"),
@@ -32,14 +32,17 @@ export const ParsedResult = z.object({
 });
 export type ParsedResult = z.infer<typeof ParsedResult>;
 
-export const ExternalPage = z.object({
+export const ExternalPage = FrontMatter.extend({
   title: z.string(),
   route: z.string(),
+  fileName: z.string(),
   html: z.string(),
 });
 export type ExternalPage = z.infer<typeof ExternalPage>;
 
-const NavItemBase = ExternalPage.partial().extend({
+const NavItemBase = ExternalPage.partial({
+  html: true,
+}).extend({
   expanded: z.boolean().optional(),
 });
 

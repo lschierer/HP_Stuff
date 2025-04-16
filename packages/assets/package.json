@@ -16,6 +16,7 @@
     "hpnofp-ebook.git": "github:lschierer/hpnofp-ebook"
   },
   "dependencies": {
+    "@hp-stuff/schemas": "workspace:^",
     "glob": "^11.0.1",
     "gray-matter": "^4.0.3",
     "hastscript": "^9.0.1",

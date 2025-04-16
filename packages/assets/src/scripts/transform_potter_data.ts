@@ -218,12 +218,23 @@ function buildFamilyTreeMarkdown(
   return markdown;
 }
 
+const pagesCreated = (pageRoots: NavigationItem[]) => {
+  const fileList = new Array<string>();
+  for (const page of pageRoots) {
+    fileList.push(page.fileName);
+    if (page.children.length) {
+      fileList.push(...pagesCreated(page.children));
+    }
+  }
+  return fileList;
+};
+
 // Main function to process the data
-function doConversion(
+export const doConversion = (
   outputDir: string,
   staticContentDir: string,
   pageBaseOveride?: string
-) {
+) => {
   if (pageBaseOveride !== undefined) {
     pageBase = pageBaseOveride;
   }
@@ -273,7 +284,6 @@ function doConversion(
 
     // Write the markdown file
     fs.writeFileSync(outputFilePath, finalContent);
-    console.log(`Created markdown file: ${outputFilePath}`);
   }
 
   // Create index files for each last name
@@ -291,7 +301,6 @@ function doConversion(
       "index.md"
     );
     let finalContent = familyTreeMarkdown;
-    console.log(`checking if ${staticIndexPath} exists`);
 
     if (fs.existsSync(staticIndexPath)) {
       const staticContent = fs.readFileSync(staticIndexPath, "utf8");
@@ -300,11 +309,11 @@ function doConversion(
 
     // Write the index file
     fs.writeFileSync(indexFilePath, finalContent);
-    console.log(`Created index file: ${indexFilePath}`);
 
     // Add to navigation items
     const familyNavItem: NavigationItem = {
       title: `${lastName} Family`,
+      fileName: indexFilePath,
       route: `/${pageBase}/${lastName}/`,
       children: [],
     };
@@ -317,8 +326,10 @@ function doConversion(
 
     for (const person of personsWithLastName) {
       const personName = new IndividualName(person);
+      const personFileName = path.join(outputDir, personName.getFilename());
       familyNavItem.children.push({
         title: personName.getFullName(),
+        fileName: personFileName,
         route: personName.formatUrlForMarkdown(`${pageBase}/`),
         children: [],
       });
@@ -331,13 +342,13 @@ function doConversion(
   const routesDir = path.join(process.cwd(), "dist", "routes", pageBase);
   ensureDirectoryExists(routesDir);
   fs.writeFileSync(
-    path.join(routesDir, "gedcom.json"),
+    path.join(routesDir, "index.json"),
     JSON.stringify(returnPages, null, 2)
   );
 
-  console.log("Processing complete!");
-  return returnPages;
-}
+  console.log("Transform Potter Universe Gedcom Data Complete!");
+  return pagesCreated(returnPages);
+};
 
 // Execute the conversion with command line arguments
 const outputDir = process.argv[2] || "./output";

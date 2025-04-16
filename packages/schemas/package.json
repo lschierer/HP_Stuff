@@ -3,14 +3,37 @@
   "version": "1.0.0",
   "description": "zod schemas for HP-Stuff",
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
+    "build": "tsc",
+    "clean": "rimraf dist tsconfig.tsbuildinfo",
+    "dev": "tsc --watch",
+    "prebuild": "pnpm run clean",
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Luke Schierer",
   "license": "ISC",
   "exports": {
-    ".": "./index.ts",
-    "./gedcom": "./gedcom/index.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./gedcom": {
+      "types": "./dist/gedcom/index.d.ts",
+      "import": "./dist/gedcom/index.js"
+    }
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "rimraf": "^5.0.10",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "zod": "^3.0.0"
   }
 }

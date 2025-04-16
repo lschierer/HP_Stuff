@@ -148,6 +148,9 @@ importers:
 
   packages/assets:
     dependencies:
+      '@hp-stuff/schemas':
+        specifier: workspace:^
+        version: link:../schemas
       glob:
         specifier: ^11.0.1
         version: 11.0.1
@@ -672,7 +675,18 @@ importers:
         specifier: ^5.8.3
         version: 5.8.3
 
-  packages/schemas: {}
+  packages/schemas:
+    dependencies:
+      zod:
+        specifier: ^3.0.0
+        version: 3.24.2
+    devDependencies:
+      rimraf:
+        specifier: ^5.0.10
+        version: 5.0.10
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
 
 packages:
 
@@ -7651,6 +7665,10 @@ packages:
 
   rfdc@1.4.1:
     resolution: {integrity: sha512-q1b3N5QkRUWUl7iyylaaj3kOpIT0N2i9MqIEQXP73GVsN9cw3fdx8X63cEmWhJGi2PPCF23Ijp7ktmd39rawIA==}
+
+  rimraf@5.0.10:
+    resolution: {integrity: sha512-l0OE8wL34P4nJH/H2ffoaniAokM2qSmrtXHmlpvYr5AVVX8msAyW0l8NVJFDxlSK4u3Uh/f41cQheDVdnYijwQ==}
+    hasBin: true
 
   robot-directives@0.3.0:
     resolution: {integrity: sha512-mROGTXczU5H5jpfwIpy4TUcmoZH033UXvkI2QZfbfH+qugWr7XzmXmMtKcqqrTn1d4wabmwfVG9xaVQQ66ti8Q==}
@@ -15856,7 +15874,7 @@ snapshots:
       ky: 1.8.1
       registry-auth-token: 5.1.0
       registry-url: 6.0.1
-      semver: 7.6.3
+      semver: 7.7.1
 
   package-manager-detector@0.2.11:
     dependencies:
@@ -17240,6 +17258,10 @@ snapshots:
   reusify@1.1.0: {}
 
   rfdc@1.4.1: {}
+
+  rimraf@5.0.10:
+    dependencies:
+      glob: 10.4.5
 
   robot-directives@0.3.0:
     dependencies:
