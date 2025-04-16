@@ -1,9 +1,8 @@
-import * as path from "node:path";
 import * as fs from "node:fs";
+import * as path from "node:path";
 import { fileURLToPath } from "node:url";
 
-import { type ParsedResult } from "@schemas/page";
-
+import { type ParsedResult } from "@hp-stuff/schemas";
 import { defaultLayout } from "./layout";
 
 import debugFunction from "@shared/debug";
@@ -35,7 +34,7 @@ export const mdTohtml = async (
       markdownContent: fileContent,
     });
 
-    // Return both the HTML and the frontmatter
+    // Return the result directly - it's already a ParsedResult
     return result;
   } else {
     if (DEBUG) {

@@ -467,13 +467,13 @@ const processHtml = async (
     return {
       frontMatter,
       html: unified().use(rehypeStringify).stringify(ast),
-    };
+    } as ParsedResult;
   } catch (err) {
     if (DEBUG) console.error("Layout render error:", err);
     return {
       frontMatter,
       html: `<html><body><h1>Error rendering page</h1><pre>${JSON.stringify(err)}</pre></body></html>`,
-    };
+    } as ParsedResult;
   }
 };
 

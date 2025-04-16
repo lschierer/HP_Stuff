@@ -68,6 +68,7 @@ if (!fs.existsSync(path.join(finalOutputDir, gedcomPrefix))) {
 import { buildNavigationTree } from "./build-sidebar";
 import { ParsedResult } from "@hp-stuff/schemas";
 import { defaultLayout } from "./transform/layout";
+import { mdTohtml } from "./transform/mdTohtml";
 
 const navigationTree = buildNavigationTree();
 
@@ -99,7 +100,7 @@ const getFiles = (basePath: string, filePath: string): string | string[] => {
 };
 
 const ignoredFiles = [".gitkeep", ".gitignore"];
-for (const file of getFiles(process.cwd(), "pages")) {
+for (const file of getFiles(markdownPagesDir, ".")) {
   if (ignoredFiles.includes(path.basename(file))) {
     continue;
   }
@@ -111,14 +112,27 @@ for (const file of getFiles(process.cwd(), "pages")) {
   }
 
   let pr: ParsedResult | string | null = null;
-  if (file.endsWith(".html")) {
+  let basename = "";
+  if (file.endsWith(".fragment.html")) {
+    if (DEBUG) {
+      console.log(`this is a fragment`);
+    }
+    basename = path.basename(relativePath, ".fragment.html");
+
     const data = fs.readFileSync(file, "utf-8");
     pr = await defaultLayout({
       title: "",
-      route: `${path.dirname(relativePath)}
-      ${path.basename(relativePath, ".html")}`,
+      route: `${path.dirname(relativePath)}${path.basename(relativePath, ".html")}`,
       content: data,
     });
+  }
+
+  if (file.endsWith(".md")) {
+    if (DEBUG) {
+      console.log(`this is a markdown file`);
+    }
+    basename = path.basename(relativePath, ".md");
+    pr = await mdTohtml(relativePath.slice(0, -3));
   }
 
   const location = path.join(finalOutputDir, path.dirname(relativePath));
@@ -132,15 +146,17 @@ for (const file of getFiles(process.cwd(), "pages")) {
     if (DEBUG) {
       console.log(`result for ${file} is a string at ${location}`);
     }
-    fs.writeFileSync(file, pr);
+    fs.writeFileSync(`${location}/${basename}.html`, pr);
   } else if (ParsedResult.safeParse(pr).success) {
     if (DEBUG) {
-      console.log(`result for ${file} is a ParsedResult at ${location}`);
+      console.log(
+        `result for ${file} is a ParsedResult at ${location}/${basename}.html`
+      );
     }
-    fs.writeFileSync(file, (pr as ParsedResult).html);
+    fs.writeFileSync(`${location}/${basename}.html`, (pr as ParsedResult).html);
   } else {
     if (DEBUG) {
-      console.error(`unknown result type for ${file}`);
+      console.error(`unknown result type for ${location}/${basename}.html`);
     }
   }
 }

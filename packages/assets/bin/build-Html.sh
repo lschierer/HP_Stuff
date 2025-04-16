@@ -4,7 +4,20 @@ export PWD=$(pwd)
 
 export STEP=1
 
-rsync -av --include='*/' --include='*.html' --exclude='*' ${PWD}/pages/ ${PWD}/dist/ || exit $STEP
+mkdir -p ./dist/assets ./dist/styles
+
+./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "./pages/FanFiction/" -a ./dist/assets -s ./dist/styles
+
+#copy the directory structure
+find ${PWD}/pages -type d | gsed -E "s#${PWD}/pages(.*)#${PWD}/dist\1#" | xargs -I{} mkdir -p {} || exit $STEP
+STEP=$((STEP + 1))
+
+# Copy only .html files that are not .fragment.html files
+find ${PWD}/pages -name "*.html" -not -name "*.fragment.html" | while read file; do
+  dest=$(echo "$file" | gsed -E "s#${PWD}/pages(.*)#${PWD}/dist\1#") || exit $STEP
+  STEP=$((STEP + 1))
+  cp "$file" "$dest"
+done || exit $STEP
 STEP=$((STEP + 1))
 
 cat potter_universe.json | jq -sS --indent 2 -M '.' > ${PWD}/dist/potter_universe.json || exit $STEP
