@@ -71,7 +71,6 @@ would have no need of a revolution.
 [Black]: /Harrypedia/people/Black/
 [Prewett]: /Harrypedia/people/Prewett/
 [Weasley]: /Harrypedia/people/Weasley/
-
 [Lucius]: </Harrypedia/people/Malfoy/Lucius Abraxas/>
 [Ravenclaw]: /Harrypedia/Hogwarts/Ravenclaw/
 [Gryffindor]: /Harrypedia/Hogwarts/Gryffindor/

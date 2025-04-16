@@ -136,13 +136,9 @@ capable of permanent transmutation, and a "half-veela" is capable of it
 only to the extent her male parent was.
 
 [Appendix A]: <../Points of Divergence/>
-
 [Rules of Magic]: <../Rules of Magic/>
-
 [Magical Beings]: ../magical-beings/
-
 [Relative Power Levels]: <../Relative Power Levels/>
-
 [Life Expectancy]: ../life-expectancy/
 [Appendix G]: ../Appendix_G/
 [Appendix H]: ../Appendix_H//

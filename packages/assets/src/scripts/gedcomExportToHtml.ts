@@ -24,22 +24,26 @@ import * as fs from "node:fs";
 
 import debugFunction from "@shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
-console.log(
+console.warn(
   `DEBUG is set to ${DEBUG} for ${new URL(import.meta.url).pathname}`
 );
 
-const finalOutputDir = path.join(process.cwd(), "dist/Harrypedia/people");
-const markdownPagesDir = path.join(process.cwd(), "pages/Harrypedia/people");
+const finalOutputDir = path.join(process.cwd(), "dist/");
+const markdownPagesDir = path.join(process.cwd(), "pages");
 const staticContent = path.join(process.cwd(), "people");
+const gedcomPrefix = "Harrypedia/people";
 
 import { doConversion } from "./transform_potter_data";
 
-const pagesCreated = doConversion(markdownPagesDir, staticContent);
+const pagesCreated = doConversion(
+  path.join(markdownPagesDir, gedcomPrefix),
+  staticContent
+);
 
 if (DEBUG) {
-  console.log(`conversion created: \n${pagesCreated.join("\n")}`);
+  console.warn(`conversion created: \n${pagesCreated.join("\n")}`);
 }
-const filesCreatedDir = path.join(process.cwd(), "dist/filescreated");
+const filesCreatedDir = path.join(finalOutputDir, "filescreated");
 if (!fs.existsSync(filesCreatedDir)) {
   fs.mkdirSync(filesCreatedDir, {
     recursive: true,
@@ -54,9 +58,89 @@ fs.writeFileSync(
   }
 );
 
-if (!fs.existsSync(finalOutputDir)) {
-  fs.mkdirSync(finalOutputDir, {
+if (!fs.existsSync(path.join(finalOutputDir, gedcomPrefix))) {
+  fs.mkdirSync(path.join(finalOutputDir, gedcomPrefix), {
     recursive: true,
     mode: 0o755,
   });
+}
+
+import { buildNavigationTree } from "./build-sidebar";
+import { ParsedResult } from "@hp-stuff/schemas";
+import { defaultLayout } from "./transform/layout";
+
+const navigationTree = buildNavigationTree();
+
+if (DEBUG) {
+  console.warn(
+    "Generated navigation tree:",
+    JSON.stringify(navigationTree, null, 2)
+  );
+}
+fs.writeFileSync(
+  path.join(finalOutputDir, "routes/sidebar-routes.json"),
+  JSON.stringify(navigationTree, null, 2)
+);
+
+const getFiles = (basePath: string, filePath: string): string | string[] => {
+  const node = path.join(basePath, filePath);
+  const ns = fs.statSync(node);
+  if (ns.isDirectory()) {
+    const items = fs.readdirSync(node);
+    const r: string | string[] = items
+      .map((item) => {
+        return getFiles(node, item);
+      })
+      .flat();
+    return r;
+  } else {
+    return node;
+  }
+};
+
+const ignoredFiles = [".gitkeep", ".gitignore"];
+for (const file of getFiles(process.cwd(), "pages")) {
+  if (ignoredFiles.includes(path.basename(file))) {
+    continue;
+  }
+
+  const relativePath = file.replace(markdownPagesDir, "");
+  if (DEBUG) {
+    console.log(`relativePath is ${relativePath}`);
+    console.log(`now processing ${relativePath}`);
+  }
+
+  let pr: ParsedResult | string | null = null;
+  if (file.endsWith(".html")) {
+    const data = fs.readFileSync(file, "utf-8");
+    pr = await defaultLayout({
+      title: "",
+      route: `${path.dirname(relativePath)}
+      ${path.basename(relativePath, ".html")}`,
+      content: data,
+    });
+  }
+
+  const location = path.join(finalOutputDir, path.dirname(relativePath));
+  if (!fs.existsSync(location)) {
+    fs.mkdirSync(location, {
+      recursive: true,
+      mode: 0o755,
+    });
+  }
+  if (typeof pr === "string") {
+    if (DEBUG) {
+      console.log(`result for ${file} is a string at ${location}`);
+    }
+    fs.writeFileSync(file, pr);
+  } else if (ParsedResult.safeParse(pr).success) {
+    if (DEBUG) {
+      console.log(`result for ${file} is a ParsedResult at ${location}`);
+    }
+    fs.writeFileSync(file, (pr as ParsedResult).html);
+  } else {
+    if (DEBUG) {
+      console.error(`unknown result type for ${file}`);
+    }
+  }
 }

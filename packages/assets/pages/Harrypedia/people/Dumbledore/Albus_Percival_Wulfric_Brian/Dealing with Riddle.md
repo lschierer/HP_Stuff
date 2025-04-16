@@ -1,4 +1,3 @@
-
 ### Riddle's School Years
 
 Dumbledore was transfiguration teacher when he first met [Tom Riddle][TMR1]

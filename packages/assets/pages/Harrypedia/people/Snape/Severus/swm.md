@@ -1,4 +1,3 @@
-
 Any attempt to understand [Sirius], [Lily], [James], [Snape], the
 relationships (both positive and negative) between them, and yes, even to some
 extent even [McGonagall] and [Dumbledore] ends up pivoting on the events at

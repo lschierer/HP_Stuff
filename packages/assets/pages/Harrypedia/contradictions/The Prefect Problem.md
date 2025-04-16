@@ -19,7 +19,6 @@ It is _most likely_ that there are, in fact, one pair of prefects per house and 
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Hogwarts]: /Harrypedia/Hogwarts/
-
 [Percy]: </Harrypedia/people/Weasley/Percy Ignatius/>
 [Gryffindor]: /Harrypedia/Hogwarts/Gryffindor/
 [Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>

@@ -14,6 +14,7 @@ would be something unique to the magical world, and more over, a uniqueness
 not substantiated by the cannonical works.
 
 [Lucius Malfoy]: </Harrypedia/people/Malfoy/Lucius Abraxas/>
+
 [Draco Malfoy]: </Harrypedia/people/Malfoy/Draco Lucius/>/
 [DLM1]: </Harrypedia/people/Malfoy/Draco Lucius/>/
 

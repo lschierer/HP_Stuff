@@ -19,8 +19,9 @@ export const Config = z.object({
     .describe("any alt text that should be used for the logo image."),
   TOPLEVELSECTIONS: z
     .string()
+    .array()
     .describe(
-      "this should contain an a comma separated list of strings that will form the main/top level sections for the site.  Thesse will appear in the top navigation section as well as the side navigations section."
+      "this should contain an a list of strings that will form the main/top level sections for the site.  Thesse will appear in the top navigation section as well as the side navigations section."
     ),
   PRIVACYPOLICY: z
     .union([z.string(), z.literal("false"), z.literal(false)])

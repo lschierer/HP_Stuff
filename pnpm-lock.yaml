@@ -151,6 +151,9 @@ importers:
       '@hp-stuff/schemas':
         specifier: workspace:^
         version: link:../schemas
+      cosmiconfig:
+        specifier: ^9.0.0
+        version: 9.0.0(typescript@5.8.3)
       glob:
         specifier: ^11.0.1
         version: 11.0.1

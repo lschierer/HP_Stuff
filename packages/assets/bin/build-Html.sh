@@ -1,42 +1,40 @@
 #!/usr/bin/env bash
 
-export PWD=`pwd`;
+export PWD=$(pwd)
 
-export STEP=1;
+export STEP=1
 
 rsync -av --include='*/' --include='*.html' --exclude='*' ${PWD}/pages/ ${PWD}/dist/ || exit $STEP
 STEP=$((STEP + 1))
 
-cat potter_universe.json |jq -sS --indent 2 -M  '.' > ${PWD}/dist/potter_universe.json || exit $STEP
+cat potter_universe.json | jq -sS --indent 2 -M '.' > ${PWD}/dist/potter_universe.json || exit $STEP
 STEP=$((STEP + 1))
-
 
 pnpm tsx ${PWD}/src/scripts/gedcomExportToHtml.ts || exit $STEP
 STEP=$((STEP + 1))
-
 
 #pnpm tsx "$PWD/src/scripts/build-sidebar.ts" || exit 3
 #
 #find ./pages -type d | while read -r dir; do
 #  if [ ! -e "$dir/index.md" ] && [ ! -e "$dir/index.html" ]; then
-  #    echo "$dir/index.md" >> dist/generated_index_files.txt
-  #
-  #    # Only add to .gitignore if it's not already there
-  #    if [ -e "$dir/.gitignore" ]; then
-    #      if ! grep -q "^index.md$" "$dir/.gitignore"; then
-      #        echo "index.md" >> "$dir/.gitignore"
-    #      fi
-  #    else
-    #      echo "index.md" >> "$dir/.gitignore"
-  #    fi
-  #    DIRNAME=`basename "$dir"`;
-  #    echo '---' > "$dir/index.md"
-  #    echo "title: >-" >> "$dir/index.md"
-  #    /bin/echo -n '  ' >> "$dir/index.md"
-    #    echo "$DIRNAME" >> "$dir/index.md"
-    #    echo "layout: standard" >> "$dir/index.md"
-    #    echo '---' >> "$dir/index.md"
-    #    echo >> "$dir/index.md"
-    #    echo "<directory-index></directory-index>" >> "$dir/index.md"
-  #  fi
+#    echo "$dir/index.md" >> dist/generated_index_files.txt
+#
+#    # Only add to .gitignore if it's not already there
+#    if [ -e "$dir/.gitignore" ]; then
+#      if ! grep -q "^index.md$" "$dir/.gitignore"; then
+#        echo "index.md" >> "$dir/.gitignore"
+#      fi
+#    else
+#      echo "index.md" >> "$dir/.gitignore"
+#    fi
+#    DIRNAME=`basename "$dir"`;
+#    echo '---' > "$dir/index.md"
+#    echo "title: >-" >> "$dir/index.md"
+#    /bin/echo -n '  ' >> "$dir/index.md"
+#    echo "$DIRNAME" >> "$dir/index.md"
+#    echo "layout: standard" >> "$dir/index.md"
+#    echo '---' >> "$dir/index.md"
+#    echo >> "$dir/index.md"
+#    echo "<directory-index></directory-index>" >> "$dir/index.md"
+#  fi
 #done

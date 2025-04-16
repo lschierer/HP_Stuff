@@ -1,4 +1,3 @@
-
 A recurring theme in fanfiction is Dumbledore's inaction. Not only is this a
 theme in fanfiction, I question it time and time again as Dumbledore [interacts
 with Riddle][Dealing_with_Riddle], with [Harry][HJP1] and the [Dursleys][DF1]

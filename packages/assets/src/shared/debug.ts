@@ -4,10 +4,12 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 const fileDebug: Record<string, boolean> = {
+  "/scripts/transform/FooterSection.ts": false,
   "/scripts/build-sidebar.ts": false,
   "/scripts/gedcomExportToHtml.ts": true,
   "/scripts/import_potter_data.ts": false,
   "/shared/debug.ts": false,
+  "/shared/localConfig.ts": false,
   "/shared/gedcom/GedcomConstants.ts": false,
   "/shared/gedcom/IndividualName.ts": false,
   "/shared/gedcom/state.ts": false,

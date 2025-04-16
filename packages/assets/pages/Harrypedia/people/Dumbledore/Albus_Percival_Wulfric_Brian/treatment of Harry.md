@@ -1,4 +1,3 @@
-
 In explaining his decisions to [Harry], [Dumbledore] says:
 
 > Five years ago you arrived at Hogwarts, Harry, safe and whole, as I had

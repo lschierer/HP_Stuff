@@ -105,7 +105,6 @@ long term use.
 [Mental Shields]: <./Mental Shields/>
 [Mind Palace]: <./Mind Palace/>
 [Obfuscomency]: ./Obfuscomency/
-
 [Imperius Curse]: /Harrypedia/magic/spells/imperio/
 [Imperius]: /Harrypedia/magic/spells/imperio/
 [Confundus]: /Harrypedia/magic/spells/confundus/

@@ -1,4 +1,3 @@
-
 > The office dissolved but re-formed instantly. Snape was pacing up and down in
 > front of Dumbledore.
 >
@@ -110,7 +109,6 @@ such as [McGonagall][] and [Sprout][] might well pick up on that distrust.
 
 [B12HPL1]: https://www.fanfiction.net/s/5366780
 [B12HPL2]: https://www.fanfiction.net/s/5366780
-
 [Bill]: /Harrypedia/people/weasley/william_arthur/
 [Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
 [Harry]: /Harrypedia/people/Potter/Harry_James/

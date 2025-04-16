@@ -283,9 +283,7 @@ Mrs. Rowling accepts a fallacy here: that sometimes an evil can be so great, so 
 [Lord of the Rings]: https://wikipedia.org/wiki/The_Lord_of_the_Rings
 [balance]: /Harrypedia/balance/
 [basilisk]: /Harrypedia/animals/basilisk/
-
 [fiendfire]: </Harrypedia/magic/spells/fiend fire/>
-
 [the killing curse]: </Harrypedia/magic/spells/avada kedavra/>
 
 [^240506-1]: Citation needed.

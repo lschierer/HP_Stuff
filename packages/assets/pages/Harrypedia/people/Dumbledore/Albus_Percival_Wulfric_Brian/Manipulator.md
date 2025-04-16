@@ -1,4 +1,3 @@
-
 It is quite easy to portray [Dumbledore][AD1] as a master
 manipulator.[^211203-1] Indeed, for a fan fiction author, the problem with
 this route is not that [Dumbledore][AD1] ends up feeling Out of Character, but

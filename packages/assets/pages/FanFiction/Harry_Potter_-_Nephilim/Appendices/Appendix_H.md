@@ -110,7 +110,6 @@ The nephilim are physically more resilient than normal humans. While their dead 
 [AE]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Life Expectancy/>
 [AF]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
 [AG]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Appendix_G/
-
 [ab]: </FanFiction/Harry*Potter*-_Nephilim/Appendices/Rules of Magic/>
 [af]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Contracts/>
 [Appendix I]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Veela Pathology/>
@@ -118,13 +117,12 @@ The nephilim are physically more resilient than normal humans. While their dead 
 [FSSP]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/FSSP/
 [FWoaO1]: https://archiveofourown.org/works/28507302
 [Inheritance]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Inheritance/
-[Introduction]: /FanFiction/Harry_Potter_-\_Nephilim/introduction/
+[Introduction]: /FanFiction/Harry_Potter_-_Nephilim/introduction/
 [MW]: https://wikipedia.org/wiki/Many_Waters
 [TSL]: https://archive.org/details/in.ernet.dli.2015.86985
 [WP1]: https://wikipedia.org/wiki/Soteriology
 [WP2]: https://wikipedia.org/wiki/Missiology
 [WP3]: https://wikipedia.org/wiki/Ecclesiology
-
 [ligers]: https://wikipedia.org/wiki/ligers
 
 [^220628-2]: Mrs. J. K. Rowling. "[Uagadou](https://www.rowlingindex.org/work/pmuag/)" _[The J.K. Rowling Index](https://www.rowlingindex.org/)_ Published: 2016-01-31.

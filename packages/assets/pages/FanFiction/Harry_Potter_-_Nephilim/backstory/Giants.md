@@ -46,4 +46,5 @@ cannot be undone.
 [^230717-4]: See the notes on [Original Sin].
 
 [Original Sin]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Appendix_G/
-[House Elves]: /FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Beings/
+
+[House Elves]: </FanFiction/Harry_Potter_-_Nephilim/Appendices/Magical Beings/>

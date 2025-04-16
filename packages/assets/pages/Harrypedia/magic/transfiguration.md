@@ -42,7 +42,6 @@ deprivation entirely uncanonical, despite its logical soundness?
 
 [Meaning of One, Part One]: https://www.siye.co.uk/siye/series.php?seriesid=54
 [Egyptians]: /Harrypedia/Egypt/
-
 [Bill]: </Harrypedia/people/Weasley/William Arthur/>
 [magic]: /Harrypedia/magic/
 [Harry]: </Harrypedia/people/Potter/Harry James/>

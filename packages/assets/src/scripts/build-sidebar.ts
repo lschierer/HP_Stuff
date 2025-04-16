@@ -5,12 +5,16 @@ import debugFunction from "@shared/debug";
 import { type NavigationItem } from "@hp-stuff/schemas";
 
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
-const pagesRoot = path.join(process.cwd(), "./src/Pages");
+const pagesRoot = path.join(process.cwd(), "./pages");
 const ignoredFiles = [".gitignore", ".gitkeep"];
 
-function buildNavigationTree(dir: string = pagesRoot): NavigationItem {
+export const buildNavigationTree = (
+  dir: string = pagesRoot
+): NavigationItem => {
   const node: NavigationItem = {
     title: path.basename(dir),
+    route: "",
+    fileName: "",
     children: [],
   };
 
@@ -37,6 +41,7 @@ function buildNavigationTree(dir: string = pagesRoot): NavigationItem {
         node.children.push({
           title: (data.title as string) || path.basename(fullPath),
           route: fullPath.replace(pagesRoot, "").replace(/\\/g, "/"), // ends in /
+          fileName: indexPath,
           children: tmpNode.children,
         });
       } else {
@@ -62,13 +67,14 @@ function buildNavigationTree(dir: string = pagesRoot): NavigationItem {
       node.children.push({
         title: (data.title as string) || path.basename(entry, ".md"),
         route: cleanHref,
+        fileName: fullPath,
         children: [],
       });
     }
   }
 
   return node;
-}
+};
 
 const navigationTree = buildNavigationTree();
 
