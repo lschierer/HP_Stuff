@@ -5,13 +5,15 @@ import { z } from "zod";
 
 import debugFunction from "@shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
+console.log(
+  `DEBUG is set to ${DEBUG} for ${new URL(import.meta.url).pathname}`
+);
 
-import { type NavigationItem } from "@schemas/page";
-import { GrampsState, getGrampsData } from "@shared/gedcom/state";
+import { persons, families, events } from "./import_potter_data";
 import IndividualName from "@shared/gedcom/IndividualName";
-import { GedcomFamily, GedcomPerson } from "@schemas/gedcom";
 
-const staticPersonFiles = path.join(process.cwd(), "../../assets/people");
+import { type NavigationItem } from "@hp-stuff/schemas";
+import { GedcomFamily, GedcomPerson } from "@hp-stuff/schemas/gedcom";
 
 // Define the PersonWithRelationships schema by extending GedcomPerson.GedcomElement
 const PersonWithRelationshipsSchema = GedcomPerson.GedcomElement.partial({
@@ -67,365 +69,49 @@ const formatUrlForMarkdown = (url: string): string => {
   return url.includes(" ") ? `<${url}>` : url;
 };
 
+const outputDir = path.join(process.cwd(), "dist/Harrypedia/people");
+const staticContent = path.join(process.cwd(), "people");
+
 const doConversion = async () => {
   const returnPages = new Array<NavigationItem>();
-  const lastNameIndices: LastNameIndex = {};
-  const families: Record<string, GedcomFamily.GedcomElement> = {};
 
-  await getGrampsData();
-  if (!GrampsState.people.size) {
+  if (!(persons.length > 0)) {
     if (DEBUG) {
       console.log(
         `failed to set GrampsState for provider anon in GedcomPeopleSourcePlugin`
       );
     }
-    throw new Error(`failed to populate GrampsState.people`);
+    throw new Error(`failed to populate persons`);
   } else {
     if (DEBUG) {
-      console.log(`GrampsState has ${GrampsState.people.size} people`);
+      console.log(`events has ${events.length} events`);
+      console.log(`families has ${families.length} families`);
+      console.log(`persons has ${persons.length} people`);
+      console.log(`staticContent is ${staticContent}`);
+      console.log(`outputDir is ${outputDir}`);
     }
 
-    // Load families data
-    try {
-      const familiesPath = path.join(
-        process.cwd(),
-        "src/assets/gedcom/families.json"
-      );
-      const familiesData = JSON.parse(
-        fs.readFileSync(familiesPath, "utf-8")
-      ) as object[];
+    /*
+      I need to do several things:
 
-      if (DEBUG) {
-        console.log(`Loaded ${familiesData.length} families`);
-      }
-
-      // Index families by handle for easy lookup
-      familiesData.forEach((fo) => {
-        const valid = GedcomFamily.GedcomElement.safeParse(fo);
-        if (valid.success) {
-          families[valid.data.handle] = valid.data;
-        }
-      });
-    } catch (err) {
-      if (DEBUG) {
-        console.error(`Error loading families data: ${JSON.stringify(err)}`);
-      }
-    }
-
-    // First pass: Process all individuals and collect last name data with family relationships
-    for (const [key, person] of GrampsState.people) {
-      if (DEBUG) {
-        console.log(`building route for ${key}`);
-      }
-
-      const pId = person.id;
-      const individualName = new IndividualName(pId);
-      const routePath = individualName.buildLinkTarget();
-      const lastName = individualName.lastName() || "Unknown";
-
-      // Add person to the appropriate last name index
-      if (!Object.keys(lastNameIndices).includes(lastName)) {
-        lastNameIndices[lastName] = {
-          people: {},
-          rootPeople: [],
-        };
-      }
-
-      // Create person with relationships
-      const personWithRelationships: PersonWithRelationships = {
-        id: pId,
-        handle: person.handle,
-        name: individualName.displayName(),
-        routePath: routePath,
-        parent_family_list: person.parent_family_list,
-        family_list: person.family_list,
-        children: [],
-        addedToParent: false,
-      };
-
-      // Add to people lookup
-      lastNameIndices[lastName].people[person.handle] = personWithRelationships;
-
-      // Generate individual person page
-      const staticPath = path.join(
-        staticPersonFiles,
-        path.dirname(routePath.replace("/Harrypedia/people", "")),
-        `${path.basename(routePath)}.md`
-      );
-      if (DEBUG) {
-        console.log(`staticPath is '${staticPath}' for ${routePath}`);
-      }
-      let pageContent = "";
-      pageContent += "---\n";
-      pageContent += `title: ${individualName.displayName()}\n`;
-      pageContent += `collection: \n  - Harrypedia\n  - gedcom\n  - ${lastName}\n`;
-      pageContent += `${yaml.dump({ gedcom: person }).trim()}\n`;
-      pageContent += "---\n";
-      if (fs.existsSync(staticPath)) {
-        try {
-          pageContent += fs.readFileSync(staticPath, "utf-8");
-        } catch (err) {
-          if (DEBUG) {
-            console.error(
-              `error reading file for ${staticPath}: ${JSON.stringify(err)}`
-            );
-          }
-        }
-      }
-      const outputDir = path.join(
-        process.cwd(),
-        "src/Pages/",
-        path.dirname(routePath)
-      );
-      if (!fs.existsSync(outputDir)) {
-        fs.mkdirSync(outputDir, {
-          recursive: true,
-          mode: 0o750,
-        });
-      }
-      const fullOutput = path.join(outputDir, `${path.basename(routePath)}.md`);
-      fs.writeFileSync(fullOutput, pageContent, {
-        mode: 0o640,
-        encoding: "utf-8",
-        flag: "w",
-      });
-      const ni: NavigationItem = {
-        title: individualName.displayName(),
-        route: routePath,
-        html: pageContent,
-        children: [],
-      };
-      returnPages.push(ni);
-    }
-
-    // Second pass: Build family relationships within each last name group
-    for (const [lastName, data] of Object.entries(lastNameIndices)) {
-      if (DEBUG) {
-        console.log(`second pass processing ${lastName}`);
-      }
-      // Process parent-child relationships
-      for (const personHandle in data.people) {
-        const person = data.people[personHandle];
-
-        // Check if this person has any parent families in the same surname group
-        let hasParentInSameGroup = false;
-
-        // For each family where this person is a child
-        for (const familyHandle of person.parent_family_list) {
-          const family = families[familyHandle];
-
-          // First check if father is in the same surname group
-          // We prefer adding children to fathers over mothers when both are present
-          if (
-            family.father_handle &&
-            Object.keys(data.people).includes(family.father_handle)
-          ) {
-            const father = data.people[family.father_handle];
-            if (
-              !father.children.some((child) => child.handle === person.handle)
-            ) {
-              father.children.push(person);
-              person.addedToParent = true;
-              hasParentInSameGroup = true;
-            }
-          }
-          // Only add to mother if not already added to father and mother is in the same surname group
-          else if (
-            family.mother_handle &&
-            Object.keys(data.people).includes(family.mother_handle) &&
-            !person.addedToParent
-          ) {
-            const mother = data.people[family.mother_handle];
-            if (
-              !mother.children.some((child) => child.handle === person.handle)
-            ) {
-              mother.children.push(person);
-              person.addedToParent = true;
-              hasParentInSameGroup = true;
-            }
-          }
-        }
-
-        // If no parent in the same surname group, this is a root person
-        if (!hasParentInSameGroup) {
-          data.rootPeople.push(person);
-        }
-      }
-
-      // Sort root people alphabetically
-      data.rootPeople.sort((a, b) => a.name.localeCompare(b.name));
-    }
-
-    // Third pass: Generate index pages for each last name with hierarchical structure
-    for (const [lastName, data] of Object.entries(lastNameIndices)) {
-      if (DEBUG) {
-        console.log(`Generating index page for last name: ${lastName}`);
-      }
-
-      // Create the index page content
-      let indexContent = "";
-      indexContent += "---\n";
-      indexContent += `title: ${lastName} Family\n`;
-      indexContent += `collection: \n  - Harrypedia\n  - gedcom\n  - ${lastName}\n`;
-      indexContent += "---\n\n";
-      indexContent += `# ${lastName} Family Members\n\n`;
-      indexContent +=
-        "This page lists all individuals with the last name " +
-        `${lastName} in the genealogical database, organized by family relationships.\n\n`;
-
-      // Function to recursively render a person and their descendants
-      const renderPersonWithDescendants = (
-        person: PersonWithRelationships,
-        depth: number,
-        renderedHandles: Set<string> = new Set()
-      ): string => {
-        // Avoid infinite recursion by tracking rendered handles
-        if (renderedHandles.has(person.handle)) {
-          return "";
-        }
-        renderedHandles.add(person.handle);
-
-        // Format the URL properly for Markdown
-        const formattedUrl = formatUrlForMarkdown(person.routePath);
-        let content = `${"  ".repeat(depth)}- [${person.name}](${formattedUrl})\n`;
-
-        // Sort children alphabetically
-        const sortedChildren = new Array<PersonWithRelationships>();
-        person.children
-          .sort((a, b) => a.name.localeCompare(b.name))
-          .forEach((c) => {
-            const valid = PersonWithRelationships.safeParse(c);
-            if (valid.success) {
-              sortedChildren.push(valid.data);
-            } else {
-              if (DEBUG) {
-                console.error(valid.error.message);
-              }
-            }
-          });
-
-        // Add children
-        for (const child of sortedChildren) {
-          content += renderPersonWithDescendants(
-            child,
-            depth + 1,
-            renderedHandles
-          );
-        }
-
-        return content;
-      };
-
-      // Render all root people and their descendants
-      for (const rootPerson of data.rootPeople) {
-        indexContent += renderPersonWithDescendants(rootPerson, 0, new Set());
-      }
-
-      // Check if there are any people who weren't included in the hierarchy
-      // (This can happen if the family relationships are incomplete)
-      const renderedHandles = new Set<string>();
-      for (const rootPerson of data.rootPeople) {
-        const collectHandles = (person: PersonWithRelationships) => {
-          renderedHandles.add(person.handle);
-          for (const data of person.children) {
-            const valid = PersonWithRelationships.safeParse(data);
-            if (valid.success) {
-              collectHandles(valid.data);
-            } else {
-              console.error(valid.error.message);
-            }
-          }
-        };
-        collectHandles(rootPerson);
-      }
-
-      // Add any people who weren't included in the hierarchy
-      const unrenderedPeople = Object.values(data.people).filter(
-        (person) => !renderedHandles.has(person.handle)
-      );
-
-      if (unrenderedPeople.length > 0) {
-        indexContent += "\n## Other Family Members\n\n";
-        indexContent +=
-          "These individuals couldn't be connected to the main family tree:\n\n";
-
-        // Sort alphabetically
-        unrenderedPeople.sort((a, b) => a.name.localeCompare(b.name));
-
-        for (const person of unrenderedPeople) {
-          // Format the URL properly for Markdown
-          const formattedUrl = formatUrlForMarkdown(person.routePath);
-          indexContent += `- [${person.name}](${formattedUrl})\n`;
-        }
-      }
-
-      // Check if there's an existing index file in the assets directory
-      const staticIndexPath = path.join(
-        staticPersonFiles,
-        lastName,
-        "index.md"
-      );
-      if (fs.existsSync(staticIndexPath)) {
-        try {
-          const staticContent = fs.readFileSync(staticIndexPath, "utf-8");
-          if (staticContent.trim().length > 0) {
-            indexContent += "\n\n---\n\n";
-            indexContent += staticContent;
-            if (DEBUG) {
-              console.log(`Appended content from ${staticIndexPath}`);
-            }
-          }
-        } catch (err) {
-          if (DEBUG) {
-            console.error(
-              `Error reading static index file for ${lastName}: ${JSON.stringify(err)}`
-            );
-          }
-        }
-      }
-
-      // Create the index page route
-      const indexRoutePath = `/Harrypedia/people/${lastName}/index`;
-      const outputDir = path.join(
-        process.cwd(),
-        "src/Pages/Harrypedia/people",
-        lastName
-      );
-
-      if (!fs.existsSync(outputDir)) {
-        fs.mkdirSync(outputDir, {
-          recursive: true,
-          mode: 0o750,
-        });
-      }
-
-      const fullOutput = path.join(outputDir, "index.md");
-      fs.writeFileSync(fullOutput, indexContent, {
-        mode: 0o640,
-        encoding: "utf-8",
-        flag: "w",
-      });
-
-      // Add the index page to the navigation items
-      const ni: NavigationItem = {
-        title: `${lastName} Family`,
-        route: indexRoutePath,
-        html: indexContent,
-        children: [],
-      };
-      returnPages.push(ni);
-    }
+      1. For each person in persons I need to create a markdown page in outputDir
+         1.1 This markdown page will go in `${outputDir}/${lastname}/${firstname} ${suffix}.md`
+         1.2 The directory `${outputDir}/${lastname}` may not exist yet. the script may need to create it.
+         1.3 If ${lastname} == 'Unknown' then the filename is `${outputDir}/Unknown/${firstname} - ${gramps_id}.md`
+         1.4 If ${firstname} == 'Unknown' then the filename is `${outputDir}/${lastname}/${gramps_id}.md`
+         1.5 if both ${lastname} and ${firstname} == 'Unknown' then the filename is  `${outputDir}/Unknown/${gramps_id}.md`
+         1.6 Links in the generated markdown should be formatted using the formatUrlForMarkdown in this file
+         1.7 if there is a file in ${staticContent} that corresponds to the final value of the output filename (with ${staticContent} substituted for ${outputDir}) then that should be appended to the output file under a markdown hr
+      2. As each person is processed in #1 above, I need to keep track of the last names.
+         2.1 For each last name, I need to create a nested list of members
+         2.2 The list should reflect parent/child relationships.  the parent_family_list in the person itself tells you which family in families contains the parents of a given person.  In that family there is a father_handle and mother_handle attribute that corresponds to the handle attribute in a person in persons.
+         2.3 If both mother and father have the same computed last name, the child should be nested under the father.
+         2.4 an index.md page for each `${outputDir/${lastname}` should be created containing the resulting nested list.
+         2.5 is a corresponding index.md page exists at ${staticContent}/${lastName} this should be appended to the generated one at ${outputDir}/${lastName}
+      3. a file in ${process.cwd()}/dist/routes/ (the directory may need to be created) should be populated with the JSON.stringify() of returnPages from this function  this variable should be maintained in a hierarchical manner using the NavigationItem object's children array as pages are created.
+      4. the IndividualName class should be used to obtain names and the text of link targets to provide uniformity
+    */
   }
-
-  const routedir = path.join(process.cwd(), "src/shared/routes");
-  if (!fs.existsSync(routedir)) {
-    fs.mkdirSync(routedir, {
-      recursive: true,
-      mode: 0o750,
-    });
-  }
-  const routeFile = path.join(routedir, "gedcomroutes.json");
-  fs.writeFileSync(routeFile, JSON.stringify(returnPages, null, 2));
 };
 
 await doConversion();

@@ -4,22 +4,13 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 const fileDebug: Record<string, boolean> = {
-  "/components/MathRunner.ts": false,
-  "/counter.ts": false,
-  "/lib/debug.ts": false,
-  "/lib/grampsState.ts": false,
-  "/main.ts": false,
-  "/plugins/gramps.ts": false,
-  "/schemas/bookmarks.ts": false,
-  "/schemas/event.ts": false,
-  "/schemas/gedcom/event.ts": false,
-  "/schemas/gedcom/family.ts": false,
-  "/schemas/gedcom/index.ts": false,
-  "/schemas/gedcom/person.ts": false,
-  "/schemas/gedcom/tags.ts": false,
-  "/schemas/history.ts": false,
-  "/schemas/index.ts": false,
-  "/vite-env.d.ts": false,
+  "/scripts/build-sidebar.ts": false,
+  "/scripts/gedcomExportToHtml.ts": true,
+  "/scripts/import_potter_data.ts": false,
+  "/shared/debug.ts": false,
+  "/shared/gedcom/GedcomConstants.ts": false,
+  "/shared/gedcom/IndividualName.ts": false,
+  "/shared/gedcom/state.ts": false,
 };
 
 function isAbsolutePath(path: string): boolean {

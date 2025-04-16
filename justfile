@@ -24,15 +24,15 @@ build-infra: install
   ${PNPM} run build
 
 
-[working-directory: 'assets']
+[working-directory: 'packages/assets']
 parse: install
-  mkdir -p ../packages/greenwood/src/assets/
-  mkdir -p ../packages/greenwood/src/pages/FanFiction/
-  mkdir -p ../packages/greenwood/src/styles
-  ./bin/bookmarkCollection.sh -o ../packages/greenwood/src/assets/
-  ./bin/grampsJson2CollectionJson.sh -o ../packages/greenwood/src/assets/
-  ./bin/historyCollection.sh -o ../packages/greenwood/src/assets/
-  ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../packages/greenwood/src/pages/FanFiction/" -a ../packages/greenwood/src/assets -s ../packages/greenwood/src/styles
+  mkdir -p ../greenwood/src/assets/
+  mkdir -p ../greenwood/src/pages/FanFiction/
+  mkdir -p ../greenwood/src/styles
+  ./bin/bookmarkCollection.sh -o ../greenwood/src/assets/
+  ./bin/grampsJson2CollectionJson.sh -o ../greenwood/src/assets/
+  ./bin/historyCollection.sh -o ../greenwood/src/assets/
+  ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../greenwood/src/pages/FanFiction/" -a ../greenwood/src/assets -s ../greenwood/src/styles
 
 
 [working-directory: 'packages/infrastructure']

@@ -7,9 +7,7 @@ if (DEBUG) {
 
 import { male, female } from "./GedcomConstants";
 
-import { GedcomPerson } from "@schemas/gedcom/index";
-
-import { GrampsState, getGrampsData } from "./state";
+import { GedcomPerson } from "@hp-stuff/schemas/gedcom";
 
 import "iconify-icon";
 
@@ -21,26 +19,10 @@ export default class IndividualName {
 
   private person: GedcomPerson.GedcomElement | null = null;
 
-  constructor(id: string) {
-    this.grampsId = id;
-
-    if (GrampsState.people.has(this.grampsId)) {
-      const p = GrampsState.people.get(this.grampsId);
-      if (p) {
-        this.person = p;
-      }
-    } else {
-      void this.initialize();
-    }
+  constructor(person: GedcomPerson.GedcomElement) {
+    this.person = person;
+    this.grampsId = person.gramps_id;
   }
-
-  protected initialize = async () => {
-    await getGrampsData();
-    const p = GrampsState.people.get(this.grampsId);
-    if (p) {
-      this.person = p;
-    }
-  };
 
   readonly buildLinkTarget = (): string => {
     let targetLocation = "/Harrypedia/people/";
@@ -54,7 +36,7 @@ export default class IndividualName {
       }
 
       let isUnknownFirstName = false;
-      
+
       if (this.person.primary_name.first_name.length > 0) {
         const fn = this.person.primary_name.first_name;
         targetLocation = `${targetLocation}${fn}`;
@@ -74,14 +56,14 @@ export default class IndividualName {
         isUnknownFirstName = true;
         targetLocation += `Unknown-${this.person.id}`;
       }
-      
+
       if (
         this.person.primary_name.suffix &&
         this.person.primary_name.suffix.length > 0 &&
         !isUnknownFirstName // Don't add suffix for unknown first names with ID
       ) {
         const suffix = this.person.primary_name.suffix;
-        let prefix = this.person.primary_name.surname_list[0].prefix;
+        let prefix: string = this.person.primary_name.surname_list[0].prefix;
         prefix = !prefix.localeCompare("of") ? "of " : prefix;
         targetLocation = `${targetLocation} ${prefix}${suffix}`;
       }
@@ -99,7 +81,7 @@ export default class IndividualName {
         if (sn.primary) {
           if (
             !sn.origintype.string.localeCompare(
-              GedcomPerson.StringEnum.Values.Taken
+              GedcomPerson.PersonStrings.Values.Taken
             )
           ) {
             found = true;
@@ -115,7 +97,7 @@ export default class IndividualName {
       });
       /* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */
       if (!found && this.person.primary_name.surname_list.length > 0) {
-        let prefix = this.person.primary_name.surname_list[0].prefix;
+        let prefix: string = this.person.primary_name.surname_list[0].prefix;
         prefix = !prefix.localeCompare("of") ? "of " : prefix;
         const sn = this.person.primary_name.surname_list[0].surname;
         name = `${name}${prefix}${sn}`;
@@ -156,7 +138,7 @@ export default class IndividualName {
       this.person.primary_name.suffix.length > 0
     ) {
       const suffix = this.person.primary_name.suffix;
-      let prefix = this.person.primary_name.surname_list[0].prefix;
+      let prefix: string = this.person.primary_name.surname_list[0].prefix;
       prefix = !prefix.localeCompare("of") ? "of " : prefix;
       name = `${name} ${prefix}${suffix}`;
     }
@@ -177,7 +159,7 @@ export default class IndividualName {
         this.person.primary_name.suffix.length > 0
       ) {
         const suffix = this.person.primary_name.suffix;
-        let prefix = this.person.primary_name.surname_list[0].prefix;
+        let prefix: string = this.person.primary_name.surname_list[0].prefix;
         prefix = !prefix.localeCompare("of") ? "of " : prefix;
         name = `${name} ${prefix}${suffix}`;
       }

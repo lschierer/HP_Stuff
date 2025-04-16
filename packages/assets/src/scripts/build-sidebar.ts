@@ -2,7 +2,7 @@ import * as fs from "node:fs";
 import * as path from "node:path";
 import matter from "gray-matter";
 import debugFunction from "@shared/debug";
-import { type NavigationItem } from "@schemas/page";
+import { type NavigationItem } from "@hp-stuff/schemas";
 
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 const pagesRoot = path.join(process.cwd(), "./src/Pages");

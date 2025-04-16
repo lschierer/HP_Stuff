@@ -7,10 +7,7 @@
     "composite": true,
     "allowImportingTsExtensions": true,
     "rootDir": ".",
-    "baseUrl": "./",
-    "paths": {
-      "@shared/*": ["src/shared/*"]
-    }
+    "baseUrl": "./"
   },
   "exclude": ["**/node_modules/**"],
   "include": ["./**/*.ts"]
