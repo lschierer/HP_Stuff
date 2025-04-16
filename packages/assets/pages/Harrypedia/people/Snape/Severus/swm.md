@@ -1,9 +1,3 @@
----
-collection: Harrypedia
-layout: standard
-title: Snape's Worst Memory and Related Events
-author: Luke Schierer
----
 
 Any attempt to understand [Sirius], [Lily], [James], [Snape], the
 relationships (both positive and negative) between them, and yes, even to some
@@ -12,14 +6,14 @@ the end of the 1975-1976 school year when [Lily], [James] and their friends
 (or enemies as the case may be) were in their fifth year. We do not know the
 exact chronology, what follows is my best reconstruction.
 
-[Sirius]: </Harrypedia/people/Black/Sirius III/>
+[Sirius]: /Harrypedia/people/black/sirius_iii/
 [James]: /Harrypedia/people/Potter/James/
-[Lily]: </Harrypedia/people/Evans/Lily J/>
-[Snape]: /Harrypedia/people/Snape/Severus/
-[Severus]: /Harrypedia/people/Snape/Severus/
-[McGonagall]: /Harrypedia/people/McGonagall/Minerva/
-[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
-[Lupin]: </Harrypedia/people/Lupin/Remus John/>
+[Lily]: /Harrypedia/people/evans/lily_j/
+[Snape]: /Harrypedia/people/snape/severus/
+[Severus]: /Harrypedia/people/snape/severus/
+[McGonagall]: /Harrypedia/people/mcgonagall/minerva/
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Lupin]: /Harrypedia/people/lupin/remus_john/
 
 ## What Happened
 
@@ -364,7 +358,7 @@ was a mudblood. This would draw [Snape] deeper and deeper into [Riddle]'s
 atrocities and soul corrupting influence. You simply cannot be around such
 people without their evil rubbing off on you.
 
-[Riddle]: <../../../Riddle/Tom Marvolo/>
+[Riddle]: ../../../riddle/tom_marvolo/
 
 People criticising [Lily] are essentially pushing her towards missionary
 dating. It is not _precisely_ the same situation, but it is close enough.
@@ -419,6 +413,6 @@ along makes that change to become someone she can see herself marrying _on his
 own_, **before she begins their relationship**. Only then does she allow herself
 to act on that attraction by agreeing to go out with him.
 
-[Occlumens]: /Harrypedia/magic/The_Mind_Arts/Occlumency/
-[Harry]: </Harrypedia/people/Potter/Harry James/>
-[Hogwarts]: /Harrypedia/Hogwarts/
+[Occlumens]: /Harrypedia/magic/the_mind_arts/occlumency/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
+[Hogwarts]: /Harrypedia/hogwarts/

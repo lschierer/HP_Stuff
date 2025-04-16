@@ -1,12 +1,3 @@
----
-collection: Harrypedia
-imports:
-  - /components/grampsParser/PersonPageSection.ts type="modules"
-layout: standard
-title: Potter Family Wealth
-author: "Luke Schierer"
-pageType: person
----
 
 #### facts
 
@@ -44,6 +35,8 @@ compare against. Even then, it might not be important, except that we find
 out, also in the seventh book, that 1) the house in Godric's Hollow is still
 mostly standing (part of one side is missing the roof, but that's about it) and 2) it has become a monument of sorts.
 
+
+
 Now we know that [Harry][]'s parents had taken the family in hiding, and I
 believe we read somewhere that they had not just defied [Riddle][] the
 requisite three times, but had had several close calls _after_ the prophesy is
@@ -61,6 +54,8 @@ of their personal property? Why is it that per the "extra" non-book content we
 have that it seems that [Harry][] inherited [Grimmauld Place] from [Sirius][],
 but nothing but gold from his parents?
 
+
+
 [James][] came from an old family. A family like the Potters should have had
 land, even if the house on it was destroyed. Fleeing and hiding from
 [Riddle][] was not the time to dispose of it, in fact I suspect that [James][]
@@ -71,6 +66,7 @@ not as rich as the [Blacks][] or the [Lestranges][], but Mrs. Rowling describes
 them as well off,[^221129-1] old, and influential. There should have been
 heirlooms, and I doubt they were all kept in the house - particularly if the
 family was being hunted.
+
 
 Fan fiction authors seem to largely agree with me.[^211117-1] Some solve this
 by giving [Harry][] such a vault that he gets access to when he is either
@@ -83,18 +79,19 @@ require something (a ring or a key) to unlock that was itself locked in the
 vault in question, because _everything_ the Potters owned was placed in the
 vault without forethought.[^210322-1]
 
-[Bellatrix]: /Harrypedia/people/Black/Bellatrix/
-[Blacks]: /Harrypedia/people/Black/
-[Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
-[Fleamont]: /Harrypedia/people/Potter/Fleamont/
-[Grimmauld Place]: /Harrypedia/Grimmauld_Place/
-[Gringotts]: /Harrypedia/Gringotts/
-[Harry]: </Harrypedia/people/Potter/Harry James/>
+[Bellatrix]: /Harrypedia/people/black/bellatrix/
+[Blacks]: /Harrypedia/people/black/
+[Dumbledore]: /Harrypedia/people/dumbledore/albus_percival_wulfric_brian/
+[Fleamont]: /Harrypedia/people/Potter/fleamont/
+[Grimmauld Place]: /Harrypedia/grimmauld_place/
+[Gringotts]: /Harrypedia/gringotts/
+[Harry]: /Harrypedia/people/Potter/Harry_James/
 [James]: /Harrypedia/people/Potter/James/
-[Lestranges]: /Harrypedia/people/Lestrange/
-[Linfred]: </Harrypedia/people/Unknown/Linfred/>
-[Riddle]: </Harrypedia/people/Riddle/Tom Marvolo/>
-[Sirius]: </Harrypedia/people/Black/Sirius III/>
+[Lestranges]: /Harrypedia/people/lestrange/
+[Linfred]: /Harrypedia/people/linfred/
+[Riddle]: /Harrypedia/people/riddle/tom_marvolo/
+[Sirius]: /Harrypedia/people/black/sirius_iii/
+
 [Harry Potter and the Deathly Hallows]: https://www.goodreads.com/book/show/136251.Harry_Potter_and_the_Deathly_Hallows
 
 [^210902-1]:

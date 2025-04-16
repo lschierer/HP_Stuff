@@ -174,7 +174,6 @@ function createFamilyTree(
   // Create nested list for each root person
   for (const rootPerson of rootPersons) {
     markdown += buildFamilyTreeMarkdown(rootPerson, persons, 0);
-    console.log(`markdown is : \n`, markdown);
   }
 
   return markdown;
@@ -260,6 +259,7 @@ function doConversion(
 
     // Check if there's static content to append
     const staticContentPath = path.join(
+      process.cwd(),
       staticContentDir,
       pageBase,
       name.getFilename()
@@ -284,12 +284,14 @@ function doConversion(
 
     // Check if there's static content to append
     const staticIndexPath = path.join(
+      process.cwd(),
       staticContentDir,
       pageBase,
       lastName,
       "index.md"
     );
     let finalContent = familyTreeMarkdown;
+    console.log(`checking if ${staticIndexPath} exists`);
 
     if (fs.existsSync(staticIndexPath)) {
       const staticContent = fs.readFileSync(staticIndexPath, "utf8");
@@ -339,6 +341,6 @@ function doConversion(
 
 // Execute the conversion with command line arguments
 const outputDir = process.argv[2] || "./output";
-const staticContentDir = process.argv[3] || "./pages";
+const staticContentDir = process.argv[3] || "./";
 
 doConversion(outputDir, staticContentDir);
