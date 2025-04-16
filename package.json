@@ -38,6 +38,7 @@
   },
   "dependencies": {
     "@hp-stuff/schemas": "link:packages/schemas",
+    "commitlint": "^19.8.0",
     "dotenv": "^16.5.0",
     "schemas": "link:../../../Library/pnpm/global/5/node_modules/@hp-stuff/schemas"
   },

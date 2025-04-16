@@ -11,6 +11,9 @@ importers:
       '@hp-stuff/schemas':
         specifier: link:packages/schemas
         version: link:packages/schemas
+      commitlint:
+        specifier: ^19.8.0
+        version: 19.8.0(@types/node@16.18.126)(typescript@5.8.3)
       dotenv:
         specifier: ^16.5.0
         version: 16.5.0
@@ -3669,6 +3672,11 @@ packages:
   commander@9.5.0:
     resolution: {integrity: sha512-KRs7WVDKg86PWiuAqhDrAQnTXZKraVcCc6vFdL14qrZ/DcWwuRo7VoiYXalXO7S5GKpqYiVEwCbgFDfxNHKJBQ==}
     engines: {node: ^12.20.0 || >=14}
+
+  commitlint@19.8.0:
+    resolution: {integrity: sha512-O5waRm0RsjH1g2sT4ifTV58sBYW3wPjfclsdicj1NWUyF91aF0fSqFgKC8EEOUi9RRLKBOhlJarS6V1jWIUx1Q==}
+    engines: {node: '>=v18'}
+    hasBin: true
 
   common-ancestor-path@1.0.1:
     resolution: {integrity: sha512-L3sHRo1pXXEqX8VU28kfgUY+YGsk09hPqZiZmLacNib6XNTCM8ubYeT7ryXQw8asB1sKgcU5lkB7ONug08aB8w==}
@@ -12482,6 +12490,14 @@ snapshots:
   commander@7.2.0: {}
 
   commander@9.5.0: {}
+
+  commitlint@19.8.0(@types/node@16.18.126)(typescript@5.8.3):
+    dependencies:
+      '@commitlint/cli': 19.8.0(@types/node@16.18.126)(typescript@5.8.3)
+      '@commitlint/types': 19.8.0
+    transitivePeerDependencies:
+      - '@types/node'
+      - typescript
 
   common-ancestor-path@1.0.1: {}
 
