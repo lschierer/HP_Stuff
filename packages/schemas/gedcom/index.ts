@@ -8,7 +8,7 @@ export { DateClassEnum } from "./event";
 export { DateClass } from "./event";
 
 export { PurpleClass } from "./common";
-export { FamilyStrings } from "./common";
+export { FamilyStrings, PersonStrings } from "./common";
 export { EventRefList, EventRefListClass } from "./common";
 
 export { PrimaryNameClass } from "./person";

@@ -2,7 +2,7 @@
     "name": "hp-stuff",
     "main": "index.ts",
     "devDependencies": {
-        "@types/node": "^18.19.86",
+        "@types/node": "^22.14.1",
         "typescript": "^5.8.3"
     },
     "dependencies": {
