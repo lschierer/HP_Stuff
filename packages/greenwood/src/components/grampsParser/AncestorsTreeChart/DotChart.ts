@@ -110,7 +110,7 @@ const initialSetup = (treeMap: Map<string, TreePerson>) => {
 
   // Create nodes
   for (const node of treeMap.values()) {
-    const ine = new IndividualName(node.data.id);
+    const ine = new IndividualName(node.data.gramps_id);
     const genderClass = node.data.gender ? "father" : "mother";
     graph.addNode(
       new Node(node.id, {

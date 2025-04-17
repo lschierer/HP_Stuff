@@ -1,4 +1,4 @@
-import { GedcomPerson } from "../../schemas/gedcom/index.ts";
+import { GedcomPerson, type EventRefList } from "@hp-stuff/schemas/gedcom";
 
 import "iconify-icon";
 import "./AncestorsTreeChart/AncestorsTree.ts";
@@ -22,8 +22,7 @@ export default class GrampsIndividual extends HTMLElement {
   public personId: string = "";
 
   public person: GedcomPerson.GedcomElement | undefined = undefined;
-  private eventsRefs: GedcomPerson.EventRef[] =
-    new Array<GedcomPerson.EventRef>();
+  private eventsRefs: EventRefList[] = new Array<EventRefList>();
 
   protected getAttributes = () => {
     for (const attr of this.attributes) {
@@ -42,7 +41,7 @@ export default class GrampsIndividual extends HTMLElement {
         );
         if (valid.success) {
           this.person = valid.data;
-          this.personId = this.person.id;
+          this.personId = this.person.gramps_id;
         } else {
           throw new Error(
             `error parsing person in Individual.ts: \n ${valid.error.message}`
@@ -98,12 +97,12 @@ export default class GrampsIndividual extends HTMLElement {
     if (this.person) {
       if (DEBUG) {
         console.log(
-          `body function for ${this.person.id}`,
-          `${this.person.id} has ${this.person.family_list.length} family_list size`,
-          `${this.person.id} has ${this.person.parent_family_list.length} parent family list size}`
+          `body function for ${this.person.gramps_id}`,
+          `${this.person.gramps_id} has ${this.person.family_list.length} family_list size`,
+          `${this.person.gramps_id} has ${this.person.parent_family_list.length} parent family list size}`
         );
       }
-      const personName = new IndividualName(this.person.id);
+      const personName = new IndividualName(this.person.gramps_id);
       const eventsRefs = this.person.event_ref_list;
       const BirthIndex = this.person.birth_ref_index;
       const DeathIndex = this.person.death_ref_index;
@@ -117,7 +116,7 @@ export default class GrampsIndividual extends HTMLElement {
         for (const fr of this.person.parent_family_list) {
           if (!cf.handle.localeCompare(fr)) {
             const gif = new GrampsImmediateFamily();
-            gif.grampsId = cf.id;
+            gif.grampsId = cf.gramps_id;
             gif.IAmAParent = false;
             parent_families.push(gif);
           }
@@ -125,9 +124,9 @@ export default class GrampsIndividual extends HTMLElement {
         for (const fr of this.person.family_list) {
           if (!cf.handle.localeCompare(fr)) {
             const gif = new GrampsImmediateFamily();
-            gif.grampsId = cf.id;
+            gif.grampsId = cf.gramps_id;
             gif.IAmAParent = true;
-            gif.ParentID = this.person.id;
+            gif.ParentID = this.person.gramps_id;
             families_as_parent.push(gif);
           }
         }
@@ -171,7 +170,7 @@ export default class GrampsIndividual extends HTMLElement {
                   <ul class="bio">
                     <li>
                       Gramps Id:${" "}
-                      ${this.person.id}
+                      ${this.person.gramps_id}
                     </li>
                     <li>
                       Birth:${" "}

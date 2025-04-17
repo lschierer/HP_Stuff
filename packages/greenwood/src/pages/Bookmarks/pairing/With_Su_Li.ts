@@ -3,12 +3,12 @@ import {
   type Page,
   type GetFrontmatter,
 } from "@greenwood/cli";
-import "../../../../lib/BookmarksList.ts";
-import BookmarksList from "../../../../lib/BookmarksList.ts";
+import "../../../lib/BookmarksList.ts";
+import BookmarksList from "../../../lib/BookmarksList.ts";
 
-import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
+import markdownTextProcessing from "../../../lib/customMarkdownProcessing.ts";
 
-import debugFunction from "../../../../lib/debug.ts";
+import debugFunction from "../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);

@@ -7,7 +7,7 @@ import {
   GedcomEvent,
   GedcomFamily,
   GedcomPerson,
-} from "../../schemas/gedcom/index.ts";
+} from "@hp-stuff/schemas/gedcom";
 
 import debugFunction from "../../lib/debug.ts";
 

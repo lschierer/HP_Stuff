@@ -7,7 +7,7 @@ if (DEBUG) {
 
 import { male, female } from "../../lib/GedcomConstants.ts";
 
-import { GedcomPerson } from "../../schemas/gedcom/index.ts";
+import { type GedcomPerson, PersonStrings } from "@hp-stuff/schemas/gedcom";
 
 import { GrampsState, getGrampsData } from "./state.ts";
 
@@ -75,16 +75,14 @@ export default class IndividualName extends HTMLElement {
         this.person.primary_name.surname_list.map((sn) => {
           if (sn.primary && this.person) {
             if (
-              !sn.origintype.string.localeCompare(
-                GedcomPerson.StringEnum.Values.Taken
-              )
+              !sn.origintype.string.localeCompare(PersonStrings.Values.Taken)
             ) {
               found = true;
               const tsn = encodeURIComponent(sn.surname);
               targetLocation = `${targetLocation}/${tsn}/`;
               if (DEBUG) {
                 console.log(
-                  `found lastname ${sn.surname} for ${this.person.id}, targetLocation now ${targetLocation}`
+                  `found lastname ${sn.surname} for ${this.person.gramps_id}, targetLocation now ${targetLocation}`
                 );
               }
             }
@@ -92,7 +90,7 @@ export default class IndividualName extends HTMLElement {
         });
         /* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */
         if (!found && this.person.primary_name.surname_list.length > 0) {
-          let prefix = this.person.primary_name.surname_list[0].prefix;
+          let prefix: string = this.person.primary_name.surname_list[0].prefix;
           prefix = !prefix.localeCompare("of") ? "of " : prefix;
           const sn = this.person.primary_name.surname_list[0].surname;
           targetLocation = `${targetLocation}/${prefix}${sn}/`;
@@ -119,7 +117,7 @@ export default class IndividualName extends HTMLElement {
         this.person.primary_name.suffix.length > 0
       ) {
         const suffix = this.person.primary_name.suffix;
-        let prefix = this.person.primary_name.surname_list[0].prefix;
+        let prefix: string = this.person.primary_name.surname_list[0].prefix;
         prefix = !prefix.localeCompare("of") ? "of " : prefix;
         targetLocation = `${targetLocation} ${prefix}${suffix}`;
       }
@@ -144,9 +142,7 @@ export default class IndividualName extends HTMLElement {
         this.person.primary_name.surname_list.map((sn) => {
           if (sn.primary) {
             if (
-              !sn.origintype.string.localeCompare(
-                GedcomPerson.StringEnum.Values.Taken
-              )
+              !sn.origintype.string.localeCompare(PersonStrings.Values.Taken)
             ) {
               found = true;
               const prefix = !sn.prefix.localeCompare("of") ? "of " : sn.prefix;
@@ -161,7 +157,7 @@ export default class IndividualName extends HTMLElement {
         });
         /* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */
         if (!found && this.person.primary_name.surname_list.length > 0) {
-          let prefix = this.person.primary_name.surname_list[0].prefix;
+          let prefix: string = this.person.primary_name.surname_list[0].prefix;
           prefix = !prefix.localeCompare("of") ? "of " : prefix;
           const sn = this.person.primary_name.surname_list[0].surname;
           name = `${name}${prefix}${sn}`;

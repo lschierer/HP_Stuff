@@ -4,10 +4,7 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-import {
-  type GedcomPerson,
-  type GedcomFamily,
-} from "../../schemas/gedcom/index.ts";
+import { type GedcomPerson, type GedcomFamily } from "@hp-stuff/schemas/gedcom";
 
 import { GrampsState, getGrampsData } from "./state.ts";
 
@@ -75,7 +72,7 @@ export default class GrampsImmediateFamily extends HTMLElement {
                 .includes(true)
             ) {
               if (DEBUG) {
-                console.log(`found matching child ${p.id}`);
+                console.log(`found matching child ${p.gramps_id}`);
               }
               this._children.push(p);
             }
@@ -85,7 +82,7 @@ export default class GrampsImmediateFamily extends HTMLElement {
             if (this._family.father_handle.length) {
               if (!this._family.father_handle.localeCompare(p.handle)) {
                 if (DEBUG) {
-                  console.log(`found father ${p.id}`);
+                  console.log(`found father ${p.gramps_id}`);
                 }
                 this._father = p;
               }
@@ -96,7 +93,7 @@ export default class GrampsImmediateFamily extends HTMLElement {
             if (this._family.mother_handle.length) {
               if (!this._family.mother_handle.localeCompare(p.handle)) {
                 if (DEBUG) {
-                  console.log(`found mother ${p.id}`);
+                  console.log(`found mother ${p.gramps_id}`);
                 }
                 this._mother = p;
               }
@@ -113,9 +110,12 @@ export default class GrampsImmediateFamily extends HTMLElement {
       if (DEBUG) {
         console.log(`returning family where I am a parent`);
       }
-      if (this._father && !this.ParentID.localeCompare(this._father.id)) {
+      if (
+        this._father &&
+        !this.ParentID.localeCompare(this._father.gramps_id)
+      ) {
         if (this._mother) {
-          const grampsPersonName = new GrampsPersonName(this._mother.id);
+          const grampsPersonName = new GrampsPersonName(this._mother.gramps_id);
           grampsPersonName.icon = true;
           grampsPersonName.inline = true;
           grampsPersonName.link = true;
@@ -125,10 +125,10 @@ export default class GrampsImmediateFamily extends HTMLElement {
         }
       } else if (
         this._mother &&
-        !this.ParentID.localeCompare(this._mother.id)
+        !this.ParentID.localeCompare(this._mother.gramps_id)
       ) {
         if (this._father) {
-          const grampsPersonName = new GrampsPersonName(this._father.id);
+          const grampsPersonName = new GrampsPersonName(this._father.gramps_id);
           grampsPersonName.icon = true;
           grampsPersonName.inline = true;
           grampsPersonName.link = true;
@@ -143,10 +143,10 @@ export default class GrampsImmediateFamily extends HTMLElement {
             .map((person, index) => {
               if (DEBUG) {
                 console.log(
-                  `adding person with id ${person.id} to ul familylisting as child`
+                  `adding person with id ${person.gramps_id} to ul familylisting as child`
                 );
               }
-              const childPersonName = new GrampsPersonName(person.id);
+              const childPersonName = new GrampsPersonName(person.gramps_id);
               childPersonName.icon = true;
               childPersonName.inline = true;
               childPersonName.link = true;
@@ -162,7 +162,7 @@ export default class GrampsImmediateFamily extends HTMLElement {
     } else {
       let fatherHTHML = "";
       if (this._father) {
-        const fatherName = new GrampsPersonName(this._father.id);
+        const fatherName = new GrampsPersonName(this._father.gramps_id);
         fatherName.link = true;
         fatherName.inline = true;
         fatherName.icon = true;
@@ -173,7 +173,7 @@ export default class GrampsImmediateFamily extends HTMLElement {
 
       let motherHTML = "";
       if (this._mother) {
-        const motherName = new GrampsPersonName(this._mother.id);
+        const motherName = new GrampsPersonName(this._mother.gramps_id);
         motherName.link = true;
         motherName.inline = true;
         motherName.icon = true;

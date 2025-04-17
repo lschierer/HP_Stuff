@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-import { Bookmark } from "../schemas/bookmarks.ts";
+import { Bookmark } from "@hp-stuff/schemas";
 import { z } from "zod";
 
 import debugFunction from "./debug.ts";

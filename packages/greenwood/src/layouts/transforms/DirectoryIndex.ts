@@ -7,7 +7,7 @@ import { h } from "hastscript";
 import debugFunction from "../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
-import { type NavigationItem } from "../../schemas/page.ts";
+import { type NavigationItem } from "@hp-stuff/schemas";
 
 /**
  * Check if a page contains the directory-index placeholder
@@ -84,7 +84,6 @@ export const createDirectoryIndex = (
         const exactMatch = items.find((item) => item.route === route);
         if (
           exactMatch &&
-          /* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */
           exactMatch.children &&
           exactMatch.children.length > 0
         ) {
@@ -94,7 +93,6 @@ export const createDirectoryIndex = (
         // Then check for parent routes
         for (const item of items) {
           if (item.route && route.startsWith(item.route + "/")) {
-            /* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */
             if (item.children && item.children.length > 0) {
               const childResult = findRelevantSubtree(item.children, route);
               if (childResult.length > 0) {

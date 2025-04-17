@@ -8,7 +8,7 @@ import {
   findBirthLastName,
 } from "./state.ts";
 
-import { type GedcomPerson } from "../../schemas/gedcom/index.ts";
+import { type GedcomPerson } from "@hp-stuff/schemas/gedcom";
 
 import GrampsCSS from "../../styles/Gramps.css" with { type: "css" };
 import FamilyListingCSS from "../../styles/FamilyListing.css" with { type: "css" };
@@ -80,7 +80,7 @@ export default class FamilyListing extends HTMLElement {
         }
       })
         .sort((a, b) => {
-          return a.id.localeCompare(b.id);
+          return a.gramps_id.localeCompare(b.gramps_id);
         })
         .sort((a, b) => {
           return a.parent_family_list.length < b.parent_family_list.length
@@ -101,20 +101,20 @@ export default class FamilyListing extends HTMLElement {
           );
         }
         const fc = new Array<string>();
-        const fk = person.id;
+        const fk = person.gramps_id;
         if (person.family_list.length > 0) {
           fc.push(...person.family_list);
         } else {
           if (DEBUG) {
             console.log(
-              `${person.primary_name.first_name}" with id ${person.id} has no family`
+              `${person.primary_name.first_name}" with id ${person.gramps_id} has no family`
             );
           }
         }
 
         if (this.handle.length == 0 && person.parent_family_list.length == 0) {
-          if (!familyListDisplayedIds.has(person.id)) {
-            familyListDisplayedIds.add(person.id);
+          if (!familyListDisplayedIds.has(person.gramps_id)) {
+            familyListDisplayedIds.add(person.gramps_id);
             displaylist.push(person);
             families.set(fk, fc);
           }
@@ -124,23 +124,23 @@ export default class FamilyListing extends HTMLElement {
               `set key "${fk}" should match "${person.id}" for ${fc.length} children`
             );
             console.log(
-              `pushing ${person.primary_name.first_name}" with id ${person.id}`
+              `pushing ${person.primary_name.first_name}" with id ${person.gramps_id}`
             );
             console.log(`${families.has(fk)} from test of has for ${fk}`);
           }
         } else if (person.parent_family_list.includes(this.handle)) {
-          if (!familyListDisplayedIds.has(person.id)) {
-            familyListDisplayedIds.add(person.id);
+          if (!familyListDisplayedIds.has(person.gramps_id)) {
+            familyListDisplayedIds.add(person.gramps_id);
             displaylist.push(person);
             families.set(fk, fc);
           }
 
           if (DEBUG) {
             console.log(
-              `set key ${fk} should match ${person.id} for ${fc.length} children`
+              `set key ${fk} should match ${person.gramps_id} for ${fc.length} children`
             );
             console.log(
-              `pushing ${person.primary_name.first_name}" with id ${person.id}`
+              `pushing ${person.primary_name.first_name}" with id ${person.gramps_id}`
             );
             console.log(`${families.has(fk)} from test of has for ${fk}`);
           }
@@ -184,12 +184,12 @@ export default class FamilyListing extends HTMLElement {
             .map((person, index) => {
               if (DEBUG) {
                 console.log(
-                  `for person ${person.id} fa has ${fa[index].length} entries `
+                  `for person ${person.gramps_id} fa has ${fa[index].length} entries `
                 );
               }
               return `
               <li id="person-${index}">
-                <individual-name inline link personId=${person.id} ></individual-name>
+                <individual-name inline link personId=${person.gramps_id} ></individual-name>
                 (
                 ${
                   person.event_ref_list.length > 0 &&

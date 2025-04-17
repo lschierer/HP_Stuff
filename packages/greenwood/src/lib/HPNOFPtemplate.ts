@@ -1,5 +1,3 @@
-import { setTimeout } from "node:timers/promises";
-import pTimeout from "p-timeout";
 import fs from "node:fs/promises";
 import path from "node:path";
 
@@ -19,22 +17,16 @@ if (DEBUG) {
 }
 
 const getBody: GetBody = async () => {
-  /*start work around for GetFrontmatter requiring async */
-  const delayedPromise = setTimeout(1);
-  await pTimeout(delayedPromise, {
-    milliseconds: 1,
-  });
+  /*start work around for  requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
   /* end workaround */
 
   return `BODY`;
 };
 
 const getFrontmatter: GetFrontmatter = async () => {
-  /*start work around for GetFrontmatter requiring async */
-  const delayedPromise = setTimeout(1);
-  await pTimeout(delayedPromise, {
-    milliseconds: 1,
-  });
+  /*start work around for  requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
   /* end workaround */
 
   return {
@@ -147,11 +139,8 @@ const getLayout: GetLayout = async (
   compilation: Compilation,
   route: object | string
 ) => {
-  /*start work around for GetFrontmatter requiring async */
-  const delayedPromise = setTimeout(1);
-  await pTimeout(delayedPromise, {
-    milliseconds: 1,
-  });
+  /*start work around for  requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
   /* end workaround */
 
   let realRoute = "";

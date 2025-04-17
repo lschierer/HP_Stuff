@@ -2,6 +2,12 @@ import { greenwoodPluginPostCss } from "@greenwood/plugin-postcss";
 import { greenwoodPluginAdapterAws } from "@greenwood/plugin-adapter-aws";
 import type { Config } from "@greenwood/cli";
 
+import { TopHeaderSectionPlugin } from "topheader-plugin";
+import { LocalConfig } from "./src/lib/staticConfig.ts";
+console.log(
+  `greenwood.config.ts sees local config: ${JSON.stringify(LocalConfig)}`
+);
+
 const gc: Config = {
   useTsc: true,
   activeContent: true,
@@ -33,6 +39,7 @@ const gc: Config = {
       extendConfig: true,
     }),
     greenwoodPluginAdapterAws(),
+    TopHeaderSectionPlugin(LocalConfig),
   ],
 };
 export default gc;

@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-import { GedcomPerson } from "../../../schemas/gedcom/index.ts";
+import { GedcomPerson } from "@hp-stuff/schemas/gedcom";
 
 export const TreePerson = z.object({
   name: z.string(),

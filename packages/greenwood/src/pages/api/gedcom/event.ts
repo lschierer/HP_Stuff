@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { GedcomEvent } from "../../../schemas/gedcom/index.ts";
+import { GedcomEvent } from "@hp-stuff/schemas/gedcom";
 
 import debugFunction from "../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -30,7 +30,7 @@ export async function handler(request: Request) {
   let body: GedcomEvent.GedcomElement | object = {};
   if (events && events.length > 0 && id) {
     const event = events.find((e) => {
-      return !e.id.localeCompare(id);
+      return !e.gramps_id.localeCompare(id);
     });
     if (event) {
       body = event;

@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { GedcomFamily } from "../../../schemas/gedcom/index.ts";
+import { GedcomFamily } from "@hp-stuff/schemas/gedcom";
 
 import debugFunction from "../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -30,7 +30,7 @@ export async function handler(request: Request) {
   let body: GedcomFamily.GedcomElement | object = {};
   if (families && families.length > 0 && id) {
     const family = families.find((f) => {
-      return !f.id.localeCompare(id);
+      return !f.gramps_id.localeCompare(id);
     });
     if (family) {
       body = family;

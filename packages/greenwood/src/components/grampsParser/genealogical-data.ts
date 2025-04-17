@@ -6,7 +6,7 @@ import {
   GedcomPerson,
   type GedcomFamily,
   type GedcomEvent,
-} from "../../schemas/gedcom/index.ts";
+} from "@hp-stuff/schemas/gedcom";
 import { z } from "zod";
 
 import GrampsCSS from "../../styles/Gramps.css" with { type: "css" };

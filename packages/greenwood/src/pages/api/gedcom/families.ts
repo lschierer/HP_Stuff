@@ -1,5 +1,5 @@
 import { z } from "zod";
-import { GedcomFamily } from "../../../schemas/gedcom/index.ts";
+import { GedcomFamily } from "@hp-stuff/schemas/gedcom";
 
 import debugFunction from "../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);

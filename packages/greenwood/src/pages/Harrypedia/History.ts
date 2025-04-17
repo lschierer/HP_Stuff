@@ -12,10 +12,10 @@ import {
 } from "@greenwood/cli";
 
 import {
-  Event,
-  Events,
+  History,
+  HistoryEvent,
   type DisplayableEvent,
-} from "../../lib/TimelineTypes.ts";
+} from "@hp-stuff/schemas";
 
 import debugFunction from "../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -31,7 +31,7 @@ if (DEBUG || DEBUG1 || DEBUG2) {
 }
 
 const parseEvent = (
-  event: Event,
+  event: HistoryEvent,
   fileName: string
 ): DisplayableEvent | undefined => {
   let description: string | undefined = undefined;
@@ -128,7 +128,7 @@ const getCollectionContents = () => {
       }
       const file = fs.readFileSync(match, "utf8");
       if (file) {
-        const singleEvent = Event.safeParse(JSON.parse(file));
+        const singleEvent = HistoryEvent.safeParse(JSON.parse(file));
         if (singleEvent.success) {
           if (DEBUG1) {
             console.log(`processing '${match} as single event`);
@@ -141,9 +141,16 @@ const getCollectionContents = () => {
           if (DEBUG1) {
             console.log(`processing '${match} as array of events`);
           }
-          const arrayEvents = Events.safeParse(JSON.parse(file));
-          if (arrayEvents.success) {
-            arrayEvents.data.events.map((se) => {
+          const arrayEvents: HistoryEvent[] = new Array<HistoryEvent>();
+          const valid = History.safeParse(JSON.parse(file));
+          if (valid.success) {
+            const events = valid.data.events;
+            if (Array.isArray(events)) {
+              events.map((e) => arrayEvents.push(e));
+            } else {
+              arrayEvents.push(events);
+            }
+            arrayEvents.map((se) => {
               if (DEBUG1) {
                 console.log(`processing array event '${JSON.stringify(se)}'`);
               }
@@ -154,7 +161,7 @@ const getCollectionContents = () => {
             });
           } else {
             console.log(
-              `both singleEvent and arrayEvent failed. singleEvent: ${singleEvent.error.message}, arrayEvent: ${arrayEvents.error.message}`
+              `both singleEvent and arrayEvent failed. singleEvent: ${singleEvent.error.message}, arrayEvent: ${valid.error.message}`
             );
           }
         }

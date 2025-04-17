@@ -6,7 +6,8 @@ import {
   GedcomEvent,
   GedcomFamily,
   GedcomPerson,
-} from "../../schemas/gedcom/index.ts";
+  PersonStrings,
+} from "@hp-stuff/schemas/gedcom";
 
 import debugFunction from "../../lib/debug.ts";
 
@@ -43,8 +44,8 @@ export const getGrampsData = async () => {
       }
     } else {
       valid.data.map((p) => {
-        if (!GrampsState.people.has(p.id)) {
-          GrampsState.people.set(p.id, p);
+        if (!GrampsState.people.has(p.gramps_id)) {
+          GrampsState.people.set(p.gramps_id, p);
         }
       });
     }
@@ -69,8 +70,8 @@ export const getGrampsData = async () => {
       }
     } else {
       valid.data.map((f) => {
-        if (!GrampsState.families.has(f.id)) {
-          GrampsState.families.set(f.id, f);
+        if (!GrampsState.families.has(f.gramps_id)) {
+          GrampsState.families.set(f.gramps_id, f);
         }
       });
     }
@@ -90,8 +91,8 @@ export const getGrampsData = async () => {
       }
     } else {
       valid.data.map((event) => {
-        if (!GrampsState.events.has(event.id)) {
-          GrampsState.events.set(event.id, event);
+        if (!GrampsState.events.has(event.gramps_id)) {
+          GrampsState.events.set(event.gramps_id, event);
         }
       });
     }
@@ -100,7 +101,7 @@ export const getGrampsData = async () => {
 
 export const findFatherForChild = (child: GedcomPerson.GedcomElement) => {
   if (DEBUG) {
-    console.log(`findFatherForChild for child ${child.id}`);
+    console.log(`findFatherForChild for child ${child.gramps_id}`);
   }
   let family_id: string = "";
 
@@ -113,9 +114,9 @@ export const findFatherForChild = (child: GedcomPerson.GedcomElement) => {
         f.child_ref_list.forEach((crl) => {
           if (!crl.ref.localeCompare(child.handle)) {
             if (DEBUG) {
-              console.log(`found matching family ${f.id}`);
+              console.log(`found matching family ${f.gramps_id}`);
             }
-            family_id = f.id;
+            family_id = f.gramps_id;
           }
         });
       }
@@ -129,9 +130,9 @@ export const findFatherForChild = (child: GedcomPerson.GedcomElement) => {
       GrampsState.people.forEach((pp) => {
         if (!father_id.length && !pp.handle.localeCompare(parent_handle)) {
           if (DEBUG) {
-            console.log(`found father ${pp.id}`);
+            console.log(`found father ${pp.gramps_id}`);
           }
-          father_id = pp.id;
+          father_id = pp.gramps_id;
         }
       });
       if (father_id.length) {
@@ -157,9 +158,9 @@ export const findMotherForChild = (child: GedcomPerson.GedcomElement) => {
         f.child_ref_list.forEach((crl) => {
           if (!crl.ref.localeCompare(child.handle)) {
             if (DEBUG) {
-              console.log(`found matching family ${f.id}`);
+              console.log(`found matching family ${f.gramps_id}`);
             }
-            family_id = f.id;
+            family_id = f.gramps_id;
           }
         });
       }
@@ -173,9 +174,9 @@ export const findMotherForChild = (child: GedcomPerson.GedcomElement) => {
       GrampsState.people.forEach((pp) => {
         if (!mother_id.length && !pp.handle.localeCompare(parent_handle)) {
           if (DEBUG) {
-            console.log(`found father ${pp.id}`);
+            console.log(`found father ${pp.gramps_id}`);
           }
-          mother_id = pp.id;
+          mother_id = pp.gramps_id;
         }
       });
       if (mother_id.length) {
@@ -208,45 +209,39 @@ export const findBirthLastName = (
     if (sn.surname.length) {
       if (
         !person.primary_name.type.string.localeCompare(
-          GedcomPerson.StringEnum.Enum["Birth Name"]
+          PersonStrings.Enum["Birth Name"]
         )
       ) {
         if (DEBUG) {
-          console.log(`${person.id} has a birth name ${sn.surname}`);
+          console.log(`${person.gramps_id} has a birth name ${sn.surname}`);
         }
-        let prefix = sn.prefix;
+        let prefix: string = sn.prefix;
         prefix = !prefix.localeCompare("of") ? "of " : prefix;
         return `${prefix}${sn.surname}`;
       }
       if (
-        !person.primary_name.type.string.localeCompare(
-          GedcomPerson.StringEnum.Enum.Given
-        )
+        !person.primary_name.type.string.localeCompare(PersonStrings.Enum.Given)
       ) {
         if (DEBUG) {
-          console.log(`${person.id} has a given name ${sn.surname}`);
+          console.log(`${person.gramps_id} has a given name ${sn.surname}`);
         }
-        let prefix = sn.prefix;
+        let prefix: string = sn.prefix;
         prefix = !prefix.localeCompare("of") ? "of " : prefix;
         return `${prefix}${sn.surname}`;
       }
       if (
-        !sn.origintype.string.localeCompare(
-          GedcomPerson.StringEnum.Enum["Birth Name"]
-        )
+        !sn.origintype.string.localeCompare(PersonStrings.Enum["Birth Name"])
       ) {
         if (DEBUG) {
           console.log(
-            `${person.id} has surname with type Birth Name: ${sn.surname}`
+            `${person.gramps_id} has surname with type Birth Name: ${sn.surname}`
           );
         }
       }
-      if (
-        !sn.origintype.string.localeCompare(GedcomPerson.StringEnum.Enum.Given)
-      ) {
+      if (!sn.origintype.string.localeCompare(PersonStrings.Enum.Given)) {
         if (DEBUG) {
           console.log(
-            `${person.id} has surname with type Given: ${sn.surname}`
+            `${person.gramps_id} has surname with type Given: ${sn.surname}`
           );
         }
       }
@@ -258,7 +253,7 @@ export const findBirthLastName = (
   if (lastnameObject) {
     const lastname = lastnameObject.surname;
     if (DEBUG) {
-      console.log(`found lastname ${lastname} for ${person.id}`);
+      console.log(`found lastname ${lastname} for ${person.gramps_id}`);
     }
     if (forLink) {
       return lastname;
@@ -286,15 +281,14 @@ export const findAnyLastName = (
       if (surname.surname && surname.surname.length > 0) {
         if (DEBUG) {
           console.log(
-            `${person.id} has a non-birth surname ${surname.surname}`
+            `${person.gramps_id} has a non-birth surname ${surname.surname}`
           );
         }
+        let prefix: string = surname.prefix;
         if (forLink) {
-          let prefix = surname.prefix;
           prefix = !prefix.localeCompare("of") ? "of " : prefix;
           return `${prefix}${surname.surname}`;
         }
-        let prefix = surname.prefix;
         prefix = !prefix.localeCompare("of") ? "of " : prefix;
         return `${prefix}${surname.surname}`;
       }

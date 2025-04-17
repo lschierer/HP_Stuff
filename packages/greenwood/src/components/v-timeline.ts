@@ -1,5 +1,5 @@
 import { DateTime } from "luxon";
-import { Event, type DisplayableEvent } from "../lib/TimelineTypes.ts";
+import { HistoryEvent, type DisplayableEvent } from "@hp-stuff/schemas";
 
 import debugFunction from "../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -28,7 +28,7 @@ export default class VerticalTimeline extends HTMLElement {
         if (DEBUG) {
           console.log(`VerticalTimeline getEvents found an events array`);
         }
-        const validate = Event.array().safeParse(
+        const validate = HistoryEvent.array().safeParse(
           JSON.parse(decodeURIComponent(this.events))
         );
         if (validate.success) {

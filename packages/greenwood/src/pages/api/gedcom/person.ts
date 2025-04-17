@@ -1,4 +1,4 @@
-import { GedcomPerson } from "../../../schemas/gedcom/index.ts";
+import { GedcomPerson } from "@hp-stuff/schemas/gedcom";
 
 import debugFunction from "../../../lib/debug.ts";
 
@@ -36,7 +36,7 @@ export async function handler(request: Request) {
   let body: GedcomPerson.GedcomElement | object = {};
   if (people && people.length > 0 && id) {
     const person = people.find((p) => {
-      return !p.id.localeCompare(id);
+      return !p.gramps_id.localeCompare(id);
     });
     if (person) {
       body = person;

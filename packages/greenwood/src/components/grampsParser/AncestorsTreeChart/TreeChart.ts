@@ -67,17 +67,17 @@ export default class AncestorsTreeChart extends HTMLElement {
         }
         const father = findFatherForChild(person.data);
         if (father) {
-          const fatherName = new IndividualName(father.id);
+          const fatherName = new IndividualName(father.gramps_id);
           const node: TreePerson = {
-            id: father.id,
+            id: father.gramps_id,
             name: fatherName.displayName(),
             generation: (person.generation ?? 0) + 1,
             data: father,
             parents: new Array<string>(),
           };
-          if (!this.extended_family.has(father.id)) {
+          if (!this.extended_family.has(father.gramps_id)) {
             queue.push(node);
-            this.extended_family.set(father.id, node);
+            this.extended_family.set(father.gramps_id, node);
           }
 
           if (Array.isArray(person.parents)) {
@@ -89,18 +89,18 @@ export default class AncestorsTreeChart extends HTMLElement {
 
         const mother = findMotherForChild(person.data);
         if (mother) {
-          const motherName = new IndividualName(mother.id);
+          const motherName = new IndividualName(mother.gramps_id);
           const node: TreePerson = {
-            id: mother.id,
+            id: mother.gramps_id,
             name: motherName.displayName(),
             generation: (person.generation ?? 0) + 1,
             data: mother,
             parents: new Array<string>(),
           };
 
-          if (!this.extended_family.has(mother.id)) {
+          if (!this.extended_family.has(mother.gramps_id)) {
             queue.push(node);
-            this.extended_family.set(mother.id, node);
+            this.extended_family.set(mother.gramps_id, node);
           }
 
           if (Array.isArray(person.parents)) {
@@ -131,7 +131,7 @@ export default class AncestorsTreeChart extends HTMLElement {
       returnable += `<ul class="ascending-tree" id="generations-${generation}">`;
     }
 
-    const LocalRootName = new IndividualName(localRoot.data.id);
+    const LocalRootName = new IndividualName(localRoot.data.gramps_id);
 
     if (DEBUG) {
       console.log(`current localRoot is is `, localRoot.id);
@@ -182,9 +182,9 @@ export default class AncestorsTreeChart extends HTMLElement {
 
     const rootPerson = GrampsState.people.get(this.grampsId);
     if (rootPerson) {
-      const LocalRootName = new IndividualName(rootPerson.id);
+      const LocalRootName = new IndividualName(rootPerson.gramps_id);
       const rootNode: TreePerson = {
-        id: rootPerson.id,
+        id: rootPerson.gramps_id,
         name: LocalRootName.displayName(),
         generation: 0,
         data: rootPerson,
