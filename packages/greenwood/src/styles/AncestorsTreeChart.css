@@ -1,13 +1,13 @@
 @import "@spectrum-css/typography";
 
 .cluster {
-  color: var(--sl-color-bg);
-  fill: var(--sl-color-bg);
+  color: var(--mod-background-base-color);
+  fill: var(--mod-background-base-color);
 }
 
 .node {
   stroke: var(--sl-color-accent-high);
-  fill: var(--sl-color-bg);
+  fill: var(--mod-background-base-color);
 }
 
 .familyNode.junction.edge {
@@ -29,17 +29,17 @@
 
 .familyNode.node {
   stroke: var(--spectrum-green-600);
-  fill: var(--sl-color-bg);
+  fill: var(--mod-background-base-color);
 }
 
 .familyNode.father.node {
   stroke: var(--color-male);
-  fill: var(--sl-color-bg);
+  fill: var(--mod-background-base-color);
 }
 
 .familyNode.mother.node {
   stroke: var(--color-female);
-  fill: var(--sl-color-bg);
+  fill: var(--mod-background-base-color);
 }
 
 .color-male {

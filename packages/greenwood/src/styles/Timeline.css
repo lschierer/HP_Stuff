@@ -1,9 +1,9 @@
-@import "@spectrum-css/tokens/dist/index.css";
-@import "@spectrum-css/page/dist/index.css";
-@import "@spectrum-css/typography/dist/index.css";
-@import "@spectrum-css/alertbanner/dist/index.css";
-@import "@spectrum-css/button/dist/index.css";
-@import "@spectrum-css/divider/dist/index.css";
+@import "@spectrum-css/tokens";
+@import "@spectrum-css/page";
+@import "@spectrum-css/typography";
+@import "@spectrum-css/alertbanner";
+@import "@spectrum-css/button";
+@import "@spectrum-css/divider";
 
 iconify-icon {
   margin-right: 1.5rem;
