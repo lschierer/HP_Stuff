@@ -6,7 +6,8 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "node build.js",
+    "build:tsc": "tsc",
     "clean": "rimraf dist tsconfig.tsbuildinfo",
     "dev": "tsc --watch",
     "prebuild": "pnpm run clean",
@@ -30,6 +31,8 @@
     "dist/**/*"
   ],
   "devDependencies": {
+    "esbuild": "^0.25.2",
+    "glob": "^11.0.1",
     "rimraf": "^5.0.10",
     "typescript": "^5.8.3"
   },
