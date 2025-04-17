@@ -16,18 +16,18 @@ fi
 find ${PWD}/pages -type d | gsed -E "s#${PWD}/pages(.*)#${PWD}/dist\1#" | xargs -I{} mkdir -p {} || exit $STEP
 STEP=$((STEP + 1))
 
+cat potter_universe.json | jq -sS --indent 2 -M '.' > ${PWD}/dist/potter_universe.json || exit $STEP
+STEP=$((STEP + 1))
+
+pnpm tsx ${PWD}/src/scripts/gedcomExportToHtml.ts || exit $STEP
+STEP=$((STEP + 1))
+
 # Copy only .html files that are not .fragment.html files
 find ${PWD}/pages -name "*.html" -not -name "*.fragment.html" | while read file; do
   dest=$(echo "$file" | gsed -E "s#${PWD}/pages(.*)#${PWD}/dist\1#") || exit $STEP
   STEP=$((STEP + 1))
   cp "$file" "$dest"
 done || exit $STEP
-STEP=$((STEP + 1))
-
-cat potter_universe.json | jq -sS --indent 2 -M '.' > ${PWD}/dist/potter_universe.json || exit $STEP
-STEP=$((STEP + 1))
-
-pnpm tsx ${PWD}/src/scripts/gedcomExportToHtml.ts || exit $STEP
 STEP=$((STEP + 1))
 
 rsync -amv --exclude='styles' --exclude='routes' --exclude='filescreated' --exclude='assets'  dist/ ../greenwood/src/pages/ --delete  --delete-excluded

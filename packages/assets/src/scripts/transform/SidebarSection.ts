@@ -3,7 +3,8 @@ import type { Root, Element } from "hast";
 import { visit } from "unist-util-visit";
 import debugFunction from "@shared/debug";
 import sidebarRoutes from "@shared/sidebar-routes.json";
-import { type NavigationItem } from "@hp-stuff/schemas";
+
+import { NavigationItem } from "@hp-stuff/schemas";
 
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
@@ -17,7 +18,16 @@ export default class SidebarSection {
       return tree;
     }
 
-    const html = this.buildSidebarHtml(sidebarRoutes);
+    const valid = NavigationItem.safeParse(sidebarRoutes);
+    let html = "";
+    if (valid.success) {
+      html = this.buildSidebarHtml(valid.data);
+    } else {
+      if (DEBUG) {
+        console.error(valid.error.message);
+      }
+    }
+
     const sidebarAst = fromHtml(html, { fragment: true });
 
     const en = sidebarAst.children.filter((child) => child.type === "element");

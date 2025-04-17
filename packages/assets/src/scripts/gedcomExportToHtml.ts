@@ -20,6 +20,7 @@
 */
 
 import * as fs from "node:fs";
+import { mkdirSync, writeFileSync } from "node:fs";
 import * as path from "node:path";
 
 import { ParsedResult } from "@hp-stuff/schemas";
@@ -40,13 +41,30 @@ const markdownPagesDir = path.join(process.cwd(), "pages");
 const staticContent = path.join(process.cwd(), "people");
 const gedcomPrefix = "Harrypedia/people";
 
-const pagesCreated = doConversion(
-  path.join(markdownPagesDir, gedcomPrefix),
-  staticContent
-);
+function ensureDirectoryIndexes(root: string, outFile: string) {
+  const created: string[] = [];
+  const stack = [root];
 
-if (DEBUG) {
-  console.warn(`conversion created: \n${pagesCreated.join("\n")}`);
+  while (stack.length > 0) {
+    const dir = stack.pop() ?? ".";
+    const indexPath = path.join(dir, "index.md");
+
+    if (!fs.existsSync(indexPath)) {
+      const title = path.basename(dir);
+      const content = `---\ntitle: ${title}\n---\n\n<directory-index></directory-index>\n`;
+      writeFileSync(indexPath, content, "utf-8");
+      created.push(indexPath);
+    }
+
+    for (const entry of fs.readdirSync(dir, { withFileTypes: true })) {
+      if (entry.isDirectory()) {
+        stack.push(path.join(dir, entry.name));
+      }
+    }
+  }
+
+  mkdirSync(path.dirname(outFile), { recursive: true });
+  fs.writeFileSync(outFile, created.join("\n"), "utf-8");
 }
 
 const navTree = () => {
@@ -64,28 +82,6 @@ const navTree = () => {
   );
 };
 
-const filesCreatedDir = path.join(finalOutputDir, "filescreated");
-if (!fs.existsSync(filesCreatedDir)) {
-  fs.mkdirSync(filesCreatedDir, {
-    recursive: true,
-    mode: 0o755,
-  });
-}
-fs.writeFileSync(
-  path.join(filesCreatedDir, "/gedcom.txt"),
-  pagesCreated.join("\n"),
-  {
-    encoding: "utf-8",
-  }
-);
-
-if (!fs.existsSync(path.join(finalOutputDir, gedcomPrefix))) {
-  fs.mkdirSync(path.join(finalOutputDir, gedcomPrefix), {
-    recursive: true,
-    mode: 0o755,
-  });
-}
-
 const getFiles = (basePath: string, filePath: string): string | string[] => {
   const node = path.join(basePath, filePath);
   const ns = fs.statSync(node);
@@ -102,7 +98,44 @@ const getFiles = (basePath: string, filePath: string): string | string[] => {
   }
 };
 
+const pagesCreated = doConversion(
+  path.join(markdownPagesDir, gedcomPrefix),
+  staticContent
+);
+
+if (DEBUG) {
+  console.warn(`conversion created: \n${pagesCreated.join("\n")}`);
+}
+
+const filesCreatedDir = path.join(finalOutputDir, "filescreated");
+if (!fs.existsSync(filesCreatedDir)) {
+  fs.mkdirSync(filesCreatedDir, {
+    recursive: true,
+    mode: 0o755,
+  });
+}
+
+fs.writeFileSync(
+  path.join(filesCreatedDir, "/gedcom.txt"),
+  pagesCreated.join("\n"),
+  {
+    encoding: "utf-8",
+  }
+);
+
+ensureDirectoryIndexes(
+  markdownPagesDir,
+  `${finalOutputDir}/filescreated/indexFiles.txt`
+);
 navTree();
+
+if (!fs.existsSync(path.join(finalOutputDir, gedcomPrefix))) {
+  fs.mkdirSync(path.join(finalOutputDir, gedcomPrefix), {
+    recursive: true,
+    mode: 0o755,
+  });
+}
+
 const ignoredFiles = [".gitkeep", ".gitignore"];
 for (const file of getFiles(markdownPagesDir, ".")) {
   if (ignoredFiles.includes(path.basename(file))) {

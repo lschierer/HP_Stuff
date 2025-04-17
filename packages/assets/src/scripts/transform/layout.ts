@@ -94,6 +94,10 @@ const createDirectoryIndex = (ast: Root, currentRoute?: string): void => {
     // Read the sidebar-routes.json file
 
     let sidebarRoutes: NavigationItem | null = null;
+    console.debug(
+      "[DEBUG] sidebar-routes import:",
+      JSON.stringify(SideBarRoutesImport, null, 2)
+    );
     const valid = NavigationItem.safeParse(SideBarRoutesImport);
     if (valid.success) {
       sidebarRoutes = valid.data;
@@ -457,7 +461,7 @@ const processHtml = async (
     const topHeader = new TopHeaderSection();
     const footerSection = new FooterHeaderSection();
     const sidebarSection = new SidebarSection();
-    if (options.route) {
+    if (options.route && Object.keys(SideBarRoutesImport).length) {
       topHeader.route = options.route;
       sidebarSection.route = options.route;
     }

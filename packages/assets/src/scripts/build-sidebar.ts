@@ -8,12 +8,25 @@ const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 const pagesRoot = path.join(process.cwd(), "./pages");
 const ignoredFiles = [".gitignore", ".gitkeep"];
 
+const pathToRoute = (fullPath: string) => {
+  const cleanRoute = fullPath
+    .replace(pagesRoot, "") //remove the extra levels of directory tree
+    .replace(/\\/g, "/") // normalize the slashes for forward slashes
+    .replace(/index\.md$/, "/") //remove any index.md segments
+    .replace(/\.md$/, "/") //ensure we end in a slash
+    .replace(/\/?$/, "/") //double check we end in a slash if a directory is passed in instead of a file
+    .trim(); //no extra white space
+  if (DEBUG) {
+    console.log(`transformed ${fullPath} to ${cleanRoute}`);
+  }
+  return cleanRoute;
+};
 export const buildNavigationTree = (
   dir: string = pagesRoot
 ): NavigationItem => {
   const node: NavigationItem = {
     title: path.basename(dir),
-    route: "",
+    route: pathToRoute(dir),
     fileName: "",
     children: [],
   };
@@ -38,9 +51,10 @@ export const buildNavigationTree = (
         const content = fs.readFileSync(indexPath, "utf8");
         const { data } = matter(content);
         const tmpNode = buildNavigationTree(fullPath);
+
         node.children.push({
           title: (data.title as string) || path.basename(fullPath),
-          route: fullPath.replace(pagesRoot, "").replace(/\\/g, "/"), // ends in /
+          route: pathToRoute(fullPath),
           fileName: indexPath,
           children: tmpNode.children,
         });
@@ -58,17 +72,9 @@ export const buildNavigationTree = (
       const content = fs.readFileSync(fullPath, "utf8");
       const { data } = matter(content);
 
-      const relativePath = fullPath.replace(pagesRoot, "").replace(/\\/g, "/");
-      const cleanHref = relativePath
-        .replace(/index\.md$/, "/") // remove index.md
-        .replace(/\.md$/, "/") // remove .md
-        .endsWith("/")
-        ? +""
-        : +"/";
-
       node.children.push({
         title: (data.title as string) || path.basename(entry, ".md"),
-        route: cleanHref,
+        route: pathToRoute(fullPath),
         fileName: fullPath,
         children: [],
       });
