@@ -7,6 +7,11 @@ for f in "$PWD"/dist/filescreated/*.txt; do
   cat "$f" | xargs -I{} rm "{}"
 done
 
+for f in "$PWD"/pages/filescreated/*.txt; do
+  echo "cleaning files listed in $f"
+  cat "$f" | xargs -I{} rm "{}"
+done
+
 echo "Cleaning empty files and directories"
 find . -path './**/.gitkeep' -prune -o -empty -print -delete
 

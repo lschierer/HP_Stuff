@@ -39,7 +39,15 @@ function createPersonMarkdown(
   events: GedcomEvent.GedcomElement[]
 ): string {
   const name = new IndividualName(person);
-  let markdown = `# ${name.getFullName()}\n\n`;
+  
+  // Add front matter compatible with gray-matter
+  let markdown = `---
+title: "${name.getFullName()}"
+gramps_id: "${person.gramps_id}"
+collection: ["Harrypedia", "person", "${name.lastName()}"]
+---
+
+# ${name.getFullName()}\n\n`;
 
   // Add basic information
   markdown += `## Basic Information\n\n`;
@@ -169,7 +177,14 @@ function createFamilyTree(
     return true;
   });
 
-  let markdown = `# ${lastName} Family\n\n`;
+  // Add front matter compatible with gray-matter
+  let markdown = `---
+title: "${lastName} Family"
+gramps_id: "family-${lastName}"
+collection: ["Harrypedia", "family"]
+---
+
+# ${lastName} Family\n\n`;
 
   // Create nested list for each root person
   for (const rootPerson of rootPersons) {
