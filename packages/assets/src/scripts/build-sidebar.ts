@@ -60,9 +60,8 @@ export const buildNavigationTree = (
 
       const relativePath = fullPath.replace(pagesRoot, "").replace(/\\/g, "/");
       const cleanHref = relativePath
-        .replace(/index\.md$/, "") // remove index.md
-        .replace(/\.md$/, "") // remove .md
-        .replace(/\/$/, ""); // remove trailing slash
+        .replace(/index\.md$/, "/") // remove index.md
+        .replace(/\.md$/, "/"); // remove .md
 
       node.children.push({
         title: (data.title as string) || path.basename(entry, ".md"),

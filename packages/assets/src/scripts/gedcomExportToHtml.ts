@@ -19,10 +19,17 @@
   4. the IndividualName class should be used to obtain names and the text of link targets to provide uniformity
 */
 
-import * as path from "node:path";
 import * as fs from "node:fs";
+import * as path from "node:path";
+
+import { ParsedResult } from "@hp-stuff/schemas";
+import { buildNavigationTree } from "./build-sidebar";
+import { defaultLayout } from "./transform/layout";
+import { mdTohtml } from "./transform/mdTohtml";
+import { doConversion } from "./transform_potter_data";
 
 import debugFunction from "@shared/debug";
+
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 console.warn(
   `DEBUG is set to ${DEBUG} for ${new URL(import.meta.url).pathname}`
@@ -33,8 +40,6 @@ const markdownPagesDir = path.join(process.cwd(), "pages");
 const staticContent = path.join(process.cwd(), "people");
 const gedcomPrefix = "Harrypedia/people";
 
-import { doConversion } from "./transform_potter_data";
-
 const pagesCreated = doConversion(
   path.join(markdownPagesDir, gedcomPrefix),
   staticContent
@@ -43,6 +48,22 @@ const pagesCreated = doConversion(
 if (DEBUG) {
   console.warn(`conversion created: \n${pagesCreated.join("\n")}`);
 }
+
+const navTree = () => {
+  const navigationTree = buildNavigationTree();
+
+  if (DEBUG) {
+    console.warn(
+      "Generated navigation tree:",
+      JSON.stringify(navigationTree, null, 2)
+    );
+  }
+  fs.writeFileSync(
+    path.join(finalOutputDir, "routes/sidebar-routes.json"),
+    JSON.stringify(navigationTree, null, 2)
+  );
+};
+
 const filesCreatedDir = path.join(finalOutputDir, "filescreated");
 if (!fs.existsSync(filesCreatedDir)) {
   fs.mkdirSync(filesCreatedDir, {
@@ -65,24 +86,6 @@ if (!fs.existsSync(path.join(finalOutputDir, gedcomPrefix))) {
   });
 }
 
-import { buildNavigationTree } from "./build-sidebar";
-import { ParsedResult } from "@hp-stuff/schemas";
-import { defaultLayout } from "./transform/layout";
-import { mdTohtml } from "./transform/mdTohtml";
-
-const navigationTree = buildNavigationTree();
-
-if (DEBUG) {
-  console.warn(
-    "Generated navigation tree:",
-    JSON.stringify(navigationTree, null, 2)
-  );
-}
-fs.writeFileSync(
-  path.join(finalOutputDir, "routes/sidebar-routes.json"),
-  JSON.stringify(navigationTree, null, 2)
-);
-
 const getFiles = (basePath: string, filePath: string): string | string[] => {
   const node = path.join(basePath, filePath);
   const ns = fs.statSync(node);
@@ -99,6 +102,7 @@ const getFiles = (basePath: string, filePath: string): string | string[] => {
   }
 };
 
+navTree();
 const ignoredFiles = [".gitkeep", ".gitignore"];
 for (const file of getFiles(markdownPagesDir, ".")) {
   if (ignoredFiles.includes(path.basename(file))) {
@@ -132,7 +136,7 @@ for (const file of getFiles(markdownPagesDir, ".")) {
       console.log(`this is a markdown file`);
     }
     basename = path.basename(relativePath, ".md");
-    pr = await mdTohtml(relativePath.slice(0, -3));
+    pr = await mdTohtml(file.slice(0, -3));
   }
 
   const location = path.join(finalOutputDir, path.dirname(relativePath));
@@ -160,3 +164,4 @@ for (const file of getFiles(markdownPagesDir, ".")) {
     }
   }
 }
+navTree();

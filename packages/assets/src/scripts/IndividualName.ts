@@ -50,7 +50,7 @@ export class IndividualName {
     return name.length ? name : "Unknown";
   };
 
-  readonly firstName = (suffix: boolean = true) => {
+  readonly firstName = () => {
     let name = "";
 
     if (this.person.primary_name.first_name.length > 0) {
@@ -98,7 +98,7 @@ export class IndividualName {
   readonly displayName = () => {
     let name = "";
 
-    name = this.firstName(false);
+    name = this.firstName();
 
     const sn = this.lastName();
     if (sn.length) {

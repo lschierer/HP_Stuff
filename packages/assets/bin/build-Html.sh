@@ -6,6 +6,10 @@ export STEP=1
 
 mkdir -p ./dist/assets ./dist/styles
 
+if [ ! -e "./src/shared/sidebar-routes.json" ]; then
+ echo '{}' > ./src/shared/sidebar-routes.json
+fi
+
 ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "./pages/FanFiction/" -a ./dist/assets -s ./dist/styles
 
 #copy the directory structure
@@ -25,6 +29,12 @@ STEP=$((STEP + 1))
 
 pnpm tsx ${PWD}/src/scripts/gedcomExportToHtml.ts || exit $STEP
 STEP=$((STEP + 1))
+
+rsync -amv --exclude='styles' --exclude='routes' --exclude='filescreated' --exclude='assets'  dist/ ../greenwood/src/pages/ --delete  --delete-excluded
+
+rsync -av dist/styles/ ../greenwood/src/styles/
+
+rsync -av dist/assets/ ../greenwood/src/asssets/
 
 #pnpm tsx "$PWD/src/scripts/build-sidebar.ts" || exit 3
 #

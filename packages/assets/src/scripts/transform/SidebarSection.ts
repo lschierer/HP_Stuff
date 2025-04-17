@@ -81,7 +81,7 @@ export default class SidebarSection {
 
     return `
       <script type="module">
-        import "/client/SpectrumSideNav.js"
+        import "/components/Spectrum/SplitView.ts"
       </script>
       <nav class="spectrum-SideNav"><ul class="spectrum-SideNav spectrum-SideNav--multiLevel">${tree.children.map(render).join("")}</ul></nav>
     `;

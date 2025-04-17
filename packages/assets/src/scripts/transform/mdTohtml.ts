@@ -1,6 +1,5 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
-import { fileURLToPath } from "node:url";
 
 import { type ParsedResult } from "@hp-stuff/schemas";
 import { defaultLayout } from "./layout";
@@ -15,16 +14,13 @@ export const mdTohtml = async (
     console.log(`start of mdTohtml for ${reqPath}`);
   }
   const reqDir = path.dirname(reqPath);
-  const reqFile = path.basename(reqPath, ".html");
 
-  const mdPath = path.join(
-    fileURLToPath(import.meta.url),
-    "../../Pages/",
-    reqDir,
-    `${reqFile}.md`
-  );
+  const mdPath = reqPath.endsWith(".md") ? reqPath : `${reqPath}.md`;
 
   if (fs.existsSync(mdPath)) {
+    if (DEBUG) {
+      console.log(`file ${mdPath} exists in mdTohtml`);
+    }
     const fileContent = fs.readFileSync(mdPath, "utf-8");
 
     // Generate HTML from markdown content
@@ -38,6 +34,7 @@ export const mdTohtml = async (
     return result;
   } else {
     if (DEBUG) {
+      console.warn(`file ${mdPath} does not exist in mdTohtml`);
       return `<span>No File found for ${reqPath} at ${mdPath} </span>`;
     }
     return "";

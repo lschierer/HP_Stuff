@@ -5,23 +5,21 @@ import { visit } from "unist-util-visit";
 import type { ElementContent, Root } from "hast";
 import { z } from "zod";
 import matter from "gray-matter";
-import { readFileSync } from "node:fs";
 import { h } from "hastscript";
+import process from "node:process";
 
 import TopHeaderSection from "./TopHeader";
 import FooterHeaderSection from "./FooterSection";
 
 import { parseHtmlToHast, parseMarkdownToHast } from "./parseToHast";
 
+import SideBarRoutesImport from "@shared/sidebar-routes.json";
+
 //central control over whether or not to output debugging
 import debugFunction from "@shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
-import {
-  FrontMatter,
-  ParsedResult,
-  type NavigationItem,
-} from "@hp-stuff/schemas";
+import { FrontMatter, ParsedResult, NavigationItem } from "@hp-stuff/schemas";
 import SidebarSection from "./SidebarSection";
 
 /**
@@ -33,16 +31,17 @@ const isFamilyIndexPage = (route: string): boolean => {
   const routeParts: (string | undefined)[] = route.split("/");
   // Check if the route matches /Harrypedia/people/<lastname>/index
   // or /Harrypedia/people/<lastname>/ (which resolves to index)
+  const pwdParts = process.cwd().split("/").length;
   const result =
-    routeParts.length >= 4 &&
-    routeParts[1] === "Harrypedia" &&
-    routeParts[2] === "people" &&
-    (routeParts[4] === "index" ||
-      routeParts[4] === undefined ||
-      routeParts[4] === "");
+    routeParts.length > pwdParts &&
+    routeParts[pwdParts + 1] === "Harrypedia" &&
+    routeParts[pwdParts + 2] === "people" &&
+    (routeParts[pwdParts + 4] === "index" ||
+      routeParts[pwdParts + 4] === undefined ||
+      routeParts[pwdParts + 4] === "");
   if (DEBUG) {
-    if (!result && routeParts.length >= 4) {
-      console.log(`4th routeParts is ${routeParts[4]}`);
+    if (!result && routeParts.length >= pwdParts) {
+      console.log(`4th routeParts is ${routeParts[pwdParts + 4]}`);
     }
     console.log(`${route} ${result ? "is" : "is not"} a family index page`);
   }
@@ -93,12 +92,15 @@ const hasDirectoryIndexPlaceholder = (ast: Root): boolean => {
 const createDirectoryIndex = (ast: Root, currentRoute?: string): void => {
   try {
     // Read the sidebar-routes.json file
-    const sidebarRoutesPath = new URL(
-      "../shared/sidebar-routes.json",
-      import.meta.url
-    ).pathname;
-    const sidebarRoutesContent = readFileSync(sidebarRoutesPath, "utf8");
-    const sidebarRoutes = JSON.parse(sidebarRoutesContent) as NavigationItem;
+
+    let sidebarRoutes: NavigationItem | null = null;
+    const valid = NavigationItem.safeParse(SideBarRoutesImport);
+    if (valid.success) {
+      sidebarRoutes = valid.data;
+    } else {
+      console.error(valid.error);
+      return;
+    }
 
     if (DEBUG) {
       console.log("Creating directory index from sidebar routes");
@@ -519,7 +521,7 @@ const getTemplate = (options: LayoutOptions) => {
           Luke's HP Site${options.title.length ? ` - ${options.title}` : ""}
         </title>
         <meta name="description" content="Luke's Harry Potter Fan Site" />
-        <link rel="stylesheet" href="/styles/global2.css" />
+        <link rel="stylesheet" href="/styles/global.css" />
         <link rel="stylesheet" href="/styles/${useStandard ? "standard.css" : "splash.css"}" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -541,8 +543,7 @@ const getTemplate = (options: LayoutOptions) => {
 
         <meta name="google-adsense-account" content="ca-pub-8360834774752607" />
 
-        <script type="module" src="/client/entry-client.js "></script>
-        <script type="module" src="/client/theme.js"></script>
+        <script type="module" src="/components/Spectrum/Base.ts"></script>
 
       </head>
       <body>

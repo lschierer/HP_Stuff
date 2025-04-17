@@ -5,6 +5,8 @@ if (DEBUG) {
 }
 const fileDebug: Record<string, boolean> = {
   "/scripts/transform/FooterSection.ts": false,
+  "/scripts/transform/layout.ts": true,
+  "/scripts/transform/mdTohtml.ts": false,
   "/scripts/build-sidebar.ts": false,
   "/scripts/gedcomExportToHtml.ts": true,
   "/scripts/import_potter_data.ts": false,

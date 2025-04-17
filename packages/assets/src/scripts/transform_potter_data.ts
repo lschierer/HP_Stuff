@@ -349,9 +349,3 @@ export const doConversion = (
   console.log("Transform Potter Universe Gedcom Data Complete!");
   return pagesCreated(returnPages);
 };
-
-// Execute the conversion with command line arguments
-const outputDir = process.argv[2] || "./output";
-const staticContentDir = process.argv[3] || "./";
-
-doConversion(outputDir, staticContentDir);

@@ -148,7 +148,7 @@ export default class TopHeaderSection {
           type: "element",
           tagName: "script",
           properties: {
-            src: "/client/ThemeSelector.js",
+            src: "/components/ThemeSelector.ts",
             type: "module",
           },
           children: [],
