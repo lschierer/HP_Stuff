@@ -8,7 +8,7 @@ export NPX := `which npx`
 
 install:
   ${PNPM} install -r
-  ./assets/bin/perldeps.sh
+  ./packages/assets/bin/perldeps.sh
 
 [working-directory: 'packages/greenwood']
 dev: install parse
