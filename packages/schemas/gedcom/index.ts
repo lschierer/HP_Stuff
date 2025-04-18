@@ -18,3 +18,5 @@ export { Title } from "./person";
 export { AddressList } from "./person";
 export { PersonRefList } from "./person";
 export { Name } from "./person";
+
+export { TreePerson } from "./TreePerson";

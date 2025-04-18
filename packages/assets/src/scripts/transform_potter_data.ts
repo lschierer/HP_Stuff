@@ -11,7 +11,12 @@ import type {
 import { type NavigationItem } from "@hp-stuff/schemas";
 
 // Import the filtered Potter Data
-import { persons, events, families } from "./import_potter_data";
+import {
+  persons,
+  events,
+  families,
+  findPersonByHandle,
+} from "./import_potter_data";
 import { IndividualName } from "./IndividualName";
 
 //Default page base within the relative to *both* src and dest directories for the content
@@ -22,13 +27,6 @@ function ensureDirectoryExists(dirPath: string): void {
   if (!fs.existsSync(dirPath)) {
     fs.mkdirSync(dirPath, { recursive: true });
   }
-}
-
-// Function to find a person by handle
-function findPersonByHandle(
-  handle: string
-): GedcomPerson.GedcomElement | undefined {
-  return persons.find((p) => !p.handle.localeCompare(handle));
 }
 
 // Function to create markdown content for a person
@@ -258,6 +256,7 @@ const pagesCreated = (pageRoots: NavigationItem[]) => {
 export const doConversion = (
   outputDir: string,
   staticContentDir: string,
+  assetContentDir: string,
   pageBaseOveride?: string
 ) => {
   if (pageBaseOveride !== undefined) {
@@ -293,9 +292,27 @@ export const doConversion = (
     );
     const outputFilePath = path.join(outputDir, name.getFilename());
 
+    let finalContent = markdownContent;
+
+    // Check if there is an SVG to append
+    let SVGContentPath = path.join(
+      assetContentDir,
+      pageBase,
+      `${name.getFilename().slice(0, -3)}.svg`
+    );
+    if (fs.existsSync(SVGContentPath)) {
+      SVGContentPath = SVGContentPath.replace(assetContentDir, "");
+      SVGContentPath = SVGContentPath.startsWith("/")
+        ? `/assets${SVGContentPath}`
+        : `/assets/${SVGContentPath}`;
+      SVGContentPath = SVGContentPath.includes(" ")
+        ? `<${SVGContentPath}>`
+        : SVGContentPath;
+      finalContent += "\n" + `TREE-CHART:  ${SVGContentPath}`;
+    }
+
     // Check if there's static content to append
     const staticContentPath = path.join(staticContentDir, name.getFilename());
-    let finalContent = markdownContent;
 
     if (fs.existsSync(staticContentPath)) {
       const staticContent = fs.readFileSync(staticContentPath, "utf8");

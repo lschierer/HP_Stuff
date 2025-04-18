@@ -1,49 +1,32 @@
-import "../IndividualName.ts";
+import { type TreePerson } from "@hp-stuff/schemas/gedcom";
+import { IndividualName } from "./IndividualName";
 
-import {
-  GrampsState,
-  findFatherForChild,
-  findMotherForChild,
-} from "../state.ts";
-
-import { type TreePerson } from "./TreePerson.ts";
-import IndividualName from "../IndividualName.ts";
-
-import debugFunction from "../../../lib/debug.ts";
+import debugFunction from "../shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-import drawTree from "./DotChart.ts";
+import {
+  persons,
+  findFatherForPerson,
+  findMotherForPerson,
+} from "./import_potter_data";
 
-export default class AncestorsTreeChart extends HTMLElement {
+import drawTree from "./DotChart";
+
+export default class AncestorsTreeChart {
   public grampsId: string = "";
   public isRoot: boolean = false;
   public maxDepth: number = -1;
 
   private extended_family = new Map<string, TreePerson>();
 
-  protected populateLocalAttributes = () => {
-    for (const attr of this.attributes) {
-      if (!attr.name.toLowerCase().localeCompare("grampsId".toLowerCase())) {
-        this.grampsId = attr.value;
-      } else if (
-        !attr.name.toLowerCase().localeCompare("maxDepth".toLowerCase())
-      ) {
-        this.maxDepth = Number(attr.value);
-      } else if (
-        !attr.name.toLowerCase().localeCompare("isRoot".toLowerCase())
-      ) {
-        this.isRoot = true;
-      }
-    }
-    if (DEBUG) {
-      console.log(
-        `found params grampsId: '${this.grampsId}', maxDepth: '${this.maxDepth}', isRoot: ${this.isRoot}`
-      );
-    }
-  };
+  constructor(grampsID: string, maxDepth: number, isRoot: boolean = true) {
+    this.grampsId = grampsID;
+    this.maxDepth = maxDepth;
+    this.isRoot = isRoot;
+  }
 
   buildGenerationTable = (root: TreePerson) => {
     // 2. root is already found and passed to this function.
@@ -65,9 +48,9 @@ export default class AncestorsTreeChart extends HTMLElement {
         } else {
           person.generation = 0;
         }
-        const father = findFatherForChild(person.data);
-        if (father) {
-          const fatherName = new IndividualName(father.gramps_id);
+        const father = findFatherForPerson(person.data);
+        if (father !== null) {
+          const fatherName = new IndividualName(father);
           const node: TreePerson = {
             id: father.gramps_id,
             name: fatherName.displayName(),
@@ -87,9 +70,9 @@ export default class AncestorsTreeChart extends HTMLElement {
           }
         }
 
-        const mother = findMotherForChild(person.data);
+        const mother = findMotherForPerson(person.data);
         if (mother) {
-          const motherName = new IndividualName(mother.gramps_id);
+          const motherName = new IndividualName(mother);
           const node: TreePerson = {
             id: mother.gramps_id,
             name: motherName.displayName(),
@@ -131,7 +114,7 @@ export default class AncestorsTreeChart extends HTMLElement {
       returnable += `<ul class="ascending-tree" id="generations-${generation}">`;
     }
 
-    const LocalRootName = new IndividualName(localRoot.data.gramps_id);
+    const LocalRootName = new IndividualName(localRoot.data);
 
     if (DEBUG) {
       console.log(`current localRoot is is `, localRoot.id);
@@ -171,18 +154,10 @@ export default class AncestorsTreeChart extends HTMLElement {
     return returnable;
   };
 
-  async connectedCallback() {
-    this.populateLocalAttributes();
-
-    const template = document.createElement("template");
-    template.innerHTML = `
-      <div id="familyTree" class="svg-container">
-      </div>
-    `;
-
-    const rootPerson = GrampsState.people.get(this.grampsId);
+  readonly printTree = async () => {
+    const rootPerson = persons.find((p) => p.gramps_id === this.grampsId);
     if (rootPerson) {
-      const LocalRootName = new IndividualName(rootPerson.gramps_id);
+      const LocalRootName = new IndividualName(rootPerson);
       const rootNode: TreePerson = {
         id: rootPerson.gramps_id,
         name: LocalRootName.displayName(),
@@ -199,15 +174,16 @@ export default class AncestorsTreeChart extends HTMLElement {
           `after buildGenerationTable, I have map with size ${this.extended_family.size}`
         );
       }
-      if (table) {
-        const familyTreeDiv = template.content.querySelector("#familyTree");
-        if (familyTreeDiv) {
-          familyTreeDiv.appendChild(table);
-        }
+      if (table && table.length) {
+        return `
+          <div class="TimelineCard rounded border-2">
+            <div id="familyTree" class="svg-container">
+              ${table}
+            </div>
+          </div>
+        `;
       }
     }
-
-    this.appendChild(template.content.cloneNode(true));
-  }
+    return "";
+  };
 }
-customElements.define("ancestors-treechart", AncestorsTreeChart);

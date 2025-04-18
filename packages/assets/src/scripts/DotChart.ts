@@ -8,13 +8,11 @@ import {
 } from "ts-graphviz";
 import { Graphviz } from "@hpcc-js/wasm-graphviz";
 
-import { type TreePerson } from "./TreePerson.ts";
+import { type TreePerson } from "@hp-stuff/schemas/gedcom";
 
-import "../IndividualName.ts";
-import IndividualName from "../IndividualName.ts";
+import { IndividualName } from "./IndividualName";
 
-import debugFunction from "../../../lib/debug.ts";
-
+import debugFunction from "../shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
@@ -103,21 +101,25 @@ const groupByLevel = (levels: Map<string, number>): Map<number, string[]> => {
   return groups;
 };
 
-const initialSetup = (treeMap: Map<string, TreePerson>) => {
+const initialSetup = (
+  treeMap: Map<string, TreePerson>,
+  linkTargetBase: string = ""
+) => {
   const levels = computeLevels(treeMap);
   const levelGroups = groupByLevel(levels);
   const graph = new Digraph("G");
 
   // Create nodes
   for (const node of treeMap.values()) {
-    const ine = new IndividualName(node.data.gramps_id);
+    const ine = new IndividualName(node.data);
     const genderClass = node.data.gender ? "father" : "mother";
+    const linkTarget = ine.formatUrlForMarkdown(linkTargetBase);
     graph.addNode(
       new Node(node.id, {
         [dotAttribute.label]: ine.displayName(),
         [dotAttribute.shape]: "rect",
         [dotAttribute.class]: `familyNode ${genderClass}`,
-        [dotAttribute.href]: ine.buildLinkTarget(),
+        [dotAttribute.href]: linkTarget,
       })
     );
   }
@@ -242,8 +244,11 @@ const initialSetup = (treeMap: Map<string, TreePerson>) => {
   return graph;
 };
 
-const drawTree = async (familyMembers: Map<string, TreePerson>) => {
-  const G = initialSetup(familyMembers);
+const drawTree = async (
+  familyMembers: Map<string, TreePerson>,
+  linkTarget: string = ""
+) => {
+  const G = initialSetup(familyMembers, linkTarget);
   G.attributes.node.set("shape", "box");
   G.set(dotAttribute.rankdir, "BT");
   G.set(dotAttribute.ordering, "in");
@@ -263,14 +268,17 @@ const drawTree = async (familyMembers: Map<string, TreePerson>) => {
       //`\n created svg \n ${svg.toString()}`
     );
   }
-  const parser = new DOMParser();
-  const doc = parser.parseFromString(svgString, "image/svg+xml");
-  const svg = doc.querySelector("svg");
-  if (svg) {
-    svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
-    svg.setAttribute("width", "100%");
-    svg.setAttribute("height", "100%");
-  }
-  return svg;
+  // Add the attributes directly to the SVG string instead of using DOM methods
+  // First, check if width and height attributes already exist and remove them
+  svgString = svgString.replace(/<svg ([^>]*)width="[^"]*"/, '<svg $1');
+  svgString = svgString.replace(/<svg ([^>]*)height="[^"]*"/, '<svg $1');
+  
+  // Then add our attributes
+  svgString = svgString.replace(
+    /<svg /,
+    '<svg preserveAspectRatio="xMidYMid meet" width="100%" height="100%" '
+  );
+  
+  return svgString;
 };
 export default drawTree;

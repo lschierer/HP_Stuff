@@ -22,7 +22,10 @@
 import * as fs from "node:fs";
 import * as path from "node:path";
 
+import { persons } from "./import_potter_data";
+import { IndividualName } from "./IndividualName";
 import { doConversion } from "./transform_potter_data";
+import AncestorsTreeChart from "./TreeChart";
 
 import debugFunction from "@shared/debug";
 
@@ -32,6 +35,7 @@ console.warn(
 );
 
 const markdownPagesDir = path.join(process.cwd(), "pages");
+const assetsDir = path.join(process.cwd(), "assets");
 const staticContent = path.join(process.cwd(), "people");
 const gedcomPrefix = "Harrypedia/people";
 const finalDestinationDir = path.join(process.cwd(), "../greenwood/src/pages");
@@ -52,9 +56,71 @@ const getFiles = (basePath: string, filePath: string): string | string[] => {
   }
 };
 
+const svgTargetDir = path.join(assetsDir, gedcomPrefix);
+
+if (!fs.existsSync(svgTargetDir)) {
+  fs.mkdirSync(svgTargetDir, {
+    recursive: true,
+    mode: 0o755,
+  });
+}
+if (!fs.existsSync(path.join(assetsDir, "filescreated"))) {
+  fs.mkdirSync(path.join(assetsDir, "filescreated"), {
+    recursive: true,
+    mode: 0o755,
+  });
+}
+
+const SVGsCreated = new Array<string>();
+
+for (const person of persons) {
+  const treeChart = new AncestorsTreeChart(person.gramps_id, 7, true);
+  const svgData = await treeChart.printTree();
+  if (svgData.length) {
+    const individualName = new IndividualName(person);
+    const svgFileName = path.join(
+      svgTargetDir,
+      `${individualName.getFilename().slice(0, -3)}.svg`
+    );
+    console.log(`svgFileName is ${svgFileName}`);
+
+    //the generated file name can introduce a lastName directory
+    if (!fs.existsSync(path.dirname(svgFileName))) {
+      fs.mkdirSync(path.dirname(svgFileName), {
+        recursive: true,
+        mode: 0o755,
+      });
+    }
+    fs.writeFileSync(svgFileName, svgData, { encoding: "utf-8" });
+    SVGsCreated.push(svgFileName);
+  }
+}
+
+for (const f of getFiles(svgTargetDir, ".")) {
+  const d = path
+    .dirname(f)
+    .replace(assetsDir, path.join(finalDestinationDir, "../assets"));
+
+  if (!fs.existsSync(d)) {
+    fs.mkdirSync(d, {
+      recursive: true,
+      mode: 0o755,
+    });
+  }
+  const target = path.join(d, path.basename(f));
+  fs.copyFileSync(f, target);
+  SVGsCreated.push(target);
+}
+
+fs.writeFileSync(
+  path.join(assetsDir, "filescreated", `SVGsCreated.txt`),
+  SVGsCreated.join("\n")
+);
+
 const pagesCreated = doConversion(
   path.join(markdownPagesDir, gedcomPrefix),
-  staticContent
+  staticContent,
+  assetsDir
 );
 
 if (DEBUG) {
