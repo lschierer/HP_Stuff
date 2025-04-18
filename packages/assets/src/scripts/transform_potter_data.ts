@@ -39,12 +39,17 @@ function createPersonMarkdown(
   events: GedcomEvent.GedcomElement[]
 ): string {
   const name = new IndividualName(person);
-  
+
   // Add front matter compatible with gray-matter
   let markdown = `---
-title: "${name.getFullName()}"
-gramps_id: "${person.gramps_id}"
-collection: ["Harrypedia", "person", "${name.lastName()}"]
+title: >-
+  ${name.getFullName()}
+gramps_id: ${person.gramps_id}
+layout: standard
+collection:
+  - Harrypedia
+  - person
+  - ${name.lastName()}
 ---
 
 # ${name.getFullName()}\n\n`;
@@ -179,9 +184,14 @@ function createFamilyTree(
 
   // Add front matter compatible with gray-matter
   let markdown = `---
-title: "${lastName} Family"
-gramps_id: "family-${lastName}"
-collection: ["Harrypedia", "family"]
+title: >-
+  ${lastName} Family
+gramps_id: >-
+  family-${lastName}
+layout: standard
+collection:
+  - Harrypedia
+  - family
 ---
 
 # ${lastName} Family\n\n`;

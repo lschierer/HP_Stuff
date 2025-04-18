@@ -19,7 +19,12 @@ import SideBarRoutesImport from "@shared/sidebar-routes.json";
 import debugFunction from "@shared/debug";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
-import { FrontMatter, ParsedResult, NavigationItem } from "@hp-stuff/schemas";
+import {
+  FrontMatter,
+  ParsedResult,
+  NavigationItem,
+  LayoutOptions,
+} from "@hp-stuff/schemas";
 import SidebarSection from "./SidebarSection";
 
 /**
@@ -482,28 +487,6 @@ const processHtml = async (
     } as ParsedResult;
   }
 };
-
-//exported to allow other files to ensure they send the right kind of object to defaultLayout
-
-const CommonOptions = z.object({
-  title: z.string(),
-  route: z.string().optional(),
-  sidebar: z.boolean().optional(),
-});
-type CommonOptions = z.infer<typeof CommonOptions>;
-
-const HTMLOptions = CommonOptions.extend({
-  content: z.string(),
-}).strict();
-type HTMLOptions = z.infer<typeof HTMLOptions>;
-
-const MarkdownOptions = CommonOptions.extend({
-  markdownContent: z.string(),
-}).strict();
-type MarkdownOptions = z.infer<typeof MarkdownOptions>;
-
-export const LayoutOptions = z.union([HTMLOptions, MarkdownOptions]);
-export type LayoutOptions = z.infer<typeof LayoutOptions>;
 
 // default template for my site
 const getTemplate = (options: LayoutOptions) => {

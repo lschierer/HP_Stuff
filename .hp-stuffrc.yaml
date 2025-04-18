@@ -1,11 +1,11 @@
-SITETITLE: >-
+sitetitle: >-
   Luke's HP Fan Site
-TOPLEVELSECTIONS:
+toplevelsections:
   - Harrypedia
   - Fan Fiction
   - Searches
   - Bookmarks
-BRANCH: greenwood
-PRIVACYPOLICY: "false"
-REPO: "file://../../"
-AUTHORS: git
+branch: greenwood
+privacypolicy: "false"
+repo: "file://../../"
+authors: git
