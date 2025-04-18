@@ -11,25 +11,13 @@
 @import "remark-alerts/styles/github-colors-light.css";
 @import "remark-alerts/styles/github-colors-dark-class.css";
 
-/* Default Colors */
 :root {
-  --spectrum-background-base-color: var(--spectrum-gray-200);
-  --mod-splitview-background-color: var(--spectrum-background-base-color);
-  --mod-splitview-handle-background-color: var(--spectrum-gray-400);
-  --sl-color-accent-high: var(--spectrum-cyan-1000);
-  --sl-color-accent: var(--spectrum-cyan-700);
-  --sl-color-accent-low: var(--spectrum-cyan-400);
-  --sl-color-bg: var(--spectrum-background-base-color);
-
-  --sl-color-white: var(--spectrum-gray-50);
-  --sl-color-gray-1: var(--spectrum-gray-200);
-  --sl-color-gray-2: var(--spectrum-gray-300);
-  --sl-color-gray-3: var(--spectrum-gray-400);
-  --sl-color-gray-4: var(--spectrum-gray-500);
-  --sl-color-gray-5: var(--spectrum-gray-600);
-  --sl-color-gray-6: var(--spectrum-gray-700);
-  --sl-color-gray-7: var(--spectrum-gray-800);
-  --sl-color-black: var(--spectrum-gray-900);
+  --mod-spacing-100: 0.5rem;
+  --mod-spacing-200: 1rem;
+  --mod-spacing-300: 1.5rem;
+  --mod-spacing-400: 2rem;
+  --mod-spacing-500: 2.5rem;
+  --mod-spacing-600: 3rem;
 
   /* Layout variables that can be overridden by consuming projects */
   --theme-header-height: 100px;
@@ -37,9 +25,18 @@
   --theme-non-content-height: calc(
     var(--theme-header-height) + var(--theme-footer-height)
   );
-}
 
-/* I find I prefer less color range between high and low in dark mode */
+  /*the variable names come from Astro's Starlight theme, but are useful as global names for things Spectrum uses different names for. */
+  --sl-color-accent-high: var(--spectrum-cyan-1000);
+  --sl-color-accent: var(--spectrum-cyan-700);
+  --sl-color-accent-low: var(--spectrum-cyan-400);
+
+  --mod-background-base-color: var(--spectrum-gray-200);
+  --mod-splitview-background-color: var(--mod-background-base-color);
+  --mod-splitview-handle-background-color: var(--spectrum-gray-400);
+  --mod-heading-font-color: --spectrum-border-color: var(--spectrum-gray-300);
+  --spectrum-text-color: var(--spectrum-gray-900);
+}
 
 /* Light mode colors. */
 :root[data-theme="light"],
@@ -54,11 +51,10 @@
   --sl-color-accent-low: var(--spectrum-cyan-500);
 }
 
-/* Apply root variables to theme and backdrop */
 ::backdrop,
 sp-theme {
-  background-color: var(--spectrum-background-base-color);
-  color: var(--sl-color-black);
+  background-color: var(--mod-background-base-color);
+  color: var(--spectrum-gray-900);
 }
 
 *,
@@ -67,54 +63,28 @@ sp-theme {
   box-sizing: border-box;
 }
 
-html {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
+html,
 body {
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 100vh;
-  min-height: 100vh;
-  color: var(--sl-color-black);
-  background-color: var(--spectrum-background-base-color);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
+  background-color: var(--mod-background-base-color);
+  color: var(--spectrum-text-color);
+  font-family: sans-serif;
 
-  --mod-body-font-color: var(--sl-color-black);
+  --mod-body-font-color: var(--spectrum-gray-900);
   --mod-heading-font-color: var(--sl-color-accent);
   --mod-heading-serif-font-family: "Inconsolata", monospace;
   --mod-body-serif-font-family: "Inconsolata", monospace;
 }
 
-sp-split-view {
-  min-height: 0;
-  flex: 1 1 auto;
-  height: calc(100vh - var(--theme-non-content-height));
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
   overflow: hidden;
-}
-
-sp-split-view ::slotted(*) {
-  min-width: 0;
-  min-height: 0;
-  flex-shrink: 1;
-  overflow: auto;
-}
-
-sp-theme {
-  z-index: 0;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  width: 100%;
-  flex: 1;
-  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
 }
 
 header h1.spectrum-Heading {
@@ -129,23 +99,12 @@ div.site-title {
 }
 
 body div.main {
-  flex: 1 1 auto;
-  min-width: 0;
-  min-height: 0;
   box-sizing: border-box;
-  width: 100%;
-  padding-left: 1rem;
-  overflow-x: hidden;
-  overflow-y: auto;
-  height: 100%;
-  background-color: var(--spectrum-background-base-color);
+  background-color: var(--mod-background-base-color);
 }
 
 main {
-  flex: 1 1 auto;
-  min-width: 0;
-  min-height: 0;
-  background-color: var(--spectrum-background-base-color);
+  background-color: var(--mod-background-base-color);
 }
 
 footer {
@@ -174,11 +133,11 @@ span.copyright {
 sp-split-view div.nav {
   height: 100%;
   overflow-y: auto;
-  background-color: var(--sl-color-gray-2);
+  background-color: var(--spectrum-gray-300);
 }
 /* Title section styling - more specific to avoid conflicts */
 sp-theme > div.title-section {
-  background-color: var(--spectrum-background-base-color);
+  background-color: var(--mod-background-base-color);
   padding: 1rem;
   width: 100%;
 }
@@ -192,7 +151,7 @@ sp-theme > div.title-section h1 {
 /* Site header container - more specific to avoid conflicts with TopHeader.css */
 sp-theme > header {
   width: 100%;
-  background-color: var(--spectrum-background-base-color);
+  background-color: var(--mod-background-base-color);
+  padding: 0;
+  height: fit-content;
 }
-
-/* The .header class in TopHeader.css is for the navigation bar specifically */
