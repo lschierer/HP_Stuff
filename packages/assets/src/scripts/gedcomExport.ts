@@ -61,6 +61,22 @@ if (DEBUG) {
   console.warn(`conversion created: \n${pagesCreated.join("\n")}`);
 }
 
+for (const f of getFiles(path.join(markdownPagesDir, gedcomPrefix), ".")) {
+  const d = path.dirname(f).replace(markdownPagesDir, finalDestinationDir);
+
+  if (!fs.existsSync(d)) {
+    fs.mkdirSync(d, {
+      recursive: true,
+      mode: 0o755,
+    });
+  }
+  const target = path.join(d, path.basename(f));
+  fs.copyFileSync(f, target);
+  pagesCreated.push(target);
+}
+
+// record what was created for the clean script
+
 const filesCreatedDir = path.join(markdownPagesDir, "filescreated");
 if (!fs.existsSync(filesCreatedDir)) {
   fs.mkdirSync(filesCreatedDir, {
@@ -76,15 +92,3 @@ fs.writeFileSync(
     encoding: "utf-8",
   }
 );
-
-for (const f of getFiles(path.join(markdownPagesDir, gedcomPrefix), ".")) {
-  const d = path.dirname(f).replace(markdownPagesDir, finalDestinationDir);
-
-  if (!fs.existsSync(d)) {
-    fs.mkdirSync(d, {
-      recursive: true,
-      mode: 0o755,
-    });
-  }
-  fs.copyFileSync(f, path.join(d, path.basename(f)));
-}

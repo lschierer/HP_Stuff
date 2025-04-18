@@ -68,6 +68,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  min-height: 100vh;
   background-color: var(--mod-background-base-color);
   color: var(--spectrum-text-color);
   font-family: sans-serif;

@@ -52,7 +52,7 @@ collection:
   - ${name.lastName()}
 ---
 
-# ${name.getFullName()}\n\n`;
+\n`;
 
   // Add basic information
   markdown += `## Basic Information\n\n`;
@@ -101,7 +101,7 @@ collection:
             const spouse = findPersonByHandle(spouseHandle);
             if (spouse) {
               const spouseName = new IndividualName(spouse);
-              markdown += `- **Spouse**: [${spouseName.getFullName()}](/${spouseName.formatUrlForMarkdown()})\n`;
+              markdown += `- **Spouse**: [${spouseName.getFullName()}](${spouseName.formatUrlForMarkdown(`${pageBase}/`)})\n`;
             }
           }
 
@@ -112,7 +112,7 @@ collection:
               const child = findPersonByHandle(childRef.ref);
               if (child) {
                 const childName = new IndividualName(child);
-                markdown += `  - [${childName.getFullName()}](/${childName.formatUrlForMarkdown()})\n`;
+                markdown += `  - [${childName.getFullName()}](${childName.formatUrlForMarkdown(`${pageBase}/`)})\n`;
               }
             });
           }
@@ -136,7 +136,7 @@ collection:
           const father = findPersonByHandle(family.father_handle);
           if (father) {
             const fatherName = new IndividualName(father);
-            markdown += `  - **Father**: [${fatherName.getFullName()}](/${fatherName.formatUrlForMarkdown()})\n`;
+            markdown += `  - **Father**: [${fatherName.getFullName()}](${fatherName.formatUrlForMarkdown(`${pageBase}/`)})\n`;
           }
         }
 
@@ -144,7 +144,7 @@ collection:
           const mother = findPersonByHandle(family.mother_handle);
           if (mother) {
             const motherName = new IndividualName(mother);
-            markdown += `  - **Mother**: [${motherName.getFullName()}](/${motherName.formatUrlForMarkdown()})\n`;
+            markdown += `  - **Mother**: [${motherName.getFullName()}](${motherName.formatUrlForMarkdown(`${pageBase}/`)})\n`;
           }
         }
         markdown += "\n";
@@ -294,12 +294,7 @@ export const doConversion = (
     const outputFilePath = path.join(outputDir, name.getFilename());
 
     // Check if there's static content to append
-    const staticContentPath = path.join(
-      process.cwd(),
-      staticContentDir,
-      pageBase,
-      name.getFilename()
-    );
+    const staticContentPath = path.join(staticContentDir, name.getFilename());
     let finalContent = markdownContent;
 
     if (fs.existsSync(staticContentPath)) {
@@ -318,20 +313,13 @@ export const doConversion = (
     const indexFilePath = path.join(outputDir, lastName, "index.md");
 
     // Check if there's static content to append
-    const staticIndexPath = path.join(
-      process.cwd(),
-      staticContentDir,
-      pageBase,
-      lastName,
-      "index.md"
-    );
+    const staticIndexPath = path.join(staticContentDir, lastName, "index.md");
     let finalContent = familyTreeMarkdown;
 
     if (fs.existsSync(staticIndexPath)) {
       const staticContent = fs.readFileSync(staticIndexPath, "utf8");
       finalContent += "\n\n---\n\n" + staticContent;
     }
-
     // Write the index file
     fs.writeFileSync(indexFilePath, finalContent);
 
