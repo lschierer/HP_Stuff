@@ -75,7 +75,7 @@ const SVGsCreated = new Array<string>();
 
 for (const person of persons) {
   const treeChart = new AncestorsTreeChart(person.gramps_id, 7, true);
-  const svgData = await treeChart.printTree();
+  const svgData = await treeChart.printTree(gedcomPrefix);
   if (svgData.length) {
     const individualName = new IndividualName(person);
     const svgFileName = path.join(

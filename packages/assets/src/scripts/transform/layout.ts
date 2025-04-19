@@ -578,7 +578,7 @@ const getTemplate = (options: LayoutOptions) => {
   `;
 };
 
-const renderLayout = async (options: LayoutOptions): Promise<ParsedResult> => {
+export const renderLayout = async (options: LayoutOptions): Promise<ParsedResult> => {
   if (DEBUG) {
     console.log(`in layout.ts renderLayout`);
   }
@@ -587,9 +587,3 @@ const renderLayout = async (options: LayoutOptions): Promise<ParsedResult> => {
   }
   return await processHtml(options);
 };
-
-export const defaultLayout = z
-  .function()
-  .args(LayoutOptions)
-  .returns(ParsedResult.promise())
-  .implement(renderLayout);

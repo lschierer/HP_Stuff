@@ -48,6 +48,8 @@ collection:
   - Harrypedia
   - person
   - ${name.lastName()}
+imports:
+  - /components/TreeChartDisplay.ts type="module"
 ---
 
 \n`;
@@ -308,7 +310,8 @@ export const doConversion = (
       SVGContentPath = SVGContentPath.includes(" ")
         ? `<${SVGContentPath}>`
         : SVGContentPath;
-      finalContent += "\n" + `TREE-CHART:  ${SVGContentPath}`;
+      finalContent +=
+        "\n" + `<tree-chart svgpath="${SVGContentPath}"></tree-chart>`;
     }
 
     // Check if there's static content to append

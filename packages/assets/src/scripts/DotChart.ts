@@ -108,6 +108,9 @@ const initialSetup = (
   const levels = computeLevels(treeMap);
   const levelGroups = groupByLevel(levels);
   const graph = new Digraph("G");
+  if (linkTargetBase.length && !linkTargetBase.endsWith("/")) {
+    linkTargetBase += "/";
+  }
 
   // Create nodes
   for (const node of treeMap.values()) {
@@ -270,15 +273,15 @@ const drawTree = async (
   }
   // Add the attributes directly to the SVG string instead of using DOM methods
   // First, check if width and height attributes already exist and remove them
-  svgString = svgString.replace(/<svg ([^>]*)width="[^"]*"/, '<svg $1');
-  svgString = svgString.replace(/<svg ([^>]*)height="[^"]*"/, '<svg $1');
-  
+  svgString = svgString.replace(/<svg ([^>]*)width="[^"]*"/, "<svg $1");
+  svgString = svgString.replace(/<svg ([^>]*)height="[^"]*"/, "<svg $1");
+
   // Then add our attributes
   svgString = svgString.replace(
     /<svg /,
     '<svg preserveAspectRatio="xMidYMid meet" width="100%" height="100%" '
   );
-  
+
   return svgString;
 };
 export default drawTree;

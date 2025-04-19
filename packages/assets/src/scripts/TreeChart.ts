@@ -28,7 +28,7 @@ export default class AncestorsTreeChart {
     this.isRoot = isRoot;
   }
 
-  buildGenerationTable = (root: TreePerson) => {
+  buildGenerationTable = (root: TreePerson, linkBase: string = "") => {
     // 2. root is already found and passed to this function.
 
     // 3. Use a breadth-first search (BFS) to determine generations
@@ -95,66 +95,10 @@ export default class AncestorsTreeChart {
       }
     }
 
-    return drawTree(this.extended_family);
+    return drawTree(this.extended_family, linkBase);
   };
 
-  protected printList = (
-    localRoot: TreePerson,
-    generation = 0,
-    isRoot = false
-  ) => {
-    if (DEBUG) {
-      console.log(
-        `printList called for generation ${generation} and localRoot ${localRoot.id}`
-      );
-    }
-
-    let returnable = "";
-    if (isRoot) {
-      returnable += `<ul class="ascending-tree" id="generations-${generation}">`;
-    }
-
-    const LocalRootName = new IndividualName(localRoot.data);
-
-    if (DEBUG) {
-      console.log(`current localRoot is is `, localRoot.id);
-    }
-
-    if (Array.isArray(localRoot.parents) && localRoot.parents.length) {
-      returnable += `
-                <li class="ascending-tree">
-                  <ul class="${Array.isArray(localRoot.parents) && localRoot.parents.length ? "ascending-tree" : "leaf"}" id="generations-${generation + 1}">
-                    ${localRoot.parents
-                      .map((p) => {
-                        const pi = this.extended_family.get(p);
-                        if (pi) {
-                          return this.printList(pi, generation + 1);
-                        } else return "";
-                      })
-                      .join("\n")}
-                  </ul>
-                  <span>
-                    ${LocalRootName.displayName()}
-                  </span>
-                </li>
-              `;
-    } else {
-      returnable += `
-                <li class="leaf">
-                  <span>
-                    ${LocalRootName.displayName()}
-                  </span>
-                </li>
-              `;
-    }
-
-    if (isRoot) {
-      returnable += "</ul>";
-    }
-    return returnable;
-  };
-
-  readonly printTree = async () => {
+  readonly printTree = async (linkBase: string = "") => {
     const rootPerson = persons.find((p) => p.gramps_id === this.grampsId);
     if (rootPerson) {
       const LocalRootName = new IndividualName(rootPerson);
@@ -168,20 +112,14 @@ export default class AncestorsTreeChart {
 
       this.extended_family.set(rootNode.id, rootNode);
 
-      const table = await this.buildGenerationTable(rootNode);
+      const table = await this.buildGenerationTable(rootNode, linkBase);
       if (DEBUG) {
         console.log(
           `after buildGenerationTable, I have map with size ${this.extended_family.size}`
         );
       }
       if (table && table.length) {
-        return `
-          <div class="TimelineCard rounded border-2">
-            <div id="familyTree" class="svg-container">
-              ${table}
-            </div>
-          </div>
-        `;
+        return table;
       }
     }
     return "";
