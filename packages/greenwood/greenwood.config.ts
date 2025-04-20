@@ -7,7 +7,9 @@ import { SiteConfig } from "@hp-stuff/schemas";
 import yaml from "js-yaml";
 
 import { TopHeaderSectionPlugin } from "topheader-plugin";
+import { ExternalPluginFooterSection } from "footersection-plugin";
 import { cosmiconfig } from "cosmiconfig";
+import { abort } from "node:process";
 const loadConfig = async () => {
   console.log(`loadConfig running`);
 
@@ -74,7 +76,10 @@ if (config) {
   console.log(`No config available.`);
 }
 export const LocalConfig = config;
-
+if (!LocalConfig) {
+  throw new Error(`LocalConfig is false`);
+  abort();
+}
 const gc: Config = {
   useTsc: true,
   activeContent: true,
@@ -107,6 +112,7 @@ const gc: Config = {
     }),
     greenwoodPluginAdapterAws(),
     TopHeaderSectionPlugin(LocalConfig),
+    ExternalPluginFooterSection(LocalConfig),
   ],
 };
 export default gc;

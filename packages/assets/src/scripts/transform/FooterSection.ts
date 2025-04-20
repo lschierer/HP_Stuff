@@ -17,11 +17,11 @@ export default class FooterHeaderSection {
   private repo = fileURLToPath(new URL(import.meta.url));
 
   constructor() {
-    if (LocalConfig && LocalConfig.REPO.length) {
-      if (LocalConfig.REPO.startsWith("file://")) {
-        this.repo = LocalConfig.REPO.replace("file://", "");
+    if (LocalConfig && LocalConfig.repo.length) {
+      if (LocalConfig.repo.startsWith("file://")) {
+        this.repo = LocalConfig.repo.replace("file://", "");
       } else {
-        this.repo = LocalConfig.REPO;
+        this.repo = LocalConfig.repo;
       }
     } else {
       this.repo = "./";

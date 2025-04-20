@@ -1,5 +1,5 @@
 import yaml from "js-yaml";
-import { Config } from "@hp-stuff/schemas";
+import { SiteConfig } from "@hp-stuff/schemas";
 import * as fs from "node:fs";
 import { cosmiconfig } from "cosmiconfig";
 
@@ -19,7 +19,7 @@ const loadConfig = async () => {
         if (DEBUG) {
           console.log(`checking ${filepath}`);
         }
-        const valid = Config.safeParse(
+        const valid = SiteConfig.safeParse(
           yaml.load(fs.readFileSync(filepath, "utf-8"))
         );
         if (valid.success) {
@@ -34,7 +34,7 @@ const loadConfig = async () => {
         return false;
       },
       ".yml": (filepath) => {
-        const valid = Config.safeParse(
+        const valid = SiteConfig.safeParse(
           yaml.load(fs.readFileSync(filepath, "utf-8"))
         );
         if (valid.success) {
@@ -69,11 +69,11 @@ const loadConfig = async () => {
 let config:
   | false
   | {
-      config: Config;
+      config: SiteConfig;
       filepath: string;
       isEmpty?: boolean;
     }
-  | Config = await loadConfig();
+  | SiteConfig = await loadConfig();
 if (config) {
   if (DEBUG) {
     console.log(`local config is ${JSON.stringify(config.config)}`);

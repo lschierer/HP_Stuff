@@ -7,5 +7,5 @@ toplevelsections:
   - Bookmarks
 branch: greenwood
 privacypolicy: "false"
-repo: "file://../../"
+repo: "file://../.."
 authors: git
