@@ -1,9 +1,9 @@
-@import "@spectrum-css/tokens";
-@import "@spectrum-css/page";
-@import "@spectrum-css/typography";
-@import "@spectrum-css/alertbanner";
-@import "@spectrum-css/button";
-@import "@spectrum-css/divider";
+@import url("@spectrum-css/tokens");
+@import url("@spectrum-css/page");
+@import url("@spectrum-css/typography");
+@import url("@spectrum-css/alertbanner");
+@import url("@spectrum-css/button");
+@import url("@spectrum-css/divider");
 
 iconify-icon {
   margin-right: 1.5rem;
@@ -11,7 +11,7 @@ iconify-icon {
 }
 
 li p {
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 li > .magical {
@@ -68,7 +68,7 @@ ul.timeline {
   position: relative;
 }
 
-ul.timeline:before {
+ul.timeline::before {
   content: " ";
   background: #bebebe;
   display: inline-block;
@@ -87,7 +87,7 @@ ul.timeline > li:first-child {
   padding-top: 0.03em;
 }
 
-ul.timeline > li:before {
+ul.timeline > li::before {
   content: " ";
   background: white;
   display: inline-block;
@@ -103,6 +103,7 @@ ul.timeline > li:before {
 section {
   margin-bottom: 4rem;
 }
+
 ol.footnotes {
   list-style-position: outside;
 }

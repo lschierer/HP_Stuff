@@ -20,7 +20,6 @@ div.site-title-section {
   display: flex;
   flex-direction: row;
   align-items: center;
-
   white-space: nowrap;
 }
 
@@ -58,7 +57,7 @@ div.site-title-section {
   border-inline-end: 1px solid var(--spectrum-gray-600);
 }
 
-theme-select select#ThemeSelector {
+theme-select select#theme-selector {
   width: 15rem;
   max-width: fit-content;
 }

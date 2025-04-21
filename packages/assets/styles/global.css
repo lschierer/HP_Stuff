@@ -1,15 +1,15 @@
-@import "@spectrum-css/tokens";
-@import "@spectrum-css/typography";
-@import "@spectrum-css/icon";
-@import "@spectrum-css/page";
-@import "@spectrum-css/link";
-@import "@spectrum-css/actionbutton";
-@import "@spectrum-css/button";
-@import "@spectrum-css/picker";
-@import "@spectrum-css/menu";
-@import "remark-alerts/styles/github-base.css";
-@import "remark-alerts/styles/github-colors-light.css";
-@import "remark-alerts/styles/github-colors-dark-class.css";
+@import url("@spectrum-css/tokens");
+@import url("@spectrum-css/typography");
+@import url("@spectrum-css/icon");
+@import url("@spectrum-css/page");
+@import url("@spectrum-css/link");
+@import url("@spectrum-css/actionbutton");
+@import url("@spectrum-css/button");
+@import url("@spectrum-css/picker");
+@import url("@spectrum-css/menu");
+@import url("remark-alerts/styles/github-base.css");
+@import url("remark-alerts/styles/github-colors-light.css");
+@import url("remark-alerts/styles/github-colors-dark-class.css");
 
 :root {
   --mod-spacing-100: 0.5rem;
@@ -26,16 +26,22 @@
     var(--theme-header-height) + var(--theme-footer-height)
   );
 
-  /*the variable names come from Astro's Starlight theme, but are useful as global names for things Spectrum uses different names for. */
+  /* the variable names come from Astro's Starlight theme, but are useful as global names for things Spectrum uses different names for. */
   --sl-color-accent-high: var(--spectrum-cyan-1000);
   --sl-color-accent: var(--spectrum-cyan-700);
   --sl-color-accent-low: var(--spectrum-cyan-400);
-
   --mod-background-base-color: var(--spectrum-gray-200);
   --mod-splitview-background-color: var(--mod-background-base-color);
   --mod-splitview-handle-background-color: var(--spectrum-gray-400);
-  --mod-heading-font-color: --spectrum-border-color: var(--spectrum-gray-300);
+  --mod-heading-font-color: var(--sl-color-accent);
+  --spectrum-border-color: var(--spectrum-gray-300);
   --spectrum-text-color: var(--spectrum-gray-900);
+}
+
+::backdrop,
+sp-theme {
+  background-color: var(--mod-background-base-color);
+  color: var(--spectrum-gray-900);
 }
 
 /* Light mode colors. */
@@ -44,17 +50,12 @@
   --sl-color-accent-high: var(--spectrum-cyan-1000);
   --sl-color-accent-low: var(--spectrum-cyan-400);
 }
+
 /* Dark mode colors. */
 :root[data-theme="dark"],
 [data-theme="dark"] ::backdrop {
   --sl-color-accent-high: var(--spectrum-cyan-900);
   --sl-color-accent-low: var(--spectrum-cyan-500);
-}
-
-::backdrop,
-sp-theme {
-  background-color: var(--mod-background-base-color);
-  color: var(--spectrum-gray-900);
 }
 
 *,
@@ -112,12 +113,11 @@ footer {
   flex-shrink: 0; /* Prevent footer from shrinking */
   width: 100%;
   margin-top: auto; /* Push footer to bottom when content is short */
-
   background-color: var(--sl-color-accent-high);
-
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
   --mod-detail-color: var(--sl-color-accent-low);
   --mod-accent-content-color-default: var(--sl-color-accent-low);
 }
@@ -136,6 +136,7 @@ sp-split-view div.nav {
   overflow-y: auto;
   background-color: var(--spectrum-gray-300);
 }
+
 /* Title section styling - more specific to avoid conflicts */
 sp-theme > div.title-section {
   background-color: var(--mod-background-base-color);
