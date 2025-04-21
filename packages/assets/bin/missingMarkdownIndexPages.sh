@@ -9,7 +9,7 @@ find pages -type d -not -path "pages/filescreated" -not -path "pages/filescreate
     echo "author: Luke Schierer" >> "$line/index.md"
     echo "layout: standard" >> "$line/index.md"
     echo "---" >> "$line/index.md"
-    echo "\n" >> "$line/index.md"
+    echo "" >> "$line/index.md"
     echo "<directory-index></directory-index>" >> "$line/index.md"
     echo "$line/index.md" >> pages/filescreated/scriptedIndexes.txt
   fi

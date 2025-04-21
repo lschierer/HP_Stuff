@@ -53,3 +53,19 @@ export type NavigationItem = z.infer<typeof NavItemBase> & {
 export const NavigationItem: z.ZodType<NavigationItem> = NavItemBase.extend({
   children: z.lazy(() => NavigationItem.array()),
 });
+
+const ClientNavItemBase = ExternalPage.partial({
+  html: true,
+  fileName: true,
+}).extend({
+  expanded: z.boolean().optional(),
+});
+
+export type ClientNavItem = z.infer<typeof ClientNavItemBase> & {
+  children: ClientNavItem[];
+};
+export const ClientNavItem: z.ZodType<ClientNavItem> = ClientNavItemBase.extend(
+  {
+    children: z.lazy(() => ClientNavItem.array()),
+  }
+);

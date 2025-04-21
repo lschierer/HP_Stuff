@@ -40,3 +40,5 @@ find . -path './**/.gitkeep' -prune -o -empty -print -delete
 
 echo "Cleaning dist"
 rm -rf "$PWD"/dist
+echo "Cleaning Greenwood's pages dir"
+find ../greenwood/src/pages -name '*.md'  -print -delete
