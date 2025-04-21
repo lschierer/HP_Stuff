@@ -18,6 +18,9 @@ type ThemeSelection = z.infer<typeof ThemeSelection>;
 
 export const ChangeTheme = (themeValue: ThemeSelection) => {
   if (!themeValue.localeCompare("light") || !themeValue.localeCompare("dark")) {
+    // Store the theme preference in localStorage
+    localStorage.setItem("theme-preference", themeValue);
+    
     const scale = "medium";
     document.querySelectorAll("sp-theme").forEach((sptheme) => {
       void Promise.all([
@@ -60,12 +63,27 @@ export const ChangeTheme = (themeValue: ThemeSelection) => {
       "(prefers-color-scheme: dark)"
     ).matches;
     const autoTheme = prefersDark ? "dark" : "light";
+    // When auto is selected, store that preference
+    localStorage.setItem("theme-preference", "auto");
     ChangeTheme(autoTheme);
   }
 };
 
-export function getTheme(): string {
-  return localStorage.getItem("theme-preference") || "auto";
+export function getTheme(): ThemeSelection {
+  // First try to get from localStorage
+  const storedTheme = localStorage.getItem("theme-preference");
+  if (storedTheme && ThemeSelection.safeParse(storedTheme).success) {
+    return storedTheme as ThemeSelection;
+  }
+  
+  // If no valid localStorage value, check OS preference
+  if (typeof window !== 'undefined') {
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    return prefersDark ? "dark" : "light";
+  }
+  
+  // Fallback to light if all else fails
+  return "light";
 }
 
 export default class ThemeComponent extends HTMLElement {
