@@ -3,7 +3,7 @@
 PWD=$(pwd)
 
 # Check dist/filescreated directory
-if [ -d "$PWD"/dist/filescreated ] && [ "$(ls -A "$PWD"/dist/filescreated/*.txt 2>/dev/null)" ]; then
+if [ -d "$PWD"/dist/filescreated ] && [ "$(ls -A "$PWD"/dist/filescreated/*.txt 2> /dev/null)" ]; then
   for f in "$PWD"/dist/filescreated/*.txt; do
     echo "cleaning files listed in $f"
     cat "$f" | xargs -I{} rm "{}"
@@ -14,7 +14,7 @@ else
 fi
 
 # Check assets/filescreated directory
-if [ -d "$PWD"/assets/filescreated ] && [ "$(ls -A "$PWD"/assets/filescreated/*.txt 2>/dev/null)" ]; then
+if [ -d "$PWD"/assets/filescreated ] && [ "$(ls -A "$PWD"/assets/filescreated/*.txt 2> /dev/null)" ]; then
   for f in "$PWD"/assets/filescreated/*.txt; do
     echo "cleaning files listed in $f"
     cat "$f" | xargs -I{} rm "{}"
@@ -25,7 +25,7 @@ else
 fi
 
 # Check pages/filescreated directory
-if [ -d "$PWD"/pages/filescreated ] && [ "$(ls -A "$PWD"/pages/filescreated/*.txt 2>/dev/null)" ]; then
+if [ -d "$PWD"/pages/filescreated ] && [ "$(ls -A "$PWD"/pages/filescreated/*.txt 2> /dev/null)" ]; then
   for f in "$PWD"/pages/filescreated/*.txt; do
     echo "cleaning files listed in $f"
     cat "$f" | xargs -I{} rm "{}"

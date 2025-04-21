@@ -1,11 +1,12 @@
 import fs from "fs";
 import path from "path";
 
-import type {
-  GedcomEvent,
-  GedcomFamily,
-  GedcomPerson,
-  EventRefList,
+import {
+  type GedcomEvent,
+  type GedcomFamily,
+  type GedcomPerson,
+  type EventRefList,
+  FamilyStrings,
 } from "@hp-stuff/schemas/gedcom";
 
 import { type NavigationItem } from "@hp-stuff/schemas";
@@ -54,30 +55,45 @@ imports:
 
 \n`;
 
-  // Add basic information
-  markdown += `## Basic Information\n\n`;
-  markdown += `- **ID**: ${person.gramps_id}\n`;
-  markdown += `- **Gender**: ${person.gender === 0 ? "Female" : person.gender === 1 ? "Male" : "Unknown"}\n\n`;
+  markdown += `
+<div class=" spectrum-Card spectrum-Card--horizontal " id="${person.gramps_id}" role="figure">
+  <div class=" spectrum-Card-preview ">
+    <iconify-icon icon="${name.getIconName()}" class="${name.getIconClass()}" width="100%" ></iconify-icon>
+  </div>
+  <div class=" spectrum-Card-body ">
+    <div class=" spectrum-Card-header ">
+      <div class=" spectrum-Card-title ">
+        Basic Information
+      </div>
+    </div>
+    <div class=" spectrum-Card-content ">
+      <div class=" spectrum-Card-description ">
+        <ul class="bio">
+          <li>
+            <strong>ID</strong>: ${person.gramps_id}
+          </li>
+          ${person.event_ref_list
+            .map((eventRef: EventRefList) => {
+              const event = events.find((e) => e.handle === eventRef.ref);
+              let returnable = "";
+              if (event) {
+                returnable += `<strong>${event.type.string}</strong>: ${event.date && event.date.text ? event.date.text : ""}`;
+                if (event.description) {
+                  returnable += ` - ${event.description}`;
+                }
+              }
+              returnable = `<li>${returnable}</li>`;
+              return returnable;
+            })
+            .join("\n")}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+  `;
 
-  // Add events (birth, death, etc.)
-  if (person.event_ref_list.length > 0) {
-    markdown += `## Events\n\n`;
-
-    person.event_ref_list.forEach((eventRef: EventRefList) => {
-      const event = events.find((e) => e.handle === eventRef.ref);
-      if (event) {
-        markdown += `- **${event.type.string}**: `;
-        if (event.date && event.date.text) {
-          markdown += event.date.text;
-        }
-        if (event.description) {
-          markdown += ` - ${event.description}`;
-        }
-        markdown += "\n";
-      }
-    });
-    markdown += "\n";
-  }
+  markdown += `\n\n`;
 
   // Add family relationships
   if (person.family_list.length > 0) {
@@ -124,30 +140,42 @@ imports:
 
   // Add parent families
   if (person.parent_family_list.length > 0) {
-    markdown += `## Parents\n\n`;
+    markdown += `### Parents\n\n`;
 
+    const displayedFamilyRelationships: string[] = [
+      FamilyStrings.Enum.Birth,
+      FamilyStrings.Enum.Unknown,
+    ];
     person.parent_family_list.forEach((familyHandle: string) => {
       const family = families.find((f) => f.handle === familyHandle);
       if (family) {
-        markdown += `- **Family**: ${family.type.string || "Family"}\n`;
+        const childRef = family.child_ref_list.find(
+          (cr) => cr.ref === person.handle
+        );
+        if (
+          childRef &&
+          (displayedFamilyRelationships.includes(childRef.frel.string) ||
+            displayedFamilyRelationships.includes(childRef.mrel.string))
+        ) {
+          markdown += `- **Family**: ${family.type.string || "Family"}\n`;
 
-        // Add father and mother information
-        if (family.father_handle) {
-          const father = findPersonByHandle(family.father_handle);
-          if (father) {
-            const fatherName = new IndividualName(father);
-            markdown += `  - **Father**: [${fatherName.getFullName()}](${fatherName.formatUrlForMarkdown(`${pageBase}/`)})\n`;
+          if (family.father_handle) {
+            const father = findPersonByHandle(family.father_handle);
+            if (father) {
+              const fatherName = new IndividualName(father);
+              markdown += `  - **Father**: [${fatherName.getFullName()}](${fatherName.formatUrlForMarkdown(`${pageBase}/`)})\n`;
+            }
           }
-        }
 
-        if (family.mother_handle) {
-          const mother = findPersonByHandle(family.mother_handle);
-          if (mother) {
-            const motherName = new IndividualName(mother);
-            markdown += `  - **Mother**: [${motherName.getFullName()}](${motherName.formatUrlForMarkdown(`${pageBase}/`)})\n`;
+          if (family.mother_handle) {
+            const mother = findPersonByHandle(family.mother_handle);
+            if (mother) {
+              const motherName = new IndividualName(mother);
+              markdown += `  - **Mother**: [${motherName.getFullName()}](${motherName.formatUrlForMarkdown(`${pageBase}/`)})\n`;
+            }
           }
+          markdown += "\n";
         }
-        markdown += "\n";
       }
     });
   }

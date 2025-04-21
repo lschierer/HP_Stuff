@@ -37,6 +37,8 @@ parse: install build-schemas
   ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../greenwood/src/pages/FanFiction/" -a ../greenwood/src/assets -s ../greenwood/src/styles
   ${PNPM} tsx ./src/scripts/build-css.ts ../greenwood/src/styles/
   ${PNPM} tsx ./src/scripts/gedcomExport.ts
+  ./bin/missingMarkdownIndexPages.sh
+  rsync -av --exclude='*.fragment.html' pages ../greenwood/src/
 
 clean:
   rm -rf packges/greenwood/public packages/greenwood/.greenwood

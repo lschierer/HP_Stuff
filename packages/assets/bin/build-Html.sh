@@ -7,7 +7,7 @@ export STEP=1
 mkdir -p ./dist/assets ./dist/styles
 
 if [ ! -e "./src/shared/sidebar-routes.json" ]; then
- echo '{}' > ./src/shared/sidebar-routes.json
+  echo '{}' > ./src/shared/sidebar-routes.json
 fi
 
 ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "./pages/FanFiction/" -a ./dist/assets -s ./dist/styles
@@ -30,7 +30,7 @@ find ${PWD}/pages -name "*.html" -not -name "*.fragment.html" | while read file;
 done || exit $STEP
 STEP=$((STEP + 1))
 
-rsync -amv --exclude='styles' --exclude='routes' --exclude='filescreated' --exclude='assets'  dist/ ../greenwood/src/pages/ --delete  --delete-excluded
+rsync -amv --exclude='styles' --exclude='routes' --exclude='filescreated' --exclude='assets' dist/ ../greenwood/src/pages/ --delete --delete-excluded
 
 rsync -av dist/styles/ ../greenwood/src/styles/
 
