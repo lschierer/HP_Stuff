@@ -1,4 +1,3 @@
-import { greenwoodPluginPostCss } from "@greenwood/plugin-postcss";
 import { greenwoodPluginAdapterAws } from "@greenwood/plugin-adapter-aws";
 import type { Config } from "@greenwood/cli";
 import * as fs from "node:fs";
@@ -107,9 +106,6 @@ const gc: Config = {
     ],
   },
   plugins: [
-    greenwoodPluginPostCss({
-      extendConfig: true,
-    }),
     greenwoodPluginAdapterAws(),
     TopHeaderSectionPlugin(LocalConfig),
     ExternalPluginFooterSection(LocalConfig),

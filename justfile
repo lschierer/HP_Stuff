@@ -35,6 +35,7 @@ parse: install build-schemas
   ./bin/bookmarkCollection.sh -o ../greenwood/src/assets/
   ./bin/historyCollection.sh -o ../greenwood/src/assets/
   ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../greenwood/src/pages/FanFiction/" -a ../greenwood/src/assets -s ../greenwood/src/styles
+  ${PNPM} tsx ./src/scripts/build-css.ts ../greenwood/src/styles/
   ${PNPM} tsx ./src/scripts/gedcomExport.ts
 
 clean:
