@@ -139,16 +139,7 @@ export default class DirectoryIndex extends HTMLElement {
                     >
                   </iconify-icon>
                 `;
-                const descriptionTemplate = `
-                  <div slot="description"> ${
-                    entry.data
-                      ? Object.keys(entry.data).includes("description")
-                        ? entry.data["description" as keyof typeof entry.data]
-                        : ""
-                      : ""
-                  }
-                  </div>
-                `;
+
                 return `
                 <div class="directory-card" data-index="${index}">
                   <a href="${entry.route}" class="spectrum-Link spectrum-Link--quiet spectrum-Link--secondary">
@@ -167,7 +158,9 @@ export default class DirectoryIndex extends HTMLElement {
                         ${
                           entry.data
                             ? Object.keys(entry.data).includes("description")
-                              ? entry.data["description" as keyof typeof entry.data]
+                              ? entry.data[
+                                  "description" as keyof typeof entry.data
+                                ]
                               : ""
                             : ""
                         }
@@ -182,7 +175,7 @@ export default class DirectoryIndex extends HTMLElement {
               .join("")}
         </div>
       `;
-      
+
       // Apply staggered layout after rendering
       this.applyStaggeredLayout();
     } else {
@@ -199,51 +192,56 @@ export default class DirectoryIndex extends HTMLElement {
       }
     }
   }
-  
+
   /**
    * Applies a staggered layout to the cards based on their actual column position
    */
   protected applyStaggeredLayout() {
-    const container = this.querySelector('.directory-index-container') as HTMLElement;
+    const container = this.querySelector(
+      ".directory-index-container"
+    ) as HTMLElement;
+    /* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */
     if (!container) return;
-    
+
     // Reset all cards to no offset
-    const cards = container.querySelectorAll('.directory-card');
-    cards.forEach(card => {
-      (card as HTMLElement).style.transform = '';
+    const cards = container.querySelectorAll(".directory-card");
+    cards.forEach((card) => {
+      (card as HTMLElement).style.transform = "";
     });
-    
+
     // Wait for layout to be calculated
     setTimeout(() => {
       // Get the container width and card width to calculate columns
       const containerWidth = container.clientWidth;
-      const cardWidth = cards.length > 0 ? (cards[0] as HTMLElement).offsetWidth : 0;
-      const gap = 16; // 1rem gap
-      
+      const cardWidth =
+        cards.length > 0 ? (cards[0] as HTMLElement).offsetWidth : 0;
+
       if (cardWidth === 0) return;
-      
+
       // Calculate how many cards fit in a row
       const cardsPerRow = Math.max(1, Math.floor(containerWidth / cardWidth));
-      
+
       if (DEBUG) {
-        console.log(`Container width: ${containerWidth}, Card width: ${cardWidth}, Cards per row: ${cardsPerRow}`);
+        console.log(
+          `Container width: ${containerWidth}, Card width: ${cardWidth}, Cards per row: ${cardsPerRow}`
+        );
       }
-      
+
       // Get the positions of all cards
       const cardPositions = Array.from(cards).map((card) => {
         const rect = (card as HTMLElement).getBoundingClientRect();
         return {
           card: card as HTMLElement,
           left: rect.left,
-          top: rect.top
+          top: rect.top,
         };
       });
-      
+
       // Group cards by row based on their vertical position
       const rows: HTMLElement[][] = [];
       let currentRowTop = cardPositions[0]?.top;
       let currentRow: HTMLElement[] = [];
-      
+
       cardPositions.forEach(({ card, top }) => {
         // If this card is on a new row (allowing for small differences due to rounding)
         if (Math.abs(top - currentRowTop) > 5) {
@@ -254,39 +252,43 @@ export default class DirectoryIndex extends HTMLElement {
           currentRow.push(card);
         }
       });
-      
+
       // Add the last row
       if (currentRow.length > 0) {
         rows.push(currentRow);
       }
-      
+
       if (DEBUG) {
-        console.log(`Found ${rows.length} rows with cards per row: ${rows.map(r => r.length).join(', ')}`);
+        console.log(
+          `Found ${rows.length} rows with cards per row: ${rows.map((r) => r.length).join(", ")}`
+        );
       }
-      
+
       // Process each row
-      rows.forEach(rowCards => {
+      rows.forEach((rowCards) => {
         // Sort cards in this row by their horizontal position
         rowCards.sort((a, b) => {
-          return a.getBoundingClientRect().left - b.getBoundingClientRect().left;
+          return (
+            a.getBoundingClientRect().left - b.getBoundingClientRect().left
+          );
         });
-        
+
         // Apply transform based on column position within the row
         rowCards.forEach((card, columnIndex) => {
           const isEvenColumn = columnIndex % 2 === 1; // 0-indexed, so 1, 3, 5... are even columns
-          
+
           if (isEvenColumn) {
-            card.style.transform = 'translateY(25px)';
-            card.dataset.staggered = 'true';
+            card.style.transform = "translateY(25px)";
+            card.dataset.staggered = "true";
           } else {
-            card.style.transform = '';
-            card.dataset.staggered = 'false';
+            card.style.transform = "";
+            card.dataset.staggered = "false";
           }
         });
       });
     }, 100); // Increased timeout to ensure layout is complete
   }
-  
+
   /**
    * Sets up a resize observer to reapply the staggered layout when the window resizes
    */
@@ -295,17 +297,17 @@ export default class DirectoryIndex extends HTMLElement {
       this._observer = new ResizeObserver(() => {
         this.applyStaggeredLayout();
       });
-      
-      const container = this.querySelector('.directory-index-container');
+
+      const container = this.querySelector(".directory-index-container");
       if (container) {
         this._observer.observe(container);
       }
-      
+
       // Also listen for window resize events
-      window.addEventListener('resize', this.handleResize);
+      window.addEventListener("resize", this.handleResize);
     }
   }
-  
+
   protected handleResize = () => {
     this.applyStaggeredLayout();
   };
@@ -320,15 +322,15 @@ export default class DirectoryIndex extends HTMLElement {
     this.renderEntries();
     this.setupResizeObserver();
   }
-  
+
   disconnectedCallback() {
     // Clean up the observer when the component is removed
     if (this._observer) {
       this._observer.disconnect();
       this._observer = null;
     }
-    
-    window.removeEventListener('resize', this.handleResize);
+
+    window.removeEventListener("resize", this.handleResize);
   }
 }
 customElements.define("directory-index", DirectoryIndex);
