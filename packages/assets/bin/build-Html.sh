@@ -34,7 +34,7 @@ rsync -amv --exclude='styles' --exclude='routes' --exclude='filescreated' --excl
 
 rsync -av dist/styles/ ../greenwood/src/styles/
 
-rsync -av dist/assets/ ../greenwood/src/asssets/
+rsync -av dist/assets/ ../greenwood/src/assets/
 
 #pnpm tsx "$PWD/src/scripts/build-sidebar.ts" || exit 3
 #

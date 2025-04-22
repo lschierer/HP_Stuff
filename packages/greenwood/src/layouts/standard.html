@@ -10,6 +10,7 @@
 
   <script type="module" src="/components/Spectrum/Base.ts"></script>
   <script type="module" src="/components/Spectrum/SplitView.ts"></script>
+  <script type="module" src="/components/SideBar.ts"></script>
 </head>
 <body>
   <sp-theme class="spectrum-Typography">
@@ -25,7 +26,7 @@
     </div>
 
     <sp-split-view resizable primary-size="20%">
-      <div class="nav"></div>
+      <div class="nav"><side-bar></side-bar></div>
       <div class="main">
         <main>
           <content-outlet></content-outlet>
