@@ -48,6 +48,10 @@ export default class SideBar extends HTMLElement {
     return false;
   };
 
+  protected getTitle = (page: Page) => {
+    return page.title ? page.title : page.label ? page.label : page.id;
+  };
+
   /**
    * Builds a navigation tree from a flat list of pages
    */
@@ -67,7 +71,7 @@ export default class SideBar extends HTMLElement {
 
       if (order >= 0) {
         navItem = {
-          title: page.title,
+          title: this.getTitle(page),
           route: page.route,
           sidebar: {
             order: order,
@@ -76,7 +80,7 @@ export default class SideBar extends HTMLElement {
         };
       } else {
         navItem = {
-          title: page.title,
+          title: this.getTitle(page),
           route: page.route,
           children: [],
         };

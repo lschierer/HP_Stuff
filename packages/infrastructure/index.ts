@@ -28,22 +28,43 @@ const logRetentionDays = config.getNumber("logRetentionDays") || 7; // Default t
 
 const siteDir = "../greenwood/public";
 
-for (const item of fs.readdirSync(siteDir)) {
-  const filePath = path.join(siteDir, item);
-  const stats = fs.statSync(filePath);
+const files = await walkDirectory(siteDir);
 
-  const asset = stats.isDirectory()
-    ? new pulumi.asset.FileArchive(filePath)
-    : new pulumi.asset.FileAsset(filePath);
+for (const filePath of files.sort()) {
+  const relativeKey = path.relative(siteDir, filePath).replace(/\\/g, "/"); // <-- important!
 
-  new aws.s3.BucketObject(item, {
+  new aws.s3.BucketObject(relativeKey, {
     bucket: siteBucket,
-    source: asset,
-    contentType: stats.isFile()
-      ? mime.getType(filePath) || undefined
-      : undefined,
+    key: relativeKey,
+    source: new pulumi.asset.FileAsset(filePath),
+    contentType: mime.getType(filePath) || undefined,
   });
 }
+
+const oai = new aws.cloudfront.OriginAccessIdentity("cdn-oai", {
+  comment: "Allow CloudFront to access S3",
+});
+
+const bucketPolicy = new aws.s3.BucketPolicy("bucketPolicy", {
+  bucket: siteBucket.bucket,
+  policy: pulumi
+    .all([siteBucket.bucket, oai.iamArn])
+    .apply(([bucketName, oaiArn]) =>
+      JSON.stringify({
+        Version: "2012-10-17",
+        Statement: [
+          {
+            Effect: "Allow",
+            Principal: {
+              AWS: oaiArn,
+            },
+            Action: ["s3:GetObject"],
+            Resource: [`arn:aws:s3:::${bucketName}/*`],
+          },
+        ],
+      })
+    ),
+});
 
 // Get or create Route53 hosted zone
 let hostedZone: aws.route53.GetZoneResult | aws.route53.Zone;
@@ -112,24 +133,19 @@ const certificateValidation = new aws.acm.CertificateValidation(
   { provider: usEast1 }
 );
 
-// Create a Lambda function to handle URL rewriting
-const edgeLambda = new aws.lambda.Function(
-  "edgeLambda",
-  {
-    code: new pulumi.asset.AssetArchive({
-      ".": new pulumi.asset.FileArchive("./edge-handler"), // Replace with the path to your Lambda code directory
-    }),
-    handler: "handler.handler",
-    publish: true,
-    runtime: "nodejs22.x",
-    role: new aws.iam.Role("edgeLambdaRole", {
-      assumeRolePolicy: aws.iam.assumeRolePolicyForPrincipal({
-        Service: ["lambda.amazonaws.com", "edgelambda.amazonaws.com"],
-      }),
-    }).arn,
-  },
-  { provider: usEast1 }
-);
+const cfFunction = new aws.cloudfront.Function("myFunction", {
+  name: "MyViewerRequestFunction",
+  runtime: "cloudfront-js-1.0",
+  comment: "Simple URL rewriting function",
+  publish: true,
+  code: `function handler(event) {
+    var request = event.request;
+    if (request.uri.endsWith("/")) {
+      request.uri += "index.html";
+    }
+    return request;
+  }`,
+});
 
 // Create a CloudFront distribution
 const cdn = new aws.cloudfront.Distribution("cdn", {
@@ -138,8 +154,12 @@ const cdn = new aws.cloudfront.Distribution("cdn", {
     {
       domainName: siteBucket.bucketRegionalDomainName,
       originId: siteBucket.arn,
+      s3OriginConfig: {
+        originAccessIdentity: oai.cloudfrontAccessIdentityPath,
+      },
     },
   ],
+
   defaultCacheBehavior: {
     targetOriginId: siteBucket.arn,
     viewerProtocolPolicy: "redirect-to-https",
@@ -149,10 +169,10 @@ const cdn = new aws.cloudfront.Distribution("cdn", {
       cookies: { forward: "none" },
       queryString: false,
     },
-    lambdaFunctionAssociations: [
+    functionAssociations: [
       {
-        eventType: "origin-request",
-        lambdaArn: edgeLambda.qualifiedArn,
+        eventType: "viewer-request",
+        functionArn: cfFunction.arn,
       },
     ],
   },
@@ -161,6 +181,7 @@ const cdn = new aws.cloudfront.Distribution("cdn", {
     sslSupportMethod: "sni-only", // required
     minimumProtocolVersion: "TLSv1.2_2021", // optional, best practice
   },
+  aliases: [domainName, `www.${domainName}`],
   defaultRootObject: "index.html",
   priceClass: "PriceClass_100",
   restrictions: {
