@@ -55,6 +55,21 @@ imports:
 
 \n`;
 
+  const eventList = person.event_ref_list.map((eventRef: EventRefList) => {
+    const event = events.find((e) => e.handle === eventRef.ref);
+    let returnable = "";
+    if (event) {
+      returnable += `<strong>${event.type.string}</strong>:`.concat(
+        event.date && event.date.text ? event.date.text : ""
+      );
+      if (event.description) {
+        returnable += ` - ${event.description}`;
+      }
+    }
+    returnable = `<li>${returnable}</li>`;
+    return returnable;
+  });
+  console.log(`${person.gramps_id} has ${eventList.length} events`);
   markdown += `
 <div class=" spectrum-Card spectrum-Card--horizontal " id="${person.gramps_id}" role="figure">
   <div class=" spectrum-Card-preview ">
@@ -71,21 +86,7 @@ imports:
         <ul class="bio">
           <li>
             <strong>ID</strong>: ${person.gramps_id}
-          </li>
-          ${person.event_ref_list
-            .map((eventRef: EventRefList) => {
-              const event = events.find((e) => e.handle === eventRef.ref);
-              let returnable = "";
-              if (event) {
-                returnable += `<strong>${event.type.string}</strong>: ${event.date && event.date.text ? event.date.text : ""}`;
-                if (event.description) {
-                  returnable += ` - ${event.description}`;
-                }
-              }
-              returnable = `<li>${returnable}</li>`;
-              return returnable;
-            })
-            .join("\n")}
+          </li>${eventList.length ? eventList.join("\n") : ""}
         </ul>
       </div>
     </div>

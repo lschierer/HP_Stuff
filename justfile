@@ -22,10 +22,7 @@ build-schemas: install
 build-greenwood: install build-schemas parse
   NODE_ENV=production ${PNPM} run build
 
-[working-directory: 'packages/infrastructure']
-build-infra: install
-  ./bin/build.sh
-  ${PNPM} run build
+build: build-greenwood
 
 [working-directory: 'packages/assets']
 parse: install build-schemas
