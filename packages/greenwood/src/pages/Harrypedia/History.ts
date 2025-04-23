@@ -223,7 +223,10 @@ const getFrontmatter: GetFrontmatter = async () => {
     collection: "Harrypedia",
     title: "History",
     layout: "standard",
-    imports: ['/components/v-timeline.ts type="module"'],
+    imports: [
+      '/components/v-timeline.ts type="module"',
+      "/styles/Timeline.css",
+    ],
     data: {
       author: "Luke Schierer",
       tableOfContents: "false",
