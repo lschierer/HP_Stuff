@@ -69,7 +69,6 @@ imports:
     returnable = `<li>${returnable}</li>`;
     return returnable;
   });
-  console.log(`${person.gramps_id} has ${eventList.length} events`);
   markdown += `
 <div class=" spectrum-Card spectrum-Card--horizontal " id="${person.gramps_id}" role="figure">
   <div class=" spectrum-Card-preview ">

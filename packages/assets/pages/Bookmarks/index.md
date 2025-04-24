@@ -2,6 +2,8 @@
 title: Bookmarks
 author: Luke Schierer
 layout: standard
+imports:
+  - /components/DirectoryIndex.ts type="module"
 ---
 
 <p>
@@ -10,4 +12,4 @@ layout: standard
 </p>
 <hr />
 
-<directory-index></directory-index>
+<directory-index directory="/Bookmarks/" ></directory-index>

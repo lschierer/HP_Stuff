@@ -15,4 +15,4 @@ more I realize that I lack the attention span and persistence to follow through
 on these to completion, but it occassionally amuses me to work on one or more
 of them.
 
-<directory-index></directory-index>
+<directory-index directory="/FanFiction/" ></directory-index>

@@ -44,7 +44,7 @@ clean:
 
 [working-directory: 'packages/infrastructure']
 deploy: build-greenwood
-  NODE_ENV=production ${PNPM} deploy
+  ./bin/update-all.sh
 
 check-links:
   ${PNPM} exec linkinator "http://localhost:1984/"

@@ -1,11 +1,7 @@
 name: hp-stuff
-description: Luke's HP Fan Site
 runtime:
   name: nodejs
   options:
     nodeargs: "--import tsx --no-warnings"
     packagemanager: pnpm
-config:
-  pulumi:tags:
-    value:
-      pulumi:template: aws-typescript
+description: HP Stuff website infrastructure
