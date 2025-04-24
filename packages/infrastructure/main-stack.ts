@@ -292,7 +292,7 @@ export class MainStack extends pulumi.ComponentResource {
                   : (hz as aws.route53.GetZoneResult).zoneId
               ),
             name: config.domainName,
-            type: "A",
+            type: aws.route53.RecordType.A,
             aliases: [
               {
                 name: this.cdn.domainName,
@@ -321,14 +321,15 @@ export class MainStack extends pulumi.ComponentResource {
                   : (hz as aws.route53.GetZoneResult).zoneId
               ),
             name: wwwDomainName,
-            type: "A",
-            aliases: [
+            records: [dnsRecord.fqdn],
+            type: aws.route53.RecordType.CNAME,
+            weightedRoutingPolicies: [
               {
-                name: this.cdn.domainName,
-                zoneId: this.cdn.hostedZoneId,
-                evaluateTargetHealth: true,
+                weight: 90,
               },
             ],
+            ttl: 1,
+            setIdentifier: "live",
           },
           { parent: this }
         );
