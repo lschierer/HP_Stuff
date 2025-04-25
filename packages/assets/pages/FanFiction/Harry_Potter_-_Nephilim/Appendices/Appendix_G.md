@@ -1,7 +1,7 @@
 ---
-title: |
-layout: standard
+title: >-
   Soteriology, Missiology and Ecclesiology
+layout: standard
 author: Luke Schierer
 collection: Nephilim
 sidebar:

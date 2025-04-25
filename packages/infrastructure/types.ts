@@ -19,5 +19,4 @@ export type Route = StaticRoute | LambdaRoute;
 
 export interface RoutesResult {
   cacheBehaviors: aws.types.input.cloudfront.DistributionOrderedCacheBehavior[];
-  cfFunction: aws.cloudfront.Function;
 }

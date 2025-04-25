@@ -784,6 +784,9 @@ importers:
       '@pulumi/pulumi':
         specifier: ^3.162.0
         version: 3.162.0(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))(typescript@5.8.3)
+      '@pulumi/std':
+        specifier: ^2.2.0
+        version: 2.2.0(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))(typescript@5.8.3)
       mime:
         specifier: ^4.0.7
         version: 4.0.7
@@ -791,6 +794,9 @@ importers:
         specifier: ^4.19.3
         version: 4.19.3
     devDependencies:
+      '@hp-stuff/schemas':
+        specifier: workspace:^
+        version: link:../schemas
       '@types/mime':
         specifier: ^4.0.0
         version: 4.0.0
@@ -2380,6 +2386,9 @@ packages:
 
   '@pulumi/random@4.18.0':
     resolution: {integrity: sha512-6joE5/jhadtWmwuMh3YtDB1kA3G4pDLVhk+l5mSxe/kuf+ejQ1w+LnfbpRi9iinwPl2AqzfDp9IheksTxIwzFA==}
+
+  '@pulumi/std@2.2.0':
+    resolution: {integrity: sha512-CtqnB+/UbSBCHXxlX5MoGxQChNdVFHx90xYckJmm4ZW8nf1qMWW2ioLZ0ZuXGMN9hdf84v+Vd5WkGmbdT/aXjQ==}
 
   '@release-it/conventional-changelog@10.0.1':
     resolution: {integrity: sha512-Qp+eyMGCPyq5xiWoNK91cWVIR/6HD1QAUNeG6pV2G4kxotWl81k/KDQqDNvrNVmr9+zDp53jI7pVVYQp6mi4zA==}
@@ -11162,6 +11171,15 @@ snapshots:
       - supports-color
 
   '@pulumi/random@4.18.0(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))(typescript@5.8.3)':
+    dependencies:
+      '@pulumi/pulumi': 3.162.0(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))(typescript@5.8.3)
+    transitivePeerDependencies:
+      - bluebird
+      - supports-color
+      - ts-node
+      - typescript
+
+  '@pulumi/std@2.2.0(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))(typescript@5.8.3)':
     dependencies:
       '@pulumi/pulumi': 3.162.0(ts-node@10.9.2(@types/node@22.14.1)(typescript@5.8.3))(typescript@5.8.3)
     transitivePeerDependencies:

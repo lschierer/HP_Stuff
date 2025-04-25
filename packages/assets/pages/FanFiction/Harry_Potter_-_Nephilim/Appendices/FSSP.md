@@ -1,5 +1,6 @@
 ---
-title: "Backstory: The FSSP"
+title: >-
+  Backstory: The FSSP
 layout: standard
 sidebar:
   order: 250

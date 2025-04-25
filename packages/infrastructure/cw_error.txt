@@ -1,0 +1,273 @@
+{
+    "eventVersion": "1.09",
+    "userIdentity": {
+        "type": "IAMUser",
+        "principalId": "AIDAJMZQF5D454SPW7RA4",
+        "arn": "arn:aws:iam::699040795025:user/luke",
+        "accountId": "699040795025",
+        "accessKeyId": "AKIA2FQQUBGIUMQHG36J",
+        "userName": "luke"
+    },
+    "eventTime": "2025-04-24T23:37:07Z",
+    "eventSource": "cloudfront.amazonaws.com",
+    "eventName": "CreateDistributionWithTags",
+    "awsRegion": "us-east-1",
+    "sourceIPAddress": "15.248.6.114",
+    "userAgent": "APN/1.0 Pulumi/1.0 Pulumi/1.0 Pulumi-Aws/0.11+compatible (+https://pulumi.com) aws-sdk-go-v2/1.36.3 ua/2.1 os/macos lang/go#1.23.8 md/GOOS#darwin md/GOARCH#arm64 api/cloudfront#1.45.2 m/n",
+    "errorCode": "ServiceUnavailableException",
+    "errorMessage": "An unknown error occurred",
+    "requestParameters": {
+        "distributionConfigWithTags": {
+            "tags": {
+                "items": []
+            },
+            "distributionConfig": {
+                "defaultRootObject": "index.html",
+                "aliases": {
+                    "quantity": 2,
+                    "items": [
+                        "www.dev.hp-stuff.schierer.org",
+                        "dev.hp-stuff.schierer.org"
+                    ]
+                },
+                "cacheBehaviors": {
+                    "quantity": 1,
+                    "items": [
+                        {
+                            "smoothStreaming": false,
+                            "allowedMethods": {
+                                "quantity": 7,
+                                "items": [
+                                    "POST",
+                                    "GET",
+                                    "HEAD",
+                                    "PATCH",
+                                    "DELETE",
+                                    "OPTIONS",
+                                    "PUT"
+                                ],
+                                "cachedMethods": {
+                                    "quantity": 2,
+                                    "items": [
+                                        "GET",
+                                        "HEAD"
+                                    ]
+                                }
+                            },
+                            "maxTTL": 0,
+                            "viewerProtocolPolicy": "redirect-to-https",
+                            "lambdaFunctionAssociations": {
+                                "quantity": 0
+                            },
+                            "compress": false,
+                            "fieldLevelEncryptionId": "",
+                            "pathPattern": "/api/*",
+                            "functionAssociations": {
+                                "quantity": 0
+                            },
+                            "defaultTTL": 0,
+                            "trustedSigners": {
+                                "enabled": false,
+                                "quantity": 0
+                            },
+                            "originRequestPolicyId": "",
+                            "forwardedValues": {
+                                "cookies": {
+                                    "forward": "all",
+                                    "whitelistedNames": {
+                                        "items": [],
+                                        "quantity": 0
+                                    }
+                                },
+                                "queryStringCacheKeys": {
+                                    "quantity": 0,
+                                    "items": []
+                                },
+                                "queryString": true,
+                                "headers": {
+                                    "quantity": 5,
+                                    "items": [
+                                        "Origin",
+                                        "Authorization",
+                                        "x-route-context",
+                                        "x-original-uri",
+                                        "Content-Type"
+                                    ]
+                                }
+                            },
+                            "targetOriginId": "api-origin",
+                            "trustedKeyGroups": {
+                                "quantity": 0,
+                                "enabled": false
+                            },
+                            "minTTL": 0,
+                            "responseHeadersPolicyId": "",
+                            "cachePolicyId": ""
+                        }
+                    ]
+                },
+                "httpVersion": "http2",
+                "viewerCertificate": {
+                    "minimumProtocolVersion": "TLSv1.2_2021",
+                    "aCMCertificateArn": "arn:aws:acm:us-east-1:699040795025:certificate/ddb78cb3-bc54-414b-bcde-0c262996cb3d",
+                    "sSLSupportMethod": "sni-only"
+                },
+                "webACLId": "",
+                "customErrorResponses": {
+                    "quantity": 1,
+                    "items": [
+                        {
+                            "responsePagePath": "/404.html",
+                            "errorCode": 404,
+                            "errorCachingMinTTL": 0,
+                            "responseCode": "404"
+                        }
+                    ]
+                },
+                "logging": {
+                    "includeCookies": false,
+                    "prefix": "",
+                    "enabled": false,
+                    "bucket": ""
+                },
+                "priceClass": "PriceClass_100",
+                "restrictions": {
+                    "geoRestriction": {
+                        "restrictionType": "none",
+                        "quantity": 0,
+                        "items": []
+                    }
+                },
+                "isIPV6Enabled": false,
+                "callerReference": "terraform-20250424233624734900000002",
+                "continuousDeploymentPolicyId": "",
+                "enabled": true,
+                "defaultCacheBehavior": {
+                    "targetOriginId": "s3-origin",
+                    "minTTL": 0,
+                    "compress": false,
+                    "maxTTL": 86400,
+                    "functionAssociations": {
+                        "quantity": 1,
+                        "items": [
+                            {
+                                "functionARN": "arn:aws:cloudfront::699040795025:function/RoutingFunction",
+                                "eventType": "viewer-request"
+                            }
+                        ]
+                    },
+                    "trustedKeyGroups": {
+                        "quantity": 0,
+                        "enabled": false
+                    },
+                    "smoothStreaming": false,
+                    "fieldLevelEncryptionId": "",
+                    "defaultTTL": 3600,
+                    "lambdaFunctionAssociations": {
+                        "quantity": 0
+                    },
+                    "viewerProtocolPolicy": "redirect-to-https",
+                    "responseHeadersPolicyId": "",
+                    "forwardedValues": {
+                        "cookies": {
+                            "forward": "none",
+                            "whitelistedNames": {
+                                "items": [],
+                                "quantity": 0
+                            }
+                        },
+                        "queryStringCacheKeys": {
+                            "quantity": 0,
+                            "items": []
+                        },
+                        "queryString": false,
+                        "headers": {
+                            "quantity": 0,
+                            "items": []
+                        }
+                    },
+                    "trustedSigners": {
+                        "enabled": false,
+                        "quantity": 0
+                    },
+                    "originRequestPolicyId": "",
+                    "cachePolicyId": "",
+                    "allowedMethods": {
+                        "quantity": 3,
+                        "items": [
+                            "GET",
+                            "HEAD",
+                            "OPTIONS"
+                        ],
+                        "cachedMethods": {
+                            "quantity": 2,
+                            "items": [
+                                "GET",
+                                "HEAD"
+                            ]
+                        }
+                    }
+                },
+                "staging": false,
+                "origins": {
+                    "quantity": 2,
+                    "items": [
+                        {
+                            "originPath": "",
+                            "connectionTimeout": 10,
+                            "s3OriginConfig": {
+                                "originAccessIdentity": "arn:aws:cloudfront::699040795025:origin-access-control/E2PV5PUJ0YLWB5"
+                            },
+                            "id": "s3-origin",
+                            "domainName": "hp-stuff-assets-site-bucket-abd1b94.s3.us-east-2.amazonaws.com",
+                            "connectionAttempts": 3,
+                            "customHeaders": {
+                                "quantity": 0
+                            },
+                            "originAccessControlId": ""
+                        },
+                        {
+                            "originPath": "/prod",
+                            "connectionTimeout": 10,
+                            "customOriginConfig": {
+                                "originReadTimeout": 30,
+                                "hTTPSPort": 443,
+                                "originProtocolPolicy": "https-only",
+                                "originKeepaliveTimeout": 5,
+                                "hTTPPort": 80,
+                                "originSslProtocols": {
+                                    "quantity": 1,
+                                    "items": [
+                                        "TLSv1.2"
+                                    ]
+                                }
+                            },
+                            "id": "api-origin",
+                            "domainName": "ac8b2ni20a.execute-api.us-east-2.amazonaws.com",
+                            "connectionAttempts": 3,
+                            "customHeaders": {
+                                "quantity": 0
+                            },
+                            "originAccessControlId": ""
+                        }
+                    ]
+                },
+                "comment": "HIDDEN_DUE_TO_SECURITY_REASONS"
+            }
+        }
+    },
+    "responseElements": null,
+    "requestID": "41eaaa8b-fe7b-48c1-8651-f315d9df7582",
+    "eventID": "9f4958f7-092b-422e-8bc9-4c830674c6b9",
+    "readOnly": false,
+    "eventType": "AwsApiCall",
+    "apiVersion": "2020_05_31",
+    "managementEvent": true,
+    "recipientAccountId": "699040795025",
+    "eventCategory": "Management",
+    "tlsDetails": {
+        "tlsVersion": "TLSv1.3",
+        "cipherSuite": "TLS_AES_128_GCM_SHA256",
+        "clientProvidedHostHeader": "cloudfront.amazonaws.com"
+    }
+}

@@ -1,5 +1,6 @@
 ---
-title: Harry Potter - Nephilim | Index of Appendices
+title: >-
+  Harry Potter - Nephilim | Index of Appendices
 layout: standard
 author: Luke Schierer
 ---

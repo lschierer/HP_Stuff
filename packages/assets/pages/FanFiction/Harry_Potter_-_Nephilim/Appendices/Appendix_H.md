@@ -1,7 +1,7 @@
 ---
-title: |
-layout: standard
+title: >-
   What are the Nephilim
+layout: standard
 author: Luke Schierer
 collection: Nephilim
 sidebar:

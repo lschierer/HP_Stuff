@@ -1,7 +1,7 @@
 ---
-title: |
-layout: standard
+title: >-
   Life Expectancy
+layout: standard
 author: Luke Schierer
 collection: Nephilim
 sidebar:

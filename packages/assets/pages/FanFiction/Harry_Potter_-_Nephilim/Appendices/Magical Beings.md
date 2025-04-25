@@ -1,7 +1,7 @@
 ---
-title: |
-layout: standard
+title: >-
   Magical Beings
+layout: standard
 author: Luke Schierer
 sidebar:
   order: 100

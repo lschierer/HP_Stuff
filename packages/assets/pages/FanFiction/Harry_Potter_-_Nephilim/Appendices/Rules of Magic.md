@@ -1,7 +1,7 @@
 ---
-title: |
-layout: standard
+title: >-
   Rules of Magic
+layout: standard
 author: Luke Schierer
 sidebar:
   order: 100

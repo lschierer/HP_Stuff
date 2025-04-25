@@ -1,7 +1,7 @@
 ---
-title: |
-layout: standard
+title: >-
   The Veela Curse
+layout: standard
 author: Luke Schierer
 sidebar:
   order: 100
@@ -10,7 +10,7 @@ collection: Nephilim
 
 > **Note**
 > For the purposes of this story, veela are "dark"
-> creatures[^210126-4]. I have chosen to create a version of veela that
+  > creatures[^210126-4]. I have chosen to create a version of veela that
 > justifies the suspicion that [Molly], [Hermione][] and [Ginny][] view
 > [Fleur][] with.
 

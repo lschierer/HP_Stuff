@@ -3,11 +3,20 @@ import * as pulumi from "@pulumi/pulumi";
 import { type RoutesResult } from "./types";
 import { integrateRoutesAndApis } from "./routes";
 import { type AssetsStackOutputs } from "./assets-stack";
+import * as fs from "fs";
+import * as path from "path";
+import { fileURLToPath } from "url";
+import { dirname } from "path";
+
+// Define __dirname equivalent for ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 export interface MainStackConfig {
   domainName: string;
   rootDomainName: string;
   createHostedZone: boolean;
+  kvStoreId: string;
 }
 
 export class MainStack extends pulumi.ComponentResource {
@@ -22,6 +31,8 @@ export class MainStack extends pulumi.ComponentResource {
   private certificateValidation: aws.acm.CertificateValidation | null = null;
 
   private cdn: aws.cloudfront.Distribution | null = null;
+  private kvStore: aws.cloudfront.KeyValueStore | null = null;
+  private routingFunction: aws.cloudfront.Function | null = null;
 
   private finalCdnUrl: pulumi.Output<string> = pulumi.Output.create<string>("");
 
@@ -133,37 +144,285 @@ export class MainStack extends pulumi.ComponentResource {
 
   protected setCdn = (
     config: MainStackConfig,
-    assetsOutputs: AssetsStackOutputs,
-    oai: aws.cloudfront.OriginAccessIdentity
+    assetsOutputs: AssetsStackOutputs
   ) => {
     // Create a CloudFront distribution
-    // Use a consistent origin ID
-    const originId = "s3-origin";
+
+    // Create an Origin Access Control (OAC) for CloudFront
+    const originAccessControl = new aws.cloudfront.OriginAccessControl(
+      "originAccessControl",
+      {
+        name: "S3 OriginAccessControl",
+        signingBehavior: "always",
+        signingProtocol: "sigv4",
+        originAccessControlOriginType: "s3",
+      },
+      { parent: this }
+    );
+
+    // Attach a bucket policy to allow access only from CloudFront
+    const bucketPolicy = new aws.s3.BucketPolicy(
+      "bucketPolicy",
+      {
+        bucket: assetsOutputs.siteBucket.bucket,
+        policy: assetsOutputs.siteBucket.bucket.apply((bucketName) =>
+          JSON.stringify({
+            Version: "2012-10-17",
+            Statement: [
+              {
+                Effect: "Allow",
+                Principal: {
+                  Service: "cloudfront.amazonaws.com",
+                },
+                Action: "s3:GetObject",
+                Resource: `arn:aws:s3:::${bucketName}/*`,
+                Condition: {
+                  StringEquals: {
+                    "AWS:SourceArn": originAccessControl.arn,
+                  },
+                },
+              },
+            ],
+          })
+        ),
+      },
+      { parent: this }
+    );
+
+    // Create a KeyValueStore for route mappings
+    this.kvStore = new aws.cloudfront.KeyValueStore(
+      "route-mappings-store",
+      {
+        name: "route-mappings-store",
+        comment: "Route mappings for HP Stuff site",
+      },
+      { parent: this }
+    );
+
+    // Create the routing function
+    this.routingFunction = new aws.cloudfront.Function(
+      "routingFunction",
+      {
+        name: "RoutingFunction",
+        runtime: "cloudfront-js-2.0",
+        code: fs.readFileSync(
+          path.join(__dirname, "cf-routing-function.js"),
+          "utf8"
+        ),
+        publish: true,
+        keyValueStoreAssociations: [this.kvStore.arn],
+      },
+      { parent: this }
+    );
+
+    // Create API Gateway for dynamic routes
+    const apiGateway = new aws.apigateway.RestApi(
+      "hp-stuff-api",
+      {
+        name: "HP Stuff API",
+        description: "API for HP Stuff dynamic routes",
+      },
+      { parent: this }
+    );
+
+    // Create Lambda role for API Gateway integration
+    const lambdaRole = new aws.iam.Role(
+      "hp-stuff-lambda-role",
+      {
+        assumeRolePolicy: JSON.stringify({
+          Version: "2012-10-17",
+          Statement: [
+            {
+              Action: "sts:AssumeRole",
+              Effect: "Allow",
+              Principal: {
+                Service: ["lambda.amazonaws.com", "apigateway.amazonaws.com"],
+              },
+            },
+          ],
+        }),
+      },
+      { parent: this }
+    );
+
+    new aws.iam.RolePolicyAttachment(
+      "lambda-s3-access",
+      {
+        role: lambdaRole.name,
+        policyArn: "arn:aws:iam::aws:policy/AmazonS3ReadOnlyAccess",
+      },
+      { parent: this }
+    );
+
+    // Attach basic Lambda execution policy
+    new aws.iam.RolePolicyAttachment(
+      "lambda-basic-execution",
+      {
+        role: lambdaRole.name,
+        policyArn:
+          "arn:aws:iam::aws:policy/service-role/AWSLambdaBasicExecutionRole",
+      },
+      { parent: this }
+    );
+
+    // Create a Lambda function for handling all dynamic routes
+    const dynamicRoutesLambda = new aws.lambda.Function(
+      "dynamic-routes-handler",
+      {
+        runtime: "nodejs22.x",
+        role: lambdaRole.arn,
+        handler: "api-gateway-handler.handler",
+        code: new pulumi.asset.AssetArchive({
+          ".": new pulumi.asset.FileArchive(
+            path.join(__dirname, "../greenwood/.aws-output")
+          ),
+          "api-gateway-handler.js": new pulumi.asset.FileAsset(
+            path.join(__dirname, "api-gateway-handler.js")
+          ),
+        }),
+        timeout: 30,
+        memorySize: 1024,
+        environment: {
+          variables: {
+            NODE_ENV: "production",
+            STATIC_BUCKET_NAME: assetsOutputs.siteBucket.bucket,
+          },
+        },
+      },
+      { parent: this }
+    );
+
+    // Create a catch-all resource and method for the API Gateway
+    const apiResource = new aws.apigateway.Resource(
+      "api-resource",
+      {
+        restApi: apiGateway.id,
+        parentId: apiGateway.rootResourceId,
+        pathPart: "{proxy+}",
+      },
+      { parent: this }
+    );
+
+    const apiMethod = new aws.apigateway.Method(
+      "api-method",
+      {
+        restApi: apiGateway.id,
+        resourceId: apiResource.id,
+        httpMethod: "ANY",
+        authorization: "NONE",
+        requestParameters: {
+          "method.request.path.proxy": true,
+        },
+      },
+      { parent: this }
+    );
+
+    // Integrate the Lambda with the API Gateway
+    const apiIntegration = new aws.apigateway.Integration(
+      "api-integration",
+      {
+        restApi: apiGateway.id,
+        resourceId: apiResource.id,
+        httpMethod: apiMethod.httpMethod,
+        integrationHttpMethod: "POST",
+        type: "AWS_PROXY",
+        uri: dynamicRoutesLambda.invokeArn,
+      },
+      { parent: this }
+    );
+
+    // Deploy the API Gateway
+    const apiDeployment = new aws.apigateway.Deployment(
+      "api-deployment",
+      {
+        restApi: apiGateway.id,
+        // Ensure the deployment happens after the integration
+        triggers: {
+          redeployment: pulumi.interpolate`${apiMethod.id}${apiIntegration.id}`,
+        },
+      },
+      { parent: this }
+    );
+
+    const apiStage = new aws.apigateway.Stage(
+      "api-stage",
+      {
+        deployment: apiDeployment.id,
+        restApi: apiGateway.id,
+        stageName: "prod",
+      },
+      { parent: this }
+    );
+
+    // Allow Lambda to be invoked by API Gateway
+    new aws.lambda.Permission(
+      "api-gateway-lambda-permission",
+      {
+        action: "lambda:InvokeFunction",
+        function: dynamicRoutesLambda.name,
+        principal: "apigateway.amazonaws.com",
+        sourceArn: pulumi.interpolate`${apiGateway.executionArn}/*/*`,
+      },
+      { parent: this }
+    );
+
     if (this.certificateValidation) {
       this.cdn = new aws.cloudfront.Distribution(
         "site-cdn",
         {
           enabled: true,
           origins: [
+            // API Gateway origin for all content
             {
-              domainName: assetsOutputs.bucketRegionalDomainName,
-              originId: originId,
-              s3OriginConfig: {
-                originAccessIdentity: oai.cloudfrontAccessIdentityPath,
+              originId: "api-origin",
+              domainName: pulumi.interpolate`${apiGateway.id}.execute-api.${aws.config.region}.amazonaws.com`,
+              customOriginConfig: {
+                httpPort: 80,
+                httpsPort: 443,
+                originProtocolPolicy: "https-only",
+                originSslProtocols: ["TLSv1.2"],
               },
+              originPath: "/prod",
             },
           ],
+          // Default behavior for static content
           defaultCacheBehavior: {
-            targetOriginId: originId,
+            targetOriginId: "api-origin",
             viewerProtocolPolicy: "redirect-to-https",
-            allowedMethods: ["GET", "HEAD"],
+            allowedMethods: [
+              "GET",
+              "HEAD",
+              "OPTIONS",
+              "PUT",
+              "POST",
+              "PATCH",
+              "DELETE",
+            ],
             cachedMethods: ["GET", "HEAD"],
             forwardedValues: {
-              cookies: { forward: "none" },
-              queryString: false,
+              cookies: { forward: "all" },
+              queryString: true,
+              headers: [
+                "Authorization",
+                "Origin",
+                "Content-Type",
+                "x-original-uri",
+                "x-route-context",
+              ],
             },
-            functionAssociations: [],
+            functionAssociations: [
+              {
+                eventType: "viewer-request",
+                functionArn: this.routingFunction.arn,
+              },
+            ],
+            minTtl: 0,
+            defaultTtl: 0,
+            maxTtl: 86400,
           },
+
+          // not needed - let the function decide
+          orderedCacheBehaviors: [],
           viewerCertificate: {
             acmCertificateArn: this.certificateValidation.certificateArn,
             sslSupportMethod: "sni-only",
@@ -177,6 +436,13 @@ export class MainStack extends pulumi.ComponentResource {
               restrictionType: "none",
             },
           },
+          customErrorResponses: [
+            {
+              errorCode: 404,
+              responseCode: 404,
+              responsePagePath: "/404.html",
+            },
+          ],
         },
         { parent: this }
       );
@@ -199,49 +465,6 @@ export class MainStack extends pulumi.ComponentResource {
       { parent: this }
     );
 
-    // Set up CloudFront OAI
-    const oai = new aws.cloudfront.OriginAccessIdentity(
-      "hp-stuff-cdn-oai",
-      {
-        comment: "Allow CloudFront to access S3",
-      },
-      { parent: this }
-    );
-
-    // Set up bucket policy with more explicit permissions
-    const bucketPolicy = new aws.s3.BucketPolicy(
-      "hp-stuff-bucket-policy",
-      {
-        bucket: assetsOutputs.bucketName,
-        policy: pulumi
-          .all([assetsOutputs.bucketName, oai.iamArn])
-          .apply(([bucketName, oaiArn]) =>
-            JSON.stringify({
-              Version: "2012-10-17",
-              Statement: [
-                {
-                  Sid: "1",
-                  Effect: "Allow",
-                  Principal: {
-                    AWS: oaiArn,
-                  },
-                  Action: "s3:GetObject",
-                  Resource: `arn:aws:s3:::${bucketName}/*`,
-                },
-              ],
-            })
-          ),
-      },
-      { parent: this }
-    );
-
-    // Log the bucket policy for debugging
-    pulumi
-      .all([assetsOutputs.bucketName, oai.iamArn])
-      .apply(([bucketName, oaiArn]) => {
-        console.log(`Bucket: ${bucketName}, OAI ARN: ${oaiArn}`);
-      });
-
     // Get or create Route53 hosted zone
     await this.getR53Zone(config);
 
@@ -252,33 +475,12 @@ export class MainStack extends pulumi.ComponentResource {
     this.setCertificateValidationDomains(config, usEast1);
     this.setCertificateValidation(config, usEast1);
 
-    this.setCdn(config, assetsOutputs, oai);
+    this.setCdn(config, assetsOutputs);
 
     if (this.cdn) {
-      const routesResult = integrateRoutesAndApis(
-        assetsOutputs.siteBucket,
-        this.cdn,
-        usEast1
-      );
-
-      // Add the CloudFront function to the default cache behavior
-      if (Array.isArray(this.cdn.defaultCacheBehavior.functionAssociations)) {
-        this.cdn.defaultCacheBehavior.functionAssociations.push({
-          eventType: "viewer-request",
-          functionArn: routesResult.cfFunction.arn,
-        });
-      }
-
       this.finalCdnUrl = this.cdn.domainName;
 
       // Use apply to handle the async result
-      const cacheBehaviors = routesResult.cacheBehaviors;
-      const cfFunction = routesResult.cfFunction;
-
-      if (cacheBehaviors.length > 0) {
-        this.cdn.defaultCacheBehavior.viewerProtocolPolicy =
-          pulumi.Output.create<string>("redirect-to-https");
-      }
 
       if (this.hostedZone) {
         const dnsRecord = new aws.route53.Record(
@@ -337,6 +539,7 @@ export class MainStack extends pulumi.ComponentResource {
         this.registerOutputs({
           cdnUrl: this.cdn.domainName,
           finalCdnUrl: this.finalCdnUrl,
+          kvStoreId: this.kvStore?.id,
         });
       }
     }

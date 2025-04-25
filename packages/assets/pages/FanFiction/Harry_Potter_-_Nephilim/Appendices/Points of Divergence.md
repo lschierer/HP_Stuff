@@ -1,7 +1,7 @@
 ---
-title: |
-layout: standard
+title: >-
   Points of Divergence
+layout: standard
 author: Luke Schierer
 tableOfContents:
   minHeadingLevel: 2

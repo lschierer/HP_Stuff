@@ -1,7 +1,7 @@
 ---
-title: |
-layout: standard
+title: >-
   Relative Power Levels
+layout: standard
 sidebar:
   order: 100
 tableOfContents:

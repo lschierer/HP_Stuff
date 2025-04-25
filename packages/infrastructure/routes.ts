@@ -35,20 +35,7 @@ export function integrateRoutesAndApis(
     { provider: usEast1 }
   );
 
-  // Create the CloudFront Function for request rewriting
-  const edgeHandlerPath = path.join(__dirname, "edge-handler");
-  const cfFunctionCode = fs.readFileSync(
-    path.join(edgeHandlerPath, "cloudfront-function.js"),
-    "utf8"
-  );
-
-  const cfFunction = new aws.cloudfront.Function("hp-stuff-request-rewrite", {
-    name: "HPStuffRequestRewriteFunction",
-    runtime: "cloudfront-js-2.0",
-    comment: "URL rewriting function for clean URLs",
-    publish: true,
-    code: cfFunctionCode,
-  });
+  // Create a CloudFront Function to route subdirectory requests to the appropriate index.html file
 
   // Process routes
   const cacheBehaviors: aws.types.input.cloudfront.DistributionOrderedCacheBehavior[] =
@@ -124,11 +111,7 @@ export function integrateRoutesAndApis(
         forwardedValues: {
           queryString: true,
           cookies: { forward: "none" },
-          headers: [
-            "Host",
-            "Origin",
-            "Referer",
-          ],
+          headers: ["Host", "Origin", "Referer"],
         },
         lambdaFunctionAssociations: [
           {
@@ -234,7 +217,6 @@ export function integrateRoutesAndApis(
 
   return {
     cacheBehaviors,
-    cfFunction,
   };
 }
 

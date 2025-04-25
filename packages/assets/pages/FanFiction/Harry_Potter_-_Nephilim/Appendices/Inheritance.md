@@ -1,7 +1,7 @@
 ---
-title: |
-layout: standard
+title: >-
   Non-Mendelian Inheritance
+layout: standard
 author: Luke Schierer
 sidebar:
   order: 100

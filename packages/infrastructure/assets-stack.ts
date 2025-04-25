@@ -1,5 +1,7 @@
 import * as aws from "@pulumi/aws";
 import * as pulumi from "@pulumi/pulumi";
+import * as std from "@pulumi/std";
+
 import path from "path";
 import mime from "mime";
 import { walkDirectory } from "./utils";
@@ -8,6 +10,7 @@ export interface AssetsStackOutputs {
   siteBucket: aws.s3.Bucket;
   bucketName: pulumi.Output<string>;
   bucketRegionalDomainName: pulumi.Output<string>;
+  bucketWebsiteEndpoint: pulumi.Output<string>;
   bucketArn: pulumi.Output<string>;
 }
 
@@ -25,8 +28,9 @@ export class AssetsStack extends pulumi.ComponentResource {
           indexDocument: "index.html",
           errorDocument: "error.html",
         },
-        // Add ACL to ensure the bucket is accessible
-        acl: "private",
+        versioning: {
+          enabled: true,
+        },
       },
       { parent: this }
     );
@@ -58,13 +62,10 @@ export class AssetsStack extends pulumi.ComponentResource {
       siteBucket,
       bucketName: siteBucket.bucket,
       bucketRegionalDomainName: siteBucket.bucketRegionalDomainName,
+      bucketWebsiteEndpoint: siteBucket.websiteEndpoint,
       bucketArn: siteBucket.arn,
     };
 
-    this.registerOutputs({
-      bucketName: siteBucket.bucket,
-      bucketRegionalDomainName: siteBucket.bucketRegionalDomainName,
-      bucketArn: siteBucket.arn,
-    });
+    this.registerOutputs(this.outputs);
   }
 }
