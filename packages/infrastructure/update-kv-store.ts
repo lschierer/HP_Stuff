@@ -5,31 +5,21 @@
  * It should be run after the graph.json is generated and before deployment
  */
 
-import { parseGraphJson, generateKvConfig } from "./graph-parser.js";
+import { parseGraphJson, generateKvConfig } from "./graph-parser";
 import { exec } from "child_process";
 import * as fs from "fs";
 import * as path from "path";
 import { fileURLToPath } from "url";
 import { dirname } from "path";
+import {
+  CloudFrontKeyValueStoreClient,
+  PutKeyCommand,
+} from "@aws-sdk/client-cloudfront-keyvaluestore";
+import "@aws-sdk/signature-v4-crt";
 
 // Define __dirname equivalent for ESM
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-
-// Promisify exec
-function execPromise(
-  command: string
-): Promise<{ stdout: string; stderr: string }> {
-  return new Promise((resolve, reject) => {
-    exec(command, (error, stdout, stderr) => {
-      if (error) {
-        reject(error);
-        return;
-      }
-      resolve({ stdout, stderr });
-    });
-  });
-}
 
 async function main() {
   // Parse command line arguments
@@ -39,6 +29,8 @@ async function main() {
   if (!kvStoreId) {
     console.error("Usage: npm run update-kv -- <kv-store-id>");
     process.exit(1);
+  } else {
+    console.log(`kvStoreId is ${kvStoreId}`);
   }
 
   // Paths
@@ -49,50 +41,29 @@ async function main() {
   try {
     // Generate KV config
     console.log(`Parsing graph.json from ${graphJsonPath}`);
-    const routeMappings = parseGraphJson(graphJsonPath);
-    generateKvConfig(routeMappings, kvConfigPath);
 
     // Update the KV store using AWS CLI
     console.log(`Updating CloudFront KeyValueStore ${kvStoreId}`);
 
     // CloudFront KV store has a limit of 50 items per batch, so we need to chunk
-    const kvItems = JSON.parse(fs.readFileSync(kvConfigPath, "utf8"));
-    const chunkSize = 50;
-    const chunks: Record<string, string>[] = [];
-
-    // Create chunks of KV items
-    Object.entries(kvItems).forEach(([key, value], i) => {
-      const chunkIndex = Math.floor(i / chunkSize);
-      if (!chunks[chunkIndex]) chunks[chunkIndex] = {};
-      chunks[chunkIndex][key] = value;
+    const routeMappings = parseGraphJson(kvConfigPath);
+    const client = new CloudFrontKeyValueStoreClient({
+      region: "us-east-2",
     });
-
-    // Update each chunk
-    for (let i = 0; i < chunks.length; i++) {
-      const chunk = chunks[i];
-      console.log(
-        `Updating chunk ${i + 1} of ${chunks.length} (${Object.keys(chunk).length} items)`
-      );
-
-      // Create a temporary file for this chunk
-      const chunkPath = path.join(__dirname, `kv-config-chunk-${i}.json`);
-      fs.writeFileSync(chunkPath, JSON.stringify(chunk, null, 2));
-
-      try {
-        // Use AWS CLI to update the KV store
-        const { stdout, stderr } = await execPromise(
-          `aws cloudfront put-key-value-store-items --key-value-store-id ${kvStoreId} --items file://${chunkPath}`
-        );
-
-        if (stdout) console.log(stdout);
-        if (stderr) console.error(stderr);
-
-        console.log(`Successfully updated chunk ${i + 1}`);
-      } catch (error) {
-        console.error(`Error updating chunk ${i + 1}:`, error);
-      } finally {
-        // Clean up the temporary file
-        fs.unlinkSync(chunkPath);
+    let etag = "E3UN6WX5RRO2AG";
+    for (const [key, value] of routeMappings) {
+      const input = {
+        // PutKeyRequest
+        Key: key,
+        Value: JSON.stringify(value),
+        KvsARN:
+          "arn:aws:cloudfront::699040795025:key-value-store/b68c5b73-702c-41cb-8f54-3df5c67a40b3", // required
+        IfMatch: etag, // required
+      };
+      const command = new PutKeyCommand(input);
+      const response = await client.send(command);
+      if (response.ETag) {
+        etag = response.ETag;
       }
     }
 

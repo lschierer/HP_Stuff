@@ -16,20 +16,22 @@ interface RouteMapping {
 }
 
 import { GraphElement } from "@hp-stuff/schemas";
-import { title } from "@pulumi/std";
 
 /**
  * Parse the graph.json file and generate route mappings for the CloudFront KeyValueStore
  */
 export function parseGraphJson(
   graphJsonPath: string
-): Record<string, RouteMapping> {
+): Map<string, RouteMapping> {
   // Read the graph.json file
   const graphJson = JSON.parse(
     fs.readFileSync(graphJsonPath, "utf8")
   ) as object;
   // Create a map of routes to their API paths
-  const routeMappings: Record<string, RouteMapping> = {};
+  const routeMappings: Map<string, RouteMapping> = new Map<
+    string,
+    RouteMapping
+  >();
 
   const valid = GraphElement.array().safeParse(graphJson);
   if (valid.success) {
@@ -45,7 +47,7 @@ export function parseGraphJson(
           ? path.basename(entry.outputHref, ".route.js")
           : route.replace(/\//g, "-");
 
-        routeMappings[route] = {
+        routeMappings.set(route, {
           route,
           apiPath: `/${outputPath}`,
           isSSR: true,
@@ -53,13 +55,13 @@ export function parseGraphJson(
             id: entry.id,
             title: entry.title,
           },
-        };
+        });
       } else {
-        routeMappings[route] = {
+        routeMappings.set(route, {
           route,
           apiPath: route,
           isSSR: false,
-        };
+        });
       }
     }
   }
@@ -71,7 +73,7 @@ export function parseGraphJson(
  * Generate a CloudFront KeyValueStore configuration file
  */
 export function generateKvConfig(
-  routeMappings: Record<string, RouteMapping>,
+  routeMappings: Map<string, RouteMapping>,
   outputPath: string
 ): void {
   // Format the mappings for the KV store
