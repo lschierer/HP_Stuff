@@ -6,4 +6,4 @@ export { NavigationItem, ClientNavItem } from "./page";
 export { SiteConfig } from "./config";
 export { Bookmark } from "./bookmarks";
 export { LayoutOptions } from "./layoutOptions";
-export { GraphElement } from "./graph";
+export { GraphElement, Manifest } from "./greenwood";
