@@ -1,9 +1,0 @@
-config:
-  aws:region: us-east-2
-  aws:profile: home
-  infrastructure:certificateArn: "true"
-  infrastructure:includeWWW: "true"
-  infrastructure:pathToWebsiteContents: "../packages/starlight/dist"
-  infrastructure:targetDomain: home.hp-fan.schierer.org
-  infrastructure:hostedZoneId: ZOB4NXMJR2BZF
-  infrastructure:hostedZoneID: ZOB4NXMJR2BZF
