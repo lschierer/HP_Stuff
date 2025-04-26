@@ -1,7 +1,0 @@
-name: hp-stuff
-runtime:
-  name: nodejs
-  options:
-    nodeargs: "--import tsx --no-warnings"
-    packagemanager: pnpm
-description: HP Stuff website infrastructure
