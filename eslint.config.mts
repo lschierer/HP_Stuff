@@ -6,9 +6,10 @@ export default tseslint.config(
   {
     ignores: [
       "**/dist/**",
+      "**/public/**",
+      "packages/infrastructure/.sst/**",
       "packages/starlight/.astro/**",
       "packages/greenwood/.greenwood/**",
-      "**/public/**",
       "packages/greenwood/node_modules/greenwoodspectrumtheme/dist/**",
     ],
   },
@@ -70,9 +71,18 @@ export default tseslint.config(
   },
   // Add a new configuration specifically for packages/infrastructure
   {
-    files: ["packages/infrastructure/**/*.ts", "packages/infrastructure/**/*.mts"],
+    files: [
+      "packages/infrastructure/**/*.ts",
+      "packages/infrastructure/**/*.mts",
+    ],
     rules: {
       "@typescript-eslint/no-unused-vars": "off",
+    },
+  },
+  {
+    files: ["packages/infrastructure/sst.config.ts"],
+    rules: {
+      "@typescript-eslint/triple-slash-reference": "off",
     },
   }
 );

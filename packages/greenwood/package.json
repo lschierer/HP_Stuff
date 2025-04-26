@@ -8,7 +8,7 @@
     "start": "NODE_OPTIONS='--import @greenwood/cli/register' greenwood develop",
     "build": "NODE_OPTIONS='--max-old-space-size=11264 --experimental-strip-types --import @greenwood/cli/register' greenwood build",
     "build:debug": "NODE_OPTIONS='--trace-warnings --inspect --experimental-strip-types --import @greenwood/cli/register' greenwood build",
-    "serve": "NODE_OPTIONS='--import @greenwood/cli/register' greenwood serve"
+    "serve": "NODE_OPTIONS='--experimental-strip-types  --import @greenwood/cli/register' greenwood serve"
   },
   "dependencies": {
     "@hp-stuff/schemas": "workspace:^",
