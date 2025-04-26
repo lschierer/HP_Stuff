@@ -1,3 +1,5 @@
+export const prerender = true; // reduce the number of pages that the router needs to handle.
+
 import { type GetFrontmatter, type GetBody } from "@greenwood/cli";
 import markdownTextProcessing from "../../lib/customMarkdownProcessing.ts";
 

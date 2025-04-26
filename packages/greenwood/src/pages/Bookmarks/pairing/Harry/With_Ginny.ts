@@ -1,14 +1,16 @@
+export const prerender = true; // reduce the number of pages that the router needs to handle.
+
 import {
   type Compilation,
   type Page,
   type GetFrontmatter,
 } from "@greenwood/cli";
 import "../../../lib/BookmarksList.ts";
-import BookmarksList from "../../../lib/BookmarksList.ts";
+import BookmarksList from "../../../../lib/BookmarksList.ts";
 
-import markdownTextProcessing from "../../../lib/customMarkdownProcessing.ts";
+import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
 
-import debugFunction from "../../../lib/debug.ts";
+import debugFunction from "../../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
@@ -20,12 +22,12 @@ const getBody: (
   request: Request
 ) => string | Promise<string> = async () => {
   const bodyText = `
-Sally-Anne [Perks] is the character that disappears between the sorting in book 1 and the time students are called in for their OWL practicals in book5. As we know literally nothing about her except her name, she is the perfect blank slate for a fan fiction author.
+While [Ginny] has flaws, I remain partial to this pairing. Unfortunately fan fiction rarely does it justice.
 
-[Perks]: /Harrypedia/people/Perks/
+[Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 `;
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Harry With Sally-Anne";
+  bookmarksList.category = "Harry With Ginny";
   await bookmarksList.ParseBookmarks().then(() => {
     if (DEBUG) {
       console.log(
@@ -46,9 +48,9 @@ const getFrontmatter: GetFrontmatter = async () => {
   /* end workaround */
 
   return {
-    title: "Harry With Sally-Anne Perks",
+    title: "Harry With Ginny",
     collection: "Bookmarks",
-    description: "HP stories with Harry and Sally-Anne Perks paired",
+    description: "HP stories with Harry and Ginny paired",
     author: "Luke Schierer",
     layout: "standard",
     imports: ["/styles/BookmarksList.css"],

@@ -13,35 +13,40 @@ export async function handler(request: Request) {
     request.url.slice(request.url.indexOf("?"))
   );
   const id = params.has("id") ? params.get("id") : "";
-  const jsonFile: string = "../../../assets/gedcom/people.json";
-  const peopleImport = (await import(jsonFile)) as object;
-  const valid = GedcomPerson.GedcomElement.array().safeParse(
-    peopleImport["default" as keyof typeof peopleImport]
-  );
-  if (valid.success) {
-    if (DEBUG) {
-      console.log(`${FILENAME} has a successful parse of ${jsonFile}`);
-    }
-  } else {
-    if (DEBUG) {
-      console.error(valid.error.message);
-    }
-  }
-  const people = valid.data;
-  if (DEBUG) {
-    console.log(
-      `${FILENAME} has ${people ? people.length : 0} people, I will now look for id "${id}"`
-    );
-  }
   let body: GedcomPerson.GedcomElement | object = {};
-  if (people && people.length > 0 && id) {
-    const person = people.find((p) => {
-      return !p.gramps_id.localeCompare(id);
-    });
-    if (person) {
-      body = person;
+  const jsonFile = new URL("/assets/gedcom/people.json", import.meta.url);
+  const peoplereq = await fetch(jsonFile);
+  if (peoplereq.ok) {
+    const peopleImport = (await peoplereq.json()) as object;
+
+    const valid = GedcomPerson.GedcomElement.array().safeParse(
+      peopleImport["default" as keyof typeof peopleImport]
+    );
+    if (valid.success) {
+      if (DEBUG) {
+        console.log(`${FILENAME} has a successful parse of ${jsonFile}`);
+      }
     } else {
-      console.error(`${FILENAME} failed to find person for ${id}`);
+      if (DEBUG) {
+        console.error(valid.error.message);
+      }
+    }
+    const people = valid.data;
+    if (DEBUG) {
+      console.log(
+        `${FILENAME} has ${people ? people.length : 0} people, I will now look for id "${id}"`
+      );
+    }
+
+    if (people && people.length > 0 && id) {
+      const person = people.find((p) => {
+        return !p.gramps_id.localeCompare(id);
+      });
+      if (person) {
+        body = person;
+      } else {
+        console.error(`${FILENAME} failed to find person for ${id}`);
+      }
     }
   }
 

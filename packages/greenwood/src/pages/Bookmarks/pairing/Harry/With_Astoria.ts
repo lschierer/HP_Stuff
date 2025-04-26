@@ -5,12 +5,12 @@ import {
   type Page,
   type GetFrontmatter,
 } from "@greenwood/cli";
-import "../../lib/BookmarksList.ts";
-import BookmarksList from "../../lib/BookmarksList.ts";
+import "../../../lib/BookmarksList.ts";
+import BookmarksList from "../../../../lib/BookmarksList.ts";
 
-import markdownTextProcessing from "../../lib/customMarkdownProcessing.ts";
+import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
 
-import debugFunction from "../../lib/debug.ts";
+import debugFunction from "../../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
@@ -22,12 +22,18 @@ const getBody: (
   request: Request
 ) => string | Promise<string> = async () => {
   const bodyText = `
-While The Harry Potter universe offers a great foundation for building on, it also has plenty
-of places where Mrs. Rowling has left us with inconsistencies, contradictions, and other plot
-holes. These stories, often through the use of satire and/or farce, expose some of those.
+It is relatively rare to find this as a primary pairing, most often these stories feature some type of revenge on [Draco] instead of a positive relationship between these two as a primary pairing. I am not interested in violating marriage vows as a form of revenge, momentary
+pleasure, or drunkenness.
+
+These stories will focus on a version of [Astoria] that build off of the _lack_ of detail we have about her character. Mrs. Rowling's descriptions about the decision process that, in the cannon material, lead to her marriage is incredibly vague and in some ways even suggestive.
+These stories take that vague suggestion and run with it.
+
+[Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>
+[Astoria]: /Harrypedia/people/Greengrass/Astoria/
+
 `;
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Problems Exposed";
+  bookmarksList.category = "Harry With Astoria";
   await bookmarksList.ParseBookmarks().then(() => {
     if (DEBUG) {
       console.log(
@@ -48,9 +54,9 @@ const getFrontmatter: GetFrontmatter = async () => {
   /* end workaround */
 
   return {
-    title: "Exposing Plot Holes",
+    title: "Harry With Astoria Greengrass",
     collection: "Bookmarks",
-    description: "HP stories HP stories that expose plot holes in the original",
+    description: "HP stories with Harry and Astoria Greengrass paired",
     author: "Luke Schierer",
     layout: "standard",
     imports: ["/styles/BookmarksList.css"],

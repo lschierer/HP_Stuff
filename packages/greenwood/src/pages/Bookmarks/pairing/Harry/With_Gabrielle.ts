@@ -1,14 +1,16 @@
+export const prerender = true; // reduce the number of pages that the router needs to handle.
+
 import {
   type Compilation,
   type Page,
   type GetFrontmatter,
 } from "@greenwood/cli";
 import "../../../lib/BookmarksList.ts";
-import BookmarksList from "../../../lib/BookmarksList.ts";
+import BookmarksList from "../../../../lib/BookmarksList.ts";
 
-import markdownTextProcessing from "../../../lib/customMarkdownProcessing.ts";
+import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
 
-import debugFunction from "../../../lib/debug.ts";
+import debugFunction from "../../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
@@ -20,19 +22,13 @@ const getBody: (
   request: Request
 ) => string | Promise<string> = async () => {
   const bodyText = `
-Harry Potter almost begs for a crossover with the Addams family, despite the
-differences in timelines in any iteration of the Addams family. If you are
-going to do such a crossover, pairing [Harry] with Wednesday is, or should be, a
-foregone conclusion. Some of these stories are just stupid, slash and similar
-themes abound, despite the fact that it is entirely unnecessary, and, frankly,
-contrary to the original Addams source material. Despite that, there are some
-real gems, some of which are even finished.
+This pairing has to be *very* carefully handled to not simply come across as creepy. While no one blinks at a five year age gap between people in their thirties, even a two year age gap will get a second look when dealing with high school students. While we do not know how old [Gabrielle] is with any true certainty, it is safe to say that she is way too young for fourteen year old [Harry] when they first meet.
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>
-
+[Gabrielle]: /Harrypedia/people/Delacour/Gabrielle/
 `;
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Harry With Wednesday";
+  bookmarksList.category = "Harry With Gabrielle";
   await bookmarksList.ParseBookmarks().then(() => {
     if (DEBUG) {
       console.log(
@@ -53,9 +49,9 @@ const getFrontmatter: GetFrontmatter = async () => {
   /* end workaround */
 
   return {
-    title: "Harry With Wednesday Addams",
+    title: "Harry With Gabrielle",
     collection: "Bookmarks",
-    description: "HP stories with Harry and Wednesday Addams paired",
+    description: "HP stories with Harry and Gabrielle paired",
     author: "Luke Schierer",
     layout: "standard",
     imports: ["/styles/BookmarksList.css"],

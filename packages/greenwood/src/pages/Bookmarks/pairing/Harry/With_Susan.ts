@@ -1,14 +1,16 @@
+export const prerender = true; // reduce the number of pages that the router needs to handle.
+
 import {
   type Compilation,
   type Page,
   type GetFrontmatter,
 } from "@greenwood/cli";
 import "../../../lib/BookmarksList.ts";
-import BookmarksList from "../../../lib/BookmarksList.ts";
+import BookmarksList from "../../../../lib/BookmarksList.ts";
 
-import markdownTextProcessing from "../../../lib/customMarkdownProcessing.ts";
+import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
 
-import debugFunction from "../../../lib/debug.ts";
+import debugFunction from "../../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
@@ -20,18 +22,14 @@ const getBody: (
   request: Request
 ) => string | Promise<string> = async () => {
   const bodyText = `
-It is relatively rare to find this as a primary pairing, most often these stories feature some type of revenge on [Draco] instead of a positive relationship between these two as a primary pairing. I am not interested in violating marriage vows as a form of revenge, momentary
-pleasure, or drunkenness.
+Many of these stories happen when [Amelia] [Bones] steps in to, you know, actually do her job as a law enforcement official, and thus belong in the [Responsible Adult] category. While that might happen in a few of these, it is not why they are included.
 
-These stories will focus on a version of [Astoria] that build off of the _lack_ of detail we have about her character. Mrs. Rowling's descriptions about the decision process that, in the cannon material, lead to her marriage is incredibly vague and in some ways even suggestive.
-These stories take that vague suggestion and run with it.
-
-[Draco]: </Harrypedia/people/Malfoy/Draco Lucius/>
-[Astoria]: /Harrypedia/people/Greengrass/Astoria/
-
+[Amelia]: </Harrypedia/people/Bones/Amelia Susan/>
+[Bones]: /Harrypedia/people/Bones/
+[Responsible Adult]: </Bookmarks/Responsible_Adults/>
 `;
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Harry With Astoria";
+  bookmarksList.category = "Harry With Susan";
   await bookmarksList.ParseBookmarks().then(() => {
     if (DEBUG) {
       console.log(
@@ -52,9 +50,9 @@ const getFrontmatter: GetFrontmatter = async () => {
   /* end workaround */
 
   return {
-    title: "Harry With Astoria Greengrass",
+    title: "Harry and Susan",
     collection: "Bookmarks",
-    description: "HP stories with Harry and Astoria Greengrass paired",
+    description: "HP stories in which Harry is paired with Susan Bones",
     author: "Luke Schierer",
     layout: "standard",
     imports: ["/styles/BookmarksList.css"],

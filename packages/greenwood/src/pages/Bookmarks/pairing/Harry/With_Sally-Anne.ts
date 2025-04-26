@@ -1,14 +1,16 @@
+export const prerender = true; // reduce the number of pages that the router needs to handle.
+
 import {
   type Compilation,
   type Page,
   type GetFrontmatter,
 } from "@greenwood/cli";
 import "../../../lib/BookmarksList.ts";
-import BookmarksList from "../../../lib/BookmarksList.ts";
+import BookmarksList from "../../../../lib/BookmarksList.ts";
 
-import markdownTextProcessing from "../../../lib/customMarkdownProcessing.ts";
+import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
 
-import debugFunction from "../../../lib/debug.ts";
+import debugFunction from "../../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
@@ -20,13 +22,12 @@ const getBody: (
   request: Request
 ) => string | Promise<string> = async () => {
   const bodyText = `
-This pairing has to be *very* carefully handled to not simply come across as creepy. While no one blinks at a five year age gap between people in their thirties, even a two year age gap will get a second look when dealing with high school students. While we do not know how old [Gabrielle] is with any true certainty, it is safe to say that she is way too young for fourteen year old [Harry] when they first meet.
+Sally-Anne [Perks] is the character that disappears between the sorting in book 1 and the time students are called in for their OWL practicals in book5. As we know literally nothing about her except her name, she is the perfect blank slate for a fan fiction author.
 
-[Harry]: </Harrypedia/people/Potter/Harry James/>
-[Gabrielle]: /Harrypedia/people/Delacour/Gabrielle/
+[Perks]: /Harrypedia/people/Perks/
 `;
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Harry With Gabrielle";
+  bookmarksList.category = "Harry With Sally-Anne";
   await bookmarksList.ParseBookmarks().then(() => {
     if (DEBUG) {
       console.log(
@@ -47,9 +48,9 @@ const getFrontmatter: GetFrontmatter = async () => {
   /* end workaround */
 
   return {
-    title: "Harry With Gabrielle",
+    title: "Harry With Sally-Anne Perks",
     collection: "Bookmarks",
-    description: "HP stories with Harry and Gabrielle paired",
+    description: "HP stories with Harry and Sally-Anne Perks paired",
     author: "Luke Schierer",
     layout: "standard",
     imports: ["/styles/BookmarksList.css"],

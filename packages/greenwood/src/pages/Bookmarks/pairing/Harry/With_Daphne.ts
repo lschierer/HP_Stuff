@@ -1,14 +1,16 @@
+export const prerender = true; // reduce the number of pages that the router needs to handle.
+
 import {
   type Compilation,
   type Page,
   type GetFrontmatter,
 } from "@greenwood/cli";
 import "../../../lib/BookmarksList.ts";
-import BookmarksList from "../../../lib/BookmarksList.ts";
+import BookmarksList from "../../../../lib/BookmarksList.ts";
 
-import markdownTextProcessing from "../../../lib/customMarkdownProcessing.ts";
+import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
 
-import debugFunction from "../../../lib/debug.ts";
+import debugFunction from "../../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
@@ -20,16 +22,16 @@ const getBody: (
   request: Request
 ) => string | Promise<string> = async () => {
   const bodyText = `
-I really feel that [Hannah] is an under utilised character in fan fiction. Sure she backs down from her defence of him in second year and ends up wearing a badge in fourth, but both of these essentially boil down to the fact that sheis a [Hufflepuff] and not a [Gryffindor] - she _isn't_ brave, and getting along with (showing loyalty to) her housemates is _massively_ important to her. The latter however can easily be transferred to [Harry] by a romantic attachment overriding the House loyalty, as my first entry in this category does.
+[Daphne] is one of those blank slate characters that authors can do anything
+with. Sure enough, they certainly have, though there do tend to be patterns.
+Most of them are not worth reading, but enough are that this becomes a category
+to watch.
 
-[Hannah]: /Harrypedia/people/Abbott/Hannah/
-[Harry]: </Harrypedia/people/Potter/Harry James/>
-[Hufflepuff]: /Harrypedia/Hogwarts/Hufflepuff/
-[Gryffindor]: /Harrypedia/Hogwarts/Gryffindor/
+[Daphne]: /Harrypedia/people/Greengrass/Daphne/
 
 `;
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Harry With Hannah";
+  bookmarksList.category = "Harry With Daphne";
   await bookmarksList.ParseBookmarks().then(() => {
     if (DEBUG) {
       console.log(
@@ -50,9 +52,9 @@ const getFrontmatter: GetFrontmatter = async () => {
   /* end workaround */
 
   return {
-    title: "Harry With Hannah Abbott",
+    title: "Harry With Daphne Greengrass",
     collection: "Bookmarks",
-    description: "HP stories with Harry and Hannah Abbott paired",
+    description: "HP stories with Harry and Daphne Greengrass paired",
     author: "Luke Schierer",
     layout: "standard",
     imports: ["/styles/BookmarksList.css"],

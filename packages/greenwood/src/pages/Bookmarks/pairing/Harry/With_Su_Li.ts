@@ -1,3 +1,5 @@
+export const prerender = true; // reduce the number of pages that the router needs to handle.
+
 import {
   type Compilation,
   type Page,
@@ -20,16 +22,13 @@ const getBody: (
   request: Request
 ) => string | Promise<string> = async () => {
   const bodyText = `
-[Daphne] is one of those blank slate characters that authors can do anything
-with. Sure enough, they certainly have, though there do tend to be patterns.
-Most of them are not worth reading, but enough are that this becomes a category
-to watch.
+For some reason this pairing is incredibly rare, and even more rarely are these stories actually finished. I am unsure why, as [Cho]'s character in the cannon books is clearly not a good romantic match for [Harry], and yet the introduction of chinese culture, or even psuedo-chinese culture allows for some interesting crossovers, or at least minor additions to the canon universe (cameos within the universe as it were).
 
-[Daphne]: /Harrypedia/people/Greengrass/Daphne/
-
+[Cho]: /Harrypedia/people/Chang/Cho/
+[Harry]: </Harrypedia/people/Potter/Harry James/>
 `;
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Harry With Daphne";
+  bookmarksList.category = "Harry With Su Li";
   await bookmarksList.ParseBookmarks().then(() => {
     if (DEBUG) {
       console.log(
@@ -50,9 +49,9 @@ const getFrontmatter: GetFrontmatter = async () => {
   /* end workaround */
 
   return {
-    title: "Harry With Daphne Greengrass",
+    title: "Harry and Su Li",
     collection: "Bookmarks",
-    description: "HP stories with Harry and Daphne Greengrass paired",
+    description: "HP stories in which Harry is paired with Su Li",
     author: "Luke Schierer",
     layout: "standard",
     imports: ["/styles/BookmarksList.css"],

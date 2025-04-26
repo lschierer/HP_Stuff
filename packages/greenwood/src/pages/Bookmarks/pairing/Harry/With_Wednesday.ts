@@ -1,14 +1,16 @@
+export const prerender = true; // reduce the number of pages that the router needs to handle.
+
 import {
   type Compilation,
   type Page,
   type GetFrontmatter,
 } from "@greenwood/cli";
 import "../../../lib/BookmarksList.ts";
-import BookmarksList from "../../../lib/BookmarksList.ts";
+import BookmarksList from "../../../../lib/BookmarksList.ts";
 
-import markdownTextProcessing from "../../../lib/customMarkdownProcessing.ts";
+import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
 
-import debugFunction from "../../../lib/debug.ts";
+import debugFunction from "../../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
@@ -20,13 +22,19 @@ const getBody: (
   request: Request
 ) => string | Promise<string> = async () => {
   const bodyText = `
-For some reason this pairing is incredibly rare, and even more rarely are these stories actually finished. I am unsure why, as [Cho]'s character in the cannon books is clearly not a good romantic match for [Harry], and yet the introduction of chinese culture, or even psuedo-chinese culture allows for some interesting crossovers, or at least minor additions to the canon universe (cameos within the universe as it were).
+Harry Potter almost begs for a crossover with the Addams family, despite the
+differences in timelines in any iteration of the Addams family. If you are
+going to do such a crossover, pairing [Harry] with Wednesday is, or should be, a
+foregone conclusion. Some of these stories are just stupid, slash and similar
+themes abound, despite the fact that it is entirely unnecessary, and, frankly,
+contrary to the original Addams source material. Despite that, there are some
+real gems, some of which are even finished.
 
-[Cho]: /Harrypedia/people/Chang/Cho/
 [Harry]: </Harrypedia/people/Potter/Harry James/>
+
 `;
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Harry With Su Li";
+  bookmarksList.category = "Harry With Wednesday";
   await bookmarksList.ParseBookmarks().then(() => {
     if (DEBUG) {
       console.log(
@@ -47,9 +55,9 @@ const getFrontmatter: GetFrontmatter = async () => {
   /* end workaround */
 
   return {
-    title: "Harry and Su Li",
+    title: "Harry With Wednesday Addams",
     collection: "Bookmarks",
-    description: "HP stories in which Harry is paired with Su Li",
+    description: "HP stories with Harry and Wednesday Addams paired",
     author: "Luke Schierer",
     layout: "standard",
     imports: ["/styles/BookmarksList.css"],
