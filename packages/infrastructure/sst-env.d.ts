@@ -5,8 +5,124 @@
 
 declare module "sst" {
   export interface Resource {
-    "HP-Stuff-API": {
-      "type": "sst.aws.ApiGatewayV2"
+    "Bookmarks-Anti-Dumbledore": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-Anti-Hermione": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-Dealing_With_Snape-After_He_Dies": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-Dealing_With_Snape-His_Relationship_With_Lily": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-Featuring_Hermione": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-Featuring_Ron": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-Fred_and_George": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-Harry_Leaves": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-Luna": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-Prequels": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-Problems_After_the_War": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-Problems_Exposed": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-Responsible_Adults": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-The_Missed_Birthday": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-Time_Travel": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-pairing-Harry-With_Astoria": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-pairing-Harry-With_Daphne": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-pairing-Harry-With_Gabrielle": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-pairing-Harry-With_Ginny": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-pairing-Harry-With_Hannah": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-pairing-Harry-With_Sally-Anne": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-pairing-Harry-With_Su_Li": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-pairing-Harry-With_Susan": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "Bookmarks-pairing-Harry-With_Wednesday": {
+      "name": string
+      "type": "sst.aws.Function"
       "url": string
     }
     "HP-Stuff-Router": {
@@ -15,6 +131,41 @@ declare module "sst" {
     }
     "HP-Stuff-Static": {
       "type": "sst.aws.StaticSite"
+      "url": string
+    }
+    "Harrypedia-History": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "gedcom-event": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "gedcom-events": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "gedcom-families": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "gedcom-family": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "gedcom-people": {
+      "name": string
+      "type": "sst.aws.Function"
+      "url": string
+    }
+    "gedcom-person": {
+      "name": string
+      "type": "sst.aws.Function"
       "url": string
     }
   }

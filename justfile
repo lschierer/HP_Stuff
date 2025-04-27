@@ -26,6 +26,7 @@ build: build-greenwood
 
 [working-directory: 'packages/assets']
 parse: install build-schemas
+  mkdir -p dist
   mkdir -p ../greenwood/src/assets/
   mkdir -p ../greenwood/src/pages/FanFiction/
   mkdir -p ../greenwood/src/styles

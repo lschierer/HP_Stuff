@@ -31,10 +31,9 @@ to an even greater extreme.
 [Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 `;
-  const dataArray = bookmarksData;
 
   const bookmarksList = new BookmarksList();
-  bookmarksList.ParseBookmarks(dataArray);
+  bookmarksList.ParseBookmarks(bookmarksData as object[]);
   return markdownTextProcessing(bodyText).concat(`
     <dl>
       ${bookmarksList.listBookMarks()}
