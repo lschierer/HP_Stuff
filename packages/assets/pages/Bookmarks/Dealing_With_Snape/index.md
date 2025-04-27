@@ -2,6 +2,8 @@
 title: Bookmarks - Dealing with Snape
 author: Luke Schierer
 layout: standard
+imports:
+  - /components/DirectoryIndex.ts type="module"
 ---
 
 This is a collection of of stories that I primarily want to remind myself that I am not alone in noticing certain problems with Mrs. Rowling's handling of [Snape] across books five through seven.
@@ -10,4 +12,4 @@ This is a collection of of stories that I primarily want to remind myself that I
 
 ---
 
-<directory-index></directory-index>
+<directory-index directory="/Bookmarks/Dealing_With_Snape/" ></directory-index>

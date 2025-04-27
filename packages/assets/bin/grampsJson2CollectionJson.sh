@@ -54,8 +54,6 @@ cat $full | $JQ -n 'inputs | ."_class"' | sort -u | tr -d '"' | sort | while rea
   fi
   export field=$(echo $line | tr -d '[:blank:]')
 
-  cat $full | $JQ -n "[inputs | select(.\"_class\" == \"$field\") | with_entries(if .key == \"gramps_id\" then .key = \"id\" else . end) ]" > $targetfile
+  cat $full | $JQ -n "[inputs | select(.\"_class\" == \"$field\")  ]" > $targetfile
 
 done
-
-gsed -i -E '/handle/{p;s/handle/id/;}' "$OUTPUTDIR/gedcom/tags.json"

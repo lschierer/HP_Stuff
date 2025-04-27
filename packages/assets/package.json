@@ -9,6 +9,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "files": [
+    "**/*.html",
+    "**/*.md",
+    "**/*.svg",
+    "**/*.css",
+    "**/*.json"
+  ],
   "devDependencies": {
     "@types/hast": "^3.0.4",
     "@types/js-yaml": "^4.0.9",
