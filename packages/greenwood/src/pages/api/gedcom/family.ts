@@ -1,5 +1,6 @@
-import { z } from "zod";
 import { GedcomFamily } from "@hp-stuff/schemas/gedcom";
+
+import JsonFamilies from "@hp-stuff/assets/dist/gedcom/families.json" with { type: "JSON" };
 
 import debugFunction from "../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -8,15 +9,16 @@ if (DEBUG) {
 }
 
 export async function handler(request: Request) {
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
   const params = new URLSearchParams(
     request.url.slice(request.url.indexOf("?"))
   );
   const id = params.has("id") ? params.get("id") : "";
 
-  const familiesImport = await import("../../../assets/gedcom/families.json");
-  const valid = z
-    .array(GedcomFamily.GedcomElement)
-    .safeParse(familiesImport.default);
+  const valid = GedcomFamily.GedcomElement.array().safeParse(JsonFamilies);
   if (valid.success) {
     if (DEBUG) {
       console.log(`successful parse`);

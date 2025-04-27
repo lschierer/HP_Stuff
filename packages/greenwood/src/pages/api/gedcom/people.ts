@@ -1,5 +1,5 @@
-import { z } from "zod";
 import { GedcomPerson } from "@hp-stuff/schemas/gedcom";
+import JsonPeople from "@hp-stuff/assets/dist/gedcom/people.json" with { type: "JSON" };
 
 import debugFunction from "../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -8,10 +8,12 @@ if (DEBUG) {
 }
 
 export async function handler() {
-  const peopleImport = await import("../../../assets/gedcom/people.json");
-  const valid = z
-    .array(GedcomPerson.GedcomElement)
-    .safeParse(peopleImport.default);
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
+  const valid = GedcomPerson.GedcomElement.array().safeParse(JsonPeople);
+
   if (valid.success) {
     if (DEBUG) {
       console.log(`successful parse`);

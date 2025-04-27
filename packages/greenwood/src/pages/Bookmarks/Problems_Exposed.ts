@@ -16,25 +16,23 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
+import bookmarksData from "@hp-stuff/assets/dist/Bookmarks/Problems Exposed.json" with { type: "json" };
+
 const getBody: (
   compilation: Compilation,
   page: Page,
   request: Request
-) => string | Promise<string> = async () => {
+) => string | Promise<string> = () => {
   const bodyText = `
 While The Harry Potter universe offers a great foundation for building on, it also has plenty
 of places where Mrs. Rowling has left us with inconsistencies, contradictions, and other plot
 holes. These stories, often through the use of satire and/or farce, expose some of those.
 `;
+  const dataArray = bookmarksData;
+
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Problems Exposed";
-  await bookmarksList.ParseBookmarks().then(() => {
-    if (DEBUG) {
-      console.log(
-        `after parsing getBody sees ${bookmarksList.bookmarks.length} bookmarks`
-      );
-    }
-  });
+  bookmarksList.ParseBookmarks(dataArray);
+
   return markdownTextProcessing(bodyText).concat(`
     <dl>
       ${bookmarksList.listBookMarks()}

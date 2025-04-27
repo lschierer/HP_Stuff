@@ -15,12 +15,13 @@ const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
+import bookmarksData from "@hp-stuff/assets/dist/Bookmarks/Anti-Hermione.json" with { type: "json" };
 
 const getBody: (
   compilation: Compilation,
   page: Page,
   request: Request
-) => string | Promise<string> = async () => {
+) => string | Promise<string> = () => {
   const bodyText = `
 These stories are reactions to the way that Mrs. Rowling allowed [Hermione] to eclipse
 both [Ron] and [Harry] in the latter books, and/or to the way in which some fans take this
@@ -30,15 +31,10 @@ to an even greater extreme.
 [Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 `;
+  const dataArray = bookmarksData;
+
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Anti-Hermione";
-  await bookmarksList.ParseBookmarks().then(() => {
-    if (DEBUG) {
-      console.log(
-        `after parsing getBody sees ${bookmarksList.bookmarks.length} bookmarks`
-      );
-    }
-  });
+  bookmarksList.ParseBookmarks(dataArray);
   return markdownTextProcessing(bodyText).concat(`
     <dl>
       ${bookmarksList.listBookMarks()}

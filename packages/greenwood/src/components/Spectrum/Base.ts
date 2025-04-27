@@ -1,5 +1,8 @@
-import "@spectrum-web-components/theme/sp-theme.js";
-import "@spectrum-web-components/theme/src/themes.js";
+if (!customElements.get("sp-theme")) {
+  await import("@spectrum-web-components/theme/sp-theme.js");
+  await import("@spectrum-web-components/theme/src/themes.js");
+  await import("@spectrum-web-components/split-view/sp-split-view.js");
+}
 import "iconify-icon";
 
 import { z } from "zod";
@@ -20,7 +23,7 @@ export const ChangeTheme = (themeValue: ThemeSelection) => {
   if (!themeValue.localeCompare("light") || !themeValue.localeCompare("dark")) {
     // Store the theme preference in localStorage
     localStorage.setItem("theme-preference", themeValue);
-    
+
     const scale = "medium";
     document.querySelectorAll("sp-theme").forEach((sptheme) => {
       void Promise.all([
@@ -75,13 +78,15 @@ export function getTheme(): ThemeSelection {
   if (storedTheme && ThemeSelection.safeParse(storedTheme).success) {
     return storedTheme as ThemeSelection;
   }
-  
+
   // If no valid localStorage value, check OS preference
-  if (typeof window !== 'undefined') {
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  if (typeof window !== "undefined") {
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
     return prefersDark ? "dark" : "light";
   }
-  
+
   // Fallback to light if all else fails
   return "light";
 }

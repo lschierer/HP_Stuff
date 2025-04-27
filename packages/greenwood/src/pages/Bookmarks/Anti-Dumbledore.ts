@@ -11,22 +11,24 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
+import bookmarksData from "@hp-stuff/assets/dist/Bookmarks/Anti-Dumbledore.json" with { type: "json" };
+
 const getBody: GetBody = async () => {
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
   const bodyText = `
 These stories are reactions to the way that Mrs. Rowling essentially justified every bad decision that [Dumbledore] made by having [Harry] not only forgive him, but name a child after him.
 
 [Dumbledore]: </Harrypedia/people/Dumbledore/Albus Percival Wulfric Brian/>
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 `;
+  const dataArray = bookmarksData;
+
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Anti-Dumbledore";
-  await bookmarksList.ParseBookmarks().then(() => {
-    if (DEBUG) {
-      console.log(
-        `after parsing getBody sees ${bookmarksList.bookmarks.length} bookmarks`
-      );
-    }
-  });
+  bookmarksList.ParseBookmarks(dataArray);
+
   return markdownTextProcessing(bodyText).concat(`
     <dl>
       ${bookmarksList.listBookMarks()}

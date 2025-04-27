@@ -16,25 +16,23 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
+import bookmarksData from "@hp-stuff/assets/dist/Bookmarks/Featuring Ron.json" with { type: "json" };
+
 const getBody: (
   compilation: Compilation,
   page: Page,
   request: Request
-) => string | Promise<string> = async () => {
+) => string | Promise<string> = () => {
   const bodyText = `
 I have made no secret of the fact that [Ron] is not my most favourite character in the series. These stories highlight what could have been.
 
 [Ron]: </Harrypedia/people/Weasley/Ronald Bilius/>
 `;
+  const dataArray = bookmarksData;
+
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Featuring Ron";
-  await bookmarksList.ParseBookmarks().then(() => {
-    if (DEBUG) {
-      console.log(
-        `after parsing getBody sees ${bookmarksList.bookmarks.length} bookmarks`
-      );
-    }
-  });
+  bookmarksList.ParseBookmarks(dataArray);
+
   return markdownTextProcessing(bodyText).concat(`
     <dl>
       ${bookmarksList.listBookMarks()}

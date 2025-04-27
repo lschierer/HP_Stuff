@@ -1,4 +1,4 @@
-export const prerender = false;
+export const prerender = true;
 import {
   type Compilation,
   type Page,
@@ -13,20 +13,18 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
+import bookmarksData from "@hp-stuff/assets/dist/Bookmarks/ResponsibleAdults.json" with { type: "json" };
+
 const getBody: (
   compilation: Compilation,
   page: Page,
   request: Request
-) => string | Promise<string> = async () => {
+) => string | Promise<string> = () => {
+  const dataArray = bookmarksData;
+
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "ResponsibleAdults";
-  await bookmarksList.ParseBookmarks().then(() => {
-    if (DEBUG) {
-      console.log(
-        `after parsing getBody sees ${bookmarksList.bookmarks.length} bookmarks`
-      );
-    }
-  });
+  bookmarksList.ParseBookmarks(dataArray);
+
   return `
   <p>
     So often children's literature is possible because the adults in those stories

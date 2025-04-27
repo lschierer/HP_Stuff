@@ -1,8 +1,4 @@
-import fs from "node:fs/promises";
-import path from "node:path";
-
 import { Bookmark } from "@hp-stuff/schemas";
-import { z } from "zod";
 
 import debugFunction from "./debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -101,48 +97,14 @@ export default class BookmarksList {
       .join("\n");
   };
 
-  private computeBasePath = (depth: number) => {
-    let bp = "";
-    if (depth < 0) {
-      throw new Error(`depth must be a positive integer, not ${depth}`);
-      return "./";
-    }
-    if (depth == 1) {
-      bp = "./";
-      return bp;
-    } else {
-      while (depth) {
-        bp = bp.concat("../");
-        depth--;
-      }
-    }
-    return bp;
-  };
-
-  readonly ParseBookmarks = async () => {
-    const basePath =
-      process.env.__GWD_COMMAND__ == "serve" ? this.computeBasePath(1) : "../";
-    const filePath = new URL(
-      path.join(basePath, `/assets/Bookmarks/${this.category}.json`),
-      import.meta.url
-    );
-    const bookmarkData = await fs
-      .readFile(filePath, {
-        encoding: "utf-8",
-      })
-      .catch((error: unknown) => {
-        console.error(
-          `failed to load file for ${this.category}`,
-          `error is ${JSON.stringify(error)}`
-        );
-      });
-    if (bookmarkData) {
+  readonly ParseBookmarks = (bookmarkData: object[]) => {
+    if (bookmarkData.length) {
       if (DEBUG) {
         console.log(
           `ParseBookmarks read in data from file for '${this.category}`
         );
       }
-      const valid = z.array(Bookmark).safeParse(JSON.parse(bookmarkData));
+      const valid = Bookmark.array().safeParse(bookmarkData);
       if (valid.success) {
         valid.data.map((b) => {
           this._bookmarks.push(b);

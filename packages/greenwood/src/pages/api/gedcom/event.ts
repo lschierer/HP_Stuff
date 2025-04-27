@@ -1,5 +1,5 @@
-import { z } from "zod";
 import { GedcomEvent } from "@hp-stuff/schemas/gedcom";
+import JsonEvents from "@hp-stuff/assets/dist/gedcom/events.json" with { type: "JSON" };
 
 import debugFunction from "../../../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
@@ -8,15 +8,16 @@ if (DEBUG) {
 }
 
 export async function handler(request: Request) {
+  /*start work around for GetFrontmatter requiring async */
+  await new Promise((resolve) => setTimeout(resolve, 1));
+  /* end workaround */
+
   const params = new URLSearchParams(
     request.url.slice(request.url.indexOf("?"))
   );
   const id = params.has("id") ? params.get("id") : "";
 
-  const eventsImport = await import("../../../assets/gedcom/events.json");
-  const valid = z
-    .array(GedcomEvent.GedcomElement)
-    .safeParse(eventsImport.default);
+  const valid = GedcomEvent.GedcomElement.array().safeParse(JsonEvents);
   if (valid.success) {
     if (DEBUG) {
       console.log(`successful parse`);

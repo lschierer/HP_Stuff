@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@hp-stuff/schemas": "workspace:^",
+    "@hp-stuff/assets": "workspace:^",
     "@hpcc-js/wasm-graphviz": "^1.7.0",
     "@lit/context": "^1.1.5",
     "@spectrum-css/actionbutton": "^7.1.3",
@@ -64,7 +65,7 @@
     "@types/hast": "^3.0.4",
     "@types/jsdom": "^21.1.7",
     "@types/luxon": "^3.6.2",
-    "@types/node": "^22.14.1",
+    "@types/node": "^22.15.2",
     "autoprefixer": "^10.4.21",
     "cssnano": "^7.0.6",
     "postcss": "^8.5.3",

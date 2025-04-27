@@ -16,26 +16,24 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
+import bookmarksData from "@hp-stuff/assets/dist/Bookmarks/Luna.json" with { type: "json" };
+
 const getBody: (
   compilation: Compilation,
   page: Page,
   request: Request
-) => string | Promise<string> = async () => {
+) => string | Promise<string> = () => {
   const bodyText = `
 In general I feel that while [Luna] and [Harry] will almost always be friends, that unless you change one or the other significantly, they will never be more than that. Still, there are some stories where she is the main character that are worth remembering.
 
 [Harry]: </Harrypedia/people/Potter/Harry James/>
 [Luna]: /Harrypedia/people/Lovegood/Luna/
 `;
+  const dataArray = bookmarksData;
+
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Luna";
-  await bookmarksList.ParseBookmarks().then(() => {
-    if (DEBUG) {
-      console.log(
-        `after parsing getBody sees ${bookmarksList.bookmarks.length} bookmarks`
-      );
-    }
-  });
+  bookmarksList.ParseBookmarks(dataArray);
+
   return markdownTextProcessing(bodyText).concat(`
     <dl>
       ${bookmarksList.listBookMarks()}

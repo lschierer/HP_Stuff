@@ -5,7 +5,7 @@ import {
   type Page,
   type GetFrontmatter,
 } from "@greenwood/cli";
-import "../../../lib/BookmarksList.ts";
+import "../../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../../lib/BookmarksList.ts";
 
 import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
@@ -16,25 +16,23 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
+import bookmarksData from "@hp-stuff/assets/dist/Bookmarks/Harry With Ginny.json" with { type: "json" };
+
 const getBody: (
   compilation: Compilation,
   page: Page,
   request: Request
-) => string | Promise<string> = async () => {
+) => string | Promise<string> = () => {
   const bodyText = `
 While [Ginny] has flaws, I remain partial to this pairing. Unfortunately fan fiction rarely does it justice.
 
 [Ginny]: </Harrypedia/people/Weasley/Ginevra Molly/>
 `;
+  const dataArray = bookmarksData;
+
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Harry With Ginny";
-  await bookmarksList.ParseBookmarks().then(() => {
-    if (DEBUG) {
-      console.log(
-        `after parsing getBody sees ${bookmarksList.bookmarks.length} bookmarks`
-      );
-    }
-  });
+  bookmarksList.ParseBookmarks(dataArray);
+
   return markdownTextProcessing(bodyText).concat(`
     <dl>
       ${bookmarksList.listBookMarks()}

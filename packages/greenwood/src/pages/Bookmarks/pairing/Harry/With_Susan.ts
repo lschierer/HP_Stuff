@@ -5,7 +5,7 @@ import {
   type Page,
   type GetFrontmatter,
 } from "@greenwood/cli";
-import "../../../lib/BookmarksList.ts";
+import "../../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../../lib/BookmarksList.ts";
 
 import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
@@ -16,11 +16,13 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
+import bookmarksData from "@hp-stuff/assets/dist/Bookmarks/Harry With Susan.json" with { type: "json" };
+
 const getBody: (
   compilation: Compilation,
   page: Page,
   request: Request
-) => string | Promise<string> = async () => {
+) => string | Promise<string> = () => {
   const bodyText = `
 Many of these stories happen when [Amelia] [Bones] steps in to, you know, actually do her job as a law enforcement official, and thus belong in the [Responsible Adult] category. While that might happen in a few of these, it is not why they are included.
 
@@ -28,15 +30,11 @@ Many of these stories happen when [Amelia] [Bones] steps in to, you know, actual
 [Bones]: /Harrypedia/people/Bones/
 [Responsible Adult]: </Bookmarks/Responsible_Adults/>
 `;
+  const dataArray = bookmarksData;
+
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Harry With Susan";
-  await bookmarksList.ParseBookmarks().then(() => {
-    if (DEBUG) {
-      console.log(
-        `after parsing getBody sees ${bookmarksList.bookmarks.length} bookmarks`
-      );
-    }
-  });
+  bookmarksList.ParseBookmarks(dataArray);
+
   return markdownTextProcessing(bodyText).concat(`
     <dl>
       ${bookmarksList.listBookMarks()}

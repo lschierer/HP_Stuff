@@ -5,7 +5,7 @@ import {
   type Page,
   type GetFrontmatter,
 } from "@greenwood/cli";
-import "../../../lib/BookmarksList.ts";
+import "../../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../../lib/BookmarksList.ts";
 
 import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
@@ -16,11 +16,13 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
+import bookmarksData from "@hp-stuff/assets/dist/Bookmarks/Harry With Daphne.json" with { type: "json" };
+
 const getBody: (
   compilation: Compilation,
   page: Page,
   request: Request
-) => string | Promise<string> = async () => {
+) => string | Promise<string> = () => {
   const bodyText = `
 [Daphne] is one of those blank slate characters that authors can do anything
 with. Sure enough, they certainly have, though there do tend to be patterns.
@@ -30,15 +32,11 @@ to watch.
 [Daphne]: /Harrypedia/people/Greengrass/Daphne/
 
 `;
+  const dataArray = bookmarksData;
+
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Harry With Daphne";
-  await bookmarksList.ParseBookmarks().then(() => {
-    if (DEBUG) {
-      console.log(
-        `after parsing getBody sees ${bookmarksList.bookmarks.length} bookmarks`
-      );
-    }
-  });
+  bookmarksList.ParseBookmarks(dataArray);
+
   return markdownTextProcessing(bodyText).concat(`
     <dl>
       ${bookmarksList.listBookMarks()}

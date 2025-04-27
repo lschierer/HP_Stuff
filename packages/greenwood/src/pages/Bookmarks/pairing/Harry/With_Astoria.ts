@@ -5,7 +5,7 @@ import {
   type Page,
   type GetFrontmatter,
 } from "@greenwood/cli";
-import "../../../lib/BookmarksList.ts";
+import "../../../../lib/BookmarksList.ts";
 import BookmarksList from "../../../../lib/BookmarksList.ts";
 
 import markdownTextProcessing from "../../../../lib/customMarkdownProcessing.ts";
@@ -15,12 +15,13 @@ const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
+import bookmarksData from "@hp-stuff/assets/dist/Bookmarks/Harry With Astoria.json" with { type: "json" };
 
 const getBody: (
   compilation: Compilation,
   page: Page,
   request: Request
-) => string | Promise<string> = async () => {
+) => string | Promise<string> = () => {
   const bodyText = `
 It is relatively rare to find this as a primary pairing, most often these stories feature some type of revenge on [Draco] instead of a positive relationship between these two as a primary pairing. I am not interested in violating marriage vows as a form of revenge, momentary
 pleasure, or drunkenness.
@@ -32,15 +33,10 @@ These stories take that vague suggestion and run with it.
 [Astoria]: /Harrypedia/people/Greengrass/Astoria/
 
 `;
+  const dataArray = bookmarksData;
+
   const bookmarksList = new BookmarksList();
-  bookmarksList.category = "Harry With Astoria";
-  await bookmarksList.ParseBookmarks().then(() => {
-    if (DEBUG) {
-      console.log(
-        `after parsing getBody sees ${bookmarksList.bookmarks.length} bookmarks`
-      );
-    }
-  });
+  bookmarksList.ParseBookmarks(dataArray);
   return markdownTextProcessing(bodyText).concat(`
     <dl>
       ${bookmarksList.listBookMarks()}
