@@ -4,3 +4,4 @@ node_modules/
 public/
 .greenwood/
 .aws-output
+.footer-section-plugin.cache.json
