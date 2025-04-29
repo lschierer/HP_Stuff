@@ -101,8 +101,8 @@ const frontend = new sst.aws.StaticSite("HP-Stuff-Static", {
     instance: router,
   },
   build: {
-    //command: "echo 'build goes here'",
-    command: "just build",
+    command: "echo 'build goes here'",
+    //command: "just build",
     output: "public",
   },
   transform: {
