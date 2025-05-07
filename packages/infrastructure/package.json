@@ -9,17 +9,17 @@
   "devDependencies": {
     "@hp-stuff/schemas": "workspace:^",
     "@types/aws-lambda": "8.10.149",
-    "@types/node": "^22.15.2",
+    "@types/node": "^22.15.14",
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@pulumi/aws": "^6.78.0",
+    "@pulumi/aws": "^6.80.0",
     "@pulumi/aws-iam": "^0.2.0",
     "@pulumi/awsx": "^2.21.1",
-    "@pulumi/pulumi": "^3.165.0",
+    "@pulumi/pulumi": "^3.167.0",
     "@pulumi/std": "^2.2.0",
     "mime": "^4.0.7",
-    "sst": "3.13.19",
-    "tsx": "^4.19.3"
+    "sst": "3.14.11",
+    "tsx": "^4.19.4"
   }
 }
