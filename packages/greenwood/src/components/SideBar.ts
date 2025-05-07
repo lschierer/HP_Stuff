@@ -2,7 +2,7 @@ import { type ClientNavItem } from "@hp-stuff/schemas";
 import { type Page } from "@greenwood/cli";
 import { getContent } from "@greenwood/cli/src/data/client.js";
 
-import SideNavCSS from "../styles/sidebar.css" with { type: "css" };
+import SideNavCSS from "@hp-stuff/assets/dist/styles/sidebar.css" with { type: "css" };
 
 import debugFunction from "../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
