@@ -51,7 +51,7 @@ const getFrontmatter: GetFrontmatter = async () => {
     description: "HP stories HP stories that expose plot holes in the original",
     author: "Luke Schierer",
     layout: "standard",
-    imports: ["/styles/BookmarksList.css"],
+    imports: ["/node_modules/@hp-stuff/assets/dist/styles/BookmarksList.css"],
     data: {},
   };
 };

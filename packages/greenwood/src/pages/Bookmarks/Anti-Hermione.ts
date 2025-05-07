@@ -52,7 +52,7 @@ const getFrontmatter: GetFrontmatter = async () => {
     description: "HP Stories Notable for the Anti-Hermione Bias",
     author: "Luke Schierer",
     layout: "standard",
-    imports: ["/styles/BookmarksList.css"],
+    imports: ["/node_modules/@hp-stuff/assets/dist/styles/BookmarksList.css"],
     data: {},
   };
 };

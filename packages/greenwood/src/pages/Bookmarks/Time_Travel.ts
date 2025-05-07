@@ -49,7 +49,7 @@ const getFrontmatter: GetFrontmatter = async () => {
     title: "Time Travel",
     collection: "Bookmarks",
     description: "HP stories focusing on travels through time",
-    imports: ["/styles/BookmarksList.css"],
+    imports: ["/node_modules/@hp-stuff/assets/dist/styles/BookmarksList.css"],
     author: "Luke Schierer",
     layout: "standard",
     data: {},

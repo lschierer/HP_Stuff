@@ -51,7 +51,7 @@ const getFrontmatter: GetFrontmatter = async () => {
       "HP stories in which Harry Leaves the Wizarding World and/or England",
     author: "Luke Schierer",
     layout: "standard",
-    imports: ["/styles/BookmarksList.css"],
+    imports: ["/node_modules/@hp-stuff/assets/dist/styles/BookmarksList.css"],
     data: {},
   };
 };

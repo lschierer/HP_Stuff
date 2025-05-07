@@ -55,7 +55,7 @@ const getFrontmatter: GetFrontmatter = async () => {
     description: "HP stories with Harry and Daphne Greengrass paired",
     author: "Luke Schierer",
     layout: "standard",
-    imports: ["/styles/BookmarksList.css"],
+    imports: ["/node_modules/@hp-stuff/assets/dist/styles/BookmarksList.css"],
     data: {},
   };
 };

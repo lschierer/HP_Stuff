@@ -34,7 +34,7 @@ parse: install build-schemas
   ./bin/historyCollection.sh -o ../greenwood/src/assets/
   ./bin/grampsJson2CollectionJson.sh -o ./dist/
   ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../greenwood/src/pages/FanFiction/" -a ../greenwood/src/assets -s ../greenwood/src/styles
-  ${PNPM} tsx ./src/scripts/build-css.ts ../greenwood/src/styles/
+  ${PNPM} tsx ./src/scripts/build-css.ts ./dist/styles/
   ${PNPM} tsx ./src/scripts/gedcomExport.ts
   ./bin/missingMarkdownIndexPages.sh
   rsync -av --exclude='*.fragment.html' pages ../greenwood/src/

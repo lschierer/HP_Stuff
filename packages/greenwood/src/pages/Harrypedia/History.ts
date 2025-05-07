@@ -225,7 +225,7 @@ const getFrontmatter: GetFrontmatter = async () => {
     layout: "standard",
     imports: [
       '/components/v-timeline.ts type="module"',
-      "/styles/Timeline.css",
+      "/node_modules/@hp-stuff/assets/dist/styles/Timeline.css",
     ],
     data: {
       author: "Luke Schierer",

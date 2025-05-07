@@ -52,7 +52,7 @@ const getFrontmatter: GetFrontmatter = async () => {
       "HP stories focusing on Snape's death, judgement, or afterlife",
     author: "Luke Schierer",
     layout: "standard",
-    imports: ["/styles/BookmarksList.css"],
+    imports: ["/node_modules/@hp-stuff/assets/dist/styles/BookmarksList.css"],
     data: {},
   };
 };

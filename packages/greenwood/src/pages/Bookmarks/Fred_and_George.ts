@@ -53,7 +53,7 @@ const getFrontmatter: GetFrontmatter = async () => {
     description: "HP Stories featuring Fred and George as main characters",
     author: "Luke Schierer",
     layout: "standard",
-    imports: ["/styles/BookmarksList.css"],
+    imports: ["/node_modules/@hp-stuff/assets/dist/styles/BookmarksList.css"],
     data: {},
   };
 };

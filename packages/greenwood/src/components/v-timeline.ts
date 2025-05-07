@@ -119,7 +119,7 @@ export default class VerticalTimeline extends HTMLElement {
         })
         .join(" ");
       this.innerHTML = `
-        <link rel="stylesheet" href="/styles/Timeline.css" />
+        <link rel="stylesheet" href="/node_modules/@hp-stuff/assets/dist/styles/Timeline.css" />
 
         <section class="timeline">
           <ul class="timeline spectrum-Typography">

@@ -1,6 +1,6 @@
 import SpectrumCSSTokens from "@spectrum-css/tokens/dist/index.css" with { type: "css" };
-import GrampsCSS from "../styles/Gramps.css" with { type: "css" };
-import AncestorsTreeChart from "../styles/AncestorsTreeChart.css" with { type: "css" };
+import GrampsCSS from "@hp-stuff/assets/dist/styles/Gramps.css" with { type: "css" };
+import AncestorsTreeChart from "@hp-stuff/assets/dist/styles/AncestorsTreeChart.css" with { type: "css" };
 
 export default class TreeChartDispaly extends HTMLElement {
   private _svgPath: string = "";
