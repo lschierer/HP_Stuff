@@ -15,6 +15,7 @@ class CopyHPNOFP::Command {
   use namespace::autoclean;
   use Carp;
   use Path::Tiny;
+  use Pandoc;
   our $VERSION = 'v0.0.1';
   my $debug = 1;
 
@@ -100,7 +101,7 @@ class CopyHPNOFP::Command {
       );
       my $name = $file->basename('.xhtml');
 
-      my $output = $od->child("$name.fragment.html");
+      my $output = $od->child("$name.md");
 
 
 
@@ -225,13 +226,19 @@ class CopyHPNOFP::Command {
       } else {
         $author = 'Matthew Schocke';
       }
+      my $markdown = pandoc->convert(
+        'html' => 'gfm',
+        $html,
+        '--wrap=none'
+      );
       my $outDoc = sprintf(
         "---\ntitle: >-\n  %s\nauthor: %s\ncollection: %s\n---\n%s",
         $titleText,
         $author,
         "\n  - HPNOFP\n  - FanFiction\n",
-        $html
+        $markdown
       );
+
       $output->spew_utf8($outDoc);
 
 

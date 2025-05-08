@@ -11,3 +11,4 @@ cpanm XML::LibXML
 cpanm namespace::autoclean
 cpanm utf8::all
 cpanm HTML::Selector::XPath
+cpanm Pandoc
