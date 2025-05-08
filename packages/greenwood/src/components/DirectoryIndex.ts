@@ -14,24 +14,76 @@ export default class DirectoryIndex extends HTMLElement {
   private _recurse = false;
   private _observer: ResizeObserver | null = null;
 
+  // Define which attributes to observe for changes
+  static get observedAttributes() {
+    return ["directory", "recurse"];
+  }
+
+  // Handle attribute changes
+  attributeChangedCallback(name: string, oldValue: string, newValue: string) {
+    if (DEBUG) {
+      console.log(`Attribute ${name} changed from ${oldValue} to ${newValue}`);
+    }
+
+    if (name === "directory" && newValue !== oldValue) {
+      this._directory = newValue;
+      if (this._directory.includes("/")) {
+        const stack = this._directory.split("/");
+        this._directory = stack.map((s) => encodeURIComponent(s)).join("/");
+      }
+      // Re-fetch entries when directory changes
+      if (this.isConnected) {
+        this._entries = [];
+        this.getEntries()
+          .then(() => {
+            this.renderEntries();
+          })
+          .catch((err: unknown) => {
+            console.error(
+              `there was an error getting entries: ${JSON.stringify(err)}`
+            );
+          });
+      }
+    }
+
+    if (name === "recurse") {
+      this._recurse = newValue !== "";
+      // Re-fetch entries when recurse changes
+      if (this.isConnected) {
+        this._entries = [];
+        this.getEntries()
+          .then(() => {
+            this.renderEntries();
+          })
+          .catch((err: unknown) => {
+            console.error(
+              `there was an error getting entries: ${JSON.stringify(err)}`
+            );
+          });
+      }
+    }
+  }
+
   protected getAttributes = () => {
     if (DEBUG) {
       console.log(`I have attributes ${JSON.stringify(this.attributes)}`);
     }
-    for (const attr of this.attributes) {
+
+    // Check for directory attribute
+    if (this.hasAttribute("directory")) {
+      const directoryValue = this.getAttribute("directory");
       if (DEBUG) {
-        console.log(`evaluating attr ${attr.name} with value ${attr.value}`);
+        console.log(`setting directory attribute to ${directoryValue}`);
       }
-      if (!attr.name.localeCompare("directory")) {
-        if (DEBUG) {
-          console.log(`setting directory attribute`);
-        }
-        this._directory = attr.value;
-      }
-      if (!attr.name.localeCompare("recurse")) {
-        this._recurse = true;
-      }
+      this._directory = directoryValue || "";
     }
+
+    // Check for recurse attribute
+    this._recurse = this.hasAttribute("recurse");
+    if (DEBUG && this._recurse) {
+      console.log("recurse attribute is set");
+    }
+
     if (this._directory.includes("/")) {
       const stack = this._directory.split("/");
       this._directory = stack.map((s) => encodeURIComponent(s)).join("/");

@@ -235,10 +235,11 @@ class CopyHPNOFP::Command {
         '--wrap=none'
       );
       my $outDoc = sprintf(
-        "---\ntitle: >-\n  %s\nauthor: %s\ncollection: %s\n---\n%s",
+        "---\ntitle: >-\n  %s\nauthor: %s\ncollection: %s\nlayout: %s\n---\n%s",
         $titleText,
         $author,
         "\n  - HPNOFP\n  - FanFiction\n",
+        "HPNOFP",
         $markdown
       );
 
