@@ -8,6 +8,7 @@ require Data::Printer;
 class CopyHPNOFP::Command {
   use Types::Common qw( -lexical -all);
   use List::AllUtils qw( any none );
+  use open ':std', ':encoding(UTF-8)';
   require XML::LibXML;
   require HTML::HTML5::Writer;
   use Cwd;
@@ -17,7 +18,7 @@ class CopyHPNOFP::Command {
   use Path::Tiny;
   use Pandoc;
   our $VERSION = 'v0.0.1';
-  my $debug = 1;
+  my $debug = 0;
 
   field $inputDir :reader :param;
 
@@ -94,6 +95,7 @@ class CopyHPNOFP::Command {
   method processFile ($file) {
     if($file->is_file()) {
       if($debug) {
+        binmode STDOUT, ':utf8';
         say "processing $file";
       }
       my $writer = HTML::HTML5::Writer->new(
@@ -117,7 +119,8 @@ class CopyHPNOFP::Command {
       if($debug) {
         say "Found " . scalar(@h2nodes) . " h2 nodes in $name";
         if (scalar(@h2nodes) > 0) {
-          say "First h2 content: " . $h2nodes[0]->textContent;
+          my $h2t = $h2nodes[0]->textContent;
+          say "First h2 content: $h2t";
         } else {
           say "No h2 tags found in document";
         }
@@ -250,6 +253,7 @@ class CopyHPNOFP::Command {
 
   method execute() {
     if($debug) {
+      binmode *STDOUT, ':utf8';
       say "starting CopyHPNOFP::Command->execute()";
     }
 

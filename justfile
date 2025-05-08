@@ -20,7 +20,7 @@ build-schemas: install
 
 [working-directory: 'packages/greenwood']
 build-greenwood: install build-schemas parse
-  NODE_ENV=production ${PNPM} run build
+  NODE_ENV=production /usr/bin/time -hl ${PNPM} build
 
 build: build-greenwood
 
@@ -46,7 +46,8 @@ clean:
 
 [working-directory: 'packages/infrastructure']
 deploy: build-greenwood
-  ./bin/update-all.sh
+  ${PNPM} sst deploy
+
 
 check-links:
   ${PNPM} exec linkinator "http://localhost:1984/"

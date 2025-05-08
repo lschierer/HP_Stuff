@@ -6,5 +6,6 @@ use Carp;
 use File::FindLib 'lib';
 
 use App::CopyHPNOFP;
+binmode *STDOUT, ':utf8';
 
 App::CopyHPNOFP->run;
