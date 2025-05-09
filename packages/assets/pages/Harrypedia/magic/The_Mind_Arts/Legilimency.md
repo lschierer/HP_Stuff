@@ -3,7 +3,7 @@ collection: Harrypedia
 layout: standard
 title: |
   The Mind Arts: Legilimency
-author: Luke Scheirer
+author: Luke Schierer
 ---
 
 Legilimency might not be quite reading your thoughts like a book, but it
