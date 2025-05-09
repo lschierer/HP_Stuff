@@ -28,6 +28,7 @@ const fileDebug: Record<string, boolean> = {
   "/components/grampsParser/state.ts": false,
   "/components/v-timeline.ts": false,
   "/layouts/_standard.ts": false,
+  "/layouts/HPNOFP": true,
   "/layouts/transforms/DirectoryIndex.ts": false,
   "/lib/BookmarksList.ts": false,
   "/lib/GedcomConstants.ts": false,

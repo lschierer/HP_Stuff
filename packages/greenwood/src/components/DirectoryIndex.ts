@@ -10,6 +10,7 @@ console.log(`DEBUG for ${new URL(import.meta.url).pathname} is ${DEBUG}`);
 
 export default class DirectoryIndex extends HTMLElement {
   private _directory = "";
+  private _routes = new Set<string>();
   private _entries = new Array<Page>();
   private _recurse = false;
   private _observer: ResizeObserver | null = null;
@@ -138,7 +139,10 @@ export default class DirectoryIndex extends HTMLElement {
           entry.route.startsWith(this._directory)
         ) {
           if (this._recurse) {
-            this._entries.push(entry);
+            if (!this._routes.has(entry.route)) {
+              this._entries.push(entry);
+              this._routes.add(entry.route);
+            }
           } else {
             if (DEBUG) {
               console.log(`recurse set to false`);
@@ -149,7 +153,10 @@ export default class DirectoryIndex extends HTMLElement {
               console.log(`entry ${entry.route} stack size ${stack.length}`);
             }
             if (stack.length <= routeStack.length + 1) {
-              this._entries.push(entry);
+              if (!this._routes.has(entry.route)) {
+                this._entries.push(entry);
+                this._routes.add(entry.route);
+              }
             }
           }
         } else {
