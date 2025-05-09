@@ -1,7 +1,6 @@
 import * as z from "zod";
 
 export const Author = z.enum([
-  "Luke Scheirer",
   "Luke Schierer",
   "Matthew Schocke",
   "Peach Wookiee",
@@ -23,21 +22,7 @@ export type CollectionEnum = z.infer<typeof CollectionEnum>;
 export const Type = z.enum(["potion", "spell"]);
 export type Type = z.infer<typeof Type>;
 
-export const Layout = z.enum([
-  "page",
-  "splash",
-  "standard",
-  "standard Life Expectancy",
-  "standard Magical Beings",
-  "standard Magical Contracts",
-  "standard Non-Mendelian Inheritance",
-  "standard Points of Divergence",
-  "standard Relative Power Levels",
-  "standard Rules of Magic",
-  "standard Soteriology, Missiology and Ecclesiology",
-  "standard The Veela Curse",
-  "standard What are the Nephilim",
-]);
+export const Layout = z.enum(["HPNOFP", "page", "splash", "standard"]);
 export type Layout = z.infer<typeof Layout>;
 
 export const DataData = z.object({
@@ -50,6 +35,15 @@ export const Sidebar = z.object({
   order: z.number(),
 });
 export type Sidebar = z.infer<typeof Sidebar>;
+
+export const ValueClass = z.object({
+  id: z.string(),
+  pageHref: z.string(),
+  outputHref: z.string(),
+  route: z.string(),
+  assets: z.array(z.any()),
+});
+export type ValueClass = z.infer<typeof ValueClass>;
 
 export const GraphData = z.object({
   collection: z.union([z.array(z.string()), CollectionEnum]).optional(),
@@ -65,6 +59,12 @@ export const GraphData = z.object({
   gramps_id: z.string().optional(),
 });
 export type GraphData = z.infer<typeof GraphData>;
+
+export const Apis = z.object({
+  dataType: z.string(),
+  value: z.array(z.array(z.union([ValueClass, z.string()]))),
+});
+export type Apis = z.infer<typeof Apis>;
 
 export const GraphElement = z.object({
   id: z.string(),
@@ -85,21 +85,6 @@ export const GraphElement = z.object({
   path: z.string().optional(),
 });
 export type GraphElement = z.infer<typeof GraphElement>;
-
-export const ValueClass = z.object({
-  id: z.string(),
-  pageHref: z.string(),
-  outputHref: z.string(),
-  route: z.string(),
-  assets: z.array(z.string()),
-});
-export type ValueClass = z.infer<typeof ValueClass>;
-
-export const Apis = z.object({
-  dataType: z.string(),
-  value: z.array(z.array(z.union([ValueClass, z.string()]))),
-});
-export type Apis = z.infer<typeof Apis>;
 
 export const Manifest = z.object({
   apis: Apis,

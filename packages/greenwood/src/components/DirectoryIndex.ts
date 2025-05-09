@@ -2,10 +2,8 @@ import { getContentByRoute } from "@greenwood/cli/src/data/client.js";
 import { type Page } from "@greenwood/cli";
 import "@spectrum-web-components/card/sp-card.js";
 
-import DirectoryIndexStyles from "@hp-stuff/assets/dist/styles/DirectoryIndex.css" with { type: "css" };
-
-import debugFunction from "../lib/debug.ts";
-const DEBUG = debugFunction(new URL(import.meta.url).pathname);
+//import debugFunction from "../lib/debug.ts";
+const DEBUG = true; //debugFunction(new URL(import.meta.url).pathname);
 console.log(`DEBUG for ${new URL(import.meta.url).pathname} is ${DEBUG}`);
 
 export default class DirectoryIndex extends HTMLElement {
@@ -27,41 +25,67 @@ export default class DirectoryIndex extends HTMLElement {
     }
 
     if (name === "directory" && newValue !== oldValue) {
-      this._directory = newValue;
-      if (this._directory.includes("/")) {
-        const stack = this._directory.split("/");
-        this._directory = stack.map((s) => encodeURIComponent(s)).join("/");
-      }
+      this._directory = newValue || "";
+      this.normalizeDirectoryPath();
+
       // Re-fetch entries when directory changes
       if (this.isConnected) {
         this._entries = [];
+        this._routes.clear();
         this.getEntries()
           .then(() => {
             this.renderEntries();
           })
           .catch((err: unknown) => {
-            console.error(
-              `there was an error getting entries: ${JSON.stringify(err)}`
-            );
+            console.error(`there was an error getting entries: ${String(err)}`);
           });
       }
     }
 
     if (name === "recurse") {
-      this._recurse = newValue !== "";
+      // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
+      this._recurse = newValue !== null && newValue !== "";
       // Re-fetch entries when recurse changes
       if (this.isConnected) {
         this._entries = [];
+        this._routes.clear();
         this.getEntries()
           .then(() => {
             this.renderEntries();
           })
           .catch((err: unknown) => {
-            console.error(
-              `there was an error getting entries: ${JSON.stringify(err)}`
-            );
+            console.error(`there was an error getting entries: ${String(err)}`);
           });
       }
+    }
+  }
+
+  // Helper method to normalize directory path
+  private normalizeDirectoryPath() {
+    // URL encode path segments
+    if (this._directory.includes("/")) {
+      const stack = this._directory.split("/");
+      this._directory = stack.map((s) => encodeURIComponent(s)).join("/");
+    } else if (this._directory) {
+      this._directory = encodeURIComponent(this._directory);
+    }
+
+    // Ensure directory starts with a slash
+    if (this._directory && !this._directory.startsWith("/")) {
+      this._directory = "/" + this._directory;
+    }
+
+    // Ensure directory ends with a slash for consistent path matching
+    if (
+      this._directory &&
+      this._directory !== "/" &&
+      !this._directory.endsWith("/")
+    ) {
+      this._directory = this._directory + "/";
+    }
+
+    if (DEBUG) {
+      console.log(`Normalized directory path: ${this._directory}`);
     }
   }
 
@@ -85,75 +109,103 @@ export default class DirectoryIndex extends HTMLElement {
       console.log("recurse attribute is set");
     }
 
-    if (this._directory.includes("/")) {
-      const stack = this._directory.split("/");
-      this._directory = stack.map((s) => encodeURIComponent(s)).join("/");
-    }
+    // Normalize the directory path
+    this.normalizeDirectoryPath();
   };
 
   protected getEntries = async () => {
     if (DEBUG) {
       console.log(`DirectoryIndex getEntries for ${this._directory}`);
     }
-    const entries = (
-      (await getContentByRoute(
-        this._directory.length > 0 ? this._directory : "/"
-      )) as Array<Page | undefined>
-    ).sort((a: Page | undefined, b: Page | undefined) => {
-      if (a == undefined) {
-        if (b == undefined) {
-          return 0;
-        } else {
-          return -1;
-        }
-      } else if (b == undefined) {
-        return 1;
-      } else {
-        const ordera = a.data
-          ? Object.keys(a.data).includes("order")
-            ? (a.data["order" as keyof typeof a.data] as number)
-            : undefined
-          : undefined;
 
-        const orderb = b.data
-          ? Object.keys(b.data).includes("order")
-            ? (b.data["order" as keyof typeof b.data] as number)
-            : undefined
-          : undefined;
+    // Clear existing entries and routes
+    this._entries = [];
+    this._routes = new Set<string>();
 
-        if (ordera && orderb) {
-          return ordera - orderb;
-        } else if (ordera) {
-          return -1;
-        } else if (orderb) {
+    // Normalize directory path for consistency
+    const directoryPath = this._directory.length > 0 ? this._directory : "/";
+
+    if (DEBUG) {
+      console.log(`Fetching content for path: ${directoryPath}`);
+    }
+
+    try {
+      const entries = (
+        (await getContentByRoute(directoryPath)) as Array<Page | undefined>
+      ).sort((a: Page | undefined, b: Page | undefined) => {
+        if (a == undefined) {
+          if (b == undefined) {
+            return 0;
+          } else {
+            return -1;
+          }
+        } else if (b == undefined) {
           return 1;
         } else {
-          return a.title.localeCompare(b.title);
+          const ordera = a.data
+            ? Object.keys(a.data).includes("order")
+              ? (a.data["order" as keyof typeof a.data] as number)
+              : undefined
+            : undefined;
+
+          const orderb = b.data
+            ? Object.keys(b.data).includes("order")
+              ? (b.data["order" as keyof typeof b.data] as number)
+              : undefined
+            : undefined;
+
+          if (ordera && orderb) {
+            return ordera - orderb;
+          } else if (ordera) {
+            return -1;
+          } else if (orderb) {
+            return 1;
+          } else {
+            return a.title.localeCompare(b.title);
+          }
         }
-      }
-    });
-    entries.map((entry) => {
-      if (entry) {
+      });
+
+      entries.forEach((entry) => {
+        if (!entry) return;
+
+        if (DEBUG) {
+          console.log(
+            `Evaluating entry: ${entry.route} (comparing with ${this._directory})`
+          );
+        }
+
+        // Check if this entry is a child of the current directory
         if (
-          entry.route.localeCompare(this._directory) &&
+          entry.route !== this._directory &&
           entry.route.startsWith(this._directory)
         ) {
+          // For recursive mode, include all descendants
           if (this._recurse) {
             if (!this._routes.has(entry.route)) {
+              if (DEBUG) {
+                console.log(`Adding entry (recursive): ${entry.route}`);
+              }
               this._entries.push(entry);
               this._routes.add(entry.route);
             }
           } else {
-            if (DEBUG) {
-              console.log(`recurse set to false`);
-            }
+            // For non-recursive mode, only include direct children
             const stack = entry.route.split("/");
             const routeStack = this._directory.split("/");
+
             if (DEBUG) {
-              console.log(`entry ${entry.route} stack size ${stack.length}`);
+              console.log(
+                `Entry ${entry.route} path depth: ${stack.length}, directory depth: ${routeStack.length}`
+              );
             }
+
+            // Only include if it's a direct child (one level deeper than current directory)
             if (stack.length <= routeStack.length + 1) {
               if (!this._routes.has(entry.route)) {
+                if (DEBUG) {
+                  console.log(`Adding entry (direct child): ${entry.route}`);
+                }
                 this._entries.push(entry);
                 this._routes.add(entry.route);
               }
@@ -161,21 +213,28 @@ export default class DirectoryIndex extends HTMLElement {
           }
         } else {
           if (DEBUG) {
-            if (
-              !entry.route.localeCompare(encodeURIComponent(this._directory))
-            ) {
+            if (entry.route === this._directory) {
               console.log(
-                `excluding matching route ${entry.route} the same as ${this._directory}`
+                `Excluding entry (same as current directory): ${entry.route}`
               );
             } else {
               console.log(
-                `excluding non-matching route ${entry.route} while comparing ${this._directory}`
+                `Excluding entry (not a child of current directory): ${entry.route}`
               );
             }
           }
         }
+      });
+
+      if (DEBUG) {
+        console.log(
+          `Found ${this._entries.length} entries for directory: ${this._directory}`
+        );
       }
-    });
+    } catch (error) {
+      console.error(`Error fetching entries: ${String(error)}`);
+      throw error;
+    }
   };
 
   renderEntries() {
@@ -187,6 +246,7 @@ export default class DirectoryIndex extends HTMLElement {
       }
 
       this.innerHTML = `
+        <link rel="stylesheet" href="/node_modules/@hp-stuff/assets/dist/styles/DirectoryIndex.css" />
         <div class="directory-index-container">
             ${this._entries
               .map((entry, index) => {
@@ -375,11 +435,24 @@ export default class DirectoryIndex extends HTMLElement {
     if (DEBUG) {
       console.log(`DirectoryIndex component connected`);
     }
-    document.adoptedStyleSheets.push(DirectoryIndexStyles);
     this.getAttributes();
-    await this.getEntries();
-    this.renderEntries();
-    this.setupResizeObserver();
+
+    try {
+      await this.getEntries();
+
+      if (DEBUG) {
+        console.log(`After getEntries, found ${this._entries.length} entries`);
+      }
+
+      this.renderEntries();
+      this.setupResizeObserver();
+    } catch (error) {
+      console.error(
+        `Error in DirectoryIndex connectedCallback: ${String(error)}`
+      );
+      // Provide a fallback UI in case of error
+      this.innerHTML = `<div class="error-message">Error loading directory content</div>`;
+    }
   }
 
   disconnectedCallback() {

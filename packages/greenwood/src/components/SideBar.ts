@@ -2,8 +2,6 @@ import { type ClientNavItem } from "@hp-stuff/schemas";
 import { type Page } from "@greenwood/cli";
 import { getContent } from "@greenwood/cli/src/data/client.js";
 
-import SideNavCSS from "@hp-stuff/assets/dist/styles/sidebar.css" with { type: "css" };
-
 import debugFunction from "../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
@@ -191,7 +189,6 @@ export default class SideBar extends HTMLElement {
   protected renderNavigation = () => {
     // Get current path
     this.currentPath = window.location.pathname;
-    document.adoptedStyleSheets.push(SideNavCSS);
 
     // Find path to current page
     const pathToCurrentPage = this.findPathToCurrentPage(this.currentPath);
@@ -209,6 +206,7 @@ export default class SideBar extends HTMLElement {
 
     // Set the HTML
     this.innerHTML = `
+      <link rel="stylesheet" href="/node_modules/@hp-stuff/assets/dist/styles/sidebar.css" />
       <nav >
 
         ${navHtml}
