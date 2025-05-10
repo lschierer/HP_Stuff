@@ -34,11 +34,11 @@ console.warn(
   `DEBUG is set to ${DEBUG} for ${new URL(import.meta.url).pathname}`
 );
 
-const markdownPagesDir = path.join(process.cwd(), "pages");
-const assetsDir = path.join(process.cwd(), "assets");
+const markdownPagesDir = path.join(process.cwd(), "./dist/pages");
+const assetsDir = path.join(process.cwd(), "dist/assets");
 const staticContent = path.join(process.cwd(), "people");
 const gedcomPrefix = "Harrypedia/people";
-const finalDestinationDir = path.join(process.cwd(), "../greenwood/src/pages");
+const finalDestinationDir = path.join(process.cwd(), "./dist/pages");
 
 const getFiles = (basePath: string, filePath: string): string | string[] => {
   const node = path.join(basePath, filePath);
@@ -60,12 +60,6 @@ const svgTargetDir = path.join(assetsDir, gedcomPrefix);
 
 if (!fs.existsSync(svgTargetDir)) {
   fs.mkdirSync(svgTargetDir, {
-    recursive: true,
-    mode: 0o755,
-  });
-}
-if (!fs.existsSync(path.join(assetsDir, "filescreated"))) {
-  fs.mkdirSync(path.join(assetsDir, "filescreated"), {
     recursive: true,
     mode: 0o755,
   });
@@ -112,11 +106,6 @@ for (const f of getFiles(svgTargetDir, ".")) {
   SVGsCreated.push(target);
 }
 
-fs.writeFileSync(
-  path.join(assetsDir, "filescreated", `SVGsCreated.txt`),
-  SVGsCreated.join("\n")
-);
-
 const pagesCreated = doConversion(
   path.join(markdownPagesDir, gedcomPrefix),
   staticContent,
@@ -140,21 +129,3 @@ for (const f of getFiles(path.join(markdownPagesDir, gedcomPrefix), ".")) {
   fs.copyFileSync(f, target);
   pagesCreated.push(target);
 }
-
-// record what was created for the clean script
-
-const filesCreatedDir = path.join(markdownPagesDir, "filescreated");
-if (!fs.existsSync(filesCreatedDir)) {
-  fs.mkdirSync(filesCreatedDir, {
-    recursive: true,
-    mode: 0o755,
-  });
-}
-
-fs.writeFileSync(
-  path.join(filesCreatedDir, "/gedcom.txt"),
-  pagesCreated.join("\n"),
-  {
-    encoding: "utf-8",
-  }
-);

@@ -14,7 +14,7 @@ else
 fi
 
 # Check assets/filescreated directory
-if [ -d "$PWD"/assets/filescreated ] && [ "$(ls -A "$PWD"/assets/filescreated/*.txt 2> /dev/null)" ]; then
+if [ -d "$PWD"/assets ] && [ -d "$PWD"/assets/filescreated ] && [ "$(ls -A "$PWD"/assets/filescreated/*.txt 2> /dev/null)" ]; then
   for f in "$PWD"/assets/filescreated/*.txt; do
     echo "cleaning files listed in $f"
     cat "$f" | xargs -I{} rm "{}"

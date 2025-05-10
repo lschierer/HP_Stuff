@@ -26,18 +26,20 @@ build: build-greenwood
 
 [working-directory: 'packages/assets']
 parse: install build-schemas
-  mkdir -p dist
-  mkdir -p ../greenwood/src/assets/
-  mkdir -p ../greenwood/src/pages/FanFiction/
-  mkdir -p ../greenwood/src/styles
+  mkdir -p dist/pages/FanFiction
+  mkdir -p dist/assets
+  mkdir -p dist/styles
+  rsync -av --exclude='*.fragment.html' --exclude='filescreated' --delete-excluded ./pages/ ./dist/pages/
+  rsync -av staticAssets/ dist/assets/
   ./bin/bookmarkCollection.sh -o ./dist/
-  ./bin/historyCollection.sh -o ../greenwood/src/assets/
+  ./bin/historyCollection.sh -o ./dist/assets/
   ./bin/grampsJson2CollectionJson.sh -o ./dist/
-  ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "../greenwood/src/pages/FanFiction/" -a ../greenwood/src/assets -s ../greenwood/src/styles
+  ./bin/copyHPNOFP -i node_modules/hpnofp-ebook.git/src/OEBPS/ -o "./dist/pages/FanFiction/" -a ./dist/assets -s ./dist/styles
   ${PNPM} tsx ./src/scripts/build-css.ts ./dist/styles/
   ${PNPM} tsx ./src/scripts/gedcomExport.ts
   ./bin/missingMarkdownIndexPages.sh
-  rsync -av --exclude='*.fragment.html' pages ../greenwood/src/
+  rsync -av ./dist/pages/ ../greenwood/src/pages/
+  rsync -av --delete ./dist/assets/ ../greenwood/src/assets/
 
 clean:
   rm -rf packges/greenwood/public packages/greenwood/.greenwood
