@@ -2,6 +2,8 @@ import { type ClientNavItem } from "@hp-stuff/schemas";
 import { type Page } from "@greenwood/cli";
 import { getContent } from "@greenwood/cli/src/data/client.js";
 
+import SideBarCSS from "@hp-stuff/assets/dist/styles/sidebar.css" with { type: "css" };
+
 import debugFunction from "../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
@@ -204,9 +206,11 @@ export default class SideBar extends HTMLElement {
       currentPageItem
     );
 
+    //set the css
+    document.adoptedStyleSheets.push(SideBarCSS);
+
     // Set the HTML
     this.innerHTML = `
-      <link rel="stylesheet" href="/node_modules/@hp-stuff/assets/dist/styles/sidebar.css" />
       <nav >
 
         ${navHtml}

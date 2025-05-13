@@ -42,5 +42,5 @@
     "verbatimModuleSyntax": false
   },
   "exclude": ["public"],
-  "include": ["./**/*.ts", "./**/*.mts", "./**/*.tsx", "../../globals.d.ts"]
+  "include": ["./**/*.ts", "./**/*.mts", "./**/*.tsx", "../../myGlobals.d.ts"]
 }

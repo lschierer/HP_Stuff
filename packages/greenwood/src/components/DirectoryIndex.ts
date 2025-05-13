@@ -2,6 +2,8 @@ import { getContent } from "@greenwood/cli/src/data/client.js";
 import { type Page } from "@greenwood/cli";
 import "@spectrum-web-components/card/sp-card.js";
 
+import DirectoryIndexCSS from "@hp-stuff/assets/dist/styles/DirectoryIndex.css" with { type: "css" };
+
 import debugFunction from "../lib/debug.ts";
 const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 console.log(`DEBUG for ${new URL(import.meta.url).pathname} is ${DEBUG}`);
@@ -27,7 +29,7 @@ export default class DirectoryIndex extends HTMLElement {
     if (name === "directory" && newValue !== oldValue) {
       this._directory = newValue || "";
       this.normalizeDirectoryPath();
-      
+
       // Re-fetch entries when directory changes
       if (this.isConnected) {
         this._entries = [];
@@ -37,9 +39,7 @@ export default class DirectoryIndex extends HTMLElement {
             this.renderEntries();
           })
           .catch((err: unknown) => {
-            console.error(
-              `there was an error getting entries: ${String(err)}`
-            );
+            console.error(`there was an error getting entries: ${String(err)}`);
           });
       }
     }
@@ -56,9 +56,7 @@ export default class DirectoryIndex extends HTMLElement {
             this.renderEntries();
           })
           .catch((err: unknown) => {
-            console.error(
-              `there was an error getting entries: ${String(err)}`
-            );
+            console.error(`there was an error getting entries: ${String(err)}`);
           });
       }
     }
@@ -73,17 +71,21 @@ export default class DirectoryIndex extends HTMLElement {
     } else if (this._directory) {
       this._directory = encodeURIComponent(this._directory);
     }
-    
+
     // Ensure directory starts with a slash
     if (this._directory && !this._directory.startsWith("/")) {
       this._directory = "/" + this._directory;
     }
-    
+
     // Ensure directory ends with a slash for consistent path matching
-    if (this._directory && this._directory !== "/" && !this._directory.endsWith("/")) {
+    if (
+      this._directory &&
+      this._directory !== "/" &&
+      !this._directory.endsWith("/")
+    ) {
       this._directory = this._directory + "/";
     }
-    
+
     if (DEBUG) {
       console.log(`Normalized directory path: ${this._directory}`);
     }
@@ -117,103 +119,113 @@ export default class DirectoryIndex extends HTMLElement {
     if (DEBUG) {
       console.log(`DirectoryIndex getEntries for ${this._directory}`);
     }
-    
+
     // Clear existing entries and routes
     this._entries = [];
     this._routes = new Set<string>();
-    
+
     // Normalize directory path for consistency
     const directoryPath = this._directory.length > 0 ? this._directory : "/";
-    
+
     if (DEBUG) {
       console.log(`Fetching content for path: ${directoryPath}`);
     }
-    
+
     try {
       // Get all content and filter it ourselves
-      const allEntries = await getContent() as Array<Page | undefined>;
-      
+      const allEntries = (await getContent()) as Array<Page | undefined>;
+
       if (DEBUG) {
-        console.log(`Retrieved ${allEntries.length} total entries, filtering for ${directoryPath}`);
+        console.log(
+          `Retrieved ${allEntries.length} total entries, filtering for ${directoryPath}`
+        );
       }
-      
+
       // Filter entries that belong to the current directory
-      const filteredEntries = allEntries.filter(entry => {
+      const filteredEntries = allEntries.filter((entry) => {
         if (!entry || !entry.route) return false;
-        
+
         // Skip the current directory itself
         if (entry.route === directoryPath) return false;
-        
+
         // For recursive mode, include all descendants
         if (this._recurse) {
           return entry.route.startsWith(directoryPath);
-        } 
+        }
         // For non-recursive mode, only include direct children
         else {
-          const entryParts = entry.route.split('/').filter(Boolean);
-          const dirParts = directoryPath.split('/').filter(Boolean);
-          
+          const entryParts = entry.route.split("/").filter(Boolean);
+          const dirParts = directoryPath.split("/").filter(Boolean);
+
           // Direct children have exactly one more path segment than the parent
-          return entry.route.startsWith(directoryPath) && 
-                 entryParts.length === dirParts.length + 1;
+          return (
+            entry.route.startsWith(directoryPath) &&
+            entryParts.length === dirParts.length + 1
+          );
         }
       });
-      
+
       if (DEBUG) {
-        console.log(`Filtered to ${filteredEntries.length} entries for directory: ${directoryPath}`);
+        console.log(
+          `Filtered to ${filteredEntries.length} entries for directory: ${directoryPath}`
+        );
       }
-      
+
       // Sort the filtered entries
-      const sortedEntries = filteredEntries.sort((a: Page | undefined, b: Page | undefined) => {
-        if (a == undefined) {
-          if (b == undefined) {
-            return 0;
-          } else {
-            return -1;
-          }
-        } else if (b == undefined) {
-          return 1;
-        } else {
-          const ordera = a.data
-            ? Object.keys(a.data).includes("order")
-              ? (a.data["order" as keyof typeof a.data] as number)
-              : undefined
-            : undefined;
-
-          const orderb = b.data
-            ? Object.keys(b.data).includes("order")
-              ? (b.data["order" as keyof typeof b.data] as number)
-              : undefined
-            : undefined;
-
-          if (ordera && orderb) {
-            return ordera - orderb;
-          } else if (ordera) {
-            return -1;
-          } else if (orderb) {
+      const sortedEntries = filteredEntries.sort(
+        (a: Page | undefined, b: Page | undefined) => {
+          if (a == undefined) {
+            if (b == undefined) {
+              return 0;
+            } else {
+              return -1;
+            }
+          } else if (b == undefined) {
             return 1;
           } else {
-            return a.title.localeCompare(b.title);
+            const ordera = a.data
+              ? Object.keys(a.data).includes("order")
+                ? (a.data["order" as keyof typeof a.data] as number)
+                : undefined
+              : undefined;
+
+            const orderb = b.data
+              ? Object.keys(b.data).includes("order")
+                ? (b.data["order" as keyof typeof b.data] as number)
+                : undefined
+              : undefined;
+
+            if (ordera && orderb) {
+              return ordera - orderb;
+            } else if (ordera) {
+              return -1;
+            } else if (orderb) {
+              return 1;
+            } else {
+              return a.title.localeCompare(b.title);
+            }
           }
         }
-      });
-      
+      );
+
       // Add the sorted entries to our collection
-      sortedEntries.forEach(entry => {
+      sortedEntries.forEach((entry) => {
         if (!entry) return;
-        
+
         if (DEBUG) {
           console.log(`Adding entry: ${entry.route}`);
         }
-        
+
         if (!this._routes.has(entry.route)) {
           this._entries.push(entry);
           this._routes.add(entry.route);
         }
       });
-      
+
       if (DEBUG) {
-        console.log(`Final entries count: ${this._entries.length} for directory: ${this._directory}`);
+        console.log(
+          `Final entries count: ${this._entries.length} for directory: ${this._directory}`
+        );
       }
     } catch (error) {
       console.error(`Error fetching entries: ${String(error)}`);
@@ -228,9 +240,9 @@ export default class DirectoryIndex extends HTMLElement {
           `DirectoryIndex connectedCallback sees ${this._entries.length} entries after getEntries() call`
         );
       }
-
+      document.adoptedStyleSheets.push(DirectoryIndexCSS);
       this.innerHTML = `
-        <link rel="stylesheet" href="/node_modules/@hp-stuff/assets/dist/styles/DirectoryIndex.css" />
+
         <div class="directory-index-container">
             ${this._entries
               .map((entry, index) => {
@@ -420,18 +432,20 @@ export default class DirectoryIndex extends HTMLElement {
       console.log(`DirectoryIndex component connected`);
     }
     this.getAttributes();
-    
+
     try {
       await this.getEntries();
-      
+
       if (DEBUG) {
         console.log(`After getEntries, found ${this._entries.length} entries`);
       }
-      
+
       this.renderEntries();
       this.setupResizeObserver();
     } catch (error) {
-      console.error(`Error in DirectoryIndex connectedCallback: ${String(error)}`);
+      console.error(
+        `Error in DirectoryIndex connectedCallback: ${String(error)}`
+      );
       // Provide a fallback UI in case of error
       this.innerHTML = `<div class="error-message">Error loading directory content</div>`;
     }

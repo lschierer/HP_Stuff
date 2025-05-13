@@ -34,6 +34,7 @@ function parseArgs(argv: string[]): CliArgs {
 async function buildCSS({ outDir, minify }: CliArgs) {
   const stylesDir = path.resolve("styles");
   const outputDir = path.resolve(outDir);
+  const importsDir = path.resolve("./dist/CSImporters");
 
   try {
     const result = await stylelint.lint({
@@ -48,7 +49,9 @@ async function buildCSS({ outDir, minify }: CliArgs) {
     }
   } catch (err) {
     // do things with err e.g.
-    console.error(err.stack);
+    if ("stack" in (err as object)) {
+      console.error((err as object)["stack" as keyof typeof err]);
+    }
   }
 
   const plugins = [
@@ -69,6 +72,7 @@ async function buildCSS({ outDir, minify }: CliArgs) {
   }
 
   await fs.mkdir(outputDir, { recursive: true });
+  await fs.mkdir(importsDir, { recursive: true });
 
   const entries = await fs.readdir(stylesDir);
   const cssFiles = entries.filter((file) => file.endsWith(".css"));
@@ -86,6 +90,24 @@ async function buildCSS({ outDir, minify }: CliArgs) {
       });
 
       await fs.writeFile(outputPath, result.css, "utf8");
+      const importPath = `../dist/styles/${file}`;
+      const wrapperPath = path.join(importsDir, file.replace(/\.css$/, ".js"));
+
+      const content = `import '${importPath}';\n`;
+      await fs.writeFile(wrapperPath, content);
+
+      const dtsContent = `declare module '@hp-stuff/assets/CSSImporters/${path.basename(file, ".css")}.js' {
+        const value: void;
+        export default value;
+      }
+      `;
+
+      const dtsPath = path.join(
+        importsDir,
+        `${path.basename(file, ".css")}.d.ts`
+      );
+      await fs.writeFile(dtsPath, dtsContent);
+
       console.log(`✔ Built ${path.relative(process.cwd(), outputPath)}`);
     } catch (err) {
       if (typeof err === "object" && err) {

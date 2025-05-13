@@ -209,7 +209,12 @@ class CopyHPNOFP::Command {
 
           my $navFragmentPath = $od->child('nav.fragment.html');
           my $navHtml = $writer->element($navElement);
-
+          $navHtml =~ s{
+              (<a\s+[^>]*?href=")      # Start of the href attribute
+              (?!https?:|/|\.\.)       # Skip already absolute or protocol-based URLs
+              ([^"]+)                  # Capture relative path (e.g., 'Year1/')
+              (")                      # Closing quote
+          }{$1/FanFiction/Harry Potter and the Nightmares of Futures Past/$2$3}xg;
           $navFragmentPath->spew_utf8($navHtml);
 
         } else {

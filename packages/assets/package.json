@@ -3,9 +3,6 @@
   "version": "0.1.0",
   "description": "assets common to all versions of the site",
   "type": "module",
-  "scripts": {
-    "gencollections": "./bin/grampsJson2CollectionJson.sh && ./bin/historyCollection.sh"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,8 +11,17 @@
     "**/*.md",
     "**/*.svg",
     "**/*.css",
-    "**/*.json"
+    "**/*.json",
+    "**/*.js",
+    "**/*.d.ts"
   ],
+  "exports": {
+    "./CSSImporters/*": "./dist/CSSImportes/*.js",
+    "./Bookmarks/*": "./dist/Bookmarks/*.json",
+    "./gedcom/*": "./dist/gedcom/*.json",
+    "./styles/**": "./dist/styles/**",
+    "./pages/**": "./dist/pages/**"
+  },
   "devDependencies": {
     "@types/hast": "^3.0.4",
     "@types/js-yaml": "^4.0.9",

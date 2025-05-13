@@ -49,6 +49,8 @@
       "sharp"
     ],
     "onlyBuiltDependencies": [
+      "@pulumi/aws",
+      "@pulumi/aws-iam",
       "@pulumi/docker",
       "@pulumi/docker-build",
       "aws-sdk",

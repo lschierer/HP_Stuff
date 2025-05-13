@@ -548,7 +548,7 @@ importers:
     dependencies:
       zod:
         specifier: ^3.0.0
-        version: 3.24.2
+        version: 3.24.4
     devDependencies:
       esbuild:
         specifier: ^0.25.4
