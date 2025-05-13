@@ -29,6 +29,7 @@ parse: install build-schemas
   mkdir -p dist/pages/FanFiction
   mkdir -p dist/assets
   mkdir -p dist/styles
+  ${PNPM} tsc -p .
   rsync -av --exclude='*.fragment.html' --exclude='filescreated' --delete-excluded ./pages/ ./dist/pages/
   rsync -av staticAssets/ dist/assets/
   ./bin/bookmarkCollection.sh -o ./dist/

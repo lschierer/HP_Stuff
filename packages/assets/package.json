@@ -16,11 +16,13 @@
     "**/*.d.ts"
   ],
   "exports": {
+    ".": "./dist/scripts/gedcomExport.js",
     "./CSSImporters/*": "./dist/CSSImportes/*.js",
-    "./Bookmarks/*": "./dist/Bookmarks/*.json",
-    "./gedcom/*": "./dist/gedcom/*.json",
-    "./styles/**": "./dist/styles/**",
-    "./pages/**": "./dist/pages/**"
+    "./Bookmarks/*": "./dist/Bookmarks/*",
+    "./gedcom/*": "./dist/gedcom/*",
+    "./styles/*": "./dist/styles/*",
+    "./pages/*": "./dist/pages/*",
+    "./dist/*": "./dist/*"
   },
   "devDependencies": {
     "@types/hast": "^3.0.4",

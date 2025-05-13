@@ -13,7 +13,7 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-import bookmarksData from "@hp-stuff/assets/dist/Bookmarks/ResponsibleAdults.json" with { type: "json" };
+import bookmarksData from "@hp-stuff/assets/Bookmarks/ResponsibleAdults.json" with { type: "json" };
 
 const getBody: (
   compilation: Compilation,

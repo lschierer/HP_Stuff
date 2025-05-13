@@ -3,7 +3,6 @@ import rehypeParse from "rehype-parse";
 import rehypeStringify from "rehype-stringify";
 import { visit } from "unist-util-visit";
 import type { ElementContent, Root } from "hast";
-import { z } from "zod";
 import matter from "gray-matter";
 import { h } from "hastscript";
 import process from "node:process";
@@ -21,9 +20,9 @@ const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 
 import {
   FrontMatter,
-  ParsedResult,
+  type ParsedResult,
   NavigationItem,
-  LayoutOptions,
+  type LayoutOptions,
 } from "@hp-stuff/schemas";
 import SidebarSection from "./SidebarSection";
 
@@ -80,6 +79,7 @@ const hasDirectoryIndexPlaceholder = (ast: Root): boolean => {
     return true; // Continue traversal
   });
   if (DEBUG) {
+    /* eslint-disable-next-line @typescript-eslint/no-unnecessary-condition */
     if (found) {
       console.log(`Found a directory index`);
     } else {
@@ -129,18 +129,14 @@ const createDirectoryIndex = (ast: Root, currentRoute?: string): void => {
       ): NavigationItem[] => {
         // First check for exact match
         const exactMatch = items.find((item) => item.route === route);
-        if (
-          exactMatch &&
-          exactMatch.children &&
-          exactMatch.children.length > 0
-        ) {
+        if (exactMatch && exactMatch.children.length > 0) {
           return exactMatch.children;
         }
 
         // Then check for parent routes
         for (const item of items) {
           if (item.route && route.startsWith(item.route + "/")) {
-            if (item.children && item.children.length > 0) {
+            if (item.children.length > 0) {
               const childResult = findRelevantSubtree(item.children, route);
               if (childResult.length > 0) {
                 return childResult;
@@ -158,7 +154,7 @@ const createDirectoryIndex = (ast: Root, currentRoute?: string): void => {
         sidebarRoutes.children,
         currentRoute
       );
-      if (foundItems && foundItems.length > 0) {
+      if (foundItems.length > 0) {
         relevantItems = foundItems;
         if (DEBUG) {
           console.log(
@@ -578,7 +574,9 @@ const getTemplate = (options: LayoutOptions) => {
   `;
 };
 
-export const renderLayout = async (options: LayoutOptions): Promise<ParsedResult> => {
+export const renderLayout = async (
+  options: LayoutOptions
+): Promise<ParsedResult> => {
   if (DEBUG) {
     console.log(`in layout.ts renderLayout`);
   }

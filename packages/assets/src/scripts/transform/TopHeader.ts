@@ -14,16 +14,17 @@ export default class TopHeaderSection {
   accessor route: string = "";
 
   private getNavSection = () => {
-    return LocalConfig && LocalConfig.TOPLEVELSECTIONS.length
-      ? LocalConfig.TOPLEVELSECTIONS.map((section) => {
-          if (this.route.startsWith(`/${section.replaceAll(" ", "")}`)) {
-            return `
+    return LocalConfig && LocalConfig.toplevelsections.length
+      ? LocalConfig.toplevelsections
+          .map((section) => {
+            if (this.route.startsWith(`/${section.replaceAll(" ", "")}`)) {
+              return `
               <div class="navItem">
                 <span class="spectrum-Heading spectrum-Heading--serif spectrum-Heading--sizeXS">${section.replaceAll("_", " ")}</span>
               </div>
               `;
-          } else {
-            return `
+            } else {
+              return `
               <div class="navItem">
                 <a
                   href=${"/" + section.replaceAll(" ", "") + "/"}
@@ -33,8 +34,9 @@ export default class TopHeaderSection {
                 </a>
               </div>
             `;
-          }
-        }).join("")
+            }
+          })
+          .join("")
       : "";
   };
 
@@ -66,15 +68,15 @@ export default class TopHeaderSection {
 
   private getSiteTitle = () => {
     const siteTitle =
-      LocalConfig && LocalConfig.SITETITLE ? LocalConfig.SITETITLE : "";
+      LocalConfig && LocalConfig.sitetitle ? LocalConfig.sitetitle : "";
     if (DEBUG) {
       console.log(`siteTitle is ${siteTitle}`);
     }
     const siteLogo =
-      LocalConfig && LocalConfig.SITELOGO
-        ? LocalConfig.SITELOGO.endsWith(".svg")
-          ? this.getSvgLogo(LocalConfig.SITELOGO)
-          : this.getImgLogo(LocalConfig.SITELOGO, siteTitle)
+      LocalConfig && LocalConfig.sitelogo
+        ? LocalConfig.sitelogo.endsWith(".svg")
+          ? this.getSvgLogo(LocalConfig.sitelogo)
+          : this.getImgLogo(LocalConfig.sitelogo, siteTitle)
         : "";
 
     return `

@@ -154,13 +154,13 @@ export default class FooterHeaderSection {
   protected getPrivacyPolicy = () => {
     if (
       LocalConfig &&
-      LocalConfig.PRIVACYPOLICY &&
-      LocalConfig.PRIVACYPOLICY.length &&
-      !(LocalConfig.PRIVACYPOLICY.toLowerCase() === "false")
+      LocalConfig.privacypolicy &&
+      LocalConfig.privacypolicy.length &&
+      !(LocalConfig.privacypolicy.toLowerCase() === "false")
     ) {
       return `
         <span class="privacy spectrum-Detail spectrum-Detail--serif spectrum-Detail--sizeM spectrum-Detail--light">
-          <a href="${LocalConfig.PRIVACYPOLICY}" class="spectrum-Link spectrum-Link--quiet spectrum-Link--primary">
+          <a href="${LocalConfig.privacypolicy}" class="spectrum-Link spectrum-Link--quiet spectrum-Link--primary">
             Privacy Policy
           </a>
         </span>
@@ -196,10 +196,10 @@ export default class FooterHeaderSection {
 
     if (
       LocalConfig &&
-      LocalConfig.AUTHORS !== "git" &&
-      Array.isArray(LocalConfig.AUTHORS)
+      LocalConfig.authors !== "git" &&
+      Array.isArray(LocalConfig.authors)
     ) {
-      for (const author of LocalConfig.AUTHORS) {
+      for (const author of LocalConfig.authors) {
         repoAuthors.add(author);
       }
     } else {

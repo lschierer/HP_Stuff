@@ -15,7 +15,7 @@ const DEBUG = debugFunction(new URL(import.meta.url).pathname);
 if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
-import bookmarksData from "@hp-stuff/assets/dist/Bookmarks/Harry With Astoria.json" with { type: "json" };
+import bookmarksData from "@hp-stuff/assets/Bookmarks/Harry With Astoria.json" with { type: "json" };
 
 const getBody: (
   compilation: Compilation,

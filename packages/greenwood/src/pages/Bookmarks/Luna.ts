@@ -16,7 +16,7 @@ if (DEBUG) {
   console.log(`DEBUG enabled for ${new URL(import.meta.url).pathname}`);
 }
 
-import bookmarksData from "@hp-stuff/assets/dist/Bookmarks/Luna.json" with { type: "json" };
+import bookmarksData from "@hp-stuff/assets/Bookmarks/Luna.json" with { type: "json" };
 
 const getBody: (
   compilation: Compilation,
